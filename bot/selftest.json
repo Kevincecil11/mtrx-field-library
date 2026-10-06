@@ -1,0 +1,11 @@
+{
+ "time": "2026-10-07T00:05:21+05:30",
+ "ok": false,
+ "steps": [
+  {
+   "step": "secrets",
+   "ok": false,
+   "detail": "missing: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID"
+  }
+ ]
+}

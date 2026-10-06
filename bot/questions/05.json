@@ -1,0 +1,681 @@
+{
+ "guide": "05",
+ "title": "MTRX™ Field Series No. 05 · The long game · Kevin Cecil",
+ "file": "05-long-game.html",
+ "day": false,
+ "stops": [
+  "0.1",
+  "0.2",
+  "1.1",
+  "1.2",
+  "1.3",
+  "1.4",
+  "1.5",
+  "1.6",
+  "1.7",
+  "1.8",
+  "1.9",
+  "1.10",
+  "1.11",
+  "1.12",
+  "2.1",
+  "2.2",
+  "2.3",
+  "2.4",
+  "2.5",
+  "2.6",
+  "2.7",
+  "2.8",
+  "3.1"
+ ],
+ "cards": [
+  {
+   "guide": "05",
+   "stop": "0.1",
+   "name": "Wisdom you can run",
+   "link": "guides/05-long-game.html#m0-1",
+   "id": "05-0.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Wisdom you can run\" in two or three lines, as you would to a client.",
+   "answer": "\"I don't collect quotes. I collect practices, with the source and the evidence grade.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "0.2",
+   "name": "How to run it: twelve weeks",
+   "link": "guides/05-long-game.html#m0-2",
+   "id": "05-0.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"How to run it: twelve weeks\" in two or three lines, as you would to a client.",
+   "answer": "\"One life a week, three drills a day, never miss twice.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.1",
+   "name": "Seneca: the nightly trial",
+   "link": "guides/05-long-game.html#m1-1",
+   "id": "05-1.1-q1",
+   "type": "quiz",
+   "q": "Which of these is genuinely Seneca?",
+   "options": [
+    "“Luck is what happens when preparation meets opportunity.”",
+    "“I examine my whole day... I hide nothing from myself.”",
+    "“Be the change you wish to see.”"
+   ],
+   "answer": 1,
+   "why": "The nightly-review passage is from On Anger III.36. The luck line has no Seneca source, and the third is a fake Gandhi quote."
+  },
+  {
+   "guide": "05",
+   "stop": "1.1",
+   "name": "Seneca: the nightly trial",
+   "link": "guides/05-long-game.html#m1-1",
+   "id": "05-1.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Seneca: the nightly trial\" in two or three lines, as you would to a client.",
+   "answer": "“Every night I review the day like a case file: what worked, what slipped, and my if-then for tomorrow.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.2",
+   "name": "Marcus Aurelius: notes to himself",
+   "link": "guides/05-long-game.html#m1-2",
+   "id": "05-1.2-q1",
+   "type": "quiz",
+   "q": "“You have power over your mind, not outside events” is:",
+   "options": [
+    "A verbatim line from Meditations 8.47",
+    "A modern paraphrase of an idea Marcus really held",
+    "From Seneca's letters"
+   ],
+   "answer": 1,
+   "why": "The idea is genuinely his, but that wording is not in the text. The real line: “it is not this thing that disturbs thee, but thy own judgement about it.”"
+  },
+  {
+   "guide": "05",
+   "stop": "1.2",
+   "name": "Marcus Aurelius: notes to himself",
+   "link": "guides/05-long-game.html#m1-2",
+   "id": "05-1.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Marcus Aurelius: notes to himself\" in two or three lines, as you would to a client.",
+   "answer": "“The event is the event. The story I add is my part, and that's the part I can change.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.3",
+   "name": "Benjamin Franklin: the virtue chart",
+   "link": "guides/05-long-game.html#m1-3",
+   "id": "05-1.3-q1",
+   "type": "quiz",
+   "q": "How did Franklin's chart actually work?",
+   "options": [
+    "He worked on all 13 virtues equally every day",
+    "One virtue got full focus each week, while slips on all of them were still marked",
+    "He only tracked the virtues he was already good at"
+   ],
+   "answer": 1,
+   "why": "One focus, everything still measured, four full cycles a year. Focus plus monitoring, which is exactly the combination the research favours."
+  },
+  {
+   "guide": "05",
+   "stop": "1.3",
+   "name": "Benjamin Franklin: the virtue chart",
+   "link": "guides/05-long-game.html#m1-3",
+   "id": "05-1.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Benjamin Franklin: the virtue chart\" in two or three lines, as you would to a client.",
+   "answer": "“I run Franklin's chart: one trait a week, marked every night. It's boring, and it works.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.4",
+   "name": "Charles Darwin: the golden rule",
+   "link": "guides/05-long-game.html#m1-4",
+   "id": "05-1.4-q1",
+   "type": "quiz",
+   "q": "Why did Darwin write contrary facts down immediately?",
+   "options": [
+    "To prove his critics wrong",
+    "Because he had noticed his memory lost unfavourable facts much faster than favourable ones",
+    "Because his publisher asked him to"
+   ],
+   "answer": 1,
+   "why": "His own words: such facts were “far more apt to escape from the memory than favourable ones.” He designed around a known bias in his own mind."
+  },
+  {
+   "guide": "05",
+   "stop": "1.4",
+   "name": "Charles Darwin: the golden rule",
+   "link": "guides/05-long-game.html#m1-4",
+   "id": "05-1.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Charles Darwin: the golden rule\" in two or three lines, as you would to a client.",
+   "answer": "“I keep a list of evidence against my own plan. If it stays empty, I'm not looking hard enough.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.5",
+   "name": "Richard Feynman: don't fool yourself",
+   "link": "guides/05-long-game.html#m1-5",
+   "id": "05-1.5-q1",
+   "type": "quiz",
+   "q": "What did Feynman call “the first principle”?",
+   "options": [
+    "Always trust experiments over theory",
+    "You must not fool yourself, and you are the easiest person to fool",
+    "Simplicity is the ultimate sophistication"
+   ],
+   "answer": 1,
+   "why": "From his 1974 Caltech address. The third option is a fake Leonardo quote, which you'll meet in Stop 1.7."
+  },
+  {
+   "guide": "05",
+   "stop": "1.5",
+   "name": "Richard Feynman: don't fool yourself",
+   "link": "guides/05-long-game.html#m1-5",
+   "id": "05-1.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Richard Feynman: don't fool yourself\" in two or three lines, as you would to a client.",
+   "answer": "“Before I sell my idea to a client, I try to break it myself.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.6",
+   "name": "Marie Curie: the lab record",
+   "link": "guides/05-long-game.html#m1-6",
+   "id": "05-1.6-q1",
+   "type": "quiz",
+   "q": "What turned Curie's slow measurements into discoveries?",
+   "options": [
+    "A flash of genius in the lab",
+    "Systematic, dated records of every measurement, so patterns could show up",
+    "Expensive equipment"
+   ],
+   "answer": 1,
+   "why": "She had very little equipment or money. Careful, complete records let patterns emerge across months of work."
+  },
+  {
+   "guide": "05",
+   "stop": "1.6",
+   "name": "Marie Curie: the lab record",
+   "link": "guides/05-long-game.html#m1-6",
+   "id": "05-1.6-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Marie Curie: the lab record\" in two or three lines, as you would to a client.",
+   "answer": "“Not ‘worked on outreach’: 40 calls, 9 connects, 2 booked, one new objection. That's a lab note.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.7",
+   "name": "Leonardo da Vinci: the question list",
+   "link": "guides/05-long-game.html#m1-7",
+   "id": "05-1.7-q1",
+   "type": "quiz",
+   "q": "What made Leonardo's curiosity productive?",
+   "options": [
+    "He waited for inspiration",
+    "He turned it into written, specific questions with a person or test attached",
+    "He focused on one subject only"
+   ],
+   "answer": 1,
+   "why": "Specific questions plus a route to the answer: the same “solvable gap” that curiosity research says works best."
+  },
+  {
+   "guide": "05",
+   "stop": "1.7",
+   "name": "Leonardo da Vinci: the question list",
+   "link": "guides/05-long-game.html#m1-7",
+   "id": "05-1.7-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Leonardo da Vinci: the question list\" in two or three lines, as you would to a client.",
+   "answer": "“I don't keep a to-do list. I keep a to-find-out list.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.8",
+   "name": "Maya Angelou: the bare room",
+   "link": "guides/05-long-game.html#m1-8",
+   "id": "05-1.8-q1",
+   "type": "quiz",
+   "q": "“There is no agony like bearing an untold story inside you” was written by:",
+   "options": [
+    "Maya Angelou",
+    "Zora Neale Hurston",
+    "Toni Morrison"
+   ],
+   "answer": 1,
+   "why": "Hurston, Dust Tracks on a Road (1942). The Angelou version is a misquote of a misattribution."
+  },
+  {
+   "guide": "05",
+   "stop": "1.8",
+   "name": "Maya Angelou: the bare room",
+   "link": "guides/05-long-game.html#m1-8",
+   "id": "05-1.8-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Maya Angelou: the bare room\" in two or three lines, as you would to a client.",
+   "answer": "“I don't wait to feel like it. I have a time and a place, and the work starts there.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.9",
+   "name": "Srinivasa Ramanujan: the letter",
+   "link": "guides/05-long-game.html#m1-9",
+   "id": "05-1.9-q1",
+   "type": "quiz",
+   "q": "What was the decisive step in Ramanujan's story?",
+   "options": [
+    "Getting a university degree first",
+    "Sending his best work to a qualified critic and asking for judgment",
+    "Keeping his work secret until it was perfect"
+   ],
+   "answer": 1,
+   "why": "He had no degree and did not wait for perfection. The letter to Hardy, with honest limits stated, is what changed everything."
+  },
+  {
+   "guide": "05",
+   "stop": "1.9",
+   "name": "Srinivasa Ramanujan: the letter",
+   "link": "guides/05-long-game.html#m1-9",
+   "id": "05-1.9-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Srinivasa Ramanujan: the letter\" in two or three lines, as you would to a client.",
+   "answer": "“Self-taught is fine. Self-checked isn't. Every month, one expert sees my work.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.10",
+   "name": "Florence Nightingale: the chart that saved lives",
+   "link": "guides/05-long-game.html#m1-10",
+   "id": "05-1.10-q1",
+   "type": "quiz",
+   "q": "What did Nightingale's famous diagram show?",
+   "options": [
+    "That nurses were underpaid",
+    "That far more soldiers were dying of preventable disease than of wounds",
+    "That hospitals needed more doctors"
+   ],
+   "answer": 1,
+   "why": "The chart made the preventable deaths impossible to ignore, which is why it drove sanitation reform."
+  },
+  {
+   "guide": "05",
+   "stop": "1.10",
+   "name": "Florence Nightingale: the chart that saved lives",
+   "link": "guides/05-long-game.html#m1-10",
+   "id": "05-1.10-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Florence Nightingale: the chart that saved lives\" in two or three lines, as you would to a client.",
+   "answer": "“I don't argue opinions with clients. I show them one chart and one decision.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.11",
+   "name": "Mahatma Gandhi: life as an experiment",
+   "link": "guides/05-long-game.html#m1-11",
+   "id": "05-1.11-q1",
+   "type": "quiz",
+   "q": "Which of these is reliably sourced to Gandhi?",
+   "options": [
+    "“Be the change you wish to see in the world.”",
+    "The title and framing of The Story of My Experiments with Truth",
+    "“First they ignore you, then they laugh at you...”"
+   ],
+   "answer": 1,
+   "why": "The autobiography's own introduction. The other two are later condensations or other people's words."
+  },
+  {
+   "guide": "05",
+   "stop": "1.11",
+   "name": "Mahatma Gandhi: life as an experiment",
+   "link": "guides/05-long-game.html#m1-11",
+   "id": "05-1.11-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Mahatma Gandhi: life as an experiment\" in two or three lines, as you would to a client.",
+   "answer": "“I don't make resolutions. I run experiments and keep the results.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "1.12",
+   "name": "Charlie Munger: the latticework",
+   "link": "guides/05-long-game.html#m1-12",
+   "id": "05-1.12-q1",
+   "type": "quiz",
+   "q": "Whose maxim is “Invert, always invert”?",
+   "options": [
+    "Charlie Munger's own invention",
+    "The mathematician Carl Jacobi's, quoted by Munger",
+    "Warren Buffett's"
+   ],
+   "answer": 1,
+   "why": "Munger popularised it and credited Jacobi. Giving credit accurately is part of the latticework habit."
+  },
+  {
+   "guide": "05",
+   "stop": "1.12",
+   "name": "Charlie Munger: the latticework",
+   "link": "guides/05-long-game.html#m1-12",
+   "id": "05-1.12-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Charlie Munger: the latticework\" in two or three lines, as you would to a client.",
+   "answer": "“Before I decide, I ask: what would guarantee this fails? Then I make sure I'm not doing it.”",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "2.1",
+   "name": "Build your stack",
+   "link": "guides/05-long-game.html#m2-1",
+   "id": "05-2.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Build your stack\" in two or three lines, as you would to a client.",
+   "answer": "\"Three drills, each tied to a cue I already have. Then I add one.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "2.2",
+   "name": "Morning: aim the day",
+   "link": "guides/05-long-game.html#m2-2",
+   "id": "05-2.2-r1",
+   "type": "recall",
+   "q": "Drill \"If-then + Stack\": what are the steps, and the usual mistake?",
+   "answer": "1) Name an existing reliable anchor: after coffee, opening the laptop, or brushing teeth. 2) Write: ‘If I finish [anchor] in [place], then I immediately do [one action] for [duration].’ Rehearse once. 3) Add a coping plan: ‘If the normal cue is missing, then I use [backup cue].’ Repeat in the same context. Usual mistake: Writing an if-then plan with a vague cue (‘when I have time’) or an oversized response.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.2",
+   "name": "Morning: aim the day",
+   "link": "guides/05-long-game.html#m2-2",
+   "id": "05-2.2-r2",
+   "type": "recall",
+   "q": "Drill \"Mindful Reset\": what are the steps, and the usual mistake?",
+   "answer": "1) Sit safely; choose breath or body sensation as the anchor. 2) When attention wanders, label ‘thinking/hearing/feeling’ and return without scolding. 3) End by naming one cue for applying the same noticing skill during the next task. Usual mistake: Trying to empty the mind or treating distraction as failure.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.3",
+   "name": "When emotions hit",
+   "link": "guides/05-long-game.html#m2-3",
+   "id": "05-2.3-r1",
+   "type": "recall",
+   "q": "Drill \"Reappraise the Trigger\": what are the steps, and the usual mistake?",
+   "answer": "1) Name the event, emotion (0 to 100), and the first interpretation. 2) Generate a specific alternative meaning that is plausible, not falsely positive; include what the situation makes possible or what information is missing. 3) Re-rate the emotion and select one action consistent with the revised appraisal. Usual mistake: Replacing a painful thought with an implausibly positive slogan, which is suppression rather than reappraisal.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.3",
+   "name": "When emotions hit",
+   "link": "guides/05-long-game.html#m2-3",
+   "id": "05-2.3-r2",
+   "type": "recall",
+   "q": "Drill \"The Distanced Adviser\": what are the steps, and the usual mistake?",
+   "answer": "1) Write the problem in one sentence and name the emotion and immediate urge. 2) Ask in third person: ‘What should Kevin do next, given what he knows and what he does not know?’ 3) List two perspectives, one possible change over time, and one compromise or next test; choose a reversible action. Usual mistake: Using third person as emotional suppression or pretending certainty, rather than widening perspective and acknowledging limits.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.3",
+   "name": "When emotions hit",
+   "link": "guides/05-long-game.html#m2-3",
+   "id": "05-2.3-r3",
+   "type": "recall",
+   "q": "Drill \"The Thought Record\": what are the steps, and the usual mistake?",
+   "answer": "1) Write situation, automatic thought, emotion/intensity, and the behavior that followed. 2) List evidence for and against the thought; identify a thinking error only if it clarifies the evidence. 3) Write a balanced, testable alternative and one behavioral experiment; review the result later. Usual mistake: Arguing with the thought abstractly instead of testing a concrete prediction or action.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.4",
+   "name": "Thinking straight",
+   "link": "guides/05-long-game.html#m2-4",
+   "id": "05-2.4-r1",
+   "type": "recall",
+   "q": "Drill \"Consider the Opposite\": what are the steps, and the usual mistake?",
+   "answer": "1) Write your current conclusion and confidence (0 to 100). 2) Generate the strongest case for the opposite, including one observation that would support it. 3) Decide whether the evidence changes confidence; preserve disagreement where the data remain ambiguous. Usual mistake: Treating the opposite as equally likely by default or generating a token straw man.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.4",
+   "name": "Thinking straight",
+   "link": "guides/05-long-game.html#m2-4",
+   "id": "05-2.4-r2",
+   "type": "recall",
+   "q": "Drill \"Outside-View Forecast\": what are the steps, and the usual mistake?",
+   "answer": "1) State the decision, reference class and measurable outcome; write a probability before searching for confirming detail. 2) Find an outside-view base rate and list two inside-view reasons your case differs. 3) Record the decision, probability, evidence and review date; update incrementally when evidence arrives. Usual mistake: Using an irrelevant average as a base rate or changing the probability after the outcome without recording why.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.4",
+   "name": "Thinking straight",
+   "link": "guides/05-long-game.html#m2-4",
+   "id": "05-2.4-r3",
+   "type": "recall",
+   "q": "Drill \"Plan Premortem\": what are the steps, and the usual mistake?",
+   "answer": "1) Imagine the plan is six weeks ahead and has failed; write three plausible reasons, including one outside your control. 2) For each reason, name an early warning signal and a low-cost mitigation. 3) Revise the plan and explicitly record residual uncertainty; do not turn the exercise into catastrophe rehearsal. Usual mistake: Listing dramatic disasters without specifying signals, probabilities or mitigations.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.5",
+   "name": "Motivation by design",
+   "link": "guides/05-long-game.html#m2-5",
+   "id": "05-2.5-r1",
+   "type": "recall",
+   "q": "Drill \"The Temptation Lock\": what are the steps, and the usual mistake?",
+   "answer": "1) Pair a delayed-benefit task with a genuinely enjoyable stimulus (e.g., one podcast reserved for a walk or admin block). 2) Make the enjoyable item unavailable outside the target behavior; pre-decide the rule. 3) Review weekly whether the bundle increased repetitions, then change the reward if it became stale. Usual mistake: Using an indulgence that is available everywhere, so the bundle loses its contingency.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.5",
+   "name": "Motivation by design",
+   "link": "guides/05-long-game.html#m2-5",
+   "id": "05-2.5-r2",
+   "type": "recall",
+   "q": "Drill \"The Commitment Gate\": what are the steps, and the usual mistake?",
+   "answer": "1) Choose one behavior with a clear pass/fail criterion and a realistic window. 2) Add an external commitment: tell a person, book a non-refundable slot, use a deposit contract, or lock the tempting alternative. 3) Specify the recovery rule before starting (what happens after a miss) and review outcomes, not intentions. Usual mistake: Choosing a punitive contract that creates avoidance, concealment or financial harm after an inevitable lapse.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.5",
+   "name": "Motivation by design",
+   "link": "guides/05-long-game.html#m2-5",
+   "id": "05-2.5-r3",
+   "type": "recall",
+   "q": "Drill \"Fresh-Start Restart\": what are the steps, and the usual mistake?",
+   "answer": "1) At Monday morning or another meaningful landmark, name one unfinished goal without self-criticism. 2) Write a single approach goal for the next seven days and schedule its first action. 3) Treat the landmark as a planning cue, not evidence that motivation has magically reset; check execution on Friday. Usual mistake: Making a grand resolution instead of attaching a small, scheduled action to the landmark.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.6",
+   "name": "Wellbeing that holds up",
+   "link": "guides/05-long-game.html#m2-6",
+   "id": "05-2.6-r1",
+   "type": "recall",
+   "q": "Drill \"Three-Beat Savor\": what are the steps, and the usual mistake?",
+   "answer": "1) Pause at a positive moment and name exactly what is happening (sensory detail, achievement or connection). 2) Stay with it for three slow breaths; notice what made it possible and let the feeling be present. 3) Optionally share the moment with someone; do not photograph or multitask through it. Usual mistake: Turning savoring into performance capture or demanding positive emotion when it is not present.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.6",
+   "name": "Wellbeing that holds up",
+   "link": "guides/05-long-game.html#m2-6",
+   "id": "05-2.6-r2",
+   "type": "recall",
+   "q": "Drill \"Specific Gratitude / Appreciation\": what are the steps, and the usual mistake?",
+   "answer": "1) Name one person, event or resource and the specific action or feature that helped. 2) Write why it mattered today and, where appropriate, send a concise thank-you. 3) Alternate gratitude with self-kindness; never use it to deny real problems or obligation. Usual mistake: Forcing a gratitude list during grief, coercion or injustice instead of acknowledging the negative reality.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.6",
+   "name": "Wellbeing that holds up",
+   "link": "guides/05-long-game.html#m2-6",
+   "id": "05-2.6-r3",
+   "type": "recall",
+   "q": "Drill \"One Deliberate Kindness\": what are the steps, and the usual mistake?",
+   "answer": "1) Choose one specific, feasible act that helps a person without violating your boundaries. 2) Do it anonymously or openly as appropriate; notice the recipient’s needs rather than your image. 3) Record whether the act was useful and whether the cost was sustainable. Usual mistake: Confusing kindness with people-pleasing, overgiving or an obligation to tolerate exploitation.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.6",
+   "name": "Wellbeing that holds up",
+   "link": "guides/05-long-game.html#m2-6",
+   "id": "05-2.6-r4",
+   "type": "recall",
+   "q": "Drill \"Green Walk\": what are the steps, and the usual mistake?",
+   "answer": "1) Walk or sit in accessible greenery; keep the route safe and phone out of hand. 2) Notice five sensory details, then let attention move naturally without forcing calm. 3) Return to work with one concrete next action; compare mood/stress before and after for two weeks. Usual mistake: Assuming a particular landscape or 20-minute dose is universally necessary or sufficient.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.6",
+   "name": "Wellbeing that holds up",
+   "link": "guides/05-long-game.html#m2-6",
+   "id": "05-2.6-r5",
+   "type": "recall",
+   "q": "Drill \"Connection Appointment\": what are the steps, and the usual mistake?",
+   "answer": "1) Choose one relationship that matters and schedule a real-time contact, preferably voice or face-to-face. 2) Ask one curious question, listen without fixing, and disclose one honest update. 3) Make the next contact specific; track reciprocity and boundaries, not contact count alone. Usual mistake: Counting likes or shallow messages as equivalent to supportive, reciprocal connection.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.6",
+   "name": "Wellbeing that holds up",
+   "link": "guides/05-long-game.html#m2-6",
+   "id": "05-2.6-r6",
+   "type": "recall",
+   "q": "Drill \"Best Possible Self, then Next Step\": what are the steps, and the usual mistake?",
+   "answer": "1) Imagine and write a concrete future in which you have worked toward valued goals in work, relationships and health. 2) Underline two behaviors that made that future possible and one obstacle likely to recur. 3) Convert one behavior into a scheduled if-then action for this week; keep the future conditional on effort, not fantasy. Usual mistake: Writing an unbounded fantasy without linking it to obstacles and controllable behavior.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.7",
+   "name": "Evening: close the loop",
+   "link": "guides/05-long-game.html#m2-7",
+   "id": "05-2.7-r1",
+   "type": "recall",
+   "q": "Drill \"The Evidence Ledger\": what are the steps, and the usual mistake?",
+   "answer": "1) Choose one observable target (minutes practiced, outreach sent, pages read, workout completed). 2) Record today's value, the target, and one obstacle; mark the trend without judging yourself. 3) Write the next smallest adjustment and the date you will check it. Usual mistake: Tracking vague intentions or collecting numbers without using them to change the next action.",
+   "label": "Drill"
+  },
+  {
+   "guide": "05",
+   "stop": "2.8",
+   "name": "What failed the test",
+   "link": "guides/05-long-game.html#m2-8",
+   "id": "05-2.8-q1",
+   "type": "quiz",
+   "q": "A friend sends you \"Insanity is doing the same thing over and over and expecting different results, Einstein.\" Best response?",
+   "options": [
+    "Share it, Einstein said it",
+    "Enjoy the idea, drop the attribution: there's no Einstein source for it",
+    "Reply with a Gandhi quote"
+   ],
+   "answer": 1,
+   "why": "The idea is fine as an idea. The attribution is invented, and attaching a famous name to it is how myths spread."
+  },
+  {
+   "guide": "05",
+   "stop": "2.8",
+   "name": "What failed the test",
+   "link": "guides/05-long-game.html#m2-8",
+   "id": "05-2.8-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"What failed the test\" in two or three lines, as you would to a client.",
+   "answer": "\"Nice idea. Not Einstein, though.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "05",
+   "stop": "3.1",
+   "name": "The guide, tested",
+   "link": "guides/05-long-game.html#m3-1",
+   "id": "05-3.1-q1",
+   "type": "quiz",
+   "q": "What do almost all twelve lives have in common?",
+   "options": [
+    "Exceptional talent from childhood",
+    "They wrote things down, reviewed them on a schedule, and tested them against reality",
+    "They woke up at 5 a.m.",
+    "They never doubted themselves"
+   ],
+   "answer": 1,
+   "why": "The pattern is externalised self-monitoring and testing, which is also the strongest finding in the modern research."
+  },
+  {
+   "guide": "05",
+   "stop": "3.1",
+   "name": "The guide, tested",
+   "link": "guides/05-long-game.html#m3-1",
+   "id": "05-3.1-q2",
+   "type": "quiz",
+   "q": "Which drill has the strongest evidence for turning intentions into action?",
+   "options": [
+    "Cold showers",
+    "An if-then plan tied to an existing cue",
+    "Visualising success",
+    "A 25-minute Pomodoro"
+   ],
+   "answer": 1,
+   "why": "Implementation intentions: d about 0.65 across 94 tests, confirmed by a 2024 synthesis of 642 tests."
+  },
+  {
+   "guide": "05",
+   "stop": "3.1",
+   "name": "The guide, tested",
+   "link": "guides/05-long-game.html#m3-1",
+   "id": "05-3.1-q3",
+   "type": "quiz",
+   "q": "You miss two days of your stack while travelling. What does the evidence say?",
+   "options": [
+    "The habit is broken, start over",
+    "Single misses barely matter; the rule is never miss twice, so restart today",
+    "Wait until next Monday for a fresh start"
+   ],
+   "answer": 1,
+   "why": "Lally et al. found a missed day didn't materially reset habit formation. Restart today; a fresh start on Monday is a bonus, not a requirement."
+  },
+  {
+   "guide": "05",
+   "stop": "3.1",
+   "name": "The guide, tested",
+   "link": "guides/05-long-game.html#m3-1",
+   "id": "05-3.1-q4",
+   "type": "quiz",
+   "q": "Why does this guide link every quote to a source?",
+   "options": [
+    "For decoration",
+    "Because famous quotes are often fake, and a practice is only useful if it's real",
+    "To make it longer"
+   ],
+   "answer": 1,
+   "why": "Three errors were caught during building alone. Checking is the habit the guide is teaching."
+  }
+ ]
+}

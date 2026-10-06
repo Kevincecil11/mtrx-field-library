@@ -1,0 +1,497 @@
+{
+ "guide": "00",
+ "title": "MTRX™ Field Series No. 00 · The learning operating system · Kevin Cecil",
+ "file": "00-learning-os.html",
+ "day": false,
+ "stops": [
+  "0.1",
+  "0.2",
+  "1.1",
+  "1.2",
+  "1.3",
+  "2.1",
+  "2.2",
+  "2.3",
+  "2.4",
+  "3.1",
+  "3.2",
+  "3.3",
+  "3.4",
+  "3.5",
+  "4.1",
+  "4.2",
+  "4.3",
+  "4.4",
+  "4.5",
+  "5.1",
+  "5.2",
+  "5.3",
+  "5.4",
+  "6.1"
+ ],
+ "cards": [
+  {
+   "guide": "00",
+   "stop": "0.1",
+   "name": "Why Field Guide 01 had gaps, and what changed",
+   "link": "guides/00-learning-os.html#m0-1",
+   "id": "00-0.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Why Field Guide 01 had gaps, and what changed\" in two or three lines, as you would to a client.",
+   "answer": "\"Coverage is the guide's job. Understanding is mine. Recall a week later is the only receipt.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "1.1",
+   "name": "Why reading everything still feels empty",
+   "link": "guides/00-learning-os.html#m1-1",
+   "id": "00-1.1-q1",
+   "type": "quiz",
+   "q": "You finish a stop, it felt crystal clear, and you rate yourself 5 out of 5 immediately. What is the problem?",
+   "options": [
+    "Nothing, clarity is the goal",
+    "Immediate ratings run on fluency, so they overestimate; rate later and test",
+    "You should reread it twice more",
+    "5 out of 5 is fine if the topic is easy"
+   ],
+   "answer": 1,
+   "why": "Ratings made right after reading track how smooth it felt. Ratings made after a delay track what you can actually retrieve. Delay the judgment, then test it."
+  },
+  {
+   "guide": "00",
+   "stop": "1.1",
+   "name": "Why reading everything still feels empty",
+   "link": "guides/00-learning-os.html#m1-1",
+   "id": "00-1.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Why reading everything still feels empty\" in two or three lines, as you would to a client.",
+   "answer": "\"I don't trust the feeling of getting it. I trust what I can explain tomorrow with the page closed.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "1.2",
+   "name": "The principles that survived the evidence",
+   "link": "guides/00-learning-os.html#m1-2",
+   "id": "00-1.2-q1",
+   "type": "quiz",
+   "q": "Productive failure (struggling before instruction) works best for which kind of learning?",
+   "options": [
+    "Step-by-step procedures",
+    "Conceptual understanding and transfer",
+    "Memorising vocabulary",
+    "Everything equally"
+   ],
+   "answer": 1,
+   "why": "Sinha and Kapur found a moderate gain for conceptual knowledge and transfer and roughly zero for procedural skill. Struggle first on \"why\", get shown on \"how\"."
+  },
+  {
+   "guide": "00",
+   "stop": "1.2",
+   "name": "The principles that survived the evidence",
+   "link": "guides/00-learning-os.html#m1-2",
+   "id": "00-1.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The principles that survived the evidence\" in two or three lines, as you would to a client.",
+   "answer": "\"Input is necessary. Output is where it sticks.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "1.3",
+   "name": "Myths to drop",
+   "link": "guides/00-learning-os.html#m1-3",
+   "id": "00-1.3-q1",
+   "type": "quiz",
+   "q": "Which of these is NOT supported by evidence?",
+   "options": [
+    "Spacing reviews over days",
+    "Matching lessons to your learning style",
+    "Testing yourself before rereading",
+    "Explaining a concept with the page closed"
+   ],
+   "answer": 1,
+   "why": "The style-matching claim needs a specific interaction effect that has not been shown. The other three are among the best-supported methods there are."
+  },
+  {
+   "guide": "00",
+   "stop": "1.3",
+   "name": "Myths to drop",
+   "link": "guides/00-learning-os.html#m1-3",
+   "id": "00-1.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Myths to drop\" in two or three lines, as you would to a client.",
+   "answer": "\"Learning styles are a preference, not a mechanism. I use words and diagrams, and I test myself.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "2.1",
+   "name": "Why you cannot just ask \"what am I missing?\"",
+   "link": "guides/00-learning-os.html#m2-1",
+   "id": "00-2.1-q1",
+   "type": "quiz",
+   "q": "What is the most reliable way to find concepts you have never heard of?",
+   "options": [
+    "Ask one expert to list everything",
+    "Read more of your favourite source",
+    "Overlay 5+ independent sources (syllabi, certifications, docs) and diff them against what you know",
+    "Wait until a client mentions it"
+   ],
+   "answer": 2,
+   "why": "Each source has blind spots, but independent sources have different ones. Where they overlap is the core; where one has something the others lack is a candidate gap to check."
+  },
+  {
+   "guide": "00",
+   "stop": "2.1",
+   "name": "Why you cannot just ask \"what am I missing?\"",
+   "link": "guides/00-learning-os.html#m2-1",
+   "id": "00-2.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Why you cannot just ask \"what am I missing?\"\" in two or three lines, as you would to a client.",
+   "answer": "\"Nobody can list what they don't know. So I don't list, I diff against syllabi.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "2.2",
+   "name": "The 12-step protocol",
+   "link": "guides/00-learning-os.html#m2-2",
+   "id": "00-2.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The 12-step protocol\" in two or three lines, as you would to a client.",
+   "answer": "\"I don't write a guide until the map has been diffed against five independent sources and hunted five ways for gaps.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "2.3",
+   "name": "The 13 lenses: questions for any field",
+   "link": "guides/00-learning-os.html#m2-3",
+   "id": "00-2.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The 13 lenses: questions for any field\" in two or three lines, as you would to a client.",
+   "answer": "\"Any field answers the same 13 questions. The ones I can't answer are my syllabus.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "2.4",
+   "name": "Sources, tiers and the T-shape",
+   "link": "guides/00-learning-os.html#m2-4",
+   "id": "00-2.4-q1",
+   "type": "quiz",
+   "q": "A concept appears in your guide's glossary but nowhere in the lessons. In the coverage audit it counts as:",
+   "options": [
+    "Covered",
+    "A gap candidate: mentioned, not explained",
+    "Out of scope",
+    "Mastered"
+   ],
+   "answer": 1,
+   "why": "Glossary-only means you might recognise the word but have never seen the mechanism. That is exactly the fluency trap. The audit only counts body-text explanations."
+  },
+  {
+   "guide": "00",
+   "stop": "2.4",
+   "name": "Sources, tiers and the T-shape",
+   "link": "guides/00-learning-os.html#m2-4",
+   "id": "00-2.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Sources, tiers and the T-shape\" in two or three lines, as you would to a client.",
+   "answer": "\"Wide on the map, deep on the spine that pays.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "3.1",
+   "name": "The daily 20",
+   "link": "guides/00-learning-os.html#m3-1",
+   "id": "00-3.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The daily 20\" in two or three lines, as you would to a client.",
+   "answer": "\"Eight minutes in, twelve minutes out. That ratio is the whole trick.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "3.2",
+   "name": "Week, month, quarter",
+   "link": "guides/00-learning-os.html#m3-2",
+   "id": "00-3.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Week, month, quarter\" in two or three lines, as you would to a client.",
+   "answer": "\"The day keeps it alive. The week makes me teach it. The month tells me the truth.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "3.3",
+   "name": "Know that you know",
+   "link": "guides/00-learning-os.html#m3-3",
+   "id": "00-3.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Know that you know\" in two or three lines, as you would to a client.",
+   "answer": "\"I know which of my opinions are earned and which are borrowed.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "3.4",
+   "name": "The Try-it rule",
+   "link": "guides/00-learning-os.html#m3-4",
+   "id": "00-3.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The Try-it rule\" in two or three lines, as you would to a client.",
+   "answer": "\"Whenever a client says 'remember me', I hear cookies, sessions and consent.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "3.5",
+   "name": "Your weak-spot log",
+   "link": "guides/00-learning-os.html#m3-5",
+   "id": "00-3.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Your weak-spot log\" in two or three lines, as you would to a client.",
+   "answer": "\"My misses are my syllabus.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "4.1",
+   "name": "Your two quotes, unlearned",
+   "link": "guides/00-learning-os.html#m4-1",
+   "id": "00-4.1-q1",
+   "type": "quiz",
+   "q": "Who actually wrote the phrase \"learn, unlearn and relearn\"?",
+   "options": [
+    "Vinod Khosla",
+    "Charles Darwin",
+    "Alvin Toffler, in Future Shock (1970)",
+    "Albert Einstein"
+   ],
+   "answer": 2,
+   "why": "Toffler wrote the phrase; the \"illiterate\" part is psychologist Herbert Gerjuoy, quoted by Toffler. The polished one-liner is a later blend."
+  },
+  {
+   "guide": "00",
+   "stop": "4.1",
+   "name": "Your two quotes, unlearned",
+   "link": "guides/00-learning-os.html#m4-1",
+   "id": "00-4.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Your two quotes, unlearned\" in two or three lines, as you would to a client.",
+   "answer": "\"Toffler said learn, unlearn, relearn. Darwin's real trick was writing down what contradicted him.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "4.2",
+   "name": "Curiosity, the ignition",
+   "link": "guides/00-learning-os.html#m4-2",
+   "id": "00-4.2-q1",
+   "type": "quiz",
+   "q": "Which design best uses curiosity in a lesson?",
+   "options": [
+    "Open with a funny unrelated story",
+    "Pose a specific puzzle, ask for a guess with confidence, then explain the mechanism promptly",
+    "Hide the answer until the very end of the guide",
+    "Add lots of surprising facts throughout"
+   ],
+   "answer": 1,
+   "why": "A visible, solvable gap plus a committed guess, closed quickly by the core idea. Unrelated stories and scattered facts are seductive details; hiding answers is clickbait."
+  },
+  {
+   "guide": "00",
+   "stop": "4.2",
+   "name": "Curiosity, the ignition",
+   "link": "guides/00-learning-os.html#m4-2",
+   "id": "00-4.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Curiosity, the ignition\" in two or three lines, as you would to a client.",
+   "answer": "\"Curiosity is the ignition. Retrieval is the engine.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "4.3",
+   "name": "How to unlearn",
+   "link": "guides/00-learning-os.html#m4-3",
+   "id": "00-4.3-q1",
+   "type": "quiz",
+   "q": "You correct a belief by noting \"X is false\" but give no alternative explanation. What usually happens?",
+   "options": [
+    "The belief disappears",
+    "The old belief keeps influencing you, because nothing replaced it",
+    "You forget both",
+    "You become more open-minded"
+   ],
+   "answer": 1,
+   "why": "The continued influence effect: a correction without a replacement model leaves a gap, and the old explanation keeps filling it."
+  },
+  {
+   "guide": "00",
+   "stop": "4.3",
+   "name": "How to unlearn",
+   "link": "guides/00-learning-os.html#m4-3",
+   "id": "00-4.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"How to unlearn\" in two or three lines, as you would to a client.",
+   "answer": "\"What would make me drop this belief? If I can't answer, I'm not holding it, it's holding me.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "4.4",
+   "name": "Any age, honestly",
+   "link": "guides/00-learning-os.html#m4-4",
+   "id": "00-4.4-q1",
+   "type": "quiz",
+   "q": "Which kind of activity improved older adults' memory in the Synapse Project?",
+   "options": [
+    "Easy, familiar social activities",
+    "Brain-training games",
+    "Sustained practice at demanding new skills",
+    "Reading about memory"
+   ],
+   "answer": 2,
+   "why": "Novel, demanding, sustained practice. The lesson for any age: keep picking things that are hard and new for you, and stick with them for months."
+  },
+  {
+   "guide": "00",
+   "stop": "4.4",
+   "name": "Any age, honestly",
+   "link": "guides/00-learning-os.html#m4-4",
+   "id": "00-4.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Any age, honestly\" in two or three lines, as you would to a client.",
+   "answer": "\"Speed peaks early. Knowledge compounds. I'm building the part that compounds.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "4.5",
+   "name": "Mental strength that actually works",
+   "link": "guides/00-learning-os.html#m4-5",
+   "id": "00-4.5-q1",
+   "type": "quiz",
+   "q": "Which tactic has the strongest evidence for turning a learning goal into daily action?",
+   "options": [
+    "Repeating affirmations",
+    "Waiting for motivation",
+    "A specific if-then plan tied to a daily cue",
+    "Relying on willpower reserves"
+   ],
+   "answer": 2,
+   "why": "Implementation intentions: about d = 0.65 across 94 tests. They hand the decision to a cue, so you don't have to rely on willpower or mood."
+  },
+  {
+   "guide": "00",
+   "stop": "4.5",
+   "name": "Mental strength that actually works",
+   "link": "guides/00-learning-os.html#m4-5",
+   "id": "00-4.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Mental strength that actually works\" in two or three lines, as you would to a client.",
+   "answer": "\"I don't rely on willpower. I rely on a cue, a plan, and never missing twice.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "5.1",
+   "name": "How I think when I build a guide",
+   "link": "guides/00-learning-os.html#m5-1",
+   "id": "00-5.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"How I think when I build a guide\" in two or three lines, as you would to a client.",
+   "answer": "\"I don't trust my sense of completeness. I measure it.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "5.2",
+   "name": "Where I can still fail",
+   "link": "guides/00-learning-os.html#m5-2",
+   "id": "00-5.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Where I can still fail\" in two or three lines, as you would to a client.",
+   "answer": "\"The system catches errors. It doesn't pretend there are none.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "5.3",
+   "name": "The deal",
+   "link": "guides/00-learning-os.html#m5-3",
+   "id": "00-5.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The deal\" in two or three lines, as you would to a client.",
+   "answer": "\"The guide gets better every month because my mistakes feed it.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "5.4",
+   "name": "The road ahead",
+   "link": "guides/00-learning-os.html#m5-4",
+   "id": "00-5.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The road ahead\" in two or three lines, as you would to a client.",
+   "answer": "\"One field at a time, mapped before it's taught.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "00",
+   "stop": "6.1",
+   "name": "The system, tested",
+   "link": "guides/00-learning-os.html#m6-1",
+   "id": "00-6.1-q1",
+   "type": "quiz",
+   "q": "The tech guide audit shows 320 of 320 must-know concepts covered. What does that prove?",
+   "options": [
+    "You now understand all of tech",
+    "Every must-know concept from 14 sources is explained in the guide, nothing more",
+    "There are no gaps left anywhere",
+    "The quizzes are hard enough"
+   ],
+   "answer": 1,
+   "why": "Coverage is about the guide. Understanding is tested by your delayed recall. Unknown unknowns shrink, they never hit zero."
+  },
+  {
+   "guide": "00",
+   "stop": "6.1",
+   "name": "The system, tested",
+   "link": "guides/00-learning-os.html#m6-1",
+   "id": "00-6.1-q2",
+   "type": "quiz",
+   "q": "Why is the weekly teach-back done with no notes?",
+   "options": [
+    "It is faster",
+    "Retrieval is the learning, and gaps only show when nothing is in front of you",
+    "Notes are banned in the system",
+    "To practise public speaking"
+   ],
+   "answer": 1,
+   "why": "With notes you are reading aloud, which is fluency again. Without them, every stumble marks a missing link."
+  },
+  {
+   "guide": "00",
+   "stop": "6.1",
+   "name": "The system, tested",
+   "link": "guides/00-learning-os.html#m6-1",
+   "id": "00-6.1-q3",
+   "type": "quiz",
+   "q": "A concept keeps coming back in your weak-spot log as \"knew it, could not apply it\". Best fix?",
+   "options": [
+    "Reread the stop",
+    "Add a new-surface case, a non-example and a cue, then apply it to a real client",
+    "Make a prettier flashcard",
+    "Move on, it will come"
+   ],
+   "answer": 1,
+   "why": "That is inert knowledge. The fix is transfer practice, not more input."
+  }
+ ]
+}
