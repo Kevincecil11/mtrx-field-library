@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MTRX™ Field Library · Kevin Cecil</title>
+<meta name="description" content="Kevin Cecil's MTRX Field Series: every guide, where you are in each, and what to read next.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@500;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&display=swap">
+<link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap">
+<style>
+:root{--canvas:#ECEAE4;--paper:#F6F4EF;--ink:#151515;--graphite:#55586A;--steel:#BCBFCC;--rule:rgba(21,21,21,.12);--mars:#ED691D;--mars-ink:#B3460D;--moss:#697132;--gun:#2F3E46;--jane:#F4E3B2;--red:#A44A3F;
+--display:"Tanker","Anton",Impact,sans-serif;--sans:"Nunito Sans",system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--canvas);color:var(--ink);font:400 17px/1.6 var(--sans)}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(18px,4vw,44px)}
+.k{font:700 13px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mars-ink)}
+header{padding:56px 0 28px}h1{font:400 clamp(60px,10vw,132px)/.86 var(--display);text-transform:uppercase;margin:14px 0 18px}h1 span{color:var(--mars)}
+.lede{font-size:21px;max-width:40ch;margin:0}
+.next{margin:34px 0 8px;background:var(--ink);color:var(--paper);border-radius:22px;padding:24px clamp(18px,3vw,30px);display:grid;gap:18px;grid-template-columns:1fr 1fr}
+.next .k{color:var(--mars)}.next h2{font:400 clamp(34px,4.6vw,54px)/.95 var(--display);text-transform:uppercase;margin:8px 0 8px}.next p{margin:0 0 14px;color:#DCD8CE}
+.btn{display:inline-flex;gap:8px;align-items:center;border:0;border-radius:999px;background:var(--mars);color:var(--ink);font:800 16px var(--sans);padding:12px 20px;text-decoration:none;cursor:pointer}
+.btn.g{background:transparent;color:inherit;box-shadow:inset 0 0 0 2px currentColor}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;margin:28px 0}
+.card{--a:var(--ink);position:relative;text-align:left;background:var(--paper);border:0;border-radius:20px;padding:20px 22px 18px;font:inherit;color:inherit;cursor:pointer;box-shadow:inset 0 6px 0 var(--a);transition:transform .15s}
+.card:hover{transform:translateY(-2px)}.card.on{box-shadow:inset 0 6px 0 var(--a),0 0 0 3px var(--a)}
+.card.dev{cursor:default;opacity:.72}.card.dev:hover{transform:none}
+.no{font:400 64px/1 var(--display);color:var(--a)}.card h3{font:800 22px/1.25 var(--sans);margin:6px 0 6px}.card p{margin:0 0 12px;font-size:16px;color:#2B2B2B}
+.meta{font:500 13px/1.4 var(--mono);color:var(--graphite)}.chip{display:inline-block;font:700 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:999px;background:var(--canvas);margin-left:8px}
+.bar{height:8px;background:var(--canvas);border-radius:99px;overflow:hidden;margin:14px 0 6px}.bar i{display:block;height:100%;width:0;background:var(--a);transition:width .5s}
+.det{background:var(--paper);border-radius:22px;padding:24px clamp(18px,3vw,30px);margin:0 0 28px;display:none}.det.on{display:block}
+.det h2{font:400 clamp(40px,5vw,64px)/.92 var(--display);text-transform:uppercase;margin:6px 0 10px}
+.parts{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin:18px 0}
+.pt{background:var(--canvas);border-radius:14px;padding:12px 14px}.pt b{display:block;font:800 16px/1.3 var(--sans)}.pt span{font:500 13px var(--mono);color:var(--graphite)}
+.pt .bar{margin:8px 0 0;height:6px;background:#fff}.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+label.sd{font:700 14px var(--mono);display:flex;gap:10px;align-items:center}input[type=date]{font:600 15px var(--sans);padding:8px 10px;border-radius:10px;border:2px solid var(--steel);background:var(--canvas)}
+.tg{background:var(--jane);border-radius:22px;padding:24px clamp(18px,3vw,30px);margin:8px 0 28px}.tg h2{font:400 clamp(34px,4.4vw,52px)/.95 var(--display);text-transform:uppercase;margin:6px 0 10px}
+.lad{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.lad span{font:700 13px var(--mono);background:var(--ink);color:var(--paper);padding:7px 11px;border-radius:999px}
+.how{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin:18px 0 0}.how div{background:rgba(255,255,255,.55);border-radius:14px;padding:14px 16px}.how b{display:block;font:800 16px var(--sans)}
+footer{padding:28px 0 60px;font:500 14px/1.6 var(--mono);color:var(--graphite)}
+@media (max-width:760px){.next{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="k">MTRX™ Field Series · Library</div>
+  <h1>The field <span>library</span></h1>
+  <p class="lede">Every guide in one place. Pick one to see where you are, and let the review bot bring the hard parts back before you forget them.</p>
+  <section class="next" id="next" aria-live="polite"></section>
+</header>
+<main>
+  <div class="k">The guides</div>
+  <div class="grid" id="grid"></div>
+  <section class="det" id="det" aria-live="polite"></section>
+  <section class="tg">
+    <div class="k" style="color:var(--ink)">Spaced review · Telegram</div>
+    <h2>Read once. Remember for years.</h2>
+    <p style="max-width:62ch;margin:0">Every stop you finish gets its own review clock. On the days something is due, <a href="https://t.me/makingmesmart_bot" target="_blank" rel="noopener"><b>@makingmesmart_bot</b></a> sends you a short quiz around 8 am. Right answers push the next review further out; misses come back tomorrow.</p>
+    <div class="lad"><span>+1 day</span><span>+3 days</span><span>+1 week</span><span>+3 weeks</span><span>+2 months</span><span>+6 months</span></div>
+    <div class="how">
+      <div><b>1 · Read</b>Mark each stop done inside the guide, as usual.</div>
+      <div><b>2 · Send</b>Tap "Send progress" in the guide. It opens the bot with your finished stops.</div>
+      <div><b>3 · Review</b>Answer the quiz in Telegram. A free GitHub automation does the scheduling.</div>
+    </div>
+    <p class="meta" id="tgs" style="margin:14px 0 0">Status: being wired up. First reviews from Fri 9 Oct 2026.</p>
+  </section>
+</main>
+<footer>Made for Kevin Cecil · MTRX™ Digital. Progress is saved in this browser only. Context for AI tools and the design system: <a href="https://github.com/Kevincecil11/mtrx-field-library/blob/main/AGENTS.md">AGENTS.md</a>.</footer>
+</div>
+<script>
+var G=[{"n":"00","t":"The learning operating system","sub":"How you learn anything for years, and how every guide gets gap-proofed before it reaches you.","time":"About 70 min · read once, run forever","file":"00-learning-os.html","key":"mtrx-lab-v1","acc":"ink","st":"ready","day":false,"parts":[["Start here",["0.1","0.2"]],["What actually works",["1.1","1.2","1.3"]],["The gap-proof map",["2.1","2.2","2.3","2.4"]],["Your rhythm",["3.1","3.2","3.3","3.4","3.5"]],["Learn, unlearn, relearn",["4.1","4.2","4.3","4.4","4.5"]],["My side of the deal",["5.1","5.2","5.3","5.4"]],["Field check",["6.1"]]]},{"n":"01","t":"The tech wild","sub":"Software, stacks and AI. The 20% that runs every room you walk into.","time":"About 4 hours · 5 parts · daily 20 min","file":"01-tech-wild.html","key":"mtrx-fieldguide-v1","acc":"mars","st":"ready","day":false,"parts":[["Start here",["0.1","0.2","0.3"]],["The business of software",["1.1","1.2","1.3","1.4","1.5","1.6"]],["How software actually works",["2.1","2.2","2.3","2.4","2.5","2.6","2.7","2.8","2.9","2.10","2.11","2.12","2.13","2.14"]],["AI, from zero to agents",["3.1","3.2","3.3","3.4","3.5","3.6","3.7","3.8","3.9","3.10","3.11","3.12"]],["The working web",["4.1","4.2","4.3","4.4","4.5","4.6","4.7","4.8","4.9","4.10","4.11","4.12","4.13","4.14","4.15","4.16","4.17","4.18","4.19","4.20","4.21","4.22","4.23"]],["The boardroom",["5.1","5.2","5.3"]]]},{"n":"02","t":"The mind","sub":"Psychology and philosophy, 20 minutes a day. Talk like an insider in 28 days.","time":"Weeks 1 to 2 built · Weeks 3 to 4 next","file":"02-mind.html","key":"mtrx-mind-v1","acc":"moss","st":"partial","day":true,"parts":[["How to think",["1","2","3","4","5","6","7"]],["What's real, and how do we know?",["8","9","10","11","12","13","14"]],["Self, will and the crowd",[]],["How to live",[]]]},{"n":"03","t":"Cons and cults","sub":"How cons, cults and power plays really work. Defence first, then honest influence.","time":"In development","file":"","key":null,"acc":"red","st":"dev","day":false,"parts":[]},{"n":"04","t":"Sales and persuasion","sub":"The honest levers that close deals: clarity, proof, real scarcity, real social proof.","time":"In development","file":"","key":null,"acc":"jane","st":"dev","day":false,"parts":[]},{"n":"05","t":"The long game","sub":"Twelve lives as lab notes, and a daily toolkit that survived the evidence.","time":"About 75 min · 12 weeks to run","file":"05-long-game.html","key":"mtrx-long-v1","acc":"gun","st":"ready","day":false,"parts":[["Start here",["0.1","0.2"]],["Lives as lab notes",["1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9","1.10","1.11","1.12"]],["The daily toolkit",["2.1","2.2","2.3","2.4","2.5","2.6","2.7","2.8"]],["Field check",["3.1"]]]}];
+var A={ink:'#151515',mars:'#ED691D',moss:'#697132',gun:'#2F3E46',red:'#A44A3F',jane:'#C9A84A'};
+var LK='mtrx-library-v1',L={};try{L=JSON.parse(localStorage.getItem(LK))||{}}catch(e){}
+if(!L.start)L.start={'01':'2026-10-08'};
+function sv(){try{localStorage.setItem(LK,JSON.stringify(L))}catch(e){}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function done(g){if(!g.key)return{};try{return(JSON.parse(localStorage.getItem(g.key))||{}).done||{}}catch(e){return{}}}
+function ids(g){return g.parts.reduce(function(a,p){return a.concat(p[1])},[])}
+function pct(g){var d=done(g),x=ids(g);if(!x.length)return 0;return Math.round(100*x.filter(function(i){return d[i]}).length/x.length)}
+function nextStop(g){var d=done(g),x=ids(g);for(var i=0;i<x.length;i++)if(!d[x[i]])return x[i];return null}
+function href(g,id){return 'guides/'+g.file+(id?'#'+(g.day?'d'+id:'m'+id.replace('.','-')):'')}
+function label(g,id){return g.day?'Day '+id:'Stop '+id}
+function daysSince(s){if(!s)return null;var t=new Date(s+'T00:00:00'),n=new Date();n.setHours(0,0,0,0);return Math.round((n-t)/864e5)}
+function byN(n){return G.filter(function(g){return g.n===n})[0]}
+function grid(){var w=document.getElementById('grid');w.innerHTML='';G.forEach(function(g){var b=document.createElement('button');b.type='button';b.className='card'+(g.st==='dev'?' dev':'');b.style.setProperty('--a',A[g.acc]);b.dataset.n=g.n;
+ var p=pct(g),chip=g.st==='dev'?'In development':g.st==='partial'?'Partly built':p===100?'Finished':p>0?p+'% done':'Not started';
+ b.innerHTML='<div class="no">No. '+g.n+'</div><h3>'+esc(g.t)+'<span class="chip">'+chip+'</span></h3><p>'+esc(g.sub)+'</p><div class="meta">'+esc(g.time)+'</div>'+(g.st==='dev'?'':'<div class="bar"><i style="width:'+p+'%"></i></div>');
+ if(g.st!=='dev')b.addEventListener('click',function(){show(g.n,true)});w.appendChild(b);});}
+function show(n,scroll){var g=byN(n),d=document.getElementById('det'),dn=done(g),nx=nextStop(g),ds=daysSince((L.start||{})[n]);L.sel=n;sv();
+ [].forEach.call(document.querySelectorAll('.card'),function(c){c.classList.toggle('on',c.dataset.n===n)});
+ var parts=g.parts.map(function(p){var t=p[1].length,k=p[1].filter(function(i){return dn[i]}).length;return '<div class="pt"><b>'+esc(p[0])+'</b><span>'+(t?k+' of '+t+(g.day?' days':' stops'):'Coming in a later drop')+'</span>'+(t?'<div class="bar"><i style="width:'+Math.round(100*k/t)+'%;background:'+A[g.acc]+'"></i></div>':'')+'</div>'}).join('');
+ d.innerHTML='<div class="k">No. '+g.n+' · '+esc(g.time)+'</div><h2>'+esc(g.t)+'</h2><p style="max-width:62ch">'+esc(g.sub)+'</p><div class="parts">'+parts+'</div><div class="row"><a class="btn" href="'+href(g,nx)+'">'+(pct(g)===0?'Start reading':nx?'Continue at '+label(g,nx):'Open the guide')+' ↓</a><a class="btn g" href="'+href(g)+'">Open from the cover</a><label class="sd">My start date <input type="date" id="sd" value="'+((L.start||{})[n]||'')+'"></label>'+(ds!==null&&ds>=0?'<span class="meta">Day '+(ds+1)+' of this guide</span>':'')+'</div>';
+ d.classList.add('on');document.getElementById('sd').addEventListener('change',function(e){L.start=L.start||{};L.start[n]=e.target.value;sv();show(n);next();});
+ if(scroll)d.scrollIntoView({behavior:'smooth',block:'start'});}
+function next(){var g00=byN('00'),g01=byN('01'),g02=byN('02'),g05=byN('05'),main,why;
+ if(pct(g00)<100){main=g00;why='Read this first. It is the operating system the other guides run on, and it sets up your daily 20, weekly teach-back and monthly cold test.';}
+ else if(pct(g01)<100){main=g01;why='Your main track: one stop a day in the daily 20. The review bot quizzes you on what you finish.';}
+ else{main=g02;why='Next main track: one day at a time, Weeks 1 to 2 are ready.';}
+ var s=daysSince((L.start||{})[main.n]),st=(s!==null&&s<0)?' Starts '+new Date(L.start[main.n]+'T00:00:00').toDateString().slice(0,10)+'.':'',nx=nextStop(main);
+ var side=pct(g05)<100?'<p><b>Alongside it:</b> No. 05, one life a week plus your three-drill daily stack (about 9 min).</p><a class="btn g" href="'+href(g05,nextStop(g05))+'">Open No. 05</a>':'';
+ document.getElementById('next').innerHTML='<div><div class="k">Read next</div><h2>No. '+main.n+' · '+esc(main.t)+'</h2><p>'+why+st+'</p><a class="btn" href="'+href(main,nx)+'">'+(nx&&pct(main)>0?'Continue at '+label(main,nx):'Start No. '+main.n)+' ↓</a></div><div>'+side+'</div>';}
+grid();next();show(L.sel&&byN(L.sel)&&byN(L.sel).st!=='dev'?L.sel:'00',false);
+window.addEventListener('pageshow',function(){grid();next();if(L.sel)show(L.sel,false)});
+</script>
+</body>
+</html>
