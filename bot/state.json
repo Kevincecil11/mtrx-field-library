@@ -4,15 +4,9 @@
  "hour": 8,
  "last_push": null,
  "log": [],
- "offset": 0,
+ "offset": 806112923,
  "paused": false,
- "polls": {
-  "6208246317219578738": {
-   "card": "01-1.1-q1",
-   "kind": "test",
-   "sent": "2026-10-07"
-  }
- },
+ "polls": {},
  "today": null,
  "v": 1
 }
