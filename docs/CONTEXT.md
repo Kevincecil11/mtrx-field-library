@@ -47,7 +47,7 @@ Last updated 7 Oct 2026. Update this file whenever a decision is made or a guide
 ## Known issues and housekeeping
 
 - 6 to 7 Oct 2026: both workflows were invalid YAML (colon inside a `run:` line), so every run failed instantly; fixed, see AGENTS.md rule 11.
-- 7 Oct 2026, 00:10 IST: the self-test found neither a repository secret nor a variable named `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID`. Kevin had added them somewhere else (likely the `github-pages` environment, Codespaces or Dependabot). Fix: re-add as repository secrets, then run Bot self-test.
+- 7 Oct 2026: the first secrets attempt landed outside repository secrets and never reached the workflow. Re-added as repository secrets; live self-test green at 00:19 IST (getMe, deleteWebhook, setMyCommands with 9 commands, banks 35/106/100/51 cards, sendMessage, sendPoll). The bot is live.
 - The raw research files from the Oct 2026 sessions (lives.json, toolkit.json, the 380-concept inventory, curiosity research) were not preserved; their content lives in the guides. Save new research in `research/`.
 - The guides were saved from a browser and carry two harmless extension style blocks ("fusion-selection-styles" and Open Sans @font-face). Drop them on the next rebuild.
 - Kit source files (kit-render.py, kit-build.py and others) are attached to the ClickUp skill; `tools/extract_kit.py` recovers the CSS and JS from any built guide.
@@ -55,7 +55,7 @@ Last updated 7 Oct 2026. Update this file whenever a decision is made or a guide
 
 ## Next up
 
-1. Bot live: secrets as repository secrets, /start sent, self-test green, before Kevin starts No. 01 on Thu 8 Oct 2026.
+1. Kevin starts No. 01 on Thu 8 Oct 2026; first reviews Fri 9 Oct. Watch the first scheduled runs and the 8 am push.
 2. Better banks: 3 cards per stop (add quick checks inside the guides).
 3. No. 02 Weeks 3 to 4.
 4. No. 03 cons and cults.
