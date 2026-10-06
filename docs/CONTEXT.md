@@ -1,6 +1,6 @@
 # Context: what a new chat needs to know
 
-Last updated 6 Oct 2026. Update this file whenever a decision is made or a guide ships.
+Last updated 7 Oct 2026. Update this file whenever a decision is made or a guide ships.
 
 ## Kevin
 
@@ -9,6 +9,7 @@ Last updated 6 Oct 2026. Update this file whenever a decision is made or a guide
 - Learns action-first, by pattern recognition. Lifelong learner who wants to be curious, mentally strong, and able to learn, unlearn and relearn.
 - Standard: zero gaps, primary-source verification, research-backed methods, hands-on tasks, explain the thinking, iterate toward perfection.
 - Preferences: no em or en dashes; short, sharp, opinionated writing; simple step-by-step explanations; everything free; built for one user, him.
+- Reads on both desktop and iPad.
 
 ## The series so far
 
@@ -26,9 +27,12 @@ Last updated 6 Oct 2026. Update this file whenever a decision is made or a guide
 - Guides are standalone HTML, never ClickUp artifacts. Since 6 Oct 2026 they are hosted on GitHub Pages from this repo.
 - Spaced review runs on real dates through a Telegram bot on GitHub Actions. Free, no n8n, no database: state is `bot/state.json` (6 Oct 2026).
 - Reviews are per stop, not per percentage. Ladder +1, +3, +7, +21, +60, +180 days; one message a day; cap 15.
+- Bot cadence: every 10 minutes (Kevin, 7 Oct 2026; was 15). Hourly would also work; Telegram keeps unread replies 24 h.
+- Read mode in every guide via the shared add-on: ¶ button or R hides all floating controls; Esc or ✕ exits (Kevin asked, 7 Oct 2026).
+- Two devices: sync through the bot's public `bot/state.json`; guides and library pull it on open. Notes and highlights stay per device (7 Oct 2026).
 - Considered, not started: an applied-AI deep-dive guide (LLM internals at gut level, RAG, agents, evals, voice pipelines, cost and latency, India's DPDP Act for patient data).
 - Parked: turning the review bot into a SaaS for course creators. Personal use only for now.
-- Offered, not yet chosen: a ClickUp setup for the daily 20, a caller-training one-pager from No. 01 Part IV, monthly repair drops from the weak-spot export, per-concept proficiency levels.
+- Offered, not yet chosen: a ClickUp setup for the daily 20, a caller-training one-pager from No. 01 Part IV, monthly repair drops from the weak-spot export, per-concept proficiency levels, notes and highlights sync.
 
 ## Verified corrections (use these, never the popular versions)
 
@@ -42,6 +46,8 @@ Last updated 6 Oct 2026. Update this file whenever a decision is made or a guide
 
 ## Known issues and housekeeping
 
+- 6 to 7 Oct 2026: both workflows were invalid YAML (colon inside a `run:` line), so every run failed instantly; fixed, see AGENTS.md rule 11.
+- 7 Oct 2026, 00:10 IST: the self-test found neither a repository secret nor a variable named `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID`. Kevin had added them somewhere else (likely the `github-pages` environment, Codespaces or Dependabot). Fix: re-add as repository secrets, then run Bot self-test.
 - The raw research files from the Oct 2026 sessions (lives.json, toolkit.json, the 380-concept inventory, curiosity research) were not preserved; their content lives in the guides. Save new research in `research/`.
 - The guides were saved from a browser and carry two harmless extension style blocks ("fusion-selection-styles" and Open Sans @font-face). Drop them on the next rebuild.
 - Kit source files (kit-render.py, kit-build.py and others) are attached to the ClickUp skill; `tools/extract_kit.py` recovers the CSS and JS from any built guide.
@@ -49,7 +55,7 @@ Last updated 6 Oct 2026. Update this file whenever a decision is made or a guide
 
 ## Next up
 
-1. Bot live: secrets added, self-test green, before Kevin starts No. 01 on Thu 8 Oct 2026.
+1. Bot live: secrets as repository secrets, /start sent, self-test green, before Kevin starts No. 01 on Thu 8 Oct 2026.
 2. Better banks: 3 cards per stop (add quick checks inside the guides).
 3. No. 02 Weeks 3 to 4.
 4. No. 03 cons and cults.

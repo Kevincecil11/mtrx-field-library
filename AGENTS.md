@@ -15,24 +15,25 @@ Read this file first. It is the single entry point for any IDE, coding agent or 
 - Live site (GitHub Pages): https://kevincecil11.github.io/mtrx-field-library/
 - Goal of every guide: think, talk and work like an insider, not pass exams. About 20 minutes a day, evidence-graded, zero known gaps.
 - Personal project, one user. Everything stays free: GitHub Pages, GitHub Actions, Telegram Bot API. No paid services, no n8n, no database server.
+- Kevin reads on desktop and iPad. Progress is per browser; the bot's `bot/state.json` is the shared copy that syncs devices.
 
 ## Repo map
 
 | Path | What it is |
 |---|---|
-| `index.html` | Library home: guide cards, per-guide progress (read from each guide's localStorage key), "Read next", start dates. Guide list is `var G` |
+| `index.html` | Library home: guide cards, per-guide progress (read from each guide's localStorage key), "Read next", start dates. Guide list is `var G` (also exposed as `window.MTRX_GUIDES` for sync) |
 | `guides/NN-slug.html` | One self-contained guide each (CSS, JS, base64 images inline) |
-| `assets/mtrx-review.js` | Shared add-on loaded by every guide: "Library" link and "Send progress" to Telegram. Change shared behaviour here, not in the guides |
+| `assets/mtrx-review.js` | Shared add-on loaded by every guide and the library: top bar (Library, Send progress, Read mode), read mode, and device sync from the bot's `bot/state.json`. Change shared behaviour here, not in the guides |
 | `bot/bot.py` | Telegram spaced-review bot (stdlib Python) |
 | `bot/questions/NN.json` | Question banks, generated from the guides. Never edit by hand |
-| `bot/state.json` | The bot's memory (progress, schedule, scores). Written by the bot only |
-| `bot/selftest.json` | Last live self-test report |
-| `.github/workflows/` | `review-bot.yml` (every 15 min) and `bot-selftest.yml` |
+| `bot/state.json` | The bot's memory (progress, schedule, scores). Written by the bot only. Public, read by the guides for sync |
+| `bot/selftest.json`, `bot/selftest-sources.json` | Last live self-test report, and where the two Telegram settings were found (true or false only) |
+| `.github/workflows/` | `review-bot.yml` (every 10 min) and `bot-selftest.yml` |
 | `tools/` | `build_questions.py`, `check_guide.py` (lint), `extract_kit.py` (design kit from a guide), `commit_state.sh` |
 | `tests/test_bot.py` | Offline simulation of the bot with a fake Telegram |
 | `docs/skill/` | The full MTRX Field Guides skill and its six sub-skills |
 | `docs/CONTEXT.md` | Kevin, decisions log, verified corrections, roadmap |
-| `docs/ARCHITECTURE.md` | How the review bot works |
+| `docs/ARCHITECTURE.md` | How the review bot and device sync work |
 | `research/` | Raw research per guide (sources, inventories) |
 
 ## The guides
@@ -46,7 +47,7 @@ Read this file first. It is the single entry point for any IDE, coding agent or 
 | 04 | Sales and persuasion | not yet | | In development |
 | 05 | The long game: lives as lab notes, daily toolkit | `guides/05-long-game.html` | `mtrx-long-v1` | Ready |
 
-Progress shape: `localStorage[key] = {"done": {"1.1": true}}` (No. 02 also stores `g`, `ex`, `field`). Stop 1.1 is anchored at `#m1-1`; No. 02 days at `#d1`.
+Progress shape: `localStorage[key] = {"done": {"1.1": true}}` (No. 02 also stores `g`, `ex`, `field`). Every new guide must use this shape and mark stops with `<button class="done" data-mod="ID">` that toggles `is-done`: Send progress, device sync and the library all depend on it. Stop 1.1 is anchored at `#m1-1`; No. 02 days at `#d1`.
 
 ## House rules (non-negotiable)
 
@@ -55,11 +56,12 @@ Progress shape: `localStorage[key] = {"done": {"1.1": true}}` (No. 02 also store
 3. One self-contained HTML file per guide, images inlined as base64 webp (about 720px, quality 74).
 4. Keep `<meta name="mtrx-slug">`, the progress key and stop ids stable across versions. The bot schedules reviews by stop id, so never renumber stops that exist.
 5. Stop ids (`data-mod`, `id="mX-Y"`) are unique inside a guide. (6 Oct 2026: No. 01 "The boardroom" reused 4.1 to 4.3; renumbered to 5.1 to 5.3.)
-6. Every guide loads `<script src="../assets/mtrx-review.js" defer></script>` just before the LAST `</body>` (the reader kit JS contains a `</body>` string in an export template).
-7. Every guide ships with notes (Word, Markdown, PDF export), a persistent highlighter, dark mode (◐), search (⌕, / or Ctrl+K), thumb tabs, quick checks, "Try it · 5 min" tasks, a coverage map and "say it in the room" lines.
+6. Every guide loads `<script src="../assets/mtrx-review.js" defer></script>` just before the LAST `</body>` (the reader kit JS contains a `</body>` string in an export template). The library loads `assets/mtrx-review.js` after setting `window.MTRX_GUIDES`.
+7. Every guide ships with notes (Word, Markdown, PDF export), a persistent highlighter, dark mode (◐), search (⌕, / or Ctrl+K), thumb tabs, read mode (from the shared add-on), quick checks, "Try it · 5 min" tasks, a coverage map and "say it in the room" lines. New floating controls must use a class that read mode hides (add it to the read-mode list in `assets/mtrx-review.js`).
 8. Evidence first: grade claims (strong, moderate, weak, failed), date-stamp fast-moving facts, verify every quote against a primary source. Never teach myths.
 9. Tone: sharp, warm, plain English, examples from Kevin's world (agency clients, callers, pricing, safari and dental niches).
-10. Never commit secrets. The Telegram token and chat id live only in GitHub Actions secrets.
+10. Never commit secrets. The Telegram token and chat id live only in GitHub Actions *repository* secrets (Settings, Secrets and variables, Actions, Secrets tab). Environment, Codespaces and Dependabot secrets do not reach the workflows.
+11. Workflow YAML: never put `: ` (colon plus space) inside an unquoted `run:` line; use a `run: |` block. On 6 Oct 2026 `run: bash tools/commit_state.sh "bot: review state"` made both workflow files invalid and every run failed instantly with zero jobs. Lint YAML before pushing.
 
 ## Publishing a new or updated guide (the full loop)
 
@@ -74,9 +76,11 @@ Progress shape: `localStorage[key] = {"done": {"1.1": true}}` (No. 02 also store
 ## Review bot (summary)
 
 - Kevin taps "Send progress" in a guide; the bot logs those stops and schedules every card at +1, +3, +7, +21, +60 and +180 days. Right moves a card up; a miss resets it to tomorrow.
-- One message a day at most (8 am IST by default), cap 15 questions, guides interleaved.
+- One message a day at most (8 am IST by default), cap 15 questions, guides interleaved. The workflow runs every 10 minutes, so replies and commands land within about 10 minutes.
 - Telegram commands: /today /status /weak /done /undo /pause /resume /time /help.
-- Test offline: `python3 tools/build_questions.py && python3 tests/test_bot.py`. Live check: run the "Bot self-test" workflow (or push a change to `bot/selftest.request`) and read `bot/selftest.json`.
+- Two devices: each browser keeps its own progress. Send progress from any device merges into `bot/state.json`; every guide and the library fetch that file from raw.githubusercontent.com on open and tick stops the bot knows about. Adds only, each stop applied once (record in localStorage `mtrx-sync-v1`), so a manual untick sticks. Notes and highlights do not sync.
+- Read mode: ¶ button or R hides every floating control and widens the page; ✕ or Esc exits; remembered per browser (`mtrx-read-v1`).
+- Test offline: `python3 tools/build_questions.py && python3 tests/test_bot.py`. Live check: run the "Bot self-test" workflow (or push a change to `bot/selftest.request`) and read `bot/selftest.json` and `bot/selftest-sources.json`. Public run status: https://api.github.com/repos/Kevincecil11/mtrx-field-library/actions/runs
 
 ## Design system (summary; full spec in `docs/skill/DESIGN-SYSTEM.md`)
 
