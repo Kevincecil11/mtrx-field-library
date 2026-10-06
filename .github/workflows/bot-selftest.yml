@@ -1,0 +1,32 @@
+name: Bot self-test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["bot/selftest.request"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mtrx-bot
+  cancel-in-progress: false
+
+jobs:
+  selftest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build question banks from the guides
+        run: python3 tools/build_questions.py
+      - name: Offline simulation (fake Telegram)
+        run: python3 tests/test_bot.py
+      - name: Live self-test (writes bot/selftest.json)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python3 bot/bot.py --selftest
+      - name: Save report and state
+        run: bash tools/commit_state.sh "bot: self-test report"

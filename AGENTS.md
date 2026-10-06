@@ -1,24 +1,39 @@
 # MTRX Field Library: context for AI tools
 
-Read this file first. It is the single source of context for any IDE, coding agent or chatbot working in this repo (Claude Code, Gemini CLI, Cursor, Copilot, ChatGPT, ClickUp Brain). Deeper rules live in `docs/skill/`.
+Read this file first. It is the single entry point for any IDE, coding agent or chatbot working in this repo (Claude Code, Gemini CLI, Cursor, Copilot, ChatGPT, ClickUp Brain). The repo is the whole project: guides, research rules, design system, review bot and history.
+
+## Start here (any new chat)
+
+1. Read this file, then `docs/CONTEXT.md`: who Kevin is, every decision so far, verified corrections, what's next.
+2. Building or editing a guide: read `docs/skill/SKILL.md`, then the sub-skill for the job: DESIGN-SYSTEM before styling, COVERAGE-AUDIT before curating, LEARNING-RULES and CURIOSITY-UNLEARNING before writing stops, RESEARCH-PLAYBOOK before research, DARK-TOPICS for No. 03 and No. 04.
+3. Touching the review bot: read `docs/ARCHITECTURE.md`.
+4. The guides are the research record. Every claim, source and evidence grade lives inside `guides/*.html`; read a guide's text before extending it. New raw research goes in `research/`.
 
 ## What this is
 
-- The MTRX™ Field Series: interactive, single-file HTML learning guides written for one learner, Kevin Cecil (founder of MTRX™ Digital, a web and AI agency in Ahmedabad; MSc in AI/ML, physics BSc, ex-maths teacher, lifelong learner, expert vibe coder).
+- The MTRX™ Field Series: interactive, single-file HTML learning guides written for one learner, Kevin Cecil (founder of MTRX™ Digital; MSc in AI/ML, physics BSc, ex-maths teacher, expert vibe coder).
 - Live site (GitHub Pages): https://kevincecil11.github.io/mtrx-field-library/
-- The goal of every guide: think, talk and work like an insider, not pass exams. About 20 minutes a day, evidence-graded, zero known gaps.
-- Personal project with one user. Everything must stay free: GitHub Pages, GitHub Actions and the Telegram Bot API. No paid services, no n8n, no database server.
+- Goal of every guide: think, talk and work like an insider, not pass exams. About 20 minutes a day, evidence-graded, zero known gaps.
+- Personal project, one user. Everything stays free: GitHub Pages, GitHub Actions, Telegram Bot API. No paid services, no n8n, no database server.
 
 ## Repo map
 
 | Path | What it is |
 |---|---|
-| `index.html` | Library home: guide cards, per-guide progress (read from each guide's localStorage key), "Read next", start dates |
-| `guides/NN-slug.html` | One self-contained guide each (CSS, JS and base64 images inline) |
-| `assets/mtrx-review.js` | Shared add-on loaded by every guide: the Library link now, the Telegram "Send progress" sync next. Change shared behaviour here, not inside the guides |
-| `docs/skill/` | The full MTRX Field Guides skill: workflow, design system, learning rules, coverage audit, research playbook, curiosity and unlearning, dark topics |
-| `docs/ARCHITECTURE.md` | How the free Telegram spaced-review bot works |
-| `bot/`, `.github/workflows/` | Review bot code, question banks, schedule state and the cron job (being added) |
+| `index.html` | Library home: guide cards, per-guide progress (read from each guide's localStorage key), "Read next", start dates. Guide list is `var G` |
+| `guides/NN-slug.html` | One self-contained guide each (CSS, JS, base64 images inline) |
+| `assets/mtrx-review.js` | Shared add-on loaded by every guide: "Library" link and "Send progress" to Telegram. Change shared behaviour here, not in the guides |
+| `bot/bot.py` | Telegram spaced-review bot (stdlib Python) |
+| `bot/questions/NN.json` | Question banks, generated from the guides. Never edit by hand |
+| `bot/state.json` | The bot's memory (progress, schedule, scores). Written by the bot only |
+| `bot/selftest.json` | Last live self-test report |
+| `.github/workflows/` | `review-bot.yml` (every 15 min) and `bot-selftest.yml` |
+| `tools/` | `build_questions.py`, `check_guide.py` (lint), `extract_kit.py` (design kit from a guide), `commit_state.sh` |
+| `tests/test_bot.py` | Offline simulation of the bot with a fake Telegram |
+| `docs/skill/` | The full MTRX Field Guides skill and its six sub-skills |
+| `docs/CONTEXT.md` | Kevin, decisions log, verified corrections, roadmap |
+| `docs/ARCHITECTURE.md` | How the review bot works |
+| `research/` | Raw research per guide (sources, inventories) |
 
 ## The guides
 
@@ -31,36 +46,44 @@ Read this file first. It is the single source of context for any IDE, coding age
 | 04 | Sales and persuasion | not yet | | In development |
 | 05 | The long game: lives as lab notes, daily toolkit | `guides/05-long-game.html` | `mtrx-long-v1` | Ready |
 
-Progress shape: `localStorage[key] = {"done": {"1.1": true}}` (No. 02 also stores `g`, `ex` and `field`). Stop 1.1 is anchored at `#m1-1`; No. 02 days are anchored at `#d1`.
+Progress shape: `localStorage[key] = {"done": {"1.1": true}}` (No. 02 also stores `g`, `ex`, `field`). Stop 1.1 is anchored at `#m1-1`; No. 02 days at `#d1`.
 
 ## House rules (non-negotiable)
 
-1. No em dashes or en dashes anywhere. Use commas, colons or parentheses. A build should fail if one appears.
+1. No em dashes or en dashes anywhere. Use commas, colons or parentheses.
 2. Write the brand as "MTRX™".
-3. One self-contained HTML file per guide, with images inlined as base64 webp (about 720px, quality 74).
-4. Keep `<meta name="mtrx-slug">` and the progress key stable across versions, so notes, highlights and progress survive updates.
-5. Stop ids (`data-mod` and `id="mX-Y"`) must be unique inside a guide. On 6 Oct 2026, No. 01's "The boardroom" reused 4.1 to 4.3 and clashed with Part IV; it was renumbered to 5.1 to 5.3.
-6. Every guide loads `<script src="../assets/mtrx-review.js" defer></script>` just before the LAST `</body>`. The reader kit JS contains a `</body>` string inside its export template, so never replace the first match.
-7. Every guide ships with: a notes panel (Word, Markdown and PDF export), a persistent highlighter, dark mode (◐), full-text search (⌕, / or Ctrl+K), thumb-index tabs, quick checks, "Try it · 5 min" tasks, a coverage map and "say it in the room" lines.
-8. Evidence first: grade claims (strong, moderate, weak, failed), date-stamp fast-moving facts, and verify every quote against a primary source. Never teach myths (learning styles, 21-day habits, ego depletion as a fuel tank, and so on).
-9. Tone: sharp, warm, plain English, with examples from Kevin's world (agency clients, callers, pricing, safari and dental niches).
+3. One self-contained HTML file per guide, images inlined as base64 webp (about 720px, quality 74).
+4. Keep `<meta name="mtrx-slug">`, the progress key and stop ids stable across versions. The bot schedules reviews by stop id, so never renumber stops that exist.
+5. Stop ids (`data-mod`, `id="mX-Y"`) are unique inside a guide. (6 Oct 2026: No. 01 "The boardroom" reused 4.1 to 4.3; renumbered to 5.1 to 5.3.)
+6. Every guide loads `<script src="../assets/mtrx-review.js" defer></script>` just before the LAST `</body>` (the reader kit JS contains a `</body>` string in an export template).
+7. Every guide ships with notes (Word, Markdown, PDF export), a persistent highlighter, dark mode (◐), search (⌕, / or Ctrl+K), thumb tabs, quick checks, "Try it · 5 min" tasks, a coverage map and "say it in the room" lines.
+8. Evidence first: grade claims (strong, moderate, weak, failed), date-stamp fast-moving facts, verify every quote against a primary source. Never teach myths.
+9. Tone: sharp, warm, plain English, examples from Kevin's world (agency clients, callers, pricing, safari and dental niches).
 10. Never commit secrets. The Telegram token and chat id live only in GitHub Actions secrets.
+
+## Publishing a new or updated guide (the full loop)
+
+1. Research into `research/NN-slug/` (markdown plus JSON, every claim with a source URL). Follow RESEARCH-PLAYBOOK.
+2. Coverage audit (COVERAGE-AUDIT) with the inventory saved as `research/NN-slug/inventory.jsonl`.
+3. Build: `python3 tools/extract_kit.py guides/05-long-game.html kit/` gives the house CSS, reader kit and core JS. Build one self-contained HTML file.
+4. Quick checks as `<div class="check"><script type="application/json">{"q":..., "o":[...], "a": index, "w": "why"}</script></div>` inside each stop: they become Telegram quiz cards. Room lines and drills become recall cards. Aim for 3 cards per stop. Telegram limits: question 300 chars, options 100, explanation 200 (longer ones fall back to a text message plus letter options).
+5. Lint: `python3 tools/check_guide.py guides/NN-slug.html` must show 0 errors.
+6. Library: update the guide's entry in `var G` in `index.html` (file, key, `st: "ready"`, time, parts with stop ids).
+7. Commit. Pages republishes in about a minute; the bot rebuilds its banks from the guides on its next run.
+
+## Review bot (summary)
+
+- Kevin taps "Send progress" in a guide; the bot logs those stops and schedules every card at +1, +3, +7, +21, +60 and +180 days. Right moves a card up; a miss resets it to tomorrow.
+- One message a day at most (8 am IST by default), cap 15 questions, guides interleaved.
+- Telegram commands: /today /status /weak /done /undo /pause /resume /time /help.
+- Test offline: `python3 tools/build_questions.py && python3 tests/test_bot.py`. Live check: run the "Bot self-test" workflow (or push a change to `bot/selftest.request`) and read `bot/selftest.json`.
 
 ## Design system (summary; full spec in `docs/skill/DESIGN-SYSTEM.md`)
 
 - Naturalist field-guide look: 19th-century engraving plates, a cover cube of nine plates, thumb tabs on the right edge.
 - Colours: Canvas #ECEAE4, Paper #F6F4EF, Ink #151515, Graphite #55586A, Steel #BCBFCC, Mars #ED691D (text #B3460D), Moss #697132 (text #525923), Gunmetal #2F3E46, Jane #F4E3B2, Red #A44A3F for warnings. One accent per part via `data-part`.
-- Type: Tanker for display (Fontshare), falling back to Anton; Nunito Sans for body; JetBrains Mono for labels. Body text at least 16px, labels at least 14px.
-- The canonical CSS and reader-kit JS are embedded in every guide. Copy them from the newest build (`guides/05-long-game.html`) when starting a new guide.
+- Type: Tanker display (Fontshare) falling back to Anton; Nunito Sans body; JetBrains Mono labels. Body at least 16px, labels at least 14px.
 
 ## Learning engine (summary; full rules in `docs/skill/LEARNING-RULES.md`)
 
-Retrieval before reveal, spacing (+1, +3, +7, +21, +60 and +180 days), interleaving, a prediction plus confidence before every answer, worked examples, one idea per stop, concrete cases from Kevin's world, a weekly teach-back, a monthly cold test and a weak-spot log.
-
-## Adding a guide (for example No. 03)
-
-1. Run the coverage audit (`docs/skill/COVERAGE-AUDIT.md`) before writing anything.
-2. Build one HTML file with the house CSS and reader kit, unique stop ids, and the script tag from rule 6.
-3. Save it as `guides/03-cons-and-cults.html`.
-4. In `index.html`, update its entry in `var G`: set `file`, `key`, `st: "ready"`, `time` and `parts` (each part's stop ids).
-5. Add its question bank to `bot/questions/03.json` (format in `docs/ARCHITECTURE.md`).
+Retrieval before reveal, spacing on real dates, interleaving, prediction plus confidence before answers, worked examples, one idea per stop, concrete cases from Kevin's world, weekly teach-back, monthly cold test, weak-spot log.
