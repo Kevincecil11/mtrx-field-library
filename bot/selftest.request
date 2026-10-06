@@ -1,2 +1,2 @@
-Change this file (any edit) to trigger the Bot self-test workflow.
-last request: 2026-10-06 23:55 IST
+Touch this file (any change) to make GitHub run the live bot self-test.
+last request: 2026-10-07 00:05 IST (after secrets were added)
