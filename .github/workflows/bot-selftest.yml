@@ -23,10 +23,14 @@ jobs:
         run: python3 tools/build_questions.py
       - name: Offline simulation (fake Telegram)
         run: python3 tests/test_bot.py
+      - name: Where are the Telegram settings? (true or false only, never the values)
+        run: |
+          printf '{"repo_secret_token": %s, "repo_secret_chat": %s, "variable_token": %s, "variable_chat": %s}\n' "${{ secrets.TELEGRAM_BOT_TOKEN != '' }}" "${{ secrets.TELEGRAM_CHAT_ID != '' }}" "${{ vars.TELEGRAM_BOT_TOKEN != '' }}" "${{ vars.TELEGRAM_CHAT_ID != '' }}" > bot/selftest-sources.json
+          cat bot/selftest-sources.json
       - name: Live self-test (writes bot/selftest.json)
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || vars.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || vars.TELEGRAM_CHAT_ID }}
         run: python3 bot/bot.py --selftest
       - name: Save report and state
         run: |
