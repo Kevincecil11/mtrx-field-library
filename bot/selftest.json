@@ -1,11 +1,41 @@
 {
- "time": "2026-10-07T00:10:20+05:30",
- "ok": false,
+ "time": "2026-10-07T00:19:19+05:30",
+ "ok": true,
  "steps": [
   {
    "step": "secrets",
-   "ok": false,
-   "detail": "missing: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID"
+   "ok": true,
+   "detail": "token and chat id present"
+  },
+  {
+   "step": "getMe",
+   "ok": true,
+   "detail": "@makingmesmart_bot"
+  },
+  {
+   "step": "deleteWebhook",
+   "ok": true,
+   "detail": "polling mode"
+  },
+  {
+   "step": "setMyCommands",
+   "ok": true,
+   "detail": "9 commands"
+  },
+  {
+   "step": "banks",
+   "ok": true,
+   "detail": "No. 00: 35 cards, No. 01: 106 cards, No. 02: 100 cards, No. 05: 51 cards"
+  },
+  {
+   "step": "sendMessage",
+   "ok": true,
+   "detail": "sent"
+  },
+  {
+   "step": "sendPoll",
+   "ok": true,
+   "detail": "sent quiz 01-1.1-q1"
   }
  ]
 }
