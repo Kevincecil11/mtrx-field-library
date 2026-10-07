@@ -3,8 +3,13 @@
  "done": {},
  "hour": 8,
  "last_push": "2026-10-07",
+ "listener": {
+  "checked_at": "2026-10-07T22:34:07+05:30",
+  "mode": "long-poll",
+  "run_id": "37656094294"
+ },
  "log": [],
- "offset": 806112923,
+ "offset": 806112925,
  "paused": false,
  "polls": {},
  "today": null,
