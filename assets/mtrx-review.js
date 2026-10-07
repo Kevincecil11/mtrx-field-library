@@ -1,7 +1,7 @@
 /* MTRX Field Library: shared add-on loaded by every guide and by the library home (see AGENTS.md, rule 6).
    1. Top bar: "Library" link, "Send progress" and "Read mode".
-   2. Send progress: packs the stops marked done into a short code and opens the Telegram review
-      bot with it (t.me/<bot>?start=pNN_<base64url bitmask>). Bit i = the i-th
+   2. Send progress: opens a copy-and-send panel for Telegram Web, plus an optional app link.
+      The copied command is /start pNN_<base64url bitmask>. Bit i = the i-th
       <button class="done" data-mod> in document order, the same order tools/build_questions.py
       writes into bot/questions/NN.json "stops".
    3. Read mode: hides every floating control (week tabs, reader kit dock, top bar, progress line)
@@ -52,6 +52,22 @@
 
   var css = document.createElement('style');
   css.textContent =
+    '#mtrx-transfer{width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 40px);overflow:auto;' +
+    'padding:28px;border:2px solid #151515;border-radius:20px;background:#ECEAE4;color:#151515;' +
+    'font:400 16px/1.5 "Nunito Sans",system-ui,sans-serif;box-shadow:0 24px 80px #0005}' +
+    '#mtrx-transfer::backdrop{background:#15151599;backdrop-filter:blur(3px)}' +
+    '#mtrx-transfer h2{font:800 25px/1.15 "Nunito Sans",system-ui,sans-serif;margin:12px 0}' +
+    '#mtrx-transfer p{margin:12px 0}' +
+    '#mtrx-transfer .mt-k{font:700 14px/1.3 ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:#B3460D}' +
+    '#mtrx-transfer .mt-close{float:right;border:0;background:transparent;color:#151515;cursor:pointer;font-size:24px;padding:0 4px}' +
+    '#mtrx-transfer textarea{display:block;width:100%;height:76px;padding:14px;border:1px solid #55586A;' +
+    'border-radius:10px;background:#F6F4EF;color:#151515;font:500 16px/1.45 ui-monospace,monospace;resize:none}' +
+    '#mtrx-transfer .mt-actions{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}' +
+    '#mtrx-transfer .mt-btn{border:2px solid #151515;border-radius:999px;padding:10px 16px;' +
+    'font:800 16px/1.3 "Nunito Sans",system-ui,sans-serif;text-decoration:none;cursor:pointer;background:#151515;color:#F6F4EF}' +
+    '#mtrx-transfer .mt-web{background:#ED691D;color:#151515}' +
+    '#mtrx-transfer .mt-small{font-size:14px;color:#55586A}' +
+    '#mtrx-transfer .mt-status{min-height:24px;font-size:14px}' +
     '#mtrx-bar{position:fixed;top:12px;left:14px;z-index:95;display:flex;gap:8px;align-items:center}' +
     '.mtrx-fab{display:inline-flex;align-items:center;gap:6px;border:0;cursor:pointer;white-space:nowrap;' +
     'font:700 13px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;' +
@@ -144,12 +160,54 @@
     for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
     return 'p' + guide + '_' + btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
   }
+  var transfer = document.createElement('dialog');
+  transfer.id = 'mtrx-transfer';
+  transfer.setAttribute('aria-labelledby', 'mt-title');
+  transfer.innerHTML = '<button type="button" class="mt-close" aria-label="Close send-progress panel">&#215;</button>' +
+    '<div class="mt-k">Telegram / Send progress</div><h2 id="mt-title">Carry your progress over.</h2>' +
+    '<p id="mt-count"></p><p><b>Copy the command, open Telegram Web, then paste it into the bot chat and press Send.</b></p>' +
+    '<textarea id="mt-command" readonly aria-label="Progress command to paste into Telegram"></textarea>' +
+    '<div class="mt-actions"><button type="button" class="mt-btn" id="mt-copy">Copy command</button>' +
+    '<a class="mt-btn mt-web" id="mt-web" target="_blank" rel="noopener">Open Telegram Web &#8599;</a></div>' +
+    '<div class="mt-status" id="mt-status" role="status"></div>' +
+    '<p class="mt-small">Not sent yet: wait for the bot to reply <b>Logged</b> (or <b>No new stops</b>) after you paste and send.</p>' +
+    '<p class="mt-small"><a id="mt-app" target="_blank" rel="noopener">Using the Telegram app? Open there instead.</a> Tap Start to pass the code.</p>';
+  document.body.appendChild(transfer);
+  transfer.querySelector('.mt-close').addEventListener('click', function () { transfer.close(); });
+  transfer.addEventListener('click', function (e) {
+    if (e.target === transfer) {
+      var r = transfer.getBoundingClientRect();
+      if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) transfer.close();
+    }
+  });
+  var field = transfer.querySelector('#mt-command'), copy = transfer.querySelector('#mt-copy');
+  function copyCommand() {
+    var status = transfer.querySelector('#mt-status');
+    function fallback() {
+      field.focus(); field.select();
+      var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+      status.textContent = ok ? 'Copied. Paste in the bot chat and press Send.' : 'Select the command above and copy it, then paste it into the bot chat.';
+      if (ok) copy.textContent = 'Copied \u2713';
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(field.value).then(function () {
+        status.textContent = 'Copied. Paste in the bot chat and press Send.';
+        copy.textContent = 'Copied \u2713';
+      }).catch(fallback);
+    } else fallback();
+  }
+  copy.addEventListener('click', copyCommand);
+  transfer.querySelector('#mt-web').href = 'https://web.telegram.org/k/#@' + BOT;
   send.addEventListener('click', function () {
     var list = stops(), n = list.filter(function (x) { return x.d; }).length;
     if (!n) { say('Mark a stop done first (the button at the end of each stop), then send.'); return; }
     window.MTRX_LAST_CODE = code(list);
-    window.open('https://t.me/' + BOT + '?start=' + window.MTRX_LAST_CODE, '_blank', 'noopener');
-    say('Opening Telegram with ' + n + ' finished ' + (n === 1 ? 'stop' : 'stops') + '. Tap Start there. Reviews begin tomorrow.');
+    field.value = '/start ' + window.MTRX_LAST_CODE;
+    transfer.querySelector('#mt-count').textContent = 'No. ' + guide + ': ' + n + ' finished ' + (n === 1 ? 'stop' : 'stops') + '. Your saved progress is safe.';
+    transfer.querySelector('#mt-app').href = 'https://t.me/' + BOT + '?start=' + window.MTRX_LAST_CODE;
+    copy.textContent = 'Copy command';
+    transfer.querySelector('#mt-status').textContent = '';
+    transfer.showModal();
   });
   window.MTRX_PROGRESS_CODE = function () { return code(stops()); };
 

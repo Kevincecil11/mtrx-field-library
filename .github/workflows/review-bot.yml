@@ -2,14 +2,21 @@ name: Review bot
 
 on:
   schedule:
-    - cron: "4,14,24,34,44,54 * * * *"   # every 10 min (GitHub can start scheduled runs a few minutes late); the daily review goes out on the first run after the reminder hour (IST)
+    - cron: "4,14,24,34,44,54 * * * *"   # Recovery only. Normal handoffs explicitly dispatch a successor.
   workflow_dispatch:
+    inputs:
+      listen_seconds:
+        description: "Listener window in seconds (normally 600)"
+        default: "600"
+        required: false
+        type: string
   push:
     branches: [main]
-    paths: ["bot/run.request"]
+    paths: ["bot/run.request", "bot/listen.py", ".github/workflows/review-bot.yml"]
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: mtrx-bot
@@ -18,16 +25,54 @@ concurrency:
 jobs:
   review:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 14
     steps:
       - uses: actions/checkout@v5
       - name: Build question banks from the guides
         run: python3 tools/build_questions.py
-      - name: Run the bot
+      - name: Run offline regression tests
+        run: |
+          python3 tests/test_bot.py
+          python3 tests/test_listener.py
+      - name: Listen for commands and answers
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || vars.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || vars.TELEGRAM_CHAT_ID }}
-        run: python3 bot/bot.py
+          # A push boots with a short window so the first handoff can be verified.
+          LISTEN_SECONDS: ${{ github.event_name == 'push' && '60' || inputs.listen_seconds || '600' }}
+        run: python3 bot/listen.py --seconds "$LISTEN_SECONDS" --publish
       - name: Save state
+        if: always()
         run: |
           bash tools/commit_state.sh "bot review state"
+      - name: Hand off to one successor (no duplicate consumers)
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          CURRENT_RUN: ${{ github.run_id }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          root = 'https://api.github.com/repos/' + os.environ['REPO']
+          headers = {'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
+                     'Accept': 'application/vnd.github+json',
+                     'Content-Type': 'application/json',
+                     'X-GitHub-Api-Version': '2022-11-28'}
+          def request(path, payload=None):
+              body = json.dumps(payload).encode() if payload is not None else None
+              req = urllib.request.Request(root + path, data=body, headers=headers)
+              with urllib.request.urlopen(req, timeout=30) as response:
+                  data = response.read()
+                  return json.loads(data) if data else None
+          runs = request('/actions/workflows/review-bot.yml/runs?per_page=30')['workflow_runs']
+          pending = [r for r in runs if str(r['id']) != os.environ['CURRENT_RUN']
+                     and r['status'] in ('queued', 'in_progress', 'waiting', 'requested', 'pending')]
+          if pending:
+              print('A successor is already queued; no duplicate dispatch.')
+          else:
+              request('/actions/workflows/review-bot.yml/dispatches',
+                      {'ref': os.environ['BRANCH'], 'inputs': {'listen_seconds': '600'}})
+              print('Successor dispatched. GitHub runner startup can cause a short handoff gap.')
+          PY
