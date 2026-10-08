@@ -228,3 +228,15 @@
   window.MTRX_APPLY_SYNC = applySync;
   botDone(applySync);
 })();
+
+/* Optional shared scroll layer. The existing reader and bot never wait for motion. */
+(function () {
+  if (document.getElementById('mtrx-motion-script')) return;
+  var current = document.currentScript;
+  if (!current || !current.src) return;
+  var script = document.createElement('script');
+  script.id = 'mtrx-motion-script';
+  script.src = new URL('mtrx-scroll.js', current.src).href;
+  script.async = true;
+  document.head.appendChild(script);
+})();
