@@ -1,6 +1,6 @@
 # Context: what a new chat needs to know
 
-Last updated 7 Oct 2026. Update this file whenever a decision is made or a guide ships.
+Last updated 9 Oct 2026. Update this file whenever a decision is made or a guide ships.
 
 ## Kevin
 
@@ -21,6 +21,7 @@ Last updated 7 Oct 2026. Update this file whenever a decision is made or a guide
 | 05 | 5 Oct 2026, v1 | Twelve lives as lab notes in 4 themes over 12 weeks (Seneca, Marcus Aurelius, Franklin; Darwin, Feynman, Curie; Leonardo, Angelou, Ramanujan; Nightingale, Gandhi, Munger), 18 drills graded strong or moderate (15 of 16 BCT Taxonomy groups), a stack builder, "what failed", 14 fake quotes. Starter stack: If-then + Stack, Reappraise the Trigger, Evidence Ledger, weekly Plan Premortem |
 | 03 | planned | Cons and cults, defence first (see DARK-TOPICS) |
 | 04 | planned | Sales and persuasion, honest levers only |
+| 06 | idea phase, 9 Oct 2026 | Social intelligence, working title "Reading the room": reading people honestly, cold reading decoded (defence first), conversation, charm, networking the legit way, getting things done through people, the line. Scan, evidence grades and open questions: `research/06-social-intelligence/README.md` |
 
 ## Decisions log
 
@@ -30,6 +31,7 @@ Last updated 7 Oct 2026. Update this file whenever a decision is made or a guide
 - Bot cadence: every 10 minutes (Kevin, 7 Oct 2026; was 15). Hourly would also work; Telegram keeps unread replies 24 h.
 - Read mode in every guide via the shared add-on: ¶ button or R hides all floating controls; Esc or ✕ exits (Kevin asked, 7 Oct 2026).
 - Two devices: sync through the bot's public `bot/state.json`; guides and library pull it on open. Notes and highlights stay per device (7 Oct 2026).
+- No. 06 is Social intelligence (Kevin, 9 Oct 2026): cold reading, understanding behaviour, charm and networking for business, legitimate side only, inspired by the film American Made. Next guide to build. Idea phase: answers to the open questions, then a coverage audit, then the build.
 - Considered, not started: an applied-AI deep-dive guide (LLM internals at gut level, RAG, agents, evals, voice pipelines, cost and latency, India's DPDP Act for patient data).
 - Parked: turning the review bot into a SaaS for course creators. Personal use only for now.
 - Offered, not yet chosen: a ClickUp setup for the daily 20, a caller-training one-pager from No. 01 Part IV, monthly repair drops from the weak-spot export, per-concept proficiency levels, notes and highlights sync.
@@ -51,12 +53,14 @@ Last updated 7 Oct 2026. Update this file whenever a decision is made or a guide
 - The raw research files from the Oct 2026 sessions (lives.json, toolkit.json, the 380-concept inventory, curiosity research) were not preserved; their content lives in the guides. Save new research in `research/`.
 - The guides were saved from a browser and carry two harmless extension style blocks ("fusion-selection-styles" and Open Sans @font-face). Drop them on the next rebuild.
 - Kit source files (kit-render.py, kit-build.py and others) are attached to the ClickUp skill; `tools/extract_kit.py` recovers the CSS and JS from any built guide.
+- 7 Oct 2026, evening: Telegram Web drops t.me start parameters, so Send progress now opens a copy-and-send panel (paste `/start pNN_code` into the bot chat on Telegram Web; the app link is kept). Scheduled runs fired only a few times a day, so the Review bot now runs `bot/listen.py` (20 s long polling for a 10-minute window, then it dispatches one successor; the 10-minute cron is recovery only). Tests: `tests/test_listener.py`. AGENTS.md and ARCHITECTURE.md still describe the older cron-only model; update them on the next bot change.
 - No. 01 quarterly re-audit due January 2027.
 
 ## Next up
 
 1. Kevin starts No. 01 on Thu 8 Oct 2026; first reviews Fri 9 Oct. Watch the first scheduled runs and the 8 am push.
-2. Better banks: 3 cards per stop (add quick checks inside the guides).
-3. No. 02 Weeks 3 to 4.
-4. No. 03 cons and cults.
-5. Bot Phase 3: 1-month and 6-month exams, optional free-recall grading with Gemini's free tier.
+2. No. 06 Social intelligence: Kevin's answers, coverage audit, build.
+3. Better banks: 3 cards per stop (add quick checks inside the guides).
+4. No. 02 Weeks 3 to 4.
+5. No. 03 cons and cults.
+6. Bot Phase 3: 1-month and 6-month exams, optional free-recall grading with Gemini's free tier.
