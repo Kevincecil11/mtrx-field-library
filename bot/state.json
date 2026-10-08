@@ -320,8 +320,8 @@
  "hour": 8,
  "last_push": "2026-10-08",
  "listener": {
-  "checked_at": "2026-10-08T09:16:22+05:30",
-  "mode": "long-poll",
+  "checked_at": "2026-10-08T09:21:13+05:30",
+  "mode": "handoff",
   "run_id": "37723868706"
  },
  "log": [
