@@ -26,7 +26,7 @@ jobs:
           node --check assets/mtrx-review.js
       - name: Install pinned browser and motion packages
         run: |
-          npm install --prefix "$RUNNER_TEMP/mtrx-motion" --no-save playwright@1.55.1 gsap@3.13.0 lenis@1.3.11
+          npm install --prefix "$RUNNER_TEMP/mtrx-motion" --no-save playwright@1.55.1 lenis@1.3.11
           "$RUNNER_TEMP/mtrx-motion/node_modules/.bin/playwright" install --with-deps chromium
       - name: Check real library and guide interactions
         run: |

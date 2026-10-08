@@ -1,5 +1,5 @@
 /* Browser integration checks against the real library and all four guide pages.
-   CI installs the pinned motion packages; CDN requests are served from those packages. */
+   Lenis only: no GSAP, no decorative animation, native touch. */
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -8,11 +8,8 @@ const { chromium } = require('playwright');
 const root = process.cwd();
 const output = path.join(root, 'motion-screenshots');
 fs.mkdirSync(output, { recursive: true });
-const gsapDir = path.dirname(require.resolve('gsap'));
 const lenisDir = path.dirname(require.resolve('lenis'));
 const libraries = {
-  'gsap.min.js': path.join(gsapDir, 'gsap.min.js'),
-  'ScrollTrigger.min.js': path.join(gsapDir, 'ScrollTrigger.min.js'),
   'lenis.min.js': path.join(lenisDir, 'lenis.min.js')
 };
 const server = http.createServer((req, res) => {
@@ -49,6 +46,8 @@ async function run() {
   await route(context, false);
   const page = await context.newPage();
   page.on('pageerror', error => errors.push(error.message));
+  const dependencyRequests = [];
+  page.on('request', req => { if (req.url().includes('cdn.jsdelivr.net')) dependencyRequests.push(req.url()); });
   const mode = value => page.waitForFunction(expected => document.documentElement.dataset.mtrxMotion === expected, value);
   try {
     await page.goto(base + '/index.html');
@@ -75,9 +74,12 @@ async function run() {
       await page.goto(base + '/guides/' + filename);
       await mode('smooth');
       assert.equal(await page.locator('#mtrx-motion-script').count(), 1);
+      const firstLibrary = await page.evaluate(() => window.lenisVersion);
       await page.keyboard.press('r');
-      await mode('native');
-      assert.equal(await page.locator('#mtrx-motion-css').count(), 0);
+      await page.waitForFunction(() => document.documentElement.classList.contains('mtrx-read'));
+      await mode('smooth');
+      assert.equal(await page.evaluate(() => window.lenisVersion), firstLibrary);
+      assert.equal(await page.locator('#mtrx-motion-css').count(), 1);
       await page.keyboard.press('Escape');
       await mode('smooth');
       await page.locator('button.done[data-mod]').first().click();
@@ -105,7 +107,48 @@ async function run() {
     await page.goto(base + '/guides/05-long-game.html');
     await mode('smooth');
     await page.screenshot({ path: path.join(output, 'guide-mobile.png') });
+    /* Collect a scroll trace under CPU throttling. Do not pretend CI timings
+       guarantee frame rates on the reader's own device. */
+    const session = await context.newCDPSession(page);
+    await session.send('Emulation.setCPUThrottlingRate', { rate: 4 });
+    await page.evaluate(() => {
+      window.__scrollFrames = []; window.__lastFrame = 0; window.__measuring = true;
+      function sample(time) {
+        if (window.__lastFrame) window.__scrollFrames.push(time - window.__lastFrame);
+        window.__lastFrame = time;
+        if (window.__measuring) requestAnimationFrame(sample);
+      }
+      requestAnimationFrame(sample);
+    });
+    await page.mouse.move(170, 400);
+    for (let i = 0; i < 12; i++) { await page.mouse.wheel(0, 90); await page.waitForTimeout(50); }
+    await page.waitForTimeout(400);
+    const timing = await page.evaluate(() => {
+      window.__measuring = false;
+      const values = window.__scrollFrames.slice(2).sort((a,b) => a-b);
+      return { samples: values.length, median: values[Math.floor(values.length / 2)],
+        p95: values[Math.floor(values.length * .95)], framesOver50ms: values.filter(x => x > 50).length };
+    });
+    fs.writeFileSync(path.join(output, 'scroll-timing.json'), JSON.stringify({ cpuThrottle: 4, ...timing }, null, 2));
+    console.log('Scroll frame trace (4x CPU throttle):', timing);
+    await session.send('Emulation.setCPUThrottlingRate', { rate: 1 });
+    await session.detach();
     assert.deepEqual(errors, [], 'No uncaught browser exceptions');
+    assert.ok(dependencyRequests.every(url => url.includes('/lenis@')), 'No GSAP or ScrollTrigger downloads');
+    assert.equal(await page.locator('#mtrx-reading-css').count(), 1);
+    if (await page.locator('.plate-img img').count()) {
+      assert.equal(await page.locator('.plate-img img').first().evaluate(el => getComputedStyle(el).filter), 'none');
+    }
+
+    const touch = await browser.newContext({ isMobile: true, hasTouch: true, viewport: { width: 390, height: 844 } });
+    await route(touch, false);
+    const mobile = await touch.newPage();
+    let touchDownloads = 0;
+    mobile.on('request', req => { if (req.url().includes('cdn.jsdelivr.net')) touchDownloads++; });
+    await mobile.goto(base + '/guides/05-long-game.html');
+    await mobile.waitForFunction(() => document.documentElement.dataset.mtrxMotion === 'native');
+    assert.equal(touchDownloads, 0, 'Touch must stay fully native without an animation library');
+    await touch.close();
 
     const fallback = await browser.newContext();
     await route(fallback, true);
