@@ -1,3 +1,15 @@
+/* Optional shared palette layer. Loaded independently so the reader and bot never wait for it. */
+(function () {
+  if (document.getElementById('mtrx-palette-script')) return;
+  var current = document.currentScript;
+  if (!current || !current.src) return;
+  var script = document.createElement('script');
+  script.id = 'mtrx-palette-script';
+  script.src = new URL('mtrx-themes.js?v=1', current.src).href;
+  script.async = true;
+  document.head.appendChild(script);
+})();
+
 /* MTRX Field Library: shared add-on loaded by every guide and by the library home (see AGENTS.md, rule 6).
    1. Top bar: "Library" link, "Send progress" and "Read mode".
    2. Send progress: opens a copy-and-send panel for Telegram Web, plus an optional app link.
