@@ -1,0 +1,930 @@
+{
+ "guide": "06",
+ "title": "MTRX™ Field Series No. 06 · Read the room · Kevin Cecil",
+ "file": "06-read-the-room.html",
+ "day": false,
+ "stops": [
+  "0.1",
+  "0.2",
+  "1.1",
+  "1.2",
+  "1.3",
+  "1.4",
+  "1.5",
+  "1.6",
+  "1.7",
+  "1.8",
+  "1.9",
+  "1.10",
+  "1.11",
+  "1.12"
+ ],
+ "cards": [
+  {
+   "guide": "06",
+   "stop": "0.1",
+   "name": "Why this guide exists",
+   "link": "guides/06-read-the-room.html#m0-1",
+   "id": "06-0.1-q1",
+   "type": "quiz",
+   "q": "What does this guide treat every read of a person as?",
+   "options": [
+    "A verdict you can act on",
+    "A hypothesis you test by asking",
+    "A tell you memorise"
+   ],
+   "answer": 1,
+   "why": "Notice, guess, ask, update. A read you never check is just a story you like."
+  },
+  {
+   "guide": "06",
+   "stop": "0.1",
+   "name": "Why this guide exists",
+   "link": "guides/06-read-the-room.html#m0-1",
+   "id": "06-0.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Why this guide exists\" in two or three lines, as you would to a client.",
+   "answer": "\"I don't read minds. I read changes, then I ask.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "0.2",
+   "name": "Your baseline: ten questions first",
+   "link": "guides/06-read-the-room.html#m0-2",
+   "id": "06-0.2-q1",
+   "type": "quiz",
+   "q": "In real time, how often do people correctly judge whether someone is lying or telling the truth?",
+   "options": [
+    "About 54%",
+    "About 70%",
+    "About 85%"
+   ],
+   "answer": 0,
+   "why": "Bond and DePaulo 2006, 24,483 judges: 54%. Stop 1.1."
+  },
+  {
+   "guide": "06",
+   "stop": "0.2",
+   "name": "Your baseline: ten questions first",
+   "link": "guides/06-read-the-room.html#m0-2",
+   "id": "06-0.2-q2",
+   "type": "quiz",
+   "q": "Compared with students, how good are police and other professionals at spotting lies?",
+   "options": [
+    "Much better",
+    "About the same",
+    "Worse"
+   ],
+   "answer": 1,
+   "why": "About 54.5% vs 54.1% (Aamodt and Custer 2006). Stop 1.1."
+  },
+  {
+   "guide": "06",
+   "stop": "0.2",
+   "name": "Your baseline: ten questions first",
+   "link": "guides/06-read-the-room.html#m0-2",
+   "id": "06-0.2-q3",
+   "type": "quiz",
+   "q": "\"Communication is 7% words, 38% tone and 55% body language.\" That rule is...",
+   "options": [
+    "A general law",
+    "A narrow 1967 result about feelings when words and tone clash",
+    "Proven by brain scans"
+   ],
+   "answer": 1,
+   "why": "Mehrabian rejects the general use. Stop 1.4."
+  },
+  {
+   "guide": "06",
+   "stop": "0.2",
+   "name": "Your baseline: ten questions first",
+   "link": "guides/06-read-the-room.html#m0-2",
+   "id": "06-0.2-q4",
+   "type": "quiz",
+   "q": "Someone looks up and to the right while answering. That tells you...",
+   "options": [
+    "They're inventing a lie",
+    "Nothing reliable",
+    "They're recalling a memory"
+   ],
+   "answer": 1,
+   "why": "The NLP eye claim failed in three studies (Wiseman et al. 2012). Stop 1.3."
+  },
+  {
+   "guide": "06",
+   "stop": "0.2",
+   "name": "Your baseline: ten questions first",
+   "link": "guides/06-read-the-room.html#m0-2",
+   "id": "06-0.2-q5",
+   "type": "quiz",
+   "q": "A clinic owner sounds nervous on your call. Most likely meaning?",
+   "options": [
+    "He's hiding something",
+    "Nothing specific: stress has many causes",
+    "He'll say no"
+   ],
+   "answer": 1,
+   "why": "Reading stress as lying is the Othello error. Stop 1.3."
+  },
+  {
+   "guide": "06",
+   "stop": "0.2",
+   "name": "Your baseline: ten questions first",
+   "link": "guides/06-read-the-room.html#m0-2",
+   "id": "06-0.2-q6",
+   "type": "quiz",
+   "q": "Best way to understand what a client wants?",
+   "options": [
+    "Imagine yourself in their shoes, carefully",
+    "Ask them, then listen",
+    "Study their body language"
+   ],
+   "answer": 1,
+   "why": "Across 25 experiments, asking beat imagining (Eyal, Steffel and Epley 2018). Stop 1.8."
+  },
+  {
+   "guide": "06",
+   "stop": "0.2",
+   "name": "Your baseline: ten questions first",
+   "link": "guides/06-read-the-room.html#m0-2",
+   "id": "06-0.2-q7",
+   "type": "quiz",
+   "q": "After a first conversation, people usually like you...",
+   "options": [
+    "Less than you think",
+    "About as much as you think",
+    "More than you think"
+   ],
+   "answer": 2,
+   "why": "The liking gap (Boothby et al. 2018). Stop 1.11."
+  },
+  {
+   "guide": "06",
+   "stop": "0.2",
+   "name": "Your baseline: ten questions first",
+   "link": "guides/06-read-the-room.html#m0-2",
+   "id": "06-0.2-q8",
+   "type": "quiz",
+   "q": "When you're nervous presenting, how visible is it?",
+   "options": [
+    "Less visible than you think",
+    "Exactly as visible as it feels",
+    "More visible"
+   ],
+   "answer": 0,
+   "why": "The illusion of transparency (Gilovich et al. 1998). Stop 1.11."
+  },
+  {
+   "guide": "06",
+   "stop": "0.2",
+   "name": "Your baseline: ten questions first",
+   "link": "guides/06-read-the-room.html#m0-2",
+   "id": "06-0.2-q9",
+   "type": "quiz",
+   "q": "A psychic says \"you're independent, but sometimes you doubt yourself\" and it feels spot on. Why?",
+   "options": [
+    "They picked up a tell",
+    "It's true of almost everyone",
+    "You fit a personality type"
+   ],
+   "answer": 1,
+   "why": "A Barnum statement. Stop 1.9."
+  },
+  {
+   "guide": "06",
+   "stop": "0.2",
+   "name": "Your baseline: ten questions first",
+   "link": "guides/06-read-the-room.html#m0-2",
+   "id": "06-0.2-q10",
+   "type": "quiz",
+   "q": "Which trait do strangers judge most accurately from a first impression?",
+   "options": [
+    "Honesty",
+    "Extraversion",
+    "Intelligence"
+   ],
+   "answer": 1,
+   "why": "Visible traits read best (Borkenau and Liebler 1992). Stop 1.2."
+  },
+  {
+   "guide": "06",
+   "stop": "0.2",
+   "name": "Your baseline: ten questions first",
+   "link": "guides/06-read-the-room.html#m0-2",
+   "id": "06-0.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Your baseline: ten questions first\" in two or three lines, as you would to a client.",
+   "answer": "\"I tested my instincts before I trusted them.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.1",
+   "name": "The 54% problem",
+   "link": "guides/06-read-the-room.html#m1-1",
+   "id": "06-1.1-q1",
+   "type": "quiz",
+   "q": "Across 24,483 judges, what was the average accuracy at telling lies from truths in real time?",
+   "options": [
+    "About 54%",
+    "About 70%",
+    "About 85%"
+   ],
+   "answer": 0,
+   "why": "Bond and DePaulo 2006. Lies were caught 47% of the time, truths 61%: we lean toward believing."
+  },
+  {
+   "guide": "06",
+   "stop": "1.1",
+   "name": "The 54% problem",
+   "link": "guides/06-read-the-room.html#m1-1",
+   "id": "06-1.1-q2",
+   "type": "quiz",
+   "q": "Your caller is 'sure' a clinic owner lied about having no budget. What does research say about that sureness?",
+   "options": [
+    "Confidence predicts accuracy",
+    "Confidence barely relates to accuracy (r = .04)",
+    "Only experts' confidence counts"
+   ],
+   "answer": 1,
+   "why": "DePaulo et al. 1997. Check the budget with a question, not a gut call."
+  },
+  {
+   "guide": "06",
+   "stop": "1.1",
+   "name": "The 54% problem",
+   "link": "guides/06-read-the-room.html#m1-1",
+   "id": "06-1.1-q3",
+   "type": "quiz",
+   "q": "Why did Bond's read of Le Chiffre's tell cost him?",
+   "options": [
+    "Tells never exist",
+    "A visible tell can be faked by someone who knows you're watching",
+    "He misread his cards"
+   ],
+   "answer": 1,
+   "why": "A cue you can see, the other side can plant. Treat it as a hypothesis to test."
+  },
+  {
+   "guide": "06",
+   "stop": "1.1",
+   "name": "The 54% problem",
+   "link": "guides/06-read-the-room.html#m1-1",
+   "id": "06-1.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The 54% problem\" in two or three lines, as you would to a client.",
+   "answer": "\"Most people can't spot a lie much better than a coin flip, so I don't guess. I ask and I check.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.2",
+   "name": "First impressions: fast, sticky, half right",
+   "link": "guides/06-read-the-room.html#m1-2",
+   "id": "06-1.2-q1",
+   "type": "quiz",
+   "q": "People shown a face for 100 milliseconds...",
+   "options": [
+    "Can't form an impression yet",
+    "Form impressions that match their unlimited-time judgments",
+    "Are more accurate than with longer looks"
+   ],
+   "answer": 1,
+   "why": "Willis and Todorov 2006. Longer looks mostly raise confidence, not accuracy."
+  },
+  {
+   "guide": "06",
+   "stop": "1.2",
+   "name": "First impressions: fast, sticky, half right",
+   "link": "guides/06-read-the-room.html#m1-2",
+   "id": "06-1.2-q2",
+   "type": "quiz",
+   "q": "Which trait do strangers judge most accurately at first sight?",
+   "options": [
+    "Honesty",
+    "Extraversion",
+    "Intelligence"
+   ],
+   "answer": 1,
+   "why": "Visible traits leak into behaviour; honesty and intelligence mostly don't (Borkenau and Liebler 1992)."
+  },
+  {
+   "guide": "06",
+   "stop": "1.2",
+   "name": "First impressions: fast, sticky, half right",
+   "link": "guides/06-read-the-room.html#m1-2",
+   "id": "06-1.2-q3",
+   "type": "quiz",
+   "q": "A safari operator sounds cold for the first 30 seconds of a call. Best move?",
+   "options": [
+    "Write him off",
+    "Note it as a guess and keep gathering",
+    "Match his coldness"
+   ],
+   "answer": 1,
+   "why": "Thin slices carry some signal and a lot of noise. Let later behaviour update the read."
+  },
+  {
+   "guide": "06",
+   "stop": "1.2",
+   "name": "First impressions: fast, sticky, half right",
+   "link": "guides/06-read-the-room.html#m1-2",
+   "id": "06-1.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"First impressions: fast, sticky, half right\" in two or three lines, as you would to a client.",
+   "answer": "\"First impressions are fast and they agree with each other. That doesn't make them right, so I hold mine loosely.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.3",
+   "name": "Baselines: read the change, not the tell",
+   "link": "guides/06-read-the-room.html#m1-3",
+   "id": "06-1.3-q1",
+   "type": "quiz",
+   "q": "In DePaulo's meta-analysis of 158 possible lie cues, what did they find?",
+   "options": [
+    "A few cues reliably reveal lies",
+    "Most cues are weak or unrelated to lying",
+    "Eye contact is the best cue"
+   ],
+   "answer": 1,
+   "why": "1,338 estimates, 120 samples. There is no single tell."
+  },
+  {
+   "guide": "06",
+   "stop": "1.3",
+   "name": "Baselines: read the change, not the tell",
+   "link": "guides/06-read-the-room.html#m1-3",
+   "id": "06-1.3-q2",
+   "type": "quiz",
+   "q": "A clinic owner tenses up when you ask about his current website. Most defensible read?",
+   "options": [
+    "He's lying about it",
+    "The topic matters to him somehow: ask",
+    "He wants to end the call"
+   ],
+   "answer": 1,
+   "why": "Stress has many causes. Reading it as lying is the Othello error. Name it and ask."
+  },
+  {
+   "guide": "06",
+   "stop": "1.3",
+   "name": "Baselines: read the change, not the tell",
+   "link": "guides/06-read-the-room.html#m1-3",
+   "id": "06-1.3-q3",
+   "type": "quiz",
+   "q": "Why did the three fingers give Hicox away?",
+   "options": [
+    "He was nervous",
+    "It broke the German way of counting from the thumb",
+    "He held eye contact too long"
+   ],
+   "answer": 1,
+   "why": "A culture mismatch, not a lie cue. Context is part of every baseline."
+  },
+  {
+   "guide": "06",
+   "stop": "1.3",
+   "name": "Baselines: read the change, not the tell",
+   "link": "guides/06-read-the-room.html#m1-3",
+   "id": "06-1.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Baselines: read the change, not the tell\" in two or three lines, as you would to a client.",
+   "answer": "\"I don't trust tells. I watch for change from someone's normal, and then I ask about it.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.4",
+   "name": "The five channels",
+   "link": "guides/06-read-the-room.html#m1-4",
+   "id": "06-1.4-q1",
+   "type": "quiz",
+   "q": "The '7% words, 38% tone, 55% body' rule is...",
+   "options": [
+    "A general law of communication",
+    "A narrow 1967 finding about feelings when words and tone conflict",
+    "Proven for lie detection"
+   ],
+   "answer": 1,
+   "why": "Mehrabian's studies used single words about liking. He rejects the general use."
+  },
+  {
+   "guide": "06",
+   "stop": "1.4",
+   "name": "The five channels",
+   "link": "guides/06-read-the-room.html#m1-4",
+   "id": "06-1.4-q2",
+   "type": "quiz",
+   "q": "For catching deception, training on which channel works better?",
+   "options": [
+    "Verbal content: detail and consistency",
+    "Microexpressions",
+    "Hand movements"
+   ],
+   "answer": 0,
+   "why": "Hauch et al. 2014: verbal content training had the larger effects."
+  },
+  {
+   "guide": "06",
+   "stop": "1.4",
+   "name": "The five channels",
+   "link": "guides/06-read-the-room.html#m1-4",
+   "id": "06-1.4-q3",
+   "type": "quiz",
+   "q": "A prospect says 'sounds good' after a long pause, in a flat voice, then changes topic. Best move?",
+   "options": [
+    "Close the deal now",
+    "Ask about the gap between words and tone",
+    "Trust the words, ignore the rest"
+   ],
+   "answer": 1,
+   "why": "When channels disagree, ask. 'Sounds good, or sounds like a lot?'"
+  },
+  {
+   "guide": "06",
+   "stop": "1.4",
+   "name": "The five channels",
+   "link": "guides/06-read-the-room.html#m1-4",
+   "id": "06-1.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The five channels\" in two or three lines, as you would to a client.",
+   "answer": "\"Words carry more than people think. I listen to what someone chooses to say, then check it against how they say it.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.5",
+   "name": "Warmth first, then competence",
+   "link": "guides/06-read-the-room.html#m1-5",
+   "id": "06-1.5-q1",
+   "type": "quiz",
+   "q": "In the warmth and competence research, which tends to weigh more in overall impressions?",
+   "options": [
+    "Competence",
+    "Warmth",
+    "Always equal"
+   ],
+   "answer": 1,
+   "why": "Warmth (intent) comes first and weighs more (Wojciszke 1998; Fiske et al. 2007)."
+  },
+  {
+   "guide": "06",
+   "stop": "1.5",
+   "name": "Warmth first, then competence",
+   "link": "guides/06-read-the-room.html#m1-5",
+   "id": "06-1.5-q2",
+   "type": "quiz",
+   "q": "Babyfaced adults tend to be seen as...",
+   "options": [
+    "Colder but more competent",
+    "Warmer but less powerful and competent",
+    "No different"
+   ],
+   "answer": 1,
+   "why": "Zebrowitz 2017. The job is showing competence: proof, pace, preparation."
+  },
+  {
+   "guide": "06",
+   "stop": "1.5",
+   "name": "Warmth first, then competence",
+   "link": "guides/06-read-the-room.html#m1-5",
+   "id": "06-1.5-q3",
+   "type": "quiz",
+   "q": "Which competence signal has evidence behind it but does NOT prove real ability?",
+   "options": [
+    "Speaking time",
+    "A portfolio of results",
+    "A past client's reference"
+   ],
+   "answer": 0,
+   "why": "Speaking time predicts who emerges as leader, not who leads well. Use real proof too."
+  },
+  {
+   "guide": "06",
+   "stop": "1.5",
+   "name": "Warmth first, then competence",
+   "link": "guides/06-read-the-room.html#m1-5",
+   "id": "06-1.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Warmth first, then competence\" in two or three lines, as you would to a client.",
+   "answer": "\"People decide if you're on their side before they decide if you're good. So I show I care first, then I show proof.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.6",
+   "name": "What people want",
+   "link": "guides/06-read-the-room.html#m1-6",
+   "id": "06-1.6-q1",
+   "type": "quiz",
+   "q": "Asking a prospect for advice tends to make you look...",
+   "options": [
+    "Less competent",
+    "More competent, especially on hard questions",
+    "Desperate"
+   ],
+   "answer": 1,
+   "why": "Brooks, Gino and Schweitzer 2015."
+  },
+  {
+   "guide": "06",
+   "stop": "1.6",
+   "name": "What people want",
+   "link": "guides/06-read-the-room.html#m1-6",
+   "id": "06-1.6-q2",
+   "type": "quiz",
+   "q": "In ultimatum games, why do people turn down free money?",
+   "options": [
+    "They misunderstand the rules",
+    "They reject unfair offers even at a cost",
+    "They're bluffing"
+   ],
+   "answer": 1,
+   "why": "Fairness is a want you can't ignore, especially in pricing."
+  },
+  {
+   "guide": "06",
+   "stop": "1.6",
+   "name": "What people want",
+   "link": "guides/06-read-the-room.html#m1-6",
+   "id": "06-1.6-q3",
+   "type": "quiz",
+   "q": "A clinic owner says 'my last agency took my money and vanished'. Which want is loudest?",
+   "options": [
+    "Status",
+    "Fairness and trust",
+    "Belonging"
+   ],
+   "answer": 1,
+   "why": "Fairness. Answer it head on: milestones, what he owns, how he can leave."
+  },
+  {
+   "guide": "06",
+   "stop": "1.6",
+   "name": "What people want",
+   "link": "guides/06-read-the-room.html#m1-6",
+   "id": "06-1.6-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"What people want\" in two or three lines, as you would to a client.",
+   "answer": "\"Most people aren't buying the website. They're buying respect, control or a fair deal, so I listen for which one.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.7",
+   "name": "Reading power in a room",
+   "link": "guides/06-read-the-room.html#m1-7",
+   "id": "06-1.7-q1",
+   "type": "quiz",
+   "q": "Cheng et al. 2013 found two routes to status. Which pair?",
+   "options": [
+    "Money and looks",
+    "Dominance and prestige",
+    "Age and title"
+   ],
+   "answer": 1,
+   "why": "Dominance works through fear, prestige through respected expertise. Both raise influence."
+  },
+  {
+   "guide": "06",
+   "stop": "1.7",
+   "name": "Reading power in a room",
+   "link": "guides/06-read-the-room.html#m1-7",
+   "id": "06-1.7-q2",
+   "type": "quiz",
+   "q": "Per eye-tracking research, the best clue to who holds status in a meeting is...",
+   "options": [
+    "Who talks loudest",
+    "Who others look at, beyond who's speaking",
+    "Who sits nearest the door"
+   ],
+   "answer": 1,
+   "why": "Foulsham et al. 2010: high-status people get looked at more often and for longer."
+  },
+  {
+   "guide": "06",
+   "stop": "1.7",
+   "name": "Reading power in a room",
+   "link": "guides/06-read-the-room.html#m1-7",
+   "id": "06-1.7-q3",
+   "type": "quiz",
+   "q": "The famous claim that power makes people worse at perspective taking...",
+   "options": [
+    "Is rock solid",
+    "Failed a large replication for the sarcasm task",
+    "Was never tested"
+   ],
+   "answer": 1,
+   "why": "Many Labs 3: 2,969 people, d = .03 vs the original .77."
+  },
+  {
+   "guide": "06",
+   "stop": "1.7",
+   "name": "Reading power in a room",
+   "link": "guides/06-read-the-room.html#m1-7",
+   "id": "06-1.7-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Reading power in a room\" in two or three lines, as you would to a client.",
+   "answer": "\"I don't look for the loudest person. I watch where the eyes go when something important is said.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.8",
+   "name": "Ask, don't guess",
+   "link": "guides/06-read-the-room.html#m1-8",
+   "id": "06-1.8-q1",
+   "type": "quiz",
+   "q": "Across 25 experiments, what improved accuracy about another person's mind?",
+   "options": [
+    "Imagining their perspective harder",
+    "Getting their perspective by asking",
+    "Studying their face longer"
+   ],
+   "answer": 1,
+   "why": "Eyal, Steffel and Epley 2018: perspective getting, not taking."
+  },
+  {
+   "guide": "06",
+   "stop": "1.8",
+   "name": "Ask, don't guess",
+   "link": "guides/06-read-the-room.html#m1-8",
+   "id": "06-1.8-q2",
+   "type": "quiz",
+   "q": "Which questions most increased liking in Huang et al. 2017?",
+   "options": [
+    "Follow-up questions",
+    "Questions about yourself",
+    "Rhetorical questions"
+   ],
+   "answer": 0,
+   "why": "Follow-ups show you listened (d = .35)."
+  },
+  {
+   "guide": "06",
+   "stop": "1.8",
+   "name": "Ask, don't guess",
+   "link": "guides/06-read-the-room.html#m1-8",
+   "id": "06-1.8-q3",
+   "type": "quiz",
+   "q": "You know websites; a dentist doesn't. Which bias makes you overestimate what he understands?",
+   "options": [
+    "Curse of knowledge",
+    "Spotlight effect",
+    "Halo effect"
+   ],
+   "answer": 0,
+   "why": "Once you know something, it's hard to imagine not knowing it. Check with a question."
+  },
+  {
+   "guide": "06",
+   "stop": "1.8",
+   "name": "Ask, don't guess",
+   "link": "guides/06-read-the-room.html#m1-8",
+   "id": "06-1.8-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Ask, don't guess\" in two or three lines, as you would to a client.",
+   "answer": "\"I'd rather ask one good question than guess right. Guessing feels smart; asking actually is.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.9",
+   "name": "Cold reading, decoded",
+   "link": "guides/06-read-the-room.html#m1-9",
+   "id": "06-1.9-q1",
+   "type": "quiz",
+   "q": "In Forer's demonstration, 39 students got the same sketch. How accurate did they rate it?",
+   "options": [
+    "About 2 out of 5",
+    "About 4.3 out of 5",
+    "They spotted it was generic"
+   ],
+   "answer": 1,
+   "why": "About 4.26 of 5. Vague, flattering statements fit nearly everyone."
+  },
+  {
+   "guide": "06",
+   "stop": "1.9",
+   "name": "Cold reading, decoded",
+   "link": "guides/06-read-the-room.html#m1-9",
+   "id": "06-1.9-q2",
+   "type": "quiz",
+   "q": "'You can be outgoing, but you also need time alone.' Which technique?",
+   "options": [
+    "Rainbow ruse",
+    "Hot reading",
+    "Vanishing negative"
+   ],
+   "answer": 0,
+   "why": "A trait and its opposite can't miss."
+  },
+  {
+   "guide": "06",
+   "stop": "1.9",
+   "name": "Cold reading, decoded",
+   "link": "guides/06-read-the-room.html#m1-9",
+   "id": "06-1.9-q3",
+   "type": "quiz",
+   "q": "What's the honest twin of a cold read?",
+   "options": [
+    "A vaguer statement",
+    "An observation turned into a question you verify",
+    "A compliment"
+   ],
+   "answer": 1,
+   "why": "Same observation, checked instead of faked."
+  },
+  {
+   "guide": "06",
+   "stop": "1.9",
+   "name": "Cold reading, decoded",
+   "link": "guides/06-read-the-room.html#m1-9",
+   "id": "06-1.9-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Cold reading, decoded\" in two or three lines, as you would to a client.",
+   "answer": "\"If a read would fit almost anyone, it isn't a read. I turn my guesses into questions.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.10",
+   "name": "Reading the phone and the DM",
+   "link": "guides/06-read-the-room.html#m1-10",
+   "id": "06-1.10-q1",
+   "type": "quiz",
+   "q": "Recruiters heard or read the same pitches. Hearing them led to...",
+   "options": [
+    "No difference",
+    "Higher ratings of intellect and hireability",
+    "Lower ratings, voices distract"
+   ],
+   "answer": 1,
+   "why": "Schroeder and Epley 2015: intellect effect d = 1.16 for recruiters."
+  },
+  {
+   "guide": "06",
+   "stop": "1.10",
+   "name": "Reading the phone and the DM",
+   "link": "guides/06-read-the-room.html#m1-10",
+   "id": "06-1.10-q2",
+   "type": "quiz",
+   "q": "Why do sarcastic emails misfire more than senders expect?",
+   "options": [
+    "Readers are less smart",
+    "Senders hear their own tone; readers don't",
+    "Email strips emoji"
+   ],
+   "answer": 1,
+   "why": "Kruger et al. 2005: egocentrism over email."
+  },
+  {
+   "guide": "06",
+   "stop": "1.10",
+   "name": "Reading the phone and the DM",
+   "link": "guides/06-read-the-room.html#m1-10",
+   "id": "06-1.10-q3",
+   "type": "quiz",
+   "q": "A safari operator takes six hours to reply. What does the evidence say this means?",
+   "options": [
+    "Not interested",
+    "Nothing reliable",
+    "They're testing you"
+   ],
+   "answer": 1,
+   "why": "Reply time isn't a validated signal. Follow up on substance."
+  },
+  {
+   "guide": "06",
+   "stop": "1.10",
+   "name": "Reading the phone and the DM",
+   "link": "guides/06-read-the-room.html#m1-10",
+   "id": "06-1.10-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Reading the phone and the DM\" in two or three lines, as you would to a client.",
+   "answer": "\"Text loses tone, so anything warm goes in a voice note and anything important gets a direct question.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.11",
+   "name": "How you read to others",
+   "link": "guides/06-read-the-room.html#m1-11",
+   "id": "06-1.11-q1",
+   "type": "quiz",
+   "q": "Speakers told about the illusion of transparency before a speech...",
+   "options": [
+    "Got more nervous",
+    "Were more composed and gave better speeches",
+    "Showed no change"
+   ],
+   "answer": 1,
+   "why": "Savitsky and Gilovich 2003."
+  },
+  {
+   "guide": "06",
+   "stop": "1.11",
+   "name": "How you read to others",
+   "link": "guides/06-read-the-room.html#m1-11",
+   "id": "06-1.11-q2",
+   "type": "quiz",
+   "q": "After a first conversation, people usually...",
+   "options": [
+    "Overestimate how much they were liked",
+    "Underestimate how much they were liked",
+    "Guess about right"
+   ],
+   "answer": 1,
+   "why": "The liking gap (Boothby et al. 2018)."
+  },
+  {
+   "guide": "06",
+   "stop": "1.11",
+   "name": "How you read to others",
+   "link": "guides/06-read-the-room.html#m1-11",
+   "id": "06-1.11-q3",
+   "type": "quiz",
+   "q": "Saying 'I'm not sure, let me check' to a client is judged...",
+   "options": [
+    "More harshly by you than by them",
+    "Harshly by everyone",
+    "As incompetence"
+   ],
+   "answer": 0,
+   "why": "The beautiful mess effect (Bruk et al. 2018)."
+  },
+  {
+   "guide": "06",
+   "stop": "1.11",
+   "name": "How you read to others",
+   "link": "guides/06-read-the-room.html#m1-11",
+   "id": "06-1.11-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"How you read to others\" in two or three lines, as you would to a client.",
+   "answer": "\"My nerves are louder inside my head than on my face. People notice far less than I fear.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "1.12",
+   "name": "The calibration log",
+   "link": "guides/06-read-the-room.html#m1-12",
+   "id": "06-1.12-q1",
+   "type": "quiz",
+   "q": "When can you trust a gut call, per Kahneman and Klein 2009?",
+   "options": [
+    "When you feel very sure",
+    "In regular settings with lots of practice and fast, clear feedback",
+    "Whenever you have experience"
+   ],
+   "answer": 1,
+   "why": "Confidence isn't the test. Regularity plus feedback is."
+  },
+  {
+   "guide": "06",
+   "stop": "1.12",
+   "name": "The calibration log",
+   "link": "guides/06-read-the-room.html#m1-12",
+   "id": "06-1.12-q2",
+   "type": "quiz",
+   "q": "You said 90% a prospect would book; they didn't. Your Brier score for it?",
+   "options": [
+    "0.09",
+    "0.81",
+    "0.10"
+   ],
+   "answer": 1,
+   "why": "(0.9 minus 0) squared = 0.81. Overconfidence gets punished, which is the point."
+  },
+  {
+   "guide": "06",
+   "stop": "1.12",
+   "name": "The calibration log",
+   "link": "guides/06-read-the-room.html#m1-12",
+   "id": "06-1.12-q3",
+   "type": "quiz",
+   "q": "Which feedback improved forecasters most (Lichtenstein and Fischhoff 1980)?",
+   "options": [
+    "Just the outcome",
+    "How often their 70% calls came true",
+    "More practice, no feedback"
+   ],
+   "answer": 1,
+   "why": "Calibration feedback works; outcome-only feedback barely does."
+  },
+  {
+   "guide": "06",
+   "stop": "1.12",
+   "name": "The calibration log",
+   "link": "guides/06-read-the-room.html#m1-12",
+   "id": "06-1.12-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The calibration log\" in two or three lines, as you would to a client.",
+   "answer": "\"I write down my read before the meeting and score it after. That's the only way a gut gets better.\"",
+   "label": "Say it in the room"
+  }
+ ]
+}
