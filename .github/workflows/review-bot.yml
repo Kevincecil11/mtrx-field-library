@@ -12,7 +12,7 @@ on:
         type: string
   push:
     branches: [main]
-    paths: ["bot/run.request", "bot/listen.py", ".github/workflows/review-bot.yml"]
+    paths: ["bot/run.request", "bot/listen.py", ".github/workflows/review-bot.yml", "tools/commit_state.sh"]
 
 permissions:
   contents: write
@@ -27,7 +27,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 14
     steps:
+      # Always start from the newest main, never the commit the run was queued on.
+      # A queued run used to start from old state and its save failed (9 Oct 2026).
       - uses: actions/checkout@v5
+        with:
+          ref: main
       - name: Build question banks from the guides
         run: python3 tools/build_questions.py
       - name: Run offline regression tests
@@ -35,26 +39,31 @@ jobs:
           python3 tests/test_bot.py
           python3 tests/test_listener.py
       - name: Listen for commands and answers
+        id: listen
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN || vars.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID || vars.TELEGRAM_CHAT_ID }}
+          BRANCH_NAME: main
           # A push boots with a short window so the first handoff can be verified.
           LISTEN_SECONDS: ${{ github.event_name == 'push' && '60' || inputs.listen_seconds || '600' }}
         run: python3 bot/listen.py --seconds "$LISTEN_SECONDS" --publish
       - name: Save state
         if: always()
+        env:
+          BRANCH_NAME: main
         run: |
           bash tools/commit_state.sh "bot review state"
+      # Hand off whenever the listener itself worked, even if saving failed,
+      # so one bad save can never silence the bot again.
       - name: Hand off to one successor (no duplicate consumers)
-        if: success()
+        if: ${{ always() && steps.listen.outcome == 'success' }}
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
           CURRENT_RUN: ${{ github.run_id }}
-          BRANCH: ${{ github.ref_name }}
         run: |
           python3 - <<'PY'
-          import json, os, urllib.request
+          import json, os, time, urllib.request
           root = 'https://api.github.com/repos/' + os.environ['REPO']
           headers = {'Authorization': 'Bearer ' + os.environ['GH_TOKEN'],
                      'Accept': 'application/vnd.github+json',
@@ -66,13 +75,21 @@ jobs:
               with urllib.request.urlopen(req, timeout=30) as response:
                   data = response.read()
                   return json.loads(data) if data else None
-          runs = request('/actions/workflows/review-bot.yml/runs?per_page=30')['workflow_runs']
-          pending = [r for r in runs if str(r['id']) != os.environ['CURRENT_RUN']
-                     and r['status'] in ('queued', 'in_progress', 'waiting', 'requested', 'pending')]
-          if pending:
-              print('A successor is already queued; no duplicate dispatch.')
+          for attempt in range(3):
+              try:
+                  runs = request('/actions/workflows/review-bot.yml/runs?per_page=30')['workflow_runs']
+                  pending = [r for r in runs if str(r['id']) != os.environ['CURRENT_RUN']
+                             and r['status'] in ('queued', 'in_progress', 'waiting', 'requested', 'pending')]
+                  if pending:
+                      print('A successor is already queued; no duplicate dispatch.')
+                  else:
+                      request('/actions/workflows/review-bot.yml/dispatches',
+                              {'ref': 'main', 'inputs': {'listen_seconds': '600'}})
+                      print('Successor dispatched. GitHub runner startup can cause a short handoff gap.')
+                  break
+              except Exception as e:
+                  print('Handoff attempt %d failed: %s' % (attempt + 1, type(e).__name__))
+                  time.sleep(5)
           else:
-              request('/actions/workflows/review-bot.yml/dispatches',
-                      {'ref': os.environ['BRANCH'], 'inputs': {'listen_seconds': '600'}})
-              print('Successor dispatched. GitHub runner startup can cause a short handoff gap.')
+              raise SystemExit('Could not hand off; the recovery cron will restart the bot.')
           PY
