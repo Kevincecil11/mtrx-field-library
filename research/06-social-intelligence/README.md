@@ -1,6 +1,6 @@
 # No. 06 Social intelligence: idea-phase scan
 
-Date: 9 Oct 2026. Status: idea phase, basic research only. Not yet coverage-audited: run `docs/skill/COVERAGE-AUDIT.md` before curating or writing stops. Working title: **Reading the room**.
+Date: 9 Oct 2026. Status: direction v2 drafted on the evening of 9 Oct 2026 (see the end of this file), waiting for Kevin's OK on the plan. Not yet coverage-audited: run `docs/skill/COVERAGE-AUDIT.md` before curating or writing stops. Working title: **Read the room** (subtitle: social intelligence, the George Newman way).
 
 ## Kevin's brief (9 Oct 2026)
 
@@ -65,16 +65,61 @@ Signature drill: a **calibration log**. Before asking, predict what the person w
 - **The Family Blueprint: Birth Order, Family Roles & Character Creation** (doc, 28 Aug 2026): fine as a fiction-writing device, not a reading tool (Rohrer 2015).
 - **Secrets from a Forbidden Playbook** (doc, 17 Jul 2026) and **The Con Men's Bible** (doc, 18 Jul 2026): con psychology for No. 03 and No. 06 Part II defence. Verify the provenance of "Lustig's Ten Commandments" before quoting.
 
-## Open questions for Kevin (asked 9 Oct 2026, one at a time)
+## Open questions for Kevin (asked 9 Oct 2026)
 
-1. The number one job of the course in the next 12 months: win and keep clients, get into rooms with big players, lead people, or read people everywhere.
-2. Who exactly: three named people or rooms he wants access to by October 2027.
-3. Where he loses people today (first two minutes, small talk, high-status people, follow-up, asking, conflict, names).
-4. Format and length. Default proposal: stop-based like No. 01 and No. 05, with weekly field missions.
+Answered on the evening of 9 Oct 2026, see Direction v2 below. Still open: daily time (default 20 minutes) and the 10-question baseline.
 
-Then a 10-question baseline (Kevin prefers a short questionnaire before teaching).
+## Direction v2 (Kevin, 9 Oct 2026, evening)
+
+Kevin's feedback on v1: the facts felt empty. He wants to become charming and understand people, and to learn through characters he admires. Social intelligence and reading people come first. Facts become the footnotes, characters become the lessons.
+
+### His why, in his words
+
+- **The scene (Q1):** Al Ruddy in *The Offer*: an outsider with no film background who acts, never quits and always finds a way. The Bluhdorn pitch ("an ice-blue, terrifying movie about people you love"). He wants that delivery: pitch, pace, slowing down, convincing someone in a second by reading them.
+- **The cast he admires:** Danny Ocean (Clooney: calm under pressure, a lovable rake, a leader), Michael Corleone (body language), Bond (Daniel Craig's walk in *Skyfall* and *Spectre*), Saul Goodman (long dialogue in one go), Walter White (genius), Robert Evans, Jordan Belfort's phone tonality, Bogart in *Casablanca*. Feels closest to actor-directors, such as Elia Kazan directing Brando.
+- **Director:** read as film director, actor-director style. His core archetype is the producer (Ruddy, Evans, Ocean): assemble talent, sell the vision, handle the money.
+- **The alter ego:** **George Newman** (Clooney plus Paul Newman): a charmer who smiles a lot, gets things done and never fails to deliver. The real self stays with people close to him. Kevin admits he sometimes loses where the character ends (compares it to Mr. McMahon), so the guide builds an off switch.
+- **The gap (Q2):** not invisibility. He pitched his strict department head cold; she was impressed, gave suggestions and shared contacts. The gap: unprepared, fluent but got lost in words. Belief: curly hair and an "adorable" face cost him respect. Wants his own aura and to be prepared for any room.
+- **The why (Q3):** convince people now, and make the next person remember him.
+- **The stage (Q5):** no named rooms. Client calls, the phone and everyday meetings. Daily time not answered.
+- **Roadmap:** the screenwriting guide is slotted at No. 08 (anywhere from 08 to 10), not now. Every No. 06 stop carries a writer's note that feeds it.
+
+### Draft plan (sent 9 Oct 2026, waiting for Kevin's OK)
+
+Format: stop-based, about 30 stops of 20 minutes over 6 weeks. Each stop: the scene (a clip), the breakdown, Try it (5 min), a quick check, a writer's note (how a screenwriter uses it), and a short "why it works" box with the evidence grade.
+
+| Part | Weeks | Focus | Cast |
+|---|---|---|---|
+| I Read the room | 1 to 2 | The 54% problem (asking beats guessing); baselines (read change, not tells); five channels (face, voice, body, words, timing); warmth then competence, and the babyface lever; what people want; reading power in a room; cold reading decoded and its honest twin; phone and DM reads; the calibration log | Kazan, Ruddy reading Bluhdorn, Vito at the Five Families meeting |
+| II Become George Newman | 3 to 4 | Attention is the charm (follow-up questions, the liking gap); the prep kit (one line, three stories, three questions, one ask); voice (pace, pause, pitch, landing); body (walk, stance, stillness); calm under pressure; warmth and humour; the mask and its off switch | Ocean, Bogart, Bond, Michael Corleone, Saul Goodman |
+| III Work the network | 5 | The known-for (Ruddy was known for cheap and fast); favours and gifts done right; dormant ties; a follow-up system; the 48 Laws worth knowing, decoded | Ruddy, Evans |
+| IV The line | 6 | Influence vs manipulation (influence survives disclosure); Belfort; Barry Seal; when the mask eats the man | Belfort, Walter White |
+
+Skip: lie-detection and microexpression training; NLP eye-direction and scripted mirroring; power posing; 7-38-55; birth-order and personality-type profiling; pickup-artist "alpha" content; reading the 48 Laws cover to cover.
+
+### New facts verified (9 Oct 2026, evening)
+
+| Claim | Grade | Source |
+|---|---|---|
+| Ruddy's real line: "Charlie, I want to make an ice-blue, terrifying movie about people you love." He had read and marked up the book, then dropped the notes after sizing up Bluhdorn ("street fighter to street fighter"), who was giving him about a minute. He was known for making films cheaply and quickly while Paramount was losing money on bloated films | Fact (his own account plus press) | Vanity Fair, March 2009 https://stag-archive.vanityfair.com/article/2009/3/the-godfather-wars ; Slashfilm 2020 https://www.slashfilm.com/574456/how-did-this-get-made-al-ruddy-interview/ ; Guardian obituary 2024 https://www.theguardian.com/film/2024/jun/07/albert-s-ruddy-obituary |
+| Babyish faces elicit impressions of high warmth, low power and low competence, regardless of face age, gender or race | Strong (review of decades of studies) | Zebrowitz 2017, Current Directions in Psychological Science https://pmc.ncbi.nlm.nih.gov/articles/PMC5473630/ |
+| "Batman effect": children who impersonated an exemplar persevered longest at a boring task, then third-person self-talk, then first-person | Moderate for children (N = 180); untested here for adults | White et al. 2017, Child Development https://pubmed.ncbi.nlm.nih.gov/27982409/ |
+| Beyonce used Sasha Fierce "to take over when I'm too scared or too shy", then retired her: "now I'm able to merge the two" (Allure, 2010) | Fact (press reports of the interview) | https://www.digitalspy.com/music/a205702/beyonc-ive-killed-off-sasha-fierce/ ; https://www.nine.com.au/entertainment/celebrity/beyonce-kills-off-lame-alter-ego-sasha-fierce-20100122-p5ovaw.html |
+| Aerotyne call lines ("If you have 60 seconds...", "judge me on my losers, because I have so few") and the 50% commission on pink sheets | Fact (film transcript) | https://www.youtube.com/watch?v=Q0sfpJir8BU |
+
+### Clips (YouTube; recheck before linking in the guide)
+
+- *Casablanca*, "Here's looking at you, kid" (Movieclips): https://www.youtube.com/watch?v=rEWaqUVac3M
+- *The Wolf of Wall Street*, the Aerotyne call: https://www.youtube.com/watch?v=Q0sfpJir8BU
+- *The Godfather*, the Five Families meeting: https://www.youtube.com/watch?v=Zp9dsv34pP8
+
+### Plates drafted (shared in ClickUp chat on 9 Oct 2026; not yet in the repo)
+
+1. The walk (annotated sketch). 2. The voice (Ruddy, Bond, the website-guy line). 3. The walk in motion (GIF, wrong vs right). 4. The shoulder swing from above (GIF: stiff, small swing, swagger). 5. The stance (slumped, stacked, puffed, with a plumb line). 6. The voice, part 2 (Bogart, Belfort, an honest client-call version).
 
 ## Next steps
 
-1. Kevin's answers, then a scoped COVERAGE-AUDIT. Candidate source families to verify: interpersonal-accuracy texts (for example Funder's realistic accuracy model; Hall and Bernieri, Interpersonal Sensitivity), network science (Granovetter 1973; Burt on brokerage), influence (Cialdini), syllabi (for example Stanford GSB Interpersonal Dynamics), job blueprints (O*NET "Social Perceptiveness"), practitioners (Voss; Rowland on cold reading; Navarro with caveats), error sources (scam reports, social-skills forums), recent meta-analyses.
-2. Inventory JSONL in this folder, then the build.
+1. Kevin's OK on the v2 plan and his daily time.
+2. The 10-question baseline.
+3. Scoped COVERAGE-AUDIT. Candidate source families: interpersonal-accuracy texts (Funder's realistic accuracy model; Hall and Bernieri, Interpersonal Sensitivity), network science (Granovetter 1973; Burt on brokerage), influence (Cialdini), syllabi (Stanford GSB Interpersonal Dynamics), job blueprints (O*NET "Social Perceptiveness"), practitioners (Voss; Rowland on cold reading; Navarro with caveats), acting and voice texts for Part II, error sources (scam reports, social-skills forums), recent meta-analyses.
+4. Inventory JSONL in this folder, then the build, Part I first.
