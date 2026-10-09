@@ -1,5 +1,5 @@
 /* MTRX palette layer. Original is a no-op; learning data and illustrations are never changed.
-   Source: colors.elwyn.co, Sanzo Wada combinations 276 and 320.
+   Source: colors.elwyn.co, Sanzo Wada combinations 276, 320, 330 and 331.
    Palette persistence is independent of the existing mtrx-theme dark-mode preference.
    No dependencies, document-wide observers, scroll listeners or continuous animation. */
 (function () {
@@ -9,7 +9,9 @@
   var palettes = {
     original: { name: 'Original', sub: 'The MTRX field notebook', colors: ['#ED691D', '#ECEAE4', '#697132', '#151515'] },
     '276': { name: 'Wada 276', sub: 'Eosine pink, seashell, yellow-green, black', colors: ['#f37f94', '#fdd4bd', '#afd472', '#111314'] },
-    '320': { name: 'Wada 320', sub: 'Coral, sulphur yellow, oil green, glaucous blue', colors: ['#f58e84', '#f5ecc2', '#819238', '#a5c8d1'] }
+    '320': { name: 'Wada 320', sub: 'Coral, sulphur yellow, oil green, glaucous blue', colors: ['#f58e84', '#f5ecc2', '#819238', '#a5c8d1'] },
+    '330': { name: 'Wada 330', sub: 'Olive buff, Nile blue, salvia blue, green blue', colors: ['#c1c494', '#bce4e5', '#97acc8', '#099197'] },
+    '331': { name: 'Wada 331', sub: 'Indian lake, violet black, light mauve, violet', colors: ['#c53c69', '#1e0e3f', '#9a72aa', '#4f4086'] }
   };
   var current = 'original', dialog, trigger, status;
   function valid(id) { return Object.prototype.hasOwnProperty.call(palettes, id); }
@@ -32,32 +34,35 @@
     return toward;
   }
   function tokens(id, dark) {
-    var c = palettes[id].colors, ink = id === '276' ? c[3] : mix(c[2], '#111314', .82);
-    var canvas = dark ? mix(ink, c[1], .025) : c[1];
-    var paper = dark ? mix(canvas, c[1], .065) : mix(canvas, '#ffffff', .72);
-    var text = dark ? mix(c[1], '#ffffff', .72) : ink;
-    var gun = id === '276' ? ink : c[3], bg = [canvas, paper];
+    var c = palettes[id].colors, ink = id === '276' ? c[3] : id === '331' ? c[1] : mix(c[2], '#111314', .82);
+    var base = id === '331' ? mix(c[2], '#ffffff', .88) : c[1];
+    var main = id === '330' ? c[3] : c[0], secondary = id === '330' ? c[0] : c[2];
+    var canvas = dark ? mix(ink, base, .025) : base;
+    var paper = dark ? mix(canvas, base, .065) : mix(canvas, '#ffffff', .72);
+    var text = dark ? mix(base, '#ffffff', .72) : ink;
+    var gun = id === '276' ? ink : id === '330' ? c[2] : c[3], bg = [canvas, paper];
     var t = {
       canvas: canvas, paper: paper, 'paper-2': mix(canvas, dark ? text : ink, .08),
       ink: text, 'ink-2': readable(mix(text, canvas, .12), bg, text),
       graphite: readable(mix(text, canvas, .36), bg, text),
       steel: mix(canvas, text, .32), rule: dark ? 'rgba(255,255,255,.16)' : 'rgba(17,19,20,.16)',
-      mars: c[0], 'mars-ink': readable(c[0], bg, text), 'mars-soft': mix(paper, c[0], dark ? .18 : .22),
-      moss: c[2], 'moss-ink': readable(c[2], bg, text), 'moss-soft': mix(paper, c[2], dark ? .18 : .25),
+      mars: main, 'mars-ink': readable(main, bg, text), 'mars-soft': mix(paper, main, dark ? .18 : .22),
+      moss: secondary, 'moss-ink': readable(secondary, bg, text), 'moss-soft': mix(paper, secondary, dark ? .18 : .25),
       gun: dark && id === '276' ? c[1] : gun, 'gun-ink': readable(gun, bg, text),
-      'gun-soft': mix(paper, id === '276' ? ink : c[3], .14),
-      jane: dark ? mix(paper, c[1], .16) : mix(c[1], c[2], .17),
-      red: readable(c[0], bg, text), 'red-soft': mix(paper, c[0], .18)
+      'gun-soft': mix(paper, gun, .14),
+      jane: dark ? mix(paper, base, .16) : mix(base, secondary, .17),
+      red: readable(main, bg, text), 'red-soft': mix(paper, main, .18)
     };
     ['mars', 'moss', 'gun', 'red', 'graphite'].forEach(function (key) {
-      t['on-' + key] = contrast(t[key], ink) >= contrast(t[key], '#ffffff') ? readable(ink, [t[key]], '#000000') : '#ffffff';
+      var whiteRatio = contrast(t[key], '#ffffff');
+      t['on-' + key] = whiteRatio >= 4.6 && whiteRatio > contrast(t[key], ink) ? '#ffffff' : readable(ink, [t[key]], '#000000');
     });
     return t;
   }
   function declarations(t) { return Object.keys(t).map(function (key) { return '--' + key + ':' + t[key] + '!important;'; }).join(''); }
   var islands = ':is(.fig,#lang-map,.plate-img,.sp,.cube,.thumbs,.part-head,.room,.sim,.colophon,.watch,.vid-th,.verbs)';
   var paletteCSS = '';
-  ['276', '320'].forEach(function (id) {
+  ['276', '320', '330', '331'].forEach(function (id) {
     var scope = 'html[data-mtrx-palette="' + id + '"]', light = tokens(id, false), dark = tokens(id, true);
     paletteCSS += scope + '{' + declarations(light) + 'color-scheme:light}' +
       scope + '[data-theme="dark"]{' + declarations(dark) + 'color-scheme:dark}' +
@@ -98,6 +103,8 @@ html[data-mtrx-palette] .next p{color:inherit}
 html[data-mtrx-palette] .next .k{color:var(--paper)}
 html[data-mtrx-palette] :is(.room,.colophon){color:var(--paper)}
 html[data-mtrx-palette] .room::before{color:var(--mars)}
+html[data-mtrx-palette="331"] :is(.room::before,.sim .kicker,.sim-fb b,.sim-end .score,.colophon .kicker,.decoder-out b,.flip.is-flipped small){color:#e5b2d6}
+html[data-mtrx-palette="330"] :is(.room::before,.sim .kicker,.sim-fb b,.sim-end .score,.colophon .kicker,.decoder-out b,.flip.is-flipped small){color:#bce4e5}
 html[data-mtrx-palette] :is(.fig,.plate-img,.sp:hover){background:var(--paper)}
 html[data-mtrx-palette] .s-card{fill:var(--paper)}
 html[data-mtrx-palette] input[type="date"]{color:var(--ink)}
@@ -121,17 +128,17 @@ html[data-mtrx-palette] :is(.nk-fab[aria-pressed="true"],.nk-fab .cnt){color:var
 #mtrx-theme-home{position:fixed;right:14px;top:10px;z-index:95}
 #mtrx-themes{box-sizing:border-box;width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 32px);overflow:auto;padding:24px;border:2px solid var(--ink,#151515);border-radius:22px;background:var(--paper,#f6f4ef);color:var(--ink,#151515);font:400 16px/1.5 var(--sans,system-ui,sans-serif);box-shadow:0 24px 90px #0005}
 #mtrx-themes::backdrop{background:rgba(17,19,20,.55)}
-#mtrx-themes h2{margin:4px 48px 8px 0;font:400 42px/1 var(--display,Impact,sans-serif);text-transform:uppercase;letter-spacing:0}
+#mtrx-themes h2{margin:4px 48px 8px 0;font:400 34px/1 var(--display,Impact,sans-serif);text-transform:uppercase;letter-spacing:0}
 #mtrx-themes p{margin:0 0 16px}
 #mtrx-themes .mtp-close{position:absolute;right:14px;top:14px;width:44px;height:44px;border:0;border-radius:50%;background:var(--canvas,#eceae4);color:inherit;font:400 26px/1 system-ui;cursor:pointer}
 #mtrx-themes fieldset{padding:0;margin:0;border:0;min-width:0;display:grid;gap:10px}
 #mtrx-themes legend{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-#mtrx-themes .mtp-option{display:block;position:relative;padding:13px 14px 12px;border:2px solid var(--steel,#bcbfcc);border-radius:14px;cursor:pointer;transition:border-color .15s,background-color .15s}
+#mtrx-themes .mtp-option{display:block;position:relative;padding:10px 12px;border:2px solid var(--steel,#bcbfcc);border-radius:12px;cursor:pointer;transition:border-color .15s,background-color .15s}
 #mtrx-themes .mtp-option:has(input:checked){border-color:var(--ink,#151515);background:var(--canvas,#eceae4)}
 #mtrx-themes .mtp-option:has(input:focus-visible){outline:3px solid var(--ink,#151515);outline-offset:3px}
 #mtrx-themes input{position:absolute;right:14px;top:16px;width:18px;height:18px;margin:0;accent-color:var(--ink,#151515)}
 #mtrx-themes strong{display:block;margin-right:26px;font:800 17px/1.3 var(--sans,system-ui,sans-serif)}
-#mtrx-themes .mtp-swatches{display:flex;height:24px;border:1px solid rgba(17,19,20,.18);border-radius:6px;overflow:hidden;margin:9px 0 7px}
+#mtrx-themes .mtp-swatches{display:flex;height:18px;border:1px solid rgba(17,19,20,.18);border-radius:5px;overflow:hidden;margin:7px 0 5px}
 #mtrx-themes .mtp-swatches i{flex:1}
 #mtrx-themes small{display:block;font:400 14px/1.35 var(--sans,system-ui,sans-serif)}
 #mtrx-themes .mtp-note{font-size:14px;color:var(--ink-2,#2b2b2b);margin:14px 0 0}
@@ -181,12 +188,12 @@ html.mtrx-read :is(#mtrx-theme-home,#mtrx-theme-toggle){display:none!important}
     dialog.setAttribute('aria-labelledby', 'mtrx-themes-title');
     dialog.setAttribute('data-lenis-prevent', '');
     dialog.innerHTML = '<button type="button" class="mtp-close" aria-label="Close color themes">&#215;</button>' +
-      '<h2 id="mtrx-themes-title">Same field. New colors.</h2><p>Keep the notebook. Change the palette.</p>' +
+      '<h2 id="mtrx-themes-title">Color themes</h2><p>Same notebook. Your palette.</p>' +
       '<fieldset><legend>Color theme</legend></fieldset>' +
       '<p class="mtp-note">Saved across guides in this browser. Light/dark stays separate; artwork stays original. Text uses readable companion shades.</p>' +
       '<a class="mtp-source" href="https://colors.elwyn.co/" target="_blank" rel="noopener noreferrer">Palettes from Sanzo Wada, via Elwyn &#8599;</a>';
     var fieldset = dialog.querySelector('fieldset');
-    ['original', '276', '320'].forEach(function (id) {
+    ['original', '276', '320', '330', '331'].forEach(function (id) {
       var item = palettes[id], label = document.createElement('label'); label.className = 'mtp-option';
       var input = document.createElement('input');
       input.type = 'radio'; input.name = 'mtrx-palette'; input.value = id;
@@ -212,7 +219,10 @@ html.mtrx-read :is(#mtrx-theme-home,#mtrx-theme-toggle){display:none!important}
     dialog.querySelector('.mtp-close').addEventListener('click', close);
     dialog.addEventListener('close', function () {
       trigger.setAttribute('aria-expanded', 'false');
-      if (!root.classList.contains('mtrx-read')) trigger.focus({ preventScroll: true });
+      if (!root.classList.contains('mtrx-read')) {
+        var target = trigger.getClientRects().length ? trigger : document.getElementById('mtrx-reader-toggle');
+        if (target) target.focus({ preventScroll: true });
+      }
     });
     dialog.addEventListener('click', function (event) {
       if (event.target !== dialog) return;
@@ -225,6 +235,7 @@ html.mtrx-read :is(#mtrx-theme-home,#mtrx-theme-toggle){display:none!important}
       if (root.classList.contains('mtrx-read')) close();
     }).observe(root, { attributes: true, attributeFilter: ['class'] });
     renderChoice();
+    window.dispatchEvent(new CustomEvent('mtrx:themes-ready'));
   }
   window.MTRX_PALETTES = {
     set: function (id) { apply(id, true); },
