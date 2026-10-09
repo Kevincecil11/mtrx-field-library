@@ -320,9 +320,9 @@
  "hour": 8,
  "last_push": "2026-10-08",
  "listener": {
-  "checked_at": "2026-10-09T06:20:10+05:30",
+  "checked_at": "2026-10-09T06:30:38+05:30",
   "mode": "handoff",
-  "run_id": "37865903413"
+  "run_id": "37866781087"
  },
  "log": [
   "2026-10-08 08:00 pushed 15 cards"
