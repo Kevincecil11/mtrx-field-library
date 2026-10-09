@@ -1,13 +1,13 @@
 # Context: what a new chat needs to know
 
-Last updated 9 Oct 2026. Update this file whenever a decision is made or a guide ships.
+Last updated 9 Oct 2026 (night). Update this file whenever a decision is made or a guide ships.
 
 ## Kevin
 
 - Founder of MTRX™ Digital (mtrxdigital.com), a web, app and AI agency in Ahmedabad, India. Niche: wildlife, safari, adventure travel and eco-lodge brands worldwide, plus local businesses such as dental clinics.
 - MSc in AI and Machine Learning, BSc in Physics, two years teaching maths. Expert vibe coder: he builds software with AI and wants the operator's grasp of fundamentals, not a CS degree ("a filmmaker operates the camera, he doesn't build it"). Applied AI is the exception: he sells it, so depth there pays.
 - Wants to be a screenwriter and, in 2 to 5 years, a film director (actor-director style, like Kazan). Admires producers Al Ruddy and Robert Evans. Public persona: "George Newman" (Clooney plus Paul Newman); his real self stays with people close to him.
-- Learns action-first, by pattern recognition, and best through characters and scenes rather than bare facts (9 Oct 2026). Lifelong learner who wants to be curious, mentally strong, and able to learn, unlearn and relearn.
+- Learns action-first, by pattern recognition, and best through characters and scenes rather than bare facts (9 Oct 2026). Loves GIFs, sketches and wrong vs right plates. Lifelong learner who wants to be curious, mentally strong, and able to learn, unlearn and relearn.
 - Standard: zero gaps, primary-source verification, research-backed methods, hands-on tasks, explain the thinking, iterate toward perfection.
 - Preferences: no em or en dashes; short, sharp, opinionated writing; simple step-by-step explanations; everything free; built for one user, him.
 - Reads on both desktop and iPad.
@@ -22,7 +22,7 @@ Last updated 9 Oct 2026. Update this file whenever a decision is made or a guide
 | 05 | 5 Oct 2026, v1 | Twelve lives as lab notes in 4 themes over 12 weeks (Seneca, Marcus Aurelius, Franklin; Darwin, Feynman, Curie; Leonardo, Angelou, Ramanujan; Nightingale, Gandhi, Munger), 18 drills graded strong or moderate (15 of 16 BCT Taxonomy groups), a stack builder, "what failed", 14 fake quotes. Starter stack: If-then + Stack, Reappraise the Trigger, Evidence Ledger, weekly Plan Premortem |
 | 03 | planned | Cons and cults, defence first (see DARK-TOPICS) |
 | 04 | planned | Sales and persuasion, honest levers only |
-| 06 | direction v2, 9 Oct 2026 | Social intelligence through characters, working title "Read the room": Part I read the room (first), II become George Newman (charm, voice, body, prep kit), III work the network, IV the line. About 30 stops over 6 weeks; each stop has a scene, breakdown, Try it, quick check and a writer's note. Kevin's why, plan, sources and drafted plates: `research/06-social-intelligence/README.md` |
+| 06 | Part I built 9 Oct 2026, v1 | "Read the room", `guides/06-read-the-room.html`, key `mtrx-room-v1`, slug `mtrx-field-series-06-read-the-room`. Start (0.1 why, 0.2 ten-question baseline) and Part I (1.1 to 1.12: the 54% problem, first impressions, baselines, five channels, warmth then competence, what people want, power in a room, ask don't guess, cold reading decoded, phone and DM, how you read to others, calibration log with a Brier widget). 26 verified scenes in Part I, 45 delivery scenes as watch-ahead cards for Parts II to IV, 5 preview plates (2 animated). Coverage audit: 141 concepts, 24 source families, all 12 stops mapped. Each stop: predict, scenes, the read, SVG, graded evidence, Try it, writer's note, room line, 3 checks. Parts II (George Newman: 10 stops), III (network: 6) and IV (the line: 4) next |
 | 08 | slot reserved, not now | Screenwriting (Kevin, 9 Oct 2026; anywhere from 08 to 10). No. 06 writer's notes feed it |
 
 ## Decisions log
@@ -33,8 +33,9 @@ Last updated 9 Oct 2026. Update this file whenever a decision is made or a guide
 - Bot cadence: every 10 minutes (Kevin, 7 Oct 2026; was 15). Hourly would also work; Telegram keeps unread replies 24 h.
 - Read mode in every guide via the shared add-on: ¶ button or R hides all floating controls; Esc or ✕ exits (Kevin asked, 7 Oct 2026).
 - Two devices: sync through the bot's public `bot/state.json`; guides and library pull it on open. Notes and highlights stay per device (7 Oct 2026).
-- No. 06 is Social intelligence (Kevin, 9 Oct 2026): cold reading, understanding behaviour, charm and networking for business, legitimate side only, inspired by the film American Made. Next guide to build.
-- No. 06 direction v2 (Kevin, 9 Oct 2026, evening): facts felt empty, so the guide teaches through characters (Ruddy, Evans, Danny Ocean, Bond, Michael Corleone, Bogart, Saul Goodman, Kazan; Belfort and Walter White as warnings). Reading people comes first. The George Newman persona gets an off switch. Visual plates with wrong and right versions and GIFs are part of the format.
+- No. 06 is Social intelligence (Kevin, 9 Oct 2026): cold reading, understanding behaviour, charm and networking for business, legitimate side only, inspired by the film American Made.
+- No. 06 direction v2 (Kevin, 9 Oct 2026, evening): facts felt empty, so the guide teaches through characters across world and Indian cinema, heroes and villains alike, with the science as the check. Reading people comes first. The George Newman persona gets an off switch. Visual plates with wrong and right versions and GIFs are part of the format. 20 minutes a day (Kevin confirmed).
+- Big files: guides over about 300 KB are too large to push through the chat's GitHub tool, so Brain ships them as an upload bundle and Kevin drags them into the repo on github.com (Add file, Upload files). Small files Brain pushes directly. The No. 06 build scripts live in `research/06-social-intelligence/build/`.
 - Screenwriting guide slotted at No. 08 (Kevin, 9 Oct 2026; 08 to 10 is fine). Not now, keep it in the loop.
 - Considered, not started: an applied-AI deep-dive guide (LLM internals at gut level, RAG, agents, evals, voice pipelines, cost and latency, India's DPDP Act for patient data).
 - Parked: turning the review bot into a SaaS for course creators. Personal use only for now.
@@ -50,24 +51,27 @@ Last updated 9 Oct 2026. Update this file whenever a decision is made or a guide
 - "It is not the strongest that survives but the most adaptable": Leon Megginson, 1963, not Darwin.
 - Phone "mere presence" brain drain failed replication (2024 meta-analysis d = -0.02). Cold showers cut sick-leave absence, not illness days.
 - Ruddy's Godfather pitch is "an ice-blue, terrifying movie about people you love" (Vanity Fair 2009), not "for the people you love".
+- The Founder's "you're in the real estate business" line is Harry Sonneborn's (B.J. Novak), said to Ray Kroc. Forer's study ran in 1948 and was published in 1949. The ultimatum meta-analysis is Oosterbeek, Sloof and van de Kuilen 2004.
 
 ## Known issues and housekeeping
 
 - 6 to 7 Oct 2026: both workflows were invalid YAML (colon inside a `run:` line), so every run failed instantly; fixed, see AGENTS.md rule 11.
-- 7 Oct 2026: the first secrets attempt landed outside repository secrets and never reached the workflow. Re-added as repository secrets; live self-test green at 00:19 IST (getMe, deleteWebhook, setMyCommands with 9 commands, banks 35/106/100/51 cards, sendMessage, sendPoll). The bot is live.
-- The raw research files from the Oct 2026 sessions (lives.json, toolkit.json, the 380-concept inventory, curiosity research) were not preserved; their content lives in the guides. Save new research in `research/`.
+- 7 Oct 2026: the first secrets attempt landed outside repository secrets and never reached the workflow. Re-added as repository secrets; live self-test green at 00:19 IST. The bot is live.
+- 9 Oct 2026, 23:00 IST, bot went silent again. Root cause: a scheduled run queued behind the running one (concurrency group) and then checked out the commit it was queued on, not the newest main. It ran 10 minutes on old state, its save did `git pull --rebase`, hit a merge conflict on `bot/state.json`, failed 3 times, and because the handoff step was `if: success()`, no successor was dispatched. Only the sparse recovery cron was left. Fix (commit 55241dd): checkout `ref: main`; `tools/commit_state.sh` no longer rebases (it fetches main, lays this run's changed state files on top and pushes; reproduced and verified locally); the handoff now runs whenever the listener step succeeded, even if saving failed, with 3 retries. Unread Telegram messages wait 24 h, so nothing is lost during a gap.
+- The raw research files from the Oct 2026 sessions before No. 06 (lives.json, toolkit.json, the 380-concept inventory, curiosity research) were not preserved; their content lives in the guides. Save new research in `research/`.
 - The guides were saved from a browser and carry two harmless extension style blocks ("fusion-selection-styles" and Open Sans @font-face). Drop them on the next rebuild.
 - Kit source files (kit-render.py, kit-build.py and others) are attached to the ClickUp skill; `tools/extract_kit.py` recovers the CSS and JS from any built guide.
-- 7 Oct 2026, evening: Telegram Web drops t.me start parameters, so Send progress now opens a copy-and-send panel (paste `/start pNN_code` into the bot chat on Telegram Web; the app link is kept). Scheduled runs fired only a few times a day, so the Review bot now runs `bot/listen.py` (20 s long polling for a 10-minute window, then it dispatches one successor; the 10-minute cron is recovery only). Tests: `tests/test_listener.py`. AGENTS.md and ARCHITECTURE.md still describe the older cron-only model; update them on the next bot change.
-- No. 06 plates (walk, voice, walk GIF, shoulder-swing GIF, stance, voice part 2) were shared in ClickUp chat on 9 Oct 2026 and are not in the repo yet; add them under `assets/` at build time.
+- 7 Oct 2026, evening: Telegram Web drops t.me start parameters, so Send progress opens a copy-and-send panel. The Review bot runs `bot/listen.py` (20 s long polling for a 10-minute window, then it dispatches one successor; the 10-minute cron is recovery only). AGENTS.md and ARCHITECTURE.md still describe the older cron-only model and lack the No. 06 row; update them on the next change.
+- No. 06 plates (walk, voice, walk GIF, shoulder-swing GIF, stance, voice part 2) are inlined in the guide's Part II preview. The annotated walk sketch (an AI image) could not be loaded into the build sandbox; redraw it in code for Part II.
 - No. 01 quarterly re-audit due January 2027.
 
 ## Next up
 
-1. Kevin started No. 01 on Thu 8 Oct 2026; first reviews Fri 9 Oct. Watch the scheduled runs and the 8 am push.
-2. No. 06: Kevin's OK on the v2 plan and daily time, the 10-question baseline, coverage audit, then build Part I first.
-3. Better banks: 3 cards per stop (add quick checks inside the guides).
-4. No. 02 Weeks 3 to 4.
-5. No. 03 cons and cults.
-6. Bot Phase 3: 1-month and 6-month exams, optional free-recall grading with Gemini's free tier.
-7. No. 08 screenwriting, later.
+1. Kevin uploads `guides/06-read-the-room.html` and the No. 06 research files from the bundle (Add file, Upload files on github.com). The bot builds the 06 question banks on its next run.
+2. No. 06 Part II, Become George Newman (10 stops), then Parts III and IV. Scene library already researched and verified.
+3. Kevin keeps No. 01 as the main daily track; No. 06 runs alongside at 20 minutes.
+4. Better banks: 3 cards per stop (add quick checks inside the guides).
+5. No. 02 Weeks 3 to 4.
+6. No. 03 cons and cults.
+7. Bot Phase 3: 1-month and 6-month exams, optional free-recall grading with Gemini's free tier.
+8. No. 08 screenwriting, later.
