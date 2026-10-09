@@ -10,6 +10,7 @@ Last updated 9 Oct 2026 (night). Update this file whenever a decision is made or
 - Learns action-first, by pattern recognition, and best through characters and scenes rather than bare facts (9 Oct 2026). Loves GIFs, sketches and wrong vs right plates. Lifelong learner who wants to be curious, mentally strong, and able to learn, unlearn and relearn.
 - Standard: zero gaps, primary-source verification, research-backed methods, hands-on tasks, explain the thinking, iterate toward perfection.
 - Preferences: no em or en dashes; short, sharp, opinionated writing; simple step-by-step explanations; everything free; built for one user, him.
+- Film examples: Hollywood and international cinema only. No Indian cinema (no Bollywood, no Indian actors or films) in any guide (Kevin, 9 Oct 2026).
 - Reads on both desktop and iPad.
 
 ## The series so far
@@ -22,7 +23,7 @@ Last updated 9 Oct 2026 (night). Update this file whenever a decision is made or
 | 05 | 5 Oct 2026, v1 | Twelve lives as lab notes in 4 themes over 12 weeks (Seneca, Marcus Aurelius, Franklin; Darwin, Feynman, Curie; Leonardo, Angelou, Ramanujan; Nightingale, Gandhi, Munger), 18 drills graded strong or moderate (15 of 16 BCT Taxonomy groups), a stack builder, "what failed", 14 fake quotes. Starter stack: If-then + Stack, Reappraise the Trigger, Evidence Ledger, weekly Plan Premortem |
 | 03 | planned | Cons and cults, defence first (see DARK-TOPICS) |
 | 04 | planned | Sales and persuasion, honest levers only |
-| 06 | Part I built 9 Oct 2026, v1 | "Read the room", `guides/06-read-the-room.html`, key `mtrx-room-v1`, slug `mtrx-field-series-06-read-the-room`. Start (0.1 why, 0.2 ten-question baseline) and Part I (1.1 to 1.12: the 54% problem, first impressions, baselines, five channels, warmth then competence, what people want, power in a room, ask don't guess, cold reading decoded, phone and DM, how you read to others, calibration log with a Brier widget). 26 verified scenes in Part I, 45 delivery scenes as watch-ahead cards for Parts II to IV, 5 preview plates (2 animated). Coverage audit: 141 concepts, 24 source families, all 12 stops mapped. Each stop: predict, scenes, the read, SVG, graded evidence, Try it, writer's note, room line, 3 checks. Parts II (George Newman: 10 stops), III (network: 6) and IV (the line: 4) next |
+| 06 | Part I built 9 Oct 2026, v1.1 | "Read the room", `guides/06-read-the-room.html`, key `mtrx-room-v1`, slug `mtrx-field-series-06-read-the-room`. Start (0.1 why, 0.2 ten-question baseline) and Part I (1.1 to 1.12: the 54% problem, first impressions, baselines, five channels, warmth then competence, what people want, power in a room, ask don't guess, cold reading decoded, phone and DM, how you read to others, calibration log with a Brier widget). 24 verified scenes in Part I, 37 delivery scenes as watch-ahead cards for Parts II to IV, all Hollywood and international (v1.1 removed Indian cinema), 5 preview plates (2 animated). Coverage audit: 141 concepts, 24 source families, all 12 stops mapped. Each stop: predict, scenes, the read, SVG, graded evidence, Try it, writer's note, room line, 3 checks. Parts II (George Newman: 10 stops), III (network: 6) and IV (the line: 4) next |
 | 08 | slot reserved, not now | Screenwriting (Kevin, 9 Oct 2026; anywhere from 08 to 10). No. 06 writer's notes feed it |
 
 ## Decisions log
@@ -34,7 +35,8 @@ Last updated 9 Oct 2026 (night). Update this file whenever a decision is made or
 - Read mode in every guide via the shared add-on: ¶ button or R hides all floating controls; Esc or ✕ exits (Kevin asked, 7 Oct 2026).
 - Two devices: sync through the bot's public `bot/state.json`; guides and library pull it on open. Notes and highlights stay per device (7 Oct 2026).
 - No. 06 is Social intelligence (Kevin, 9 Oct 2026): cold reading, understanding behaviour, charm and networking for business, legitimate side only, inspired by the film American Made.
-- No. 06 direction v2 (Kevin, 9 Oct 2026, evening): facts felt empty, so the guide teaches through characters across world and Indian cinema, heroes and villains alike, with the science as the check. Reading people comes first. The George Newman persona gets an off switch. Visual plates with wrong and right versions and GIFs are part of the format. 20 minutes a day (Kevin confirmed).
+- No. 06 direction v2 (Kevin, 9 Oct 2026, evening): facts felt empty, so the guide teaches through characters from Hollywood and international cinema, heroes and villains alike, with the science as the check. Reading people comes first. The George Newman persona gets an off switch. Visual plates with wrong and right versions and GIFs are part of the format. 20 minutes a day (Kevin confirmed).
+- No Indian cinema anywhere in the series (Kevin, 9 Oct 2026, late): no Bollywood or other Indian films, actors or dialogue. Hollywood and international only.
 - Big files: guides over about 300 KB are too large to push through the chat's GitHub tool, so Brain ships them as an upload bundle and Kevin drags them into the repo on github.com (Add file, Upload files). Small files Brain pushes directly. The No. 06 build scripts live in `research/06-social-intelligence/build/`.
 - Screenwriting guide slotted at No. 08 (Kevin, 9 Oct 2026; 08 to 10 is fine). Not now, keep it in the loop.
 - Considered, not started: an applied-AI deep-dive guide (LLM internals at gut level, RAG, agents, evals, voice pipelines, cost and latency, India's DPDP Act for patient data).
@@ -57,7 +59,7 @@ Last updated 9 Oct 2026 (night). Update this file whenever a decision is made or
 
 - 6 to 7 Oct 2026: both workflows were invalid YAML (colon inside a `run:` line), so every run failed instantly; fixed, see AGENTS.md rule 11.
 - 7 Oct 2026: the first secrets attempt landed outside repository secrets and never reached the workflow. Re-added as repository secrets; live self-test green at 00:19 IST. The bot is live.
-- 9 Oct 2026, 23:00 IST, bot went silent again. Root cause: a scheduled run queued behind the running one (concurrency group) and then checked out the commit it was queued on, not the newest main. It ran 10 minutes on old state, its save did `git pull --rebase`, hit a merge conflict on `bot/state.json`, failed 3 times, and because the handoff step was `if: success()`, no successor was dispatched. Only the sparse recovery cron was left. Fix (commit 55241dd): checkout `ref: main`; `tools/commit_state.sh` no longer rebases (it fetches main, lays this run's changed state files on top and pushes; reproduced and verified locally); the handoff now runs whenever the listener step succeeded, even if saving failed, with 3 retries. Unread Telegram messages wait 24 h, so nothing is lost during a gap.
+- 9 Oct 2026, 23:00 IST, bot went silent again. Root cause: a scheduled run queued behind the running one (concurrency group) and then checked out the commit it was queued on, not the newest main. It ran 10 minutes on old state, its save did `git pull --rebase`, hit a merge conflict on `bot/state.json`, failed 3 times, and because the handoff step was `if: success()`, no successor was dispatched. Only the sparse recovery cron was left. Fix (commit 55241dd): checkout `ref: main`; `tools/commit_state.sh` no longer rebases (it fetches main, lays this run's changed state files on top and pushes; reproduced and verified locally); the handoff now runs whenever the listener step succeeded, even if saving failed, with 3 retries. Verified live: handoffs running again from 23:36 IST. Unread Telegram messages wait 24 h, so nothing is lost during a gap.
 - The raw research files from the Oct 2026 sessions before No. 06 (lives.json, toolkit.json, the 380-concept inventory, curiosity research) were not preserved; their content lives in the guides. Save new research in `research/`.
 - The guides were saved from a browser and carry two harmless extension style blocks ("fusion-selection-styles" and Open Sans @font-face). Drop them on the next rebuild.
 - Kit source files (kit-render.py, kit-build.py and others) are attached to the ClickUp skill; `tools/extract_kit.py` recovers the CSS and JS from any built guide.
@@ -67,7 +69,7 @@ Last updated 9 Oct 2026 (night). Update this file whenever a decision is made or
 
 ## Next up
 
-1. Kevin uploads `guides/06-read-the-room.html` and the No. 06 research files from the bundle (Add file, Upload files on github.com). The bot builds the 06 question banks on its next run.
+1. Kevin uploads `guides/06-read-the-room.html` (v1.1, no Indian cinema) and the No. 06 research files from the bundle (Add file, Upload files on github.com). The bot builds the 06 question banks on its next run.
 2. No. 06 Part II, Become George Newman (10 stops), then Parts III and IV. Scene library already researched and verified.
 3. Kevin keeps No. 01 as the main daily track; No. 06 runs alongside at 20 minutes.
 4. Better banks: 3 cards per stop (add quick checks inside the guides).
