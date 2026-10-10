@@ -674,9 +674,9 @@
  "hour": 8,
  "last_push": "2026-10-10",
  "listener": {
-  "checked_at": "2026-10-10T19:23:21+05:30",
+  "checked_at": "2026-10-10T19:33:32+05:30",
   "mode": "handoff",
-  "run_id": "38056793054"
+  "run_id": "38057306852"
  },
  "log": [
   "2026-10-08 08:00 pushed 15 cards",
@@ -684,7 +684,8 @@
   "2026-10-10 06:42 listener retry: getUpdates failed: Bad Gateway",
   "2026-10-10 06:43 listener retry: The read operation timed out",
   "2026-10-10 06:44 listener retry: The read operation timed out",
-  "2026-10-10 08:00 pushed 15 cards"
+  "2026-10-10 08:00 pushed 15 cards",
+  "2026-10-10 19:29 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
  ],
  "offset": 806112962,
  "paused": false,
