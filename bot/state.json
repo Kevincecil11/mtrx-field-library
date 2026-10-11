@@ -156,13 +156,13 @@
   },
   "01-2.10-q1": {
    "anchor": "2026-10-09",
-   "due": "2026-10-13",
+   "due": "2026-10-16",
    "g": "01",
-   "k": 1,
+   "k": 2,
    "last": "2026-10-12",
    "miss": 0,
-   "right": 1,
-   "seen": 1,
+   "right": 2,
+   "seen": 2,
    "sent": "2026-10-11"
   },
   "01-2.10-r1": {
@@ -678,7 +678,7 @@
  "hour": 8,
  "last_push": "2026-10-11",
  "listener": {
-  "checked_at": "2026-10-12T00:28:05+05:30",
+  "checked_at": "2026-10-12T00:28:07+05:30",
   "mode": "long-poll",
   "run_id": "38165591820"
  },
@@ -692,21 +692,15 @@
   "2026-10-10 19:29 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-10-11 08:00 pushed 15 cards"
  ],
- "offset": 806112991,
+ "offset": 806112992,
  "paused": false,
- "polls": {
-  "6219841444723559184": {
-   "card": "01-2.10-q1",
-   "kind": "quiz",
-   "sent": "2026-10-11"
-  }
- },
+ "polls": {},
  "today": {
   "date": "2026-10-11",
-  "got": 14,
+  "got": 15,
   "miss": 0,
   "partly": 0,
-  "summary_sent": false,
+  "summary_sent": true,
   "total": 15
  },
  "v": 1
