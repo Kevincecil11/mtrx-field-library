@@ -2,13 +2,13 @@
  "cards": {
   "01-0.2-r1": {
    "anchor": "2026-10-07",
-   "due": "2026-10-14",
+   "due": "2026-10-28",
    "g": "01",
-   "k": 2,
+   "k": 3,
    "last": "2026-10-12",
    "miss": 0,
-   "right": 2,
-   "seen": 2,
+   "right": 3,
+   "seen": 3,
    "sent": "2026-10-11"
   },
   "01-0.3-r1": {
@@ -678,7 +678,7 @@
  "hour": 8,
  "last_push": "2026-10-11",
  "listener": {
-  "checked_at": "2026-10-12T00:27:45+05:30",
+  "checked_at": "2026-10-12T00:27:47+05:30",
   "mode": "long-poll",
   "run_id": "38165591820"
  },
@@ -692,14 +692,9 @@
   "2026-10-10 19:29 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-10-11 08:00 pushed 15 cards"
  ],
- "offset": 806112978,
+ "offset": 806112979,
  "paused": false,
  "polls": {
-  "6219841444723559171": {
-   "card": "01-0.2-r1",
-   "kind": "recall",
-   "sent": "2026-10-11"
-  },
   "6219841444723559172": {
    "card": "01-0.3-r1",
    "kind": "recall",
@@ -768,7 +763,7 @@
  },
  "today": {
   "date": "2026-10-11",
-  "got": 1,
+  "got": 2,
   "miss": 0,
   "partly": 0,
   "summary_sent": false,
