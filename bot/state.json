@@ -684,9 +684,9 @@
  "hour": 8,
  "last_push": "2026-10-13",
  "listener": {
-  "checked_at": "2026-10-13T22:34:02+05:30",
+  "checked_at": "2026-10-13T22:44:33+05:30",
   "mode": "handoff",
-  "run_id": "38434219655"
+  "run_id": "38435639784"
  },
  "log": [
   "2026-10-08 08:00 pushed 15 cards",
@@ -698,7 +698,8 @@
   "2026-10-10 19:29 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-10-11 08:00 pushed 15 cards",
   "2026-10-12 08:00 pushed 15 cards",
-  "2026-10-13 08:00 pushed 15 cards"
+  "2026-10-13 08:00 pushed 15 cards",
+  "2026-10-13 22:43 listener retry: Remote end closed connection without response"
  ],
  "offset": 806113007,
  "paused": false,
