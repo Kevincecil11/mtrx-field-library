@@ -1,0 +1,8 @@
+build 2026-10-14 09:51 UTC
+status: no part build found, guide unchanged
+$ tools/check_guide.py guides/06-read-the-room.html (exit 0)
+guides/06-read-the-room.html: 14 stops, 0 errors, 0 warnings
+
+$ build/skeleton.py guides/06-read-the-room.html build/out/06-skeleton.txt (exit 0)
+skeleton: guides/06-read-the-room.html -> build/out/06-skeleton.txt (56569 chars)
+
