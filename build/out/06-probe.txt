@@ -1,0 +1,303 @@
+== 1. main guide script at offset 814397 (4022 chars)
+(function(){
+"use strict";
+var $ = function(s,r){return (r||document).querySelector(s)};
+var $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var el = function(tag,attrs,html){var e=document.createElement(tag);if(attrs)for(var k in attrs){if(k==='class')e.className=attrs[k];else e.setAttribute(k,attrs[k]);}if(html!=null)e.innerHTML=html;return e};
+var esc = function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var KEY='mtrx-room-v1', store={done:{}};
+try{store=JSON.parse(localStorage.getItem(KEY))||store;if(!store.done)store.done={};}catch(e){}
+var save=function(){try{localStorage.setItem(KEY,JSON.stringify(store))}catch(e){}};
+
+/* ---------- progress ---------- */
+function refreshProgress(){
+  $$('button.done').forEach(function(b){var on=!!store.done[b.dataset.mod];b.classList.toggle('is-done',on);b.textContent=(on?'Done · stop ':'Mark stop ')+b.dataset.mod+(on?'':' done');});
+  $$('.thumb').forEach(function(t){
+    var sec=$('section[data-sec="'+t.dataset.t+'"]');
+    var mods=sec?$$('article.mod[data-mod]',sec):[];
+    var n=mods.filter(function(m){return store.done[m.dataset.mod]}).length;
+    t.style.setProperty('--p', mods.length?Math.round(n/mods.length*100):0);
+  });
+}
+document.addEventListener('click',function(e){
+  var b=e.target.closest('button.done');
+  if(b){store.done[b.dataset.mod]=!store.done[b.dataset.mod];save();refreshProgress();}
+});
+var reset=$('#reset'); if(reset) reset.addEventListener('click',function(){if(confirm('Reset all progress and quiz answers?')){store={done:{}};save();location.reload();}});
+
+/* ---------- thumbs + scrollbar ---------- */
+var bar=$('.scrollbar');
+var secs=$$('[data-sec]').filter(function(s){return s.tagName==='SECTION'});
+function onScroll(){
+  var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
+  if(bar) bar.style.width=(max>0?(h.scrollTop/max*100):0)+'%';
+  var y=window.scrollY+window.innerHeight*0.35, cur='0';
+  secs.forEach(function(s){ if(s.offsetTop<=y) cur=s.dataset.sec; });
+  $$('.thumb').forEach(function(t){t.classList.toggle('is-active',t.dataset.t===cur)});
+}
+window.addEventListener('scroll',onScroll,{passive:true});
+$$('.thumb').forEach(function(t){t.addEventListener('click',function(){var target=t.dataset.t==='0'?$('#top'):$('#s'+t.dataset.t);if(target)target.scrollIntoView({behavior:'smooth'});});});
+
+/* ---------- plates develop ---------- */
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('is-in');io.unobserve(en.target);}})},{threshold:.25});
+  $$('.plate').forEach(function(p){io.observe(p)});
+}else{$$('.plate').forEach(function(p){p.classList.add('is-in')});}
+
+/* ---------- checks ---------- */
+$$('.check').forEach(function(c,i){
+  var j; try{j=JSON.parse(c.querySelector('script').textContent)}catch(e){return}
+  var box=el('div');
+  box.appendChild(el('div',{class:'check-k'},'Quick check'));
+  box.appendChild(el('p',{class:'check-q'},esc(j.q)));
+  var opts=el('div',{class:'opts'});
+  j.o.forEach(function(o,k){
+    var b=el('button',{class:'opt',type:'button'},esc(o));
+    b.addEventListener('click',function(){
+      if(c.classList.contains('is-answered'))return;
+      c.classList.add('is-answered');
+      $$('.opt',opts).forEach(function(x,m){x.disabled=true;if(m===j.a)x.classList.add('is-right');});
+      if(k!==j.a)b.classList.add('is-wrong');
+      why.innerHTML='<b>'+(k===j.a?'Spot on. ':'Not quite. ')+'</b>'+esc(j.w);
+    });
+    opts.appendChild(b);
+  });
+  box.appendChild(opts);
+  var why=el('p',{class:'why'});box.appendChild(why);
+  c.appendChild(box);
+});
+
+
+function dl(name,txt,type){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:type+';charset=utf-8'}));a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},500);}
+refreshProgress(); onScroll();
+})();
+
+
+== 2. <section class="part" id="s0" data-part="0" data-sec="0"> at offset 48715..57276 (8561 chars)
+-- body index: m0-1 | Four rules | A 20-minute day | The coverage map | m0-2
+-- raw tail of section:
+1.11."}</script></div><div class="check"><script type="application/json">{"q": "A psychic says \"you're independent, but sometimes you doubt yourself\" and it feels spot on. Why?", "o": ["They picked up a tell", "It's true of almost everyone", "You fit a personality type"], "a": 1, "w": "A Barnum statement. Stop 1.9."}</script></div><div class="check"><script type="application/json">{"q": "Which trait do strangers judge most accurately from a first impression?", "o": ["Honesty", "Extraversion", "Intelligence"], "a": 1, "w": "Visible traits read best (Borkenau and Liebler 1992). Stop 1.2."}</script></div><button class="done" data-mod="0.2">Mark stop 0.2 done</button></article></div></section>
+
+== 2. <section class="part" id="s1" data-part="1" data-sec="1"> at offset 57276..191816 (134540 chars)
+-- raw part head (1377 chars):
+<div class="part-head"><div class="wrap"><div class="kicker">Part I · 12 stops · two weeks at 20 minutes a day</div><h2 class="part-title">Read the room</h2><p class="part-promise">How people are actually read: what works, what's a myth, and the one habit that makes you better. Notice, consider, ask, update, respond.</p><ol class="stops"><li><a href="#m1-1"><span>1.1</span>The 54% problem<em>20 min</em></a></li><li><a href="#m1-2"><span>1.2</span>First impressions: fast, sticky, half right<em>20 min</em></a></li><li><a href="#m1-3"><span>1.3</span>Baselines: read the change, not the tell<em>20 min</em></a></li><li><a href="#m1-4"><span>1.4</span>The five channels<em>20 min</em></a></li><li><a href="#m1-5"><span>1.5</span>Warmth first, then competence<em>20 min</em></a></li><li><a href="#m1-6"><span>1.6</span>What people want<em>20 min</em></a></li><li><a href="#m1-7"><span>1.7</span>Reading power in a room<em>20 min</em></a></li><li><a href="#m1-8"><span>1.8</span>Ask, don&#x27;t guess<em>20 min</em></a></li><li><a href="#m1-9"><span>1.9</span>Cold reading, decoded<em>20 min</em></a></li><li><a href="#m1-10"><span>1.10</span>Reading the phone and the DM<em>20 min</em></a></li><li><a href="#m1-11"><span>1.11</span>How you read to others<em>20 min</em></a></li><li><a href="#m1-12"><span>1.12</span>The calibration log<em>20 min</em></a></li></ol></div></div>
+-- body index: m1-1 | The scenes | The read | m1-2 | The scenes | The read | m1-3 | The scenes | The read | m1-4 | The scenes | The read | m1-5 | The scenes | The read | m1-6 | The scenes | The read | m1-7 | The scenes | The read | m1-8 | The scenes | The read | m1-9 | The scenes | The read | m1-10 | The scenes | The read | m1-11 | The scenes | The read | m1-12 | The scenes | The read | Part I boss fight
+-- raw tail of section:
+pt></div><div class="check"><script type="application/json">{"q": "You said 90% a prospect would book; they didn't. Your Brier score for it?", "o": ["0.09", "0.81", "0.10"], "a": 1, "w": "(0.9 minus 0) squared = 0.81. Overconfidence gets punished, which is the point."}</script></div><div class="check"><script type="application/json">{"q": "Which feedback improved forecasters most (Lichtenstein and Fischhoff 1980)?", "o": ["Just the outcome", "How often their 70% calls came true", "More practice, no feedback"], "a": 1, "w": "Calibration feedback works; outcome-only feedback barely does."}</script></div><button class="done" data-mod="1.12">Mark stop 1.12 done</button></article></div></section>
+
+== 2. <section class="part" id="s2" data-part="2" data-sec="2"> at offset 191816..792841 (601025 chars)
+-- raw part head (1235 chars):
+<div class="part-head"><div class="wrap"><div class="kicker">Part II · coming next · watch ahead</div><h2 class="part-title">Become George Newman</h2><p class="part-promise">Charm, voice and presence, built from the delivery of cinema's best. Start watching now: every scene below has the technique, what to steal and a 2-minute drill.</p><ol class="stops"><li><a href="#s2"><span>2.1</span>Attention is the charm<em>soon</em></a></li><li><a href="#s2"><span>2.2</span>The prep kit: one line, three stories, three questions, one ask<em>soon</em></a></li><li><a href="#s2"><span>2.3</span>Voice: pace and the pause<em>soon</em></a></li><li><a href="#s2"><span>2.4</span>Voice: pitch and landing the line<em>soon</em></a></li><li><a href="#s2"><span>2.5</span>The body: walk, stance, stillness<em>soon</em></a></li><li><a href="#s2"><span>2.6</span>Calm under pressure<em>soon</em></a></li><li><a href="#s2"><span>2.7</span>Warmth and humour<em>soon</em></a></li><li><a href="#s2"><span>2.8</span>The long take: monologues<em>soon</em></a></li><li><a href="#s2"><span>2.9</span>George Newman and the off switch<em>soon</em></a></li><li><a href="#s2"><span>2.10</span>Boss fight: a room of strangers<em>soon</em></a></li></ol></div></div>
+-- body index: Preview plates | figure.fig pv-plate: Animated plate: slumped short-stride walk marked wrong besid | figure.fig pv-plate: Animated top-down plate of shoulders: stiff, small swing, sw | figure.fig pv-plate: Plate of three standing postures: slumped, stacked and puffe | figure.fig pv-plate: Plate scoring three lines for pauses, stress and pitch | figure.fig pv-plate: Plate scoring Bogart, Belfort and an honest client-call line | The scene library | Voice and the pause · 4 scenes | Stillness and power · 4 scenes | Charm and warmth · 3 scenes | The pitch · 3 scenes | Calm under pressure · 4 scenes | The long take · 4 scenes | Walk, body and entrance · 3 scenes | Villains who own the room · 4 scenes
+-- raw tail of section:
+91)</div><div class="vid-m">Anthony Hopkins · <span class="s">villain</span></div><span class="vid-q">"You look like a rube."</span><span class="vid-w"><b>Technique.</b> Hopkins makes the voice almost musical, then lands the insult with a small change in vowel and eye focus. The stillness invites Clarice to move emotionally for him.</span><span class="vid-w"><b>Steal this.</b> Listen for the consonant that carries the turn.</span><span class="vid-w"><b>Drill.</b> Speak the line while keeping your face neutral, then repeat with only the eyes changing.</span><span class="vid-w vid-h">Lecter is a cannibalistic murderer. Do not copy psychological predation.</span></div></a></div></div></section>
+
+== 2. <section class="part" id="s3" data-part="3" data-sec="3"> at offset 792841..797135 (4294 chars)
+-- raw part head (862 chars):
+<div class="part-head"><div class="wrap"><div class="kicker">Part III · watch ahead</div><h2 class="part-title">Work the network</h2><p class="part-promise">Ruddy got the Godfather job because he was known for one thing: making films cheap and fast. This part builds your one thing, and the favour economy around it, without the mafia.</p><ol class="stops"><li><a href="#s3"><span>3.1</span>Known for one thing: the website guy<em>soon</em></a></li><li><a href="#s3"><span>3.2</span>Favours and gifts, done right<em>soon</em></a></li><li><a href="#s3"><span>3.3</span>Waking dormant ties<em>soon</em></a></li><li><a href="#s3"><span>3.4</span>The follow-up system<em>soon</em></a></li><li><a href="#s3"><span>3.5</span>Working a room<em>soon</em></a></li><li><a href="#s3"><span>3.6</span>The 48 Laws worth knowing, decoded<em>soon</em></a></li></ol></div></div>
+-- body index: The favour economy · 3 scenes
+-- raw tail of section:
+ass="vid-b"><div class="vid-t">Peaky Blinders (2014)</div><div class="vid-m">Cillian Murphy · <span class="s">anti-hero</span></div><span class="vid-w"><b>Technique.</b> Murphy speaks quietly and lets the offer arrive as information, not pleading. His head remains still while the words map the network of leverage.</span><span class="vid-w"><b>Steal this.</b> Offer a resource and a relationship, not a vague promise.</span><span class="vid-w"><b>Drill.</b> Name one resource, one boundary, and one mutual benefit in 30 seconds.</span><span class="vid-w vid-h">Tommy is a criminal leader. Ethical networking cannot include threats, bribery, or hidden leverage.</span></div></a></div></div></section>
+
+== 2. <section class="part" id="s5" data-part="5" data-sec="5"> at offset 797135..803361 (6226 chars)
+-- raw part head (667 chars):
+<div class="part-head"><div class="wrap"><div class="kicker">Part IV · watch ahead</div><h2 class="part-title">The line</h2><p class="part-promise">Influence survives disclosure; manipulation doesn't. Study how these characters charm, and exactly where it turns rotten.</p><ol class="stops"><li><a href="#s5"><span>4.1</span>Influence vs manipulation: the disclosure test<em>soon</em></a></li><li><a href="#s5"><span>4.2</span>Belfort, decoded<em>soon</em></a></li><li><a href="#s5"><span>4.3</span>Barry Seal: useful to everyone, loyal to no one<em>soon</em></a></li><li><a href="#s5"><span>4.4</span>When the mask eats the man<em>soon</em></a></li></ol></div></div>
+-- body index: When charm turns into manipulation · 5 scenes
+-- raw tail of section:
+n · <span class="s">anti-hero</span></div><span class="vid-w"><b>Technique.</b> Damon uses self deprecation, a quick smile, and a list delivered faster each time. The charm masks an identity crisis, so the performance feels both inviting and unstable.</span><span class="vid-w"><b>Steal this.</b> Use a three item list with a clean final beat.</span><span class="vid-w"><b>Drill.</b> Make a truthful three item list about your strengths, then remove any claim you cannot demonstrate.</span><span class="vid-w vid-h">Ripley is a manipulative murderer. Do not copy deception or identity theft.</span></div></a></div></div></section><footer class="colophon"><div class="wrap"><div class="kicker">Sources
+
+== 3. raw after the last </section> (offset 803281) up to the first script (offset 814397)
+</section><footer class="colophon"><div class="wrap"><div class="kicker">Sources</div><h2 class="part-title" style="font-size:clamp(40px,6vw,72px)">Every claim, linked</h2><div class="vids" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))"><a class="read-card" href="https://doi.org/10.1207/s15327957pspr1003_2" target="_blank" rel="noopener"><b>Bond and DePaulo 2006</b><span>Stop 1.1</span></a><a class="read-card" href="https://ojp.gov/ncjrs/virtual-library/abstracts/who-can-best-catch-liar-meta-analysis-individual-differences" target="_blank" rel="noopener"><b>Aamodt and Custer 2006</b><span>Stop 1.1</span></a><a class="read-card" href="https://doi.org/10.1037/0033-2909.134.4.477" target="_blank" rel="noopener"><b>Bond and DePaulo 2008</b><span>Stop 1.1</span></a><a class="read-card" href="https://doi.org/10.1207/S15327957PSPR0104_5" target="_blank" rel="noopener"><b>DePaulo et al. 1997</b><span>Stop 1.1</span></a><a class="read-card" href="https://doi.org/10.1037/0033-2909.111.2.256" target="_blank" rel="noopener"><b>Ambady and Rosenthal 1992</b><span>Stop 1.2</span></a><a class="read-card" href="https://doi.org/10.1037/0022-3514.64.3.431" target="_blank" rel="noopener"><b>Ambady and Rosenthal 1993</b><span>Stop 1.2</span></a><a class="read-card" href="https://doi.org/10.1111/j.1467-9280.2006.01750.x" target="_blank" rel="noopener"><b>Willis and Todorov 2006</b><span>Stop 1.2</span></a><a class="read-card" href="https://doi.org/10.1146/annurev-psych-113011-143831" target="_blank" rel="noopener"><b>Todorov et al. 2015</b><span>Stop 1.2</span></a><a class="read-card" href="https://doi.org/10.1177/1948550620969279" target="_blank" rel="noopener"><b>Wiedenroth et al. 2021</b><span>Stop 1.2</span></a><a class="read-card" href="https://doi.org/10.1037/0033-2909.129.1.74" target="_blank" rel="noopener"><b>DePaulo et al. 2003</b><span>Stop 1.3</span></a><a class="read-card" href="https://doi.org/10.1080/13218719.2019.1642258" target="_blank" rel="noopener"><b>Caso, Palena, Carlessi and Vrij 2019</b><span>Stop 1.3</span></a><a class="read-card" href="https://doi.org/10.1002/jip.1495" target="_blank" rel="noopener"><b>Palena et al. 2018</b><span>Stop 1.3</span></a><a class="read-card" href="https://doi.org/10.3389/fpsyg.2020.01377" target="_blank" rel="noopener"><b>Vrij and Fisher 2020</b><span>Stop 1.3</span></a><a class="read-card" href="http://davidmatsumoto.com/content/2008matsumotoetalJCCP.pdf" target="_blank" rel="noopener"><b>Matsumoto et al. 2008</b><span>Stop 1.3</span></a><a class="read-card" href="https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0040259" target="_blank" rel="noopener"><b>Wiseman et al. 2012</b><span>Stop 1.3</span></a><a class="read-card" href="https://doi.org/10.1126/science.1224313" target="_blank" rel="noopener"><b>Aviezer, Trope and Todorov 2012</b><span>Stop 1.4</span></a><a class="read-card" href="https://doi.org/10.1037/amp0000147" target="_blank" rel="noopener"><b>Kraus 2017; Rossiter 2018</b><span>Stop 1.4</span></a><a class="read-card" href="https://doi.org/10.1177/0093650214534974" target="_blank" rel="noopener"><b>Hauch, Sporer, Michael and Meissner 2014</b><span>Stop 1.4</span></a><a class="read-card" href="https://doi.org/10.1037/h0024648" target="_blank" rel="noopener"><b>Mehrabian and Ferris 1967</b><span>Stop 1.4</span></a><a class="read-card" href="https://doi.org/10.1002/jip.1532" target="_blank" rel="noopener"><b>Akehurst 2018</b><span>Stop 1.4</span></a><a class="read-card" href="https://doi.org/10.1037/0022-3514.82.6.878" target="_blank" rel="noopener"><b>Fiske, Cuddy, Glick and Xu 2002</b><span>Stop 1.5</span></a><a class="read-card" href="https://doi.org/10.1177/01461672982412001" target="_blank" rel="noopener"><b>Wojciszke, Bazinska and Jaworski 1998</b><span>Stop 1.5</span></a><a class="read-card" href="https://doi.org/10.1177/0963721416683996" target="_blank" rel="noopener"><b>Zebrowitz 2017</b><span>Stop 1.5</span></a><a class="read-card" href="https://doi.org/10.1016/j.leaqua.2020.101409" target="_blank" rel="noopener"><b>MacLaren et al. 2020</b><span>Stop 1.5</span></a><a class="read-card" href="https://doi.org/10.1098/rspb.2012.0311" target="_blank" rel="noopener"><b>Klofstad, Anderson and Peters 2012</b><span>Stop 1.5</span></a><a class="read-card" href="https://doi.org/10.1093/jcr/ucw062" target="_blank" rel="noopener"><b>Wang et al. 2017</b><span>Stop 1.5</span></a><a class="read-card" href="https://doi.org/10.1037/0033-2909.117.3.497" target="_blank" rel="noopener"><b>Baumeister and Leary 1995</b><span>Stop 1.6</span></a><a class="read-card" href="https://doi.org/10.1037/a0038781" target="_blank" rel="noopener"><b>Anderson, Hildreth and Howland 2015</b><span>Stop 1.6</span></a><a class="read-card" href="https://doi.org/10.1007/s11031-016-9578-2" target="_blank" rel="noopener"><b>Cerasoli, Nicklin and Nassrelgrgawi 2016</b><span>Stop 1.6</span></a><a class="read-card" href="https://www.cambridge.org/core/journals/experimental-economics/article/abs/cultural-differences-in-ultimatum-game-experiments-evidence-from-a-metaanalysis/E5F1D1BB960A69858821C0050DD3018C" target="_blank" rel="noopener"><b>Oosterbeek, Sloof and van de Kuilen 2004</b><span>Stop 1.6</span></a><a class="read-card" href="https://doi.org/10.1287/mnsc.2014.2054" target="_blank" rel="noopener"><b>Brooks, Gino and Schweitzer 2015</b><span>Stop 1.6</span></a><a class="read-card" href="https://medschool.cuanschutz.edu/docs/librariesprovider31/patient-care/ihqse/diagnostic-excellence-program/rock-2008-scarf-brain-based-model-for-collaborating-and-influencing.pdf" target="_blank" rel="noopener"><b>Rock 2008</b><span>Stop 1.6</span></a><a class="read-card" href="https://doi.org/10.1037/a0030398" target="_blank" rel="noopener"><b>Cheng, Tracy, Foulsham, Kingstone and Henrich 2013</b><span>Stop 1.7</span></a><a class="read-card" href="https://doi.org/10.1016/j.cognition.2010.09.003" target="_blank" rel="noopener"><b>Foulsham et al. 2010</b><span>
+
+== 4a. dark-mode rules (14)
+[data-theme="dark"] .cover-plate img{box-shadow:0 0 0 1px rgba(236,234,228,.15)}
+[data-theme="dark"] [data-part="6"] :is(.fig,.plate-img,.part-head,.room){--accent:#6E7180;--accent-ink:#55586A;--accent-soft:#E4E5EA;--on-accent:#F6F4EF}
+/* ===== MTRX reader kit: notes, highlighter, dark mode, search (add-on, safe to remove) ===== */
+[data-theme="dark"]{--canvas:#121315;--paper:#1C1E22;--paper-2:#2A2C31;--ink:#ECEAE4;--ink-2:#D6D3CB;--graphite:#A9ACB9;--steel:#4A4D57;--rule:rgba(236,234,228,.13);--mars-ink:#F08A4B;--mars-soft:#3E2416;--moss-ink:#B5BE74;--moss-soft:#272B1B;--gun:#8FA6B2;--g}
+[data-theme="dark"] :is(.fig,#lang-map,.plate-img,.sp,.cube,.thumbs,.part-head,.room,.sim,.colophon,.watch,.vid-th,.verbs){--canvas:#ECEAE4;--paper:#F6F4EF;--paper-2:#E5E2D9;--ink:#151515;--ink-2:#2B2B2B;--graphite:#55586A;--steel:#BCBFCC;--rule:rgba(21,21,21,.11);--mars-ink:#B3460D;--mars-soft:#F7D9C6;--moss-ink:#525923;--moss-soft:#E0E3CB;--gun:#2F3E46;--gun-}
+[data-theme="dark"] [data-part="2"] :is(.fig,#lang-map,.plate-img,.part-head,.room,.watch),[data-theme="dark"] .part-head[data-part="2"]{--accent:var(--gun);--accent-ink:var(--gun);--accent-soft:var(--gun-soft);--on-accent:var(--paper)}
+[data-theme="dark"] [data-part="3"] :is(.fig,#lang-map,.plate-img,.part-head,.room,.watch){--accent:var(--moss);--accent-ink:var(--moss-ink);--accent-soft:var(--moss-soft);--on-accent:var(--paper)}
+[data-theme="dark"] [data-part="4"] :is(.fig,.plate-img,.part-head,.room){--accent:var(--ink);--accent-ink:var(--ink);--accent-soft:var(--jane);--on-accent:var(--paper)}
+[data-theme="dark"] [data-part="5"] :is(.fig,#lang-map,.plate-img,.part-head,.room){--accent:#A44A3F;--accent-ink:#A44A3F;--accent-soft:#F1DCD8;--on-accent:#F6F4EF}
+[data-theme="dark"] .fig{background:#F6F4EF}
+[data-theme="dark"] .btn-a{color:#151515}
+[data-theme="dark"] .plate-img img,[data-theme="dark"] .sp img{mix-blend-mode:multiply}
+[data-theme="dark"] .cover .btn-ghost{box-shadow:inset 0 0 0 2px var(--ink)}
+[data-theme="dark"] mark.nk-hl{background:rgba(237,180,29,.38)}
+[data-theme="dark"] :is(.fig,.sim,.room,.colophon) mark.nk-hl{background:#FFE58A}
+
+== 4b. component rules (146)
+.thumbs{position:fixed;right:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px;z-index:80}
+.thumb{--c:var(--ink);--fg:var(--paper);position:relative;width:var(--tab-w);height:108px;border:0;border-radius:12px 0 0 12px;background:var(--c);color:var(--fg);display:flex;align-items:center;justify-content:center;padding:0;overflow:hidden;transition:width .25s ease;box-shadow:-3px 3px 0 rgba(0,0,0,.07}
+.thumb:hover{color:var(--fg)}
+.thumb .lbl{writing-mode:vertical-rl;transform:rotate(180deg);font:700 14px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;position:relative;z-index:1}
+.thumb .short{display:none}
+.thumb i{position:absolute;left:0;bottom:0;width:5px;height:calc(var(--p,0) * 1%);background:var(--fg);opacity:.9;transition:height .5s ease}
+.thumb.is-active{width:calc(var(--tab-w) + 16px)}
+.thumb[data-t="0"]{--c:var(--ink);--fg:var(--paper)}
+.thumb[data-t="1"]{--c:var(--mars);--fg:var(--ink)}
+.thumb[data-t="2"]{--c:var(--gun);--fg:var(--paper)}
+.thumb[data-t="3"]{--c:var(--moss);--fg:var(--paper)}
+.thumb[data-t="4"]{--c:var(--jane);--fg:var(--ink)}
+.lede{font-size:21px;line-height:1.5;color:var(--ink-2);max-width:740px}
+.kicker{font:700 14px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+.cover{min-height:100vh;display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(28px,5vw,72px);align-items:center;padding:64px 0 72px}
+.cover-title{font:400 clamp(66px,9.4vw,146px)/.86 var(--display);text-transform:uppercase;margin:18px 0 24px;letter-spacing:.004em}
+.cover-title .o{color:var(--mars)}
+.cover-sub{font-size:22px;line-height:1.45;max-width:31ch;margin:0 0 24px}
+.prepared{font:500 15px/1.6 var(--mono);color:var(--graphite);margin:0 0 28px}
+.prepared b{color:var(--ink)}
+.part-head{background:var(--accent);color:var(--on-accent);padding:clamp(60px,8vw,108px) 0 clamp(44px,6vw,76px);margin-top:48px}
+.part-head .kicker{color:inherit}
+.part-title{font:400 clamp(62px,10vw,160px)/.86 var(--display);text-transform:uppercase;margin:16px 0 20px;letter-spacing:.004em;max-width:12ch}
+.part-promise{font-size:22px;line-height:1.45;max-width:38ch;margin:0 0 34px}
+.stops{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:4px 28px}
+.stops li{margin:0}
+.stops a{display:flex;gap:12px;align-items:baseline;text-decoration:none;color:inherit;font-weight:800;padding:9px 0;border-bottom:2px solid color-mix(in srgb,currentColor 22%,transparent)}
+.stops a:hover{color:inherit;border-bottom-color:currentColor}
+.stops a span{font:700 14px var(--mono);min-width:36px}
+.stops a em{font:500 14px var(--mono);font-style:normal;margin-left:auto;opacity:.85;white-space:nowrap}
+.mod{padding:clamp(60px,7vw,100px) 0 8px;scroll-margin-top:16px}
+.mod-meta{display:flex;gap:14px;align-items:center;font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
+.mod-meta .t{color:var(--graphite);font-weight:500}
+.mod-title{font:400 clamp(44px,5.8vw,76px)/.9 var(--display);text-transform:uppercase;margin:12px 0 18px;max-width:17ch;letter-spacing:.004em}
+.mod-why{font-size:20px;line-height:1.5;color:var(--ink-2);max-width:60ch;margin:0 0 30px}
+.mod > p,.mod > ul{max-width:74ch}
+.specs{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px;margin:22px 0}
+.spec{background:var(--paper);border-radius:var(--radius);padding:22px 22px 20px;display:flex;flex-direction:column}
+.spec-name{font:800 21px/1.2 var(--sans);margin:0 0 8px}
+.spec-name small{font:600 14px var(--mono);color:var(--graphite);margin-left:6px;letter-spacing:.02em}
+.spec-def{margin:0 0 12px}
+.spec ul{padding-left:18px}
+.spec dl{margin:0;display:grid;gap:10px}
+.spec dt,.plate dt{font:700 14px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+.spec dd,.plate dd{margin:2px 0 0;font-size:16px;line-height:1.5}
+.room{background:var(--ink);color:#F4F1EA;border-radius:12px;padding:12px 16px 14px;margin:16px 0 0;font:600 17px/1.45 var(--sans)}
+.room::before{content:"Say it in the room";display:block;font:700 14px/1.7 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mars)}
+.mod > .room{max-width:74ch}
+.mtrx{background:var(--jane);border-radius:var(--radius);padding:20px 22px;margin:24px 0}
+.mtrx::before{content:"In your world";display:block;font:700 14px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.mtrx p:last-child,.mtrx ul:last-child{margin-bottom:0}
+.warn{background:var(--red-soft);border-radius:var(--radius);padding:18px 22px;margin:22px 0}
+.warn::before{content:"Watch out";display:block;font:700 14px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:4px}
+.warn p:last-child,.warn ul:last-child{margin-bottom:0}
+.big-line{font:400 clamp(34px,4.4vw,56px)/1 var(--display);text-transform:uppercase;margin:34px 0;max-width:22ch}
+.big-line .o{color:var(--accent-ink)}
+.check{background:var(--paper);border-radius:var(--radius);padding:22px;margin:28px 0;box-shadow:inset 0 0 0 2px var(--accent-soft);max-width:860px}
+.check-k{font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}
+.check-q{font:800 19px/1.4 var(--sans);margin:0 0 14px}
+.vid{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);border-radius:14px;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
+.vid:hover{transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(0,0,0,.25);color:var(--ink)}
+.vid-th{position:relative;aspect-ratio:16/9;background:var(--gun);overflow:hidden}
+.vid-th img{position:relative;width:100%;height:100%;object-fit:cover}
+.vid-th .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:700 14px var(--mono);color:#DCE2E4;letter-spacing:.08em;text-transform:uppercase;padding:0 54px;text-align:center}
+.vid-th .play{position:absolute;left:12px;bottom:12px;width:38px;height:38px;border-radius:50%;background:var(--mars);display:flex;align-items:center;justify-content:center}
+.vid-th .play::after{content:"";border-left:12px solid var(--ink);border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
+.vid-th .dur{position:absolute;right:10px;bottom:10px;font:700 14px var(--mono);background:rgba(21,21,21,.86);color:#fff;padding:2px 7px;border-radius:6px}
+.vid-b{padding:12px 14px 15px;display:flex;flex-direction:column;gap:5px}
+.vid-t{font:800 16px/1.3 var(--sans)}
+.vid-m{font:500 14px var(--mono);color:var(--graphite)}
+.vid-m .s{color:var(--moss-ink);font-weight:700}
+.vid-w{font-size:16px;line-height:1.45;color:var(--ink-2)}
+.tbl-wrap{overflow-x:auto;margin:22px 0;border-radius:var(--radius)}
+.tbl{width:100%;min-width:620px;border-collapse:collapse;background:var(--paper);font-size:16px}
+.tbl th{font:700 14px var(--mono);letter-spacing:.08em;text-transform:uppercase;text-align:left;padding:12px 14px;background:var(--accent-soft);color:var(--ink)}
+.tbl td{padding:12px 14px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.5}
+.tbl td:first-child{font-weight:800}
+.done{margin:34px 0 0;display:inline-flex;align-items:center;gap:10px;background:transparent;border:0;box-shadow:inset 0 0 0 2px var(--ink);border-radius:999px;padding:11px 20px 11px 14px;font:800 16px var(--sans)}
+.done::before{content:"";width:18px;height:18px;border-radius:50%;box-shadow:inset 0 0 0 2px var(--ink);flex:none}
+.done.is-done{background:var(--ink);color:var(--paper)}
+.done.is-done::before{background:var(--mars);box-shadow:none}
+.verdict{grid-column:1/-1;font-size:17px;line-height:1.5;background:var(--ink);color:var(--paper);border-radius:14px;padding:14px 16px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:10px;margin:18px 0 12px}
+.tile{background:var(--paper);border:2px solid transparent;border-radius:14px;padding:14px;text-align:left;transition:border-color .2s,background .2s}
+.tile:hover{border-color:var(--steel)}
+.tile b{display:block;font:800 17px/1.25 var(--sans)}
+.tile span{display:block;font-size:15px;line-height:1.4;color:var(--graphite);margin-top:3px}
+.tile[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.chip{border:0;border-radius:999px;background:var(--canvas);padding:9px 15px;font:700 14px var(--mono);letter-spacing:.04em}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.sim .kicker{color:var(--mars)}
+.xlist{columns:2;column-gap:30px;padding:0;list-style:none;margin:0}
+.xlist li{break-inside:avoid;padding-left:24px;position:relative}
+.xlist li::before{content:"\00D7";position:absolute;left:2px;top:-1px;font:800 18px var(--sans);color:var(--red)}
+.oklist{padding:0;list-style:none;margin:0}
+.oklist li{padding-left:26px;position:relative}
+.oklist li::before{content:"";position:absolute;left:2px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--moss)}
+.colophon .kicker{color:var(--mars)}
+.cover{grid-template-columns:1fr;min-height:auto;padding-top:56px}
+.thumbs{top:auto;bottom:0;left:0;right:0;transform:none;flex-direction:row;gap:0}
+.thumb{flex:1;width:auto;height:50px;border-radius:0;box-shadow:none}
+.thumb.is-active{width:auto;box-shadow:inset 0 -4px 0 rgba(0,0,0,.25)}
+.thumb .lbl{writing-mode:horizontal-tb;transform:none;letter-spacing:.06em}
+.thumb .full{display:none}
+.thumb .short{display:inline}
+.thumb i{width:calc(var(--p,0) * 1%);height:4px;top:0;bottom:auto}
+.xlist{columns:1}
+.grid2 > .spec ul{margin-bottom:0}
+.grid2 > .spec li{margin-bottom:12px}
+.chip .muted{font-weight:500;margin-left:4px}
+.chip[aria-pressed="true"] .muted{color:var(--steel)}
+.tbl td:nth-child(2){min-width:220px}
+/* Part IV */
+.thumb[data-t="5"]{--c:var(--red);--fg:var(--paper)}
+.tryit{margin:22px 0;padding:16px 18px;border-radius:16px;background:var(--paper);box-shadow:inset 6px 0 0 var(--accent),inset 0 0 0 1.5px var(--rule)}
+.tryit-k{font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:6px}
+.tryit p{margin:0}
+.thumbs .thumb{height:96px}
+.cover-plate{text-align:center}
+.cover-plate img{width:100%;max-width:520px;border-radius:22px;display:block;margin:0 auto}
+.grade{display:inline-block;font:700 12px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:999px;white-space:nowrap}
+.g-s{background:var(--moss-soft);color:var(--moss-ink)}
+.g-m{background:var(--jane);color:var(--ink)}
+.g-h{background:var(--canvas);color:var(--graphite);box-shadow:inset 0 0 0 1.5px var(--rule)}
+.tbl td .grade{margin:0}
+.thumb[data-t="6"]{--c:var(--graphite);--fg:var(--paper)}
+.scene{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:20px;background:var(--paper);border-radius:18px;padding:16px;margin:16px 0;align-items:start}
+.scene .vid{background:var(--canvas)}
+.scene-k{font:700 14px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink)}
+.scene-line{font:italic 700 19px/1.4 var(--sans);margin:8px 0}
+.scene-wh{font:700 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--graphite);margin-top:10px}
+.scene-w{margin:4px 0 10px;padding-left:20px}
+.scene-w li{margin:2px 0}
+.scene-b p{margin:6px 0}
+.scene-rc{font-size:15px;color:var(--ink-2)}
+.scene-n{font:500 13px/1.4 var(--mono);color:var(--graphite)}
+.scene{grid-template-columns:1fr}
+.predict{background:var(--accent-soft);border-radius:16px;padding:14px 18px;margin:18px 0;max-width:860px}
+.predict-k,.writer-k{font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.predict p,.writer p{margin:0}
+.writer{border-left:5px solid var(--gun);background:var(--paper);border-radius:0 16px 16px 0;padding:14px 18px;margin:18px 0;max-width:860px}
+.writer-k{color:var(--gun)}
+details.sci .tbl-wrap{margin-top:10px}
+.vid-q{font:italic 
+
+== 4c. root rules
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--canvas);color:var(--ink);font:400 17px/1.62 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{padding-bottom:50px}
+html{scroll-behavior:auto}
+
+== 5. stop 0.1 (4541 chars)
+<article class="mod" id="m0-1" data-mod="0.1"><div class="mod-meta">Stop 0.1 · Start <span class="t">6 min</span></div><h2 class="mod-title">Why this guide exists</h2><p class="mod-why">You told me the facts felt empty. Fair. So this guide runs on scenes: heroes, villains and side characters who read a room better or worse than anyone. Every stop breaks down what the character actually reads, then the science checks it, then you try it on a real call.</p>
+<div class="mtrx"><p><b>Your why, in your words.</b> Convince people now, and make the next person remember you. You already have the guts: you walked into your strict department head's cabin, pitched cold, and walked out with her contacts. The gap was preparation and words that wandered. Your persona has a name, <b>George Newman</b>: a charmer who smiles a lot, gets things done and never fails to deliver. This guide is his training camp. The real Kevin stays with the people close to you.</p></div>
+<h3>Four rules</h3>
+<div class="specs">
+<div class="spec"><div class="spec-name">1 · Scenes teach, science checks</div><p class="spec-def">Every stop opens with 2 or 3 scenes. Every scene has a reality check, because films make reading people look far easier than it is.</p></div>
+<div class="spec"><div class="spec-name">2 · A read is a hypothesis</div><p class="spec-def">You never "know" what someone thinks. You notice, guess, ask and update. That loop is the whole of Part I.</p></div>
+<div class="spec"><div class="spec-name">3 · The mask has an off switch</div><p class="spec-def">George Newman goes on with the jacket and comes off when you're with people you trust. Characters who forget where the mask ends make great films and bad lives.</p></div>
+<div class="spec"><div class="spec-name">4 · Every stop feeds the writer</div><p class="spec-def">Each stop ends with a writer's note. Studying how characters read each other is screenwriting research, so nothing here is wasted time for No. 08.</p></div>
+</div>
+<h3>A 20-minute day</h3>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Step</th><th>Time</th><th>What you do</th></tr></thead><tbody>
+<tr><td>Predict</td><td>2 min</td><td>Answer the stop's question and rate your confidence 1 to 5 before reading on</td></tr>
+<tr><td>Watch</td><td>6 to 8 min</td><td>One or two scenes on YouTube, with the three "watch for" cues open</td></tr>
+<tr><td>The read</td><td>4 min</td><td>What the character read, what the science says, the diagram</td></tr>
+<tr><td>Try it</td><td>5 min</td><td>One field task on a real call, DM or meeting</td></tr>
+<tr><td>Check</td><td>1 min</td><td>Quick checks, then mark the stop done and send progress to the bot</td></tr>
+</tbody></table></div>
+<h3>The coverage map</h3>
+<p>Part I was not built from my memory. A bottom-up audit pulled <b>141 concepts from 24 source families</b>: open psychology textbooks (OpenStax, Noba), the Cambridge handbook on perceiving others accurately, Funder's accuracy model, Stanford's Interpersonal Dynamics course, O*NET's "social perceptiveness", the emotional intelligence ability model, Goleman, and practitioner books (Epley, Navarro, Voss) with caveats. All 12 stops carry their must-know concepts. Four topics showed up in two or more families but belong elsewhere: self-presentation (Part II), social norms (No. 02), persuasion (No. 04) and applied influence (Part II and No. 04). What the audit does not prove: that every cue works in every culture, or that you are accurate. Only your calibration log (Stop 1.12) can show that.</p>
+<div class="warn"><p><b>What this guide will not teach:</b> lie-detection tricks, microexpression flashcards, NLP eye reading, power poses, the "93% is nonverbal" rule or birth-order profiling. All of them failed the evidence. Each one is named and corrected where it comes up.</p></div>
+<div class="tryit"><div class="tryit-k">Try it · 5 min</div><p>Write your 60-second intro the way you&#x27;d say it to a stranger today, and record it on your phone. Don&#x27;t fix anything yet. You&#x27;ll compare it with your Part II version.</p></div><p class="room">"I don&#x27;t read minds. I read changes, then I ask."</p><div class="check"><script type="application/json">{"q": "What does this guide treat every read of a person as?", "o": ["A verdict you can act on", "A hypothesis you test by asking", "A tell you memorise"], "a": 1, "w": "Notice, guess, ask, update. A read you never check is just a story you like."}</script></div><button class="done" data-mod="0.1">Mark stop 0.1 done</button></article>
