@@ -1,11 +1,11 @@
-SKELETON of guides/06-read-the-room.html (841644 bytes, 943 lines)
+SKELETON of guides/06-read-the-room.html (953754 bytes, 1022 lines)
 
-== A. stops (button.done data-mod, document order): 14
-0.1 0.2 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 1.10 1.11 1.12
-articles with data-mod: 14 | ids: 0.1=m0-1 0.2=m0-2 1.1=m1-1 1.2=m1-2 1.3=m1-3 1.4=m1-4 1.5=m1-5 1.6=m1-6 1.7=m1-7 1.8=m1-8 1.9=m1-9 1.10=m1-10 1.11=m1-11 1.12=m1-12
-data-part values: ['0', '1', '2', '3', '5']
-elements with data-t: <button class="thumb" type="button" data-t="0" aria-label="Start"> | <button class="thumb" type="button" data-t="1" aria-label="Read the room"> | <button class="thumb" type="button" data-t="2" aria-label="George Newman"> | <button class="thumb" type="button" data-t="3" aria-label="Network"> | <button class="thumb" type="button" data-t="5" aria-label="The line">
-counts: details=12, .check=47, .drill=0, .room=14, figure=17, img=75, svg=13, a.yt/watch-like=61
+== A. stops (button.done data-mod, document order): 21
+0.1 0.2 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 1.10 1.11 1.12 2.1 2.2 2.3 2.4 2.5 2.6 2.7
+articles with data-mod: 21 | ids: 0.1=m0-1 0.2=m0-2 1.1=m1-1 1.2=m1-2 1.3=m1-3 1.4=m1-4 1.5=m1-5 1.6=m1-6 1.7=m1-7 1.8=m1-8 1.9=m1-9 1.10=m1-10 1.11=m1-11 1.12=m1-12 2.1=m2-1 2.2=m2-2 2.3=m2-3 2.4=m2-4 2.5=m2-5 2.6=m2-6 2.7=m2-7
+data-part values: ['0', '1', '2', '3', '4', '5']
+elements with data-t: <button class="thumb" type="button" data-t="0" aria-label="Start"> | <button class="thumb" type="button" data-t="1" aria-label="Read the room"> | <button class="thumb" type="button" data-t="4" aria-label="The Spotlight Files"> | <button class="thumb" type="button" data-t="2" aria-label="George Newman"> | <button class="thumb" type="button" data-t="3" aria-label="Network"> | <button class="thumb" type="button" data-t="5" aria-label="The line">
+counts: details=27, .check=68, .drill=7, .room=21, figure=24, img=89, svg=20, a.yt/watch-like=75
 
 == B. head
   <meta charset="utf-8">
@@ -21,60 +21,82 @@ counts: details=12, .check=47, .drill=0, .room=14, figure=17, img=75, svg=13, a.
   #1 head style  chars=36189 L2 first='/* ========================================================= MTRX(TM) ...'
   #2 head script  chars=120 L470 first='try{if(localStorage.getItem("mtrx-theme")==="dark")document.documentEl...'
   #3 head style id=mtrx-kit-css chars=7255 L470 first='/* ===== MTRX reader kit: notes, highlighter, dark mode, search (add-o...'
-  #4 body script type=application/json chars=248 L559 first='{"q": "What does this guide treat every read of a person as?", "o": ["...'
-  #5 body script type=application/json chars=220 L559 first='{"q": "In real time, how often do people correctly judge whether someo...'
-  #6 body script type=application/json chars=216 L559 first='{"q": "Compared with students, how good are police and other professio...'
-  #7 body script type=application/json chars=262 L559 first='{"q": "\\"Communication is 7% words, 38% tone and 55% body language.\\" ...'
-  #8 body script type=application/json chars=252 L559 first='{"q": "Someone looks up and to the right while answering. That tells y...'
-  #9 body script type=application/json chars=237 L559 first='{"q": "A clinic owner sounds nervous on your call. Most likely meaning...'
-  #10 body script type=application/json chars=262 L559 first='{"q": "Best way to understand what a client wants?", "o": ["Imagine yo...'
-  #11 body script type=application/json chars=211 L559 first='{"q": "After a first conversation, people usually like you...", "o": [...'
-  #12 body script type=application/json chars=227 L559 first='{"q": "When you\'re nervous presenting, how visible is it?", "o": ["Les...'
-  #13 body script type=application/json chars=247 L559 first='{"q": "A psychic says \\"you\'re independent, but sometimes you doubt yo...'
-  #14 body script type=application/json chars=210 L559 first='{"q": "Which trait do strangers judge most accurately from a first imp...'
-  #15 body script type=application/json chars=259 L567 first='{"q": "Across 24,483 judges, what was the average accuracy at telling ...'
-  #16 body script type=application/json chars=330 L567 first='{"q": "Your caller is \'sure\' a clinic owner lied about having no budge...'
-  #17 body script type=application/json chars=274 L567 first='{"q": "Why did Bond\'s read of Le Chiffre\'s tell cost him?", "o": ["Tel...'
-  #18 body script type=application/json chars=290 L577 first='{"q": "People shown a face for 100 milliseconds...", "o": ["Can\'t form...'
-  #19 body script type=application/json chars=240 L577 first='{"q": "Which trait do strangers judge most accurately at first sight?"...'
-  #20 body script type=application/json chars=275 L577 first='{"q": "A safari operator sounds cold for the first 30 seconds of a cal...'
-  #21 body script type=application/json chars=269 L586 first='{"q": "In DePaulo\'s meta-analysis of 158 possible lie cues, what did t...'
-  #22 body script type=application/json chars=293 L586 first='{"q": "A clinic owner tenses up when you ask about his current website...'
-  #23 body script type=application/json chars=248 L586 first='{"q": "Why did the three fingers give Hicox away?", "o": ["He was nerv...'
-  #24 body script type=application/json chars=288 L597 first='{"q": "The \'7% words, 38% tone, 55% body\' rule is...", "o": ["A genera...'
-  #25 body script type=application/json chars=242 L597 first='{"q": "For catching deception, training on which channel works better?...'
-  #26 body script type=application/json chars=297 L597 first='{"q": "A prospect says \'sounds good\' after a long pause, in a flat voi...'
-  #27 body script type=application/json chars=241 L605 first='{"q": "In the warmth and competence research, which tends to weigh mor...'
-  #28 body script type=application/json chars=230 L605 first='{"q": "Babyfaced adults tend to be seen as...", "o": ["Colder but more...'
-  #29 body script type=application/json chars=269 L605 first='{"q": "Which competence signal has evidence behind it but does NOT pro...'
-  #30 body script type=application/json chars=199 L616 first='{"q": "Asking a prospect for advice tends to make you look...", "o": [...'
-  #31 body script type=application/json chars=243 L616 first='{"q": "In ultimatum games, why do people turn down free money?", "o": ...'
-  #32 body script type=application/json chars=237 L616 first='{"q": "A clinic owner says \'my last agency took my money and vanished\'...'
-  #33 body script type=application/json chars=241 L626 first='{"q": "Cheng et al. 2013 found two routes to status. Which pair?", "o"...'
-  #34 body script type=application/json chars=288 L626 first='{"q": "Per eye-tracking research, the best clue to who holds status in...'
-  #35 body script type=application/json chars=247 L626 first='{"q": "The famous claim that power makes people worse at perspective t...'
-  #36 body script type=application/json chars=276 L637 first='{"q": "Across 25 experiments, what improved accuracy about another per...'
-  #37 body script type=application/json chars=206 L637 first='{"q": "Which questions most increased liking in Huang et al. 2017?", "...'
-  #38 body script type=application/json chars=266 L637 first='{"q": "You know websites; a dentist doesn\'t. Which bias makes you over...'
-  #39 body script type=application/json chars=261 L647 first='{"q": "In Forer\'s demonstration, 39 students got the same sketch. How ...'
-  #40 body script type=application/json chars=191 L647 first='{"q": "\'You can be outgoing, but you also need time alone.\' Which tech...'
-  #41 body script type=application/json chars=204 L647 first='{"q": "What\'s the honest twin of a cold read?", "o": ["A vaguer statem...'
-  #42 body script type=application/json chars=263 L657 first='{"q": "Recruiters heard or read the same pitches. Hearing them led to....'
-  #43 body script type=application/json chars=227 L657 first='{"q": "Why do sarcastic emails misfire more than senders expect?", "o"...'
-  #44 body script type=application/json chars=236 L657 first='{"q": "A safari operator takes six hours to reply. What does the evide...'
-  #45 body script type=application/json chars=214 L667 first='{"q": "Speakers told about the illusion of transparency before a speec...'
-  #46 body script type=application/json chars=219 L667 first='{"q": "After a first conversation, people usually...", "o": ["Overesti...'
-  #47 body script type=application/json chars=216 L667 first='{"q": "Saying \'I\'m not sure, let me check\' to a client is judged...", ...'
-  #48 body script type=application/json chars=276 L681 first='{"q": "When can you trust a gut call, per Kahneman and Klein 2009?", "...'
-  #49 body script type=application/json chars=209 L681 first='{"q": "You said 90% a prospect would book; they didn\'t. Your Brier sco...'
-  #50 body script type=application/json chars=259 L681 first='{"q": "Which feedback improved forecasters most (Lichtenstein and Fisc...'
-  #51 body script  chars=4022 L681 first='(function(){ "use strict"; var $ = function(s,r){return (r||document)....'
-  #52 body script  chars=2798 L753 first="(function(){ var box=document.getElementById('calib'); if(!box) return..."
-  #53 body script id=mtrx-kit-js chars=20288 L789 first='(function(){ "use strict"; if(window.__mtrxKit)return;window.__mtrxKit...'
-  #54 body script src=../assets/mtrx-review.js defer= chars=0 L941 first=''
+  #4 head style id=mtrx-p2-css chars=6323 L531 first='/* ===== No. 06 Part II, The Spotlight Files (source: build/06/p2.css)...'
+  #5 body script type=application/json chars=248 L638 first='{"q": "What does this guide treat every read of a person as?", "o": ["...'
+  #6 body script type=application/json chars=220 L638 first='{"q": "In real time, how often do people correctly judge whether someo...'
+  #7 body script type=application/json chars=216 L638 first='{"q": "Compared with students, how good are police and other professio...'
+  #8 body script type=application/json chars=262 L638 first='{"q": "\\"Communication is 7% words, 38% tone and 55% body language.\\" ...'
+  #9 body script type=application/json chars=252 L638 first='{"q": "Someone looks up and to the right while answering. That tells y...'
+  #10 body script type=application/json chars=237 L638 first='{"q": "A clinic owner sounds nervous on your call. Most likely meaning...'
+  #11 body script type=application/json chars=262 L638 first='{"q": "Best way to understand what a client wants?", "o": ["Imagine yo...'
+  #12 body script type=application/json chars=211 L638 first='{"q": "After a first conversation, people usually like you...", "o": [...'
+  #13 body script type=application/json chars=227 L638 first='{"q": "When you\'re nervous presenting, how visible is it?", "o": ["Les...'
+  #14 body script type=application/json chars=247 L638 first='{"q": "A psychic says \\"you\'re independent, but sometimes you doubt yo...'
+  #15 body script type=application/json chars=210 L638 first='{"q": "Which trait do strangers judge most accurately from a first imp...'
+  #16 body script type=application/json chars=259 L646 first='{"q": "Across 24,483 judges, what was the average accuracy at telling ...'
+  #17 body script type=application/json chars=330 L646 first='{"q": "Your caller is \'sure\' a clinic owner lied about having no budge...'
+  #18 body script type=application/json chars=274 L646 first='{"q": "Why did Bond\'s read of Le Chiffre\'s tell cost him?", "o": ["Tel...'
+  #19 body script type=application/json chars=290 L656 first='{"q": "People shown a face for 100 milliseconds...", "o": ["Can\'t form...'
+  #20 body script type=application/json chars=240 L656 first='{"q": "Which trait do strangers judge most accurately at first sight?"...'
+  #21 body script type=application/json chars=275 L656 first='{"q": "A safari operator sounds cold for the first 30 seconds of a cal...'
+  #22 body script type=application/json chars=269 L665 first='{"q": "In DePaulo\'s meta-analysis of 158 possible lie cues, what did t...'
+  #23 body script type=application/json chars=293 L665 first='{"q": "A clinic owner tenses up when you ask about his current website...'
+  #24 body script type=application/json chars=248 L665 first='{"q": "Why did the three fingers give Hicox away?", "o": ["He was nerv...'
+  #25 body script type=application/json chars=288 L676 first='{"q": "The \'7% words, 38% tone, 55% body\' rule is...", "o": ["A genera...'
+  #26 body script type=application/json chars=242 L676 first='{"q": "For catching deception, training on which channel works better?...'
+  #27 body script type=application/json chars=297 L676 first='{"q": "A prospect says \'sounds good\' after a long pause, in a flat voi...'
+  #28 body script type=application/json chars=241 L684 first='{"q": "In the warmth and competence research, which tends to weigh mor...'
+  #29 body script type=application/json chars=230 L684 first='{"q": "Babyfaced adults tend to be seen as...", "o": ["Colder but more...'
+  #30 body script type=application/json chars=269 L684 first='{"q": "Which competence signal has evidence behind it but does NOT pro...'
+  #31 body script type=application/json chars=199 L695 first='{"q": "Asking a prospect for advice tends to make you look...", "o": [...'
+  #32 body script type=application/json chars=243 L695 first='{"q": "In ultimatum games, why do people turn down free money?", "o": ...'
+  #33 body script type=application/json chars=237 L695 first='{"q": "A clinic owner says \'my last agency took my money and vanished\'...'
+  #34 body script type=application/json chars=241 L705 first='{"q": "Cheng et al. 2013 found two routes to status. Which pair?", "o"...'
+  #35 body script type=application/json chars=288 L705 first='{"q": "Per eye-tracking research, the best clue to who holds status in...'
+  #36 body script type=application/json chars=247 L705 first='{"q": "The famous claim that power makes people worse at perspective t...'
+  #37 body script type=application/json chars=276 L716 first='{"q": "Across 25 experiments, what improved accuracy about another per...'
+  #38 body script type=application/json chars=206 L716 first='{"q": "Which questions most increased liking in Huang et al. 2017?", "...'
+  #39 body script type=application/json chars=266 L716 first='{"q": "You know websites; a dentist doesn\'t. Which bias makes you over...'
+  #40 body script type=application/json chars=261 L726 first='{"q": "In Forer\'s demonstration, 39 students got the same sketch. How ...'
+  #41 body script type=application/json chars=191 L726 first='{"q": "\'You can be outgoing, but you also need time alone.\' Which tech...'
+  #42 body script type=application/json chars=204 L726 first='{"q": "What\'s the honest twin of a cold read?", "o": ["A vaguer statem...'
+  #43 body script type=application/json chars=263 L736 first='{"q": "Recruiters heard or read the same pitches. Hearing them led to....'
+  #44 body script type=application/json chars=227 L736 first='{"q": "Why do sarcastic emails misfire more than senders expect?", "o"...'
+  #45 body script type=application/json chars=236 L736 first='{"q": "A safari operator takes six hours to reply. What does the evide...'
+  #46 body script type=application/json chars=214 L746 first='{"q": "Speakers told about the illusion of transparency before a speec...'
+  #47 body script type=application/json chars=219 L746 first='{"q": "After a first conversation, people usually...", "o": ["Overesti...'
+  #48 body script type=application/json chars=216 L746 first='{"q": "Saying \'I\'m not sure, let me check\' to a client is judged...", ...'
+  #49 body script type=application/json chars=276 L760 first='{"q": "When can you trust a gut call, per Kahneman and Klein 2009?", "...'
+  #50 body script type=application/json chars=209 L760 first='{"q": "You said 90% a prospect would book; they didn\'t. Your Brier sco...'
+  #51 body script type=application/json chars=259 L760 first='{"q": "Which feedback improved forecasters most (Lichtenstein and Fisc...'
+  #52 body script type=application/json chars=250 L760 first='{"q": "In Tamir and Mitchell 2012, how much of their possible earnings...'
+  #53 body script type=application/json chars=279 L760 first='{"q": "What made Kennedy\'s Paris opener work?", "o": ["He listed his a...'
+  #54 body script type=application/json chars=277 L760 first='{"q": "The \\"70 to 80% eye contact\\" rule...", "o": ["Comes from a stu...'
+  #55 body script type=application/json chars=285 L760 first='{"q": "Why is a name harder to remember than a job (the Baker/baker pa...'
+  #56 body script type=application/json chars=267 L760 first='{"q": "In Howard, Gengler and Jain 1995, remembering someone\'s name......'
+  #57 body script type=application/json chars=238 L760 first='{"q": "Miranda calling Andy \\"Emily\\" shows...", "o": ["She is busy", ...'
+  #58 body script type=application/json chars=216 L760 first='{"q": "Speed daters who did what got more second-date yeses?", "o": ["...'
+  #59 body script type=application/json chars=255 L760 first='{"q": "You ask \\"How was your weekend?\\" then say \\"Mine was amazing!\\...'
+  #60 body script type=application/json chars=320 L760 first='{"q": "Which closing question surfaced the most unmet concerns in a cl...'
+  #61 body script type=application/json chars=202 L760 first='{"q": "\\"I feel lousy today.\\" \\"Same here, I barely slept.\\" This is ...'
+  #62 body script type=application/json chars=289 L760 first='{"q": "In Gable et al. 2004, which response to good news went with bet...'
+  #63 body script type=application/json chars=272 L760 first='{"q": "Peggy wants thanks; Don says \\"That\'s what the money is for!\\" ...'
+  #64 body script type=application/json chars=271 L760 first='{"q": "People who wrote genuine compliments predicted the recipient\'s ...'
+  #65 body script type=application/json chars=245 L760 first='{"q": "Why does Melvin\'s \\"better man\\" line land?", "o": ["It is abou...'
+  #66 body script type=application/json chars=301 L760 first='{"q": "Kennedy\'s \\"...when Thomas Jefferson dined alone\\" line is an e...'
+  #67 body script type=application/json chars=240 L760 first='{"q": "By 1980, roughly how many names were in Clinton\'s card file, pe...'
+  #68 body script type=application/json chars=262 L760 first='{"q": "After a networking event, forgetting is usually...", "o": ["Slo...'
+  #69 body script type=application/json chars=245 L760 first='{"q": "Clinton\'s 1992 answer worked mainly because he...", "o": ["Quot...'
+  #70 body script type=application/json chars=256 L760 first='{"q": "\\"Guilty, I make the websites. But Rhea\'s the reason I\'m here, ...'
+  #71 body script type=application/json chars=240 L760 first='{"q": "\\"How was your weekend?\\" ... \\"Mine was amazing, I went to...\\...'
+  #72 body script type=application/json chars=234 L760 first='{"q": "You meet 12 people at an event. When should you write the cards...'
+  #73 body script  chars=4022 L760 first='(function(){ "use strict"; var $ = function(s,r){return (r||document)....'
+  #74 body script  chars=2798 L832 first="(function(){ var box=document.getElementById('calib'); if(!box) return..."
+  #75 body script id=mtrx-kit-js chars=20288 L868 first='(function(){ "use strict"; if(window.__mtrxKit)return;window.__mtrxKit...'
+  #76 body script src=../assets/mtrx-review.js defer= chars=0 L1020 first=''
 
-== C. CSS: 43445 chars, 238 classes
-b bar big-line blank btn btn-a btn-ghost c calc check check-k check-q chip chips cl-form cl-row cl-sum cnt colophon count cover cover-plate cover-sub cover-title cube cube-cap cube6 decoder decoder-out deeper done draw drill drill-e drill-h drill-m drill-x dur ex f field fig fit fitlist flip flips full g g-h g-m g-s gaze gloss gloss-tools grade grid2 grow hl ic in is-active is-answered is-done is-due is-flipped is-in is-on is-open is-picked is-right is-wrong js kicker lbl lede lens-act lens-in lens-out lg life-meta lq march marks math mod mod-meta mod-title mod-why mtrx muted n nk-body nk-danger nk-dock nk-empty nk-fab nk-fbox nk-find nk-flash nk-fmeta nk-foot nk-fres nk-head nk-hl nk-hls nk-k nk-mini nk-panel nk-pop nk-saved nk-tip nk-x nojs-only nowrap o oklist opt opts out outs panel part-head part-promise part-title pct ph plate plate-img plate-name plate-no plate-sub play predict predict-k prepared pv-plate r read-card reads room s s-box s-box-a s-box-j s-card s-dash s-line s-line-m s-on s-t s-t-b s-t-d s-t-s s-t-sm s-ta scene scene-b scene-k scene-line scene-n scene-rc scene-w scene-wh sci score scroll scrollbar sentence short sim sim-bar sim-end sim-fb sim-foot sim-q sim-scene site sp spec spec-def spec-name specs st-card st-col st-d st-h st-i st-pick st-sum st-warn stat stats step-text stops t tbl tbl-wrap theme-k three thumb thumbs tile tiles tok toks tryit tryit-k url-a url-ret verbs verdict vid vid-b vid-h vid-m vid-q vid-t vid-th vid-w vids vids-h w warn watch why wide widget widget-k wk-a wk-bar wk-help wk-in wk-list wrap writer writer-k xlist y
+== C. CSS: 49769 chars, 287 classes
+anatomy b bar bd beam bg big-line bj bk blank bm btn btn-a btn-ghost bx c calc check check-k check-q chip chips cl-form cl-row cl-sum cnt colophon count cover cover-plate cover-sub cover-title css cube cube-cap cube6 decoder decoder-out deeper done dos-body dos-facts dos-k dos-name dos-role dos-tab dossier draw drill drill-e drill-h drill-m drill-x dur ex f field fig file files fit fitlist flip flips full g g-h g-m g-s g-x gaze gloss gloss-tools grade grid2 grow hl ic in is-active is-answered is-done is-due is-flipped is-in is-now is-on is-open is-picked is-right is-wrong js kicker lbl lede lens-act lens-in lens-out lg life-meta lm ln lq lr march marks math mod mod-meta mod-title mod-why move move-k move-line move-steps mtrx muted mv n nextq nk-body nk-danger nk-dock nk-empty nk-fab nk-fbox nk-find nk-flash nk-fmeta nk-foot nk-fres nk-head nk-hl nk-hls nk-k nk-mini nk-panel nk-pop nk-saved nk-tip nk-x nojs-only nowrap o oklist opt opts out outs p2-intro p2fig panel part-head part-promise part-title pct ph plate plate-img plate-name plate-no plate-sub play predict predict-k prepared pv-plate r read-card reads reveal rewatch room rule s s-box s-box-a s-box-j s-card s-dash s-line s-line-m s-on s-t s-t-b s-t-d s-t-s s-t-sm s-ta scene scene-b scene-k scene-line scene-n scene-rc scene-w scene-wh sci score scroll scrollbar sentence short sim sim-bar sim-end sim-fb sim-foot sim-q sim-scene site sp spec spec-def spec-name specs src st-anti st-card st-col st-d st-field st-h st-hold st-i st-myth st-part st-pick st-sum st-warn stamp stat stats step-text stops story t tb tbl tbl-wrap td theme-k three thumb thumbs tile tiles tm tok toks tr tryit tryit-k ts ttags tw url-a url-ret verbs verdict vid vid-b vid-h vid-m vid-q vid-t vid-th vid-w vids vids-h w warn watch why wide widget widget-k wk-a wk-bar wk-help wk-in wk-list wrap writer writer-k xlist y
 custom props: --accent --accent-ink --accent-soft --c --canvas --display --fg --graphite --gun --gun-soft --ink --ink-2 --jane --mars --mars-ink --mars-soft --mono --moss --moss-ink --moss-soft --on-accent --paper --paper-2 --radius --red --red-soft --rule --sans --steel --tab-w
 data-part rules:
   [data-part="1"]{--accent:var(--mars);--accent-ink:var(--mars-ink);--accent-soft:var(--mars-soft);--on-accent:var(--ink)
@@ -91,229 +113,237 @@ data-part rules:
 media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (max-width:760px) | @media (max-width:900px) | @media (min-width:901px) | @media (prefers-reduced-motion:reduce) | @media print
 
 == D. body outline (stop articles folded)
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"> svg [368 chars inside] L533
-<div class="scrollbar" aria-hidden="true"> L533
-<nav class="thumbs" aria-label="Sections"> L533
-  <button class="thumb" type="button" data-t="0" aria-label="Start"> L533
-    <span class="lbl"> L533
-      <span class="full"> L533
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"> svg [368 chars inside] L612
+<div class="scrollbar" aria-hidden="true"> L612
+<nav class="thumbs" aria-label="Sections"> L612
+  <button class="thumb" type="button" data-t="0" aria-label="Start"> L612
+    <span class="lbl"> L612
+      <span class="full"> L612
         "Start"
-      <span class="short"> L533
+      <span class="short"> L612
         "00"
-    <i> L533
-  <button class="thumb" type="button" data-t="1" aria-label="Read the room"> L533
-    <span class="lbl"> L533
-      <span class="full"> L533
+    <i> L612
+  <button class="thumb" type="button" data-t="1" aria-label="Read the room"> L612
+    <span class="lbl"> L612
+      <span class="full"> L612
         "Read the room"
-      <span class="short"> L533
+      <span class="short"> L612
         "I"
-    <i> L533
-  <button class="thumb" type="button" data-t="2" aria-label="George Newman"> L533
-    <span class="lbl"> L533
-      <span class="full"> L533
+    <i> L612
+  <button class="thumb" type="button" data-t="4" aria-label="The Spotlight Files"> L612
+    <span class="lbl"> L612
+      <span class="full"> L612
+        "Spotlight"
+      <span class="short"> L612
+        "II.1"
+    <i> L612
+  <button class="thumb" type="button" data-t="2" aria-label="George Newman"> L612
+    <span class="lbl"> L612
+      <span class="full"> L612
         "George Newman"
-      <span class="short"> L533
-        "II"
-    <i> L533
-  <button class="thumb" type="button" data-t="3" aria-label="Network"> L533
-    <span class="lbl"> L533
-      <span class="full"> L533
+      <span class="short"> L612
+        "II.3"
+    <i> L612
+  <button class="thumb" type="button" data-t="3" aria-label="Network"> L612
+    <span class="lbl"> L612
+      <span class="full"> L612
         "Network"
-      <span class="short"> L533
-        "III"
-    <i> L533
-  <button class="thumb" type="button" data-t="5" aria-label="The line"> L533
-    <span class="lbl"> L533
-      <span class="full"> L533
+      <span class="short"> L612
+        "II.4"
+    <i> L612
+  <button class="thumb" type="button" data-t="5" aria-label="The line"> L612
+    <span class="lbl"> L612
+      <span class="full"> L612
         "The line"
-      <span class="short"> L533
-        "IV"
-    <i> L533
-<div class="site"> L533
-  <header class="wrap cover" id="top" data-sec="0"> L533
-    <div> L533
-      <div class="kicker"> L533
+      <span class="short"> L612
+        "II.5"
+    <i> L612
+<div class="site"> L612
+  <header class="wrap cover" id="top" data-sec="0"> L612
+    <div> L612
+      <div class="kicker"> L612
         "MTRX™ Field Series · No. 06 · October 2026"
-      <h1 class="cover-title"> L534
+      <h1 class="cover-title"> L613
         "Read the"
-        <span class="o"> L534
+        <span class="o"> L613
           "room"
-      <p class="cover-sub"> L535
+      <p class="cover-sub"> L614
         "Social intelligence through cinema. Heroes, villains and side characters show yo..."
-      <ul class="verbs"> L536
-        <li> L536
+      <ul class="verbs"> L615
+        <li> L615
           "Notice"
-        <li> L536
+        <li> L615
           "Ask"
-        <li> L536
+        <li> L615
           "Update"
-      <p class="prepared"> L537
+      <p class="prepared"> L616
         "Prepared for"
-        <b> L537
+        <b> L616
           "Kevin Cecil"
         ", founder, MTRX™ Digital, and George Newman"
-        <br> L537
-        "Part I: 12 stops · 20 minutes a day · 24 scenes · 37 more in the scene library"
-        <br> L537
-        "Sources checked 9 October 2026"
-      <a class="btn btn-a" href="#m0-1"> L538
+        <br> L616
+        "Part I: 12 stops · Part II: 7 stops so far · 20 minutes a day · 31 scenes · 37 m..."
+        <br> L616
+        "Sources checked 9 and 14 October 2026"
+      <a class="btn btn-a" href="#m0-1"> L617
         "Start here"
-        <span aria-hidden="true"> L538
+        <span aria-hidden="true"> L617
           "↓"
-    <div class="cover-plate"> L539
-      <nav class="cube6" aria-label="Nine scenes in Part I"> L539
-        <a href="#m1-1"> L539
-          <span class="ph"> L539
+    <div class="cover-plate"> L618
+      <nav class="cube6" aria-label="Nine scenes in Part I"> L618
+        <a href="#m1-1"> L618
+          <span class="ph"> L618
             "Casino Royale"
-          <img src="https://i.ytimg.com/vi/3jQbXuvGR5o/mqdefault.jpg" alt="Still from Casino Royale" loading="lazy" onerror="this.remove()"> L539
-          <b> L539
+          <img src="https://i.ytimg.com/vi/3jQbXuvGR5o/mqdefault.jpg" alt="Still from Casino Royale" loading="lazy" onerror="this.remove()"> L618
+          <b> L618
             "1.1"
-        <a href="#m1-2"> L539
-          <span class="ph"> L539
+        <a href="#m1-2"> L618
+          <span class="ph"> L618
             "Sherlock"
-          <img src="https://i.ytimg.com/vi/VaT7IYQgyqo/mqdefault.jpg" alt="Still from Sherlock" loading="lazy" onerror="this.remove()"> L539
-          <b> L539
+          <img src="https://i.ytimg.com/vi/VaT7IYQgyqo/mqdefault.jpg" alt="Still from Sherlock" loading="lazy" onerror="this.remove()"> L618
+          <b> L618
             "1.2"
-        <a href="#m1-3"> L539
-          <span class="ph"> L539
+        <a href="#m1-3"> L618
+          <span class="ph"> L618
             "Inglourious Basterds"
-          <img src="https://i.ytimg.com/vi/kPoCFAP6RuM/mqdefault.jpg" alt="Still from Inglourious Basterds" loading="lazy" onerror="this.remove()"> L539
-          <b> L539
+          <img src="https://i.ytimg.com/vi/kPoCFAP6RuM/mqdefault.jpg" alt="Still from Inglourious Basterds" loading="lazy" onerror="this.remove()"> L618
+          <b> L618
             "1.3"
-        <a href="#m1-4"> L539
-          <span class="ph"> L539
+        <a href="#m1-4"> L618
+          <span class="ph"> L618
             "Heat"
-          <img src="https://i.ytimg.com/vi/3lKSth8oPaE/mqdefault.jpg" alt="Still from Heat" loading="lazy" onerror="this.remove()"> L539
-          <b> L539
+          <img src="https://i.ytimg.com/vi/3lKSth8oPaE/mqdefault.jpg" alt="Still from Heat" loading="lazy" onerror="this.remove()"> L618
+          <b> L618
             "1.4"
-        <a href="#m1-5"> L539
-          <span class="ph"> L539
+        <a href="#m1-5"> L618
+          <span class="ph"> L618
             "The Godfather"
-          <img src="https://i.ytimg.com/vi/eZHsmb4ezEk/mqdefault.jpg" alt="Still from The Godfather" loading="lazy" onerror="this.remove()"> L539
-          <b> L539
+          <img src="https://i.ytimg.com/vi/eZHsmb4ezEk/mqdefault.jpg" alt="Still from The Godfather" loading="lazy" onerror="this.remove()"> L618
+          <b> L618
             "1.5"
-        <a href="#m1-6"> L539
-          <span class="ph"> L539
+        <a href="#m1-6"> L618
+          <span class="ph"> L618
             "The Social Network"
-          <img src="https://i.ytimg.com/vi/VKnNUYknsuQ/mqdefault.jpg" alt="Still from The Social Network" loading="lazy" onerror="this.remove()"> L539
-          <b> L539
+          <img src="https://i.ytimg.com/vi/VKnNUYknsuQ/mqdefault.jpg" alt="Still from The Social Network" loading="lazy" onerror="this.remove()"> L618
+          <b> L618
             "1.6"
-        <a href="#m1-7"> L539
-          <span class="ph"> L539
+        <a href="#m1-7"> L618
+          <span class="ph"> L618
             "Margin Call"
-          <img src="https://i.ytimg.com/vi/mpEEKlDs_M0/mqdefault.jpg" alt="Still from Margin Call" loading="lazy" onerror="this.remove()"> L539
-          <b> L539
+          <img src="https://i.ytimg.com/vi/mpEEKlDs_M0/mqdefault.jpg" alt="Still from Margin Call" loading="lazy" onerror="this.remove()"> L618
+          <b> L618
             "1.7"
-        <a href="#m1-8"> L539
-          <span class="ph"> L539
+        <a href="#m1-8"> L618
+          <span class="ph"> L618
             "Columbo"
-          <img src="https://i.ytimg.com/vi/QxBnaMGP2aY/mqdefault.jpg" alt="Still from Columbo" loading="lazy" onerror="this.remove()"> L539
-          <b> L539
+          <img src="https://i.ytimg.com/vi/QxBnaMGP2aY/mqdefault.jpg" alt="Still from Columbo" loading="lazy" onerror="this.remove()"> L618
+          <b> L618
             "1.8"
-        <a href="#m1-9"> L539
-          <span class="ph"> L539
+        <a href="#m1-9"> L618
+          <span class="ph"> L618
             "The Silence of the Lambs"
-          <img src="https://i.ytimg.com/vi/99Ptctl5_qQ/mqdefault.jpg" alt="Still from The Silence of the Lambs" loading="lazy" onerror="this.remove()"> L539
-          <b> L539
+          <img src="https://i.ytimg.com/vi/99Ptctl5_qQ/mqdefault.jpg" alt="Still from The Silence of the Lambs" loading="lazy" onerror="this.remove()"> L618
+          <b> L618
             "1.9"
-      <p class="cube-cap"> L539
+      <p class="cube-cap"> L618
         "Nine scenes from Part I. Tap one to jump to its stop."
-  <section class="part" id="s0" data-part="0" data-sec="0"> L539
-    <div class="wrap"> L539
-      <article class="mod" id="m0-1" data-mod="0.1"> TITLE="Why this guide exists" [4521 chars] L539
-      <article class="mod" id="m0-2" data-mod="0.2"> TITLE="Your baseline: ten questions first" [3919 chars] L559
-  <section class="part" id="s1" data-part="1" data-sec="1"> L559
-    <div class="part-head"> L559
-      <div class="wrap"> L559
-        <div class="kicker"> L559
+  <section class="part" id="s0" data-part="0" data-sec="0"> L618
+    <div class="wrap"> L618
+      <article class="mod" id="m0-1" data-mod="0.1"> TITLE="Why this guide exists" [4521 chars] L618
+      <article class="mod" id="m0-2" data-mod="0.2"> TITLE="Your baseline: ten questions first" [3919 chars] L638
+  <section class="part" id="s1" data-part="1" data-sec="1"> L638
+    <div class="part-head"> L638
+      <div class="wrap"> L638
+        <div class="kicker"> L638
           "Part I · 12 stops · two weeks at 20 minutes a day"
-        <h2 class="part-title"> L559
+        <h2 class="part-title"> L638
           "Read the room"
-        <p class="part-promise"> L559
+        <p class="part-promise"> L638
           "How people are actually read: what works, what's a myth, and the one habit that ..."
-        <ol class="stops"> L559
-          <li> L559
+        <ol class="stops"> L638
+          <li> L638
             [1 child tags: a]
-          <li> L559
+          <li> L638
             [1 child tags: a]
-          <li> L559
+          <li> L638
             [1 child tags: a]
-          <li> L559
+          <li> L638
             [1 child tags: a]
-          <li> L559
+          <li> L638
             [1 child tags: a]
-          <li> L559
+          <li> L638
             [1 child tags: a]
-          <li> L559
+          <li> L638
             [1 child tags: a]
-          <li> L559
+          <li> L638
             [1 child tags: a]
-          <li> L559
+          <li> L638
             [1 child tags: a]
-          <li> L559
+          <li> L638
             [1 child tags: a]
-          <li> L559
+          <li> L638
             [1 child tags: a]
-          <li> L559
+          <li> L638
             [1 child tags: a]
-    <div class="wrap"> L559
-      <article class="mod" id="m1-1" data-mod="1.1"> TITLE="The 54% problem" [10093 chars] L559
-      <article class="mod" id="m1-2" data-mod="1.2"> TITLE="First impressions: fast, sticky, half right" [10691 chars] L567
-      <article class="mod" id="m1-3" data-mod="1.3"> TITLE="Baselines: read the change, not the tell" [11636 chars] L577
-      <article class="mod" id="m1-4" data-mod="1.4"> TITLE="The five channels" [12193 chars] L586
-      <article class="mod" id="m1-5" data-mod="1.5"> TITLE="Warmth first, then competence" [10522 chars] L597
-      <article class="mod" id="m1-6" data-mod="1.6"> TITLE="What people want" [11114 chars] L605
-      <article class="mod" id="m1-7" data-mod="1.7"> TITLE="Reading power in a room" [11037 chars] L616
-      <article class="mod" id="m1-8" data-mod="1.8"> TITLE="Ask, don't guess" [11677 chars] L626
-      <article class="mod" id="m1-9" data-mod="1.9"> TITLE="Cold reading, decoded" [11734 chars] L637
-      <article class="mod" id="m1-10" data-mod="1.10"> TITLE="Reading the phone and the DM" [11647 chars] L647
-      <article class="mod" id="m1-11" data-mod="1.11"> TITLE="How you read to others" [10299 chars] L657
-      <article class="mod" id="m1-12" data-mod="1.12"> TITLE="The calibration log" [10998 chars] L667
-  <section class="part" id="s2" data-part="2" data-sec="2"> L681
-    <div class="part-head"> L681
-      <div class="wrap"> L681
-        <div class="kicker"> L681
-          "Part II · coming next · watch ahead"
-        <h2 class="part-title"> L681
-          "Become George Newman"
-        <p class="part-promise"> L681
-          "Charm, voice and presence, built from the delivery of cinema's best. Start watch..."
-        <ol class="stops"> L681
-          <li> L681
+    <div class="wrap"> L638
+      <article class="mod" id="m1-1" data-mod="1.1"> TITLE="The 54% problem" [10093 chars] L638
+      <article class="mod" id="m1-2" data-mod="1.2"> TITLE="First impressions: fast, sticky, half right" [10691 chars] L646
+      <article class="mod" id="m1-3" data-mod="1.3"> TITLE="Baselines: read the change, not the tell" [11636 chars] L656
+      <article class="mod" id="m1-4" data-mod="1.4"> TITLE="The five channels" [12193 chars] L665
+      <article class="mod" id="m1-5" data-mod="1.5"> TITLE="Warmth first, then competence" [10522 chars] L676
+      <article class="mod" id="m1-6" data-mod="1.6"> TITLE="What people want" [11114 chars] L684
+      <article class="mod" id="m1-7" data-mod="1.7"> TITLE="Reading power in a room" [11037 chars] L695
+      <article class="mod" id="m1-8" data-mod="1.8"> TITLE="Ask, don't guess" [11677 chars] L705
+      <article class="mod" id="m1-9" data-mod="1.9"> TITLE="Cold reading, decoded" [11734 chars] L716
+      <article class="mod" id="m1-10" data-mod="1.10"> TITLE="Reading the phone and the DM" [11647 chars] L726
+      <article class="mod" id="m1-11" data-mod="1.11"> TITLE="How you read to others" [10299 chars] L736
+      <article class="mod" id="m1-12" data-mod="1.12"> TITLE="The calibration log" [10998 chars] L746
+  <!--mtrx:p2f1-->
+  <section class="part" id="s4" data-part="4" data-sec="4"> L760
+    <div class="part-head"> L760
+      <div class="wrap"> L760
+        <div class="kicker"> L760
+          "Part II · The Spotlight Files · File 1 of 5 · 7 stops"
+        <h2 class="part-title"> L760
+          "The Spotlight"
+        <p class="part-promise"> L760
+          "Charm is attention people can feel. Seven moves, each taught through one person ..."
+        <ol class="stops"> L760
+          <li> L760
             [1 child tags: a]
-          <li> L681
+          <li> L760
             [1 child tags: a]
-          <li> L681
+          <li> L760
             [1 child tags: a]
-          <li> L681
+          <li> L760
             [1 child tags: a]
-          <li> L681
+          <li> L760
             [1 child tags: a]
-          <li> L681
+          <li> L760
             [1 child tags: a]
-          <li> L681
+          <li> L760
             [1 child tags: a]
-          <li> L681
-            [1 child tags: a]
-          <li> L681
-            [1 child tags: a]
-          <li> L681
-            [1 child tags: a]
-    <div class="wrap"> L681
-      <h3> L681
-        "Preview plates"
-      <figure class="fig pv-plate"> L681
-        <img src="data:[237519]" alt="Animated plate: slumped short-stride walk marked wrong beside a tall, ..." loading="lazy"> L681
-        <figcaption> L681
-          <b> L681
-            "The walk, in motion."
-          "Wrong: head down, shoulders rounded, short shuffle. Right: level head, shoulders..."
-      <figure class="fig pv-plate"> L681
-        <img src="data:[201627]" alt="Animated top-down plate of shoulders: stiff, small swing, swagger" loading="lazy"> L681
-        <figcaption> L681
-          <b> L681
-            "The shoulder swing from above."
-          "The small counter-swing reads sure. Stiff reads tense; a big swing plus sway rea..."
+    <div class="wrap"> L760
+      <div class="p2-intro" id="p2-intro"> L760
+        <p class="lede"> L760
+          "Part I taught you to read people. The Spotlight Files teach you to be the person..."
+        <h3> L760
+          "How a case file works"
+        <ol class="anatomy"> L760
+          <li> L760
+            "Cold open: predict first"
+          <li> L760
+            "The subject"
+          <li> L760
+            "The story"
+          <li> L760
+            "The move"
+          <li> L760
+            "The scenes"
+          <li> L760
+            "Why it works"
+          [cut: budget]
+        [cut: budget]
       [cut: budget]
   [cut: budget]
 [cut: budget]
@@ -335,404 +365,450 @@ media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (ma
 == F. after the last Part I stop: outline
 [end of siblings inside <div class="wrap">]
 [end of siblings inside <section class="part" id="s1" data-part="1" data-sec="1">]
-<section class="part" id="s2" data-part="2" data-sec="2"> L681
-  <div class="part-head"> L681
-    <div class="wrap"> L681
-      <div class="kicker"> L681
-        "Part II · coming next · watch ahead"
-      <h2 class="part-title"> L681
-        "Become George Newman"
-      <p class="part-promise"> L681
-        "Charm, voice and presence, built from the delivery of cinema's best. Start watch..."
-      <ol class="stops"> L681
-        <li> L681
-          <a href="#s2"> L681
-            <span> L681
+<section class="part" id="s4" data-part="4" data-sec="4"> L760
+  <div class="part-head"> L760
+    <div class="wrap"> L760
+      <div class="kicker"> L760
+        "Part II · The Spotlight Files · File 1 of 5 · 7 stops"
+      <h2 class="part-title"> L760
+        "The Spotlight"
+      <p class="part-promise"> L760
+        "Charm is attention people can feel. Seven moves, each taught through one person ..."
+      <ol class="stops"> L760
+        <li> L760
+          <a href="#m2-1"> L760
+            <span> L760
               "2.1"
-            "Attention is the charm"
-            <em> L681
-              "soon"
-        <li> L681
-          <a href="#s2"> L681
-            <span> L681
+            "The Spotlight"
+            <em> L760
+              "20 min"
+        <li> L760
+          <a href="#m2-2"> L760
+            <span> L760
               "2.2"
-            "The prep kit: one line, three stories, three questions, one ask"
-            <em> L681
-              "soon"
-        <li> L681
-          <a href="#s2"> L681
-            <span> L681
+            "The Name"
+            <em> L760
+              "20 min"
+        <li> L760
+          <a href="#m2-3"> L760
+            <span> L760
               "2.3"
-            "Voice: pace and the pause"
-            <em> L681
-              "soon"
-        <li> L681
-          <a href="#s2"> L681
-            <span> L681
+            "The Second Question"
+            <em> L760
+              "20 min"
+        <li> L760
+          <a href="#m2-4"> L760
+            <span> L760
               "2.4"
-            "Voice: pitch and landing the line"
-            <em> L681
-              "soon"
-        <li> L681
-          <a href="#s2"> L681
-            <span> L681
+            "The Support Response"
+            <em> L760
+              "20 min"
+        <li> L760
+          <a href="#m2-5"> L760
+            <span> L760
               "2.5"
-            "The body: walk, stance, stillness"
-            <em> L681
-              "soon"
-        <li> L681
-          <a href="#s2"> L681
-            <span> L681
+            "The Compliment"
+            <em> L760
+              "20 min"
+        <li> L760
+          <a href="#m2-6"> L760
+            <span> L760
               "2.6"
-            "Calm under pressure"
-            <em> L681
-              "soon"
-        <li> L681
-          <a href="#s2"> L681
-            <span> L681
+            "The Callback"
+            <em> L760
+              "20 min"
+        <li> L760
+          <a href="#m2-7"> L760
+            <span> L760
               "2.7"
-            "Warmth and humour"
-            <em> L681
-              "soon"
-        <li> L681
-          <a href="#s2"> L681
-            <span> L681
-              "2.8"
-            "The long take: monologues"
-            <em> L681
-              "soon"
-        <li> L681
-          <a href="#s2"> L681
-            <span> L681
-              "2.9"
-            "George Newman and the off switch"
-            <em> L681
-              "soon"
-        <li> L681
-          <a href="#s2"> L681
-            <span> L681
-              "2.10"
-            "Boss fight: a room of strangers"
-            <em> L681
-              "soon"
-  <div class="wrap"> L681
-    <h3> L681
-      "Preview plates"
-    <figure class="fig pv-plate"> L681
-      <img src="data:[237519]" alt="Animated plate: slumped short-stride walk marked wrong beside a tall, ..." loading="lazy"> L681
-      <figcaption> L681
-        <b> L681
-          "The walk, in motion."
-        "Wrong: head down, shoulders rounded, short shuffle. Right: level head, shoulders..."
-    <figure class="fig pv-plate"> L681
-      <img src="data:[201627]" alt="Animated top-down plate of shoulders: stiff, small swing, swagger" loading="lazy"> L681
-      <figcaption> L681
-        <b> L681
-          "The shoulder swing from above."
-        "The small counter-swing reads sure. Stiff reads tense; a big swing plus sway rea..."
-    <figure class="fig pv-plate"> L681
-      <img src="data:[18391]" alt="Plate of three standing postures: slumped, stacked and puffed, with a ..." loading="lazy"> L681
-      <figcaption> L681
-        <b> L681
-          "The stance."
-        "Ear, shoulder, hip and ankle on one line. One-minute wall test at the bottom."
-    <figure class="fig pv-plate"> L681
-      <img src="data:[57287]" alt="Plate scoring three lines for pauses, stress and pitch" loading="lazy"> L681
-      <figcaption> L681
-        <b> L681
-          "The voice."
-        "Ruddy's real pitch to Bluhdorn, Bond, and a draft website-guy line for you."
-    <figure class="fig pv-plate"> L681
-      <img src="data:[52975]" alt="Plate scoring Bogart, Belfort and an honest client-call line" loading="lazy"> L681
-      <figcaption> L681
-        <b> L681
-          "The voice, part 2."
-        "Underplay, tonality, and the honest version of Belfort's opener."
-    <h3> L681
-      "The scene library"
-    <div class="vids-h"> L681
-      "Voice and the pause · 4 scenes"
-    <div class="vids"> L681
-      <a class="vid" href="https://www.youtube.com/watch?v=JsTkC8OxpOs" target="_blank" rel="noopener"> L681
-        <div class="vid-th"> L681
-          <span class="ph"> L681
-            "Casablanca"
-          <img src="https://i.ytimg.com/vi/JsTkC8OxpOs/mqdefault.jpg" alt="Still from Casablanca" loading="lazy" onerror="this.remove()"> L681
-          <span class="play"> L681
-          <span class="dur"> L681
-            "01:38"
-        <div class="vid-b"> L681
-          <div class="vid-t"> L681
-            "Casablanca (1942)"
-          <div class="vid-m"> L681
-            "Humphrey Bogart ·"
-            <span class="s"> L681
-              "hero"
-          <span class="vid-q"> L681
-            ""Of all the gin joints in all the towns in all the world, she walks into mine.""
-          <span class="vid-w"> L681
-            <b> L681
-              "Technique."
-            "Bogart keeps volume low and lets the pause after the repeated phrase carry the h..."
-          <span class="vid-w"> L681
-            <b> L681
+            "Boss fight: Spotlight night"
+            <em> L760
+              "20 min"
+  <div class="wrap"> L760
+    <div class="p2-intro" id="p2-intro"> L760
+      <p class="lede"> L760
+        "Part I taught you to read people. The Spotlight Files teach you to be the person..."
+      <h3> L760
+        "How a case file works"
+      <ol class="anatomy"> L760
+        <li> L760
+          "Cold open: predict first"
+        <li> L760
+          "The subject"
+        <li> L760
+          "The story"
+        <li> L760
+          "The move"
+        <li> L760
+          "The scenes"
+        <li> L760
+          "Why it works"
+        <li> L760
+          "Truth tags"
+        <li> L760
+          "Do it today"
+      <h3> L760
+        "The five files"
+      <div class="files"> L760
+        <a class="file is-now" href="#m2-1" style="--fc:var(--jane)"> L760
+          <span> L760
+            "File 1 · 2.1 to 2.7"
+          <b> L760
+            "The Spotlight"
+          <em> L760
+            "Attention, names, questions, compliments, callbacks. Here now."
+        <a class="file" href="#s4" style="--fc:var(--graphite)"> L760
+          <span> L760
+            "File 2 · 2.8 to 2.13"
+          <b> L760
+            "The Read"
+          <em> L760
+            "What people hunger for, how directors read actors, reading a group. Next drop."
+        <a class="file" href="#s2" style="--fc:var(--gun)"> L760
+          <span> L760
+            "File 3 · 2.14 to 2.22"
+          <b> L760
+            "George Newman"
+          <em> L760
+            "Voice, walk, stance, calm, the long take. Plates and scenes ready to watch."
+        <a class="file" href="#s3" style="--fc:var(--moss)"> L760
+          <span> L760
+            "File 4 · 2.23 to 2.30"
+          <b> L760
+            "Pitch and network"
+          <em> L760
+            "Known for one thing, the one-minute pitch, favours, dormant ties."
+        <a class="file" href="#s5" style="--fc:var(--red)"> L760
+          <span> L760
+            "File 5 · 2.31 to 2.34"
+          <b> L760
+            "The Line"
+          <em> L760
+            "Influence vs manipulation, Belfort, Barry Seal, the mask."
+      <details class="sci"> L760
+        <summary> L760
+          "The coverage map for File 1"
+        <p> L760
+          <b> L760
+            "What File 1 covers."
+          "Attention as a reward (Tamir and Mitchell), gaze in short bouts (Binetti), why n..."
+        <p> L760
+          <b> L760
+            "Where it came from."
+          "The Part I audit flagged self-presentation and applied influence for Part II. Th..."
+        <p> L760
+          <b> L760
+            "Deliberately elsewhere."
+          "Mimicry, humour and voice (File 3), gifts, favours and the 48 Laws (File 4), fla..."
+          <b> L760
+            "What this does not prove:"
+          "that every move lands the same way in every culture you sell into. Your scorecar..."
+    <article class="mod" id="m2-1" data-mod="2.1"> L760
+      <div class="mod-meta"> L760
+        "File 1 · Stop 2.1 · Day 13"
+        <span class="t"> L760
+          "20 min"
+      <h2 class="mod-title"> L760
+        "The Spotlight"
+      <p class="mod-why"> L760
+        "Paris, 2 June 1961. The most powerful man on earth stands up in front of the pre..."
+      <div class="dossier"> L760
+        <div class="dos-tab"> L760
+          "Case file 2.1"
+        <div class="dos-body"> L760
+          <div class="dos-k"> L760
+            "Subject"
+          <div class="dos-name"> L760
+            "John F. Kennedy"
+          <div class="dos-role"> L760
+            "35th US President · press luncheon, Palais de Chaillot, Paris, 2 June 1961"
+          <dl class="dos-facts"> L760
+            <div> L760
+              [2 child tags: dd, dt]
+            <div> L760
+              [2 child tags: dd, dt]
+            <div> L760
+              [2 child tags: dd, dt]
+        <span class="stamp st-hold"> L760
+          "Holds up"
+      <div class="predict"> L760
+        <div class="predict-k"> L760
+          "Cold open · predict first · 2 min"
+        <p> L760
+          "A Harvard lab let people choose: answer a question about yourself, or answer one..."
+        <details class="reveal"> L760
+          <summary> L760
+            "Reveal the answer"
+          <p> L760
+            <b> L760
+              "17%."
+            "People paid to talk about themselves, and doing it lit up the brain's reward sys..."
+      <h3> L760
+        "The story"
+      <div class="story"> L760
+        <p> L760
+          "On his first big trip abroad as president, Kennedy went to Paris to meet Charles..."
+          <i> L760
+            ""I do not think it altogether inappropriate to introduce myself to this audience..."
+        <p> L760
+          "Look at what those two sentences do. He names the star, and it isn't him. He cas..."
+        <p> L760
+          "It was his habit, not a one-off. Asked how he had become a war hero after his bo..."
+          <i> L760
+            ""It was involuntary. They sank my boat.""
+          "He shrinks himself, the crew and the story get bigger, and you like him more."
+        <p> L760
+          "The catch, and it matters for you: status lets self-deprecation land as confiden..."
+      <div class="move"> L760
+        <div class="move-k"> L760
+          "The move"
+        <p class="move-line"> L760
+          "Hand them the light."
+        <ol class="move-steps"> L760
+          <li> L760
+            <b> L760
+              "Find the star."
+            "Who in this room, or what about this person, deserves the headline?"
+          <li> L760
+            <b> L760
+              "Take the side role."
+            "One line that makes you the supporting character. Light, not grovelling."
+          <li> L760
+            <b> L760
+              "Point the room at them."
+            "A credit or a question, then stop talking and let them shine."
+      <h3> L760
+        "The scene"
+      <div class="scene"> L760
+        <a class="vid" href="https://www.youtube.com/watch?v=9ecrMlwLBWI" rel="noopener" target="_blank"> L760
+          <div class="vid-th"> L760
+            <span class="ph"> L760
+              "JFK in Paris"
+            <img alt="Still from JFK in Paris" loading="lazy" onerror="this.remove()" src="https://i.ytimg.com/vi/9ecrMlwLBWI/mqdefault.jpg"> L760
+              [1 child tags: span]
+          <div class="vid-b"> L760
+            <div class="vid-t"> L760
+              "JFK in Paris (1961)"
+            <div class="vid-m"> L760
+              [1 child tags: span]
+        <div class="scene-b"> L760
+          <div class="scene-k"> L760
+            "Press luncheon, Palais de Chaillot · John F. Kennedy"
+          <p class="scene-line"> L760
+            ""I am the man who accompanied Jacqueline Kennedy to Paris, and I have enjoyed it..."
+          <div class="scene-wh"> L760
+            "Watch for"
+          <ul class="scene-w"> L760
+            <li> L760
+              "The setup is two sentences. He lets the laugh land before moving on"
+            <li> L760
+              "The very next lines thank his hosts: the light keeps travelling"
+            <li> L760
+              "Only then does he get to business, with the room already on his side"
+          <p> L760
+            <b> L760
+              "The read."
+            "Kennedy reads the room's obsession (Jackie) and joins it instead of competing wi..."
+          <p> L760
+            <b> L760
               "Steal this."
-            "Copy the low volume and the delayed first response."
-          <span class="vid-w"> L681
-            <b> L681
-              "Drill."
-            "Say the line three times. Add a two beat pause after "world" and keep your shoul..."
-      <a class="vid" href="https://www.youtube.com/watch?v=hUbIsfzOjk4" target="_blank" rel="noopener"> L681
-        <div class="vid-th"> L681
-          <span class="ph"> L681
-            "The Shawshank Redemption"
-          <img src="https://i.ytimg.com/vi/hUbIsfzOjk4/mqdefault.jpg" alt="Still from The Shawshank Redemption" loading="lazy" onerror="this.remove()"> L681
-          <span class="play"> L681
-          <span class="dur"> L681
-            "02:47"
-        <div class="vid-b"> L681
-          <div class="vid-t"> L681
-            "The Shawshank Redemption (1994)"
-          <div class="vid-m"> L681
-            "Morgan Freeman ·"
-            <span class="s"> L681
-              "hero"
-          <span class="vid-w"> L681
-            <b> L681
-              "Technique."
-            "Freeman begins conversationally, breathes before the word rehabilitated, and shi..."
-          <span class="vid-w"> L681
-            <b> L681
-              "Steal this."
-            "Use a breath before the key word, then make the sentence personal."
-          <span class="vid-w"> L681
-            <b> L681
-              "Drill."
-            "Deliver it once at half speed, once at normal speed, and once with every sentenc..."
-      <a class="vid" href="https://www.youtube.com/watch?v=V5dA92wqmME" target="_blank" rel="noopener"> L681
-        <div class="vid-th"> L681
-          <span class="ph"> L681
-            "The Silence of the Lambs"
-          <img src="https://i.ytimg.com/vi/V5dA92wqmME/mqdefault.jpg" alt="Still from The Silence of the Lambs" loading="lazy" onerror="this.remove()"> L681
-          <span class="play"> L681
-        <div class="vid-b"> L681
-          <div class="vid-t"> L681
-            "The Silence of the Lambs (1991)"
-          <div class="vid-m"> L681
-            "Anthony Hopkins ·"
-            <span class="s"> L681
-              "villain"
-          <span class="vid-q"> L681
-            ""Closer, please.""
-          <span class="vid-w"> L681
-            <b> L681
-              "Technique."
-            "Hopkins speaks with precise diction and almost no wasted breath. The tiny invita..."
-          <span class="vid-w"> L681
-            <b> L681
-              "Steal this."
-            "Practice precise consonants without raising volume."
-          <span class="vid-w"> L681
-            <b> L681
-              "Drill."
-            "Stand one step from a mirror, say the line, then move half a step closer only af..."
-          <span class="vid-w vid-h"> L681
-            "Lecter is a violent psychopath. Copy control and diction, never coercion or dehu..."
-      <a class="vid" href="https://www.youtube.com/watch?v=eZHsmb4ezEk" target="_blank" rel="noopener"> L681
-        <div class="vid-th"> L681
-          <span class="ph"> L681
-            "The Godfather"
-          <img src="https://i.ytimg.com/vi/eZHsmb4ezEk/mqdefault.jpg" alt="Still from The Godfather" loading="lazy" onerror="this.remove()"> L681
-          <span class="play"> L681
-          <span class="dur"> L681
-            "06:28"
-        <div class="vid-b"> L681
-          <div class="vid-t"> L681
-            "The Godfather (1972)"
-          <div class="vid-m"> L681
-            "Marlon Brando ·"
-            <span class="s"> L681
-              "anti-hero"
-          <span class="vid-q"> L681
-            ""You come into my house on the day my daughter is to be married and you ask me t..."
-          <span class="vid-w"> L681
-            <b> L681
-              "Technique."
-            "Brando uses a rasp, soft volume, and long pauses that make the room lean toward ..."
-          <span class="vid-w"> L681
-            <b> L681
-              "Steal this."
-            "Speak one sentence on a breath and let the listener come to you."
-          <span class="vid-w"> L681
-            <b> L681
-              "Drill."
-            "Record the line three ways: warm, neutral, and quietly disappointed. Keep the fi..."
-          <span class="vid-w vid-h"> L681
-            "Vito runs a criminal network and converts favors into obligation. Do not copy in..."
-    <div class="vids-h"> L681
-      "Stillness and power · 4 scenes"
-    <div class="vids"> L681
-      <a class="vid" href="https://www.youtube.com/watch?v=nlgzL7B8ghM" target="_blank" rel="noopener"> L681
-        <div class="vid-th"> L681
-          <span class="ph"> L681
-            "The Godfather"
-          <img src="https://i.ytimg.com/vi/nlgzL7B8ghM/mqdefault.jpg" alt="Still from The Godfather" loading="lazy" onerror="this.remove()"> L681
-          <span class="play"> L681
-        <div class="vid-b"> L681
-          <div class="vid-t"> L681
-            "The Godfather (1972)"
-          <div class="vid-m"> L681
-            "Al Pacino ·"
-            <span class="s"> L681
-              "anti-hero"
-          <span class="vid-w"> L681
-            <b> L681
-              "Technique."
-            "Pacino compresses movement and keeps his gaze internal, making the silence befor..."
-          <span class="vid-w"> L681
-            <b> L681
-              "Steal this."
-            "Let the decision happen before the line."
-          <span class="vid-w"> L681
-            <b> L681
-              "Drill."
-            "Sit still for one minute, then say the line without changing facial expression."
-      <a class="vid" href="https://www.youtube.com/watch?v=opbi7d42s8E" target="_blank" rel="noopener"> L681
-        <div class="vid-th"> L681
-          <span class="ph"> L681
-            "No Country for Old Men"
-          <img src="https://i.ytimg.com/vi/opbi7d42s8E/mqdefault.jpg" alt="Still from No Country for Old Men" loading="lazy" onerror="this.remove()"> L681
-          <span class="play"> L681
-          <span class="dur"> L681
-            "04:46"
-        <div class="vid-b"> L681
-          <div class="vid-t"> L681
-            "No Country for Old Men (2007)"
-          <div class="vid-m"> L681
-            "Javier Bardem ·"
-            <span class="s"> L681
-              "villain"
-          <span class="vid-q"> L681
-            ""Call it.""
-          <span class="vid-w"> L681
-            <b> L681
-              "Technique."
-            "Bardem uses flat pitch, measured tempo, and an unbroken stare. The coin and tiny..."
-          <span class="vid-w"> L681
-            <b> L681
-              "Steal this."
-            "Replace volume with certainty."
-          <span class="vid-w"> L681
-            <b> L681
-              "Drill."
-            "Ask a harmless question, pause four beats, then say "Call it" without blinking."
-          <span class="vid-w vid-h"> L681
-            "Chigurh is a murderer. Copy stillness and articulation, never the threat or fata..."
-      <a class="vid" href="https://www.youtube.com/watch?v=4m8f8dLa_ig" target="_blank" rel="noopener"> L681
-        <div class="vid-th"> L681
-          <span class="ph"> L681
-            "The Godfather"
-          <img src="https://i.ytimg.com/vi/4m8f8dLa_ig/mqdefault.jpg" alt="Still from The Godfather" loading="lazy" onerror="this.remove()"> L681
-          <span class="play"> L681
-        <div class="vid-b"> L681
-          <div class="vid-t"> L681
-            "The Godfather (1972)"
-          <div class="vid-m"> L681
-            "Marlon Brando ·"
-            <span class="s"> L681
-              "anti-hero"
-          <span class="vid-q"> L681
-            ""I forgo the vengeance of my son.""
-          <span class="vid-w"> L681
-            <b> L681
-              "Technique."
-            "Brando lowers his voice when speaking of loss, then broadens the frame to the ro..."
-          <span class="vid-w"> L681
-            <b> L681
-              "Steal this."
-            "Name the cost before offering the agreement."
-          <span class="vid-w"> L681
-            <b> L681
-              "Drill."
-            "Practice the line with a two beat pause after "son" and an open palm on "quits"."
-          <span class="vid-w vid-h"> L681
-            "This is a mafia negotiation. Do not mistake criminal reciprocity for ethical net..."
-      <a class="vid" href="https://www.youtube.com/watch?v=qEtuz1ktxeA" target="_blank" rel="noopener"> L681
-        <div class="vid-th"> L681
-          <span class="ph"> L681
-            "The Godfather Part II"
-          <img src="https://i.ytimg.com/vi/qEtuz1ktxeA/mqdefault.jpg" alt="Still from The Godfather Part II" loading="lazy" onerror="this.remove()"> L681
-          <span class="play"> L681
-          <span class="dur"> L681
-            "02:57"
-        <div class="vid-b"> L681
-          <div class="vid-t"> L681
-            "The Godfather Part II (1974)"
-          <div class="vid-m"> L681
-            "Al Pacino ·"
-            <span class="s"> L681
-              "anti-hero"
-          <span class="vid-q"> L681
-            ""I know it was you, Fredo. You broke my heart.""
-          <span class="vid-w"> L681
-            <b> L681
-              "Technique."
-            "Pacino almost removes the public performance from the line, using a soft voice a..."
-          <span class="vid-w"> L681
-            <b> L681
-              "Steal this."
-            "Put the emotional noun after the accusation."
-          <span class="vid-w"> L681
-            <b> L681
-              "Drill."
-            "Say the first sentence neutrally, pause, then say the second as if admitting pai..."
-          <span class="vid-w vid-h"> L681
-            "Michael is a murderer and crime boss. Do not copy possessiveness or retaliation."
-    <div class="vids-h"> L681
-      "Charm and warmth · 3 scenes"
-    <div class="vids"> L681
-      <a class="vid" href="https://www.youtube.com/watch?v=3Iq5Bf9Cm8g" target="_blank" rel="noopener"> L681
-        <div class="vid-th"> L681
-          <span class="ph"> L681
-            "Ocean's Eleven"
-          <img src="https://i.ytimg.com/vi/3Iq5Bf9Cm8g/mqdefault.jpg" alt="Still from Ocean's Eleven" loading="lazy" onerror="this.remove()"> L681
-          <span class="play"> L681
-        <div class="vid-b"> L681
-          <div class="vid-t"> L681
-            "Ocean's Eleven (2001)"
-          <div class="vid-m"> L681
-            "George Clooney ·"
-            <span class="s"> L681
-              "anti-hero"
-          <span class="vid-w"> L681
-            <b> L681
-              "Technique."
-            "Clooney uses conversational rhythm, tiny smiles, and shared glances rather than ..."
-          <span class="vid-w"> L681
-            <b> L681
-              "Steal this."
-            "Invite instead of pressure."
-          <span class="vid-w"> L681
-            <b> L681
-              "Drill."
-            "Pitch a project to a friend using three questions and no adjectives."
-      <a class="vid" href="https://www.youtube.com/watch?v=up1PgEwMOuM" target="_blank" rel="noopener"> L681
-        <div class="vid-th"> L681
-          <span class="ph"> L681
-            "Up in the Air"
-          <img src="https://i.ytimg.com/vi/up1PgEwMOuM/mqdefault.jpg" alt="Still from Up in the Air" loading="lazy" onerror="this.remove()"> L681
+            "When someone else is the room's favourite, name them first. You lose nothing and..."
+          <p class="scene-rc"> L760
+            <b> L760
+              "Reality check."
+            "He was the US President, so self-deprecation read as confidence. With less statu..."
+          <p class="scene-n"> L760
+            "Content: archive footage of a speech. Clip on HelmerReenberg."
+      <h3> L760
+        "Why it works"
+      <div class="specs"> L760
+        <div class="spec"> L760
+          <div class="spec-name"> L760
+            "Talking about yourself is a reward"
+          <p class="spec-def"> L760
+            "People gave up 17% of their earnings to talk about themselves, and the brain's r..."
+        <div class="spec"> L760
+          <div class="spec-name"> L760
+            "Attention you can see"
+          <p class="spec-def"> L760
+            "Questions and follow-ups are the visible proof you are listening; they predict b..."
+        <div class="spec"> L760
+          <div class="spec-name"> L760
+            "Eyes in bouts, not a stare"
+          <p class="spec-def"> L760
+            "In a large lab study, people preferred mutual gaze of about 3.3 seconds at a tim..."
+      <figure class="fig"> L760
+        <div class="scroll"> L760
+          <svg class="p2fig" viewbox="0 0 1000 400" role="img" aria-label="Two spotlights: pitch first puts the light on you; the spotlight move ..."> svg [1769 chars inside] L760
+        <figcaption> L760
+          "Pitch first puts the light on you and your list. The Spotlight puts it on them, ..."
+      <details class="sci"> L760
+        <summary> L760
+          "The evidence, graded"
+        <div class="tbl-wrap"> L760
+          <table class="tbl"> L760
+            <thead> L760
+              [1 child tags: tr]
+            <tbody> L760
+              [4 child tags: tr]
+      <h3> L760
+        "Truth tags"
+      <ul class="ttags"> L760
+        <li> L760
+          <span class="stamp st-myth"> L760
+            "Myth"
+          <div> L760
+            <p> L760
+              [1 child tags: b]
+            <span class="src"> L760
+              [1 child tags: a]
+        <li> L760
+          <span class="stamp st-myth"> L760
+            "Myth"
+          <div> L760
+            <p> L760
+              [1 child tags: b]
+            <span class="src"> L760
+              [1 child tags: a]
+        <li> L760
+          <span class="stamp st-myth"> L760
+            "Myth"
+          <div> L760
+            <p> L760
+              [1 child tags: b]
+            <span class="src"> L760
+              [1 child tags: a]
+        <li> L760
+          <span class="stamp st-part"> L760
+            "Partly"
+          <div> L760
+            <p> L760
+              [1 child tags: b]
+            <span class="src"> L760
+              [1 child tags: a]
+      <div class="mtrx"> L760
+        <p> L760
+          "Someone introduces you at an event: "This is Kevin, the website guy." Don't laun..."
+      <div class="drill"> L760
+        <div class="drill-h"> L760
+          <b> L760
+            "The light handoff"
+          <span> L760
+            "Drill · 2 min"
+        <ol> L760
+          <li> L760
+            "Name the star in your first sentence."
+          <li> L760
+            "Cast yourself as the side character in one light line."
+          <li> L760
+            "End with a question that puts them back on stage."
+        <p class="drill-x"> L760
+          <b> L760
+            "Usual mistake:"
+          "Self-deprecating so hard you look small. One light line, then competence."
+      <div class="tryit"> L760
+        <div class="tryit-k"> L760
+          "Try it · 5 min"
+        <p> L760
+          "In one conversation today (a client call counts), make your first sentence about..."
+      <div class="writer"> L760
+        <div class="writer-k"> L760
+          "Writer's note · for No. 08"
+        <p> L760
+          "Charmers in great scripts rarely talk about themselves on entrance. Write an ent..."
+      <p class="room"> L760
+        ""Charm isn't being interesting, it's making the other person feel interesting. I..."
+      <p class="nextq"> L760
+        <b> L760
+          "Your next question."
+        "If attention is the gift, what is the cheapest way to prove you were paying it? ..."
+      <div class="check"> L760
+        <script type="application/json"> script [250 chars inside] L760
+      <div class="check"> L760
+        <script type="application/json"> script [279 chars inside] L760
+      <div class="check"> L760
+        <script type="application/json"> script [277 chars inside] L760
+      <button class="done" data-mod="2.1"> L760
+        "Mark stop 2.1 done"
+    <article class="mod" id="m2-2" data-mod="2.2"> L760
+      <div class="mod-meta"> L760
+        "File 1 · Stop 2.2 · Day 14"
+        <span class="t"> L760
+          "20 min"
+      <h2 class="mod-title"> L760
+        "The Name"
+      <p class="mod-why"> L760
+        "Walter White wanted one thing from the man in the desert: say my name. Everyone ..."
+      <div class="dossier"> L760
+        <div class="dos-tab"> L760
+          "Case file 2.2"
+        <div class="dos-body"> L760
+          <div class="dos-k"> L760
+            "Subject"
+          <div class="dos-name"> L760
+            "Jim Farley"
+          <div class="dos-role"> L760
+            "Franklin Roosevelt's campaign manager, 1932 · as told by Dale Carnegie, 1936"
+          <dl class="dos-facts"> L760
+            <div> L760
+              [2 child tags: dd, dt]
+            <div> L760
+              [2 child tags: dd, dt]
+            <div> L760
+              [2 child tags: dd, dt]
+        <span class="stamp st-hold"> L760
+          "Holds up"
+      <div class="predict"> L760
+        <div class="predict-k"> L760
+          "Cold open · predict first · 2 min"
+        <p> L760
+          "In a lab, people learned faces with two labels each: a job and a surname. Some l..."
+        <details class="reveal"> L760
+          <summary> L760
+            "Reveal the answer"
+          <p> L760
+            <b> L760
+              "The name, by a long way."
+            "It is much harder to recall that a man is called Baker than that he is a baker (..."
+      <h3> L760
+        "The story"
+      <div class="story"> L760
+        <p> L760
+          "Carnegie tells it like this. He asked Farley the secret of his success. "Hard wo..."
+        <p> L760
+          "The number is Farley's own boast, so hold it loosely. The habit behind it is the..."
+        <p> L760
+          "Carnegie turned it into Principle 6:"
+          <i> L760
+            ""Remember that a person's name is to that person the sweetest and most important..."
+          "Sixty years later, three experiments tested it. When someone remembered a person..."
+        <p> L760
+          "Now the dark mirror. Miranda Priestly calls every assistant "Emily". When Andy c..."
+      <div class="move"> L760
+        <div class="move-k"> L760
+          "The move"
+        <p class="move-line"> L760
+          "Catch it, link it, keep it."
+        <ol class="move-steps"> L760
+          <li> L760
+            <b> L760
+              "Catch it."
+            "Say it back on the first hear ("Rhea? Hi, Rhea."). Missed it? Ask again now; it ..."
+          <li> L760
+            <b> L760
+              "Link it."
+            "Give it meaning: a friend with the same name, an image, their business."
           [cut: budget]
-        [cut: budget]
       [cut: budget]
     [cut: budget]
 [cut: budget]
 [end of siblings inside <div class="site">]
 
--- raw boundary after the last Part I article (offset 191790):
-</article></div></section><section class="part" id="s2" data-part="2" data-sec="2"><div class="part-head"><div class="wrap"><div class="kicker">Part II · coming next · watch ahead</div><h2 class="part-title">Become George Newman</h2><p class="part-promise">Charm, voice and presence, built from the delivery of cinema's best. Start watching now: every scene below has the technique, what to steal and a 2-minute drill.</p><ol class="stops"><li><a href="#s2"><span>2.1</span>Attention is the charm<em>soon</em></a></li><li><a href="#s2"><span>2.2</span>The prep kit: one line, three stories, three questions, one ask<em>soon</em></a></li><li><a href="#s2"><span>2.3</span>Voice: pace and the pause<em>soon</em></a></li><li><a href="#s2"><span>2.4</span>Voice: pitch and landing the line<em>soon</em></a></li><li><a href="#s2"><span>2.5</span>The body: walk, stance, stillness<em>soon</em></a></li><li><a href="#s2"><span>2.6</span>Calm under pressure<em>soon</em></a></li><li><a href="#s2"><span>2.7</span>Warmth and humour<em>soon</em></a></li><li><a href="#s2"><span>2.8</span>The long take: monologues<em>soon</em></a></li><li><a href="#s2"><span>2.9</span>George Newman and the off switch<em>soon</em></a></li><li><a href="#s2"><span>2.10</span>Boss fight: a room of strangers<em>soon</em></a></li></ol></div></div><div class="wrap"><h3>Preview plates</h3><figure class="fig pv-plate"><img src="data:[102]
+-- raw boundary after the last Part I article (offset 198409):
+</article></div></section><!-- mtrx:p2f1 --><section class="part" id="s4" data-part="4" data-sec="4"><div class="part-head"><div class="wrap"><div class="kicker">Part II · The Spotlight Files · File 1 of 5 · 7 stops</div><h2 class="part-title">The Spotlight</h2><p class="part-promise">Charm is attention people can feel. Seven moves, each taught through one person who owned it, checked against the evidence, and tried on a real person the same day.</p><ol class="stops"><li><a href="#m2-1"><span>2.1</span>The Spotlight<em>20 min</em></a></li><li><a href="#m2-2"><span>2.2</span>The Name<em>20 min</em></a></li><li><a href="#m2-3"><span>2.3</span>The Second Question<em>20 min</em></a></li><li><a href="#m2-4"><span>2.4</span>The Support Response<em>20 min</em></a></li><li><a href="#m2-5"><span>2.5</span>The Compliment<em>20 min</em></a></li><li><a href="#m2-6"><span>2.6</span>The Callback<em>20 min</em></a></li><li><a href="#m2-7"><span>2.7</span>Boss fight: Spotlight night<em>20 min</em></a></li></ol></div></div><div class="wrap"><div class="p2-intro" id="p2-intro"><p class="lede">Part I taught you to read people. The Spotlight Files teach you to be the person they remember. Each stop is a case file: one subject, one named move, the scene that shows it, the science that checks it, and a truth tag on every famous claim (holds up, partly, or myth).</p><h3>How a case file works</h3><ol class="anatomy"><li>Cold open: predict first</li><li>The subject</li><li>The story</li><li>The move<
 
 == G. JS excerpts (keywords)
--- script #49 (4022 chars) 
+-- script #70 (4022 chars) 
    var KEY='mtrx-room-v1', store={
    store=JSON.parse(localStorage.getItem(KEY))||store;
    if(!store.done)store.done={
@@ -745,11 +821,11 @@ media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (ma
    store.done[b.dataset.mod]=!store.done[b.dataset.mod];
    /* ---------- thumbs + scrollbar ---------- */ var bar=$('.scrollbar');
    if(target)target.scrollIntoView({
--- script #50 (2798 chars) 
+-- script #71 (2798 chars) 
    var K='mtrx-room-log-v1', L=[];
    L=JSON.parse(localStorage.getItem(K))||[]}
    localStorage.setItem(K,JSON.stringify(L))}
--- script #51 (20288 chars) id=mtrx-kit-js
+-- script #72 (20288 chars) id=mtrx-kit-js
    var v=localStorage.getItem(k);
    localStorage.setItem(k,JSON.stringify(v))}
    var SKIP='.nk-panel,.nk-dock,.nk-pop,button,input,textarea,select,svg,script,[aria-live],.sim,.gloss,#lib,.thumbs,.check .opts';
@@ -766,11 +842,11 @@ media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (ma
 
 == H. raw head of body (first 3000 chars after <body>), stripped
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">[svg 368 chars]</svg><div class="scrollbar" aria-hidden="true"></div><nav class="thumbs" aria-label="Sections"><button class="thumb" type="button" data-t="0" aria-label="Start"><span class="lbl"><span class="full">Start</span><span class="short">00</span></span><i></i></button><button class="thumb" type="button" data-t="1" aria-label="Read the room"><span class="lbl"><span class="full">Read the room</span><span class="short">I</span></span><i></i></button><button class="thumb" type="button" data-t="2" aria-label="George Newman"><span class="lbl"><span class="full">George Newman</span><span class="short">II</span></span><i></i></button><button class="thumb" type="button" data-t="3" aria-label="Network"><span class="lbl"><span class="full">Network</span><span class="short">III</span></span><i></i></button><button class="thumb" type="button" data-t="5" aria-label="The line"><span class="lbl"><span class="full">The line</span><span class="short">IV</span></span><i></i></button></nav><div class="site"><header class="wrap cover" id="top" data-sec="0"><div><div class="kicker">MTRX™ Field Series · No. 06 · October 2026</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">[svg 368 chars]</svg><div class="scrollbar" aria-hidden="true"></div><nav class="thumbs" aria-label="Sections"><button class="thumb" type="button" data-t="0" aria-label="Start"><span class="lbl"><span class="full">Start</span><span class="short">00</span></span><i></i></button><button class="thumb" type="button" data-t="1" aria-label="Read the room"><span class="lbl"><span class="full">Read the room</span><span class="short">I</span></span><i></i></button><button class="thumb" type="button" data-t="4" aria-label="The Spotlight Files"><span class="lbl"><span class="full">Spotlight</span><span class="short">II.1</span></span><i></i></button><button class="thumb" type="button" data-t="2" aria-label="George Newman"><span class="lbl"><span class="full">George Newman</span><span class="short">II.3</span></span><i></i></button><button class="thumb" type="button" data-t="3" aria-label="Network"><span class="lbl"><span class="full">Network</span><span class="short">II.4</span></span><i></i></button><button class="thumb" type="button" data-t="5" aria-label="The line"><span class="lbl"><span class="full">The line</span><span class="short">II.5</span></span><i></i></button></nav><div class="site"><header class="wrap cover" id="top" data-sec="0"><div><div class="kicker">MTRX™ Field Series · No. 06 · October 2026</div>
 <h1 class="cover-title">Read the <span class="o">room</span></h1>
 <p class="cover-sub">Social intelligence through cinema. Heroes, villains and side characters show you how people are read, the science checks every scene, and you try it on a real call the same day.</p>
 <ul class="verbs"><li>Notice</li><li>Ask</li><li>Update</li></ul>
-<p class="prepared">Prepared for <b>Kevin Cecil</b>, founder, MTRX™ Digital, and George Newman<br>Part I: 12 stops · 20 minutes a day · 24 scenes · 37 more in the scene library<br>Sources checked 9 October 2026</p>
+<p class="prepared">Prepared for <b>Kevin Cecil</b>, founder, MTRX™ Digital, and George Newman<br>Part I: 12 stops · Part II: 7 stops so far · 20 minutes a day · 31 scenes · 37 more in the scene library<br>Sources checked 9 and 14 October 2026</p>
 <a class="btn btn-a" href="#m0-1">Start here <span aria-hidden="true">↓</span></a></div>
 <div class="cover-plate"><nav class="cube6" aria-label="Nine scenes in Part I"><a href="#m1-1"><span class="ph">Casino Royale</span><img src="https://i.ytimg.com/vi/3jQbXuvGR5o/mqdefault.jpg" alt="Still from Casino Royale" loading="lazy" onerror="this.remove()"><b>1.1</b></a><a href="#m1-2"><span class="ph">Sherlock</span><img src="https://i.ytimg.com/vi/VaT7IYQgyqo/mqdefault.jpg" alt="Still from Sherlock" loading="lazy" onerror="this.remove()"><b>1.2</b></a><a href="#m1-3"><span class="ph">Inglourious Basterds</span><img src="https://i.ytimg.com/vi/kPoCFAP6RuM/mqdefault.jpg" alt="Still from Inglourious Basterds" loading="lazy" onerror="this.remove()"><b>1.3</b></a><a href="#m1-4"><span class="ph">Heat</span><img src="https://i.ytimg.com/vi/3lKSth8oPaE/mqdefault.jpg" alt="Still from Heat" loading="lazy" onerror="this.remove()"><b>1.4</b></a><a href="#m1-5"><span class="ph">The Godfather</span><img src="https://i.ytimg.com/vi/eZHsmb4ezEk/mqdefault.jpg" alt="Still from The Godfather" loading="lazy" onerror="this.remove()"><b>1.5</b></a><a href="#m1-6"><span class="ph">The Social Network</span><img src="https://i.ytimg.com/vi/VKnNUYknsuQ/mqdefault.jpg" alt="Still from The Social Network" loading="lazy" onerror="this.remove()"><b>1.6</b></a><a href="#m1-7"><span class="ph">Margin Call</span><img src="https://i.ytimg.com/vi/mpEEKlDs_M0/mqdefault.jpg" alt="Still from Margin Call" loading="lazy" onerror="this.remove()"><b>1.7</b></a><a href="#m1-8"><span class="ph">Columbo</span><img src="https://i.ytimg.com/vi/QxBnaMGP2aY/mqdefault.jpg" alt="Still from Columbo" loading="lazy" onerror="this.remove()"><b>1.8</b></a><a href="#m1-9"><span class="ph">The Silence of the Lambs</span><img src="https://i.ytimg.com/vi/99Ptctl5_qQ/mqdefault.jpg" alt="Still from The Silence of the Lambs" loading="lazy" onerror="this.remove()"><b>1.9</b></a></nav><p class="cube-cap">Nine scenes from Part I. Tap one to jump to its stop.</p></div></header><section class="part" id="s0" data-part="0" data-sec="0"><div class="wrap"><article class="mod" id="m0-1" data-mod="0.1"><div class="mod-meta">Stop 0.1 · Start <span class="t">6 min</span></div><h2 class="mod-title">Why this guide exists</h2><p class="mod-why">You told me the facts felt empty. Fair. So this guide runs on scenes: heroes, villains and side characters who read a room better or worse than anyone. Every stop breaks down what the character actually reads, then the science checks it, then you try it on a real call.</p>
 <div class="mtrx"><p><b>Your why, in your words.</b> Convince people now, and make the next person remember you. You already have the guts: you walked into your strict department head's cabin, pitched cold, and walked out with her contacts. The gap was preparation and words that wandered. Your persona has a name, <b>George Newman</b>: a charmer who smiles a lot, gets things done and never fails to deliver. This guide is his training camp. The real Kevin stays with the people close to you.</p></div>
@@ -778,5 +854,4 @@ media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (ma
 <div class="specs">
 <div class="spec"><div class="spec-name">1 · Scenes teach, science checks</div><p class="spec-def">Every stop opens with 2 or 3 scenes. Every scene has a reality check, because films make reading people look far easier than it is.</p></div>
 <div class="spec"><div class="spec-name">2 · A read is a hypothesis</div><p class="spec-def">You never "know" what someone thinks. You notice, guess, ask and update. That loop is the whole of Part I.</p></div>
-<div class="spec"><div class="spec-name">3 · The mask has an off switch</div><p class="spec-def">George Newman goes on with the jacket and comes off when you're with people you trust. Characters who forget where the mask ends make great films and bad lives.</p></div>
-<div class="spec"><div cla
+<div class="spec"><div class="spec-name">3 · The mask has an off swit
