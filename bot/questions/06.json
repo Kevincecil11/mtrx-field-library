@@ -17,7 +17,14 @@
   "1.9",
   "1.10",
   "1.11",
-  "1.12"
+  "1.12",
+  "2.1",
+  "2.2",
+  "2.3",
+  "2.4",
+  "2.5",
+  "2.6",
+  "2.7"
  ],
  "cards": [
   {
@@ -924,6 +931,496 @@
    "type": "recall",
    "q": "Page closed: explain \"The calibration log\" in two or three lines, as you would to a client.",
    "answer": "\"I write down my read before the meeting and score it after. That's the only way a gut gets better.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.1",
+   "name": "The Spotlight",
+   "link": "guides/06-read-the-room.html#m2-1",
+   "id": "06-2.1-q1",
+   "type": "quiz",
+   "q": "In Tamir and Mitchell 2012, how much of their possible earnings did people give up to talk about themselves?",
+   "options": [
+    "About 2%",
+    "About 17%",
+    "About 50%"
+   ],
+   "answer": 1,
+   "why": "17%. Talking about yourself is rewarding enough that people pay for it."
+  },
+  {
+   "guide": "06",
+   "stop": "2.1",
+   "name": "The Spotlight",
+   "link": "guides/06-read-the-room.html#m2-1",
+   "id": "06-2.1-q2",
+   "type": "quiz",
+   "q": "What made Kennedy's Paris opener work?",
+   "options": [
+    "He listed his achievements",
+    "He made his wife the star and himself the side character",
+    "He spoke fast to fill the room"
+   ],
+   "answer": 1,
+   "why": "He named the room's favourite, cast himself as her plus-one, then thanked his hosts."
+  },
+  {
+   "guide": "06",
+   "stop": "2.1",
+   "name": "The Spotlight",
+   "link": "guides/06-read-the-room.html#m2-1",
+   "id": "06-2.1-q3",
+   "type": "quiz",
+   "q": "The \"70 to 80% eye contact\" rule...",
+   "options": [
+    "Comes from a study of Kennedy",
+    "Has no source; people prefer gaze in bouts of about 3 seconds",
+    "Is the minimum for trust"
+   ],
+   "answer": 1,
+   "why": "Binetti et al. 2016: preferred mutual gaze averaged 3.3 seconds and varied a lot."
+  },
+  {
+   "guide": "06",
+   "stop": "2.1",
+   "name": "The Spotlight",
+   "link": "guides/06-read-the-room.html#m2-1",
+   "id": "06-2.1-r1",
+   "type": "recall",
+   "q": "Drill \"The light handoff\": what are the steps, and the usual mistake?",
+   "answer": "1) Name the star in your first sentence. 2) Cast yourself as the side character in one light line. 3) End with a question that puts them back on stage. Usual mistake: Self-deprecating so hard you look small. One light line, then competence.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.1",
+   "name": "The Spotlight",
+   "link": "guides/06-read-the-room.html#m2-1",
+   "id": "06-2.1-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The Spotlight\" in two or three lines, as you would to a client.",
+   "answer": "\"Charm isn't being interesting, it's making the other person feel interesting. I hand them the light first, then I talk shop.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.2",
+   "name": "The Name",
+   "link": "guides/06-read-the-room.html#m2-2",
+   "id": "06-2.2-q1",
+   "type": "quiz",
+   "q": "Why is a name harder to remember than a job (the Baker/baker paradox)?",
+   "options": [
+    "Names are longer",
+    "A name connects to nothing you know; a job connects to lots",
+    "People don't listen"
+   ],
+   "answer": 1,
+   "why": "McWeeny et al. 1987. Give the name meaning and recall improves (Cohen 1990)."
+  },
+  {
+   "guide": "06",
+   "stop": "2.2",
+   "name": "The Name",
+   "link": "guides/06-read-the-room.html#m2-2",
+   "id": "06-2.2-q2",
+   "type": "quiz",
+   "q": "In Howard, Gengler and Jain 1995, remembering someone's name...",
+   "options": [
+    "Raised compliance with a purchase request",
+    "Had no effect",
+    "Felt manipulative and lowered compliance"
+   ],
+   "answer": 0,
+   "why": "It worked like a compliment. Forgetting did not lower compliance."
+  },
+  {
+   "guide": "06",
+   "stop": "2.2",
+   "name": "The Name",
+   "link": "guides/06-read-the-room.html#m2-2",
+   "id": "06-2.2-q3",
+   "type": "quiz",
+   "q": "Miranda calling Andy \"Emily\" shows...",
+   "options": [
+    "She is busy",
+    "Andy is replaceable to her",
+    "Names don't matter in fashion"
+   ],
+   "answer": 1,
+   "why": "Refusing to learn a name is how fiction, and bad bosses, signal you are interchangeable."
+  },
+  {
+   "guide": "06",
+   "stop": "2.2",
+   "name": "The Name",
+   "link": "guides/06-read-the-room.html#m2-2",
+   "id": "06-2.2-r1",
+   "type": "recall",
+   "q": "Drill \"Catch, link, keep\": what are the steps, and the usual mistake?",
+   "answer": "1) Say the name back on the first hear; ask the spelling if it is unusual. 2) Link it to an image, a friend with the same name, or their business. 3) Write it with one detail within the hour, then use it once at goodbye. Usual mistake: Saying it ten times like a sales script. Hello, goodbye, maybe once in the middle.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.2",
+   "name": "The Name",
+   "link": "guides/06-read-the-room.html#m2-2",
+   "id": "06-2.2-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The Name\" in two or three lines, as you would to a client.",
+   "answer": "\"Names are hard for everyone because they mean nothing. So I make them mean something: say it back, link it, write it down. Remembering a name is the cheapest respect there is.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.3",
+   "name": "The Second Question",
+   "link": "guides/06-read-the-room.html#m2-3",
+   "id": "06-2.3-q1",
+   "type": "quiz",
+   "q": "Speed daters who did what got more second-date yeses?",
+   "options": [
+    "Talked about themselves more",
+    "Asked more follow-up questions",
+    "Agreed more"
+   ],
+   "answer": 1,
+   "why": "Huang et al. 2017. And people did not predict it."
+  },
+  {
+   "guide": "06",
+   "stop": "2.3",
+   "name": "The Second Question",
+   "link": "guides/06-read-the-room.html#m2-3",
+   "id": "06-2.3-q2",
+   "type": "quiz",
+   "q": "You ask \"How was your weekend?\" then say \"Mine was amazing!\" Researchers call this...",
+   "options": [
+    "Mirroring",
+    "Boomerasking",
+    "Active listening"
+   ],
+   "answer": 1,
+   "why": "Brooks and Yeomans 2025: it reads as insincere, even though askers think it is fine."
+  },
+  {
+   "guide": "06",
+   "stop": "2.3",
+   "name": "The Second Question",
+   "link": "guides/06-read-the-room.html#m2-3",
+   "id": "06-2.3-q3",
+   "type": "quiz",
+   "q": "Which closing question surfaced the most unmet concerns in a clinic trial?",
+   "options": [
+    "\"Anything else?\"",
+    "\"Is there something else you want to address today?\"",
+    "\"Are we done?\""
+   ],
+   "answer": 1,
+   "why": "Heritage et al. 2007: \"something\" eliminated 78% of unmet concerns; \"anything\" did no better than not asking."
+  },
+  {
+   "guide": "06",
+   "stop": "2.3",
+   "name": "The Second Question",
+   "link": "guides/06-read-the-room.html#m2-3",
+   "id": "06-2.3-r1",
+   "type": "recall",
+   "q": "Drill \"Three deep\": what are the steps, and the usual mistake?",
+   "answer": "1) Ask a door question about them. 2) Ask about their last answer. 3) Ask one more about that answer. 4) Close with \"Is there something else...?\" Usual mistake: Boomerasking: asking so you can tell your own story.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.3",
+   "name": "The Second Question",
+   "link": "guides/06-read-the-room.html#m2-3",
+   "id": "06-2.3-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The Second Question\" in two or three lines, as you would to a client.",
+   "answer": "\"The first question is manners. The second one is interest. I go three deep before I pitch, so my pitch is built from their words.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.4",
+   "name": "The Support Response",
+   "link": "guides/06-read-the-room.html#m2-4",
+   "id": "06-2.4-q1",
+   "type": "quiz",
+   "q": "\"I feel lousy today.\" \"Same here, I barely slept.\" This is a...",
+   "options": [
+    "Support response",
+    "Shift response",
+    "Callback"
+   ],
+   "answer": 1,
+   "why": "Derber's shift response: the attention moves to you."
+  },
+  {
+   "guide": "06",
+   "stop": "2.4",
+   "name": "The Support Response",
+   "link": "guides/06-read-the-room.html#m2-4",
+   "id": "06-2.4-q2",
+   "type": "quiz",
+   "q": "In Gable et al. 2004, which response to good news went with better relationships?",
+   "options": [
+    "A quick, quiet \"congrats\"",
+    "Enthusiastic, with questions about it",
+    "Pointing out a risk, to be helpful"
+   ],
+   "answer": 1,
+   "why": "Active-constructive. The quiet version did not carry the benefit."
+  },
+  {
+   "guide": "06",
+   "stop": "2.4",
+   "name": "The Support Response",
+   "link": "guides/06-read-the-room.html#m2-4",
+   "id": "06-2.4-q3",
+   "type": "quiz",
+   "q": "Peggy wants thanks; Don says \"That's what the money is for!\" What did he miss?",
+   "options": [
+    "She wanted a raise",
+    "She wanted recognition, not money",
+    "She wanted a new account"
+   ],
+   "answer": 1,
+   "why": "A bid for recognition answered with logistics is a destructive response."
+  },
+  {
+   "guide": "06",
+   "stop": "2.4",
+   "name": "The Support Response",
+   "link": "guides/06-read-the-room.html#m2-4",
+   "id": "06-2.4-r1",
+   "type": "recall",
+   "q": "Drill \"Ball in their court\": what are the steps, and the usual mistake?",
+   "answer": "1) Match the energy of their news. 2) Ask them to relive it: how, who, what did they say. 3) If you relate, one line, then hand it back with a question. Usual mistake: The one-word \"congrats\", then straight to your own topic.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.4",
+   "name": "The Support Response",
+   "link": "guides/06-read-the-room.html#m2-4",
+   "id": "06-2.4-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The Support Response\" in two or three lines, as you would to a client.",
+   "answer": "\"When someone tells me good news, I don't say 'nice' and move on. I ask how they pulled it off. Keeping the ball in their court is the whole trick.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.5",
+   "name": "The Compliment",
+   "link": "guides/06-read-the-room.html#m2-5",
+   "id": "06-2.5-q1",
+   "type": "quiz",
+   "q": "People who wrote genuine compliments predicted the recipient's reaction. They...",
+   "options": [
+    "Overestimated how good it felt",
+    "Underestimated how good it felt and overestimated the awkwardness",
+    "Were accurate"
+   ],
+   "answer": 1,
+   "why": "Zhao and Epley 2021, nine experiments."
+  },
+  {
+   "guide": "06",
+   "stop": "2.5",
+   "name": "The Compliment",
+   "link": "guides/06-read-the-room.html#m2-5",
+   "id": "06-2.5-q2",
+   "type": "quiz",
+   "q": "Why does Melvin's \"better man\" line land?",
+   "options": [
+    "It is about her looks",
+    "It names her effect on him, and it cost him to say it",
+    "It is a joke"
+   ],
+   "answer": 1,
+   "why": "Effect beats adjectives, and it reveals something he would rather hide."
+  },
+  {
+   "guide": "06",
+   "stop": "2.5",
+   "name": "The Compliment",
+   "link": "guides/06-read-the-room.html#m2-5",
+   "id": "06-2.5-q3",
+   "type": "quiz",
+   "q": "Kennedy's \"...when Thomas Jefferson dined alone\" line is an example of...",
+   "options": [
+    "Praising the room inside a joke",
+    "Self-promotion",
+    "A cold read"
+   ],
+   "answer": 0,
+   "why": "A compliment to everyone present, wrapped so no one had to answer. His files hold speechwriter drafts: charm can be prepared."
+  },
+  {
+   "guide": "06",
+   "stop": "2.5",
+   "name": "The Compliment",
+   "link": "guides/06-read-the-room.html#m2-5",
+   "id": "06-2.5-r1",
+   "type": "recall",
+   "q": "Drill \"Change, not trait\": what are the steps, and the usual mistake?",
+   "answer": "1) Name the specific action. 2) Credit the choice or effort, not looks or talent. 3) Say the impact on you or others. 4) Stop. No request attached. Usual mistake: Generic praise (\"great job\") or a compliment that is really a setup for a request.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.5",
+   "name": "The Compliment",
+   "link": "guides/06-read-the-room.html#m2-5",
+   "id": "06-2.5-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The Compliment\" in two or three lines, as you would to a client.",
+   "answer": "\"I don't compliment looks, I compliment choices: what someone did and what it changed. And I never attach a request to it.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.6",
+   "name": "The Callback",
+   "link": "guides/06-read-the-room.html#m2-6",
+   "id": "06-2.6-q1",
+   "type": "quiz",
+   "q": "By 1980, roughly how many names were in Clinton's card file, per Maraniss?",
+   "options": [
+    "About 500",
+    "About 2,000",
+    "More than 10,000"
+   ],
+   "answer": 2,
+   "why": "Each card logged their conversations and when they got a \"Glad to Meet You\" letter."
+  },
+  {
+   "guide": "06",
+   "stop": "2.6",
+   "name": "The Callback",
+   "link": "guides/06-read-the-room.html#m2-6",
+   "id": "06-2.6-q2",
+   "type": "quiz",
+   "q": "After a networking event, forgetting is usually...",
+   "options": [
+    "Slow and steady",
+    "Steep in the first hours and day, then slower",
+    "Zero if you were interested"
+   ],
+   "answer": 1,
+   "why": "Ebbinghaus's curve, replicated by Murre and Dros 2015. Write it down that night."
+  },
+  {
+   "guide": "06",
+   "stop": "2.6",
+   "name": "The Callback",
+   "link": "guides/06-read-the-room.html#m2-6",
+   "id": "06-2.6-q3",
+   "type": "quiz",
+   "q": "Clinton's 1992 answer worked mainly because he...",
+   "options": [
+    "Quoted debt statistics",
+    "Asked her to say more, then answered with people he knew by name",
+    "Talked over Bush"
+   ],
+   "answer": 1,
+   "why": "A question first, then a callback to real people."
+  },
+  {
+   "guide": "06",
+   "stop": "2.6",
+   "name": "The Callback",
+   "link": "guides/06-read-the-room.html#m2-6",
+   "id": "06-2.6-r1",
+   "type": "recall",
+   "q": "Drill \"The ten-minute card\": what are the steps, and the usual mistake?",
+   "answer": "1) Within ten minutes: name, where you met, one personal and one business detail. 2) Set a next-touch date tied to a detail. 3) Open the next message with the callback. Usual mistake: Collecting cards and never calling back. A file you never use is just guilt.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.6",
+   "name": "The Callback",
+   "link": "guides/06-read-the-room.html#m2-6",
+   "id": "06-2.6-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The Callback\" in two or three lines, as you would to a client.",
+   "answer": "\"Memory is a system, not a gift. I write one personal and one business detail within ten minutes, and my next message opens with it. People remember the person who remembered.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.7",
+   "name": "Boss fight: Spotlight night",
+   "link": "guides/06-read-the-room.html#m2-7",
+   "id": "06-2.7-q1",
+   "type": "quiz",
+   "q": "\"Guilty, I make the websites. But Rhea's the reason I'm here, ask her about her clinic.\" Which move?",
+   "options": [
+    "The callback",
+    "Hand the light",
+    "The support response"
+   ],
+   "answer": 1,
+   "why": "Stop 2.1: one light line about you, then the light goes to her."
+  },
+  {
+   "guide": "06",
+   "stop": "2.7",
+   "name": "Boss fight: Spotlight night",
+   "link": "guides/06-read-the-room.html#m2-7",
+   "id": "06-2.7-q2",
+   "type": "quiz",
+   "q": "\"How was your weekend?\" ... \"Mine was amazing, I went to...\" Which mistake?",
+   "options": [
+    "A callback",
+    "Boomerasking",
+    "An active-constructive response"
+   ],
+   "answer": 1,
+   "why": "Stop 2.3: the question was only a launchpad for your own story."
+  },
+  {
+   "guide": "06",
+   "stop": "2.7",
+   "name": "Boss fight: Spotlight night",
+   "link": "guides/06-read-the-room.html#m2-7",
+   "id": "06-2.7-q3",
+   "type": "quiz",
+   "q": "You meet 12 people at an event. When should you write the cards?",
+   "options": [
+    "Next week",
+    "Within the hour, before the steep part of forgetting",
+    "Only for the important ones"
+   ],
+   "answer": 1,
+   "why": "Stop 2.6: forgetting is front-loaded."
+  },
+  {
+   "guide": "06",
+   "stop": "2.7",
+   "name": "Boss fight: Spotlight night",
+   "link": "guides/06-read-the-room.html#m2-7",
+   "id": "06-2.7-r1",
+   "type": "recall",
+   "q": "Drill \"Spotlight night\": what are the steps, and the usual mistake?",
+   "answer": "1) Hand the light on arrival. 2) Catch three names and go three deep once. 3) Answer good news actively, give one specific compliment, write the cards within the hour. Usual mistake: Running all six moves on one person. Spread them across the room.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.7",
+   "name": "Boss fight: Spotlight night",
+   "link": "guides/06-read-the-room.html#m2-7",
+   "id": "06-2.7-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Boss fight: Spotlight night\" in two or three lines, as you would to a client.",
+   "answer": "\"I walk in planning to learn three names and one story, not to be impressive. Somehow that is exactly what makes people remember me.\"",
    "label": "Say it in the room"
   }
  ]
