@@ -42,6 +42,8 @@ if os.path.exists('build/06/build.py'):
         os.remove(CAND)
 run('tools/check_guide.py', GUIDE)
 run('build/skeleton.py', GUIDE, 'build/out/06-skeleton.txt')
+if os.path.exists('build/probe.py'):
+    run('build/probe.py', GUIDE, 'build/out/06-probe.txt')
 rep.insert(1, 'status: ' + status)
 open('build/out/06-report.txt', 'w', encoding='utf-8').write('\n'.join(rep) + '\n')
 open('build/out/LAST_BUILD.txt', 'w', encoding='utf-8').write(rep[0] + ' | ' + status + '\n')
