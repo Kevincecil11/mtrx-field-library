@@ -684,9 +684,9 @@
  "hour": 8,
  "last_push": "2026-10-17",
  "listener": {
-  "checked_at": "2026-10-18T07:46:45+05:30",
+  "checked_at": "2026-10-18T07:56:59+05:30",
   "mode": "handoff",
-  "run_id": "39088883607"
+  "run_id": "39089520004"
  },
  "log": [
   "2026-10-08 08:00 pushed 15 cards",
@@ -711,7 +711,8 @@
   "2026-10-17 00:37 listener retry: <urlopen error [Errno 101] Network is unreachable>",
   "2026-10-17 08:00 pushed 15 cards",
   "2026-10-18 06:42 listener retry: getUpdates failed: Bad Gateway",
-  "2026-10-18 06:42 listener retry: The read operation timed out"
+  "2026-10-18 06:42 listener retry: The read operation timed out",
+  "2026-10-18 07:52 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
  ],
  "offset": 806113007,
  "paused": false,
