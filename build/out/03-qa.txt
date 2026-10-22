@@ -1,9 +1,8 @@
-desktop: {'stops': 25, 'checks': 69, 'rendered': 69, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
+desktop: {'stops': 27, 'checks': 75, 'rendered': 75, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
 desktop after marking 1.1 done, localStorage: ['mtrx-cons-v1={"done":{"1.1":true}}']
 desktop: clicked a quiz option, check html: <script type="application/json">{"q": "What did Barker's tracking of Unification Church workshop guests mostly show?", "o": ["Most guests walked away, so the workshops were far weaker than the brainwashing story said", "Guests joined at the same rate as any church, so the group was no different at a
 desktop errors (blocked network loads not counted, 12 of them): none
-mobile: {'stops': 25, 'checks': 69, 'rendered': 69, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': True, 'scrollWidth': 438}
-mobile overflow culprits: ['aside.nk-panel in - right=800 text=My notes×HighlightsSelect any text in th', 'div.nk-head in - right=800 text=My notes×', 'b in - right=584 text=My notes', 'button.nk-x in - right=782 text=×', 'div.nk-body in - right=800 text=HighlightsSelect any text in the guide a', 'div.nk-foot in - right=800 text=Word (.doc)MarkdownPDFClear', 'button in - right=548 text=Word (.doc)', 'button in - right=666 text=Markdown', 'button in - right=734 text=PDF', 'button.nk-danger in - right=782 text=Clear']
+mobile: {'stops': 27, 'checks': 75, 'rendered': 75, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
 mobile after marking 1.1 done, localStorage: ['mtrx-cons-v1={"done":{"1.1":true}}']
 mobile: clicked a quiz option, check html: <script type="application/json">{"q": "What did Barker's tracking of Unification Church workshop guests mostly show?", "o": ["Most guests walked away, so the workshops were far weaker than the brainwashing story said", "Guests joined at the same rate as any church, so the group was no different at a
 mobile errors (blocked network loads not counted, 12 of them): none
