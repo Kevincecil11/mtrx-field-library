@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """No. 03 pipeline (.github/workflows/guide-03.yml runs it on pushes to build/03/).
-1. Probe: writes build/out/03-probe.txt (shell facts from No. 06, the shared add-on, index.html).
-2. If build/03/build.py exists: builds build/out/03-candidate.html, balances quizzes, lints,
-   and only a clean candidate replaces guides/03-cons-and-cults.html. Report: build/out/03-report.txt.
+1. Probe: writes build/out/03-probe.txt (shell facts from No. 06), only if missing.
+2. If build/03/build.py exists: builds build/out/03-candidate.html, renames the No. 06
+   storage keys it inherited (mtrx-room-*) to No. 03 keys (mtrx-cons-*), balances quizzes,
+   lints, and only a clean candidate replaces guides/03-cons-and-cults.html.
+3. Syncs the library card and runs the headless QA. Report: build/out/03-report.txt.
 """
 import datetime, os, re, shutil, subprocess, sys
 
@@ -28,13 +30,8 @@ def probe():
     out.append('== 06 size %d' % len(g))
     for m in re.finditer(r'<(style|script)([^>]*)>(.*?)</\1>', g, re.S):
         out.append('tag <%s%s> %d bytes' % (m.group(1), m.group(2)[:80], len(m.group(3))))
-    head = re.sub(r'<(style|script)([^>]*)>.*?</\1>', lambda m: '<%s%s>...</%s>' % (m.group(1), m.group(2), m.group(1)), g[:g.find('<body')], flags=re.S)
-    out.append('== head\n' + nob64(head)[:3000])
     body = g[g.find('<body'):]
     out.append('== body start\n' + nob64(body)[:5000])
-    i = body.find('<footer')
-    out.append('== footer\n' + nob64(body[i:i + 2500]))
-    out.append('== tail\n' + nob64(body[-1500:]))
     open('build/out/03-probe.txt', 'w', encoding='utf-8').write('\n'.join(out) + '\n')
 
 
@@ -46,6 +43,9 @@ if os.path.exists('build/03/build.py'):
     if os.path.exists(CAND):
         os.remove(CAND)
     if run('build/03/build.py', CAND) == 0 and os.path.exists(CAND):
+        s = open(CAND, encoding='utf-8').read()
+        rep.append('renamed %d inherited No. 06 storage keys (mtrx-room-*) to mtrx-cons-*' % s.count('mtrx-room-'))
+        open(CAND, 'w', encoding='utf-8').write(s.replace('mtrx-room-', 'mtrx-cons-'))
         run('tools/quiz_audit.py', '--fix', CAND)
         if run('tools/check_guide.py', CAND) == 0:
             shutil.copyfile(CAND, GUIDE)

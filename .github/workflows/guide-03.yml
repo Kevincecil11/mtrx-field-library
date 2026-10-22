@@ -26,7 +26,7 @@ jobs:
       - name: Install build tools
         run: |
           pip install beautifulsoup4==4.12.3 playwright==1.48.0
-          python -m playwright install --with-deps chromium || echo "no browser, QA will be skipped"
+          timeout 240 python -m playwright install chromium || echo "no browser, QA will be skipped"
       - name: Build No. 03
         run: python build/03/run.py
       - name: Commit

@@ -1,13 +1,14 @@
 name: Guide build
 # Renders guide parts from small source files in build/ and commits the result.
 # Lets an AI update a big guide without pushing the whole HTML. See build/README.md.
+# No. 03 has its own workflow (guide-03.yml), so build/03 is ignored here.
 on:
   push:
     branches: [main]
     paths:
       - 'build/**'
       - '!build/out/**'
-      - '.github/workflows/guide-build.yml'
+      - '!build/03/**'
   workflow_dispatch:
 permissions:
   contents: write
