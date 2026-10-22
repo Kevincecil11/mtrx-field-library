@@ -1,0 +1,73 @@
+from svg import box, t, arrow, line, svg
+
+FR = [('COMPLIANCE', 'authority has power over me', 'I may question authority'),
+      ('OPPORTUNITY', 'wealth comes from lucky breaks', 'wealth comes from work'),
+      ('INTELLIGENCE', 'not knowing is shameful', 'asking is how smart people learn'),
+      ('ORDER', 'the world rewards good people', 'the world is neutral; I decide')]
+FIG = svg(1180, 430, 'FINRA Foundation mental frames: the belief that raises fraud risk versus the belief that lowers it',
+          t(590, 34, 'FOUR MENTAL FRAMES (FINRA FOUNDATION, 2021)', 's-t') +
+          t(420, 70, 'raises risk', 's-t-sm') + t(900, 70, 'lowers risk', 's-t-sm') +
+          ''.join(box(20, 86 + i * 78, 200, 62, 's-box-j', 10) + t(120, 124 + i * 78, f, 's-t-b') +
+                  box(250, 86 + i * 78, 380, 62, 's-box-a', 10) + t(440, 124 + i * 78, a, 's-t-sm') +
+                  arrow(640, 117 + i * 78, 700, 117 + i * 78) +
+                  box(710, 86 + i * 78, 450, 62, 's-card', 10) + t(935, 124 + i * 78, b, 's-t-sm') for i, (f, a, b) in enumerate(FR)) +
+          t(590, 420, 'Notice the third row. A belief about looking smart, not intelligence itself, is the risk.', 's-t-sm'))
+
+STOP = dict(
+    id='4.3', day=26, title='Why smart people fall for cons, and why we are less gullible than films think',
+    q='If humans are naturally vigilant, why do doctors, engineers and finance professionals lose fortunes to scams every year?',
+    why="Two lazy stories dominate this topic. One says victims are stupid. The other, common in films, says everyone is endlessly gullible. Both are wrong, and the truth is more useful. You are a physics graduate with an AI degree who runs a company. That profile does not protect you; in some frames it makes you a better target. This stop shows you which ones.",
+    case=dict(k='The evidence', name='Who actually loses money', role='Three studies that break the stereotype of the foolish victim',
+              facts=[('Investors', '214 fraud victims vs 813 investors (DeLiema, Shadel and Pak, 2019): victims were more often older, male, materialistic, frequent traders'),
+                     ('Stress', 'AARP survey: victims reported about twice the stressful life events of non-victims, 4.0 versus 1.9'),
+                     ('Frames', 'FINRA Foundation (2021): four mental frames separated those who lost money from those who did not'),
+                     ('Scammers', 'The same FINRA report interviewed two 18-year-old call-centre workers near Mumbai who impersonated US tax officials')],
+              stamp=('myth', 'Myth: "only fools fall for it"')),
+    cold=dict(q='In the FINRA interviews, one belief about intelligence made people more likely to lose money. Was it "I am smarter than most people" or something else?',
+              a="Something subtler: the belief that not knowing the answer is shameful and lowers your status. People who held it were less likely to ask questions, because asking felt like admitting weakness. People who believed asking questions is how smart people learn were safer. So the risk is not low intelligence. It is the need to look intelligent, which is very common among intelligent people."),
+    video=dict(id='SWFj8hjwbxI', title='What Psychological Traits Does the Con Artist Look for in Victims?', who='Maria Konnikova \u00b7 Big Think \u00b7 2016',
+               watch=['Why Konnikova says there is no single victim personality',
+                      'The role of life transitions and stress',
+                      'Why feeling special is the trait to watch in yourself']),
+    story=["Start with the good news, because it is real. The cognitive scientist Hugo Mercier argues in Not Born Yesterday (2020) that people are, by default, careful about what they believe. We discount strangers, check claims against what we know, and resist messages that cut against our interests. Mass persuasion, from propaganda to advertising, has far weaker effects than its reputation suggests. Films that show crowds hypnotised by one smooth talker are dramatising a myth.",
+           "So how does anyone lose money? Not by switching off vigilance, but by meeting a situation that disarms it. The research points to three ingredients. The first is a moment of strain. An AARP survey found that people who lost money to scams had experienced about twice as many stressful life events as those who did not (4.0 versus 1.9 on its measure), with more emotional arousal and less family support. Grief, job loss, a move, a breakup or a business in trouble all narrow attention. Konnikova calls these transitions the con artist's favourite weather.",
+           "The second is exposure and appetite. A 2019 study by Marguerite DeLiema, Doug Shadel and Karla Pak compared 214 investment-fraud victims with 813 ordinary investors. Victims were more likely to be older and male, more materialistic, to trade more often, and to buy investments from unsolicited calls, emails, TV ads or free-lunch seminars. Earlier work found victims tended to have higher socioeconomic status than the general population. That is not a portrait of foolishness. It is a portrait of people who are active, confident and in the market.",
+           "The third is a mental frame. FINRA Foundation researchers interviewed people targeted by fraud and found four default beliefs that separated those who lost money from those who did not: about compliance (does authority have power over me, or may I question it?), opportunity (is wealth a lucky break or the product of work?), intelligence (is not knowing shameful?) and order (does the world reward good people?). The diagram shows each pair. None of them is about IQ.",
+           "Expertise adds a final twist. Knowledge in one area produces confidence in the neighbouring area. A programmer checks the website's code and never asks who owns the bank account. A doctor recognises the medical jargon and misses the fake company. An AI founder hears a technically fluent pitch and feels he is talking to a peer. The private exception is the most dangerous thought in fraud: I can spot scams, so this one must be real. The defence is boring and it works: a rule you set in advance (no transfer without a 24-hour pause and one outside opinion) that applies even when, especially when, the opportunity feels special."],
+    fig=(FIG, 'The four FINRA frames. Each belief on the left made loss more likely; the one on the right made people ask questions.'),
+    specs=[('Mental frame', 'A default belief about how the world works that shapes how you read an offer.'),
+           ('Private exception', '"I can spot scams, so this one must be real." The confidence that switches off your own checks.'),
+           ('Situational vulnerability', 'Risk that comes from your circumstances (stress, grief, isolation), not your character.')],
+    tags=[('myth', '"Only unintelligent people fall for scams."', 'Victims include confident, educated, active investors; frames and situations matter more than IQ.', ('DeLiema, Shadel and Pak, JCR 2019', 'https://doi.org/10.1093/jcr/ucz020')),
+          ('myth', '"Humans are naturally gullible."', 'We are vigilant by default; cons work by making checking feel costly.', ('Mercier, Not Born Yesterday', 'https://press.princeton.edu/books/hardcover/9780691178707/not-born-yesterday')),
+          ('hold', '"Stress raises your risk."', 'AARP found victims had about twice the stressful life events of non-victims.', ('AARP, Innovation in Aging 2022', 'https://doi.org/10.1093/geroni/igac059.2289')),
+          ('part', '"Knowing about scams protects you."', 'FINRA found knowledge helps, but does not protect in every case.', ('FINRA Foundation, 2021', 'https://www.finrafoundation.org/exposed-scams-can-challenging-consumers-beliefs-protect-them-fraud'))],
+    distil=[('FINRA Foundation, Exposed to Scams (2021)', 'https://www.finrafoundation.org/exposed-scams-can-challenging-consumers-beliefs-protect-them-fraud', 'The four mental frames'),
+            ('DeLiema, Shadel and Pak, Profiling Victims of Investment Fraud (2019)', 'https://doi.org/10.1093/jcr/ucz020', 'Who loses money, and how they were reached'),
+            ('Konnikova, The Confidence Game (2016)', 'https://www.penguinrandomhouse.com/books/235443/the-confidence-game-by-maria-konnikova/', 'Transitions, stress and the feeling of being special'),
+            ('Mercier, Not Born Yesterday (2020)', 'https://press.princeton.edu/books/hardcover/9780691178707/not-born-yesterday', 'The case against gullibility')],
+    writer=dict(notes=["The most interesting victim on screen is not gullible but competent in the wrong frame. Let your character correctly spot three obvious scams early in the story. The audience relaxes with her. The fourth one is built to fit her identity: her expertise, her grief, her need to be the smart one in the room.",
+                       "Use the private exception as dialogue. A character who says \"I know how these things work\" has just told the audience where the con will land."],
+                drill="Write a fictional expert explaining to a friend why one red flag is actually proof that the deal is sophisticated. Make the argument genuinely persuasive. Then write the friend's one question that cuts through it."),
+    biz="Smart founders get caught by process gaps, not by stupidity. Write an MTRX\u2122 preflight checklist for four moments: a new client paying a large advance, a change of bank details, a request for admin access to a site, and an offer that needs an answer today. Each gets a pause and a second channel to verify. You follow it even when you are sure.",
+    tryit="Read the four frames in the diagram. For each, write which side you honestly lean to, and one real situation where that lean could cost you. Then write your personal no-exceptions rule in one sentence and put it somewhere you will see it.",
+    room='Intelligence does not cancel emotion. It gives emotion a better vocabulary.',
+    deeper=[('Marketplace: why even smart people fall for scams', 'https://www.marketplace.org/story/2011/09/30/why-even-smart-people-fall-scams', 'A short interview on the expertise trap'),
+            ('Boston College: causes and consequences of fraud among older Americans', 'https://crr.bc.edu/the-causes-and-consequences-of-financial-fraud-among-older-americans/', 'What fraud costs, beyond money')],
+    nextq='If the mark co-writes the con, a film can make the audience a co-writer too. How did The Sting con millions of viewers, and win Best Picture doing it? Stop 4.4.',
+    checks=[dict(q='In the FINRA interviews, which intelligence belief raised the risk of losing money?',
+                 o=['That not knowing an answer is shameful and lowers your status',
+                    'That you are probably smarter than the person calling you',
+                    'That asking questions is how intelligent people learn'], a=0,
+                 w='The need to look smart stops people asking questions. Believing that questions are learning protected them.'),
+            dict(q='What did the AARP survey find about people who lost money to scams?',
+                 o=['They had about twice as many stressful life events as non-victims',
+                    'They had far less formal education than non-victims',
+                    'They were almost always under 30 and new to money'], a=0,
+                 w='Strain narrows attention. Victims reported 4.0 stressful events versus 1.9 for non-victims.'),
+            dict(q='Why can expertise make someone a better target?',
+                 o=['Confidence in one area spreads to areas you have not checked',
+                    'Experts are legally barred from asking for second opinions',
+                    'Con artists are not allowed to approach professionals'], a=0,
+                 w='Knowing the code is not knowing the company. The private exception switches off your own checks.')],
+)
