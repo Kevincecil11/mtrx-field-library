@@ -1,0 +1,70 @@
+from svg import box, t, arrow, line, svg
+
+TR = [('DISGUISE', 'he can be anyone', 'cleaner, prisoner, buyer'),
+      ('THEATRE', 'he loves an audience', 'the reveal is the reward'),
+      ('CODE', 'he steals from the powerful', 'and protects the weak'),
+      ('INVISIBILITY', 'people do not see him', 'cleaners, couriers, outsiders')]
+FIG = svg(1180, 400, 'The gentleman thief formula and how the 2021 series turned invisibility into the main weapon',
+          t(590, 32, 'THE GENTLEMAN THIEF: FOUR INGREDIENTS', 's-t') +
+          ''.join(box(20 + i * 290, 60, 270, 170, 's-box-a' if i == 3 else 's-card', 12) + t(155 + i * 290, 104, n, 's-t-b') +
+                  t(155 + i * 290, 146, a, 's-t-sm') + t(155 + i * 290, 182, b, 's-t-sm') for i, (n, a, b) in enumerate(TR)) +
+          t(160, 280, '1905: Leblanc\'s Lupin', 's-t-b') + t(160, 312, 'a charming aristocrat in disguise', 's-t-sm') +
+          arrow(330, 296, 830, 296, True) +
+          t(1000, 280, '2021: Assane Diop', 's-t-b') + t(1000, 312, 'an immigrant\'s son nobody notices', 's-t-sm') +
+          t(590, 372, 'The modern twist: the best disguise is the role society already refuses to look at.', 's-t-sm'))
+
+STOP = dict(
+    id='5.3', day=32, title='The gentleman thief: Lupin',
+    q='Why would a thief who steals from the Louvre be the hero of the most-watched French series ever, and why does he keep telling us how he did it?',
+    why="Every con artist so far has been someone to beware of. The gentleman thief is someone to root for, and the genre has rules that make that possible. Lupin is also the best modern example of a writer taking a century-old character and making him new by asking one sharp question: who does society not bother to look at? That is a technique you can steal for any adaptation.",
+    case=dict(k='The character', name='Arsene Lupin', role='Created by Maurice Leblanc in 1905; reimagined by George Kay and Francois Uzan for Netflix in 2021',
+              facts=[('Born', '1905, in Leblanc\'s stories for the magazine Je sais tout'),
+                     ('The series', 'Lupin, Netflix, first episodes 8 January 2021, Omar Sy as Assane Diop'),
+                     ('Audience', 'Netflix reported about 76 million member accounts in its first 28 days'),
+                     ('Hero', 'Assane, son of a Senegalese immigrant framed for a theft, uses the Lupin books as a playbook')],
+              stamp=('field', 'Field test: watch Part 1, episode 1')),
+    cold=dict(q='In the first episode of the 2021 series, Assane gets into the Louvre to steal a famous necklace. Guess the disguise that gets him through the door.',
+              a="A cleaner. He takes a job on the Louvre's cleaning crew, a role in which almost nobody looks at his face. The show's sharpest idea is that a Black man in a uniform is invisible to the wealthy, the police and the art world, and Assane turns that prejudice into his superpower. Leblanc's Lupin hid behind aristocratic charm. Assane hides behind other people's assumptions."),
+    video=dict(id='ga0iTWXCGa0', title='Lupin | Official Trailer', who='Netflix · 2021',
+               watch=['How many different people Assane becomes in two minutes',
+                      'The Lupin book itself, used as a prop and a promise',
+                      'Where the trailer makes you laugh, and why that matters for a thief']),
+    story=["Maurice Leblanc created Arsene Lupin in 1905 for the French magazine Je sais tout, in a story about the thief's own arrest. Lupin was a gentleman burglar: elegant, witty, a master of disguise, who stole from the rich and the pompous and loved to leave a calling card. Leblanc even had him outwit a famous English detective, renamed Herlock Sholmes after objections from Arthur Conan Doyle's side. Over the following decades Lupin became a French national hero, adapted dozens of times.",
+           "The gentleman-thief formula has four ingredients, shown in the diagram. Disguise: he can be anyone. Theatre: he wants an audience, and the reveal is half the reward. A code: he steals from the powerful, protects the weak and rarely hurts anyone. And a kind of invisibility: people look past him. That code is what lets an audience enjoy the crime. The genre cheats a little: the victims are usually arrogant, the stolen objects are usually insured, and the violence happens to someone else.",
+           "George Kay and Francois Uzan's 2021 series, starring Omar Sy, keeps the formula and changes the hero. Assane Diop is the son of a Senegalese immigrant who was framed for stealing a necklace from the wealthy family he worked for and died in prison. Assane grew up with his father's copy of the Lupin stories and uses them as both a playbook and a code. His revenge is a long con on the family that destroyed his father. Netflix said Part 1 drew about 76 million member accounts in its first 28 days, which made it one of the platform's biggest launches at the time.",
+           "The show's master move is invisibility. Assane passes as a cleaner, a prisoner, a rich buyer and a string of other roles, and again and again the people who should notice him do not, because they never look at a Black man in a service role. The audience, which does look at him, is let in on the joke and on the critique at the same time. That is adaptation at its best: keep the character's essence (charm, disguise, a code), change one variable (who he is) and the old story suddenly says something new about the present.",
+           "And why does he keep explaining his tricks? Because the gentleman thief's pleasure is the reveal, and so is ours. Each episode ends with a flashback that shows how the impossible thing was done. It is the same structure as The Sting from stop 4.4, made weekly: the audience is fooled, then let backstage, then fooled again. For a writer, that loop is the engine of a heist series."],
+    fig=(FIG, 'The gentleman thief formula. Lupin (2021) keeps the four ingredients and turns invisibility into the main weapon.'),
+    specs=[('Gentleman thief', 'A charming criminal with a code, whom the audience wants to win.'),
+           ('Calling card', 'A signature the thief leaves, because the audience matters as much as the loot.'),
+           ('Adaptation by one variable', 'Keep a character\'s essence and change one thing about who they are, to make an old story speak to now.')],
+    tags=[('hold', '"Lupin dates back to 1905."', 'Leblanc created the character that year; the series adapts his novels.', ('Deadline, 2021', 'https://deadline.com/2021/01/lupin-netflix-biggest-french-series-70-million-tops-bridgerton-queens-gambit-1234676032/')),
+          ('part', '"Lupin was watched by 76 million people."', 'Netflix counts accounts that watched at least two minutes, not people who finished.', ('Business Insider, 2021', 'https://www.businessinsider.com/lupin-one-of-netflix-biggest-hits-all-time-viewership-data-2021-1')),
+          ('myth', '"Assane is Arsene Lupin."', 'He is a modern fan of the books who uses them as a model.', ('The Guardian, 2021', 'https://www.theguardian.com/tv-and-radio/2021/jan/19/lupin-netflix-surprise-hit-france-omar-sy'))],
+    distil=[('The Guardian: how Lupin became a surprise hit', 'https://www.theguardian.com/tv-and-radio/2021/jan/19/lupin-netflix-surprise-hit-france-omar-sy', 'Why the show worked outside France'),
+            ('Deadline: 70 million projected households', 'https://deadline.com/2021/01/lupin-netflix-biggest-french-series-70-million-tops-bridgerton-queens-gambit-1234676032/', 'The launch numbers'),
+            ('Leblanc, The Extraordinary Adventures of Arsene Lupin (Project Gutenberg)', 'https://www.gutenberg.org/ebooks/6133', 'The first nine stories (1907), including The Queen\'s Necklace, free')],
+    writer=dict(notes=["The gentleman thief needs a code the audience can check. Give yours one thing he will never do, and then put him in a situation where doing it would save him. That is your best scene.",
+                       "Use the reveal loop: fool the audience, show the trick in flashback, fool them again. It works because each reveal teaches the audience how to watch, and the next con exploits exactly that lesson."],
+                drill="Take a public-domain character you love and change one variable: age, gender, class, country or era. Write a one-paragraph pitch showing what the old story now says about today."),
+    biz="Invisibility is also a business risk. The person in your client's office nobody looks at (a temporary contractor, a delivery, someone fixing the Wi-Fi) is the classic social-engineering route into a company (stop 5.6). For MTRX™ projects: access to admin panels goes to named people only, and every new face asking for access is verified, however ordinary they look.",
+    tryit="Watch the trailer above. List every role Assane plays and, for each one, write who in the scene fails to notice him and why. Then write one sentence on what the show is saying about who gets seen.",
+    room='The best disguise is the role society has already decided not to look at.',
+    deeper=[('Forbes: Lupin Part 2 and the real viewing numbers', 'https://www.forbes.com/sites/danafeldman/2021/05/12/lupin-part-2-the-quest-for-revenge-will-continue-in-june/', 'From 70 million projected to 76 million accounts')],
+    nextq='Lupin works alone. The other great heist fantasy is a team: eleven specialists, one vault, three casinos. Why is the crew film one of cinema\'s most reliable pleasures? Stop 5.4.',
+    checks=[dict(q='What disguise gets Assane into the Louvre in the first episode?',
+                 o=['A job on the museum\'s cleaning crew',
+                    'A forged invitation to a private gala',
+                    'A police uniform borrowed from a friend'], a=0,
+                 w='He hides behind other people\'s assumptions. The wealthy never look at a cleaner\'s face.'),
+            dict(q='Which ingredient lets an audience enjoy a gentleman thief\'s crimes?',
+                 o=['A code: he steals from the powerful and protects the weak',
+                    'Realism: every heist could be copied step by step',
+                    'Violence: he is the most dangerous man in every room'], a=0,
+                 w='Disguise, theatre, a code and invisibility. The code makes the crime feel just.'),
+            dict(q='What does "adaptation by one variable" mean in Lupin\'s case?',
+                 o=['Keep the charm and disguise, change who the hero is',
+                    'Copy Leblanc\'s stories scene by scene into modern dress',
+                    'Replace the thief with a detective who hunts him'], a=0,
+                 w='Assane is an immigrant\'s son. One change makes a 1905 hero speak about 2021.')],
+)
