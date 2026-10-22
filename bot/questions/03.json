@@ -34,7 +34,13 @@
   "4.3",
   "4.4",
   "4.5",
-  "4.6"
+  "4.6",
+  "5.1",
+  "5.2",
+  "5.3",
+  "5.4",
+  "5.5",
+  "5.6"
  ],
  "cards": [
   {
@@ -1812,6 +1818,371 @@
    "type": "recall",
    "q": "Page closed: explain \"Twists that play fair: Nine Queens, House of Games, The Grifters\" in two or three lines, as you would to a client.",
    "answer": "The best con films are better on the rewatch, because the second time you get to be the crew.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "5.1",
+   "name": "Ripley: the identity con as character",
+   "link": "guides/03-cons-and-cults.html#m5-1",
+   "id": "03-5.1-q1",
+   "type": "quiz",
+   "q": "What makes Ripley an identity con rather than a disguise?",
+   "options": [
+    "The con only needs to fool one person for one evening",
+    "Tom wears a mask and fake beard in every scene",
+    "The false self must be maintained for months against everyone"
+   ],
+   "answer": 2,
+   "why": "A disguise lasts a scene. An identity is a job: signatures, clothes, letters, timing."
+  },
+  {
+   "guide": "03",
+   "stop": "5.1",
+   "name": "Ripley: the identity con as character",
+   "link": "guides/03-cons-and-cults.html#m5-1",
+   "id": "03-5.1-q2",
+   "type": "quiz",
+   "q": "How does Highsmith's 1955 novel end for Tom?",
+   "options": [
+    "He gets away with it and stays free in later books",
+    "He is arrested on the last page by the Italian police",
+    "He confesses to Dickie's father and returns the money"
+   ],
+   "answer": 0,
+   "why": "A provocation in 1955. Purple Noon (1960) chose to catch him instead."
+  },
+  {
+   "guide": "03",
+   "stop": "5.1",
+   "name": "Ripley: the identity con as character",
+   "link": "guides/03-cons-and-cults.html#m5-1",
+   "id": "03-5.1-q3",
+   "type": "quiz",
+   "q": "Why do audiences root for Tom despite his crimes?",
+   "options": [
+    "Every version makes him a hero who saves other people",
+    "They share his knowledge and danger, so his near misses feel like theirs",
+    "The stories hide that he has committed any crime at all"
+   ],
+   "answer": 1,
+   "why": "Alignment. Competence, fear and an outsider's resentment make us his accomplice."
+  },
+  {
+   "guide": "03",
+   "stop": "5.1",
+   "name": "Ripley: the identity con as character",
+   "link": "guides/03-cons-and-cults.html#m5-1",
+   "id": "03-5.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Ripley: the identity con as character\" in two or three lines, as you would to a client.",
+   "answer": "An alias is a promise that has to be paid in daily labour.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "5.2",
+   "name": "Real impostors: Clark Rockefeller, Anna Delvey and the Abagnale problem",
+   "link": "guides/03-cons-and-cults.html#m5-2",
+   "id": "03-5.2-q1",
+   "type": "quiz",
+   "q": "What finally exposed all three impostors in this stop?",
+   "options": [
+    "A single brilliant detective who studied their body language",
+    "Each of them confessed voluntarily to a journalist",
+    "Ordinary records: custody papers, bank statements, prison files"
+   ],
+   "answer": 2,
+   "why": "Each sold a social shortcut that made checking feel rude. Paperwork broke them."
+  },
+  {
+   "guide": "03",
+   "stop": "5.2",
+   "name": "Real impostors: Clark Rockefeller, Anna Delvey and the Abagnale problem",
+   "link": "guides/03-cons-and-cults.html#m5-2",
+   "id": "03-5.2-q2",
+   "type": "quiz",
+   "q": "What did Alan Logan's 2020 research claim about Frank Abagnale?",
+   "options": [
+    "Records show him in custody for much of the period he described",
+    "He never existed and the memoir was written by Spielberg",
+    "Every claim in Catch Me If You Can was confirmed by Pan Am"
+   ],
+   "answer": 0,
+   "why": "A records-based challenge, not a court ruling. The famous story is contested and weakly supported."
+  },
+  {
+   "guide": "03",
+   "stop": "5.2",
+   "name": "Real impostors: Clark Rockefeller, Anna Delvey and the Abagnale problem",
+   "link": "guides/03-cons-and-cults.html#m5-2",
+   "id": "03-5.2-q3",
+   "type": "quiz",
+   "q": "What was Christian Gerhartsreiter convicted of in 2013?",
+   "options": [
+    "Stealing more than $200,000 from New York hotels",
+    "Posing as a Rockefeller, which is a federal crime",
+    "The 1985 murder of John Sohus, his landlady's son"
+   ],
+   "answer": 2,
+   "why": "A jury in Los Angeles convicted him; he was sentenced to 27 years to life. Linda Sohus was never found."
+  },
+  {
+   "guide": "03",
+   "stop": "5.2",
+   "name": "Real impostors: Clark Rockefeller, Anna Delvey and the Abagnale problem",
+   "link": "guides/03-cons-and-cults.html#m5-2",
+   "id": "03-5.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Real impostors: Clark Rockefeller, Anna Delvey and the Abagnale problem\" in two or three lines, as you would to a client.",
+   "answer": "Impostors are rarely caught by geniuses. They are caught by someone who finally reads the paperwork.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "5.3",
+   "name": "The gentleman thief: Lupin",
+   "link": "guides/03-cons-and-cults.html#m5-3",
+   "id": "03-5.3-q1",
+   "type": "quiz",
+   "q": "What disguise gets Assane into the Louvre in the first episode?",
+   "options": [
+    "A forged invitation to a private gala",
+    "A job on the museum's cleaning crew",
+    "A police uniform borrowed from a friend"
+   ],
+   "answer": 1,
+   "why": "He hides behind other people's assumptions. The wealthy never look at a cleaner's face."
+  },
+  {
+   "guide": "03",
+   "stop": "5.3",
+   "name": "The gentleman thief: Lupin",
+   "link": "guides/03-cons-and-cults.html#m5-3",
+   "id": "03-5.3-q2",
+   "type": "quiz",
+   "q": "Which ingredient lets an audience enjoy a gentleman thief's crimes?",
+   "options": [
+    "A code: he steals from the powerful and protects the weak",
+    "Violence: he is the most dangerous man in every room",
+    "Realism: every heist could be copied step by step"
+   ],
+   "answer": 0,
+   "why": "Disguise, theatre, a code and invisibility. The code makes the crime feel just."
+  },
+  {
+   "guide": "03",
+   "stop": "5.3",
+   "name": "The gentleman thief: Lupin",
+   "link": "guides/03-cons-and-cults.html#m5-3",
+   "id": "03-5.3-q3",
+   "type": "quiz",
+   "q": "What does \"adaptation by one variable\" mean in Lupin's case?",
+   "options": [
+    "Copy Leblanc's stories scene by scene into modern dress",
+    "Keep the charm and disguise, change who the hero is",
+    "Replace the thief with a detective who hunts him"
+   ],
+   "answer": 1,
+   "why": "Assane is an immigrant's son. One change makes a 1905 hero speak about 2021."
+  },
+  {
+   "guide": "03",
+   "stop": "5.3",
+   "name": "The gentleman thief: Lupin",
+   "link": "guides/03-cons-and-cults.html#m5-3",
+   "id": "03-5.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The gentleman thief: Lupin\" in two or three lines, as you would to a client.",
+   "answer": "The best disguise is the role society has already decided not to look at.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "5.4",
+   "name": "Ocean's and the crew film",
+   "link": "guides/03-cons-and-cults.html#m5-4",
+   "id": "03-5.4-q1",
+   "type": "quiz",
+   "q": "What is the genre's \"plan behind the plan\"?",
+   "options": [
+    "The backup plan the crew writes down before the job",
+    "The police plan to catch the crew in the sequel",
+    "A hidden layer of the scheme revealed at the end"
+   ],
+   "answer": 2,
+   "why": "The film explains a plan, then reveals another layer. The Sting's trick, made into a genre."
+  },
+  {
+   "guide": "03",
+   "stop": "5.4",
+   "name": "Ocean's and the crew film",
+   "link": "guides/03-cons-and-cults.html#m5-4",
+   "id": "03-5.4-q2",
+   "type": "quiz",
+   "q": "Why does the recruitment section work so well?",
+   "options": [
+    "Each specialist is shown doing the one thing they do best",
+    "It explains every step of the heist in technical detail",
+    "It gives every crew member a long backstory monologue"
+   ],
+   "answer": 0,
+   "why": "One trait, one skill, one joke. Competence on screen is its own suspense."
+  },
+  {
+   "guide": "03",
+   "stop": "5.4",
+   "name": "Ocean's and the crew film",
+   "link": "guides/03-cons-and-cults.html#m5-4",
+   "id": "03-5.4-q3",
+   "type": "quiz",
+   "q": "What gives the money in Ocean's Eleven a personal stake?",
+   "options": [
+    "The crew plans to donate the money to charity",
+    "Danny's ex-wife Tess is with the casino owner",
+    "Danny owes the money to the boxing promoter"
+   ],
+   "answer": 1,
+   "why": "A heist with a relationship at stake ends when a person decides, not when a vault opens."
+  },
+  {
+   "guide": "03",
+   "stop": "5.4",
+   "name": "Ocean's and the crew film",
+   "link": "guides/03-cons-and-cults.html#m5-4",
+   "id": "03-5.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Ocean's and the crew film\" in two or three lines, as you would to a client.",
+   "answer": "The heist is the plot. Whether the crew can trust each other is the story.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "5.5",
+   "name": "Real heists: Antwerp, Hatton Garden, the Louvre 2025",
+   "link": "guides/03-cons-and-cults.html#m5-5",
+   "id": "03-5.5-q1",
+   "type": "quiz",
+   "q": "What led police to the Antwerp crew?",
+   "options": [
+    "An insider who confessed the morning after the job",
+    "A fingerprint left on the vault door",
+    "A bag of rubbish dumped near the E19 motorway"
+   ],
+   "answer": 2,
+   "why": "Documents and a half-eaten sandwich in the rubbish linked the crew. The getaway was the weak point."
+  },
+  {
+   "guide": "03",
+   "stop": "5.5",
+   "name": "Real heists: Antwerp, Hatton Garden, the Louvre 2025",
+   "link": "guides/03-cons-and-cults.html#m5-5",
+   "id": "03-5.5-q2",
+   "type": "quiz",
+   "q": "Where does the pattern across the three cases put the failure?",
+   "options": [
+    "In the vault, which none of the crews could fully open",
+    "In the everyday aftermath: cars, rubbish, talk, a dropped item",
+    "In the planning, which all three crews rushed"
+   ],
+   "answer": 1,
+   "why": "Skill went into the target. The mundane parts nobody rehearsed undid them."
+  },
+  {
+   "guide": "03",
+   "stop": "5.5",
+   "name": "Real heists: Antwerp, Hatton Garden, the Louvre 2025",
+   "link": "guides/03-cons-and-cults.html#m5-5",
+   "id": "03-5.5-q3",
+   "type": "quiz",
+   "q": "A year after the Louvre theft, what was the state of the case?",
+   "options": [
+    "Arrests made and suspects jailed, but the jewels still missing",
+    "All eight items recovered and returned to the gallery",
+    "No arrests and no suspects identified"
+   ],
+   "answer": 0,
+   "why": "France24 reported at least seven arrests and four jailed suspects, but no recovered jewels."
+  },
+  {
+   "guide": "03",
+   "stop": "5.5",
+   "name": "Real heists: Antwerp, Hatton Garden, the Louvre 2025",
+   "link": "guides/03-cons-and-cults.html#m5-5",
+   "id": "03-5.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Real heists: Antwerp, Hatton Garden, the Louvre 2025\" in two or three lines, as you would to a client.",
+   "answer": "The vault is the hard part on paper. The everyday part is where real crews get caught.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "5.6",
+   "name": "Social engineering: the con inside the heist",
+   "link": "guides/03-cons-and-cults.html#m5-6",
+   "id": "03-5.6-q1",
+   "type": "quiz",
+   "q": "How was MGM Resorts reportedly breached in September 2023?",
+   "options": [
+    "A flaw in the casino slot machine software",
+    "A stolen laptop left in a hotel room",
+    "A call to its IT help desk by someone posing as an employee"
+   ],
+   "answer": 2,
+   "why": "A plausible voice and a process that rewarded speed. No exotic code needed."
+  },
+  {
+   "guide": "03",
+   "stop": "5.6",
+   "name": "Social engineering: the con inside the heist",
+   "link": "guides/03-cons-and-cults.html#m5-6",
+   "id": "03-5.6-q2",
+   "type": "quiz",
+   "q": "What is the strongest defence against a convincing urgent call?",
+   "options": [
+    "Call back on a number you already hold",
+    "Ask the caller to confirm their name twice",
+    "Trust your gut about how they sound"
+   ],
+   "answer": 0,
+   "why": "A call-back removes the judgement call. Voices and names can be faked; your own number cannot."
+  },
+  {
+   "guide": "03",
+   "stop": "5.6",
+   "name": "Social engineering: the con inside the heist",
+   "link": "guides/03-cons-and-cults.html#m5-6",
+   "id": "03-5.6-q3",
+   "type": "quiz",
+   "q": "What share of 2024 breaches did Verizon link to a non-malicious human element?",
+   "options": [
+    "68%",
+    "18%",
+    "98%"
+   ],
+   "answer": 0,
+   "why": "Verizon's 2024 report put it at 68%. People, not code, are the usual entry point."
+  },
+  {
+   "guide": "03",
+   "stop": "5.6",
+   "name": "Social engineering: the con inside the heist",
+   "link": "guides/03-cons-and-cults.html#m5-6",
+   "id": "03-5.6-r1",
+   "type": "recall",
+   "q": "Drill \"Boss fight: the masks audit\": what are the steps, and the usual mistake?",
+   "answer": "1) Pick one con or heist from File 5 (Ripley, Delvey, Lupin, Ocean's, Antwerp, Hatton Garden, the Louvre or MGM). 2) Name the mask: the role the con artist or crew played, and who it was played for. 3) Name the moment a single person could have broken it with one check. 4) Now turn it on yourself: list three accounts or payments in your own work that a convincing voice could reach. 5) For each, write the check you will use from now on: call-back, named approver or a written rule. Usual mistake: Thinking you are too sharp to fall for it. The cases in this file beat banks, casinos and a museum. The defence is a habit you use when you feel sure, not a feeling of being clever.",
+   "label": "Drill"
+  },
+  {
+   "guide": "03",
+   "stop": "5.6",
+   "name": "Social engineering: the con inside the heist",
+   "link": "guides/03-cons-and-cults.html#m5-6",
+   "id": "03-5.6-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Social engineering: the con inside the heist\" in two or three lines, as you would to a client.",
+   "answer": "The attacker needs one person to skip one check. Defence is a habit, not a gadget.",
    "label": "Say it in the room"
   }
  ]
