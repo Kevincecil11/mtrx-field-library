@@ -168,5 +168,43 @@ T.answer(pid, 0)
 run('2026-10-13T09:00')
 check('test answer is confirmed', any('Test answer received' in m for m in T.texts()))
 
+# 9. Quiet mode: three unanswered reviews in a row, then one nudge and silence until he replies
+T.sent.clear(); T.polls.clear()
+for day in ('2026-10-14', '2026-10-15'):
+    run(day + 'T08:05')
+sent_before = len([1 for m, p in T.sent if m == 'sendPoll'])
+T.sent.clear()
+st = run('2026-10-16T08:05')
+msgs = T.texts()
+check('reviews keep coming while fewer than 3 go unanswered', sent_before > 0, sent_before)
+check('after 3 unanswered reviews: no new questions, one nudge', not [1 for m, p in T.sent if m == 'sendPoll'] and len(msgs) == 1 and 'unanswered' in msgs[0], msgs)
+st = run('2026-10-17T08:05')
+check('the nudge is sent only once', not T.texts() and not T.sent)
+check('nothing is lost: cards stay due', len(bot.due_cards(st, bot.load_banks(), True)) > 0)
+T.text('/today', at('2026-10-17T20:00'))
+st = run('2026-10-17T20:05')
+check('/today wakes it up and sends the review', [1 for m, p in T.sent if m == 'sendPoll'] and st['silent'] == 0 and not st['nudged'])
+T.sent.clear(); T.texts()
+pid = next(iter(T.polls))
+T.answer(pid, 0)
+run('2026-10-17T21:00')
+T.sent.clear(); T.texts()
+run('2026-10-18T08:05')
+check('after an answer, the daily review is back to normal', [1 for m, p in T.sent if m == 'sendPoll'])
+
+# 10. Existing state without the new fields: quiet mode seeds itself from the log
+s0 = json.load(open(bot.STATE_PATH))
+s0.pop('silent', None); s0.pop('nudged', None)
+for cd in s0['cards'].values():
+    if cd.get('last'):
+        cd['last'] = min(cd['last'], '2026-10-18')   # section 4 time-travelled into 2027
+s0['log'] += ['2026-10-19 08:00 pushed 15 cards', '2026-10-20 08:00 pushed 15 cards', '2026-10-21 08:00 pushed 15 cards']
+s0['today'] = {'date': '2026-10-21', 'total': 15, 'got': 0, 'partly': 0, 'miss': 0, 'summary_sent': False}
+json.dump(s0, open(bot.STATE_PATH, 'w'))
+T.sent.clear(); T.polls.clear()
+st = run('2026-10-22T08:05')
+msgs = T.texts()
+check('old state: 3 unanswered pushes in the log trigger the nudge', not [1 for m, p in T.sent if m == 'sendPoll'] and msgs and 'unanswered' in msgs[0], (st.get('silent'), msgs))
+
 print('\n%d checks failed' % len(fails) if fails else '\nALL CHECKS PASSED')
 sys.exit(1 if fails else 0)
