@@ -1,3 +1,4 @@
+html,body{overflow-x:clip}
 .qline{margin:6px 0 12px;font:800 21px/1.4 var(--sans);color:var(--ink)}
 .qline span{display:block;font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:4px}
 .conf{font:600 14px/1.5 var(--mono);color:var(--graphite);margin:6px 0 10px}
