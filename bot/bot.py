@@ -17,6 +17,7 @@ QDIR = os.path.join(ROOT, 'bot', 'questions')
 SELFTEST_PATH = os.path.join(ROOT, 'bot', 'selftest.json')
 LADDER = [1, 3, 7, 21, 60, 180]          # days after the stop was finished (or last missed)
 CAP = 15                                 # max questions per daily review
+QUIET_AFTER = 3                          # unanswered daily reviews in a row before the bot goes quiet
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 BOT_USERNAME = 'makingmesmart_bot'
 TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', '').strip()
@@ -179,6 +180,27 @@ def grade(st, cid, result):
 def is_weak(c):
     return c['miss'] > 0 and c['k'] < 2
 
+# ---------------------------------------------------------------- quiet mode
+
+def wake(st):
+    """Any answer or message from the owner ends quiet mode."""
+    st['silent'], st['nudged'] = 0, False
+
+def quiet(st):
+    """Count daily reviews in a row that got no answer at all. True means: send nothing new.
+    Unanswered cards stay due, so nothing is lost; /today or any answer brings them back."""
+    td = st.get('today') or {}
+    if 'silent' not in st:                       # first run with this feature: count from the log
+        last = max((c.get('last') or '' for c in st['cards'].values()), default='')
+        st['silent'] = sum(1 for line in st['log'] if 'pushed' in line and line[:10] > last)
+        st['nudged'] = False
+        td['counted'] = True
+    if td.get('date') and td['date'] != d2s(today()) and td.get('total') and not td.get('counted'):
+        td['counted'] = True
+        answered = td.get('got', 0) + td.get('partly', 0) + td.get('miss', 0)
+        st['silent'] = 0 if answered else st['silent'] + 1
+    return st['silent'] >= QUIET_AFTER
+
 # ---------------------------------------------------------------- sending
 
 def due_cards(st, banks, include_sent=False):
@@ -237,6 +259,16 @@ def push(st, banks, force=False):
     if not force:
         if st['paused'] or st['last_push'] == d2s(t) or now().hour < int(st['hour']):
             return
+        if quiet(st):
+            st['last_push'] = d2s(t)
+            if not st.get('nudged'):
+                n = len(due_cards(st, banks, include_sent=True))
+                send_text('\U0001f4ed The last %d reviews went unanswered, so I have stopped sending new ones. Nothing is lost: '
+                          '%d questions are waiting.\n\nSend /today when you have 10 minutes, or /pause if you need a break. '
+                          'Any answer or message wakes me up.' % (st['silent'], n))
+                st['nudged'] = True
+                log(st, 'quiet after %d unanswered reviews, one nudge sent' % st['silent'])
+            return
     st['last_push'] = d2s(t)
     queue = due_cards(st, banks)[:CAP]
     if not queue:
@@ -269,6 +301,7 @@ def handle_answer(st, banks, pa, misses):
     p = st['polls'].pop(pa.get('poll_id'), None)
     if not p or not pa.get('option_ids'):
         return
+    wake(st)
     choice = pa['option_ids'][0]
     if p['kind'] == 'test':
         send_text('\u2705 Test answer received. The full loop works: send, answer, grade.')
@@ -307,6 +340,7 @@ def after_answers(st, misses):
             td['summary_sent'] = True
 
 def handle_text(st, banks, text, msg_day):
+    wake(st)
     text = (text or '').strip()
     cmd, _, arg = text.partition(' ')
     cmd = cmd.split('@')[0].lower()
@@ -399,7 +433,8 @@ HELP_INTRO = '\U0001f44b <b>MTRX Field Library review bot</b>\nRead a stop, mark
 
 def help_text():
     return ('<b>Commands</b>\n' + '\n'.join('/%s: %s' % (c, d) for c, d in COMMANDS) +
-            '\n\nReplies arrive on my next run, usually within 15 minutes. Library: %s' % SITE)
+            '\n\nIf %d daily reviews in a row go unanswered I stop sending until you reply. '
+            'Replies arrive on my next run, usually within 15 minutes. Library: %s' % (QUIET_AFTER, SITE))
 
 # ---------------------------------------------------------------- runs
 
