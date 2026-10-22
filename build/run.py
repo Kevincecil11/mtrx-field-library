@@ -6,7 +6,8 @@ small source files instead of the whole HTML.
 1. If build/06/build.py exists, it writes build/out/06-candidate.html.
 2. The candidate is linted with tools/check_guide.py. Only a clean candidate
    replaces guides/06-read-the-room.html, so a bad build never ships.
-3. A compact skeleton of the live guide goes to build/out/06-skeleton.txt and a
+3. The No. 06 card on the library page (index.html) is synced to the guide.
+4. A compact skeleton of the live guide goes to build/out/06-skeleton.txt and a
    report to build/out/06-report.txt, so the next session can plan without
    reading 800 KB of HTML.
 """
@@ -41,6 +42,8 @@ if os.path.exists('build/06/build.py'):
     if os.path.exists(CAND):
         os.remove(CAND)
 run('tools/check_guide.py', GUIDE)
+if os.path.exists('build/06/index_card.py'):
+    run('build/06/index_card.py', GUIDE, 'index.html')
 run('build/skeleton.py', GUIDE, 'build/out/06-skeleton.txt')
 if os.path.exists('build/probe.py'):
     run('build/probe.py', GUIDE, 'build/out/06-probe.txt')
