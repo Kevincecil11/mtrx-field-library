@@ -1,14 +1,14 @@
-build 2026-10-14 15:06 UTC
+build 2026-10-22 15:34 UTC
 status: candidate passed lint and replaced the guide
 $ build/06/build.py guides/06-read-the-room.html build/out/06-candidate.html (exit 0)
-css inserted
-file 1 inserted: 7 stops
+css replaced
+file 1 replaced: 7 stops
 s2 head retitled
 s3 head retitled
 s5 head retitled
 tabs rebuilt
 cover updated
-sources inserted: 29 cards
+sources replaced: 29 cards
 Part I unchanged (sha256 ddb6aee7250e)
 wrote build/out/06-candidate.html (953754 bytes)
 
@@ -17,6 +17,9 @@ build/out/06-candidate.html: 21 stops, 0 errors, 0 warnings
 
 $ tools/check_guide.py guides/06-read-the-room.html (exit 0)
 guides/06-read-the-room.html: 21 stops, 0 errors, 0 warnings
+
+$ build/06/index_card.py guides/06-read-the-room.html index.html (exit 0)
+index card 06 updated: Part I built · Part II: 1 of 5 files, 7 stops · daily 20 min; 7 parts
 
 $ build/skeleton.py guides/06-read-the-room.html build/out/06-skeleton.txt (exit 0)
 skeleton: guides/06-read-the-room.html -> build/out/06-skeleton.txt (60192 chars)
