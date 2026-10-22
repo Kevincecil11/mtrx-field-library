@@ -1,4 +1,4 @@
-build 2026-10-22 16:53 UTC
+build 2026-10-22 17:11 UTC
 status: candidate passed lint and replaced the guide
 $ build/06/build.py guides/06-read-the-room.html build/out/06-candidate.html (exit 0)
 css replaced
