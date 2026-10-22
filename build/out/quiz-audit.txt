@@ -1,0 +1,40 @@
+BEFORE 00-learning-os.html: 13 checks | right-answer position 4 options: A=0 B=9 C=4 D=0 | right answer is the longest option in 12 of 13 (92%) | median length ratio 2.69
+AFTER  00-learning-os.html: 13 checks | right-answer position 4 options: A=3 B=3 C=3 D=4 | right answer is the longest option in 12 of 13 (92%) | median length ratio 2.69 | changed 13 checks; skipped none
+BEFORE 01-tech-wild.html: 55 checks | right-answer position 3 options: A=1 B=54 C=0 | right answer is the longest option in 51 of 55 (93%) | median length ratio 3.03
+AFTER  01-tech-wild.html: 55 checks | right-answer position 3 options: A=17 B=20 C=18 | right answer is the longest option in 51 of 55 (93%) | median length ratio 3.03 | changed 46 checks; skipped {'points at positions': 2}
+BEFORE 02-mind.html: no multiple-choice checks
+AFTER  unchanged | changed 0 checks; skipped none
+BEFORE 05-long-game.html: 17 checks | right-answer position 3 options: A=0 B=15 C=0; 4 options: A=0 B=2 C=0 D=0 | right answer is the longest option in 16 of 17 (94%) | median length ratio 2.13
+AFTER  05-long-game.html: 17 checks | right-answer position 3 options: A=4 B=6 C=5; 4 options: A=0 B=0 C=0 D=2 | right answer is the longest option in 16 of 17 (94%) | median length ratio 2.13 | changed 14 checks; skipped {'points at positions': 1}
+BEFORE 06-read-the-room.html: 68 checks | right-answer position 3 options: A=11 B=55 C=2 | right answer is the longest option in 47 of 68 (69%) | median length ratio 1.60
+AFTER  06-read-the-room.html: 68 checks | right-answer position 3 options: A=22 B=24 C=22 | right answer is the longest option in 47 of 68 (69%) | median length ratio 1.60 | changed 56 checks; skipped {'numeric scale': 1}
+
+Markup after the first check in 00-learning-os.html: '</div>\n<p class="room">"I don\'t trust the feeling of getting it. I trust what I can explain tomorrow with the page closed."</p>\n<button class="done" data-mod="1.1">Mark stop 1.1 done</button>\n</article>\n<article class="mod" id="m1-2" data-mod="1.2">\n<div class="mod-meta">Stop 1.2 <span class="t">6 min</span></div>\n<h2 class="mod-title">The principles that survived the evidence</h2>\n<p class="mod-w'
+Script near the first check reference: 'ill:var(--paper)}\n.s-ta{fill:var(--accent-ink)}\n[data-steps].is-on{fill:var(--mars-soft)}\n.march{stroke-dasharray:3 9;animation:march 22s linear infinite}\n@keyframes march{to{stroke-dashoffset:-480}}\n.check{background:var(--paper);border-radius:var(--radius);padding:22px;margin:28px 0;box-shadow:inset 0 0 0 2px var(--accent-soft);max-width:860px}\n.check-k{font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}\n.check-q{font:800 19px/1.4 '
+
+Worst length bias (right answer at least 1.6x the average distractor), for a content repair:
+  7.4x  No. 01 stop 4.3: A client's site looks perfect on a laptop, but on phones the menu cove
+  6.4x  No. 01 stop 4.19: A ₹15,000 brochure-site client asks for a 99.99% uptime SLA with penal
+  6.2x  No. 01 stop 4.8: A patient changes /patients/101/xrays to /patients/102/xrays in the ad
+  5.4x  No. 01 stop 4.13: A patient double-taps "Pay deposit" on a slow connection and is charge
+  5.4x  No. 01 stop 3.2: What did the 2017 Transformer paper change?
+  5.2x  No. 05 stop 3.1: Why does this guide link every quote to a source?
+  4.7x  No. 01 stop 4.17: A patient paid the deposit, the money left their account, but the clin
+  4.6x  No. 00 stop 2.4: A concept appears in your guide's glossary but nowhere in the lessons.
+  4.3x  No. 01 stop 3.9: Why are coding agents the most successful agent category so far?
+  4.1x  No. 01 stop 4.5: A clinic owner says, "We need an app so patients can book." What's the
+  4.0x  No. 01 stop 2.12: An engineer says a feature will take 3 weeks "because of tech debt". W
+  3.9x  No. 01 stop 4.21: A client's only feedback on a homepage design is "make it pop". Best r
+  3.9x  No. 01 stop 4.22: A fixed-price client adds "just one small feature" every week. What pr
+  3.9x  No. 00 stop 6.1: A concept keeps coming back in your weak-spot log as "knew it, could n
+  3.8x  No. 06 stop 1.6: Asking a prospect for advice tends to make you look...
+  3.8x  No. 01 stop 4.15: Your developer plans to transcribe 40-minute dental consultation recor
+  3.8x  No. 01 stop 4.18: A developer says "all unit tests pass", yet checkout is broken in prod
+  3.7x  No. 01 stop 4.9: A clinic owner says, "Instagram ads bring zero patients." GA4 shows a 
+  3.7x  No. 01 stop 4.23: Searching one million patients by phone number takes three seconds. Wh
+  3.6x  No. 06 stop 0.2: "Communication is 7% words, 38% tone and 55% body language." That rule
+  3.5x  No. 01 stop 4.10: You're building a patient-login portal for an Ahmedabad clinic. Under 
+  3.5x  No. 01 stop 4.14: A clinic wants WhatsApp reminders sent 24 hours before each appointmen
+  3.5x  No. 06 stop 2.3: Which closing question surfaced the most unmet concerns in a clinic tr
+  3.5x  No. 06 stop 1.1: Why did Bond's read of Le Chiffre's tell cost him?
+  3.4x  No. 01 stop 2.11: A clinic's receptionist should book appointments but never open X-rays
