@@ -1,0 +1,72 @@
+from svg import box, t, arrow, line, svg
+
+ROWS = [('CLARK ROCKEFELLER', 'German student, arrived 1978', 'a famous surname nobody checked', 'a 2008 kidnapping, an old murder'),
+        ('ANNA DELVEY', 'magazine intern, about 25', 'Instagram, tips, fake statements', 'unpaid bills, then bank records at trial'),
+        ('FRANK ABAGNALE', 'teenage cheque fraudster', 'a memoir and a Spielberg film', 'prison and court records, decades later')]
+FIG = svg(1180, 420, 'Three real impostors: who they really were, what sold the story, and what finally broke it',
+          t(590, 32, 'WHAT SOLD THE STORY, AND WHAT BROKE IT', 's-t') +
+          t(260, 70, 'who they really were', 's-t-sm') + t(620, 70, 'what sold the story', 's-t-sm') + t(980, 70, 'what broke it', 's-t-sm') +
+          ''.join(box(20, 86 + i * 104, 160, 84, 's-box-j', 10) + t(100, 134 + i * 104, n.split()[0], 's-t-b') +
+                  box(190, 86 + i * 104, 260, 84, 's-card', 10) + t(320, 134 + i * 104, a, 's-t-sm') +
+                  box(470, 86 + i * 104, 320, 84, 's-card', 10) + t(630, 134 + i * 104, b, 's-t-sm') +
+                  box(810, 86 + i * 104, 350, 84, 's-box-a', 10) + t(985, 134 + i * 104, c, 's-t-sm') for i, (n, a, b, c) in enumerate(ROWS)) +
+          t(590, 408, 'Every one was caught by boring records, not by a brilliant detective.', 's-t-sm'))
+
+STOP = dict(
+    id='5.2', day=31, title='Real impostors: Clark Rockefeller, Anna Delvey and the Abagnale problem',
+    q='How does a person with no money, no family name and no credentials get accepted by bankers, socialites and an Ivy League town, and what finally gives them away?',
+    why="Ripley is fiction. These three are not, and each teaches something different. One shows how far a borrowed surname can carry a man, and how dark the truth underneath can be. One shows how social media and confidence can replace a fortune. And one is a warning about the famous story itself: the most celebrated impostor of all may have conned his audience, not his victims.",
+    case=dict(k='Three impostors', name='Gerhartsreiter, Sorokin and Abagnale', role='A Rockefeller who was not, an heiress who was not, and a pilot-doctor-lawyer who may not have been',
+              facts=[('Rockefeller', 'Christian Gerhartsreiter, born in Germany; convicted in 2013 of a 1985 murder; 27 years to life'),
+                     ('Delvey', 'Anna Sorokin; convicted in New York in 2019 of stealing more than $200,000; 4 to 12 years'),
+                     ('Abagnale', 'Catch Me If You Can (memoir 1980, film 2002); major claims challenged by Alan Logan in 2020'),
+                     ('Pattern', 'Each was undone by records: custody papers, bank statements, prison files')],
+              stamp=('part', 'Partly: Abagnale\'s story is contested')),
+    cold=dict(q='Frank Abagnale says that as a teenager in the 1960s he posed as a Pan Am pilot, a doctor and a lawyer. A researcher later checked his claims against records. Guess what the records said he was doing during much of that time.',
+              a="According to Alan C. Logan's book The Greatest Hoax on Earth (2020), records show Abagnale was in custody or prison for much of the period he described, and many of the famous exploits cannot be matched to evidence. Logan's work is a records-based challenge, not a court ruling, so treat the debate as open. But it flips the story: the greatest con in Catch Me If You Can may be the book itself, sold to readers, filmmakers and the corporations who paid him to speak on fraud."),
+    video=dict(id='co7WpsrhQT8', title='Socialite scammer conned New York’s elite', who='ABC News · Nightline',
+               watch=['What Anna Delvey offered people that money alone could not',
+                      'How tips, hotels and confidence worked as convincers',
+                      'The moment the unpaid bills started to catch up']),
+    story=["Christian Gerhartsreiter arrived in the United States from Germany in 1978 as a teenager. He became Christopher Chichester, a supposed English aristocrat, in California; then, on the East Coast, Clark Rockefeller, a reclusive member of the famous family. He married, worked in finance circles, joined clubs. Almost nobody asked the Rockefellers. In 2008 he abducted his own daughter during a custody dispute in Boston; the investigation that followed revealed who he really was. In 2013 a Los Angeles jury convicted him of the 1985 murder of John Sohus, his landlady's son, whose remains had been found buried in 1994. Sohus's wife Linda has never been found. Gerhartsreiter still maintains his innocence. This is the reminder that an impostor story is not automatically a charming one.",
+           "Anna Sorokin, a former fashion-magazine intern, arrived in New York in her mid-twenties as Anna Delvey, a German heiress with a trust fund who planned to open an arts foundation. She lived in luxury hotels, tipped $100 bills, and posted it all. According to the BBC's reporting, she was convicted in 2019 of multiple offences including stealing more than $200,000, and sentenced to 4 to 12 years. Her method is Maurer with Instagram: the feed was the store, the cash tips were the convincer, and the foundation was the tale. What broke it was mundane: credit cards that failed, hotel bills that went unpaid, and bank documents that did not match.",
+           "Frank Abagnale is the special case. His 1980 memoir, written with Stan Redding, and Steven Spielberg's 2002 film made him the world's most famous impostor, and he built a long career lecturing on fraud prevention. Alan C. Logan's 2020 book used prison, court and military records to argue that much of the story could not have happened as told, because Abagnale was in custody for much of the period. Reporting and a podcast series have since interviewed people from his past. Abagnale has defended his account. The fair verdict: the famous version is contested and weakly supported, and that is itself a lesson about the market for a good story.",
+           "Put them side by side, as in the diagram, and a pattern appears. What sold each identity was a social shortcut: a famous surname, visible spending, a bestselling book. Each shortcut works because checking it feels rude or pointless. You do not ask a Rockefeller for proof, a big tipper for a bank statement, or a famous fraud expert for his prison records. What broke each one was not a genius detective but boring paperwork that someone finally read.",
+           "That is good news for anyone running a business. You do not need to out-think an impostor. You need a small number of records you always check, whoever the person claims to be."],
+    fig=(FIG, 'Three impostors. Each sold a social shortcut that made checking feel rude. Each was broken by paperwork.'),
+    specs=[('Social shortcut', 'A signal (surname, spending, fame) that makes people skip normal checks.'),
+           ('Records-based debunking', 'Testing a famous story against documents such as prison, court and employment files.'),
+           ('Self-mythology', 'A story a con artist tells about himself, which can become the biggest con of all.')],
+    tags=[('myth', '"Clark Rockefeller was a real Rockefeller."', 'He was Christian Gerhartsreiter, born in Germany, later convicted of murder.', ('LA Times, 2013', 'https://www.latimes.com/local/lanow/la-me-ln-rockefeller-impostor-sentenced-20130815-story.html')),
+          ('hold', '"Anna Delvey was convicted of fraud-related theft."', 'Convicted in 2019, including stealing more than $200,000; 4 to 12 years.', ('BBC, 2019', 'https://www.bbc.com/news/world-us-canada-47741923')),
+          ('part', '"Catch Me If You Can is a true story."', 'Major claims are challenged by records research; the debate is not a court ruling.', ('WHYY on The Greatest Hoax on Earth', 'https://whyy.org/segments/the-greatest-hoax-on-earth/')),
+          ('myth', '"Impostor stories are harmless capers."', 'The Rockefeller case ended in a murder conviction.', ('AP, 2013', 'https://apnews.com/general-news-27469a24fdc84d868544aeed361486d3'))],
+    distil=[('BBC: The trial of New York\'s fake heiress (2019)', 'https://www.bbc.com/news/world-us-canada-47741923', 'How the Delvey story was proved in court'),
+            ('LA Times: Rockefeller impostor gets 27 years (2013)', 'https://www.latimes.com/local/lanow/la-me-ln-rockefeller-impostor-sentenced-20130815-story.html', 'The murder conviction'),
+            ('WHYY: The Greatest Hoax on Earth', 'https://whyy.org/segments/the-greatest-hoax-on-earth/', 'Logan\'s challenge to Abagnale'),
+            ('This Is Pretend: The real Catch Me If You Can', 'https://thisispretend.com/seasons/the-real-catch-me-if-you-can/', 'Podcast interviews with people from his past')],
+    writer=dict(notes=["The richest scene in any impostor story is the near miss with a person from the old life: a schoolmate, a cousin, a former landlady. It is a confrontation between the invented self and the real one, and the audience knows both. Write it quietly.",
+                       "The Abagnale problem is a gift to a screenwriter: a con artist whose final con is the story of his cons. A frame narrative where the narrator is lying to the audience can be fair, if you seed the evidence (stop 4.6)."],
+                drill="Write a two-minute fictional scene in which an impostor at a party meets someone who knew her before. Neither says what they know. Show it only through what each of them chooses to mention."),
+    biz="Build an MTRX™ verification habit for anyone who asks for trust: new clients paying on credit, partners offering introductions, vendors changing bank details. Three checks: a registered business or ID, a second channel you find yourself, and a reference not supplied by them. It takes ten minutes and would have stopped all three of these people.",
+    tryit="Pick one person or brand you trust mainly because of a social shortcut: a famous name, visible success, a big following. Write down what you actually know about them from records, and what you only know from the shortcut.",
+    room='Impostors are rarely caught by geniuses. They are caught by someone who finally reads the paperwork.',
+    deeper=[('Reuters: the Rockefeller impostor identified (2008)', 'https://www.reuters.com/article/domesticNews/idUSN1140328720080815/', 'How the FBI unravelled the name'),
+            ('BBC Radio 4: Fake Heiress', 'https://www.bbc.co.uk/programmes/articles/2y0YkZKvGD9MgVXqY1bl63z/fake-heiress-the-woman-who-scammed-new-york', 'Vicky Baker on how the persona worked')],
+    nextq='Real impostors are grim. Fiction gives us a kinder version: a thief so charming that the audience wants him to win, and a modern hero who uses a century-old book as his playbook. Stop 5.3 is Lupin.',
+    checks=[dict(q='What finally exposed all three impostors in this stop?',
+                 o=['Ordinary records: custody papers, bank statements, prison files',
+                    'A single brilliant detective who studied their body language',
+                    'Each of them confessed voluntarily to a journalist'], a=0,
+                 w='Each sold a social shortcut that made checking feel rude. Paperwork broke them.'),
+            dict(q='What did Alan Logan\'s 2020 research claim about Frank Abagnale?',
+                 o=['Records show him in custody for much of the period he described',
+                    'Every claim in Catch Me If You Can was confirmed by Pan Am',
+                    'He never existed and the memoir was written by Spielberg'], a=0,
+                 w='A records-based challenge, not a court ruling. The famous story is contested and weakly supported.'),
+            dict(q='What was Christian Gerhartsreiter convicted of in 2013?',
+                 o=['The 1985 murder of John Sohus, his landlady\'s son',
+                    'Posing as a Rockefeller, which is a federal crime',
+                    'Stealing more than $200,000 from New York hotels'], a=0,
+                 w='A jury in Los Angeles convicted him; he was sentenced to 27 years to life. Linda Sohus was never found.')],
+)

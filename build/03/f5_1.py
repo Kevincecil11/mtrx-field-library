@@ -1,0 +1,70 @@
+from svg import box, t, arrow, line, svg
+
+V = [('1955', 'THE NOVEL', 'Highsmith: inside Tom\'s head'),
+     ('1960', 'PURPLE NOON', 'Clement and Delon: sunlit, and caught at the end'),
+     ('1999', 'THE FILM', 'Minghella and Damon: longing, glamour, a lonely Tom'),
+     ('2024', 'THE SERIES', 'Zaillian and Scott: black and white, slow, all labour')]
+FIG = svg(1180, 400, 'Four versions of Ripley and what each one makes the audience feel about Tom',
+          t(590, 32, 'ONE CON MAN, FOUR TOMS', 's-t') +
+          ''.join(box(20 + i * 290, 56, 270, 190, 's-box-a' if i == 3 else 's-card', 12) + t(155 + i * 290, 96, y, 's-t-d') +
+                  t(155 + i * 290, 136, n, 's-t-b') + t(155 + i * 290, 176, d.split(':')[0], 's-t-sm') + t(155 + i * 290, 206, d.split(':')[1].strip(), 's-t-sm')
+                  for i, (y, n, d) in enumerate(V)) +
+          arrow(40, 280, 1140, 280, True) +
+          t(590, 320, 'Same plot. What changes is where the camera stands, and so what the audience is complicit in.', 's-t-sm') +
+          t(590, 360, 'The identity con is not a trick. It is a job that never ends: handwriting, clothes, stories, timing.', 's-t-sm'))
+
+STOP = dict(
+    id='5.1', day=30, title='Ripley: the identity con as character',
+    q='Tom Ripley kills a man and steals his life. Why do readers and audiences, for seventy years, keep wanting him to get away with it?',
+    why="File 4 was about selling a deal. File 5 is about selling a self. Ripley is the purest identity con in fiction, and it has been told four times in very different ways. Studying those versions shows you, as a future director, how the same story can make an audience admire, pity or dread the same man, simply by changing where the camera stands.",
+    case=dict(k='The character', name='Tom Ripley', role='Created by Patricia Highsmith in The Talented Mr. Ripley (1955); returned in four more novels',
+              facts=[('Novel', '1955, the first of five Ripley books, often called the Ripliad'),
+                     ('Films', 'Purple Noon (1960, Rene Clement, Alain Delon); The Talented Mr. Ripley (1999, Anthony Minghella, Matt Damon)'),
+                     ('Series', 'Ripley (Netflix, 2024): eight episodes in black and white, written and directed by Steven Zaillian, Andrew Scott as Tom'),
+                     ('The con', 'Sent to Italy to bring home a rich man\'s son, Tom becomes him')],
+              stamp=('field', 'Field test: compare two versions')),
+    cold=dict(q='Highsmith\'s novel ends in a way that shocked readers in 1955 and that the 1960 film refused to copy. Guess what happens to Tom.',
+              a="Nothing. He gets away with it, and inherits money too. In 1955 that was a provocation: crime fiction was expected to punish its criminals. Purple Noon, made under different expectations, ends with the police about to catch him. Highsmith went on to write four more Ripley novels in which he stays free. The lesson for a writer is uncomfortable: an audience will follow a charming, competent, frightened man anywhere, including to the place where he wins."),
+    video=dict(id='0ri2biYLeaI', title='Ripley | Official Trailer', who='Netflix · 2024',
+               watch=['How black and white turns Italy from postcard into trap',
+                      'How little Tom speaks, and how much he watches',
+                      'The objects the trailer lingers on: rings, signatures, stairs']),
+    story=["The setup is simple. A shipbuilder pays Tom Ripley, a small-time New York grifter, to go to Italy and persuade his son Dickie Greenleaf to come home. Tom finds a life he wants more than his own: money, ease, taste, belonging. When Dickie tires of him, Tom kills him and becomes him, forging his signature, wearing his clothes, writing his letters and, when needed, switching back to being Tom. Every con in File 4 sold an opportunity. This one sells a person.",
+           "What makes it an identity con rather than a disguise is the labour. A disguise lasts a scene. An identity has to be maintained for months against everyone who might notice: a landlady, a bank clerk, an old friend, a police inspector. Each version of the story is really about that labour, and each puts the camera in a different place. Highsmith's novel stays inside Tom's anxious head, so we feel every near miss as our own. Rene Clement's Purple Noon makes him a beautiful, sunlit predator and then catches him. Minghella's 1999 film, with Matt Damon, finds a lonely, longing Tom who wants to be loved by the people he imitates.",
+           "Steven Zaillian's 2024 series, with Andrew Scott, returns closer to the novel and does something radical with form. Shot in black and white, it slows down the procedural work: carrying a body down stairs, cleaning a boat, practising a signature, listening at a door. Reviewers noted how long it lets ordinary tasks run. The effect is that we stop watching a thriller and start watching a job. Glamour drains out. What remains is how exhausting it is to be someone else.",
+           "Why do we root for him? Highsmith gives Tom the things audiences always side with: competence under pressure, an outsider's resentment of the comfortable rich, and fear. We see the con from inside, so every visitor is a threat to us too. The screenwriter's term is alignment: we share a character's knowledge and danger, even when we do not share his morals. It is the same mechanism you met in File 1, where belonging can make good people accept terrible things. Here it is the audience that is recruited.",
+           "The practical lesson connects to stop 5.2. Real identity cons fail where Ripley's nearly do: at small, boring checks. A signature, a bank record, an old friend who remembers a detail. Tom survives through luck and cold nerve. Real impostors usually do not, and the checks that catch them are the same ones a small business should run every time someone claims to be someone."],
+    fig=(FIG, 'Four Ripleys. The plot barely changes. The camera position changes what the audience feels, and what it forgives.'),
+    specs=[('Identity con', 'Selling a whole person rather than a deal; it must be maintained against everyone who might notice.'),
+           ('Alignment', 'When the audience shares a character\'s knowledge and danger, so it hopes he escapes even if it disapproves.'),
+           ('Ripliad', 'Highsmith\'s five Ripley novels, 1955 to 1991. Tom is never punished.')],
+    tags=[('myth', '"Ripley began with the 1999 film."', 'Highsmith\'s novel came out in 1955; Purple Noon adapted it in 1960.', ('NYT on Ripley (2024)', 'https://www.nytimes.com/2024/04/03/arts/television/ripley-netflix-andrew-scott.html')),
+          ('part', '"The 2024 series remakes Minghella\'s film."', 'Zaillian went back to the novel, with a very different tone.', ('IndieWire, Zaillian interview', 'https://www.indiewire.com/features/general/ripley-steve-zaillian-going-back-to-the-book-1234968381/')),
+          ('hold', '"Highsmith let Tom get away with it."', 'He goes free in the novel and in four sequels.', ('LA Times review, 2024', 'https://www.latimes.com/entertainment-arts/tv/story/2024-04-04/ripley-review-netflix-andrew-scott-patricia-highsmith'))],
+    distil=[('Television Academy: Zaillian and Scott on Ripley', 'https://www.televisionacademy.com/features/news/online-originals/netflix-ripley-andrew-scott-steven-zaillian-interview', 'Why black and white, why so slow'),
+            ('IndieWire: going back to the book', 'https://www.indiewire.com/features/general/ripley-steve-zaillian-going-back-to-the-book-1234968381/', 'The series versus the 1999 film'),
+            ('Talented Mr. Ripley (1999) trailer', 'https://www.youtube.com/watch?v=h4e-Si4oGEw', 'The Minghella version, for comparison')],
+    writer=dict(notes=["Show the borrowed identity failing at a tiny domestic task before any public crisis: a signature that is almost right, a waiter who remembers how the real man takes his coffee. Small failures are scarier than big ones because the audience can see them coming and the character cannot stop them.",
+                       "Decide where your camera stands before you decide what happens. Inside the con man's fear, the audience becomes his accomplice. Outside it, he becomes a monster. Both are valid. Mixing them by accident is the most common mistake in identity-con scripts."],
+                drill="Write three versions of one fictional signature scene: confident, copied, and almost copied. Use only action lines and one line of dialogue from a bank clerk. Fiction only."),
+    biz="A polished profile is not proof of a person. Before MTRX™ signs a client or hires a contractor, verify through a second channel: company registration, domain ownership, a video call, a reference you find yourself. Ripley only works on people who check nothing.",
+    tryit="Pick two versions of Ripley you can access (the trailer above and the 1999 trailer in the sources are enough). Write one sentence for each on what it wants you to feel about Tom, and one on the single choice (light, music, framing) that does it.",
+    room='An alias is a promise that has to be paid in daily labour.',
+    deeper=[('LA Times: Ripley review (2024)', 'https://www.latimes.com/entertainment-arts/tv/story/2024-04-04/ripley-review-netflix-andrew-scott-patricia-highsmith', 'How the series reads Highsmith')],
+    nextq='Ripley is fiction. Real people have done it: a German student who became a Rockefeller, an intern who became an heiress, a man whose famous story may itself be a con. How far did they get, and what caught them? Stop 5.2.',
+    checks=[dict(q='What makes Ripley an identity con rather than a disguise?',
+                 o=['The false self must be maintained for months against everyone',
+                    'Tom wears a mask and fake beard in every scene',
+                    'The con only needs to fool one person for one evening'], a=0,
+                 w='A disguise lasts a scene. An identity is a job: signatures, clothes, letters, timing.'),
+            dict(q='How does Highsmith\'s 1955 novel end for Tom?',
+                 o=['He gets away with it and stays free in later books',
+                    'He is arrested on the last page by the Italian police',
+                    'He confesses to Dickie\'s father and returns the money'], a=0,
+                 w='A provocation in 1955. Purple Noon (1960) chose to catch him instead.'),
+            dict(q='Why do audiences root for Tom despite his crimes?',
+                 o=['They share his knowledge and danger, so his near misses feel like theirs',
+                    'The stories hide that he has committed any crime at all',
+                    'Every version makes him a hero who saves other people'], a=0,
+                 w='Alignment. Competence, fear and an outsider\'s resentment make us his accomplice.')],
+)
