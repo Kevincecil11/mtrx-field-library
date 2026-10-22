@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil</title><meta name="mtrx-slug" content="mtrx-field-series-03-cons-and-cults"><meta name="description" content="How cults, cons and power plays really work: question-led, evidence-graded, with a writer&#x27;s room in every stop. Prepared for Kevin Cecil."><script>document.documentElement.className='js';</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@500;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400..900;1,6..12,400..700&display=swap"><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap"><style>/* =========================================================
+   MTRX(TM) FIELD GUIDE TO THE TECH WILD
+   Subject: a 2-hour crash course for Kevin Cecil (MTRX Digital) to identify,
+   explain and sell around software, stacks and AI in rooms with tech CEOs.
+   Logic stolen from a naturalist field guide: plates, field marks, "voice",
+   similar species, thumb-index tabs on the fore-edge.
+   Type: Tanker (display, MTRX logo face) / Nunito Sans (text) / JetBrains Mono (labels)
+   Color: MTRX brand. Canvas #ECEAE4, Ink #151515, Mars #ED691D, Moss #697132, Gunmetal #2F3E46, Jane #F4E3B2
+   Signature: tech mascots drawn as 19th-century naturalist plates; cover grid is a 3x3 cube face.
+   ========================================================= */
+:root{
+  --canvas:#ECEAE4; --paper:#F6F4EF; --paper-2:#E5E2D9; --ink:#151515; --ink-2:#2B2B2B;
+  --graphite:#55586A; --steel:#BCBFCC; --rule:rgba(21,21,21,.11);
+  --mars:#ED691D; --mars-ink:#B3460D; --mars-soft:#F7D9C6;
+  --moss:#697132; --moss-ink:#525923; --moss-soft:#E0E3CB;
+  --gun:#2F3E46; --gun-soft:#D7DDE0;
+  --jane:#F4E3B2; --red:#A44A3F; --red-soft:#F1DCD8;
+  --accent:var(--mars); --accent-ink:var(--mars-ink); --accent-soft:var(--mars-soft); --on-accent:var(--ink);
+  --display:"Tanker","Anton","Bebas Neue",Impact,"Arial Narrow",sans-serif;
+  --sans:"Nunito Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --tab-w:54px; --radius:16px;
+}
+[data-part="1"]{--accent:var(--mars);--accent-ink:var(--mars-ink);--accent-soft:var(--mars-soft);--on-accent:var(--ink)}
+[data-part="2"]{--accent:var(--gun);--accent-ink:var(--gun);--accent-soft:var(--gun-soft);--on-accent:var(--paper)}
+[data-part="3"]{--accent:var(--moss);--accent-ink:var(--moss-ink);--accent-soft:var(--moss-soft);--on-accent:var(--paper)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--canvas);color:var(--ink);font:400 17px/1.62 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration-thickness:1.5px;text-underline-offset:3px}
+a:hover{color:var(--accent-ink)}
+::selection{background:var(--jane);color:var(--ink)}
+:focus-visible{outline:3px solid var(--mars);outline-offset:3px;border-radius:6px}
+button{font:inherit;color:inherit;cursor:pointer}
+p{margin:0 0 14px}
+ul,ol{margin:0 0 14px;padding-left:22px}
+li{margin:0 0 6px}
+b,strong{font-weight:800}
+code{font:600 .92em var(--mono);background:var(--paper-2);padding:1px 6px;border-radius:5px}
+.hl{background:linear-gradient(transparent 58%,var(--jane) 58%);padding:0 2px}
+.muted{color:var(--graphite)}
+.nowrap{white-space:nowrap}
+.scrollbar{position:fixed;left:0;top:0;height:4px;width:0;background:var(--mars);z-index:90}
+.thumbs{position:fixed;right:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px;z-index:80}
+.thumb{--c:var(--ink);--fg:var(--paper);position:relative;width:var(--tab-w);height:108px;border:0;border-radius:12px 0 0 12px;background:var(--c);color:var(--fg);display:flex;align-items:center;justify-content:center;padding:0;overflow:hidden;transition:width .25s ease;box-shadow:-3px 3px 0 rgba(0,0,0,.07);text-decoration:none}
+.thumb:hover{color:var(--fg)}
+.thumb .lbl{writing-mode:vertical-rl;transform:rotate(180deg);font:700 14px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;position:relative;z-index:1}
+.thumb .short{display:none}
+.thumb i{position:absolute;left:0;bottom:0;width:5px;height:calc(var(--p,0) * 1%);background:var(--fg);opacity:.9;transition:height .5s ease}
+.thumb.is-active{width:calc(var(--tab-w) + 16px)}
+.thumb[data-t="0"]{--c:var(--ink);--fg:var(--paper)}
+.thumb[data-t="1"]{--c:var(--mars);--fg:var(--ink)}
+.thumb[data-t="2"]{--c:var(--gun);--fg:var(--paper)}
+.thumb[data-t="3"]{--c:var(--moss);--fg:var(--paper)}
+.thumb[data-t="4"]{--c:var(--jane);--fg:var(--ink)}
+.site{padding-right:calc(var(--tab-w) + 6px)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+.lede{font-size:21px;line-height:1.5;color:var(--ink-2);max-width:740px}
+.kicker{font:700 14px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cover{min-height:100vh;display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(28px,5vw,72px);align-items:center;padding:64px 0 72px}
+.cover-title{font:400 clamp(66px,9.4vw,146px)/.86 var(--display);text-transform:uppercase;margin:18px 0 24px;letter-spacing:.004em}
+.cover-title .o{color:var(--mars)}
+.cover-sub{font-size:22px;line-height:1.45;max-width:31ch;margin:0 0 24px}
+.verbs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 30px;padding:0;list-style:none}
+.verbs li{margin:0;font:700 14px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:10px 14px;border-radius:999px}
+.verbs li:nth-child(2){background:var(--mars);color:var(--ink)}
+.verbs li:nth-child(3){background:var(--moss);color:var(--paper)}
+.prepared{font:500 15px/1.6 var(--mono);color:var(--graphite);margin:0 0 28px}
+.prepared b{color:var(--ink)}
+.cube{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;background:var(--ink);padding:9px;border-radius:24px;box-shadow:0 22px 40px -22px rgba(21,21,21,.55)}
+.sp{background:var(--paper);border-radius:13px;aspect-ratio:1/1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-decoration:none;color:var(--ink);padding:10px 8px;transition:transform .2s ease,background .2s ease;animation:twistL .9s cubic-bezier(.2,.8,.2,1) backwards}
+.sp:nth-child(-n+3){animation-delay:.15s}
+.sp:nth-child(n+4):nth-child(-n+6){animation-name:twistR;animation-delay:.35s}
+.sp:nth-child(n+7){animation-delay:.55s}
+.sp img{width:86%;height:68%;object-fit:contain;mix-blend-mode:multiply}
+.sp b{font:700 14px/1.1 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.sp:hover{transform:translateY(-3px);background:#FFFDF8;color:var(--ink)}
+.cube-cap{font:500 15px/1.5 var(--mono);color:var(--graphite);margin:14px 4px 0;text-align:center}
+@keyframes twistL{from{transform:translateX(-46px) rotate(-5deg);opacity:0}to{transform:none;opacity:1}}
+@keyframes twistR{from{transform:translateX(46px) rotate(5deg);opacity:0}to{transform:none;opacity:1}}
+.part-head{background:var(--accent);color:var(--on-accent);padding:clamp(60px,8vw,108px) 0 clamp(44px,6vw,76px);margin-top:48px}
+.part-head .kicker{color:inherit}
+.part-title{font:400 clamp(62px,10vw,160px)/.86 var(--display);text-transform:uppercase;margin:16px 0 20px;letter-spacing:.004em;max-width:12ch}
+.part-promise{font-size:22px;line-height:1.45;max-width:38ch;margin:0 0 34px}
+.stops{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:4px 28px}
+.stops li{margin:0}
+.stops a{display:flex;gap:12px;align-items:baseline;text-decoration:none;color:inherit;font-weight:800;padding:9px 0;border-bottom:2px solid color-mix(in srgb,currentColor 22%,transparent)}
+.stops a:hover{color:inherit;border-bottom-color:currentColor}
+.stops a span{font:700 14px var(--mono);min-width:36px}
+.stops a em{font:500 14px var(--mono);font-style:normal;margin-left:auto;opacity:.85;white-space:nowrap}
+.mod{padding:clamp(60px,7vw,100px) 0 8px;scroll-margin-top:16px}
+.mod-meta{display:flex;gap:14px;align-items:center;font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
+.mod-meta .t{color:var(--graphite);font-weight:500}
+.mod-title{font:400 clamp(44px,5.8vw,76px)/.9 var(--display);text-transform:uppercase;margin:12px 0 18px;max-width:17ch;letter-spacing:.004em}
+.mod-why{font-size:20px;line-height:1.5;color:var(--ink-2);max-width:60ch;margin:0 0 30px}
+.mod > p,.mod > ul{max-width:74ch}
+h3{font:800 23px/1.25 var(--sans);margin:40px 0 12px}
+h4{font:800 18px/1.3 var(--sans);margin:22px 0 8px}
+.specs{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px;margin:22px 0}
+.spec{background:var(--paper);border-radius:var(--radius);padding:22px 22px 20px;display:flex;flex-direction:column}
+.spec-name{font:800 21px/1.2 var(--sans);margin:0 0 8px}
+.spec-name small{font:600 14px var(--mono);color:var(--graphite);margin-left:6px;letter-spacing:.02em}
+.spec-def{margin:0 0 12px}
+.spec ul{padding-left:18px}
+.spec dl{margin:0;display:grid;gap:10px}
+.spec dt,.plate dt{font:700 14px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+.spec dd,.plate dd{margin:2px 0 0;font-size:16px;line-height:1.5}
+.room{background:var(--ink);color:#F4F1EA;border-radius:12px;padding:12px 16px 14px;margin:16px 0 0;font:600 17px/1.45 var(--sans)}
+.room::before{content:"Say it in the room";display:block;font:700 14px/1.7 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mars)}
+.mod > .room{max-width:74ch}
+.mtrx{background:var(--jane);border-radius:var(--radius);padding:20px 22px;margin:24px 0}
+.mtrx::before{content:"In your world";display:block;font:700 14px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.mtrx p:last-child,.mtrx ul:last-child{margin-bottom:0}
+.warn{background:var(--red-soft);border-radius:var(--radius);padding:18px 22px;margin:22px 0}
+.warn::before{content:"Watch out";display:block;font:700 14px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:4px}
+.warn p:last-child,.warn ul:last-child{margin-bottom:0}
+.big-line{font:400 clamp(34px,4.4vw,56px)/1 var(--display);text-transform:uppercase;margin:34px 0;max-width:22ch}
+.big-line .o{color:var(--accent-ink)}
+.plate{display:grid;grid-template-columns:minmax(240px,.95fr) 1.15fr;gap:clamp(20px,3.4vw,44px);background:var(--paper);border-radius:22px;padding:clamp(18px,3vw,32px);margin:30px 0;align-items:start;scroll-margin-top:16px}
+.plate-img{background:#FCFBF7;border-radius:14px;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;padding:20px;position:sticky;top:20px}
+.plate-img img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.js .plate-img img{filter:sepia(.7) blur(6px) contrast(.85);opacity:.3;transition:filter 1.5s ease,opacity 1.5s ease}
+.js .plate.is-in .plate-img img{filter:none;opacity:1}
+.plate-no{font:700 14px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+.plate-name{font:400 clamp(52px,6.4vw,86px)/.88 var(--display);text-transform:uppercase;margin:10px 0 6px}
+.plate-sub{font:500 15px/1.5 var(--mono);color:var(--graphite);margin:0 0 18px}
+.marks{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:10px}
+.marks li{display:grid;grid-template-columns:148px 1fr;gap:14px;align-items:baseline;margin:0}
+.marks li b{font:700 14px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.plate dl{display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin:0}
+.fig{margin:28px 0;background:var(--paper);border-radius:20px;padding:clamp(16px,3vw,30px)}
+.fig .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.fig svg{display:block;width:100%;height:auto;min-width:660px}
+.fig figcaption{font-size:16px;line-height:1.5;color:var(--graphite);margin-top:14px;max-width:72ch}
+.fig figcaption b{color:var(--ink)}
+.s-box{fill:var(--paper);stroke:var(--ink);stroke-width:1.6}
+.s-card{fill:#FCFBF7;stroke:var(--ink);stroke-width:1.6}
+.s-box-a{fill:var(--accent-soft);stroke:var(--ink);stroke-width:1.6}
+.s-box-j{fill:var(--jane);stroke:var(--ink);stroke-width:1.6}
+.s-line{fill:none;stroke:var(--ink);stroke-width:1.6}
+.s-line-m{fill:none;stroke:var(--mars);stroke-width:2.6}
+.s-dash{stroke-dasharray:4 7}
+.s-t{font:700 15px var(--mono);fill:var(--ink)}
+.s-t-sm{font:500 14px var(--mono);fill:var(--graphite)}
+.s-t-b{font:800 19px var(--sans);fill:var(--ink)}
+.s-t-s{font:600 16px var(--sans);fill:var(--ink)}
+.s-t-d{font:400 34px var(--display);fill:var(--ink)}
+.s-on{fill:var(--paper)}
+.s-ta{fill:var(--accent-ink)}
+[data-steps].is-on{fill:var(--mars-soft)}
+.march{stroke-dasharray:3 9;animation:march 22s linear infinite}
+@keyframes march{to{stroke-dashoffset:-480}}
+.check{background:var(--paper);border-radius:var(--radius);padding:22px;margin:28px 0;box-shadow:inset 0 0 0 2px var(--accent-soft);max-width:860px}
+.check-k{font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}
+.check-q{font:800 19px/1.4 var(--sans);margin:0 0 14px}
+.opts{display:grid;gap:8px}
+.opt{display:block;width:100%;text-align:left;background:var(--canvas);border:2px solid transparent;border-radius:12px;padding:12px 14px;font-size:16px;line-height:1.45;transition:background .2s,border-color .2s}
+.opt:hover{border-color:var(--steel)}
+.opt.is-right{background:var(--moss-soft);border-color:var(--moss)}
+.opt.is-wrong{background:var(--red-soft);border-color:var(--red)}
+.opt[disabled]{cursor:default}
+.why{margin:14px 0 0;font-size:16px;display:none}
+.is-answered .why{display:block}
+details.deeper{border-radius:var(--radius);margin:20px 0;box-shadow:inset 0 0 0 2px var(--rule);max-width:860px}
+details.deeper summary{cursor:pointer;list-style:none;padding:15px 18px;font:800 17px var(--sans);display:flex;justify-content:space-between;gap:12px;align-items:center}
+details.deeper summary::-webkit-details-marker{display:none}
+details.deeper summary::after{content:"+";font:700 22px/1 var(--mono);color:var(--accent-ink)}
+details.deeper[open] summary::after{content:"\2212"}
+details.deeper .in{padding:0 18px 18px}
+.vids-h{font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--graphite);margin:36px 0 12px}
+.vids{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:14px}
+.vid{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);border-radius:14px;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
+.vid:hover{transform:translateY(-2px);box-shadow:0 10px 24px -12px rgba(0,0,0,.25);color:var(--ink)}
+.vid-th{position:relative;aspect-ratio:16/9;background:var(--gun);overflow:hidden}
+.vid-th img{position:relative;width:100%;height:100%;object-fit:cover}
+.vid-th .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:700 14px var(--mono);color:#DCE2E4;letter-spacing:.08em;text-transform:uppercase;padding:0 54px;text-align:center}
+.vid-th .play{position:absolute;left:12px;bottom:12px;width:38px;height:38px;border-radius:50%;background:var(--mars);display:flex;align-items:center;justify-content:center}
+.vid-th .play::after{content:"";border-left:12px solid var(--ink);border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
+.vid-th .dur{position:absolute;right:10px;bottom:10px;font:700 14px var(--mono);background:rgba(21,21,21,.86);color:#fff;padding:2px 7px;border-radius:6px}
+.vid-b{padding:12px 14px 15px;display:flex;flex-direction:column;gap:5px}
+.vid-t{font:800 16px/1.3 var(--sans)}
+.vid-m{font:500 14px var(--mono);color:var(--graphite)}
+.vid-m .s{color:var(--moss-ink);font-weight:700}
+.vid-w{font-size:16px;line-height:1.45;color:var(--ink-2)}
+.reads{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px;margin-top:12px}
+.read-card{display:block;text-decoration:none;background:var(--paper);border-radius:14px;padding:14px 16px;color:var(--ink)}
+.read-card b{display:block;font:800 16px/1.3 var(--sans)}
+.read-card span{display:block;font:500 14px var(--mono);color:var(--graphite);margin:3px 0 4px}
+.read-card em{font-style:normal;font-size:16px;line-height:1.45}
+.stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin:24px 0}
+.stat{background:var(--paper);border-radius:var(--radius);padding:18px 20px}
+.stat b{display:block;font:400 56px/1 var(--display);color:var(--accent-ink);margin-bottom:8px}
+.stat span{display:block;font-size:16px;line-height:1.45}
+.stat small{display:block;font:500 14px/1.4 var(--mono);color:var(--graphite);margin-top:8px}
+.tbl-wrap{overflow-x:auto;margin:22px 0;border-radius:var(--radius)}
+.tbl{width:100%;min-width:620px;border-collapse:collapse;background:var(--paper);font-size:16px}
+.tbl th{font:700 14px var(--mono);letter-spacing:.08em;text-transform:uppercase;text-align:left;padding:12px 14px;background:var(--accent-soft);color:var(--ink)}
+.tbl td{padding:12px 14px;border-top:1px solid var(--rule);vertical-align:top;line-height:1.5}
+.tbl td:first-child{font-weight:800}
+.btn{display:inline-flex;align-items:center;gap:10px;border:0;border-radius:999px;background:var(--ink);color:var(--paper);font:800 16px var(--sans);padding:13px 22px;text-decoration:none;transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px);color:var(--paper)}
+.btn-a{background:var(--mars);color:var(--ink)} .btn-a:hover{color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)} .btn-ghost:hover{color:var(--ink)}
+.done{margin:34px 0 0;display:inline-flex;align-items:center;gap:10px;background:transparent;border:0;box-shadow:inset 0 0 0 2px var(--ink);border-radius:999px;padding:11px 20px 11px 14px;font:800 16px var(--sans)}
+.done::before{content:"";width:18px;height:18px;border-radius:50%;box-shadow:inset 0 0 0 2px var(--ink);flex:none}
+.done.is-done{background:var(--ink);color:var(--paper)}
+.done.is-done::before{background:var(--mars);box-shadow:none}
+.widget{background:var(--paper);border-radius:20px;padding:clamp(18px,3vw,30px);margin:28px 0}
+.widget-k{font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:6px}
+.widget h4{margin:0 0 6px;font-size:22px}
+.widget > p{max-width:64ch}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,3vw,36px);margin-top:16px}
+.field{margin:0 0 16px}
+.field label{display:flex;justify-content:space-between;gap:10px;font:700 16px var(--sans);margin-bottom:6px}
+.field output{font:700 15px var(--mono);color:var(--accent-ink);white-space:nowrap}
+input[type=range]{width:100%;accent-color:var(--accent);height:28px}
+input[type=number],input[type=search],input[type=text]{width:100%;font:600 16px var(--sans);padding:11px 14px;border-radius:10px;border:2px solid var(--steel);background:var(--canvas);color:var(--ink)}
+.outs{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:start}
+.out{background:var(--canvas);border-radius:14px;padding:14px 16px}
+.out b{display:block;font:400 40px/1 var(--display);margin-bottom:6px}
+.out span{font:600 14px/1.3 var(--mono);color:var(--graphite);text-transform:uppercase;letter-spacing:.06em}
+.verdict{grid-column:1/-1;font-size:17px;line-height:1.5;background:var(--ink);color:var(--paper);border-radius:14px;padding:14px 16px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(176px,1fr));gap:10px;margin:18px 0 12px}
+.tile{background:var(--paper);border:2px solid transparent;border-radius:14px;padding:14px;text-align:left;transition:border-color .2s,background .2s}
+.tile:hover{border-color:var(--steel)}
+.tile b{display:block;font:800 17px/1.25 var(--sans)}
+.tile span{display:block;font-size:15px;line-height:1.4;color:var(--graphite);margin-top:3px}
+.tile[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.panel{background:var(--paper);border-radius:20px;padding:clamp(18px,3vw,28px);margin:0 0 22px}
+.panel h4{margin-top:0;font-size:24px}
+.math{font:600 16px/1.6 var(--mono);background:var(--canvas);border-radius:12px;padding:12px 14px;margin:12px 0}
+.ex{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:10px 0}
+.ex div{background:var(--canvas);border-radius:12px;padding:10px 12px;font-size:16px}
+.ex b{display:block}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.chip{border:0;border-radius:999px;background:var(--canvas);padding:9px 15px;font:700 14px var(--mono);letter-spacing:.04em}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.step-text{min-height:120px;margin-top:6px}
+.step-text h4{margin:6px 0}
+.sentence{font:400 clamp(30px,3.6vw,46px)/1.1 var(--display);text-transform:uppercase;margin:6px 0 18px}
+.sentence .blank{display:inline-block;min-width:4.5ch;border-bottom:5px solid var(--mars);color:var(--mars-ink);text-align:center;padding:0 6px}
+.toks{display:grid;gap:8px;margin:14px 0}
+.tok{display:grid;grid-template-columns:130px 1fr 66px;gap:12px;align-items:center;font:700 16px var(--sans)}
+.tok .bar{height:22px;background:var(--canvas);border-radius:6px;overflow:hidden}
+.tok .bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .35s ease}
+.tok .pct{font:700 14px var(--mono);text-align:right}
+.tok.is-picked .bar i{background:var(--mars)}
+.tok.is-picked{color:var(--mars-ink)}
+.decoder{font:700 20px/2 var(--sans);margin:10px 0}
+.decoder button{border:0;background:var(--accent-soft);border-radius:8px;padding:1px 9px;font:inherit;line-height:1.5}
+.decoder button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.decoder-out{margin-top:12px;background:var(--ink);color:var(--paper);border-radius:14px;padding:16px 18px;min-height:96px;font-size:17px}
+.decoder-out b{color:var(--mars)}
+.flips{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px;margin:20px 0}
+.flip{min-height:138px;border:0;border-radius:14px;background:var(--paper);padding:16px;text-align:left;display:flex;flex-direction:column;justify-content:space-between;gap:10px;transition:background .25s,color .25s}
+.flip .f{font:800 19px/1.25 var(--sans)}
+.flip .b{display:none;font-size:16px;line-height:1.45}
+.flip small{font:700 14px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--graphite)}
+.flip.is-flipped{background:var(--ink);color:var(--paper)}
+.flip.is-flipped .f{display:none}
+.flip.is-flipped .b{display:block}
+.flip.is-flipped small{color:var(--mars)}
+.sim{background:var(--ink);color:var(--paper);border-radius:26px;padding:clamp(22px,4vw,44px);margin:26px 0}
+.sim .kicker{color:var(--mars)}
+.sim-scene{font:500 15px/1.5 var(--mono);color:#CFCBC1;margin:12px 0 8px}
+.sim-q{font:400 clamp(28px,3.4vw,44px)/1.04 var(--display);text-transform:uppercase;margin:0 0 22px;max-width:28ch}
+.sim .opt{background:#242424;color:var(--paper)}
+.sim .opt:hover{border-color:#5a5a5a}
+.sim .opt.is-right{background:#3b4322;border-color:#9AA35A}
+.sim .opt.is-wrong{background:#4b2622;border-color:#C7695E}
+.sim-fb{margin:16px 0 0;font-size:17px;line-height:1.5;display:none}
+.sim.is-answered .sim-fb{display:block}
+.sim-fb b{color:var(--mars)}
+.sim-foot{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:22px;flex-wrap:wrap}
+.sim-bar{display:flex;gap:5px;flex:1;min-width:200px}
+.sim-bar i{flex:1;height:7px;border-radius:4px;background:#3a3a3a}
+.sim-bar i.r{background:#9AA35A}.sim-bar i.w{background:#C7695E}.sim-bar i.c{background:var(--mars)}
+.sim .btn{background:var(--mars);color:var(--ink)}
+.sim-end .score{font:400 clamp(96px,14vw,180px)/.85 var(--display);color:var(--mars)}
+.sim-end h4{font:400 40px/1 var(--display);text-transform:uppercase;margin:10px 0}
+.gloss-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.gloss-tools input{max-width:360px}
+.gloss{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.g{background:var(--paper);border-radius:12px;padding:14px 16px}
+.g b{font:800 17px var(--sans)}
+.g em{font:700 14px var(--mono);font-style:normal;color:var(--graphite);margin-left:8px;text-transform:uppercase;letter-spacing:.06em}
+.g p{margin:4px 0 0;font-size:16px;line-height:1.45}
+.count{font:600 14px var(--mono);color:var(--graphite)}
+.fitlist{display:grid;gap:10px;margin:18px 0}
+.fit{display:grid;grid-template-columns:minmax(180px,260px) 1fr 54px;gap:16px;align-items:center;background:var(--paper);border-radius:14px;padding:14px 16px}
+.fit b{font:800 17px/1.25 var(--sans)}
+.fit small{display:block;font:500 14px var(--mono);color:var(--graphite)}
+.fit .bar{height:10px;background:var(--canvas);border-radius:5px;overflow:hidden}
+.fit .bar i{display:block;height:100%;background:var(--accent)}
+.fit .n{font:400 30px/1 var(--display);text-align:right}
+.fit p{grid-column:1/-1;margin:2px 0 0;font-size:16px}
+.xlist{columns:2;column-gap:30px;padding:0;list-style:none;margin:0}
+.xlist li{break-inside:avoid;padding-left:24px;position:relative}
+.xlist li::before{content:"\00D7";position:absolute;left:2px;top:-1px;font:800 18px var(--sans);color:var(--red)}
+.oklist{padding:0;list-style:none;margin:0}
+.oklist li{padding-left:26px;position:relative}
+.oklist li::before{content:"";position:absolute;left:2px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--moss)}
+.colophon{background:var(--ink);color:#DAD6CC;padding:64px 0 90px;margin-top:80px;font-size:16px}
+.colophon h2{font:400 clamp(44px,6vw,80px)/.9 var(--display);text-transform:uppercase;color:var(--paper);margin:0 0 18px}
+.colophon a{color:var(--paper)}
+.colophon .kicker{color:var(--mars)}
+@media (max-width:1000px){.cover{grid-template-columns:1fr;min-height:auto;padding-top:56px}.cube{max-width:560px}}
+@media (max-width:900px){
+  .site{padding-right:0} body{padding-bottom:50px}
+  .thumbs{top:auto;bottom:0;left:0;right:0;transform:none;flex-direction:row;gap:0}
+  .thumb{flex:1;width:auto;height:50px;border-radius:0;box-shadow:none}
+  .thumb.is-active{width:auto;box-shadow:inset 0 -4px 0 rgba(0,0,0,.25)}
+  .thumb .lbl{writing-mode:horizontal-tb;transform:none;letter-spacing:.06em}
+  .thumb .full{display:none}.thumb .short{display:inline}
+  .thumb i{width:calc(var(--p,0) * 1%);height:4px;top:0;bottom:auto}
+}
+@media (max-width:760px){
+  .grid2,.calc,.outs{grid-template-columns:1fr}
+  .plate{grid-template-columns:1fr}.plate-img{position:static}.plate dl{grid-template-columns:1fr}
+  .marks li{grid-template-columns:1fr;gap:2px}
+  .fit{grid-template-columns:1fr 54px}.fit .bar{grid-column:1/-1;order:3}
+  .xlist{columns:1}
+  .tok{grid-template-columns:96px 1fr 58px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .plate-img img{filter:none;opacity:1}
+}
+
+/* ---------- additions for Parts II, III and the field test ---------- */
+[data-part="4"]{--accent:var(--ink);--accent-ink:var(--ink);--accent-soft:var(--jane);--on-accent:var(--paper)}
+.fig svg{min-width:820px}
+.widget .fig{margin:12px 0}
+.url-a{opacity:.22;transition:opacity .3s,stroke .3s}
+.url-a.is-on{opacity:1;stroke:var(--mars);stroke-width:3}
+.url-ret{opacity:.14;transition:opacity .4s}
+.url-ret.is-on{opacity:1}
+[data-steps]{transition:fill .3s}
+.outs.three{grid-template-columns:repeat(3,1fr);margin-top:8px}
+.plate.wide{grid-template-columns:1fr}
+.plate.wide .plate-img{aspect-ratio:auto;height:clamp(200px,30vw,340px);position:static}
+.lg:hover circle,.lg:focus circle{stroke-width:3.5}
+.lg:focus{outline:none}
+#lang-map{background:var(--canvas);border-radius:16px;padding:12px;margin:12px 0}
+.grid2 > .spec ul{margin-bottom:0}
+.grid2 > .spec li{margin-bottom:12px}
+.sim .opts{max-width:900px}
+.sim .opt{font-size:17px}
+.sim-end p{font-size:18px;max-width:52ch}
+.chip .muted{font-weight:500;margin-left:4px}
+.chip[aria-pressed="true"] .muted{color:var(--steel)}
+#lib{margin-top:6px}
+.tbl td:nth-child(2){min-width:220px}
+@media (max-width:760px){
+  .outs.three{grid-template-columns:1fr}
+  .fig svg{min-width:720px}
+  .sentence{font-size:30px}
+}
+.wrap.cover{padding-left:clamp(20px,4vw,48px);padding-right:clamp(20px,4vw,48px)}
+.js .plate-img img{transition-duration:1.1s}
+
+/* Part IV */
+.thumb[data-t="5"]{--c:var(--red);--fg:var(--paper)}
+[data-part="5"]{--accent:var(--red);--accent-ink:var(--red);--accent-soft:var(--red-soft);--on-accent:var(--paper)}
+.tryit{margin:22px 0;padding:16px 18px;border-radius:16px;background:var(--paper);box-shadow:inset 6px 0 0 var(--accent),inset 0 0 0 1.5px var(--rule)}
+.tryit-k{font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:6px}
+.tryit p{margin:0}
+@media (min-width:901px){.thumbs .thumb{height:96px}}
+
+.cover-plate{text-align:center}
+.cover-plate img{width:100%;max-width:520px;border-radius:22px;display:block;margin:0 auto}
+[data-theme="dark"] .cover-plate img{box-shadow:0 0 0 1px rgba(236,234,228,.15)}
+.grade{display:inline-block;font:700 12px/1.2 var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:999px;white-space:nowrap}
+.g-s{background:var(--moss-soft);color:var(--moss-ink)}
+.g-m{background:var(--jane);color:var(--ink)}
+.g-h{background:var(--canvas);color:var(--graphite);box-shadow:inset 0 0 0 1.5px var(--rule)}
+.tbl td .grade{margin:0}
+.lens-in,.wk-in{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.lens-in input,.wk-in input,.wk-in select{flex:1 1 220px;min-width:0;border:0;border-radius:12px;background:var(--canvas);color:var(--ink);font:600 16px var(--sans);padding:12px 14px;box-shadow:inset 0 0 0 1.5px var(--rule)}
+.wk-in select{flex:1 1 260px}
+.lens-out{margin:10px 0 0;padding-left:22px;columns:2;column-gap:28px}
+.lens-out li{break-inside:avoid;margin:0 0 10px;font-size:16px;line-height:1.45}
+.lens-out li b{display:block;font:700 13px var(--mono);letter-spacing:.1em;color:var(--accent-ink)}
+.lens-act{display:flex;gap:8px;margin-top:8px}
+.wk-bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:6px 0 10px}
+.wk-bar span{font:600 14px var(--mono);color:var(--graphite);margin-right:auto}
+.wk-list{list-style:none;padding:0;margin:0}
+.wk-list li{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:12px 14px;border-radius:14px;background:var(--canvas);margin-bottom:8px}
+.wk-list li.is-due{box-shadow:inset 5px 0 0 var(--mars)}
+.wk-list li b{display:block;font:800 17px var(--sans)}
+.wk-list li span{display:block;font-size:15px;color:var(--ink-2)}
+.wk-list li small{display:block;font:500 13px var(--mono);color:var(--graphite);margin-top:3px}
+.wk-a{display:flex;gap:6px}
+.wk-help{font-size:14px;margin:10px 0 0}
+@media (max-width:700px){.lens-out{columns:1}}
+
+.thumb[data-t="6"]{--c:var(--graphite);--fg:var(--paper)}
+[data-part="6"]{--accent:var(--graphite);--accent-ink:var(--graphite);--accent-soft:#E4E5EA;--on-accent:var(--paper)}
+[data-theme="dark"] [data-part="6"] :is(.fig,.plate-img,.part-head,.room){--accent:#6E7180;--accent-ink:#55586A;--accent-soft:#E4E5EA;--on-accent:#F6F4EF}
+
+.lq{margin:22px 0;padding:20px 24px;background:var(--paper);border-radius:0 18px 18px 0;box-shadow:inset 6px 0 0 var(--accent)}
+.lq p{font:600 21px/1.5 var(--sans);margin:0 0 10px;color:var(--ink)}
+.lq cite{display:block;font:500 14px/1.5 var(--mono);color:var(--graphite);font-style:normal}
+.lq cite a{margin-left:6px}
+.life-meta{font:600 15px/1.5 var(--mono);color:var(--graphite);margin:0 0 6px}
+.theme-k{margin:64px 0 8px;padding:14px 18px;border-radius:14px;background:var(--accent-soft);display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline}
+.theme-k b{font:400 30px/1 var(--display);text-transform:uppercase}
+.theme-k span{font:600 14px var(--mono);color:var(--ink-2)}
+.drill{background:var(--paper);border-radius:18px;padding:18px 20px;margin:18px 0;box-shadow:inset 0 0 0 1.5px var(--rule)}
+.drill-h{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.drill-h b{font:800 21px/1.3 var(--sans)}
+.drill-m{font:500 14px/1.5 var(--mono);color:var(--graphite);margin:6px 0 8px}
+.drill ol{margin:8px 0 10px;padding-left:22px}.drill li{margin:0 0 6px;line-height:1.5}
+.drill-x,.drill-e{font-size:15px;line-height:1.5;margin:6px 0 0;color:var(--ink-2)}
+.st-pick{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:14px 0}
+.st-col{background:var(--canvas);border-radius:14px;padding:12px}
+.st-h{font:700 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}
+.st-i{display:flex;gap:10px;align-items:flex-start;padding:8px 6px;border-radius:10px;cursor:pointer}
+.st-i:hover{background:var(--paper)}
+.st-i input{margin-top:4px;width:18px;height:18px;accent-color:var(--mars)}
+.st-i b{display:block;font:700 15px/1.3 var(--sans)}.st-i small{font:500 13px var(--mono);color:var(--graphite);margin-right:6px}
+.st-card{background:var(--canvas);border-radius:16px;padding:16px 18px;margin-top:6px}
+.st-card h5{font:700 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;margin:14px 0 6px;color:var(--accent-ink)}
+.st-sum{font-weight:700;margin:0}.st-warn{background:var(--red-soft);color:var(--ink);border-radius:10px;padding:8px 12px;font-size:15px}
+.st-d ol{margin:4px 0 10px;padding-left:22px;font-size:15px}
+
+
+.scene{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:20px;background:var(--paper);border-radius:18px;padding:16px;margin:16px 0;align-items:start}
+.scene .vid{background:var(--canvas)}
+.scene-k{font:700 14px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink)}
+.scene-line{font:italic 700 19px/1.4 var(--sans);margin:8px 0}
+.scene-wh{font:700 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--graphite);margin-top:10px}
+.scene-w{margin:4px 0 10px;padding-left:20px}.scene-w li{margin:2px 0}
+.scene-b p{margin:6px 0}.scene-rc{font-size:15px;color:var(--ink-2)}.scene-n{font:500 13px/1.4 var(--mono);color:var(--graphite)}
+@media (max-width:760px){.scene{grid-template-columns:1fr}}
+.predict{background:var(--accent-soft);border-radius:16px;padding:14px 18px;margin:18px 0;max-width:860px}
+.predict-k,.writer-k{font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.predict p,.writer p{margin:0}
+.writer{border-left:5px solid var(--gun);background:var(--paper);border-radius:0 16px 16px 0;padding:14px 18px;margin:18px 0;max-width:860px}
+.writer-k{color:var(--gun)}
+details.sci{margin:20px 0;background:var(--paper);border-radius:16px;padding:12px 16px}
+details.sci summary{cursor:pointer;font:700 14px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+details.sci .tbl-wrap{margin-top:10px}
+.grow{transform-box:fill-box;transform-origin:left center;animation:mx-grow 1.2s ease-out both}
+@keyframes mx-grow{from{transform:scaleX(0)}}
+.draw{stroke-dasharray:1400;stroke-dashoffset:1400;animation:mx-draw 2.4s ease-out .2s forwards}
+@keyframes mx-draw{to{stroke-dashoffset:0}}
+.gaze{opacity:.15;animation:mx-gaze 3.2s ease-in-out infinite}
+@keyframes mx-gaze{0%,25%{opacity:.12}45%,80%{opacity:.95}100%{opacity:.12}}
+@media (prefers-reduced-motion:reduce){.grow,.draw,.gaze{animation:none!important;stroke-dashoffset:0;opacity:1}}
+.vid-q{font:italic 700 15px/1.4 var(--sans)}.vid-h{font-size:14px!important;color:var(--red)!important}
+.vids .vid-b{gap:7px}
+.cube6{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:520px;margin:0 auto}
+.cube6 a{position:relative;display:block;aspect-ratio:1/1;border-radius:12px;overflow:hidden;background:var(--gun)}
+.cube6 img{position:relative;width:100%;height:100%;object-fit:cover;filter:grayscale(.3) contrast(1.05)}
+.cube6 span.ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#DCE2E4;font:700 13px var(--mono);text-align:center;padding:6px}
+.cube6 b{position:absolute;left:6px;bottom:6px;font:700 12px var(--mono);background:rgba(21,21,21,.86);color:#fff;padding:2px 6px;border-radius:6px;letter-spacing:.04em}
+.pv-plate img{width:100%;max-width:820px;display:block;margin:0 auto;border-radius:12px}
+.cl-form{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 12px}
+.cl-form input{flex:1 1 200px;padding:10px 12px;border-radius:10px;border:1.5px solid var(--steel);font:16px var(--sans);background:#fff;color:var(--ink)}
+#cl-p{flex:0 0 84px}
+.cl-row{display:flex;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.cl-row span{flex:1 1 240px}.cl-row button{padding:6px 10px;border-radius:8px;border:1.5px solid var(--steel);background:var(--canvas)}
+.cl-sum{font:700 14px var(--mono);margin:10px 0}
+.js .nojs-only{display:none}
+</style><script>try{if(localStorage.getItem("mtrx-theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script><style id="mtrx-kit-css">/* ===== MTRX reader kit: notes, highlighter, dark mode, search (add-on, safe to remove) ===== */
+[data-theme="dark"]{--canvas:#121315;--paper:#1C1E22;--paper-2:#2A2C31;--ink:#ECEAE4;--ink-2:#D6D3CB;--graphite:#A9ACB9;--steel:#4A4D57;--rule:rgba(236,234,228,.13);--mars-ink:#F08A4B;--mars-soft:#3E2416;--moss-ink:#B5BE74;--moss-soft:#272B1B;--gun:#8FA6B2;--gun-soft:#222C31;--jane:#3A3221;--red:#E0897E;--red-soft:#3A2220;color-scheme:dark}
+[data-theme="dark"] :is(.fig,#lang-map,.plate-img,.sp,.cube,.thumbs,.part-head,.room,.sim,.colophon,.watch,.vid-th,.verbs){--canvas:#ECEAE4;--paper:#F6F4EF;--paper-2:#E5E2D9;--ink:#151515;--ink-2:#2B2B2B;--graphite:#55586A;--steel:#BCBFCC;--rule:rgba(21,21,21,.11);--mars-ink:#B3460D;--mars-soft:#F7D9C6;--moss-ink:#525923;--moss-soft:#E0E3CB;--gun:#2F3E46;--gun-soft:#D7DDE0;--jane:#F4E3B2;--red:#A44A3F;--red-soft:#F1DCD8;--accent:var(--mars);--accent-ink:var(--mars-ink);--accent-soft:var(--mars-soft);--on-accent:var(--ink)}
+[data-theme="dark"] [data-part="2"] :is(.fig,#lang-map,.plate-img,.part-head,.room,.watch),[data-theme="dark"] .part-head[data-part="2"]{--accent:var(--gun);--accent-ink:var(--gun);--accent-soft:var(--gun-soft);--on-accent:var(--paper)}
+[data-theme="dark"] [data-part="3"] :is(.fig,#lang-map,.plate-img,.part-head,.room,.watch){--accent:var(--moss);--accent-ink:var(--moss-ink);--accent-soft:var(--moss-soft);--on-accent:var(--paper)}
+[data-theme="dark"] [data-part="4"] :is(.fig,.plate-img,.part-head,.room){--accent:var(--ink);--accent-ink:var(--ink);--accent-soft:var(--jane);--on-accent:var(--paper)}
+[data-theme="dark"] [data-part="5"] :is(.fig,#lang-map,.plate-img,.part-head,.room){--accent:#A44A3F;--accent-ink:#A44A3F;--accent-soft:#F1DCD8;--on-accent:#F6F4EF}
+[data-theme="dark"] .fig{background:#F6F4EF}
+[data-theme="dark"] .btn-a{color:#151515}
+[data-theme="dark"] .plate-img img,[data-theme="dark"] .sp img{mix-blend-mode:multiply}
+[data-theme="dark"] .cover .btn-ghost{box-shadow:inset 0 0 0 2px var(--ink)}
+mark.nk-hl{background:#FFE58A;color:inherit;border-radius:3px;padding:0 1px;cursor:pointer;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+[data-theme="dark"] mark.nk-hl{background:rgba(237,180,29,.38)}
+[data-theme="dark"] :is(.fig,.sim,.room,.colophon) mark.nk-hl{background:#FFE58A}
+.nk-dock{position:fixed;left:16px;bottom:16px;display:flex;gap:8px;z-index:92}
+.nk-fab{height:46px;min-width:46px;border:0;border-radius:999px;background:var(--ink);color:var(--canvas);font:800 15px var(--sans);display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 16px;box-shadow:0 10px 24px -12px rgba(0,0,0,.5)}
+.nk-fab .ic{font-size:18px;line-height:1}
+.nk-fab[aria-pressed="true"]{background:var(--mars);color:#151515}
+.nk-fab .cnt{background:var(--mars);color:#151515;border-radius:999px;font:700 12px var(--mono);padding:2px 7px}
+.nk-pop{position:absolute;z-index:96;display:flex;gap:4px;background:#151515;border-radius:10px;padding:4px;box-shadow:0 10px 24px -10px rgba(0,0,0,.6)}
+.nk-pop button{border:0;border-radius:7px;background:transparent;color:#F6F4EF;font:700 14px var(--sans);padding:7px 11px;white-space:nowrap}
+.nk-pop button:hover{background:#2B2B2B}
+.nk-pop button.y{color:#FFE58A}
+.nk-panel{position:fixed;top:0;right:0;bottom:0;width:min(440px,100vw);background:var(--paper);color:var(--ink);z-index:97;display:flex;flex-direction:column;box-shadow:-20px 0 40px -20px rgba(0,0,0,.45);transform:translateX(105%);transition:transform .25s ease;visibility:hidden}
+.nk-panel.is-open{transform:none;visibility:visible}
+.nk-head{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-bottom:1px solid var(--rule)}
+.nk-head b{font:400 30px/1 var(--display);text-transform:uppercase}
+.nk-x{border:0;background:var(--canvas);border-radius:50%;width:38px;height:38px;font:700 20px var(--sans);color:var(--ink)}
+.nk-body{flex:1;overflow:auto;padding:14px 18px}
+.nk-k{font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--graphite);margin:10px 0 8px;display:flex;justify-content:space-between;align-items:center}
+.nk-hls{list-style:none;padding:0;margin:0 0 10px;display:grid;gap:8px}
+.nk-hls li{background:var(--canvas);border-radius:10px;padding:9px 11px;font-size:15px;line-height:1.4;border-left:4px solid #E8C547;margin:0}
+.nk-hls li small{display:flex;justify-content:space-between;gap:8px;font:600 12px var(--mono);color:var(--graphite);margin-bottom:4px}
+.nk-hls li small span{display:flex;gap:10px}
+.nk-hls li a,.nk-hls li button{font:700 12px var(--mono);color:var(--accent-ink,#B3460D);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.nk-empty{font-size:15px;color:var(--graphite);margin:0 0 10px}
+.nk-mini{border:0;border-radius:999px;background:var(--canvas);color:var(--ink);font:700 13px var(--mono);padding:7px 12px;margin-bottom:8px}
+#nk-text{width:100%;min-height:260px;font:500 16px/1.55 var(--sans);padding:12px 14px;border-radius:12px;border:2px solid var(--steel);background:var(--canvas);color:var(--ink);resize:vertical}
+.nk-saved{font:600 12px var(--mono);color:var(--graphite);margin-top:6px}
+.nk-foot{display:flex;gap:8px;flex-wrap:wrap;padding:12px 18px 16px;border-top:1px solid var(--rule)}
+.nk-foot button{border:0;border-radius:999px;background:var(--ink);color:var(--canvas);font:800 14px var(--sans);padding:10px 14px}
+.nk-foot button.nk-danger{background:transparent;color:var(--red);box-shadow:inset 0 0 0 2px var(--red);margin-left:auto}
+.nk-tip{font-size:14px;color:var(--graphite);margin:4px 0 0}
+@media (max-width:900px){.nk-dock{bottom:62px;left:10px}.nk-fab span.t{display:none}}
+@media print{.nk-dock,.nk-panel,.nk-pop{display:none!important}}
+
+.nk-find{position:fixed;z-index:98;top:14px;left:50%;transform:translateX(-50%);width:min(680px,calc(100vw - 20px));max-height:min(74vh,720px);display:flex;flex-direction:column;background:var(--paper);color:var(--ink);border-radius:18px;box-shadow:0 30px 60px -20px rgba(0,0,0,.55),0 0 0 2px var(--ink)}
+.nk-find[hidden]{display:none}
+.nk-fbox{display:flex;align-items:center;gap:10px;padding:12px 12px 10px 16px;border-bottom:1px solid var(--rule)}
+.nk-fbox .ic{font-size:22px;line-height:1;color:var(--graphite)}
+#nk-q{flex:1;min-width:0;border:0;background:transparent;color:var(--ink);font:700 19px var(--sans);padding:8px 0;outline:none}
+.nk-fmeta{font:600 12px var(--mono);letter-spacing:.06em;color:var(--graphite);padding:8px 16px}
+.nk-fres{list-style:none;margin:0;padding:0 8px 10px;overflow:auto}
+.nk-fres li{margin:0}
+.nk-fres button{display:block;width:100%;text-align:left;border:0;background:transparent;color:var(--ink);border-radius:12px;padding:9px 10px;font:500 15px/1.4 var(--sans);cursor:pointer}
+.nk-fres button:hover,.nk-fres button:focus{background:var(--canvas);outline:none}
+.nk-fres small{display:block;font:700 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink,#B3460D);margin-bottom:2px}
+.nk-fres mark{background:#FFE58A;color:#151515;border-radius:3px;padding:0 1px}
+::highlight(nk-find){background-color:#ED691D;color:#151515}
+.nk-flash{outline:3px solid #ED691D;outline-offset:4px;border-radius:6px;transition:outline-color .6s}
+@media print{.nk-find{display:none!important}}
+</style><!-- mtrx:p2css --><style id="mtrx-p2-css">/* ===== No. 06 Part II, The Spotlight Files (source: build/06/p2.css) ===== */
+.p2-intro{padding:clamp(40px,5vw,64px) 0 0}
+.anatomy{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 8px;padding:0;list-style:none;counter-reset:an}
+.anatomy li{counter-increment:an;background:var(--paper);border-radius:999px;padding:8px 14px 8px 8px;font:700 14px var(--mono);letter-spacing:.03em}
+.anatomy li::before{content:counter(an);display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:12px;margin-right:8px}
+.files{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:12px;margin:22px 0}
+.file{display:block;text-decoration:none;color:var(--ink);background:var(--paper);border-radius:16px;padding:18px 16px 14px;box-shadow:inset 0 6px 0 var(--fc,var(--steel))}
+.file:hover{color:var(--ink)}
+.file span{display:block;font:700 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--graphite)}
+.file b{display:block;font:400 28px/1 var(--display);text-transform:uppercase;margin:8px 0}
+.file em{display:block;font-style:normal;font-size:15px;line-height:1.45;color:var(--ink-2)}
+.file.is-now{box-shadow:inset 0 6px 0 var(--mars),inset 0 0 0 2px var(--ink)}
+.dossier{position:relative;display:grid;grid-template-columns:auto 1fr;margin:6px 0 26px;max-width:900px;background:var(--paper);border-radius:18px;overflow:hidden;box-shadow:inset 0 0 0 1.5px var(--rule)}
+.dos-tab{writing-mode:vertical-rl;transform:rotate(180deg);background:var(--ink);color:var(--paper);font:700 13px var(--mono);letter-spacing:.16em;text-transform:uppercase;padding:16px 10px;text-align:center}
+.dos-body{padding:18px 22px}
+.dos-k{font:700 13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--graphite)}
+.dos-name{font:400 clamp(34px,4.6vw,54px)/.95 var(--display);text-transform:uppercase;margin:6px 120px 4px 0}
+.dos-role{font:600 15px/1.45 var(--mono);color:var(--graphite);margin-bottom:12px}
+.dos-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px 22px;margin:0}
+.dos-facts dt{font:700 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--graphite)}
+.dos-facts dd{margin:2px 0 0;font:700 17px/1.4 var(--sans)}
+.stamp{display:inline-block;font:700 13px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:7px 10px 6px;border-radius:6px;border:2px solid currentColor;white-space:nowrap;background:var(--paper)}
+.dossier > .stamp{position:absolute;top:18px;right:18px;transform:rotate(-6deg)}
+.st-hold{color:#525923}.st-part{color:#8A6A12}.st-myth,.st-anti{color:#A44A3F}.st-field{color:#2F3E46}
+.reveal{margin-top:10px}
+.reveal summary{cursor:pointer;font:700 14px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.reveal p{margin:8px 0 0}
+.story{max-width:74ch}
+.story p:first-child::first-letter{float:left;font:400 64px/.8 var(--display);margin:6px 10px 0 0;color:var(--accent-ink)}
+.move{background:var(--ink);color:var(--paper);border-radius:18px;padding:20px 24px 18px;margin:26px 0;max-width:900px}
+.move-k{font:700 13px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--jane)}
+.move-line{font:400 clamp(34px,4.4vw,54px)/1 var(--display);text-transform:uppercase;margin:8px 0 14px}
+.move-steps{margin:0;padding-left:22px}
+.move-steps li{margin:6px 0;font-size:17px;line-height:1.5}
+.move-steps b{color:var(--jane)}
+.ttags{list-style:none;padding:0;margin:16px 0;display:grid;gap:10px;max-width:900px}
+.ttags li{display:grid;grid-template-columns:118px 1fr;gap:14px;align-items:start;background:var(--paper);border-radius:14px;padding:14px 16px}
+.ttags li .stamp{justify-self:start}
+.ttags p{margin:0}
+.ttags .src{display:block;margin-top:4px;font:500 13px var(--mono);color:var(--graphite)}
+.g-x{background:#F1DCD8;color:#A44A3F}
+#s4 .drill{background:var(--paper);border-radius:16px;padding:16px 18px;margin:22px 0;max-width:860px;box-shadow:inset 0 0 0 2px var(--accent-soft)}
+#s4 .drill-h{display:flex;justify-content:space-between;gap:12px;align-items:baseline;font:700 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--graphite)}
+#s4 .drill-h b{font:800 19px/1.3 var(--sans);letter-spacing:0;text-transform:none;color:var(--ink)}
+#s4 .drill ol{margin:8px 0;padding-left:22px}
+#s4 .drill-x{margin:6px 0 0;font-size:15px;color:var(--ink-2)}
+.p2fig .t{font:700 14px var(--mono);fill:#151515}
+.p2fig .ts{font:500 13px var(--mono);fill:#55586A}
+.p2fig .tb{font:800 17px var(--sans);fill:#151515}
+.p2fig .td{font:400 30px var(--display);fill:#151515}
+.p2fig .tw{fill:#F6F4EF}
+.p2fig .tm{fill:#B3460D}
+.p2fig .tr{fill:#A44A3F}
+.p2fig .bx{fill:#F6F4EF;stroke:#151515;stroke-width:2}
+.p2fig .bj{fill:#F4E3B2;stroke:#151515;stroke-width:2}
+.p2fig .bm{fill:#F7D9C6;stroke:#B3460D;stroke-width:2}
+.p2fig .bg{fill:#E5E2D9;stroke:none}
+.p2fig .bk{fill:#151515}
+.p2fig .bd{fill:none;stroke:#A44A3F;stroke-width:2;stroke-dasharray:6 6}
+.p2fig .ln{stroke:#151515;stroke-width:2;fill:none}
+.p2fig .lm{stroke:#ED691D;stroke-width:3;fill:none}
+.p2fig .lr{stroke:#A44A3F;stroke-width:2;fill:none;stroke-dasharray:6 6}
+.p2fig .rule{stroke:#BCBFCC;stroke-width:1.5}
+.p2fig .beam{fill:#F4E3B2;opacity:.75}
+.p2fig .mv{stroke-dasharray:9 9;animation:p2march 1.4s linear infinite}
+@keyframes p2march{to{stroke-dashoffset:-18}}
+@media (prefers-reduced-motion:reduce){.p2fig .mv{animation:none}}
+[data-theme="dark"] .move-k,[data-theme="dark"] .move-steps b{color:#8A6A12}
+[data-theme="dark"] .st-hold{color:#B5BE74}
+[data-theme="dark"] .st-part{color:#E8C66A}
+[data-theme="dark"] .st-myth,[data-theme="dark"] .st-anti{color:#E08A7E}
+[data-theme="dark"] .st-field{color:#8FA6B2}
+[data-theme="dark"] .g-x{background:#3A1E1A;color:#E08A7E}
+@media (max-width:700px){.ttags li{grid-template-columns:1fr}.dossier{grid-template-columns:1fr}.dos-tab{writing-mode:horizontal-tb;transform:none;padding:8px 14px;text-align:left}.dos-name{margin-right:0}.dossier > .stamp{position:static;transform:none;margin:0 22px 16px;justify-self:start}}
+.nextq{max-width:74ch;font-size:17px;color:var(--ink-2);margin:18px 0 0}
+.nextq b{color:var(--ink)}
+.rewatch{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:16px 0}
+.rewatch .vid-b{padding:8px 10px 10px}
+.rewatch .vid-t{font-size:14px}
+</style><!-- /mtrx:p2css --><style id="mtrx-p3-css">.qline{margin:6px 0 12px;font:800 21px/1.4 var(--sans);color:var(--ink)}
+.qline span{display:block;font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:4px}
+.conf{font:600 14px/1.5 var(--mono);color:var(--graphite);margin:6px 0 10px}
+.watch3{display:grid;grid-template-columns:minmax(260px,1fr) 1.2fr;gap:18px;align-items:start;margin:12px 0 18px}
+@media (max-width:760px){.watch3{grid-template-columns:1fr}}
+.distil{background:var(--paper);border-radius:var(--radius);padding:16px 20px;margin:22px 0;box-shadow:inset 0 0 0 1.5px var(--rule)}
+.distil-k,.deeper summary{font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}
+.distil ul,.deeper ul{margin:6px 0 0;padding-left:20px}.distil li,.deeper li{margin:0 0 8px;line-height:1.5}
+.distil li span,.deeper li span{display:block;font-size:15px;color:var(--ink-2)}
+.deeper{background:var(--canvas);border-radius:var(--radius);padding:14px 18px;margin:18px 0;box-shadow:inset 0 0 0 1.5px var(--rule)}
+.deeper summary{cursor:pointer;margin:0}
+.wr{border-left:6px solid var(--accent);padding-left:18px}
+.wr-drill{background:var(--paper);border-radius:12px;padding:10px 14px}
+.biz p{margin:0}
+.later{background:var(--paper);border-radius:var(--radius);padding:18px 22px;margin:22px 0}
+.qbank{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin:16px 0}
+.qb{background:var(--paper);border-radius:var(--radius);padding:14px 18px;box-shadow:inset 0 0 0 1.5px var(--rule)}
+.qb h4{font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin:0 0 8px}
+.qb ol{margin:0;padding-left:20px}.qb li{margin:0 0 7px;line-height:1.45}
+.qb li a{font:700 13px var(--mono);margin-left:6px;white-space:nowrap}
+.qb li.kev::marker{color:var(--mars)}.qb li.kev{font-weight:700}
+.road{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:16px 0}
+.road a{display:block;text-decoration:none;color:var(--ink);background:var(--paper);border-radius:var(--radius);padding:14px 16px;box-shadow:inset 0 0 0 1.5px var(--rule)}
+.road a b{display:block;font:400 26px/1.05 var(--display);text-transform:uppercase;margin:4px 0}
+.road a span{font:700 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink)}
+.road a em{display:block;font-style:normal;font-size:15px;color:var(--ink-2);margin-top:4px}
+.road a.now{box-shadow:inset 0 0 0 2.5px var(--mars)}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#151515"></path></marker><marker id="ahm" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ED691D"></path></marker></defs></svg><div class="scrollbar" aria-hidden="true"></div><nav class="thumbs" aria-label="Sections"><button class="thumb" type="button" data-t="0" aria-label="Start"><span class="lbl"><span class="full">Start</span><span class="short">00</span></span><i></i></button><button class="thumb" type="button" data-t="1" aria-label="Inside the cult"><span class="lbl"><span class="full">Inside</span><span class="short">I.1</span></span><i></i></button><button class="thumb" type="button" data-t="2" aria-label="The leader"><span class="lbl"><span class="full">Leader</span><span class="short">I.2</span></span><i></i></button><button class="thumb" type="button" data-t="3" aria-label="The world around the cult"><span class="lbl"><span class="full">World</span><span class="short">I.3</span></span><i></i></button><button class="thumb" type="button" data-t="4" aria-label="The big con"><span class="lbl"><span class="full">Big con</span><span class="short">II.1</span></span><i></i></button><button class="thumb" type="button" data-t="5" aria-label="Masks and crews"><span class="lbl"><span class="full">Masks</span><span class="short">II.2</span></span><i></i></button><button class="thumb" type="button" data-t="6" aria-label="Money fraud"><span class="lbl"><span class="full">Money</span><span class="short">II.3</span></span><i></i></button><button class="thumb" type="button" data-t="7" aria-label="Power and the reveal"><span class="lbl"><span class="full">Power</span><span class="short">III</span></span><i></i></button></nav><div class="site"><header class="wrap cover" id="top" data-sec="0"><div><div class="kicker">MTRX™ Field Series · No. 03 · October 2026</div><h1 class="cover-title">Cons and <span class="o">cults</span></h1><p class="cover-sub">Why intelligent people join cults, why the group cuts them off from family, why it works, and how a con is built beat by beat. Every stop starts from a real question, distils the best books on it, and ends in a writer's room.</p><ul class="verbs"><li>Ask</li><li>Explain</li><li>Write</li></ul><p class="prepared">Prepared for <b>Kevin Cecil</b>, founder, MTRX™ Digital, and future director<br>3 stops built of 49 planned · 7 files · 20 minutes a day · a writer's room in every stop<br>Sources checked 22 October 2026</p><a class="btn btn-a" href="#m0-1">Start here <span aria-hidden="true">↓</span></a></div><div class="cover-plate"><nav class="cube6" aria-label="Nine videos in this guide"><a href="#m1-1"><span class="ph">Why people join cults</span><img src="https://i.ytimg.com/vi/kB-dJaCXAxA/mqdefault.jpg" alt="Still from Why people join cults" loading="lazy" onerror="this.remove()"><b>1.1</b></a><a href="#m1-2"><span class="ph">What are cults</span><img src="https://i.ytimg.com/vi/psXook7FyVQ/mqdefault.jpg" alt="Still from What are cults" loading="lazy" onerror="this.remove()"><b>1.2</b></a><a href="#m1-3"><span class="ph">The secret language of cults</span><img src="https://i.ytimg.com/vi/c7wCbbmLtiI/mqdefault.jpg" alt="Still from The secret language of cults" loading="lazy" onerror="this.remove()"><b>1.3</b></a><a href="#m1-4"><span class="ph">How to spot a cult</span><img src="https://i.ytimg.com/vi/fa7uN2vo6rc/mqdefault.jpg" alt="Still from How to spot a cult" loading="lazy" onerror="this.remove()"><b>1.4</b></a><a href="#m1-5"><span class="ph">Social influence</span><img src="https://i.ytimg.com/vi/UGxGDdQnC1Y/mqdefault.jpg" alt="Still from Social influence" loading="lazy" onerror="this.remove()"><b>1.5</b></a><a href="#m1-6"><span class="ph">Social groups</span><img src="https://i.ytimg.com/vi/_wFZ5Dbj8DA/mqdefault.jpg" alt="Still from Social groups" loading="lazy" onerror="this.remove()"><b>1.6</b></a><a href="#m1-7"><span class="ph">Cults, explained</span><img src="https://i.ytimg.com/vi/6NWIfiV1_XQ/mqdefault.jpg" alt="Still from Cults, explained" loading="lazy" onerror="this.remove()"><b>1.7</b></a><a href="#s3"><span class="ph">The Master</span><img src="https://i.ytimg.com/vi/1WTM8eO1Oec/mqdefault.jpg" alt="Still from The Master" loading="lazy" onerror="this.remove()"><b>3.9</b></a><a href="#s4"><span class="ph">The Sting</span><img src="https://i.ytimg.com/vi/_nAIb_J9T5M/mqdefault.jpg" alt="Still from The Sting" loading="lazy" onerror="this.remove()"><b>4.4</b></a></nav><p class="cube-cap">Nine of the videos inside. Tap one to jump to its stop.</p></div></header><section class="part" id="s0" data-part="0" data-sec="0" data-title="Start here"><div class="wrap"><article class="mod" id="m0-1" data-mod="0.1"><div class="mod-meta">Stop 0.1 · Start <span class="t">6 min</span></div><h2 class="mod-title">Why this course exists</h2><p class="mod-why">You told me these subjects are your bread and butter for curiosity, and that work leaves little time for books. So this course does the reading for you: every stop starts from a real question, distils several of the best books and papers on it, and only then turns practical.</p><div class="mtrx"><p><b>Your why, in your words.</b> You want to be fed great knowledge first, with practical use second. You want the long, everything-important view that Crash Course gives, and you want it longer for the subjects about human behaviour. The questions you asked off the top of your head are the spine of File 1 and File 2. The rest came from the experts.</p></div><h3>Five rules</h3><div class="specs"><div class="spec"><div class="spec-name">1 · Questions lead</div><p class="spec-def">Each stop answers one real question. Yours are marked in orange on the question bank. New questions you ask become new stops.</p></div><div class="spec"><div class="spec-name">2 · One stop, many books</div><p class="spec-def">The deep answer distils 3 to 5 books, papers or long articles, named and linked. The stop replaces the reading; the books stay optional.</p></div><div class="spec"><div class="spec-name">3 · Myths get replaced</div><p class="spec-def">Popular claims carry truth tags: holds up, partly, or myth. When a myth dies, you get the stranger true story in its place.</p></div><div class="spec"><div class="spec-name">4 · Writer first, business second</div><p class="spec-def">About 60% of the practical layer is a writer's room (character, motive, the beat a scene plays). About 40% is business: red flags and the honest version for MTRX™.</p></div><div class="spec"><div class="spec-name">5 · Mechanisms, not scripts</div><p class="spec-def">You learn how cults and cons work, how people get caught in them and how they get out. Nothing here is a recruitment or fraud script, and the drills are fiction or self-reflection.</p></div></div><h3>A 20-minute day</h3><div class="tbl-wrap"><table class="tbl"><thead><tr><th>Step</th><th>Time</th><th>What you do</th></tr></thead><tbody><tr><td>Predict</td><td>2 min</td><td>Answer the cold open and rate how sure you are, 1 to 5</td></tr><tr><td>Watch</td><td>6 min</td><td>One video, with three "watch for" cues</td></tr><tr><td>Read</td><td>6 min</td><td>The deep answer, the diagram, the truth tags, the writer's room</td></tr><tr><td>Try it</td><td>5 min</td><td>A short writing or observation task</td></tr><tr><td>Check</td><td>1 min</td><td>Three quick checks, then mark the stop done and send progress to the bot</td></tr></tbody></table></div><p>Got more time? Every stop ends with an optional <b>Go deeper</b> box of about 15 minutes.</p><p class="room">Curiosity first: every stop answers a real question, and every answer has a source.</p><button class="done" data-mod="0.1">Mark stop 0.1 done</button></article><article class="mod" id="m0-2" data-mod="0.2"><div class="mod-meta">Stop 0.2 · Start <span class="t">8 min</span></div><h2 class="mod-title">The question bank and the map</h2><p class="mod-why">Here is everything this course answers. Your questions are in orange; the others are the ones a cult researcher, a fraud examiner or a sociologist would add. Each one links to the stop that answers it.</p><figure class="fig"><div class="scroll"><svg viewBox="0 0 1100 470" role="img" aria-label="The field map: cults, cons and power share one machinery"><rect x="20" y="20" width="330" height="150" rx="14" class="s-box-a"/><text class="s-t-d" x="185" y="62" text-anchor="middle">CULTS</text><text class="s-t-sm" x="185" y="96" text-anchor="middle">groups that capture a life</text><text class="s-t" x="185" y="124" text-anchor="middle">Files 1, 2, 3</text><rect x="385" y="20" width="330" height="150" rx="14" class="s-box-a"/><text class="s-t-d" x="550" y="62" text-anchor="middle">CONS</text><text class="s-t-sm" x="550" y="96" text-anchor="middle">stories that capture a decision</text><text class="s-t" x="550" y="124" text-anchor="middle">Files 4, 5, 6</text><rect x="750" y="20" width="330" height="150" rx="14" class="s-box-a"/><text class="s-t-d" x="915" y="62" text-anchor="middle">POWER</text><text class="s-t-sm" x="915" y="96" text-anchor="middle">levers that move people</text><text class="s-t" x="915" y="124" text-anchor="middle">File 7</text><path class="s-line" d="M185,172 L420,268" marker-end="url(#ah)"/><path class="s-line" d="M550,172 L550,266" marker-end="url(#ah)"/><path class="s-line" d="M915,172 L680,268" marker-end="url(#ah)"/><rect x="150" y="272" width="800" height="170" rx="14" class="s-box-j"/><text class="s-t" x="550" y="312" text-anchor="middle">THE SHARED MACHINERY</text><text class="s-t-sm" x="550" y="348" text-anchor="middle">trust that travels through friends · small yeses that grow</text><text class="s-t-sm" x="550" y="378" text-anchor="middle">cutting off rival information · a story that explains everything</text><text class="s-t-b" x="550" y="414" text-anchor="middle">and underneath it all: the target's own wants</text></svg></div><figcaption>The field map. Cults, cons and power plays look like three subjects, but they run on one machinery. That is why this course teaches them together.</figcaption></figure><h3>The question bank</h3><div class="qbank"><div class="qb"><h4>File 1 · The members</h4><ol><li class="kev">Why do really intelligent people fall for cults?<a href="#m1-1">1.1</a></li><li class="kev">What techniques do cults use?<a href="#m1-3">1.3</a></li><li class="kev">Why do cults separate people from friends and family?<a href="#m1-4">1.4</a></li><li class="kev">Why do cults work?<a href="#m1-5">1.5</a></li><li class="kev">What does belonging in a group do to us?<a href="#m1-6">1.6</a></li><li class="kev">Where does identity come into it?<a href="#m1-6">1.6</a></li><li>What is a cult, really, and why do scholars fight over the word?<a href="#m1-2">1.2</a></li><li>Can a person choose and be pressured at the same time?<a href="#m1-2">1.2</a></li><li>How do love bombing and loaded language work together?<a href="#m1-3">1.3</a></li><li>Why does "just send her the facts" usually fail?<a href="#m1-4">1.4</a></li><li>Why do failed prophecies sometimes deepen belief?<a href="#m1-5">1.5</a></li><li>Can the best years of your life also be abuse?<a href="#m1-6">1.6</a></li><li>What did Jonestown reveal, and what does it not prove?<a href="#m1-7">1.7</a></li></ol></div><div class="qb"><h4>File 2 · The leader</h4><ol><li class="kev">What motivates the leader?<a href="#s2">2.1</a></li><li class="kev">What is the leader's personality like?<a href="#s2">2.2</a></li><li class="kev">Where does the charisma come from?<a href="#s2">2.3</a></li><li class="kev">Why do we need leaders at all?<a href="#s2">2.4</a></li><li>Do leaders believe their own message?<a href="#s2">2.1</a></li><li>How does a cult begin?<a href="#s2">2.2</a></li><li>Why does it so often end in sexual and financial abuse?<a href="#s2">2.2</a></li><li>How does a leader build the "we"?<a href="#s2">2.5</a></li><li>What happens when the leader dies, fails or is exposed?<a href="#s2">2.6</a></li></ol></div><div class="qb"><h4>File 3 · The world around</h4><ol><li class="kev">What does the sociological lens add?<a href="#s3">3.1</a></li><li>How do some cults become world religions?<a href="#s3">3.2</a></li><li>Is brainwashing real?<a href="#s3">3.3</a></li><li>What did the 1980s cult panic get wrong?<a href="#s3">3.4</a></li><li>How does a peaceful group turn violent?<a href="#s3">3.5</a></li><li>Why do people stay when it turns bad, and how do they get out?<a href="#s3">3.6</a></li><li>How is it different for children born inside?<a href="#s3">3.7</a></li><li>Where is the line between a cult, an MLM, a startup and a fandom?<a href="#s3">3.8</a></li><li>Are online groups the new cults?<a href="#s3">3.8</a></li><li>Why do cults make such gripping films?<a href="#s3">3.9</a></li></ol></div><div class="qb"><h4>Files 4 and 5 · The con</h4><ol><li>What are the stages of a con?<a href="#s4">4.1</a></li><li>How did Victor Lustig sell the Eiffel Tower?<a href="#s4">4.2</a></li><li>Why do smart people fall for cons?<a href="#s4">4.3</a></li><li>How does a film make the audience the mark?<a href="#s4">4.4</a></li><li>What makes Saul Goodman's slide believable?<a href="#s4">4.5</a></li><li>How do identity cons like Ripley work?<a href="#s5">5.1</a></li><li>Is a heist a con?<a href="#s5">5.4</a></li><li>How does social engineering open doors that locks protect?<a href="#s5">5.6</a></li></ol></div><div class="qb"><h4>Files 6 and 7 · Money and power</h4><ol><li>Ponzi, pyramid or MLM: what is the difference?<a href="#s6">6.2</a></li><li>How did Madoff last for decades?<a href="#s6">6.1</a></li><li>Why did nobody stop Theranos or FTX in time?<a href="#s6">6.4</a></li><li>Why do good people cook the books?<a href="#s6">6.5</a></li><li>How do pig butchering, task scams and fake clients work?<a href="#s6">6.6</a></li><li>Which persuasion levers survive replication?<a href="#s7">7.1</a></li><li>How should I read the 48 Laws of Power?<a href="#s7">7.2</a></li><li>What is coercive control?<a href="#s7">7.3</a></li><li>How do frauds get caught?<a href="#s7">7.4</a></li><li>Could I be recruited, and how do I persuade honestly?<a href="#s7">7.5</a></li></ol></div></div><h3>The road</h3><div class="road"><a href="#s1" class="now"><span>File 1 · Week 1 · 7 stops</span><b>Inside the cult</b><em>Built: read it now</em></a><a href="#s2"><span>File 2 · Week 2 · 7 stops</span><b>The leader</b><em>Motive, personality, charisma</em></a><a href="#s3"><span>File 3 · Week 3 · 9 stops</span><b>The world around</b><em>Sociology, violence, leaving, screen</em></a><a href="#s4"><span>File 4 · Week 4 · 6 stops</span><b>The big con</b><em>Lustig, The Sting, Saul</em></a><a href="#s5"><span>File 5 · Week 5 · 6 stops</span><b>Masks and crews</b><em>Ripley, Lupin, Ocean's, real heists</em></a><a href="#s6"><span>File 6 · Week 6 · 6 stops</span><b>Money fraud</b><em>Madoff, Theranos, FTX, scams</em></a><a href="#s7"><span>File 7 · Week 7 · 6 stops</span><b>Power and the reveal</b><em>Cialdini, investigators, capstone</em></a></div><h3>The coverage audit</h3><p>This plan was not built from my memory. Before writing, a bottom-up audit pulled <b>188 concepts</b> from <b>35 sources</b> opened across <b>10 source families</b>: canonical books (Lifton, Barker, Maurer, Konnikova, Davies, Cialdini), university syllabi on new religious movements, white-collar crime and persuasion, the fraud examiners' exam blueprint, encyclopedia entries, recent research reviews, regulators (FTC, FBI) and cult-recovery practitioners. It also collected <b>73 questions</b> experts ask, and checked 13 lenses (words, mechanisms, numbers, money, rules, people and history, the frontier, and more) for gaps.</p><div class="specs"><div class="spec"><div class="spec-name">What it proves</div><p class="spec-def">The plan covers what those sources treat as core, and every lens has at least one stop.</p></div><div class="spec"><div class="spec-name">What it does not prove</div><p class="spec-def">That you understand it, that every concept is equally well established, or that no unknown unknowns remain. Your weak spots and new questions fix that over time.</p></div></div><h3>The optional shelf</h3><p>Every stop distils these, so none of them is homework: Barker, <i>The Making of a Moonie</i> (1984); Lifton, <i>Thought Reform and the Psychology of Totalism</i> (1961); Lalich, <i>Bounded Choice</i> (2004); Stein, <i>Terror, Love and Brainwashing</i> (2017); Montell, <i>Cultish</i> (2021); Maurer, <i>The Big Con</i> (1940); Konnikova, <i>The Confidence Game</i> (2016); Davies, <i>Lying for Money</i> (2018); Carreyrou, <i>Bad Blood</i> (2018); Mercier, <i>Not Born Yesterday</i> (2020).</p><p class="room">This course answers questions, not chapters. If your question is not on the list, ask it and it becomes a stop.</p><button class="done" data-mod="0.2">Mark stop 0.2 done</button></article></div></section><section class="part" id="s1" data-part="5" data-sec="1" data-title="File 1 · Inside the cult"><div class="part-head"><div class="wrap"><div class="kicker">File 1 · Week 1 · the members</div><h2 class="part-title">Inside the cult</h2><p class="part-promise">Who joins, what the group does to them, and why it works. Seven stops, one a day.</p><ol class="stops"><li><a href="#m1-1"><span>1.1</span>Who joins, and why it is not stupidity<em>20 min</em></a></li><li><a href="#s1"><span>1.2</span>What a cult is, and why the word is a fight<em>soon</em></a></li><li><a href="#s1"><span>1.3</span>The toolkit: Lifton's eight<em>soon</em></a></li><li><a href="#s1"><span>1.4</span>Cutting the cord: why cults isolate you<em>soon</em></a></li><li><a href="#s1"><span>1.5</span>Why cults work: strictness, sacrifice and dissonance<em>soon</em></a></li><li><a href="#s1"><span>1.6</span>Belonging and identity: the happiest time of my life<em>soon</em></a></li><li><a href="#s1"><span>1.7</span>Case file: Jonestown, read with everything<em>soon</em></a></li></ol></div></div><div class="wrap"><article class="mod" id="m1-1" data-mod="1.1"><div class="mod-meta">File 1 · Stop 1.1 · Day 1 <span class="t">20 min</span></div><h2 class="mod-title">Who joins, and why it is not stupidity</h2><p class="qline"><span>The question</span>Why do really intelligent people fall for cults?</p><p class="mod-why">The comfortable answer is that they don't: members must be weak, lonely or not very bright. The research says something stranger, and far more useful to a writer. People join friends first and beliefs later, and intelligence protects you much less than you think.</p><div class="dossier"><div class="dos-tab">Case file 1.1</div><div class="dos-body"><div class="dos-k">Case file</div><div class="dos-name">Eileen Barker and the Moonies</div><div class="dos-role">LSE sociologist; author of The Making of a Moonie (1984)</div><dl class="dos-facts"><div><dt>Studied</dt><dd>The Unification Church in Britain, in the 1970s</dd></div><div><dt>Method</dt><dd>Followed over 1,000 people who agreed to a residential workshop, plus non-joiners and comparison groups</dd></div><div><dt>Found</dt><dd>About 10% joined full time for more than a week; most of those left within two years</dd></div><div><dt>Why it matters</dt><dd>It tested the "irresistible brainwashing" story with data</dd></div></dl></div><span class="stamp st-myth">Myth: only the weak join</span></div><div class="predict"><div class="predict-k">Cold open · predict first · 2 min</div><p>Critics called the Unification Church workshops brainwashing camps. Barker tracked over a thousand people who agreed to attend one. Guess: what share joined full time for more than a week?</p><p class="conf">Write your answer and how sure you are, 1 to 5, before you open it.</p><details class="reveal"><summary>Reveal the answer</summary><p>About 10 percent, and most of those had left within a couple of years. If this was mind control, it was remarkably bad at it. Barker's point was not that the group was harmless. It was that joining is a choice made under pressure, by people with particular needs at a particular moment, and most people say no.</p></details></div><h3>Watch</h3><div class="watch3"><a class="vid" href="https://www.youtube.com/watch?v=kB-dJaCXAxA" rel="noopener" target="_blank"><div class="vid-th"><span class="ph">Why do people join cults?</span><img alt="Still from Why do people join cults?" loading="lazy" onerror="this.remove()" src="https://i.ytimg.com/vi/kB-dJaCXAxA/mqdefault.jpg"/><span class="play"></span></div><div class="vid-b"><div class="vid-t">Why do people join cults?</div><div class="vid-m">Janja Lalich, TED-Ed</div></div></a><div><div class="scene-wh">Watch for</div><ul class="scene-w"><li>Which needs make someone open to a group before any belief appears</li><li>What the group offers in the first weeks, and what it asks for later</li><li>Where the line falls between persuasion and control</li></ul></div></div><h3>The deep answer</h3><div class="story"><p>Start with the denominator. Films show the people who stayed. Barker counted everyone who walked through the door, including the many who walked straight back out. In the Unification Church (the Moonies), about nine in ten workshop guests never joined, and the group lost most of its recruits within two years. The zombie picture, where one weekend switches off your mind, does not survive the numbers.</p><p>So who does join? In 1965 the sociologists John Lofland and Rodney Stark followed the first American converts of the same movement (they called it the Divine Precepts) and proposed seven conditions that build on one another. Three come before contact: a tension you feel sharply, a habit of explaining trouble in spiritual terms, and seeing yourself as a seeker. Four come after: meeting the group at a turning point, forming a bond with a member, finding that your ties outside are weak or fading, and spending intense time with the group. Belief arrives late. Often the doctrine only starts to make sense after the friendship does.</p><p>Other researchers then tested the model on other groups. In 1984 Arthur Greil and David Rudy compared ten case studies and found that only two conditions showed up every time: a bond with members, and intensive time with them. That is the core finding of the field. Recruitment travels through relationships, not arguments. People rarely join a stranger's idea. They join a friend's life.</p><p>Now the intelligence question. Intelligence is a tool for reasoning, and a tool works for whoever is holding it. A sharp mind that is lonely, grieving or newly arrived in a strange city can build a beautiful case for staying with the only people who feel like home. Expertise is also narrow: a brilliant engineer has no special training in spotting manipulation. The research keeps pointing at timing instead: a move, a breakup, a death, the gap after university, any moment when the old social world goes thin and the future feels open.</p><p>Janja Lalich is the textbook case, and she later became one of the field's leading researchers. In 1975, aged 30, back from four years abroad, newly moved to San Francisco and eager for friends and for politics, she accepted an acquaintance's invitation to a study group. It was the front door of what became the Democratic Workers Party, where she spent about a decade. <b>"Everyone knew we were a cult except us,"</b> she said later. Her name for what happened is bounded choice: members really do choose, at every step, but the group sets the price of every option and supplies the explanation for everything. Each local decision is reasonable. The overall path is not.</p><p>The defence follows from the mechanism. You do not protect yourself by being clever. You protect yourself by keeping more than one community, by waiting before any big commitment of money, housing or relationships, and by asking one blunt question: is my confidence growing because the claim survives testing, or because leaving would cost me my new friends?</p></div><figure class="fig"><div class="scroll"><svg viewBox="0 0 1180 310" role="img" aria-label="Lofland and Stark: seven conditions of conversion"><text class="s-t" x="262" y="40" text-anchor="middle">BEFORE CONTACT</text><path class="s-line" d="M23,52 L501,52"/><text class="s-t" x="836" y="40" text-anchor="middle">AFTER CONTACT</text><path class="s-line" d="M515,52 L1157,52"/><rect x="23" y="70" width="150" height="150" rx="14" class="s-card"/><text class="s-t-d" x="98" y="120" text-anchor="middle">1</text><text class="s-t-b" x="98" y="162" text-anchor="middle">Tension</text><text class="s-t-sm" x="98" y="190" text-anchor="middle">something hurts</text><rect x="187" y="70" width="150" height="150" rx="14" class="s-card"/><text class="s-t-d" x="262" y="120" text-anchor="middle">2</text><text class="s-t-b" x="262" y="162" text-anchor="middle">A lens</text><text class="s-t-sm" x="262" y="190" text-anchor="middle">it is spiritual</text><rect x="351" y="70" width="150" height="150" rx="14" class="s-card"/><text class="s-t-d" x="426" y="120" text-anchor="middle">3</text><text class="s-t-b" x="426" y="162" text-anchor="middle">Seeker</text><text class="s-t-sm" x="426" y="190" text-anchor="middle">still looking</text><rect x="515" y="70" width="150" height="150" rx="14" class="s-card"/><text class="s-t-d" x="590" y="120" text-anchor="middle">4</text><text class="s-t-b" x="590" y="162" text-anchor="middle">Turning point</text><text class="s-t-sm" x="590" y="190" text-anchor="middle">life in motion</text><rect x="679" y="70" width="150" height="150" rx="14" class="s-box-a"/><text class="s-t-d" x="754" y="120" text-anchor="middle">5</text><text class="s-t-b" x="754" y="162" text-anchor="middle">Bond inside</text><text class="s-t-sm" x="754" y="190" text-anchor="middle">a friend in it</text><rect x="843" y="70" width="150" height="150" rx="14" class="s-card"/><text class="s-t-d" x="918" y="120" text-anchor="middle">6</text><text class="s-t-b" x="918" y="162" text-anchor="middle">Ties outside</text><text class="s-t-sm" x="918" y="190" text-anchor="middle">fade or fight</text><rect x="1007" y="70" width="150" height="150" rx="14" class="s-box-a"/><text class="s-t-d" x="1082" y="120" text-anchor="middle">7</text><text class="s-t-b" x="1082" y="162" text-anchor="middle">Intense time</text><text class="s-t-sm" x="1082" y="190" text-anchor="middle">days together</text><path class="s-line" d="M23,248 L1150,248" marker-end="url(#ah)"/><text class="s-t-sm" x="590" y="240" text-anchor="middle">time</text><text class="s-t-sm" x="590" y="292" text-anchor="middle">Greil and Rudy (1984), ten case studies: only 5 and 7 were present every time</text></svg></div><figcaption>Lofland and Stark (1965): seven conditions that build on each other. Belief is not even on the list until late. Later tests found the two orange ones were the only ones always present.</figcaption></figure><h3>The words insiders use</h3><div class="specs"><div class="spec"><div class="spec-name">Bounded choice</div><p class="spec-def">Lalich: real choices, made inside a world where the group sets every price and supplies every explanation.</p></div><div class="spec"><div class="spec-name">Affective bond</div><p class="spec-def">A real emotional tie to a member. In study after study, it is the door into the group.</p></div><div class="spec"><div class="spec-name">Seekership</div><p class="spec-def">Seeing yourself as someone still looking for answers. One of the conditions that come before contact.</p></div><div class="spec"><div class="spec-name">The denominator</div><p class="spec-def">Everyone who was approached, not just the ones who stayed. Counting it is what kills the zombie myth.</p></div></div><h3>Truth tags</h3><ul class="ttags"><li><span class="stamp st-myth">Myth</span><div><p><b>"Only stupid or weak people join cults."</b> Joining tracks needs, timing and relationships far better than intelligence.</p><span class="src">Source: <a href="https://journals.sagepub.com/doi/10.1177/000842989602500202" rel="noopener" target="_blank">Dawson 1996</a></span></div></li><li><span class="stamp st-myth">Myth</span><div><p><b>"Cult workshops are irresistible."</b> About 90% of Barker's workshop guests never joined.</p><span class="src">Source: <a href="https://www.theguardian.com/commentisfree/2012/sep/04/moonies-brainwash-dispel-myth" rel="noopener" target="_blank">Barker, Guardian 2012</a></span></div></li><li><span class="stamp st-part">Partly</span><div><p><b>"People join because of the doctrine."</b> Friendship usually opens the door; belief often follows the bond.</p><span class="src">Source: <a href="https://doi.org/10.2307/2090965" rel="noopener" target="_blank">Lofland and Stark 1965</a></span></div></li><li><span class="stamp st-hold">Holds up</span><div><p><b>"Bonds and intense time together matter most."</b> Across ten case studies, only these two conditions were always present.</p><span class="src">Source: <a href="https://doi.org/10.1080/00380237.1984.10570481" rel="noopener" target="_blank">Greil and Rudy 1984</a></span></div></li></ul><div class="distil"><div class="distil-k">This stop distils</div><ul><li><a href="https://www.theguardian.com/commentisfree/2012/sep/04/moonies-brainwash-dispel-myth" rel="noopener" target="_blank">Barker, The Making of a Moonie (1984), in her own summary</a><span>The denominator: who came, who joined, who stayed</span></li><li><a href="https://researchonline.lse.ac.uk/id/eprint/50872/1/Barker_Stepping_ivory_tower_2011.pdf" rel="noopener" target="_blank">Barker, Stepping out of the ivory tower (2011)</a><span>How the study was run, with non-joiners and comparison groups</span></li><li><a href="https://doi.org/10.2307/2090965" rel="noopener" target="_blank">Lofland and Stark, Becoming a World-Saver (1965)</a><span>The seven conditions of conversion</span></li><li><a href="https://doi.org/10.1080/00380237.1984.10570481" rel="noopener" target="_blank">Greil and Rudy, process models of conversion (1984)</a><span>Which conditions survive across ten groups</span></li><li><a href="https://janjalalich.com/about/the-power-of-cults/" rel="noopener" target="_blank">Lalich, The power of cults (profile)</a><span>How a study-group invitation became a decade</span></li></ul></div><div class="writer wr"><div class="writer-k">Writer's room · for No. 08</div><p>The insulting version of this scene shows a fool being tricked. The true version is harder and better: every step your character takes is reasonable. She says yes to dinner because her new friend is kind. She says yes to the weekend because the dinner was the best night she has had since moving. The audience should nod along, then realise at the midpoint that they would have said yes too.</p><p>Build it as a trust ladder. The first yes is to a person, never to an idea. Let the doctrine arrive late, after the audience has already felt what she would lose by leaving. That is Lofland and Stark turned into a first act, and Lalich's study group is the inciting incident.</p><p class="wr-drill"><b>Scene drill.</b> Write the moment your fictional recruit accepts a second invitation. Rule: every line she says must be something a smart, sane person would say. If a viewer can feel superior to her, rewrite it.</p></div><div class="mtrx biz"><p><b>Business lens.</b> The same funnel runs through MLM "opportunity" evenings and some "mastermind" groups: a friend's invitation, a free event, warmth, then escalating commitments. The honest version for MTRX™ is the opposite shape: make it easy to say no, put the full price up front, and never let a friendship do the selling.</p></div><div class="tryit"><div class="tryit-k">Try it · 5 min</div><p>Think of the last group you joined: a gym, a course, a community, a team. Write its trust ladder in five rungs. Which rung was a person rather than an idea? At which rung would leaving have started to cost you something?</p></div><p class="room">Nobody joins a cult on purpose. People join friends, then a cause, and only later learn what the group was.</p><details class="deeper"><summary>Go deeper · optional 15 min</summary><ul><li><a href="https://www.theguardian.com/commentisfree/2012/sep/04/moonies-brainwash-dispel-myth" rel="noopener" target="_blank">Barker on what her numbers mean (Guardian, 2012)</a><span>A short piece in her own words</span></li><li><a href="https://www.youtube.com/watch?v=psXook7FyVQ" rel="noopener" target="_blank">What are cults and why do people join them? (BBC Reel)</a><span>A second short video, with former members</span></li><li><a href="https://romolocapuano.com/wp-content/uploads/2016/01/Lofland-and-Stark-becoming-a-worldsaver.pdf" rel="noopener" target="_blank">Lofland and Stark, the original paper</a><span>The seven steps in the authors' words, with converts' own diaries</span></li></ul></details><p class="nextq"><b>Your next question.</b> If belief arrives after the friendship, what exactly is the group doing in those first weeks? Stop 1.3 opens the toolkit.</p><div class="check"><script type="application/json">{"q": "What did Barker's tracking of Unification Church workshop guests mostly show?", "o": ["Most guests walked away, so the workshops were far weaker than the brainwashing story said", "Guests joined at the same rate as any church, so the group was no different at all", "Most guests joined, because the workshops overrode their judgment with a hidden technique"], "a": 0, "w": "About 9 in 10 never joined, and most joiners left within two years. That does not make the group harmless; it makes the zombie story wrong."}</script></div><div class="check"><script type="application/json">{"q": "In the Lofland and Stark model, what usually opens the door into a group?", "o": ["A hidden personality flaw that makes the recruit easy to deceive", "A bond with a member, often before the doctrine makes any sense", "A strong argument for the doctrine, long before any friendship forms"], "a": 1, "w": "Recruitment travels through relationships. Greil and Rudy found bonds and intense time together were the two conditions present in every case."}</script></div><div class="check"><script type="application/json">{"q": "Why does high intelligence give weak protection against joining?", "o": ["Intelligent people are rarely approached, so they never practise saying no", "It protects well, which is why groups mostly recruit people with little schooling", "A sharp mind can build strong reasons for a choice that loneliness already made"], "a": 2, "w": "Intelligence serves whatever need is driving it. Timing, transitions and relationships predict joining better than IQ."}</script></div><button class="done" data-mod="1.1">Mark stop 1.1 done</button></article></div></section><section class="part" id="s2" data-part="2" data-sec="2" data-title="File 2 · The leader"><div class="part-head"><div class="wrap"><div class="kicker">File 2 · Week 2 · watch ahead</div><h2 class="part-title">The leader</h2><p class="part-promise">Motive, personality, charisma, and the strange question underneath it all: why do humans want leaders?</p><ol class="stops"><li><a href="#s2"><span>2.1</span>The leader's motive: true believer, fraud, or both<em>soon</em></a></li><li><a href="#s2"><span>2.2</span>The guru pattern: Storr's Feet of Clay and the narcissism question<em>soon</em></a></li><li><a href="#s2"><span>2.3</span>Charisma: why followers grant it<em>soon</em></a></li><li><a href="#s2"><span>2.4</span>Why we need leaders at all: prestige, dominance and following<em>soon</em></a></li><li><a href="#s2"><span>2.5</span>Entrepreneurs of identity: how leaders build the "we"<em>soon</em></a></li><li><a href="#s2"><span>2.6</span>When the leader dies, fails or is exposed<em>soon</em></a></li><li><a href="#s2"><span>2.7</span>Case file: NXIVM, a coaching company that branded women<em>soon</em></a></li></ol></div></div><div class="wrap"><div class="later"><p>This file is planned and audited. Its stops arrive one week at a time; the question bank in Stop 0.2 shows what each one answers.</p></div></div></section><section class="part" id="s3" data-part="3" data-sec="3" data-title="File 3 · The world around the cult"><div class="part-head"><div class="wrap"><div class="kicker">File 3 · Week 3 · watch ahead</div><h2 class="part-title">The world around the cult</h2><p class="part-promise">The sociologist's lens: networks, panics, violence, leaving, and where "cultish" begins in ordinary life.</p><ol class="stops"><li><a href="#s3"><span>3.1</span>The sociological lens: Weber, Durkheim and collective effervescence<em>soon</em></a></li><li><a href="#s3"><span>3.2</span>Recruitment runs on networks, and some cults become world religions<em>soon</em></a></li><li><a href="#s3"><span>3.3</span>The brainwashing fight: Singer, the APA and the courts<em>soon</em></a></li><li><a href="#s3"><span>3.4</span>The cult panic: deprogrammers and what they got wrong<em>soon</em></a></li><li><a href="#s3"><span>3.5</span>Violence: what predicts it (Waco, Heaven's Gate, Aum Shinrikyo)<em>soon</em></a></li><li><a href="#s3"><span>3.6</span>Leaving and after: exit costs and rebuilding a self<em>soon</em></a></li><li><a href="#s3"><span>3.7</span>Born inside: second-generation members<em>soon</em></a></li><li><a href="#s3"><span>3.8</span>Cultish: online groups, wellness, MLMs and startups<em>soon</em></a></li><li><a href="#s3"><span>3.9</span>On screen: The Master, Midsommar, The Wicker Man, Martha Marcy May Marlene<em>soon</em></a></li></ol></div></div><div class="wrap"><div class="later"><p>This file is planned and audited. Its stops arrive one week at a time; the question bank in Stop 0.2 shows what each one answers.</p></div></div></section><section class="part" id="s4" data-part="1" data-sec="4" data-title="File 4 · The big con"><div class="part-head"><div class="wrap"><div class="kicker">File 4 · Week 4 · watch ahead</div><h2 class="part-title">The big con</h2><p class="part-promise">How a con is built, beat by beat, from Victor Lustig selling the Eiffel Tower to Slippin' Jimmy.</p><ol class="stops"><li><a href="#s4"><span>4.1</span>Anatomy of a con: Maurer's big con, step by step<em>soon</em></a></li><li><a href="#s4"><span>4.2</span>The man who sold the Eiffel Tower: Victor Lustig<em>soon</em></a></li><li><a href="#s4"><span>4.3</span>Why smart people fall for cons, and why we are less gullible than films think<em>soon</em></a></li><li><a href="#s4"><span>4.4</span>The Sting: making the audience the mark<em>soon</em></a></li><li><a href="#s4"><span>4.5</span>Slippin' Jimmy to Saul Goodman<em>soon</em></a></li><li><a href="#s4"><span>4.6</span>Twists that play fair: Nine Queens, House of Games, The Grifters<em>soon</em></a></li></ol></div></div><div class="wrap"><div class="later"><p>This file is planned and audited. Its stops arrive one week at a time; the question bank in Stop 0.2 shows what each one answers.</p></div></div></section><section class="part" id="s5" data-part="4" data-sec="5" data-title="File 5 · Masks and crews"><div class="part-head"><div class="wrap"><div class="kicker">File 5 · Week 5 · watch ahead</div><h2 class="part-title">Masks and crews</h2><p class="part-promise">Identity cons and heists: Ripley, the real impostors, Lupin, Ocean's, and what real thieves actually did.</p><ol class="stops"><li><a href="#s5"><span>5.1</span>Ripley: the identity con as character<em>soon</em></a></li><li><a href="#s5"><span>5.2</span>Real impostors: Clark Rockefeller, Anna Delvey and the Abagnale problem<em>soon</em></a></li><li><a href="#s5"><span>5.3</span>The gentleman thief: Lupin<em>soon</em></a></li><li><a href="#s5"><span>5.4</span>Ocean's and the crew film<em>soon</em></a></li><li><a href="#s5"><span>5.5</span>Real heists: Antwerp, Hatton Garden, the Louvre 2025<em>soon</em></a></li><li><a href="#s5"><span>5.6</span>Social engineering: the con inside the heist<em>soon</em></a></li></ol></div></div><div class="wrap"><div class="later"><p>This file is planned and audited. Its stops arrive one week at a time; the question bank in Stop 0.2 shows what each one answers.</p></div></div></section><section class="part" id="s6" data-part="6" data-sec="6" data-title="File 6 · Money fraud"><div class="part-head"><div class="wrap"><div class="kicker">File 6 · Week 6 · watch ahead</div><h2 class="part-title">Money fraud</h2><p class="part-promise">Ponzi, Madoff, Theranos, FTX, Wirecard, and the scams that target people like you.</p><ol class="stops"><li><a href="#s6"><span>6.1</span>Ponzi and affinity fraud: from Charles Ponzi to Madoff<em>soon</em></a></li><li><a href="#s6"><span>6.2</span>Ponzi, pyramid or MLM: telling them apart<em>soon</em></a></li><li><a href="#s6"><span>6.3</span>Theranos: the story that outran the science<em>soon</em></a></li><li><a href="#s6"><span>6.4</span>FTX and Wirecard: when nobody checks<em>soon</em></a></li><li><a href="#s6"><span>6.5</span>The fraud triangle, and why good people cook the books<em>soon</em></a></li><li><a href="#s6"><span>6.6</span>Scams that target you: pig butchering, task scams and fake clients<em>soon</em></a></li></ol></div></div><div class="wrap"><div class="later"><p>This file is planned and audited. Its stops arrive one week at a time; the question bank in Stop 0.2 shows what each one answers.</p></div></div></section><section class="part" id="s7" data-part="5" data-sec="7" data-title="File 7 · Power and the reveal"><div class="part-head"><div class="wrap"><div class="kicker">File 7 · Week 7 · watch ahead</div><h2 class="part-title">Power and the reveal</h2><p class="part-promise">Which influence levers survive the evidence, how frauds get caught, and your capstone: a con film treatment.</p><ol class="stops"><li><a href="#s7"><span>7.1</span>Cialdini's levers: which survived replication<em>soon</em></a></li><li><a href="#s7"><span>7.2</span>The 48 Laws as story, not science<em>soon</em></a></li><li><a href="#s7"><span>7.3</span>Coercive control: when influence becomes captivity<em>soon</em></a></li><li><a href="#s7"><span>7.4</span>The investigators: Markopolos, Carreyrou and the short sellers<em>soon</em></a></li><li><a href="#s7"><span>7.5</span>Red-team your own pitch: honest influence for MTRX™<em>soon</em></a></li><li><a href="#s7"><span>7.6</span>Capstone: write a con film treatment<em>soon</em></a></li></ol></div></div><div class="wrap"><div class="later"><p>This file is planned and audited. Its stops arrive one week at a time; the question bank in Stop 0.2 shows what each one answers.</p></div></div></section><footer class="colophon"><div class="wrap"><div class="kicker">Sources</div><h2 class="part-title" style="font-size:clamp(40px,6vw,72px)">Every claim, linked</h2><div class="vids" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))"><a class="read-card" href="https://researchonline.lse.ac.uk/id/eprint/11887/1/__libfile_REPOSITORY_Content_Barker%2C%20E_New%20religious%20movements_Barker_New%20religious%20movements_2013.pdf" target="_blank" rel="noopener"><b>Barker, New religious movements (LSE)</b><span>Stop 0.2</span></a><a class="read-card" href="https://www.theguardian.com/commentisfree/2012/sep/04/moonies-brainwash-dispel-myth" target="_blank" rel="noopener"><b>Barker, The Making of a Moonie (1984), in her own summary</b><span>Stop 1.1</span></a><a class="read-card" href="https://researchonline.lse.ac.uk/id/eprint/50872/1/Barker_Stepping_ivory_tower_2011.pdf" target="_blank" rel="noopener"><b>Barker, Stepping out of the ivory tower (2011)</b><span>Stop 1.1</span></a><a class="read-card" href="https://doi.org/10.2307/2090965" target="_blank" rel="noopener"><b>Lofland and Stark, Becoming a World-Saver (1965)</b><span>Stop 1.1</span></a><a class="read-card" href="https://doi.org/10.1080/00380237.1984.10570481" target="_blank" rel="noopener"><b>Greil and Rudy, process models of conversion (1984)</b><span>Stop 1.1</span></a><a class="read-card" href="https://janjalalich.com/about/the-power-of-cults/" target="_blank" rel="noopener"><b>Lalich, The power of cults (profile)</b><span>Stop 1.1</span></a><a class="read-card" href="https://journals.sagepub.com/doi/10.1177/000842989602500202" target="_blank" rel="noopener"><b>Dawson 1996</b><span>Stop 1.1</span></a></div><p class="prepared" style="margin-top:28px">v0.1 · 22 October 2026 · Start, the question bank and File 1. Files 2 to 7 follow one week at a time.</p></div></footer></div><script>(function(){
+"use strict";
+var $ = function(s,r){return (r||document).querySelector(s)};
+var $$ = function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var el = function(tag,attrs,html){var e=document.createElement(tag);if(attrs)for(var k in attrs){if(k==='class')e.className=attrs[k];else e.setAttribute(k,attrs[k]);}if(html!=null)e.innerHTML=html;return e};
+var esc = function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var KEY='mtrx-cons-v1', store={done:{}};
+try{store=JSON.parse(localStorage.getItem(KEY))||store;if(!store.done)store.done={};}catch(e){}
+var save=function(){try{localStorage.setItem(KEY,JSON.stringify(store))}catch(e){}};
+
+/* ---------- progress ---------- */
+function refreshProgress(){
+  $$('button.done').forEach(function(b){var on=!!store.done[b.dataset.mod];b.classList.toggle('is-done',on);b.textContent=(on?'Done · stop ':'Mark stop ')+b.dataset.mod+(on?'':' done');});
+  $$('.thumb').forEach(function(t){
+    var sec=$('section[data-sec="'+t.dataset.t+'"]');
+    var mods=sec?$$('article.mod[data-mod]',sec):[];
+    var n=mods.filter(function(m){return store.done[m.dataset.mod]}).length;
+    t.style.setProperty('--p', mods.length?Math.round(n/mods.length*100):0);
+  });
+}
+document.addEventListener('click',function(e){
+  var b=e.target.closest('button.done');
+  if(b){store.done[b.dataset.mod]=!store.done[b.dataset.mod];save();refreshProgress();}
+});
+var reset=$('#reset'); if(reset) reset.addEventListener('click',function(){if(confirm('Reset all progress and quiz answers?')){store={done:{}};save();location.reload();}});
+
+/* ---------- thumbs + scrollbar ---------- */
+var bar=$('.scrollbar');
+var secs=$$('[data-sec]').filter(function(s){return s.tagName==='SECTION'});
+function onScroll(){
+  var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
+  if(bar) bar.style.width=(max>0?(h.scrollTop/max*100):0)+'%';
+  var y=window.scrollY+window.innerHeight*0.35, cur='0';
+  secs.forEach(function(s){ if(s.offsetTop<=y) cur=s.dataset.sec; });
+  $$('.thumb').forEach(function(t){t.classList.toggle('is-active',t.dataset.t===cur)});
+}
+window.addEventListener('scroll',onScroll,{passive:true});
+$$('.thumb').forEach(function(t){t.addEventListener('click',function(){var target=t.dataset.t==='0'?$('#top'):$('#s'+t.dataset.t);if(target)target.scrollIntoView({behavior:'smooth'});});});
+
+/* ---------- plates develop ---------- */
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('is-in');io.unobserve(en.target);}})},{threshold:.25});
+  $$('.plate').forEach(function(p){io.observe(p)});
+}else{$$('.plate').forEach(function(p){p.classList.add('is-in')});}
+
+/* ---------- checks ---------- */
+$$('.check').forEach(function(c,i){
+  var j; try{j=JSON.parse(c.querySelector('script').textContent)}catch(e){return}
+  var box=el('div');
+  box.appendChild(el('div',{class:'check-k'},'Quick check'));
+  box.appendChild(el('p',{class:'check-q'},esc(j.q)));
+  var opts=el('div',{class:'opts'});
+  j.o.forEach(function(o,k){
+    var b=el('button',{class:'opt',type:'button'},esc(o));
+    b.addEventListener('click',function(){
+      if(c.classList.contains('is-answered'))return;
+      c.classList.add('is-answered');
+      $$('.opt',opts).forEach(function(x,m){x.disabled=true;if(m===j.a)x.classList.add('is-right');});
+      if(k!==j.a)b.classList.add('is-wrong');
+      why.innerHTML='<b>'+(k===j.a?'Spot on. ':'Not quite. ')+'</b>'+esc(j.w);
+    });
+    opts.appendChild(b);
+  });
+  box.appendChild(opts);
+  var why=el('p',{class:'why'});box.appendChild(why);
+  c.appendChild(box);
+});
+
+
+function dl(name,txt,type){var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:type+';charset=utf-8'}));a.download=name;document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},500);}
+refreshProgress(); onScroll();
+})();
+</script><script>(function(){
+var box=document.getElementById('calib'); if(!box) return;
+var K='mtrx-room-log-v1', L=[]; try{L=JSON.parse(localStorage.getItem(K))||[]}catch(e){}
+function sv(){try{localStorage.setItem(K,JSON.stringify(L))}catch(e){}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function bs(r){return Math.pow(r.p/100-r.o,2)}
+function draw(){
+  var h='';
+  L.forEach(function(r,i){
+    h+='<div class="cl-row"><span><b>'+esc(r.who)+'</b> · '+esc(r.what)+' · '+r.p+'%</span>';
+    if(r.o==null) h+='<button type="button" data-i="'+i+'" data-o="1">Came true</button><button type="button" data-i="'+i+'" data-o="0">Did not</button>';
+    else h+='<em>'+(r.o?'came true':'did not')+' · score '+bs(r).toFixed(2)+'</em>';
+    h+='<button type="button" data-del="'+i+'" aria-label="Delete">✕</button></div>';
+  });
+  document.getElementById('cl-list').innerHTML=h||'<p class="muted">No predictions yet. Log one before your next call.</p>';
+  var s=L.filter(function(r){return r.o!=null}), out=document.getElementById('cl-sum');
+  if(!s.length){out.textContent='';return;}
+  var b=s.reduce(function(a,r){return a+bs(r)},0)/s.length, hi=s.filter(function(r){return r.p>=70});
+  out.textContent='Scored: '+s.length+' · average Brier '+b.toFixed(2)+' (0.25 is a coin flip)'+(hi.length?' · your 70%+ calls came true '+Math.round(hi.filter(function(r){return r.o}).length/hi.length*100)+'% of the time':'');
+}
+document.getElementById('cl-add').addEventListener('click',function(){
+  var w=document.getElementById('cl-who'), t=document.getElementById('cl-what'), p=document.getElementById('cl-p'), v=parseInt(p.value,10);
+  if(!t.value.trim()||!(v>=1&&v<=99)){p.focus();return;}
+  L.push({d:new Date().toISOString().slice(0,10),who:w.value.trim()||'Someone',what:t.value.trim(),p:v,o:null}); sv(); w.value=t.value=p.value=''; draw();
+});
+document.getElementById('cl-list').addEventListener('click',function(e){
+  var b=e.target.closest('button'); if(!b) return;
+  if(b.hasAttribute('data-del')){if(confirm('Delete this prediction?')){L.splice(+b.getAttribute('data-del'),1);sv();draw();}return;}
+  L[+b.getAttribute('data-i')].o=+b.getAttribute('data-o'); sv(); draw();
+});
+document.getElementById('cl-csv').addEventListener('click',function(){
+  var q=function(x){return '"'+String(x).replace(/"/g,'""')+'"'};
+  var t='date,who,prediction,probability,outcome,brier\n'+L.map(function(r){return [r.d,q(r.who),q(r.what),r.p/100,r.o==null?'':r.o,r.o==null?'':bs(r).toFixed(3)].join(',')}).join('\n');
+  var a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([t],{type:'text/csv'})); a.download='mtrx-calibration-log.csv'; document.body.appendChild(a); a.click(); setTimeout(function(){a.remove()},500);
+});
+draw();
+})();</script><script id="mtrx-kit-js">(function(){
+"use strict";
+if(window.__mtrxKit)return;window.__mtrxKit=1;
+var D=document,root=D.documentElement;
+var _ms=D.querySelector('meta[name="mtrx-slug"]');var SLUG=_ms?_ms.content:(D.title||'guide').replace(/[^a-z0-9]+/gi,'-').toLowerCase().replace(/^-|-$/g,'').slice(0,48);
+var NK='mtrx-notes:'+SLUG, HK='mtrx-hl:'+SLUG, TK='mtrx-theme';
+function load(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}}
+function store(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+var BLOCK='p,li,dd,dt,td,th,h1,h2,h3,h4,h5,figcaption,.spec-def,.term,.a,.q,blockquote';
+var SKIP='.nk-panel,.nk-dock,.nk-pop,button,input,textarea,select,svg,script,[aria-live],.sim,.gloss,#lib,.thumbs,.check .opts';
+/* ---------- dark mode ---------- */
+var theme=(function(){try{return localStorage.getItem(TK)||'light'}catch(e){return 'light'}})();
+function applyTheme(){if(theme==='dark')root.setAttribute('data-theme','dark');else root.removeAttribute('data-theme');if(tBtn){tBtn.setAttribute('aria-pressed',theme==='dark'?'true':'false');tBtn.title=theme==='dark'?'Light mode':'Dark mode';}}
+/* ---------- UI ---------- */
+var dock=D.createElement('div');dock.className='nk-dock';
+dock.innerHTML='<button type="button" class="nk-fab" id="nk-open" aria-label="Open my notes"><span class="ic" aria-hidden="true">✎</span><span class="t">Notes</span><span class="cnt" id="nk-cnt" hidden></span></button><button type="button" class="nk-fab" id="nk-find" aria-label="Search this guide" title="Search (press /)"><span class="ic" aria-hidden="true">⌕</span><span class="t">Search</span></button><button type="button" class="nk-fab" id="nk-theme" aria-label="Toggle dark mode"><span class="ic" aria-hidden="true">◐</span></button>';
+D.body.appendChild(dock);
+var tBtn=D.getElementById('nk-theme');applyTheme();
+tBtn.addEventListener('click',function(){theme=theme==='dark'?'light':'dark';try{localStorage.setItem(TK,theme)}catch(e){}applyTheme();});
+var panel=D.createElement('aside');panel.className='nk-panel';panel.setAttribute('aria-label','My notes');
+panel.innerHTML='<div class="nk-head"><b>My notes</b><button type="button" class="nk-x" aria-label="Close notes">×</button></div><div class="nk-body"><div class="nk-k"><span>Highlights</span><span id="nk-hc"></span></div><ol class="nk-hls" id="nk-hls"></ol><p class="nk-empty" id="nk-hempty">Select any text in the guide and tap <b>Highlight</b>. It shows up here and in your export.</p><div class="nk-k"><span>My thoughts</span></div><button type="button" class="nk-mini" id="nk-stamp">+ Add heading: where I am</button><textarea id="nk-text" placeholder="Write anything: ideas, questions, things to try with clients..."></textarea><div class="nk-saved" id="nk-saved">Saved in this browser</div><p class="nk-tip">Exports include your thoughts and every highlight, grouped by section.</p></div><div class="nk-foot"><button type="button" id="nk-doc">Word (.doc)</button><button type="button" id="nk-md">Markdown</button><button type="button" id="nk-pdf">PDF</button><button type="button" class="nk-danger" id="nk-clear">Clear</button></div>';
+D.body.appendChild(panel);
+var ta=D.getElementById('nk-text');ta.value=load(NK,{t:''}).t||'';
+function openP(){if(window.__nkCloseF)window.__nkCloseF();panel.classList.add('is-open');renderList();setTimeout(function(){ta.focus({preventScroll:true})},260);}
+function closeP(){panel.classList.remove('is-open');}
+D.getElementById('nk-open').addEventListener('click',function(){panel.classList.contains('is-open')?closeP():openP()});
+panel.querySelector('.nk-x').addEventListener('click',closeP);
+D.addEventListener('keydown',function(e){if(e.key==='Escape')closeP();});
+var tmr;ta.addEventListener('input',function(){clearTimeout(tmr);D.getElementById('nk-saved').textContent='Saving...';tmr=setTimeout(function(){store(NK,{t:ta.value,at:Date.now()});D.getElementById('nk-saved').textContent='Saved in this browser · '+new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});},400);});
+/* where am I */
+function sectionOf(el){
+  var m=el&&el.closest?el.closest('article.mod,article,section.part,header'):null;
+  if(!m)return D.title;
+  var meta=m.querySelector('.mod-meta'),t=m.querySelector('.mod-title,h2,h1');
+  var a=meta?(meta.childNodes[0]&&meta.childNodes[0].textContent||'').trim():'';
+  var b=t?t.textContent.trim():'';
+  return (a&&b)?a+' · '+b:(b||a||D.title);
+}
+function currentSection(){var mods=D.querySelectorAll('article.mod'),cur=null;for(var i=0;i<mods.length;i++){if(mods[i].getBoundingClientRect().top<=140)cur=mods[i];else break;}return cur?sectionOf(cur):D.title;}
+D.getElementById('nk-stamp').addEventListener('click',function(){var h='\n\n## '+currentSection()+'\n';var s=ta.selectionStart||ta.value.length;ta.value=ta.value.slice(0,s)+h+ta.value.slice(s);ta.selectionStart=ta.selectionEnd=s+h.length;ta.focus();ta.dispatchEvent(new Event('input'));});
+/* ---------- highlighter ---------- */
+var blocks=[];function indexBlocks(){blocks=Array.prototype.slice.call(D.querySelectorAll(BLOCK)).filter(function(b){return !b.closest(SKIP)});}
+var hls=load(HK,[]);
+function textNodes(el){var w=D.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),a=[],n;while((n=w.nextNode()))a.push(n);return a;}
+function wrap(block,s,e,id){
+  var c=0;textNodes(block).forEach(function(n){var len=n.nodeValue.length,ns=c,ne=c+len;c=ne;if(ne<=s||ns>=e)return;
+    var a=Math.max(s,ns)-ns,b=Math.min(e,ne)-ns;if(b<=a)return;var mid=n;if(a>0)mid=n.splitText(a);if(b-a<mid.nodeValue.length)mid.splitText(b-a);
+    if(!mid.nodeValue.trim()||(mid.parentNode.closest&&mid.parentNode.closest('svg,mark.nk-hl')))return;
+    var m=D.createElement('mark');m.className='nk-hl';m.setAttribute('data-hl',id);mid.parentNode.insertBefore(m,mid);m.appendChild(mid);});
+}
+function unwrap(id){D.querySelectorAll('mark.nk-hl[data-hl="'+id+'"]').forEach(function(m){var p=m.parentNode;while(m.firstChild)p.insertBefore(m.firstChild,m);p.removeChild(m);p.normalize();});}
+function restore(){var moved=false;hls.forEach(function(h){var b=blocks[h.b],s=-1;if(b){var tx=b.textContent;s=tx.substr(h.s,h.l)===h.t?h.s:tx.indexOf(h.t);}if(s<0){for(var i=0;i<blocks.length;i++){var j=blocks[i].textContent.indexOf(h.t);if(j>-1){b=blocks[i];s=j;h.b=i;h.s=j;moved=true;break;}}}if(s<0||!b)return;wrap(b,s,s+h.t.length,h.id);});if(moved)store(HK,hls);}
+function offsetIn(block,node,off){var r=D.createRange();r.setStart(block,0);r.setEnd(node,off);return r.toString().length;}
+function pending(){
+  var sel=window.getSelection();if(!sel||!sel.rangeCount||sel.isCollapsed)return null;
+  var r=sel.getRangeAt(0),startEl=r.startContainer.nodeType===1?r.startContainer:r.startContainer.parentElement;if(!startEl||startEl.closest(SKIP))return null;
+  var anc=r.commonAncestorContainer;anc=anc.nodeType===1?anc:anc.parentElement;
+  var block=anc.closest(BLOCK);if(!block||block.closest(SKIP))block=startEl.closest(BLOCK);
+  if(!block||block.closest(SKIP))return null;var bi=blocks.indexOf(block);if(bi<0){indexBlocks();bi=blocks.indexOf(block);if(bi<0)return null;}
+  var s=offsetIn(block,r.startContainer,r.startOffset),e;
+  if(block.contains(r.endContainer))e=offsetIn(block,r.endContainer,r.endOffset);else e=block.textContent.length;
+  var full=block.textContent,t=full.slice(s,e);var lead=t.length-t.replace(/^\s+/,'').length;t=t.trim();s+=lead;
+  if(t.length<2)return null;return {b:bi,s:s,l:t.length,t:t,block:block,rect:r.getBoundingClientRect()};
+}
+var pop=D.createElement('div');pop.className='nk-pop';pop.hidden=true;D.body.appendChild(pop);
+var touch=('ontouchstart' in window);
+function showPop(x,y,html,yb){pop.innerHTML=html;pop.hidden=false;var w=pop.offsetWidth;pop.style.left=Math.max(8,Math.min(window.scrollX+x-w/2,window.scrollX+D.documentElement.clientWidth-w-8))+'px';pop.style.top=(window.scrollY+(touch&&yb?yb+14:y-48))+'px';}
+function hidePop(){pop.hidden=true;}
+var cur=null;
+function check(){setTimeout(function(){cur=pending();if(!cur){if(!pop.dataset.keep)hidePop();return;}pop.dataset.keep='';showPop(cur.rect.left+cur.rect.width/2,cur.rect.top,'<button type="button" class="y" data-act="hl">Highlight</button><button type="button" data-act="hlnote">Highlight + note</button>',cur.rect.bottom);},10);}
+D.addEventListener('mousedown',function(e){if(e.target.closest&&e.target.closest('.nk-pop'))return;pop.dataset.keep='';hidePop();});
+D.addEventListener('mouseup',function(e){if((e.target.closest&&e.target.closest('.nk-pop,.nk-panel')))return;check();});
+D.addEventListener('touchend',function(e){if((e.target.closest&&e.target.closest('.nk-pop,.nk-panel')))return;setTimeout(check,250);});
+D.addEventListener('keyup',function(e){if(e.shiftKey)check();});
+pop.addEventListener('mousedown',function(e){e.preventDefault();});
+pop.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var act=b.dataset.act;
+  if((act==='hl'||act==='hlnote')&&cur){var id='h'+Date.now().toString(36);var h={id:id,b:cur.b,s:cur.s,l:cur.l,t:cur.t,sec:sectionOf(cur.block),at:Date.now()};hls.push(h);store(HK,hls);wrap(cur.block,cur.s,cur.s+cur.l,id);window.getSelection().removeAllRanges();hidePop();badge();
+    if(act==='hlnote'){openP();var add='\n\n> '+h.t+'\n';ta.value=ta.value.replace(/\s+$/,'')+add;ta.dispatchEvent(new Event('input'));setTimeout(function(){ta.focus();ta.selectionStart=ta.selectionEnd=ta.value.length;},280);} else renderList();}
+  if(act==='rm'){removeHl(b.dataset.id);hidePop();}
+  if(act==='open'){openP();hidePop();}
+});
+D.addEventListener('click',function(e){var m=e.target.closest&&e.target.closest('mark.nk-hl');if(m&&window.getSelection().isCollapsed){var r=m.getBoundingClientRect();pop.dataset.keep='1';showPop(r.left+r.width/2,r.top,'<button type="button" data-act="open">Open notes</button><button type="button" data-act="rm" data-id="'+m.getAttribute('data-hl')+'">Remove highlight</button>');}});
+function removeHl(id){unwrap(id);hls=hls.filter(function(h){return h.id!==id});store(HK,hls);renderList();badge();}
+function badge(){var c=D.getElementById('nk-cnt');c.hidden=!hls.length;c.textContent=hls.length;}
+function renderList(){var ul=D.getElementById('nk-hls');D.getElementById('nk-hc').textContent=hls.length?hls.length+' saved':'';D.getElementById('nk-hempty').hidden=!!hls.length;
+  ul.innerHTML=hls.map(function(h){return '<li><small><span>'+esc(h.sec||'')+'</span><span><a href="#" data-go="'+h.id+'">Go</a><button type="button" data-rm="'+h.id+'">Remove</button></span></small>'+esc(h.t)+'</li>'}).join('');}
+D.getElementById('nk-hls').addEventListener('click',function(e){var g=e.target.closest('[data-go]'),r=e.target.closest('[data-rm]');
+  if(g){e.preventDefault();var m=D.querySelector('mark.nk-hl[data-hl="'+g.dataset.go+'"]');if(m){var d=m.closest('details');if(d)d.open=true;m.scrollIntoView({behavior:'smooth',block:'center'});if(window.innerWidth<900)closeP();}}
+  if(r)removeHl(r.dataset.rm);});
+/* ---------- export ---------- */
+function stamp(){var d=new Date();return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);}
+function groups(){var g={},order=[];hls.forEach(function(h){var k=h.sec||'Highlights';if(!g[k]){g[k]=[];order.push(k);}g[k].push(h.t);});return order.map(function(k){return [k,g[k]]});}
+function notesHtml(){var out='',inList=false;ta.value.split(/\n/).forEach(function(line){var l=line.trim();
+  if(/^- /.test(l)){if(!inList){out+='<ul>';inList=true;}out+='<li>'+esc(l.slice(2))+'</li>';return;}
+  if(inList){out+='</ul>';inList=false;}
+  if(/^## /.test(l))out+='<h3>'+esc(l.slice(3))+'</h3>';else if(/^# /.test(l))out+='<h2>'+esc(l.slice(2))+'</h2>';else if(/^> /.test(l))out+='<blockquote>'+esc(l.slice(2))+'</blockquote>';else if(l)out+='<p>'+esc(l)+'</p>';});
+  if(inList)out+='</ul>';return out||'<p><i>No notes yet.</i></p>';}
+function reportHtml(forWord){var g=groups();
+  var hl=g.length?g.map(function(x){return '<h3>'+esc(x[0])+'</h3>'+x[1].map(function(t){return '<blockquote>'+esc(t)+'</blockquote>'}).join('')}).join(''):'<p><i>No highlights yet.</i></p>';
+  var css='body{font-family:"Nunito Sans",Calibri,Arial,sans-serif;color:#151515;line-height:1.55;max-width:760px;margin:32px auto;padding:0 20px}h1{font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-weight:400;font-size:34px;margin:0 0 4px}h2{font-size:22px;border-bottom:3px solid #ED691D;padding-bottom:4px;margin-top:32px}h3{font-size:17px;margin:20px 0 6px}blockquote{margin:8px 0;padding:6px 12px;border-left:4px solid #E8C547;background:#FFF8D6}.m{color:#55586A;font-size:13px}';
+  var head=forWord?'<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40"><head><meta charset="utf-8"><title>My notes</title><style>'+css+'</style></head>':'<html><head><meta charset="utf-8"><title>My notes · '+esc(D.title)+'</title><style>'+css+'</style></head>';
+  return head+'<body><h1>My notes</h1><p class="m">'+esc(D.title)+' · exported '+stamp()+'</p><h2>My thoughts</h2>'+notesHtml()+'<h2>Highlights</h2>'+hl+'</body></html>';}
+function reportMd(){var g=groups();var s='# My notes\n\n_'+D.title+' · exported '+stamp()+'_\n\n## My thoughts\n\n'+(ta.value.trim()||'_No notes yet._')+'\n\n## Highlights\n';
+  g.forEach(function(x){s+='\n### '+x[0]+'\n\n'+x[1].map(function(t){return '> '+t}).join('\n\n')+'\n';});if(!g.length)s+='\n_No highlights yet._\n';return s;}
+function dl(name,type,data){var b=new Blob([data],{type:type}),a=D.createElement('a');a.href=URL.createObjectURL(b);a.download=name;D.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},800);}
+var fname='MTRX-notes-'+SLUG.slice(0,32)+'-'+stamp();
+D.getElementById('nk-doc').addEventListener('click',function(){dl(fname+'.doc','application/msword','\ufeff'+reportHtml(true));});
+D.getElementById('nk-md').addEventListener('click',function(){dl(fname+'.md','text/markdown;charset=utf-8',reportMd());});
+D.getElementById('nk-pdf').addEventListener('click',function(){var f=D.createElement('iframe');f.style.cssText='position:fixed;right:0;bottom:0;width:0;height:0;border:0';D.body.appendChild(f);var w=f.contentWindow;w.document.open();w.document.write(reportHtml(false));w.document.close();setTimeout(function(){w.focus();w.print();setTimeout(function(){f.remove()},1500);},300);});
+D.getElementById('nk-clear').addEventListener('click',function(){if(!confirm('Delete all your notes and highlights for this guide?'))return;hls.slice().forEach(function(h){unwrap(h.id)});hls=[];store(HK,hls);ta.value='';store(NK,{t:''});renderList();badge();});
+
+/* ---------- search ---------- */
+var SQ='.nk-panel,.nk-dock,.nk-pop,.nk-find,script,style,svg,.thumbs,button,textarea,input,select,noscript,.nojs-only';
+var FB='p,li,dd,dt,td,th,h1,h2,h3,h4,h5,figcaption,summary,.spec-name,.spec-def,.term,.q,.a,blockquote,.plate-sub,.mod-meta';
+var fx=D.createElement('div');fx.className='nk-find';fx.hidden=true;fx.setAttribute('role','dialog');fx.setAttribute('aria-label','Search this guide');
+fx.innerHTML='<div class="nk-fbox"><span class="ic" aria-hidden="true">⌕</span><input type="search" id="nk-q" placeholder="Search everything: try \'API\' or \'memory\'" autocomplete="off" aria-label="Search this guide"><button type="button" class="nk-x" id="nk-fx" aria-label="Close search">×</button></div><div class="nk-fmeta" id="nk-fmeta">Type 2+ letters. Enter jumps to the first match. Esc closes.</div><ol class="nk-fres" id="nk-fres"></ol>';
+D.body.appendChild(fx);
+var fq=D.getElementById('nk-q'),fres=D.getElementById('nk-fres'),fmeta=D.getElementById('nk-fmeta'),idx=null,found=[];
+function norm(s){return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ');}
+function buildIdx(){idx=[];D.querySelectorAll(FB).forEach(function(el){if(el.closest(SQ))return;if(el.querySelector(FB))return;var t=(el.innerText||el.textContent).replace(/\s+/g,' ').trim();if(t.length<2)return;idx.push({el:el,t:t,n:norm(t)});});}
+function openF(){buildIdx();fx.hidden=false;closeP();setTimeout(function(){fq.focus();fq.select();},20);}
+function closeF(){fx.hidden=true;}window.__nkCloseF=closeF;
+function snip(t,terms){var n=norm(t),i=n.indexOf(terms[0]);var s=Math.max(0,i-60),e=Math.min(t.length,i+terms[0].length+90);var out=(s>0?'…':'')+t.slice(s,e)+(e<t.length?'…':'');var h=esc(out);terms.forEach(function(w){if(!w)return;var re=new RegExp('('+w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi');h=h.replace(re,'<mark>$1</mark>');});return h;}
+var ftm;function runF(){var q=norm(fq.value).trim();var terms=q.split(' ').filter(function(w){return w.length>0});
+  if(q.length<2){fres.innerHTML='';found=[];fmeta.textContent='Type 2+ letters. Enter jumps to the first match. Esc closes.';return;}
+  found=idx.filter(function(x){return terms.every(function(w){return x.n.indexOf(w)>-1})});
+  var heads=found.filter(function(x){return /^H[1-5]$/.test(x.el.tagName)||x.el.classList.contains('spec-name')});
+  var rest=found.filter(function(x){return heads.indexOf(x)<0});found=heads.concat(rest);
+  fmeta.textContent=found.length?(found.length>80?'80 of '+found.length+' matches':found.length+(found.length===1?' match':' matches')):'No matches. Try a shorter word.';
+  fres.innerHTML=found.slice(0,80).map(function(x,i){return '<li><button type="button" data-i="'+i+'"><small>'+esc(sectionOf(x.el))+'</small><span>'+snip(x.t,terms)+'</span></button></li>'}).join('');}
+fq.addEventListener('input',function(){clearTimeout(ftm);ftm=setTimeout(runF,90)});
+fq.addEventListener('keydown',function(e){if(e.key==='Enter'&&found.length){e.preventDefault();goF(0);}if(e.key==='ArrowDown'){var b=fres.querySelector('button');if(b){e.preventDefault();b.focus();}}});
+fres.addEventListener('keydown',function(e){var b=e.target.closest('button');if(!b)return;var li=b.parentNode;if(e.key==='ArrowDown'&&li.nextElementSibling){e.preventDefault();li.nextElementSibling.querySelector('button').focus();}if(e.key==='ArrowUp'){e.preventDefault();if(li.previousElementSibling)li.previousElementSibling.querySelector('button').focus();else fq.focus();}});
+fres.addEventListener('click',function(e){var b=e.target.closest('button[data-i]');if(b)goF(+b.dataset.i);});
+function markRanges(el,terms){if(!(window.CSS&&CSS.highlights&&window.Highlight))return;var rs=[];textNodes(el).forEach(function(n){var v=norm(n.nodeValue);terms.forEach(function(w){if(!w)return;var i=v.indexOf(w);while(i>-1&&n.nodeValue.length>=i+w.length){var r=D.createRange();r.setStart(n,i);r.setEnd(n,i+w.length);rs.push(r);i=v.indexOf(w,i+w.length);}});});try{CSS.highlights.set('nk-find',new Highlight(...rs));}catch(err){}}
+function goF(i){var x=found[i];if(!x)return;var el=x.el;closeF();
+  try{el.dispatchEvent(new CustomEvent('nk:reveal',{bubbles:true}));}catch(err){}
+  var d=el.closest('details');while(d){d.open=true;d=d.parentElement&&d.parentElement.closest('details');}
+  var terms=norm(fq.value).trim().split(' ').filter(Boolean);
+  setTimeout(function(){el.scrollIntoView({block:'center'});[350,900,1600].forEach(function(t){setTimeout(function(){var r=el.getBoundingClientRect();if(r.top<0||r.bottom>innerHeight)el.scrollIntoView({block:'center'});},t)});markRanges(el,terms);D.querySelectorAll('.nk-flash').forEach(function(f){f.classList.remove('nk-flash')});el.classList.add('nk-flash');setTimeout(function(){el.classList.remove('nk-flash')},2600);},40);}
+D.getElementById('nk-find').addEventListener('click',function(){fx.hidden?openF():closeF();});
+D.getElementById('nk-fx').addEventListener('click',closeF);
+D.addEventListener('keydown',function(e){var tg=e.target,typing=tg&&(tg.tagName==='INPUT'||tg.tagName==='TEXTAREA'||tg.isContentEditable);
+  if(((e.key==='k'||e.key==='K')&&(e.metaKey||e.ctrlKey))||(e.key==='/'&&!typing)){e.preventDefault();openF();}
+  if(e.key==='Escape'&&!fx.hidden)closeF();});
+D.addEventListener('mousedown',function(e){if(!fx.hidden&&!(e.target.closest&&e.target.closest('.nk-find,#nk-find')))closeF();});
+/* ---------- init ---------- */
+function init(){indexBlocks();restore();badge();renderList();}
+if(D.readyState==='complete')setTimeout(init,60);else window.addEventListener('load',function(){setTimeout(init,60)});
+})();
+</script>
+<script src="../assets/mtrx-review.js" defer></script>
+</body></html>
