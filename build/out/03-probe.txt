@@ -1,0 +1,278 @@
+== 06 size 953754
+tag <script> 40 bytes
+tag <style> 36189 bytes
+tag <script> 120 bytes
+tag <style id="mtrx-kit-css"> 7255 bytes
+tag <style id="mtrx-p2-css"> 6323 bytes
+tag <script type="application/json"> 248 bytes
+tag <script type="application/json"> 220 bytes
+tag <script type="application/json"> 216 bytes
+tag <script type="application/json"> 262 bytes
+tag <script type="application/json"> 252 bytes
+tag <script type="application/json"> 237 bytes
+tag <script type="application/json"> 262 bytes
+tag <script type="application/json"> 211 bytes
+tag <script type="application/json"> 227 bytes
+tag <script type="application/json"> 247 bytes
+tag <script type="application/json"> 210 bytes
+tag <script type="application/json"> 259 bytes
+tag <script type="application/json"> 330 bytes
+tag <script type="application/json"> 274 bytes
+tag <script type="application/json"> 290 bytes
+tag <script type="application/json"> 240 bytes
+tag <script type="application/json"> 275 bytes
+tag <script type="application/json"> 269 bytes
+tag <script type="application/json"> 293 bytes
+tag <script type="application/json"> 248 bytes
+tag <script type="application/json"> 288 bytes
+tag <script type="application/json"> 242 bytes
+tag <script type="application/json"> 297 bytes
+tag <script type="application/json"> 241 bytes
+tag <script type="application/json"> 230 bytes
+tag <script type="application/json"> 269 bytes
+tag <script type="application/json"> 199 bytes
+tag <script type="application/json"> 243 bytes
+tag <script type="application/json"> 237 bytes
+tag <script type="application/json"> 241 bytes
+tag <script type="application/json"> 288 bytes
+tag <script type="application/json"> 247 bytes
+tag <script type="application/json"> 276 bytes
+tag <script type="application/json"> 206 bytes
+tag <script type="application/json"> 266 bytes
+tag <script type="application/json"> 261 bytes
+tag <script type="application/json"> 191 bytes
+tag <script type="application/json"> 204 bytes
+tag <script type="application/json"> 263 bytes
+tag <script type="application/json"> 227 bytes
+tag <script type="application/json"> 236 bytes
+tag <script type="application/json"> 214 bytes
+tag <script type="application/json"> 219 bytes
+tag <script type="application/json"> 216 bytes
+tag <script type="application/json"> 276 bytes
+tag <script type="application/json"> 209 bytes
+tag <script type="application/json"> 259 bytes
+tag <script type="application/json"> 250 bytes
+tag <script type="application/json"> 279 bytes
+tag <script type="application/json"> 277 bytes
+tag <script type="application/json"> 285 bytes
+tag <script type="application/json"> 267 bytes
+tag <script type="application/json"> 238 bytes
+tag <script type="application/json"> 216 bytes
+tag <script type="application/json"> 255 bytes
+tag <script type="application/json"> 320 bytes
+tag <script type="application/json"> 202 bytes
+tag <script type="application/json"> 289 bytes
+tag <script type="application/json"> 272 bytes
+tag <script type="application/json"> 271 bytes
+tag <script type="application/json"> 245 bytes
+tag <script type="application/json"> 301 bytes
+tag <script type="application/json"> 240 bytes
+tag <script type="application/json"> 262 bytes
+tag <script type="application/json"> 245 bytes
+tag <script type="application/json"> 256 bytes
+tag <script type="application/json"> 240 bytes
+tag <script type="application/json"> 234 bytes
+tag <script> 4022 bytes
+tag <script> 2798 bytes
+tag <script id="mtrx-kit-js"> 20288 bytes
+tag <script src="../assets/mtrx-review.js" defer> 0 bytes
+== head
+<!DOCTYPE html>
+<html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MTRX™ Field Series No. 06 · Read the room · Kevin Cecil</title><meta name="mtrx-slug" content="mtrx-field-series-06-read-the-room"><meta name="description" content="Social intelligence through cinema: reading people honestly, scene by scene, evidence-graded, prepared for Kevin Cecil."><script>...</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@500;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,400..900;1,6..12,400..700&display=swap"><link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=tanker@400&display=swap"><style>...</style><script>...</script><style id="mtrx-kit-css">...</style><!-- mtrx:p2css --><style id="mtrx-p2-css">...</style><!-- /mtrx:p2css --></head>
+
+== body start
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><marker id="ah" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#151515"></path></marker><marker id="ahm" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ED691D"></path></marker></defs></svg><div class="scrollbar" aria-hidden="true"></div><nav class="thumbs" aria-label="Sections"><button class="thumb" type="button" data-t="0" aria-label="Start"><span class="lbl"><span class="full">Start</span><span class="short">00</span></span><i></i></button><button class="thumb" type="button" data-t="1" aria-label="Read the room"><span class="lbl"><span class="full">Read the room</span><span class="short">I</span></span><i></i></button><button class="thumb" type="button" data-t="4" aria-label="The Spotlight Files"><span class="lbl"><span class="full">Spotlight</span><span class="short">II.1</span></span><i></i></button><button class="thumb" type="button" data-t="2" aria-label="George Newman"><span class="lbl"><span class="full">George Newman</span><span class="short">II.3</span></span><i></i></button><button class="thumb" type="button" data-t="3" aria-label="Network"><span class="lbl"><span class="full">Network</span><span class="short">II.4</span></span><i></i></button><button class="thumb" type="button" data-t="5" aria-label="The line"><span class="lbl"><span class="full">The line</span><span class="short">II.5</span></span><i></i></button></nav><div class="site"><header class="wrap cover" id="top" data-sec="0"><div><div class="kicker">MTRX™ Field Series · No. 06 · October 2026</div>
+<h1 class="cover-title">Read the <span class="o">room</span></h1>
+<p class="cover-sub">Social intelligence through cinema. Heroes, villains and side characters show you how people are read, the science checks every scene, and you try it on a real call the same day.</p>
+<ul class="verbs"><li>Notice</li><li>Ask</li><li>Update</li></ul>
+<p class="prepared">Prepared for <b>Kevin Cecil</b>, founder, MTRX™ Digital, and George Newman<br>Part I: 12 stops · Part II: 7 stops so far · 20 minutes a day · 31 scenes · 37 more in the scene library<br>Sources checked 9 and 14 October 2026</p>
+<a class="btn btn-a" href="#m0-1">Start here <span aria-hidden="true">↓</span></a></div>
+<div class="cover-plate"><nav class="cube6" aria-label="Nine scenes in Part I"><a href="#m1-1"><span class="ph">Casino Royale</span><img src="https://i.ytimg.com/vi/3jQbXuvGR5o/mqdefault.jpg" alt="Still from Casino Royale" loading="lazy" onerror="this.remove()"><b>1.1</b></a><a href="#m1-2"><span class="ph">Sherlock</span><img src="https://i.ytimg.com/vi/VaT7IYQgyqo/mqdefault.jpg" alt="Still from Sherlock" loading="lazy" onerror="this.remove()"><b>1.2</b></a><a href="#m1-3"><span class="ph">Inglourious Basterds</span><img src="https://i.ytimg.com/vi/kPoCFAP6RuM/mqdefault.jpg" alt="Still from Inglourious Basterds" loading="lazy" onerror="this.remove()"><b>1.3</b></a><a href="#m1-4"><span class="ph">Heat</span><img src="https://i.ytimg.com/vi/3lKSth8oPaE/mqdefault.jpg" alt="Still from Heat" loading="lazy" onerror="this.remove()"><b>1.4</b></a><a href="#m1-5"><span class="ph">The Godfather</span><img src="https://i.ytimg.com/vi/eZHsmb4ezEk/mqdefault.jpg" alt="Still from The Godfather" loading="lazy" onerror="this.remove()"><b>1.5</b></a><a href="#m1-6"><span class="ph">The Social Network</span><img src="https://i.ytimg.com/vi/VKnNUYknsuQ/mqdefault.jpg" alt="Still from The Social Network" loading="lazy" onerror="this.remove()"><b>1.6</b></a><a href="#m1-7"><span class="ph">Margin Call</span><img src="https://i.ytimg.com/vi/mpEEKlDs_M0/mqdefault.jpg" alt="Still from Margin Call" loading="lazy" onerror="this.remove()"><b>1.7</b></a><a href="#m1-8"><span class="ph">Columbo</span><img src="https://i.ytimg.com/vi/QxBnaMGP2aY/mqdefault.jpg" alt="Still from Columbo" loading="lazy" onerror="this.remove()"><b>1.8</b></a><a href="#m1-9"><span class="ph">The Silence of the Lambs</span><img src="https://i.ytimg.com/vi/99Ptctl5_qQ/mqdefault.jpg" alt="Still from The Silence of the Lambs" loading="lazy" onerror="this.remove()"><b>1.9</b></a></nav><p class="cube-cap">Nine scenes from Part I. Tap one to jump to its stop.</p></div></header><section class="part" id="s0" data-part="0" data-sec="0"><div class="wrap"><article class="mod" id="m0-1" data-mod="0.1"><div class="mod-meta">Stop 0.1 · Start <span class="t">6 min</span></div><h2 class="mod-title">Why this guide exists</h2><p class="mod-why">You told me the facts felt empty. Fair. So this guide runs on scenes: heroes, villains and side characters who read a room better or worse than anyone. Every stop breaks down what the character actually reads, then the science checks it, then you try it on a real call.</p>
+<div class="mtrx"><p><b>Your why, in your words.</b> Convince pe
+== s0
+<section class="part" id="s0" data-part="0" data-sec="0"><div class="wrap"><article class="mod" id="m0-1" data-mod="0.1"><div class="mod-meta">Stop 0.1 · Start <span class="t">6 min</span></div><h2 class="mod-title">Why this guide exists</h2><p class="mod-why">You told me the facts felt empty. Fair. So this guide runs on scenes: heroes, villains and side characters who read a room better or worse than anyone. Every stop breaks down what the character actually reads, then the science checks it, then you try it on a real call.</p>
+<div class="mtrx"><p><b>Your why, in your words.</b> Convince people now, and make the next person remember you. You already have the guts: you walked into your strict department head's cabin, pitched cold, and walked out with her contacts. The gap was preparation and words that wandered. Your persona has a name, <b>George Newman</b>: a charmer who smiles a lot, gets things done and never fails to deliver. This guide is his training camp. The real Kevin stays with the people close to you.</p></div>
+<h3>Four rules</h3>
+<div class="specs">
+<div class="spec"><div class="spec-name">1 · Scenes teach, science checks</div><p class="spec-def">Every stop opens with 2 or 3 scenes. Every scene has a reality check, because films make reading people look far easier than it is.</p></div>
+<div class="spec"><div class="spec-name">2 · A read is a hypothesis</div><p class="spec-def">You never "know" what someone thinks. You notice, guess, ask and update. That loop is the whole of Part I.</p></div>
+<div class="spec"><div class="spec-name">3 · The mask has an off switch</div><p class="spec-def">George Newman goes on with the jacket and comes off when you're with people you trust. Characters who forget where the mask ends make great films and bad lives.</p></div>
+<div class="spec"><div class="spec-name">4 · Every stop feeds the writer</div><p class="spec-def">Each stop ends with a writer's note. Studying how characters read each other is screenwriting research, so nothing here is wasted time for No. 08.</p></div>
+</div>
+<h3>A 20-minute day</h3>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Step</th><th>Time</th><th>What you do</th></tr></thead><tbody>
+<tr><td>Predict</td><td>2 min</td><td>Answer the stop's question and rate your confidence 1 to 5 before reading on</td></tr>
+<tr><td>Watch</td><td>6 to 8 min</td><td>One or two scenes on YouTube, with the three "watch for" cues open</td></tr>
+<tr><td>The read</td><td>4 min</td><td>What the character read, what the science says, the diagram</td></tr>
+<tr><td>Try it</td><td>5 min</td><td>One field task on a real call, DM or meeting</td></tr>
+<tr><td>Check</td><td>1 min</td><td>Quick checks, then mark the stop done and send progress to the bot</td></tr>
+</tbody></table></div>
+<h3>The coverage map</h3>
+<p>Part I was not built from my memory. A bottom-up audit pulled <b>141 concepts from 24 source families</b>: open psychology textbooks (OpenStax, Noba), the Cambridge handbook on perceiving others accurately, Funder's accuracy model, Stanford's Interpersonal Dynamics course, O*NET's "social perceptiveness", the emotional intelligence ability model, Goleman, and practitioner books (Epley, Navarro, Voss) with caveats. All 12 stops carry their must-know concepts. Four topics showed up in two or more families but belong elsewhere: self-presentation (Part II), social norms (No. 02), persuasion (No. 04) and applied influence (Part II and No. 04). What the audit does not prove: that ever
+== footer
+<footer class="colophon"><div class="wrap"><div class="kicker">Sources</div><h2 class="part-title" style="font-size:clamp(40px,6vw,72px)">Every claim, linked</h2><div class="vids" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))"><a class="read-card" href="https://doi.org/10.1207/s15327957pspr1003_2" target="_blank" rel="noopener"><b>Bond and DePaulo 2006</b><span>Stop 1.1</span></a><a class="read-card" href="https://ojp.gov/ncjrs/virtual-library/abstracts/who-can-best-catch-liar-meta-analysis-individual-differences" target="_blank" rel="noopener"><b>Aamodt and Custer 2006</b><span>Stop 1.1</span></a><a class="read-card" href="https://doi.org/10.1037/0033-2909.134.4.477" target="_blank" rel="noopener"><b>Bond and DePaulo 2008</b><span>Stop 1.1</span></a><a class="read-card" href="https://doi.org/10.1207/S15327957PSPR0104_5" target="_blank" rel="noopener"><b>DePaulo et al. 1997</b><span>Stop 1.1</span></a><a class="read-card" href="https://doi.org/10.1037/0033-2909.111.2.256" target="_blank" rel="noopener"><b>Ambady and Rosenthal 1992</b><span>Stop 1.2</span></a><a class="read-card" href="https://doi.org/10.1037/0022-3514.64.3.431" target="_blank" rel="noopener"><b>Ambady and Rosenthal 1993</b><span>Stop 1.2</span></a><a class="read-card" href="https://doi.org/10.1111/j.1467-9280.2006.01750.x" target="_blank" rel="noopener"><b>Willis and Todorov 2006</b><span>Stop 1.2</span></a><a class="read-card" href="https://doi.org/10.1146/annurev-psych-113011-143831" target="_blank" rel="noopener"><b>Todorov et al. 2015</b><span>Stop 1.2</span></a><a class="read-card" href="https://doi.org/10.1177/1948550620969279" target="_blank" rel="noopener"><b>Wiedenroth et al. 2021</b><span>Stop 1.2</span></a><a class="read-card" href="https://doi.org/10.1037/0033-2909.129.1.74" target="_blank" rel="noopener"><b>DePaulo et al. 2003</b><span>Stop 1.3</span></a><a class="read-card" href="https://doi.org/10.1080/13218719.2019.1642258" target="_blank" rel="noopener"><b>Caso, Palena, Carlessi and Vrij 2019</b><span>Stop 1.3</span></a><a class="read-card" href="https://doi.org/10.1002/jip.1495" target="_blank" rel="noopener"><b>Palena et al. 2018</b><span>Stop 1.3</span></a><a class="read-card" href="https://doi.org/10.3389/fpsyg.2020.01377" target="_blank" rel="noopener"><b>Vrij and Fisher 2020</b><span>Stop 1.3</span></a><a class="read-card" href="http://davidmatsumoto.com/content/2008matsumotoetalJCCP.pdf" target="_blank" rel="noopener"><b>Matsumoto et al. 2008</b><
+== tail
+));}catch(err){}
+  var d=el.closest('details');while(d){d.open=true;d=d.parentElement&&d.parentElement.closest('details');}
+  var terms=norm(fq.value).trim().split(' ').filter(Boolean);
+  setTimeout(function(){el.scrollIntoView({block:'center'});[350,900,1600].forEach(function(t){setTimeout(function(){var r=el.getBoundingClientRect();if(r.top<0||r.bottom>innerHeight)el.scrollIntoView({block:'center'});},t)});markRanges(el,terms);D.querySelectorAll('.nk-flash').forEach(function(f){f.classList.remove('nk-flash')});el.classList.add('nk-flash');setTimeout(function(){el.classList.remove('nk-flash')},2600);},40);}
+D.getElementById('nk-find').addEventListener('click',function(){fx.hidden?openF():closeF();});
+D.getElementById('nk-fx').addEventListener('click',closeF);
+D.addEventListener('keydown',function(e){var tg=e.target,typing=tg&&(tg.tagName==='INPUT'||tg.tagName==='TEXTAREA'||tg.isContentEditable);
+  if(((e.key==='k'||e.key==='K')&&(e.metaKey||e.ctrlKey))||(e.key==='/'&&!typing)){e.preventDefault();openF();}
+  if(e.key==='Escape'&&!fx.hidden)closeF();});
+D.addEventListener('mousedown',function(e){if(!fx.hidden&&!(e.target.closest&&e.target.closest('.nk-find,#nk-find')))closeF();});
+/* ---------- init ---------- */
+function init(){indexBlocks();restore();badge();renderList();}
+if(D.readyState==='complete')setTimeout(init,60);else window.addEventListener('load',function(){setTimeout(init,60)});
+})();
+</script>
+<script src="../assets/mtrx-review.js" defer></script>
+</body></html>
+
+== sections
+<section class="part" id="s0" data-part="0" data-sec="0">
+<section class="part" id="s1" data-part="1" data-sec="1">
+<section class="part" id="s4" data-part="4" data-sec="4">
+<section class="part" id="s2" data-part="2" data-sec="2">
+<section class="part" id="s3" data-part="3" data-sec="3">
+<section class="part" id="s5" data-part="5" data-sec="5">
+== core js 20288 bytes, matching lines
+  var _ms=D.querySelector('meta[name="mtrx-slug"]');var SLUG=_ms?_ms.content:(D.title||'guide').replace(/[^a-z0-9]+/gi,'-').toLowerCase().replace(/^-|-$/
+  var NK='mtrx-notes:'+SLUG, HK='mtrx-hl:'+SLUG, TK='mtrx-theme';
+  function load(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}}
+  function store(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+  var SKIP='.nk-panel,.nk-dock,.nk-pop,button,input,textarea,select,svg,script,[aria-live],.sim,.gloss,#lib,.thumbs,.check .opts';
+  var theme=(function(){try{return localStorage.getItem(TK)||'light'}catch(e){return 'light'}})();
+  function applyTheme(){if(theme==='dark')root.setAttribute('data-theme','dark');else root.removeAttribute('data-theme');if(tBtn){tBtn.setAttribute('aria-pressed',theme===
+  id="nk-cnt" hidden></span></button><button type="button" class="nk-fab" id="nk-find" aria-label="Search this guide" title="Search (press /)"><span class="ic" aria-hidden="true">⌕</span><span class="t">Search</span></but
+  tBtn.addEventListener('click',function(){theme=theme==='dark'?'light':'dark';try{localStorage.setItem(TK,theme)}catch(e){}applyTheme();});
+  c"></span></div><ol class="nk-hls" id="nk-hls"></ol><p class="nk-empty" id="nk-hempty">Select any text in the guide and tap <b>Highlight</b>. It shows up here and in your export.</p><div class="nk-k"><span>My thoughts</s
+  var fname='MTRX-notes-'+SLUG.slice(0,32)+'-'+stamp();
+  Id('nk-clear').addEventListener('click',function(){if(!confirm('Delete all your notes and highlights for this guide?'))return;hls.slice().forEach(function(h){unwrap(h.id)});hls=[];store(HK,hls);ta.value='';store(NK,{t:''
+  var SQ='.nk-panel,.nk-dock,.nk-pop,.nk-find,script,style,svg,.thumbs,button,textarea,input,select,noscript,.nojs-only';
+  className='nk-find';fx.hidden=true;fx.setAttribute('role','dialog');fx.setAttribute('aria-label','Search this guide');
+  ="nk-q" placeholder="Search everything: try \'API\' or \'memory\'" autocomplete="off" aria-label="Search this guide"><button type="button" class="nk-x" id="nk-fx" aria-label="Close search">×</button></div><div class="nk-
+== small script: document.documentElement.className='js';
+== small script: try{if(localStorage.getItem("mtrx-theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}
+== assets/mtrx-review.js 14736 bytes
+/* Optional shared palette layer. Loaded independently so the reader and bot never wait for it. */
+(function () {
+  if (document.getElementById('mtrx-palette-script')) return;
+  var current = document.currentScript;
+  if (!current || !current.src) return;
+  var script = document.createElement('script');
+  script.id = 'mtrx-palette-script';
+  script.src = new URL('mtrx-themes.js?v=1', current.src).href;
+  script.async = true;
+  document.head.appendChild(script);
+})();
+
+/* MTRX Field Library: shared add-on loaded by every guide and by the library home (see AGENTS.md, rule 6).
+   1. Top bar: "Library" link, "Send progress" and "Read mode".
+   2. Send progress: opens a copy-and-send panel for Telegram Web, plus an optional app link.
+      The copied command is /start pNN_<base64url bitmask>. Bit i = the i-th
+      <button class="done" data-mod> in document order, the same order tools/build_questions.py
+      writes into bot/questions/NN.json "stops".
+   3. Read mode: hides every floating control (week tabs, reader kit dock, top bar, progress line)
+      and widens the page. Toggle with the button, the R key, or Esc to leave. Remembered per browser.
+   4. Device sync: reads the bot's public bot/state.json and marks done any stop the bot already
+      knows about (sent from another device). It only ever adds, and each stop is applied once,
+      so a stop you untick by hand stays unticked. The library home calls the same sync.
+   Change shared behaviour here, never inside the guides. */
+(function () {
+  var BOT = 'makingmesmart_bot';
+  var STATE_URL = 'https://raw.githubusercontent.com/Kevincecil11/mtrx-field-library/main/bot/state.json';
+  var SYNC_KEY = 'mtrx-sync-v1', READ_KEY = 'mtrx-read-v1';
+  if (document.getElementById('mtrx-bar')) return;
+  var m = location.pathname.match(/\/(\d\d)-[^\/]*\.html$/);
+  var guide = m && m[1];
+  var home = !guide && window.MTRX_GUIDES;
+
+  function getJ(k) { try { return JSON.parse(localStorage.getItem(k)) || {}; } catch (e) { return {}; } }
+  function setJ(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  function botDone(cb) {
+    if (!window.fetch) return;
+    fetch(STATE_URL + '?t=' + Date.now(), { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (st) { if (st && st.done) cb(st.done); })
+      .catch(function () {});
+  }
+
+  /* Library home: merge the bot's stops straight into each guide's saved progress, then redraw. */
+  if (home) {
+    bot
+  ent.head.appendChild(script); })();  /* MTRX Field Library: shared add-on loaded by every guide and by the library home (see AGENTS.md, rule 6).    1. Top bar: "Library" link, "Send progress" and "Rea
+  . The library home calls the same sync.    Change shared behaviour here, never inside the guides. */ (function () {   var BOT = 'makingmesmart_bot';   var STATE_URL = 'https://raw.githubusercontent.co
+  , READ_KEY = 'mtrx-read-v1';   if (document.getElementById('mtrx-bar')) return;   var m = location.pathname.match(/\/(\d\d)-[^\/]*\.html$/);   var guide = m && m[1];   var home = !guide && window.MTRX
+  Y = 'mtrx-read-v1';   if (document.getElementById('mtrx-bar')) return;   var m = location.pathname.match(/\/(\d\d)-[^\/]*\.html$/);   var guide = m && m[1];   var home = !guide && window.MTRX_GUIDES; 
+  d('mtrx-bar')) return;   var m = location.pathname.match(/\/(\d\d)-[^\/]*\.html$/);   var guide = m && m[1];   var home = !guide && window.MTRX_GUIDES;    function getJ(k) { try { return JSON.parse(lo
+  location.pathname.match(/\/(\d\d)-[^\/]*\.html$/);   var guide = m && m[1];   var home = !guide && window.MTRX_GUIDES;    function getJ(k) { try { return JSON.parse(localStorage.getItem(k)) || {}; } c
+   .catch(function () {});   }    /* Library home: merge the bot's stops straight into each guide's saved progress, then redraw. */   if (home) {     botDone(function (done) {       var seen = getJ(SYNC
+  ent.createElement('style');   css.textContent =     '#mtrx-transfer{width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 40px);overflow:auto;' +     'padding:28px;border:2px solid #151515;bord
+  ss.textContent =     '#mtrx-transfer{width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 40px);overflow:auto;' +     'padding:28px;border:2px solid #151515;border-radius:20px;background:#ECEA
+  rder:2px solid #151515;border-radius:20px;background:#ECEAE4;color:#151515;' +     'font:400 16px/1.5 "Nunito Sans",system-ui,sans-serif;box-shadow:0 24px 80px #0005}' +     '#mtrx-transfer::backdrop{
+  515;' +     'font:400 16px/1.5 "Nunito Sans",system-ui,sans-serif;box-shadow:0 24px 80px #0005}' +     '#mtrx-transfer::backdrop{background:#15151599;backdrop-filter:blur(3px)}' +     '#mtrx-transfer 
+  5;' +     'font:400 16px/1.5 "Nunito Sans",system-ui,sans-serif;box-shadow:0 24px 80px #0005}' +     '#mtrx-transfer::backdrop{background:#15151599;backdrop-filter:blur(3px)}' +     '#mtrx-transfer h2
+  :backdrop{background:#15151599;backdrop-filter:blur(3px)}' +     '#mtrx-transfer h2{font:800 25px/1.15 "Nunito Sans",system-ui,sans-serif;margin:12px 0}' +     '#mtrx-transfer p{margin:12px 0}' +     
+  margin:12px 0}' +     '#mtrx-transfer p{margin:12px 0}' +     '#mtrx-transfer .mt-k{font:700 14px/1.3 ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:#B3460D}' +     '#mtrx-
+   0}' +     '#mtrx-transfer .mt-k{font:700 14px/1.3 ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;color:#B3460D}' +     '#mtrx-transfer .mt-close{float:right;border:0;background:
+  ointer;font-size:24px;padding:0 4px}' +     '#mtrx-transfer textarea{display:block;width:100%;height:76px;padding:14px;border:1px solid #55586A;' +     'border-radius:10px;background:#F6F4EF;color:#15
+  rder:1px solid #55586A;' +     'border-radius:10px;background:#F6F4EF;color:#151515;font:500 16px/1.45 ui-monospace,monospace;resize:none}' +     '#mtrx-transfer .mt-actions{display:flex;gap:10px;flex
+  fer .mt-btn{border:2px solid #151515;border-radius:999px;padding:10px 16px;' +     'font:800 16px/1.3 "Nunito Sans",system-ui,sans-serif;text-decoration:none;cursor:pointer;background:#151515;color:#F
+  flex;align-items:center;gap:6px;border:0;cursor:pointer;white-space:nowrap;' +     'font:700 13px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;' +     'paddi
+  e:nowrap;' +     'font:700 13px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;' +     'padding:9px 13px;border-radius:999px;text-decoration:none;box-shadow:0 
+  :14px;top:56px;z-index:96;max-width:320px;background:#151515;color:#F6F4EF;' +     'font:600 14px/1.45 "Nunito Sans",system-ui,sans-serif;padding:12px 14px;border-radius:14px;display:none}' +     '#mt
+  +     '@media (max-width:760px){.mtrx-fab{font-size:11px;padding:8px 10px;letter-spacing:.05em}#mtrx-bar{gap:6px;left:10px}' +     '.mtrx-fab .lg{display:none}}';   document.head.appendChild(css);    
+  .contains('mtrx-read')) return;     var y = window.scrollY;     if (y > lastY + 4 && y > 200) exit.classList.add('away');     else if (y < lastY - 4 || y < 200) exit.classList.remove('away');     last
+  (y > lastY + 4 && y > 200) exit.classList.add('away');     else if (y < lastY - 4 || y < 200) exit.classList.remove('away');     lastY = y;   }, { passive: true });   document.addEventListener('keydow
+  AREA' || t.tagName === 'SELECT' || t.isContentEditable);     if (typing || e.ctrlKey || e.metaKey || e.altKey) return;     if ((e.key === 'r' || e.key === 'R')) { e.preventDefault(); setRead(!root.cla
+  ; clearTimeout(say.t); say.t = setTimeout(function () { toast.style.display = 'none'; }, 6000); }    if (guide) {     var send = document.createElement('button');     send.id = 'mtrx-send'; send.type 
+  say.t); say.t = setTimeout(function () { toast.style.display = 'none'; }, 6000); }    if (guide) {     var send = document.createElement('button');     send.id = 'mtrx-send'; send.type = 'button'; sen
+  d.className = 'mtrx-fab';     send.innerHTML = 'Send<span class="lg"> progress</span> \u2708'; send.setAttribute('aria-label', 'Send my finished stops to the Telegram review bot');     bar.appendChild
+  d = 'mtrx-read'; read.type = 'button'; read.className = 'mtrx-fab';   read.innerHTML = '\u00b6<span class="lg"> Read mode</span>';   read.title = 'Read mode (R)'; read.setAttribute('aria-label', 'Read
+  ddEventListener('click', function () { setRead(true); });   bar.appendChild(read);   if (!guide) return;    function stops() {     var seen = {}, out = [];     [].forEach.call(document.querySelectorAl
+  (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);     return 'p' + guide + '_' + btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');   }   var transfer = docum
+  ' + window.MTRX_LAST_CODE;     transfer.querySelector('#mt-count').textContent = 'No. ' + guide + ': ' + n + ' finished ' + (n === 1 ? 'stop' : 'stops') + '. Your saved progress is safe.';     transfe
+  dy has (sent from your other device). */   function applySync(done) {     var mine = done[guide] || {}, seen = getJ(SYNC_KEY), s = seen[guide] || (seen[guide] = {}), n = 0;     Object.keys(mine).forEa
+  ction applySync(done) {     var mine = done[guide] || {}, seen = getJ(SYNC_KEY), s = seen[guide] || (seen[guide] = {}), n = 0;     Object.keys(mine).forEach(function (k) {       if (s[k]) return;     
+  done) {     var mine = done[guide] || {}, seen = getJ(SYNC_KEY), s = seen[guide] || (seen[guide] = {}), n = 0;     Object.keys(mine).forEach(function (k) {       if (s[k]) return;       s[k] = mine[k]
+== index.html 15025 bytes
+== index around 06
+philosophy, 20 minutes a day. Talk like an insider in 28 days.","time":"Weeks 1 to 2 built · Weeks 3 to 4 next","file":"02-mind.html","key":"mtrx-mind-v1","acc":"moss","st":"partial","day":true,"parts":[["How to think",["1","2","3","4","5","6","7"]],["What's real, and how do we know?",["8","9","10","11","12","13","14"]],["Self, will and the crowd",[]],["How to live",[]]]},{"n":"03","t":"Cons and cults","sub":"How cons, cults and power plays really work. Defence first, then honest influence.","time":"In development","file":"","key":null,"acc":"red","st":"dev","day":false,"parts":[]},{"n":"04","t":"Sales and persuasion","sub":"The honest levers that close deals: clarity, proof, real scarcity, real social proof.","time":"In development","file":"","key":null,"acc":"jane","st":"dev","day":false,"parts":[]},{"n":"05","t":"The long game","sub":"Twelve lives as lab notes, and a daily toolkit that survived the evidence.","time":"About 75 min · 12 weeks to run","file":"05-long-game.html","key":"mtrx-long-v1","acc":"gun","st":"ready","day":false,"parts":[["Start here",["0.1","0.2"]],["Lives as lab notes",["1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9","1.10","1.11","1.12"]],["The daily toolkit",["2.1","2.2","2.3","2.4","2.5","2.6","2.7","2.8"]],["Field check",["3.1"]]]},{"n":"06","t":"Read the room","sub":"Social intelligence through cinema: how people are really read, scene by scene, evidence-graded.","time":"Part I built · Part II: 1 of 5 files, 7 stops · daily 20 min","file":"06-read-the-room.html","key":"mtrx-room-v1","acc":"mars","st":"partial","day":false,"parts":[["Start here",["0.1","0.2"]],["Read the room",["1.1","1.2","1.3","1.4","1.5","1.6","1.7","1.8","1.9","1.10","1.11","1.12"]],["Part II · File 1 · The Spotlight",["2.1","2.2","2.3","2.4","2.5","2.6","2.7"]],["Part II · File 2 · The Read",[]],["Part II · File 3 · George Newman",[]],["Part II · File 4 · Pitch and network",[]],["Part II · File 5 · The Line",[]]]}];
+var A={ink:'#151515',mars:'#ED691D',moss:'#697132',gun:'#2F3E46',red:'#A44A3F',jane:'#C9A84A'};
+var LK='mtrx-library-v1',L={};try{L=JSON.parse(localStorage.getItem(LK))||{}}catch(e){}
+if(!L.start)L.start={'01':'2026-10-08'};
+function sv(){try{localStorage.setItem(LK,JSON.stringify(L))}catch(e){}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function done(g){if(!g.key)return{};try{return(JSON.parse(localStorage.getItem(g.key))||{}).done||{}}catch(e){return{}}}
+function ids(g){return g.parts.reduce(function(a,p){return a.concat(p[1])},[])}
+function pct(g){var d=done(g),x=ids(g);if(!x.length)return 0;return Math.round(100*x.filter(function(i){return d[i]}).length/x.length)}
+function nextStop(g){var d=done(g),x=ids(g);for(var i=0;i<x.length;i++)if(!d[x[i]])return x[i];return null}
+function href(g,id){return 'guides/'+g.file+(id?'#'+(g.day?'d'+id:'m'+id.replace('.','-')):'')}
+function label(g,id){return g.day?'Day '+id:'Stop '+id}
+function daysSince(s){if(!s)return null;var t=new Date(s+'T00:00:00'),n=new Date();n.setHours(0,0,0,0);return Math.round((n-t)/864e5)}
+function byN(n){return G.filter(function(g){return g.n===n})[0]}
+function grid(){var w=document.getElementById('grid');w.innerHTML='';G.forEach(function(g){var b=document.createElement('button');b.type='button';b.className='card'+(g.st==='dev'?' dev':'');b.style.setProperty('--a',A[g.acc]);b.dataset.n=g.n;
+ var p=pct(g),chip=g.st==='dev'?'In development':g.st==='partial'?'Partly built':p===100?'Finished':p>0?p+'% done':'Not started';
+ b.innerHTML='<div class="no">No. '+g.n+'</div><h3>'+esc(g.t)+'<span class="chip">'+chip+'</span></h3><p>'+esc(g.sub)+'</p><div class="meta">'+esc(g.time)+'</div>'+(g.st==='dev'?'':'<div class="bar"><i style="width:'+p+'%"></i></div>');
+ if(g.st!=='dev')b.addEventListener('click',function(){show(g.n,true)});w.appendChild(b);});}
+function show(n,scroll){var g=byN(n),d=document.getElementById('det'),dn=done(g),nx=nextStop(g),ds=daysSince((L.start||{}
+== index first 03 mention
+o 2 built · Weeks 3 to 4 next","file":"02-mind.html","key":"mtrx-mind-v1","acc":"moss","st":"partial","day":true,"parts":[["How to think",["1","2","3","4","5","6","7"]],["What's real, and how do we know?",["8","9","10","11","12","13","14"]],["Self, will and the crowd",[]],["How to live",[]]]},{"n":"03","t":"Cons and cults","sub":"How cons, cults and power plays really work. Defence first, then honest influence.","time":"In development","file":"","key":null,"acc":"red","st":"dev","day":false,"parts":[]},{"n":"04","t":"Sales and persuasion","sub":"The honest levers that close deals: clarity, proof, real scarcity, real social proof.","time":"In development","file":"","key":null,"acc":"jane","st":"dev","day":false,"parts":[]},{"n":"05","t":"The long game","sub":"Twelve lives as lab notes, and a daily toolkit that survived the evidence.","time":"About 75 min · 12 weeks to run","file":"05-long
+== p2 css classes: anatomy bd beam bg bj bk bm bx css dos-body dos-facts dos-k dos-name dos-role dos-tab dossier drill drill-h drill-x file files g-x is-now lm ln lr move move-k move-line move-steps mv nextq p2-intro p2fig reveal rewatch rule src st-anti st-field st-hold st-myth st-part stamp story tb td tm tr ts ttags tw vid-b vid-t
+== house css 36189 bytes, root vars: :root{
+  --canvas:#ECEAE4; --paper:#F6F4EF; --paper-2:#E5E2D9; --ink:#151515; --ink-2:#2B2B2B;
+  --graphite:#55586A; --steel:#BCBFCC; --rule:rgba(21,21,21,.11);
+  --mars:#ED691D; --mars-ink:#B3460D; --mars-soft:#F7D9C6;
+  --moss:#697132; --moss-ink:#525923; --moss-soft:#E0E3CB;
+  --gun:#2F3E46; --gun-soft:#D7DDE0;
+  --jane:#F4E3B2; --red:#A44A3F; --red-soft:#F1DCD8;
+  --accent:var(--mars); --accent-ink:var(--mars-ink); --accent-soft:var(--mars-soft); --on-accent:var(--ink);
+  --display:"Tanker","Anton","Bebas Neue",Impact,"Arial Narrow",sans-serif;
+  --sans:"Nunito Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --tab-w:54px; --radius:16px;
+}
+== data-part rules: [data-part="1"]{--accent:var(--mars);--accent-ink:var(--mars-ink);--accent-soft:var(--mars-soft);--on-accent:var(--ink)} | [data-part="2"]{--accent:var(--gun);--accent-ink:var(--gun);--accent-soft:var(--gun-soft);--on-accent:var(--paper)} | [data-part="3"]{--accent:var(--moss);--accent-ink:var(--moss-ink);--accent-soft:var(--moss-soft);--on-accent:var(--paper)} | [data-part="4"]{--accent:var(--ink);--accent-ink:var(--ink);--accent-soft:var(--jane);--on-accent:var(--paper)} | [data-part="5"]{--accent:var(--red);--accent-ink:var(--red);--accent-soft:var(--red-soft);--on-accent:var(--paper)} | [data-part="6"]{--accent:var(--graphite);--accent-ink:var(--graphite);--accent-soft:#E4E5EA;--on-accent:var(--paper)} | [data-part="6"] :is(.fig,.plate-img,.part-head,.room){--accent:#6E7180;--accent-ink:#55586A;--accent-soft:#E4E5EA;--on-accent:#F6F4EF}
