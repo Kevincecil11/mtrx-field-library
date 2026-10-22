@@ -1,0 +1,43 @@
+name: Quiz balance
+# Rebalances the right-answer positions of every multiple-choice check in the guides
+# and writes build/out/quiz-audit.txt (position spread, length bias, worst cases).
+# Idempotent: a second run changes nothing. See tools/quiz_audit.py.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/quiz_audit.py'
+      - '.github/workflows/quiz-balance.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: guide-build
+  cancel-in-progress: false
+jobs:
+  balance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install lint tools
+        run: pip install beautifulsoup4==4.12.3
+      - name: Audit and balance
+        run: python3 tools/quiz_audit.py --fix --report build/out/quiz-audit.txt
+      - name: Commit
+        run: |
+          git config user.name "mtrx-build"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add guides build/out/quiz-audit.txt
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "quiz balance: right answers spread across positions [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            sleep 7
+          done
+          exit 1

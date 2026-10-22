@@ -4,10 +4,12 @@
 small source files instead of the whole HTML.
 
 1. If build/06/build.py exists, it writes build/out/06-candidate.html.
-2. The candidate is linted with tools/check_guide.py. Only a clean candidate
+2. tools/quiz_audit.py --fix spreads the right answers of the candidate's quick
+   checks across positions (idempotent, same result as the Quiz balance workflow).
+3. The candidate is linted with tools/check_guide.py. Only a clean candidate
    replaces guides/06-read-the-room.html, so a bad build never ships.
-3. The No. 06 card on the library page (index.html) is synced to the guide.
-4. A compact skeleton of the live guide goes to build/out/06-skeleton.txt and a
+4. The No. 06 card on the library page (index.html) is synced to the guide.
+5. A compact skeleton of the live guide goes to build/out/06-skeleton.txt and a
    report to build/out/06-report.txt, so the next session can plan without
    reading 800 KB of HTML.
 """
@@ -32,6 +34,8 @@ if os.path.exists('build/06/build.py'):
     if os.path.exists(CAND):
         os.remove(CAND)
     if run('build/06/build.py', GUIDE, CAND) == 0 and os.path.exists(CAND):
+        if os.path.exists('tools/quiz_audit.py'):
+            run('tools/quiz_audit.py', '--fix', CAND)
         if run('tools/check_guide.py', CAND) == 0:
             shutil.copyfile(CAND, GUIDE)
             status = 'candidate passed lint and replaced the guide'
