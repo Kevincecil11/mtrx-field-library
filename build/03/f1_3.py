@@ -1,0 +1,76 @@
+from svg import box, t, svg
+
+COLS = [('CONTROL THE WORLD', ['milieu control', 'mystical manipulation']),
+        ('CONTROL THE SELF', ['demand for purity', 'confession', 'doctrine over person']),
+        ('CONTROL THE TRUTH', ['sacred science', 'loading the language', 'dispensing of existence'])]
+_inner = ''
+for _i, (_h, _items) in enumerate(COLS):
+    _x = 20 + _i * 360
+    _inner += box(_x, 20, 340, 56, 's-box-a') + t(_x + 170, 55, _h, 's-t')
+    for _j, _it in enumerate(_items):
+        _inner += box(_x + 20, 96 + _j * 66, 300, 52, 's-card') + t(_x + 170, 128 + _j * 66, _it, 's-t-b')
+_inner += t(550, 330, 'Ordinary social tools. Dangerous when combined, made absolute and backed by punishment.', 's-t-sm')
+FIG = svg(1100, 350, "Lifton's eight themes in three groups", _inner)
+
+STOP = dict(
+    id='1.3', day=3, title="The toolkit: Lifton's eight",
+    q='What techniques do cults use?',
+    why="The most famous checklist for cults was not built by studying cults at all. Robert Jay Lifton built it by interviewing people who had been through Communist thought reform in 1950s China. His eight themes still describe how a closed world works from the inside, as long as you treat them as a lens and not a magic spell.",
+    case=dict(k='Case file', name='Robert Jay Lifton', role='Psychiatrist; Thought Reform and the Psychology of Totalism (1961)',
+              facts=[('Studied', 'Westerners and Chinese intellectuals put through thought reform in the early 1950s'),
+                     ('Where', 'Long interviews in Hong Kong with people who had been through it'),
+                     ('Gave us', 'Eight themes of what he called ideological totalism'),
+                     ('Edition note', 'The famous chapter is chapter 22 in the 1989 edition')],
+              stamp=('part', 'A lens, not a test')),
+    cold=dict(q="Lifton's eight criteria are the most cited cult checklist in the world. Where did they come from: a study of American cults, lab experiments on obedience, or something else?",
+              a="Something else. Lifton interviewed people in Hong Kong who had been through Communist re-education in China, and he published in 1961, years before the American cult scare. That origin matters: the eight themes describe any closed ideological world, from a political camp to a coaching company, not only religious groups."),
+    video=dict(id='c7wCbbmLtiI', title='The Secret Language of Cults', who='Crash Course Lecture',
+               watch=['Which words create an inside and an outside',
+                      'How a phrase can end a thought instead of starting one',
+                      'Which examples come from ordinary life, not cults']),
+    story=["Lifton called the pattern ideological totalism: an all-or-nothing world where one set of ideas claims to explain everything. He described it through eight themes. They are easiest to remember in three groups.",
+           "Control the world. Milieu control means controlling what a person hears, reads and talks about, and with whom, until the group is the only channel. Mystical manipulation means staging events, a 'chance' meeting or a 'spontaneous' outpouring, so that they feel like proof of a higher purpose. The leader's plans start to look like destiny.",
+           "Control the self. The demand for purity splits the world into clean and contaminated and leaves members feeling permanently not good enough. Confession, which Lifton called the cult of confession, turns private shame into the group's property: you reveal everything, the leaders reveal little, and the imbalance becomes leverage. Doctrine over person tells you that when your own experience disagrees with the doctrine, your experience is wrong.",
+           "Control the truth. Sacred science treats the doctrine as both holy and scientifically proven, so questioning it is a sin and a sign of stupidity at once. Loading the language packs complex thoughts into short insider phrases; Lifton's name for the result is the thought-terminating cliche, a slogan that ends a conversation instead of starting one. Dispensing of existence decides who deserves to exist with dignity: insiders are saved, while outsiders and leavers are lost, ill or evil.",
+           "Now the important part: none of these is magic. Each is an ordinary social tool. Every company has jargon, every religion has confession, every team has rules about what we do and don't do. The danger comes when the tools are combined, made absolute, and backed by punishment. Love bombing works the same way. Warmth is not a trick, but intense affection becomes a tool when it is conditional, withdrawn as punishment, and paired with rising demands.",
+           "The modern literature builds on Lifton. Amanda Montell's Cultish shows how much of this runs through language alone, from fitness studios to multi-level marketing, though her book is cultural analysis rather than a controlled study. Steven Hassan's BITE model (behaviour, information, thought and emotional control) is a popular checklist built on the same ideas; treat it as a prompt for noticing, because it has not been independently validated as a diagnostic test. And when a task force led by the psychologist Margaret Singer presented cult mind control as established science, the American Psychological Association's ethics board rejected its report in 1987 for lacking scientific rigour. The tools are real. The idea of an irresistible technology is not."],
+    fig=(FIG, "Lifton's eight themes, grouped. None is unusual alone; a closed world combines them and punishes anyone who refuses."),
+    specs=[('Milieu control', 'Controlling what a person hears, reads and discusses, and with whom.'),
+           ('Loaded language', "Insider words that compress and close thinking. Lifton's thought-terminating cliche."),
+           ('Love bombing', 'Intense early warmth. A tool when it is conditional and paired with rising demands.'),
+           ('Doctrine over person', 'When your experience contradicts the doctrine, you are told your experience is wrong.')],
+    tags=[('part', '"Lifton gave us a cult checklist."', 'He gave eight themes of a closed world, not a diagnostic test.', ('Lifton, chapter 22', 'https://cultrecovery101.com/chapter-22-ideological-totalism/')),
+          ('myth', '"The BITE model is a validated clinical test."', 'A useful heuristic, without independent validation as a diagnosis.', ('Hassan, BITE model page', 'https://stevenhassan.freedomofmind.com/p/the-bite-model-of-authoritarian-control-undue-influence-thought-reform-brainwashing-mind-control-trafficking-and-the-law')),
+          ('myth', '"Mind control is an established scientific technology."', "The APA's ethics board rejected the 1987 task force report for lacking rigour.", ('APA memorandum, 1987', 'https://www.cesnur.org/testi/APA.htm')),
+          ('hold', '"Control works through combinations, not single tricks."', 'Coercive control research looks at interlocking tactics.', ('Feliciano, coercive control in cults', 'https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=1314&context=jj_etds'))],
+    distil=[('Lifton, Thought Reform and the Psychology of Totalism (1961)', 'https://dn790006.ca.archive.org/0/items/ThoughtReformAndThePsychologyOfTotalism/Thought_Reform_and_the_Psychology_of_Totalism.pdf', 'The eight themes and where they came from'),
+            ('Montell, Cultish (2021)', 'https://www.harpercollins.com/products/cultish-amanda-montell', 'How language builds an inside'),
+            ('Hassan, the BITE model', 'https://stevenhassan.freedomofmind.com/p/the-bite-model-of-authoritarian-control-undue-influence-thought-reform-brainwashing-mind-control-trafficking-and-the-law', 'A practitioner checklist, read with caution'),
+            ('APA memorandum on the DIMPAC report (1987)', 'https://www.cesnur.org/testi/APA.htm', 'Why mind control is not accepted science'),
+            ('Feliciano, coercive control applied to cults', 'https://academicworks.cuny.edu/cgi/viewcontent.cgi?article=1314&context=jj_etds', 'Interlocking tactics, studied with former members')],
+    writer=dict(notes=["Never put the technique in a villain's monologue. Put it in a kind moment. The most frightening confession scene is a warm one: a circle of friends, soft light, and a character saying the thing she has never told anyone, while the leader says almost nothing. The audience should feel the power change hands.",
+                       "Give your fictional group its own vocabulary early, and let the protagonist start using it without noticing. When she uses one of the group's words with her sister in act two, the audience hears how far she has travelled. Paul Thomas Anderson's The Master builds whole scenes on this: its Processing sessions are confession, loaded language and doctrine over person in one ritual."],
+                drill="Invent five insider words for a fictional group. Each must replace an ordinary word and smuggle in a judgement, for example a word for doubt that makes doubt sound like an illness. Then write one line of dialogue that uses three of them."),
+    biz="Look for the same tools at work and in sales: jargon that shuts down questions ('that's just a scarcity mindset'), public confession rituals, purity tests about who is a true believer. The honest version of shared language makes things clearer and invites challenge. If a phrase is used to stop a client asking questions, MTRX\u2122 drops it.",
+    tryit="Collect three thought-terminating phrases you have heard in real life: at work, online, in family arguments. For each one, write the question it stops someone from asking.",
+    room='A technique is not magic. Its power comes from repetition, dependency and the cost of dissent.',
+    deeper=[('Robert Jay Lifton on thought reform (talk)', 'https://www.youtube.com/watch?v=D0DK5rGZHLM', 'The man himself on where the eight themes came from'),
+            ("Lifton's chapter 22, transcribed", 'https://cultrecovery101.com/chapter-22-ideological-totalism/', 'The eight themes in his own words'),
+            ('The Master (2012), official teaser', 'https://www.youtube.com/watch?v=1WTM8eO1Oec', 'Watch for the Processing scenes when you see the film')],
+    nextq='Milieu control needs one more thing to work: the people who might disagree have to be out of the picture. Why, and how? Stop 1.4.',
+    checks=[dict(q="Where did Lifton's eight criteria come from?",
+                 o=['Interviews with people put through thought reform in 1950s China',
+                    'A study of American cult members during the 1970s cult panic',
+                    'Laboratory experiments on obedience run at Yale in the 1960s'], a=0,
+                 w='Lifton published in 1961, before the American cult scare, so the themes describe any closed ideological world.'),
+            dict(q="What does Lifton mean by 'dispensing of existence'?",
+                 o=['The group decides who deserves to exist with dignity, and who does not',
+                    'Members must hand over their possessions to the leader when they join',
+                    'The leader claims the power to heal any illness through faith alone'], a=0,
+                 w='Insiders are saved; outsiders and leavers are lost, ill or evil. It is what makes leaving feel like dying.'),
+            dict(q='Why should you treat the BITE model with some caution?',
+                 o=['It is a useful prompt, but it was never validated as a diagnostic test',
+                    "It was formally rejected by the APA in the same 1987 report as Singer's",
+                    'It looks only at behaviour, so it misses thought and emotion entirely'], a=0,
+                 w="The 1987 rejection was of Singer's task force report. BITE covers behaviour, information, thought and emotion, but lacks independent validation.")],
+)

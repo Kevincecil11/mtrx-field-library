@@ -1,0 +1,72 @@
+from svg import t, circle, svg
+
+_P = [(150, 80, 'separate'), (360, 52, 'touching'), (570, 30, 'overlapping'), (780, 12, 'mostly one')]
+_inner = ''
+for _cx, _off, _lab in _P:
+    _inner += circle(_cx - _off, 120, 52, 's-card', 0.9) + circle(_cx + _off, 120, 52, 's-box-a', 0.6)
+    _inner += t(_cx - _off - 20, 126, 'me', 's-t-sm') + t(_cx + _off + 20, 126, 'us', 's-t-sm') + t(_cx, 215, _lab, 's-t')
+_inner += circle(990, 120, 70, 's-box-a', 0.6) + circle(990, 120, 30, 's-card', 0.9) + t(990, 126, 'me', 's-t-sm') + t(990, 72, 'us', 's-t-sm') + t(990, 215, 'fused', 's-t')
+_inner += t(560, 262, "Swann: the closer the circles, the more the group's fate feels like your own", 's-t-sm')
+FIG = svg(1120, 285, 'From separate to fused: self and group', _inner)
+
+STOP = dict(
+    id='1.6', day=6, title='Belonging and identity: the happiest time of my life',
+    q='What does belonging to a group do to us, and where does identity come in?',
+    why="Former members often say two things that sound impossible together: it was the happiest time of my life, and it was abuse. Both can be true. Belonging is one of the deepest human needs, and identity is how a group gets inside you. Understanding that is the difference between a cartoon cult film and a great one.",
+    case=dict(k='Case file', name="Henri Tajfel's schoolboys", role='The minimal group experiments, Bristol, 1970 to 1971',
+              facts=[('Set-up', 'Boys were split into groups by a trivial test, such as preferring paintings by Klee or by Kandinsky'),
+                     ('Twist', 'They never knew who else was in their group, and none of the rewards went to themselves'),
+                     ('Result', 'They favoured their own group anyway, often choosing to beat the other group over gaining more'),
+                     ('Led to', 'Social identity theory, with John Turner, in 1979')],
+              stamp=('hold', 'Holds up')),
+    cold=dict(q='Boys are split into two groups by whether they prefer paintings by Klee or by Kandinsky. They never learn who else is in their group, and the rewards they hand out never go to themselves. Do they favour their own group anyway?',
+              a="Yes. Tajfel found the boys favoured their own group, and often picked the option that maximised the difference between the groups even when that meant less for their own side overall. A meaningless label was enough to create an us. Now imagine what a group with shared meals, a mission and a leader can do."),
+    video=dict(id='_wFZ5Dbj8DA', title='Social Groups: Crash Course Sociology #16', who='CrashCourse',
+               watch=['The difference between primary and secondary groups, and which one a cult imitates',
+                      'What in-groups and out-groups do to judgment',
+                      'How the size of a group changes what it can demand']),
+    story=["Start with the need. In 1995 the psychologists Roy Baumeister and Mark Leary reviewed the evidence and argued that the need to belong is a fundamental human motive: we need frequent, positive contact inside stable relationships, and when we lack it, our emotions, our thinking and our health suffer. A high-demand group can meet that need faster than ordinary life ever does: shared meals, deep conversation, a task, a ritual, and a story that turns private confusion into shared purpose. For someone lonely or newly adrift, the first months can feel like coming home.",
+           "Then identity. Henri Tajfel's minimal group experiments showed how little it takes to create an us. With John Turner he built social identity theory: part of who you are comes from the groups you belong to, you feel good when your group looks good, and you sharpen the line between us and them to keep it that way. A small group can supply a thick identity: we are the awake ones, the chosen, the brave, the persecuted. Being different from outsiders becomes proof of virtue.",
+           "The psychologist Michael Hogg explains why this pulls hardest at certain moments. His uncertainty-identity theory says that when people feel unsure about themselves and their world, they are drawn to groups with sharp boundaries, clear beliefs and strong leaders, because those groups make the uncertainty go away. That links straight back to the turning points in Stop 1.1.",
+           "Identity fusion goes further. William Swann and colleagues describe people whose personal and group identities have become porous, so that what happens to the group feels like it is happening to them. Fused people do not lose their individuality; they feel the group's fate as their own. That is why they will make extraordinary sacrifices, and why an attack on the group feels like a personal attack. Fusion does not make violence inevitable, but it explains why a member can defend the group with her whole self.",
+           "Now the paradox makes sense. The early belonging was real: real friends, real purpose, real laughter, real relief from loneliness. Later, the same network becomes the surveillance system and the identity becomes the cage, because leaving means losing who you are, not just where you live. A member may defend the group not because she believes every rule, but because defending it protects the relationships that made life feel possible.",
+           "It is also why recovery is hard. Former members often have to rebuild an identity, not just correct some beliefs. The advice from the research doubles as the defence: belong to several groups, not one. A person with many homes can leave any one of them and still be someone."],
+    fig=(FIG, "Swann's picture of identity fusion. On the right, the self sits inside the group: what happens to us happens to me."),
+    specs=[('Need to belong', 'Baumeister and Leary: a fundamental motive for stable, positive relationships.'),
+           ('Social identity', 'The part of who you are that comes from your groups, and the us versus them it brings.'),
+           ('Uncertainty-identity', 'Hogg: feeling unsure draws people to groups with sharp lines and strong leaders.'),
+           ('Identity fusion', "Swann: personal and group identity become porous, so the group's fate feels like your own.")],
+    tags=[('myth', '"Belonging is a nice extra."', 'Research treats it as a fundamental need that affects health and thinking.', ('Baumeister and Leary 1995', 'https://doi.org/10.1037/0033-2909.117.3.497')),
+          ('hold', '"A trivial label can create an us."', 'Minimal groups produced in-group favouritism with nothing personal at stake.', ('Tajfel et al. 1971', 'https://doi.org/10.1002/ejsp.2420010202')),
+          ('myth', '"Fused people have no individuality left."', 'Fusion keeps a strong personal self; the border just becomes porous.', ('Swann et al. 2012', 'https://doi.org/10.1037/a0028589')),
+          ('myth', '"If it felt like the best years, it was not abuse."', 'Rewards and coercion can coexist in the same group.', ('Baumeister and Leary 1995', 'https://doi.org/10.1037/0033-2909.117.3.497'))],
+    distil=[('Baumeister and Leary, The need to belong (1995)', 'https://doi.org/10.1037/0033-2909.117.3.497', 'Belonging as a fundamental motive'),
+            ('Tajfel, Experiments in intergroup discrimination (1970)', 'https://faculty.ucmerced.edu/jvevea/classes/Spark/readings/tajfel-1970-experiments-in-intergroup-discrimination.pdf', 'Klee, Kandinsky and the minimal group'),
+            ('Tajfel, Billig, Bundy and Flament, Social categorization (1971)', 'https://doi.org/10.1002/ejsp.2420010202', 'Beating the other group over gaining more'),
+            ('Swann et al., When group membership gets personal (2012)', 'https://doi.org/10.1037/a0028589', 'Identity fusion')],
+    writer=dict(notes=["Do not fake the happiness. The weak cult film shows a grim compound from the first frame. The strong one makes the audience fall a little in love with the group too: the laughter at dinner, the competence, the feeling of being seen. Midsommar works because the commune offers Dani something real, a family that mirrors her grief, so the audience understands why she stays even as the horror arrives.",
+                       "Then show the price through small, specific details, not speeches: who sets the schedule, who hears the confession, what happens the first time someone wants a second community. The audience should feel the warmth become conditional at the exact moment she does."],
+                drill='Write two short memories for a fictional former member: the best night she had in the group, and the first moment that same warmth became conditional. Same people, same room, if you can.'),
+    biz="Belonging is the most powerful force in marketing, which is why brands build communities. The honest use for MTRX\u2122: give clients real belonging (a client community, shared wins, being known by name) without making the exit costly. If a client could only leave by losing their friends, you would have built something you should not want.",
+    tryit="List every group that is part of your identity: family, MTRX\u2122, a city, a faith, a friend group, a fandom. Which would hurt most to lose? If one group holds most of your identity, what would a second home look like?",
+    room='The happiest memory is evidence of belonging, not evidence that the system was safe.',
+    deeper=[('Tajfel, Experiments in intergroup discrimination (1970)', 'https://faculty.ucmerced.edu/jvevea/classes/Spark/readings/tajfel-1970-experiments-in-intergroup-discrimination.pdf', 'The Klee and Kandinsky study in his own words'),
+            ('Midsommar (2019), official trailer', 'https://www.youtube.com/watch?v=1Vnghdsjmd0', 'Belonging as horror'),
+            ('The psychology of control: cults, belonging and identity', 'https://www.youtube.com/watch?v=CM13LYmYdnk', 'A longer talk on how the need to belong gets used')],
+    nextq="You now have the members' side: who joins, the word, the toolkit, isolation, commitment, belonging. Can you see all of it working in one real case? Stop 1.7.",
+    checks=[dict(q="What did Tajfel's minimal group studies show?",
+                 o=['People favour their own group even when it rests on a trivial label',
+                    'People favour only groups that share deep values and a long history',
+                    'People treat random groups fairly unless money for themselves is at stake'], a=0,
+                 w='A meaningless label, Klee or Kandinsky, was enough. Nothing was at stake for the boys personally.'),
+            dict(q='What does identity fusion mean?',
+                 o=["The person feels the group's fate as their own personal fate",
+                    'The person loses every trace of their own individual personality',
+                    'The person belongs to two rival groups at the very same time'], a=0,
+                 w='Fused people keep a strong personal self. The border between self and group becomes porous.'),
+            dict(q="A former member says: 'Best years of my life, and it was abuse.' What is the best reading?",
+                 o=['Both can be true: the belonging was real, the structure was coercive',
+                    'She is confused, because real abuse can never feel like the best years',
+                    'She is exaggerating one half to protect the story she now tells'], a=0,
+                 w='Belonging rewards and coercive structures coexist. Treating either half as fake misreads the experience.')],
+)
