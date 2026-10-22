@@ -3,6 +3,25 @@
 import os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 out = []
+OVER = '''() => {
+  const W = window.innerWidth, res = [];
+  for (const el of document.querySelectorAll('body *')) {
+    const r = el.getBoundingClientRect();
+    if (!(r.width > 0 && r.right > W + 2)) continue;
+    let p = el.parentElement, clipped = false;
+    while (p && p !== document.body) {
+      if (/(auto|scroll|hidden|clip)/.test(getComputedStyle(p).overflowX)) { clipped = true; break; }
+      p = p.parentElement;
+    }
+    if (clipped) continue;
+    const art = el.closest('article, header, footer, nav, section');
+    const cls = typeof el.className === 'string' ? el.className.split(' ').slice(0, 2).join('.') : 'svg';
+    res.push(el.tagName.toLowerCase() + (cls ? '.' + cls : '') + ' in ' + (art ? (art.id || art.tagName.toLowerCase()) : '-') +
+             ' right=' + Math.round(r.right) + ' text=' + (el.textContent || '').trim().slice(0, 40));
+    if (res.length >= 10) break;
+  }
+  return res;
+}'''
 try:
     from playwright.sync_api import sync_playwright
 except Exception as e:
@@ -26,9 +45,12 @@ else:
                       rendered: checks.filter(c => c.querySelector('button,input,label')).length,
                       thumbs: q('.thumbs .thumb'), search: !!document.getElementById('nk-find'),
                       bar: !!document.getElementById('mtrx-bar'), title: document.title,
-                      overflowX: document.documentElement.scrollWidth > window.innerWidth + 2};
+                      overflowX: document.documentElement.scrollWidth > window.innerWidth + 2,
+                      scrollWidth: document.documentElement.scrollWidth};
             }''')
             out.append('%s: %s' % (name, info))
+            if info.get('overflowX'):
+                out.append('%s overflow culprits: %s' % (name, pg.evaluate(OVER)))
             try:
                 pg.click('button.done[data-mod="1.1"]', timeout=3000)
                 pg.wait_for_timeout(300)
@@ -44,7 +66,8 @@ else:
                     out.append('%s: clicked a quiz option, check html: %s' % (name, pg.evaluate("() => (document.querySelector('.check') || {}).innerHTML.slice(0, 300)")))
             except Exception as e:
                 out.append('%s: quiz click failed (%s)' % (name, str(e)[:160]))
-            out.append('%s errors: %s' % (name, errs[:12] or 'none'))
+            pe = [e for e in errs if not e.endswith('net::ERR_FAILED')]
+            out.append('%s errors (blocked network loads not counted, %d of them): %s' % (name, len(errs) - len(pe), pe[:12] or 'none'))
             pg.close()
         b.close()
 open(os.path.join(ROOT, 'build', 'out', '03-qa.txt'), 'w', encoding='utf-8').write('\n'.join(out) + '\n')
