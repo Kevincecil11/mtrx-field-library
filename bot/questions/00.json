@@ -50,12 +50,12 @@
    "type": "quiz",
    "q": "You finish a stop, it felt crystal clear, and you rate yourself 5 out of 5 immediately. What is the problem?",
    "options": [
-    "Nothing, clarity is the goal",
     "Immediate ratings run on fluency, so they overestimate; rate later and test",
     "You should reread it twice more",
-    "5 out of 5 is fine if the topic is easy"
+    "5 out of 5 is fine if the topic is easy",
+    "Nothing, clarity is the goal"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Ratings made right after reading track how smooth it felt. Ratings made after a delay track what you can actually retrieve. Delay the judgment, then test it."
   },
   {
@@ -78,12 +78,12 @@
    "type": "quiz",
    "q": "Productive failure (struggling before instruction) works best for which kind of learning?",
    "options": [
+    "Memorising vocabulary",
     "Step-by-step procedures",
     "Conceptual understanding and transfer",
-    "Memorising vocabulary",
     "Everything equally"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Sinha and Kapur found a moderate gain for conceptual knowledge and transfer and roughly zero for procedural skill. Struggle first on \"why\", get shown on \"how\"."
   },
   {
@@ -106,12 +106,12 @@
    "type": "quiz",
    "q": "Which of these is NOT supported by evidence?",
    "options": [
-    "Spacing reviews over days",
-    "Matching lessons to your learning style",
     "Testing yourself before rereading",
-    "Explaining a concept with the page closed"
+    "Explaining a concept with the page closed",
+    "Spacing reviews over days",
+    "Matching lessons to your learning style"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "The style-matching claim needs a specific interaction effect that has not been shown. The other three are among the best-supported methods there are."
   },
   {
@@ -135,11 +135,11 @@
    "q": "What is the most reliable way to find concepts you have never heard of?",
    "options": [
     "Ask one expert to list everything",
-    "Read more of your favourite source",
     "Overlay 5+ independent sources (syllabi, certifications, docs) and diff them against what you know",
+    "Read more of your favourite source",
     "Wait until a client mentions it"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "Each source has blind spots, but independent sources have different ones. Where they overlap is the core; where one has something the others lack is a candidate gap to check."
   },
   {
@@ -184,10 +184,10 @@
    "type": "quiz",
    "q": "A concept appears in your guide's glossary but nowhere in the lessons. In the coverage audit it counts as:",
    "options": [
-    "Covered",
-    "A gap candidate: mentioned, not explained",
     "Out of scope",
-    "Mastered"
+    "A gap candidate: mentioned, not explained",
+    "Mastered",
+    "Covered"
    ],
    "answer": 1,
    "why": "Glossary-only means you might recognise the word but have never seen the mechanism. That is exactly the fluency trap. The audit only counts body-text explanations."
@@ -269,10 +269,10 @@
    "options": [
     "Vinod Khosla",
     "Charles Darwin",
-    "Alvin Toffler, in Future Shock (1970)",
-    "Albert Einstein"
+    "Albert Einstein",
+    "Alvin Toffler, in Future Shock (1970)"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Toffler wrote the phrase; the \"illiterate\" part is psychologist Herbert Gerjuoy, quoted by Toffler. The polished one-liner is a later blend."
   },
   {
@@ -295,12 +295,12 @@
    "type": "quiz",
    "q": "Which design best uses curiosity in a lesson?",
    "options": [
-    "Open with a funny unrelated story",
     "Pose a specific puzzle, ask for a guess with confidence, then explain the mechanism promptly",
-    "Hide the answer until the very end of the guide",
-    "Add lots of surprising facts throughout"
+    "Open with a funny unrelated story",
+    "Add lots of surprising facts throughout",
+    "Hide the answer until the very end of the guide"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "A visible, solvable gap plus a committed guess, closed quickly by the core idea. Unrelated stories and scattered facts are seductive details; hiding answers is clickbait."
   },
   {
@@ -324,11 +324,11 @@
    "q": "You correct a belief by noting \"X is false\" but give no alternative explanation. What usually happens?",
    "options": [
     "The belief disappears",
-    "The old belief keeps influencing you, because nothing replaced it",
     "You forget both",
+    "The old belief keeps influencing you, because nothing replaced it",
     "You become more open-minded"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "The continued influence effect: a correction without a replacement model leaves a gap, and the old explanation keeps filling it."
   },
   {
@@ -351,10 +351,10 @@
    "type": "quiz",
    "q": "Which kind of activity improved older adults' memory in the Synapse Project?",
    "options": [
-    "Easy, familiar social activities",
     "Brain-training games",
+    "Reading about memory",
     "Sustained practice at demanding new skills",
-    "Reading about memory"
+    "Easy, familiar social activities"
    ],
    "answer": 2,
    "why": "Novel, demanding, sustained practice. The lesson for any age: keep picking things that are hard and new for you, and stick with them for months."
@@ -379,12 +379,12 @@
    "type": "quiz",
    "q": "Which tactic has the strongest evidence for turning a learning goal into daily action?",
    "options": [
-    "Repeating affirmations",
     "Waiting for motivation",
-    "A specific if-then plan tied to a daily cue",
-    "Relying on willpower reserves"
+    "Relying on willpower reserves",
+    "Repeating affirmations",
+    "A specific if-then plan tied to a daily cue"
    ],
-   "answer": 2,
+   "answer": 3,
    "why": "Implementation intentions: about d = 0.65 across 94 tests. They hand the decision to a cue, so you don't have to rely on willpower or mood."
   },
   {
@@ -451,9 +451,9 @@
    "type": "quiz",
    "q": "The tech guide audit shows 320 of 320 must-know concepts covered. What does that prove?",
    "options": [
-    "You now understand all of tech",
-    "Every must-know concept from 14 sources is explained in the guide, nothing more",
     "There are no gaps left anywhere",
+    "Every must-know concept from 14 sources is explained in the guide, nothing more",
+    "You now understand all of tech",
     "The quizzes are hard enough"
    ],
    "answer": 1,
@@ -468,12 +468,12 @@
    "type": "quiz",
    "q": "Why is the weekly teach-back done with no notes?",
    "options": [
-    "It is faster",
     "Retrieval is the learning, and gaps only show when nothing is in front of you",
-    "Notes are banned in the system",
-    "To practise public speaking"
+    "To practise public speaking",
+    "It is faster",
+    "Notes are banned in the system"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "With notes you are reading aloud, which is fluency again. Without them, every stumble marks a missing link."
   },
   {
@@ -485,12 +485,12 @@
    "type": "quiz",
    "q": "A concept keeps coming back in your weak-spot log as \"knew it, could not apply it\". Best fix?",
    "options": [
+    "Move on, it will come",
     "Reread the stop",
-    "Add a new-surface case, a non-example and a cue, then apply it to a real client",
     "Make a prettier flashcard",
-    "Move on, it will come"
+    "Add a new-surface case, a non-example and a cue, then apply it to a real client"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "That is inert knowledge. The fix is transfer practice, not more input."
   }
  ]

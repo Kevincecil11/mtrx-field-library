@@ -36,11 +36,11 @@
    "type": "quiz",
    "q": "What does this guide treat every read of a person as?",
    "options": [
+    "A tell you memorise",
     "A verdict you can act on",
-    "A hypothesis you test by asking",
-    "A tell you memorise"
+    "A hypothesis you test by asking"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Notice, guess, ask, update. A read you never check is just a story you like."
   },
   {
@@ -64,8 +64,8 @@
    "q": "In real time, how often do people correctly judge whether someone is lying or telling the truth?",
    "options": [
     "About 54%",
-    "About 70%",
-    "About 85%"
+    "About 85%",
+    "About 70%"
    ],
    "answer": 0,
    "why": "Bond and DePaulo 2006, 24,483 judges: 54%. Stop 1.1."
@@ -96,10 +96,10 @@
    "q": "\"Communication is 7% words, 38% tone and 55% body language.\" That rule is...",
    "options": [
     "A general law",
-    "A narrow 1967 result about feelings when words and tone clash",
-    "Proven by brain scans"
+    "Proven by brain scans",
+    "A narrow 1967 result about feelings when words and tone clash"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Mehrabian rejects the general use. Stop 1.4."
   },
   {
@@ -111,9 +111,9 @@
    "type": "quiz",
    "q": "Someone looks up and to the right while answering. That tells you...",
    "options": [
-    "They're inventing a lie",
+    "They're recalling a memory",
     "Nothing reliable",
-    "They're recalling a memory"
+    "They're inventing a lie"
    ],
    "answer": 1,
    "why": "The NLP eye claim failed in three studies (Wiseman et al. 2012). Stop 1.3."
@@ -127,11 +127,11 @@
    "type": "quiz",
    "q": "A clinic owner sounds nervous on your call. Most likely meaning?",
    "options": [
-    "He's hiding something",
     "Nothing specific: stress has many causes",
-    "He'll say no"
+    "He'll say no",
+    "He's hiding something"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Reading stress as lying is the Othello error. Stop 1.3."
   },
   {
@@ -143,11 +143,11 @@
    "type": "quiz",
    "q": "Best way to understand what a client wants?",
    "options": [
-    "Imagine yourself in their shoes, carefully",
     "Ask them, then listen",
-    "Study their body language"
+    "Study their body language",
+    "Imagine yourself in their shoes, carefully"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Across 25 experiments, asking beat imagining (Eyal, Steffel and Epley 2018). Stop 1.8."
   },
   {
@@ -159,11 +159,11 @@
    "type": "quiz",
    "q": "After a first conversation, people usually like you...",
    "options": [
-    "Less than you think",
     "About as much as you think",
-    "More than you think"
+    "More than you think",
+    "Less than you think"
    ],
-   "answer": 2,
+   "answer": 1,
    "why": "The liking gap (Boothby et al. 2018). Stop 1.11."
   },
   {
@@ -175,11 +175,11 @@
    "type": "quiz",
    "q": "When you're nervous presenting, how visible is it?",
    "options": [
-    "Less visible than you think",
+    "More visible",
     "Exactly as visible as it feels",
-    "More visible"
+    "Less visible than you think"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "The illusion of transparency (Gilovich et al. 1998). Stop 1.11."
   },
   {
@@ -192,10 +192,10 @@
    "q": "A psychic says \"you're independent, but sometimes you doubt yourself\" and it feels spot on. Why?",
    "options": [
     "They picked up a tell",
-    "It's true of almost everyone",
-    "You fit a personality type"
+    "You fit a personality type",
+    "It's true of almost everyone"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "A Barnum statement. Stop 1.9."
   },
   {
@@ -207,11 +207,11 @@
    "type": "quiz",
    "q": "Which trait do strangers judge most accurately from a first impression?",
    "options": [
-    "Honesty",
     "Extraversion",
+    "Honesty",
     "Intelligence"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Visible traits read best (Borkenau and Liebler 1992). Stop 1.2."
   },
   {
@@ -234,11 +234,11 @@
    "type": "quiz",
    "q": "Across 24,483 judges, what was the average accuracy at telling lies from truths in real time?",
    "options": [
+    "About 85%",
     "About 54%",
-    "About 70%",
-    "About 85%"
+    "About 70%"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Bond and DePaulo 2006. Lies were caught 47% of the time, truths 61%: we lean toward believing."
   },
   {
@@ -250,11 +250,11 @@
    "type": "quiz",
    "q": "Your caller is 'sure' a clinic owner lied about having no budget. What does research say about that sureness?",
    "options": [
+    "Only experts' confidence counts",
     "Confidence predicts accuracy",
-    "Confidence barely relates to accuracy (r = .04)",
-    "Only experts' confidence counts"
+    "Confidence barely relates to accuracy (r = .04)"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "DePaulo et al. 1997. Check the budget with a question, not a gut call."
   },
   {
@@ -293,11 +293,11 @@
    "type": "quiz",
    "q": "People shown a face for 100 milliseconds...",
    "options": [
-    "Can't form an impression yet",
     "Form impressions that match their unlimited-time judgments",
+    "Can't form an impression yet",
     "Are more accurate than with longer looks"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Willis and Todorov 2006. Longer looks mostly raise confidence, not accuracy."
   },
   {
@@ -309,11 +309,11 @@
    "type": "quiz",
    "q": "Which trait do strangers judge most accurately at first sight?",
    "options": [
-    "Honesty",
     "Extraversion",
+    "Honesty",
     "Intelligence"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Visible traits leak into behaviour; honesty and intelligence mostly don't (Borkenau and Liebler 1992)."
   },
   {
@@ -325,11 +325,11 @@
    "type": "quiz",
    "q": "A safari operator sounds cold for the first 30 seconds of a call. Best move?",
    "options": [
+    "Match his coldness",
     "Write him off",
-    "Note it as a guess and keep gathering",
-    "Match his coldness"
+    "Note it as a guess and keep gathering"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Thin slices carry some signal and a lot of noise. Let later behaviour update the read."
   },
   {
@@ -368,11 +368,11 @@
    "type": "quiz",
    "q": "A clinic owner tenses up when you ask about his current website. Most defensible read?",
    "options": [
+    "He wants to end the call",
     "He's lying about it",
-    "The topic matters to him somehow: ask",
-    "He wants to end the call"
+    "The topic matters to him somehow: ask"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Stress has many causes. Reading it as lying is the Othello error. Name it and ask."
   },
   {
@@ -384,9 +384,9 @@
    "type": "quiz",
    "q": "Why did the three fingers give Hicox away?",
    "options": [
-    "He was nervous",
+    "He held eye contact too long",
     "It broke the German way of counting from the thumb",
-    "He held eye contact too long"
+    "He was nervous"
    ],
    "answer": 1,
    "why": "A culture mismatch, not a lie cue. Context is part of every baseline."
@@ -411,11 +411,11 @@
    "type": "quiz",
    "q": "The '7% words, 38% tone, 55% body' rule is...",
    "options": [
-    "A general law of communication",
     "A narrow 1967 finding about feelings when words and tone conflict",
-    "Proven for lie detection"
+    "Proven for lie detection",
+    "A general law of communication"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Mehrabian's studies used single words about liking. He rejects the general use."
   },
   {
@@ -444,10 +444,10 @@
    "q": "A prospect says 'sounds good' after a long pause, in a flat voice, then changes topic. Best move?",
    "options": [
     "Close the deal now",
-    "Ask about the gap between words and tone",
-    "Trust the words, ignore the rest"
+    "Trust the words, ignore the rest",
+    "Ask about the gap between words and tone"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "When channels disagree, ask. 'Sounds good, or sounds like a lot?'"
   },
   {
@@ -470,9 +470,9 @@
    "type": "quiz",
    "q": "In the warmth and competence research, which tends to weigh more in overall impressions?",
    "options": [
-    "Competence",
+    "Always equal",
     "Warmth",
-    "Always equal"
+    "Competence"
    ],
    "answer": 1,
    "why": "Warmth (intent) comes first and weighs more (Wojciszke 1998; Fiske et al. 2007)."
@@ -486,11 +486,11 @@
    "type": "quiz",
    "q": "Babyfaced adults tend to be seen as...",
    "options": [
-    "Colder but more competent",
     "Warmer but less powerful and competent",
+    "Colder but more competent",
     "No different"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Zebrowitz 2017. The job is showing competence: proof, pace, preparation."
   },
   {
@@ -502,11 +502,11 @@
    "type": "quiz",
    "q": "Which competence signal has evidence behind it but does NOT prove real ability?",
    "options": [
-    "Speaking time",
     "A portfolio of results",
-    "A past client's reference"
+    "A past client's reference",
+    "Speaking time"
    ],
-   "answer": 0,
+   "answer": 2,
    "why": "Speaking time predicts who emerges as leader, not who leads well. Use real proof too."
   },
   {
@@ -529,9 +529,9 @@
    "type": "quiz",
    "q": "Asking a prospect for advice tends to make you look...",
    "options": [
-    "Less competent",
+    "Desperate",
     "More competent, especially on hard questions",
-    "Desperate"
+    "Less competent"
    ],
    "answer": 1,
    "why": "Brooks, Gino and Schweitzer 2015."
@@ -546,10 +546,10 @@
    "q": "In ultimatum games, why do people turn down free money?",
    "options": [
     "They misunderstand the rules",
-    "They reject unfair offers even at a cost",
-    "They're bluffing"
+    "They're bluffing",
+    "They reject unfair offers even at a cost"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Fairness is a want you can't ignore, especially in pricing."
   },
   {
@@ -561,11 +561,11 @@
    "type": "quiz",
    "q": "A clinic owner says 'my last agency took my money and vanished'. Which want is loudest?",
    "options": [
-    "Status",
     "Fairness and trust",
-    "Belonging"
+    "Belonging",
+    "Status"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Fairness. Answer it head on: milestones, what he owns, how he can leave."
   },
   {
@@ -604,11 +604,11 @@
    "type": "quiz",
    "q": "Per eye-tracking research, the best clue to who holds status in a meeting is...",
    "options": [
-    "Who talks loudest",
     "Who others look at, beyond who's speaking",
+    "Who talks loudest",
     "Who sits nearest the door"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Foulsham et al. 2010: high-status people get looked at more often and for longer."
   },
   {
@@ -620,9 +620,9 @@
    "type": "quiz",
    "q": "The famous claim that power makes people worse at perspective taking...",
    "options": [
-    "Is rock solid",
+    "Was never tested",
     "Failed a large replication for the sarcasm task",
-    "Was never tested"
+    "Is rock solid"
    ],
    "answer": 1,
    "why": "Many Labs 3: 2,969 people, d = .03 vs the original .77."
@@ -647,11 +647,11 @@
    "type": "quiz",
    "q": "Across 25 experiments, what improved accuracy about another person's mind?",
    "options": [
+    "Studying their face longer",
     "Imagining their perspective harder",
-    "Getting their perspective by asking",
-    "Studying their face longer"
+    "Getting their perspective by asking"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Eyal, Steffel and Epley 2018: perspective getting, not taking."
   },
   {
@@ -663,11 +663,11 @@
    "type": "quiz",
    "q": "Which questions most increased liking in Huang et al. 2017?",
    "options": [
-    "Follow-up questions",
     "Questions about yourself",
+    "Follow-up questions",
     "Rhetorical questions"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "Follow-ups show you listened (d = .35)."
   },
   {
@@ -680,8 +680,8 @@
    "q": "You know websites; a dentist doesn't. Which bias makes you overestimate what he understands?",
    "options": [
     "Curse of knowledge",
-    "Spotlight effect",
-    "Halo effect"
+    "Halo effect",
+    "Spotlight effect"
    ],
    "answer": 0,
    "why": "Once you know something, it's hard to imagine not knowing it. Check with a question."
@@ -707,10 +707,10 @@
    "q": "In Forer's demonstration, 39 students got the same sketch. How accurate did they rate it?",
    "options": [
     "About 2 out of 5",
-    "About 4.3 out of 5",
-    "They spotted it was generic"
+    "They spotted it was generic",
+    "About 4.3 out of 5"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "About 4.26 of 5. Vague, flattering statements fit nearly everyone."
   },
   {
@@ -723,8 +723,8 @@
    "q": "'You can be outgoing, but you also need time alone.' Which technique?",
    "options": [
     "Rainbow ruse",
-    "Hot reading",
-    "Vanishing negative"
+    "Vanishing negative",
+    "Hot reading"
    ],
    "answer": 0,
    "why": "A trait and its opposite can't miss."
@@ -738,11 +738,11 @@
    "type": "quiz",
    "q": "What's the honest twin of a cold read?",
    "options": [
+    "A compliment",
     "A vaguer statement",
-    "An observation turned into a question you verify",
-    "A compliment"
+    "An observation turned into a question you verify"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Same observation, checked instead of faked."
   },
   {
@@ -781,11 +781,11 @@
    "type": "quiz",
    "q": "Why do sarcastic emails misfire more than senders expect?",
    "options": [
-    "Readers are less smart",
     "Senders hear their own tone; readers don't",
-    "Email strips emoji"
+    "Email strips emoji",
+    "Readers are less smart"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Kruger et al. 2005: egocentrism over email."
   },
   {
@@ -797,9 +797,9 @@
    "type": "quiz",
    "q": "A safari operator takes six hours to reply. What does the evidence say this means?",
    "options": [
-    "Not interested",
+    "They're testing you",
     "Nothing reliable",
-    "They're testing you"
+    "Not interested"
    ],
    "answer": 1,
    "why": "Reply time isn't a validated signal. Follow up on substance."
@@ -824,11 +824,11 @@
    "type": "quiz",
    "q": "Speakers told about the illusion of transparency before a speech...",
    "options": [
+    "Showed no change",
     "Got more nervous",
-    "Were more composed and gave better speeches",
-    "Showed no change"
+    "Were more composed and gave better speeches"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Savitsky and Gilovich 2003."
   },
   {
@@ -841,10 +841,10 @@
    "q": "After a first conversation, people usually...",
    "options": [
     "Overestimate how much they were liked",
-    "Underestimate how much they were liked",
-    "Guess about right"
+    "Guess about right",
+    "Underestimate how much they were liked"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "The liking gap (Boothby et al. 2018)."
   },
   {
@@ -857,8 +857,8 @@
    "q": "Saying 'I'm not sure, let me check' to a client is judged...",
    "options": [
     "More harshly by you than by them",
-    "Harshly by everyone",
-    "As incompetence"
+    "As incompetence",
+    "Harshly by everyone"
    ],
    "answer": 0,
    "why": "The beautiful mess effect (Bruk et al. 2018)."
@@ -915,9 +915,9 @@
    "type": "quiz",
    "q": "Which feedback improved forecasters most (Lichtenstein and Fischhoff 1980)?",
    "options": [
-    "Just the outcome",
+    "More practice, no feedback",
     "How often their 70% calls came true",
-    "More practice, no feedback"
+    "Just the outcome"
    ],
    "answer": 1,
    "why": "Calibration feedback works; outcome-only feedback barely does."
@@ -942,11 +942,11 @@
    "type": "quiz",
    "q": "In Tamir and Mitchell 2012, how much of their possible earnings did people give up to talk about themselves?",
    "options": [
-    "About 2%",
     "About 17%",
-    "About 50%"
+    "About 50%",
+    "About 2%"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "17%. Talking about yourself is rewarding enough that people pay for it."
   },
   {
@@ -959,10 +959,10 @@
    "q": "What made Kennedy's Paris opener work?",
    "options": [
     "He listed his achievements",
-    "He made his wife the star and himself the side character",
-    "He spoke fast to fill the room"
+    "He spoke fast to fill the room",
+    "He made his wife the star and himself the side character"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "He named the room's favourite, cast himself as her plus-one, then thanked his hosts."
   },
   {
@@ -974,11 +974,11 @@
    "type": "quiz",
    "q": "The \"70 to 80% eye contact\" rule...",
    "options": [
+    "Is the minimum for trust",
     "Comes from a study of Kennedy",
-    "Has no source; people prefer gaze in bouts of about 3 seconds",
-    "Is the minimum for trust"
+    "Has no source; people prefer gaze in bouts of about 3 seconds"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Binetti et al. 2016: preferred mutual gaze averaged 3.3 seconds and varied a lot."
   },
   {
@@ -1012,11 +1012,11 @@
    "type": "quiz",
    "q": "Why is a name harder to remember than a job (the Baker/baker paradox)?",
    "options": [
-    "Names are longer",
     "A name connects to nothing you know; a job connects to lots",
-    "People don't listen"
+    "People don't listen",
+    "Names are longer"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "McWeeny et al. 1987. Give the name meaning and recall improves (Cohen 1990)."
   },
   {
@@ -1028,11 +1028,11 @@
    "type": "quiz",
    "q": "In Howard, Gengler and Jain 1995, remembering someone's name...",
    "options": [
-    "Raised compliance with a purchase request",
     "Had no effect",
+    "Raised compliance with a purchase request",
     "Felt manipulative and lowered compliance"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "It worked like a compliment. Forgetting did not lower compliance."
   },
   {
@@ -1044,11 +1044,11 @@
    "type": "quiz",
    "q": "Miranda calling Andy \"Emily\" shows...",
    "options": [
-    "She is busy",
     "Andy is replaceable to her",
-    "Names don't matter in fashion"
+    "Names don't matter in fashion",
+    "She is busy"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Refusing to learn a name is how fiction, and bad bosses, signal you are interchangeable."
   },
   {
@@ -1099,10 +1099,10 @@
    "q": "You ask \"How was your weekend?\" then say \"Mine was amazing!\" Researchers call this...",
    "options": [
     "Mirroring",
-    "Boomerasking",
-    "Active listening"
+    "Active listening",
+    "Boomerasking"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Brooks and Yeomans 2025: it reads as insincere, even though askers think it is fine."
   },
   {
@@ -1114,11 +1114,11 @@
    "type": "quiz",
    "q": "Which closing question surfaced the most unmet concerns in a clinic trial?",
    "options": [
-    "\"Anything else?\"",
     "\"Is there something else you want to address today?\"",
-    "\"Are we done?\""
+    "\"Are we done?\"",
+    "\"Anything else?\""
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Heritage et al. 2007: \"something\" eliminated 78% of unmet concerns; \"anything\" did no better than not asking."
   },
   {
@@ -1152,11 +1152,11 @@
    "type": "quiz",
    "q": "\"I feel lousy today.\" \"Same here, I barely slept.\" This is a...",
    "options": [
+    "Callback",
     "Support response",
-    "Shift response",
-    "Callback"
+    "Shift response"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Derber's shift response: the attention moves to you."
   },
   {
@@ -1223,10 +1223,10 @@
    "q": "People who wrote genuine compliments predicted the recipient's reaction. They...",
    "options": [
     "Overestimated how good it felt",
-    "Underestimated how good it felt and overestimated the awkwardness",
-    "Were accurate"
+    "Were accurate",
+    "Underestimated how good it felt and overestimated the awkwardness"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Zhao and Epley 2021, nine experiments."
   },
   {
@@ -1238,11 +1238,11 @@
    "type": "quiz",
    "q": "Why does Melvin's \"better man\" line land?",
    "options": [
-    "It is about her looks",
     "It names her effect on him, and it cost him to say it",
-    "It is a joke"
+    "It is a joke",
+    "It is about her looks"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Effect beats adjectives, and it reveals something he would rather hide."
   },
   {
@@ -1254,11 +1254,11 @@
    "type": "quiz",
    "q": "Kennedy's \"...when Thomas Jefferson dined alone\" line is an example of...",
    "options": [
+    "A cold read",
     "Praising the room inside a joke",
-    "Self-promotion",
-    "A cold read"
+    "Self-promotion"
    ],
-   "answer": 0,
+   "answer": 1,
    "why": "A compliment to everyone present, wrapped so no one had to answer. His files hold speechwriter drafts: charm can be prepared."
   },
   {
@@ -1308,11 +1308,11 @@
    "type": "quiz",
    "q": "After a networking event, forgetting is usually...",
    "options": [
-    "Slow and steady",
     "Steep in the first hours and day, then slower",
-    "Zero if you were interested"
+    "Zero if you were interested",
+    "Slow and steady"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Ebbinghaus's curve, replicated by Murre and Dros 2015. Write it down that night."
   },
   {
@@ -1324,11 +1324,11 @@
    "type": "quiz",
    "q": "Clinton's 1992 answer worked mainly because he...",
    "options": [
+    "Talked over Bush",
     "Quoted debt statistics",
-    "Asked her to say more, then answered with people he knew by name",
-    "Talked over Bush"
+    "Asked her to say more, then answered with people he knew by name"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "A question first, then a callback to real people."
   },
   {
@@ -1362,11 +1362,11 @@
    "type": "quiz",
    "q": "\"Guilty, I make the websites. But Rhea's the reason I'm here, ask her about her clinic.\" Which move?",
    "options": [
-    "The callback",
     "Hand the light",
+    "The callback",
     "The support response"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Stop 2.1: one light line about you, then the light goes to her."
   },
   {
@@ -1378,9 +1378,9 @@
    "type": "quiz",
    "q": "\"How was your weekend?\" ... \"Mine was amazing, I went to...\" Which mistake?",
    "options": [
-    "A callback",
+    "An active-constructive response",
     "Boomerasking",
-    "An active-constructive response"
+    "A callback"
    ],
    "answer": 1,
    "why": "Stop 2.3: the question was only a launchpad for your own story."
@@ -1394,9 +1394,9 @@
    "type": "quiz",
    "q": "You meet 12 people at an event. When should you write the cards?",
    "options": [
-    "Next week",
+    "Only for the important ones",
     "Within the hour, before the steep part of forgetting",
-    "Only for the important ones"
+    "Next week"
    ],
    "answer": 1,
    "why": "Stop 2.6: forgetting is front-loaded."

@@ -60,11 +60,11 @@
    "type": "quiz",
    "q": "Which of these is genuinely Seneca?",
    "options": [
-    "“Luck is what happens when preparation meets opportunity.”",
     "“I examine my whole day... I hide nothing from myself.”",
+    "“Luck is what happens when preparation meets opportunity.”",
     "“Be the change you wish to see.”"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "The nightly-review passage is from On Anger III.36. The luck line has no Seneca source, and the third is a fake Gandhi quote."
   },
   {
@@ -87,9 +87,9 @@
    "type": "quiz",
    "q": "“You have power over your mind, not outside events” is:",
    "options": [
-    "A verbatim line from Meditations 8.47",
+    "From Seneca's letters",
     "A modern paraphrase of an idea Marcus really held",
-    "From Seneca's letters"
+    "A verbatim line from Meditations 8.47"
    ],
    "answer": 1,
    "why": "The idea is genuinely his, but that wording is not in the text. The real line: “it is not this thing that disturbs thee, but thy own judgement about it.”"
@@ -141,11 +141,11 @@
    "type": "quiz",
    "q": "Why did Darwin write contrary facts down immediately?",
    "options": [
+    "Because his publisher asked him to",
     "To prove his critics wrong",
-    "Because he had noticed his memory lost unfavourable facts much faster than favourable ones",
-    "Because his publisher asked him to"
+    "Because he had noticed his memory lost unfavourable facts much faster than favourable ones"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "His own words: such facts were “far more apt to escape from the memory than favourable ones.” He designed around a known bias in his own mind."
   },
   {
@@ -168,9 +168,9 @@
    "type": "quiz",
    "q": "What did Feynman call “the first principle”?",
    "options": [
-    "Always trust experiments over theory",
+    "Simplicity is the ultimate sophistication",
     "You must not fool yourself, and you are the easiest person to fool",
-    "Simplicity is the ultimate sophistication"
+    "Always trust experiments over theory"
    ],
    "answer": 1,
    "why": "From his 1974 Caltech address. The third option is a fake Leonardo quote, which you'll meet in Stop 1.7."
@@ -195,11 +195,11 @@
    "type": "quiz",
    "q": "What turned Curie's slow measurements into discoveries?",
    "options": [
+    "Expensive equipment",
     "A flash of genius in the lab",
-    "Systematic, dated records of every measurement, so patterns could show up",
-    "Expensive equipment"
+    "Systematic, dated records of every measurement, so patterns could show up"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "She had very little equipment or money. Careful, complete records let patterns emerge across months of work."
   },
   {
@@ -222,11 +222,11 @@
    "type": "quiz",
    "q": "What made Leonardo's curiosity productive?",
    "options": [
-    "He waited for inspiration",
     "He turned it into written, specific questions with a person or test attached",
-    "He focused on one subject only"
+    "He focused on one subject only",
+    "He waited for inspiration"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Specific questions plus a route to the answer: the same “solvable gap” that curiosity research says works best."
   },
   {
@@ -276,11 +276,11 @@
    "type": "quiz",
    "q": "What was the decisive step in Ramanujan's story?",
    "options": [
-    "Getting a university degree first",
     "Sending his best work to a qualified critic and asking for judgment",
+    "Getting a university degree first",
     "Keeping his work secret until it was perfect"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "He had no degree and did not wait for perfection. The letter to Hardy, with honest limits stated, is what changed everything."
   },
   {
@@ -304,10 +304,10 @@
    "q": "What did Nightingale's famous diagram show?",
    "options": [
     "That nurses were underpaid",
-    "That far more soldiers were dying of preventable disease than of wounds",
-    "That hospitals needed more doctors"
+    "That hospitals needed more doctors",
+    "That far more soldiers were dying of preventable disease than of wounds"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "The chart made the preventable deaths impossible to ignore, which is why it drove sanitation reform."
   },
   {
@@ -357,11 +357,11 @@
    "type": "quiz",
    "q": "Whose maxim is “Invert, always invert”?",
    "options": [
-    "Charlie Munger's own invention",
     "The mathematician Carl Jacobi's, quoted by Munger",
+    "Charlie Munger's own invention",
     "Warren Buffett's"
    ],
-   "answer": 1,
+   "answer": 0,
    "why": "Munger popularised it and credited Jacobi. Giving credit accurately is part of the latticework habit."
   },
   {
@@ -594,10 +594,10 @@
    "q": "A friend sends you \"Insanity is doing the same thing over and over and expecting different results, Einstein.\" Best response?",
    "options": [
     "Share it, Einstein said it",
-    "Enjoy the idea, drop the attribution: there's no Einstein source for it",
-    "Reply with a Gandhi quote"
+    "Reply with a Gandhi quote",
+    "Enjoy the idea, drop the attribution: there's no Einstein source for it"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "The idea is fine as an idea. The attribution is invented, and attaching a famous name to it is how myths spread."
   },
   {
@@ -620,12 +620,12 @@
    "type": "quiz",
    "q": "What do almost all twelve lives have in common?",
    "options": [
-    "Exceptional talent from childhood",
-    "They wrote things down, reviewed them on a schedule, and tested them against reality",
     "They woke up at 5 a.m.",
-    "They never doubted themselves"
+    "They never doubted themselves",
+    "Exceptional talent from childhood",
+    "They wrote things down, reviewed them on a schedule, and tested them against reality"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "The pattern is externalised self-monitoring and testing, which is also the strongest finding in the modern research."
   },
   {
@@ -638,11 +638,11 @@
    "q": "Which drill has the strongest evidence for turning intentions into action?",
    "options": [
     "Cold showers",
-    "An if-then plan tied to an existing cue",
+    "A 25-minute Pomodoro",
     "Visualising success",
-    "A 25-minute Pomodoro"
+    "An if-then plan tied to an existing cue"
    ],
-   "answer": 1,
+   "answer": 3,
    "why": "Implementation intentions: d about 0.65 across 94 tests, confirmed by a 2024 synthesis of 642 tests."
   },
   {
@@ -654,9 +654,9 @@
    "type": "quiz",
    "q": "You miss two days of your stack while travelling. What does the evidence say?",
    "options": [
-    "The habit is broken, start over",
+    "Wait until next Monday for a fresh start",
     "Single misses barely matter; the rule is never miss twice, so restart today",
-    "Wait until next Monday for a fresh start"
+    "The habit is broken, start over"
    ],
    "answer": 1,
    "why": "Lally et al. found a missed day didn't materially reset habit formation. Restart today; a fresh start on Monday is a bonus, not a requirement."
@@ -671,10 +671,10 @@
    "q": "Why does this guide link every quote to a source?",
    "options": [
     "For decoration",
-    "Because famous quotes are often fake, and a practice is only useful if it's real",
-    "To make it longer"
+    "To make it longer",
+    "Because famous quotes are often fake, and a practice is only useful if it's real"
    ],
-   "answer": 1,
+   "answer": 2,
    "why": "Three errors were caught during building alone. Checking is the habit the guide is teaching."
   }
  ]
