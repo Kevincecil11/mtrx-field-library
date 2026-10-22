@@ -1,0 +1,1447 @@
+{
+ "guide": "03",
+ "title": "MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil",
+ "file": "03-cons-and-cults.html",
+ "day": false,
+ "stops": [
+  "0.1",
+  "0.2",
+  "1.1",
+  "1.2",
+  "1.3",
+  "1.4",
+  "1.5",
+  "1.6",
+  "1.7",
+  "2.1",
+  "2.2",
+  "2.3",
+  "2.4",
+  "2.5",
+  "2.6",
+  "2.7",
+  "3.1",
+  "3.2",
+  "3.3",
+  "3.4",
+  "3.5",
+  "3.6",
+  "3.7",
+  "3.8",
+  "3.9"
+ ],
+ "cards": [
+  {
+   "guide": "03",
+   "stop": "0.1",
+   "name": "Why this course exists",
+   "link": "guides/03-cons-and-cults.html#m0-1",
+   "id": "03-0.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Why this course exists\" in two or three lines, as you would to a client.",
+   "answer": "Curiosity first: every stop answers a real question, and every answer has a source.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "0.2",
+   "name": "The question bank and the map",
+   "link": "guides/03-cons-and-cults.html#m0-2",
+   "id": "03-0.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The question bank and the map\" in two or three lines, as you would to a client.",
+   "answer": "This course answers questions, not chapters. If your question is not on the list, ask it and it becomes a stop.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "1.1",
+   "name": "Who joins, and why it is not stupidity",
+   "link": "guides/03-cons-and-cults.html#m1-1",
+   "id": "03-1.1-q1",
+   "type": "quiz",
+   "q": "What did Barker's tracking of Unification Church workshop guests mostly show?",
+   "options": [
+    "Most guests walked away, so the workshops were far weaker than the brainwashing story said",
+    "Guests joined at the same rate as any church, so the group was no different at all",
+    "Most guests joined, because the workshops overrode their judgment with a hidden technique"
+   ],
+   "answer": 0,
+   "why": "About 9 in 10 never joined, and most joiners left within two years. That does not make the group harmless; it makes the zombie story wrong."
+  },
+  {
+   "guide": "03",
+   "stop": "1.1",
+   "name": "Who joins, and why it is not stupidity",
+   "link": "guides/03-cons-and-cults.html#m1-1",
+   "id": "03-1.1-q2",
+   "type": "quiz",
+   "q": "In the Lofland and Stark model, what usually opens the door into a group?",
+   "options": [
+    "A hidden personality flaw that makes the recruit easy to deceive",
+    "A bond with a member, often before the doctrine makes any sense",
+    "A strong argument for the doctrine, long before any friendship forms"
+   ],
+   "answer": 1,
+   "why": "Recruitment travels through relationships. Greil and Rudy found bonds and intense time together were the two conditions present in every case."
+  },
+  {
+   "guide": "03",
+   "stop": "1.1",
+   "name": "Who joins, and why it is not stupidity",
+   "link": "guides/03-cons-and-cults.html#m1-1",
+   "id": "03-1.1-q3",
+   "type": "quiz",
+   "q": "Why does high intelligence give weak protection against joining?",
+   "options": [
+    "Intelligent people are rarely approached, so they never practise saying no",
+    "It protects well, which is why groups mostly recruit people with little schooling",
+    "A sharp mind can build strong reasons for a choice that loneliness already made"
+   ],
+   "answer": 2,
+   "why": "Intelligence serves whatever need is driving it. Timing, transitions and relationships predict joining better than IQ."
+  },
+  {
+   "guide": "03",
+   "stop": "1.1",
+   "name": "Who joins, and why it is not stupidity",
+   "link": "guides/03-cons-and-cults.html#m1-1",
+   "id": "03-1.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Who joins, and why it is not stupidity\" in two or three lines, as you would to a client.",
+   "answer": "Nobody joins a cult on purpose. People join friends, then a cause, and only later learn what the group was.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "1.2",
+   "name": "What a cult is, and why the word is a fight",
+   "link": "guides/03-cons-and-cults.html#m1-2",
+   "id": "03-1.2-q1",
+   "type": "quiz",
+   "q": "Which question best separates a demanding group from a coercive one?",
+   "options": [
+    "Are its beliefs unusual compared with the religions around it?",
+    "Is its founder still alive and still leading it day to day?",
+    "Can members leave without losing their money, home and family?"
+   ],
+   "answer": 2,
+   "why": "Exit cost is the strongest signal. Strange beliefs and living founders are common in harmless groups."
+  },
+  {
+   "guide": "03",
+   "stop": "1.2",
+   "name": "What a cult is, and why the word is a fight",
+   "link": "guides/03-cons-and-cults.html#m1-2",
+   "id": "03-1.2-q2",
+   "type": "quiz",
+   "q": "Why did researchers move to the term 'new religious movement'?",
+   "options": [
+    "Because 'cult' had become a verdict rather than a description",
+    "Because 1970s studies had proven every new group was harmless",
+    "Because courts had banned the word 'cult' in academic papers"
+   ],
+   "answer": 0,
+   "why": "The new term describes a group's position and novelty. Whether harm occurred is a separate question that needs evidence."
+  },
+  {
+   "guide": "03",
+   "stop": "1.2",
+   "name": "What a cult is, and why the word is a fight",
+   "link": "guides/03-cons-and-cults.html#m1-2",
+   "id": "03-1.2-q3",
+   "type": "quiz",
+   "q": "In this course, what does 'high-demand group' point at?",
+   "options": [
+    "How unusual the group's beliefs are compared with mainstream ones",
+    "How much the group asks for in time, money, loyalty and obedience",
+    "How many members the group recruited in its first five years"
+   ],
+   "answer": 1,
+   "why": "It names demands and mechanisms, so it works for religious, political, wellness and business groups alike."
+  },
+  {
+   "guide": "03",
+   "stop": "1.2",
+   "name": "What a cult is, and why the word is a fight",
+   "link": "guides/03-cons-and-cults.html#m1-2",
+   "id": "03-1.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"What a cult is, and why the word is a fight\" in two or three lines, as you would to a client.",
+   "answer": "Don't diagnose a group by its beliefs. Map who can punish whom, and what it costs to leave.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "1.3",
+   "name": "The toolkit: Lifton's eight",
+   "link": "guides/03-cons-and-cults.html#m1-3",
+   "id": "03-1.3-q1",
+   "type": "quiz",
+   "q": "Where did Lifton's eight criteria come from?",
+   "options": [
+    "Interviews with people put through thought reform in 1950s China",
+    "Laboratory experiments on obedience run at Yale in the 1960s",
+    "A study of American cult members during the 1970s cult panic"
+   ],
+   "answer": 0,
+   "why": "Lifton published in 1961, before the American cult scare, so the themes describe any closed ideological world."
+  },
+  {
+   "guide": "03",
+   "stop": "1.3",
+   "name": "The toolkit: Lifton's eight",
+   "link": "guides/03-cons-and-cults.html#m1-3",
+   "id": "03-1.3-q2",
+   "type": "quiz",
+   "q": "What does Lifton mean by 'dispensing of existence'?",
+   "options": [
+    "Members must hand over their possessions to the leader when they join",
+    "The leader claims the power to heal any illness through faith alone",
+    "The group decides who deserves to exist with dignity, and who does not"
+   ],
+   "answer": 2,
+   "why": "Insiders are saved; outsiders and leavers are lost, ill or evil. It is what makes leaving feel like dying."
+  },
+  {
+   "guide": "03",
+   "stop": "1.3",
+   "name": "The toolkit: Lifton's eight",
+   "link": "guides/03-cons-and-cults.html#m1-3",
+   "id": "03-1.3-q3",
+   "type": "quiz",
+   "q": "Why should you treat the BITE model with some caution?",
+   "options": [
+    "It looks only at behaviour, so it misses thought and emotion entirely",
+    "It is a useful prompt, but it was never validated as a diagnostic test",
+    "It was formally rejected by the APA in the same 1987 report as Singer's"
+   ],
+   "answer": 1,
+   "why": "The 1987 rejection was of Singer's task force report. BITE covers behaviour, information, thought and emotion, but lacks independent validation."
+  },
+  {
+   "guide": "03",
+   "stop": "1.3",
+   "name": "The toolkit: Lifton's eight",
+   "link": "guides/03-cons-and-cults.html#m1-3",
+   "id": "03-1.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The toolkit: Lifton's eight\" in two or three lines, as you would to a client.",
+   "answer": "A technique is not magic. Its power comes from repetition, dependency and the cost of dissent.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "1.4",
+   "name": "Cutting the cord: why cults isolate you",
+   "link": "guides/03-cons-and-cults.html#m1-4",
+   "id": "03-1.4-q1",
+   "type": "quiz",
+   "q": "In organisational terms, why does isolation help a coercive group?",
+   "options": [
+    "It keeps out journalists and spies who might expose its money",
+    "It removes rival information, emotional refuge and the road out",
+    "It saves the money members would otherwise spend on visits home"
+   ],
+   "answer": 1,
+   "why": "Outside ties supply information, rest and an exit. Closing all three is the point; secrecy and money are side effects."
+  },
+  {
+   "guide": "03",
+   "stop": "1.4",
+   "name": "Cutting the cord: why cults isolate you",
+   "link": "guides/03-cons-and-cults.html#m1-4",
+   "id": "03-1.4-q2",
+   "type": "quiz",
+   "q": "What does 'fright without solution' describe?",
+   "options": [
+    "Fear that fades once a member fully accepts the group's doctrine",
+    "Fear of a danger with no fix, such as death or serious illness",
+    "Fear whose source is also the only offered source of safety"
+   ],
+   "answer": 2,
+   "why": "The member runs toward the very thing frightening her, which is why fear deepens the bond instead of breaking it."
+  },
+  {
+   "guide": "03",
+   "stop": "1.4",
+   "name": "Cutting the cord: why cults isolate you",
+   "link": "guides/03-cons-and-cults.html#m1-4",
+   "id": "03-1.4-q3",
+   "type": "quiz",
+   "q": "A friend's sister has joined an intense group. What is the best first move?",
+   "options": [
+    "Keep the bridge open: stay warm, ask concrete questions, no ultimatums",
+    "Send her every critical article about the group as soon as you can",
+    "Give her a clear choice today: the group or the family, never both"
+   ],
+   "answer": 0,
+   "why": "Facts arrive through a channel the group has marked hostile. A warm bridge and practical help are what leavers say mattered."
+  },
+  {
+   "guide": "03",
+   "stop": "1.4",
+   "name": "Cutting the cord: why cults isolate you",
+   "link": "guides/03-cons-and-cults.html#m1-4",
+   "id": "03-1.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Cutting the cord: why cults isolate you\" in two or three lines, as you would to a client.",
+   "answer": "The real question is not who is forbidden to leave. It is what a person would lose by leaving.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "1.5",
+   "name": "Why cults work: strictness, sacrifice and dissonance",
+   "link": "guides/03-cons-and-cults.html#m1-5",
+   "id": "03-1.5-q1",
+   "type": "quiz",
+   "q": "In Iannaccone's model, what do strict rules mainly do?",
+   "options": [
+    "Frighten members so much that nobody ever dares to leave",
+    "Prove the doctrine true, since people only sacrifice for truth",
+    "Screen out free riders, so the members who stay give more"
+   ],
+   "answer": 2,
+   "why": "Strictness is a filter that makes the club better for those who stay. It is silent on whether the doctrine is true."
+  },
+  {
+   "guide": "03",
+   "stop": "1.5",
+   "name": "Why cults work: strictness, sacrifice and dissonance",
+   "link": "guides/03-cons-and-cults.html#m1-5",
+   "id": "03-1.5-q2",
+   "type": "quiz",
+   "q": "What is the fairest status of When Prophecy Fails today?",
+   "options": [
+    "Influential, but a single covert case study with method problems",
+    "A hoax that its authors later admitted they had invented",
+    "A replicated lab result showing belief always grows after failure"
+   ],
+   "answer": 0,
+   "why": "The general idea of escalating commitment is well supported. The famous case itself is thin evidence."
+  },
+  {
+   "guide": "03",
+   "stop": "1.5",
+   "name": "Why cults work: strictness, sacrifice and dissonance",
+   "link": "guides/03-cons-and-cults.html#m1-5",
+   "id": "03-1.5-q3",
+   "type": "quiz",
+   "q": "Why does 'I was wrong' get harder to say the longer you stay?",
+   "options": [
+    "Members slowly lose the ability to think critically at all",
+    "Each sacrifice makes leaving mean that the costs were wasted",
+    "The doctrine gets more convincing the longer it is studied"
+   ],
+   "answer": 1,
+   "why": "Escalation of commitment: every public act raises the price of admitting error. Thinking still works; it gets aimed at defending the cost."
+  },
+  {
+   "guide": "03",
+   "stop": "1.5",
+   "name": "Why cults work: strictness, sacrifice and dissonance",
+   "link": "guides/03-cons-and-cults.html#m1-5",
+   "id": "03-1.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Why cults work: strictness, sacrifice and dissonance\" in two or three lines, as you would to a client.",
+   "answer": "Sacrifice can signal commitment, but commitment is not evidence.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "1.6",
+   "name": "Belonging and identity: the happiest time of my life",
+   "link": "guides/03-cons-and-cults.html#m1-6",
+   "id": "03-1.6-q1",
+   "type": "quiz",
+   "q": "What did Tajfel's minimal group studies show?",
+   "options": [
+    "People treat random groups fairly unless money for themselves is at stake",
+    "People favour their own group even when it rests on a trivial label",
+    "People favour only groups that share deep values and a long history"
+   ],
+   "answer": 1,
+   "why": "A meaningless label, Klee or Kandinsky, was enough. Nothing was at stake for the boys personally."
+  },
+  {
+   "guide": "03",
+   "stop": "1.6",
+   "name": "Belonging and identity: the happiest time of my life",
+   "link": "guides/03-cons-and-cults.html#m1-6",
+   "id": "03-1.6-q2",
+   "type": "quiz",
+   "q": "What does identity fusion mean?",
+   "options": [
+    "The person belongs to two rival groups at the very same time",
+    "The person loses every trace of their own individual personality",
+    "The person feels the group's fate as their own personal fate"
+   ],
+   "answer": 2,
+   "why": "Fused people keep a strong personal self. The border between self and group becomes porous."
+  },
+  {
+   "guide": "03",
+   "stop": "1.6",
+   "name": "Belonging and identity: the happiest time of my life",
+   "link": "guides/03-cons-and-cults.html#m1-6",
+   "id": "03-1.6-q3",
+   "type": "quiz",
+   "q": "A former member says: 'Best years of my life, and it was abuse.' What is the best reading?",
+   "options": [
+    "Both can be true: the belonging was real, the structure was coercive",
+    "She is confused, because real abuse can never feel like the best years",
+    "She is exaggerating one half to protect the story she now tells"
+   ],
+   "answer": 0,
+   "why": "Belonging rewards and coercive structures coexist. Treating either half as fake misreads the experience."
+  },
+  {
+   "guide": "03",
+   "stop": "1.6",
+   "name": "Belonging and identity: the happiest time of my life",
+   "link": "guides/03-cons-and-cults.html#m1-6",
+   "id": "03-1.6-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Belonging and identity: the happiest time of my life\" in two or three lines, as you would to a client.",
+   "answer": "The happiest memory is evidence of belonging, not evidence that the system was safe.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "1.7",
+   "name": "Case file: Jonestown, read with everything",
+   "link": "guides/03-cons-and-cults.html#m1-7",
+   "id": "03-1.7-q1",
+   "type": "quiz",
+   "q": "Which statement about the Jonestown drink is accurate?",
+   "options": [
+    "The poison was mixed into Flavor Aid, not into Kool-Aid",
+    "There was no drink at all; every death was by injection",
+    "The poison was mixed into Kool-Aid, just as the phrase says"
+   ],
+   "answer": 0,
+   "why": "Kool-Aid packets were in the pantry, but Flavor Aid was used that day, according to the Jonestown archive."
+  },
+  {
+   "guide": "03",
+   "stop": "1.7",
+   "name": "Case file: Jonestown, read with everything",
+   "link": "guides/03-cons-and-cults.html#m1-7",
+   "id": "03-1.7-q2",
+   "type": "quiz",
+   "q": "Why do many scholars prefer 'murder-suicide' for Jonestown?",
+   "options": [
+    "The deaths were ordered from the US, so nobody in Guyana chose",
+    "Investigators found that nobody there drank the poison willingly",
+    "Hundreds of the dead were children, and many adults did not choose"
+   ],
+   "answer": 2,
+   "why": "304 of the dead at Jonestown were minors. Calling it suicide erases what was done to them, though some adults did choose."
+  },
+  {
+   "guide": "03",
+   "stop": "1.7",
+   "name": "Case file: Jonestown, read with everything",
+   "link": "guides/03-cons-and-cults.html#m1-7",
+   "id": "03-1.7-q3",
+   "type": "quiz",
+   "q": "Which combination best explains why Jonestown ended in violence?",
+   "options": [
+    "A closed, isolated world, a threatened leader, rehearsals and no way back",
+    "Unusual religious beliefs held by an unusually large number of members",
+    "A naturally charismatic leader combined with unusually gullible followers"
+   ],
+   "answer": 0,
+   "why": "Strange beliefs and charisma are common in groups that never turn violent. The combination of conditions predicts danger."
+  },
+  {
+   "guide": "03",
+   "stop": "1.7",
+   "name": "Case file: Jonestown, read with everything",
+   "link": "guides/03-cons-and-cults.html#m1-7",
+   "id": "03-1.7-r1",
+   "type": "recall",
+   "q": "Drill \"Read a case in six lenses\": what are the steps, and the usual mistake?",
+   "answer": "1) Pick a real group from a documentary or a long article 2) Find one concrete detail for each of Stops 1.1 to 1.6 3) Mark which details are documented and which are only claimed 4) Write the one combination that made it dangerous Usual mistake: Reaching for \"brainwashing\" instead of naming the specific mechanism and the evidence for it.",
+   "label": "Drill"
+  },
+  {
+   "guide": "03",
+   "stop": "1.7",
+   "name": "Case file: Jonestown, read with everything",
+   "link": "guides/03-cons-and-cults.html#m1-7",
+   "id": "03-1.7-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Case file: Jonestown, read with everything\" in two or three lines, as you would to a client.",
+   "answer": "The warning sign is not a strange belief. It is a closed world under pressure, with no dignified way out.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "2.1",
+   "name": "The leader's motive: true believer, fraud, or both",
+   "link": "guides/03-cons-and-cults.html#m2-1",
+   "id": "03-2.1-q1",
+   "type": "quiz",
+   "q": "A leader fakes miracles. What can you safely conclude?",
+   "options": [
+    "That he is a pure fraud who never believed a word of his own message",
+    "Very little about his belief: faking proof and sincere faith often coexist",
+    "That he must be mentally ill, since sane believers never fake proof"
+   ],
+   "answer": 1,
+   "why": "Pious fraud is old and common. Belief is a weak predictor; incentives and checks on power are stronger."
+  },
+  {
+   "guide": "03",
+   "stop": "2.1",
+   "name": "The leader's motive: true believer, fraud, or both",
+   "link": "guides/03-cons-and-cults.html#m2-1",
+   "id": "03-2.1-q2",
+   "type": "quiz",
+   "q": "Which question best predicts whether a leader is dangerous?",
+   "options": [
+    "Does the leader sincerely believe the message he preaches?",
+    "How unusual is the leader's doctrine compared with others?",
+    "What happens to a follower who refuses an order or leaves?"
+   ],
+   "answer": 2,
+   "why": "If refusal is punished, sincerity is irrelevant. If refusal is safe, even an odd leader is low risk."
+  },
+  {
+   "guide": "03",
+   "stop": "2.1",
+   "name": "The leader's motive: true believer, fraud, or both",
+   "link": "guides/03-cons-and-cults.html#m2-1",
+   "id": "03-2.1-q3",
+   "type": "quiz",
+   "q": "Why do motives tend to drift from mission toward privilege?",
+   "options": [
+    "Leaders are frauds from the start and simply reveal it over the years",
+    "Obedience brings rewards and doubt threatens them, so doubt gets punished",
+    "Followers demand harsher rules as they grow more committed to the group"
+   ],
+   "answer": 1,
+   "why": "Rewards accumulate whatever the leader believes, and protecting them gives him reasons to silence doubt."
+  },
+  {
+   "guide": "03",
+   "stop": "2.1",
+   "name": "The leader's motive: true believer, fraud, or both",
+   "link": "guides/03-cons-and-cults.html#m2-1",
+   "id": "03-2.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The leader's motive: true believer, fraud, or both\" in two or three lines, as you would to a client.",
+   "answer": "Don't ask whether the guru believes. Ask what happens when someone says no.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "2.2",
+   "name": "The guru pattern: Storr's Feet of Clay and the narcissism question",
+   "link": "guides/03-cons-and-cults.html#m2-2",
+   "id": "03-2.2-q1",
+   "type": "quiz",
+   "q": "In Storr's pattern, what usually comes just before a guru's revelation?",
+   "options": [
+    "A crisis, such as a breakdown, an illness or an expulsion",
+    "A period of great popularity and many close friendships",
+    "Formal training in theology at a respected seminary"
+   ],
+   "answer": 0,
+   "why": "Isolated youth, then crisis, then a private revelation the guru declares true for everyone."
+  },
+  {
+   "guide": "03",
+   "stop": "2.2",
+   "name": "The guru pattern: Storr's Feet of Clay and the narcissism question",
+   "link": "guides/03-cons-and-cults.html#m2-2",
+   "id": "03-2.2-q2",
+   "type": "quiz",
+   "q": "Why does Storr say gurus need disciples rather than friends?",
+   "options": [
+    "Disciples confirm the guru's sense of self; friends can disagree",
+    "Disciples pay more money, which keeps the movement funded",
+    "Friends tend to drift away, while disciples stay for life"
+   ],
+   "answer": 0,
+   "why": "The guru's self-image depends on admiration, so equals who can say no are a threat."
+  },
+  {
+   "guide": "03",
+   "stop": "2.2",
+   "name": "The guru pattern: Storr's Feet of Clay and the narcissism question",
+   "link": "guides/03-cons-and-cults.html#m2-2",
+   "id": "03-2.2-q3",
+   "type": "quiz",
+   "q": "What best explains why sexual and financial abuse recur in cults?",
+   "options": [
+    "Members come from backgrounds that make abuse feel normal",
+    "Most leaders start as predators and found groups to hide it",
+    "Power that nobody can refuse or audit makes abuse cheap"
+   ],
+   "answer": 2,
+   "why": "Structural impunity, not just personal appetite. The defences are audit, safeguarding and safe refusal."
+  },
+  {
+   "guide": "03",
+   "stop": "2.2",
+   "name": "The guru pattern: Storr's Feet of Clay and the narcissism question",
+   "link": "guides/03-cons-and-cults.html#m2-2",
+   "id": "03-2.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The guru pattern: Storr's Feet of Clay and the narcissism question\" in two or three lines, as you would to a client.",
+   "answer": "A guru needs disciples, not friends. Friends can say no.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "2.3",
+   "name": "Charisma: why followers grant it",
+   "link": "guides/03-cons-and-cults.html#m2-3",
+   "id": "03-2.3-q1",
+   "type": "quiz",
+   "q": "For Weber, what makes authority charismatic?",
+   "options": [
+    "A legal office that gives its holder the right to command",
+    "Followers' devotion to a person they see as extraordinary",
+    "A family line that has ruled the group for generations"
+   ],
+   "answer": 1,
+   "why": "Weber's three types: traditional (custom), legal-rational (rules), charismatic (devotion to an extraordinary person)."
+  },
+  {
+   "guide": "03",
+   "stop": "2.3",
+   "name": "Charisma: why followers grant it",
+   "link": "guides/03-cons-and-cults.html#m2-3",
+   "id": "03-2.3-q2",
+   "type": "quiz",
+   "q": "Why is charismatic authority unstable?",
+   "options": [
+    "It rests on written rules that members can easily challenge",
+    "It passes automatically to the eldest child of the leader",
+    "It has to keep proving itself with new signs and victories"
+   ],
+   "answer": 2,
+   "why": "Without fresh proof, recognition fades. That pressure helps explain why charismatic groups escalate."
+  },
+  {
+   "guide": "03",
+   "stop": "2.3",
+   "name": "Charisma: why followers grant it",
+   "link": "guides/03-cons-and-cults.html#m2-3",
+   "id": "03-2.3-q3",
+   "type": "quiz",
+   "q": "What did Platow and colleagues find about charisma?",
+   "options": [
+    "Charismatic leaders were rated lower by their own group members",
+    "Leaders seen as typical of the group were judged more charismatic",
+    "Charisma ratings depended only on the leader's speaking skill"
+   ],
+   "answer": 1,
+   "why": "Same words, different perceived typicality, different charisma. The audience supplies part of it."
+  },
+  {
+   "guide": "03",
+   "stop": "2.3",
+   "name": "Charisma: why followers grant it",
+   "link": "guides/03-cons-and-cults.html#m2-3",
+   "id": "03-2.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Charisma: why followers grant it\" in two or three lines, as you would to a client.",
+   "answer": "Charisma is not what the leader has. It is what the relationship keeps producing.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "2.4",
+   "name": "Why we need leaders at all: prestige, dominance and following",
+   "link": "guides/03-cons-and-cults.html#m2-4",
+   "id": "03-2.4-q1",
+   "type": "quiz",
+   "q": "What did van Vugt's review link most strongly with leadership?",
+   "options": [
+    "Initiative, competence and generosity, rather than dominance",
+    "Physical size and aggression, as in other primate groups",
+    "Family wealth and inherited rank within the community"
+   ],
+   "answer": 0,
+   "why": "Groups grant leadership to useful people. Dominance is a separate route to status."
+  },
+  {
+   "guide": "03",
+   "stop": "2.4",
+   "name": "Why we need leaders at all: prestige, dominance and following",
+   "link": "guides/03-cons-and-cults.html#m2-4",
+   "id": "03-2.4-q2",
+   "type": "quiz",
+   "q": "How does prestige differ from dominance?",
+   "options": [
+    "Prestige comes from wealth; dominance comes from age and wisdom",
+    "Prestige lasts for life; dominance vanishes after one defeat",
+    "Prestige is freely given for skill; dominance is taken by fear"
+   ],
+   "answer": 2,
+   "why": "Prestige is paid in voluntary deference that followers can withdraw. Dominance punishes withdrawal."
+  },
+  {
+   "guide": "03",
+   "stop": "2.4",
+   "name": "Why we need leaders at all: prestige, dominance and following",
+   "link": "guides/03-cons-and-cults.html#m2-4",
+   "id": "03-2.4-q3",
+   "type": "quiz",
+   "q": "What do cults typically do to the ancient follower bargain?",
+   "options": [
+    "Remove the leader's special skill, so followers slowly lose interest",
+    "Remove the right to stop following, so respect becomes submission",
+    "Remove all hierarchy, so that every member takes a turn leading"
+   ],
+   "answer": 1,
+   "why": "Prestige converted into dominance: switching becomes betrayal and leaving costs everything."
+  },
+  {
+   "guide": "03",
+   "stop": "2.4",
+   "name": "Why we need leaders at all: prestige, dominance and following",
+   "link": "guides/03-cons-and-cults.html#m2-4",
+   "id": "03-2.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Why we need leaders at all: prestige, dominance and following\" in two or three lines, as you would to a client.",
+   "answer": "Healthy followership keeps the power to compare, switch and criticise.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "2.5",
+   "name": "Entrepreneurs of identity: how leaders build the \"we\"",
+   "link": "guides/03-cons-and-cults.html#m2-5",
+   "id": "03-2.5-q1",
+   "type": "quiz",
+   "q": "What do Haslam, Reicher and Platow mean by an entrepreneur of identity?",
+   "options": [
+    "A leader who crafts and sells a shared sense of who 'we' are",
+    "A leader who copies the identity of a more successful group",
+    "A leader who starts a company to fund the group's activities"
+   ],
+   "answer": 0,
+   "why": "Effective leaders define the group, embody it, and turn it into rituals and structures."
+  },
+  {
+   "guide": "03",
+   "stop": "2.5",
+   "name": "Entrepreneurs of identity: how leaders build the \"we\"",
+   "link": "guides/03-cons-and-cults.html#m2-5",
+   "id": "03-2.5-q2",
+   "type": "quiz",
+   "q": "What turns identity leadership into something coercive?",
+   "options": [
+    "A group having its own songs, symbols or history",
+    "One person claiming to be the only author of the 'we'",
+    "Any leader talking about what the group stands for"
+   ],
+   "answer": 1,
+   "why": "Rituals and identity talk are normal. Exclusive ownership is what makes dissent equal betrayal."
+  },
+  {
+   "guide": "03",
+   "stop": "2.5",
+   "name": "Entrepreneurs of identity: how leaders build the \"we\"",
+   "link": "guides/03-cons-and-cults.html#m2-5",
+   "id": "03-2.5-q3",
+   "type": "quiz",
+   "q": "Why are uncertain people drawn to sharp-edged groups?",
+   "options": [
+    "Sharp-edged groups usually pay new members more money",
+    "They have weaker reasoning skills than people who feel certain",
+    "A clear, all-explaining identity makes the uncertainty go away"
+   ],
+   "answer": 2,
+   "why": "Uncertainty about self and world raises the appeal of groups with clear lines and confident leaders."
+  },
+  {
+   "guide": "03",
+   "stop": "2.5",
+   "name": "Entrepreneurs of identity: how leaders build the \"we\"",
+   "link": "guides/03-cons-and-cults.html#m2-5",
+   "id": "03-2.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Entrepreneurs of identity: how leaders build the \"we\"\" in two or three lines, as you would to a client.",
+   "answer": "The leader who defines 'us' doesn't need to give orders.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "2.6",
+   "name": "When the leader dies, fails or is exposed",
+   "link": "guides/03-cons-and-cults.html#m2-6",
+   "id": "03-2.6-q1",
+   "type": "quiz",
+   "q": "What did Weber call turning a leader's charisma into lasting structures?",
+   "options": [
+    "Routinisation",
+    "Secularisation",
+    "Rationalisation"
+   ],
+   "answer": 0,
+   "why": "Offices, scripture, rituals and succession rules let charisma outlive the person. Rationalisation is a related but broader Weber idea."
+  },
+  {
+   "guide": "03",
+   "stop": "2.6",
+   "name": "When the leader dies, fails or is exposed",
+   "link": "guides/03-cons-and-cults.html#m2-6",
+   "id": "03-2.6-q2",
+   "type": "quiz",
+   "q": "What happened to the Unification Church after Sun Myung Moon died in 2012?",
+   "options": [
+    "It passed peacefully to a council of elders chosen by members",
+    "It dissolved within a year as members returned to their families",
+    "It split into three factions, each claiming to be his true heir"
+   ],
+   "answer": 2,
+   "why": "His widow and two sons each claimed succession, and the factions fought over assets in court."
+  },
+  {
+   "guide": "03",
+   "stop": "2.6",
+   "name": "When the leader dies, fails or is exposed",
+   "link": "guides/03-cons-and-cults.html#m2-6",
+   "id": "03-2.6-q3",
+   "type": "quiz",
+   "q": "Why can the exposure of a leader briefly strengthen a group's core?",
+   "options": [
+    "Exposed leaders usually confess and win back the trust of their followers",
+    "Loyalists read exposure as persecution, which confirms the group's story",
+    "Exposure brings media attention that recruits many new members at once"
+   ],
+   "answer": 1,
+   "why": "Admitting deception costs identity; persecution is the cheaper story. The edges fall away while the core hardens."
+  },
+  {
+   "guide": "03",
+   "stop": "2.6",
+   "name": "When the leader dies, fails or is exposed",
+   "link": "guides/03-cons-and-cults.html#m2-6",
+   "id": "03-2.6-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"When the leader dies, fails or is exposed\" in two or three lines, as you would to a client.",
+   "answer": "A movement survives its founder only if it built something he cannot take with him.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "2.7",
+   "name": "Case file: NXIVM, a coaching company that branded women",
+   "link": "guides/03-cons-and-cults.html#m2-7",
+   "id": "03-2.7-q1",
+   "type": "quiz",
+   "q": "What did NXIVM's secret group DOS demand before a woman could join?",
+   "options": [
+    "Collateral, such as nude photos or other compromising material",
+    "A signed statement renouncing all contact with her family",
+    "A large cash fee paid directly into the leader's bank account"
+   ],
+   "answer": 0,
+   "why": "Collateral guaranteed secrecy and obedience: Lifton's confession turned into leverage."
+  },
+  {
+   "guide": "03",
+   "stop": "2.7",
+   "name": "Case file: NXIVM, a coaching company that branded women",
+   "link": "guides/03-cons-and-cults.html#m2-7",
+   "id": "03-2.7-q2",
+   "type": "quiz",
+   "q": "Which idea from this file best explains NXIVM's rank system?",
+   "options": [
+    "Prestige turned into dominance, with rank tied to recruiting",
+    "Routinisation that let the group outlive its founder",
+    "Charisma turned into a legal office that members elected"
+   ],
+   "answer": 0,
+   "why": "Admiration for Raniere's supposed genius was converted, through sashes and the stripe path, into obedience."
+  },
+  {
+   "guide": "03",
+   "stop": "2.7",
+   "name": "Case file: NXIVM, a coaching company that branded women",
+   "link": "guides/03-cons-and-cults.html#m2-7",
+   "id": "03-2.7-q3",
+   "type": "quiz",
+   "q": "What is the fairest lesson of the NXIVM case?",
+   "options": [
+    "Self-improvement courses are a form of cult and are best avoided",
+    "Wealthy and famous people are especially easy to manipulate",
+    "An ordinary course structure turned coercive under one unaccountable man"
+   ],
+   "answer": 2,
+   "why": "The format was ordinary. Ownership of the 'we', plus no audit, made it dangerous."
+  },
+  {
+   "guide": "03",
+   "stop": "2.7",
+   "name": "Case file: NXIVM, a coaching company that branded women",
+   "link": "guides/03-cons-and-cults.html#m2-7",
+   "id": "03-2.7-r1",
+   "type": "recall",
+   "q": "Drill \"Read a leader through five lenses\": what are the steps, and the usual mistake?",
+   "answer": "1) Pick a leader from a documentary, a news case or a film 2) Write his motive mix: mission, self, appetite 3) Look for Storr's three beats in his life story 4) Show how followers gave him charisma, and where prestige turned into dominance 5) Name who owned the we, and what happened when he fell Usual mistake: Diagnosing him (narcissist, psychopath) instead of describing what he did and what the structure let him do.",
+   "label": "Drill"
+  },
+  {
+   "guide": "03",
+   "stop": "2.7",
+   "name": "Case file: NXIVM, a coaching company that branded women",
+   "link": "guides/03-cons-and-cults.html#m2-7",
+   "id": "03-2.7-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Case file: NXIVM, a coaching company that branded women\" in two or three lines, as you would to a client.",
+   "answer": "NXIVM looked like a business course. The danger was never the format. It was one man who owned the 'we'.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "3.1",
+   "name": "The sociological lens: Weber, Durkheim and collective effervescence",
+   "link": "guides/03-cons-and-cults.html#m3-1",
+   "id": "03-3.1-q1",
+   "type": "quiz",
+   "q": "What does collective effervescence describe?",
+   "options": [
+    "A hidden technique that leaders use to plant beliefs in a crowd",
+    "The charged feeling a group makes when it gathers and moves together",
+    "The calm that settles over members once they stop asking questions"
+   ],
+   "answer": 1,
+   "why": "Durkheim meant the real energy of gathering. The feeling is genuine; the explanation a group attaches to it is a separate claim."
+  },
+  {
+   "guide": "03",
+   "stop": "3.1",
+   "name": "The sociological lens: Weber, Durkheim and collective effervescence",
+   "link": "guides/03-cons-and-cults.html#m3-1",
+   "id": "03-3.1-q2",
+   "type": "quiz",
+   "q": "What did Durkheim's Suicide suggest about social integration?",
+   "options": [
+    "Harm falls steadily as groups grow tighter, so more belonging is always safer",
+    "Harm rises at both ends: too few ties, and a group that swallows the self",
+    "Integration made no measurable difference once income was accounted for"
+   ],
+   "answer": 1,
+   "why": "Egoistic suicide came with weak ties, altruistic suicide with very tight ones. Belonging protects; total belonging is its own risk."
+  },
+  {
+   "guide": "03",
+   "stop": "3.1",
+   "name": "The sociological lens: Weber, Durkheim and collective effervescence",
+   "link": "guides/03-cons-and-cults.html#m3-1",
+   "id": "03-3.1-q3",
+   "type": "quiz",
+   "q": "In Stark and Bainbridge's terms, what makes a group a cult rather than a sect?",
+   "options": [
+    "It brings a new or imported tradition, not a break from an old one",
+    "It harms its members, while a sect is a harmless religious club",
+    "It has a living leader, while a sect is run by a written rulebook"
+   ],
+   "answer": 0,
+   "why": "Both live in tension with society. A sect renews an existing tradition; a cult brings a new one. No verdict on harm is built in."
+  },
+  {
+   "guide": "03",
+   "stop": "3.1",
+   "name": "The sociological lens: Weber, Durkheim and collective effervescence",
+   "link": "guides/03-cons-and-cults.html#m3-1",
+   "id": "03-3.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The sociological lens: Weber, Durkheim and collective effervescence\" in two or three lines, as you would to a client.",
+   "answer": "The high is real. The explanation the group staples onto it is the part you are allowed to check.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "3.2",
+   "name": "Recruitment runs on networks, and some cults become world religions",
+   "link": "guides/03-cons-and-cults.html#m3-2",
+   "id": "03-3.2-q1",
+   "type": "quiz",
+   "q": "What did Stark and Lofland notice about the first American converts they watched?",
+   "options": [
+    "They responded to radio spots and public meetings far more than to friends",
+    "They had studied the doctrine for years before ever meeting a member",
+    "They were friends and relatives of members, not strangers moved by ads"
+   ],
+   "answer": 2,
+   "why": "Radio and public meetings yielded nothing. Converts came through ties to members."
+  },
+  {
+   "guide": "03",
+   "stop": "3.2",
+   "name": "Recruitment runs on networks, and some cults become world religions",
+   "link": "guides/03-cons-and-cults.html#m3-2",
+   "id": "03-3.2-q2",
+   "type": "quiz",
+   "q": "Why does a 40% per decade growth rate matter so much in Stark's model?",
+   "options": [
+    "A small steady rate compounds into millions without any miracle",
+    "It shows growth came mostly from huge public conversion events",
+    "It proves the ancient records counted every single member exactly"
+   ],
+   "answer": 0,
+   "why": "About 3.4% a year, compounded for centuries, turns 1,000 people into about 6.3 million."
+  },
+  {
+   "guide": "03",
+   "stop": "3.2",
+   "name": "Recruitment runs on networks, and some cults become world religions",
+   "link": "guides/03-cons-and-cults.html#m3-2",
+   "id": "03-3.2-q3",
+   "type": "quiz",
+   "q": "Which statement about cults and world religions is the most careful?",
+   "options": [
+    "Large faiths began as small movements in tension with their world",
+    "Every world religion began as a cult and simply grew out of it",
+    "World religions never began small; they started with state support"
+   ],
+   "answer": 0,
+   "why": "Cult is a contested label. Small, high-tension movement describes the start without the slogan."
+  },
+  {
+   "guide": "03",
+   "stop": "3.2",
+   "name": "Recruitment runs on networks, and some cults become world religions",
+   "link": "guides/03-cons-and-cults.html#m3-2",
+   "id": "03-3.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Recruitment runs on networks, and some cults become world religions\" in two or three lines, as you would to a client.",
+   "answer": "Growth that looks miraculous from far away usually looks like friendship up close.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "3.3",
+   "name": "The brainwashing fight: Singer, the APA and the courts",
+   "link": "guides/03-cons-and-cults.html#m3-3",
+   "id": "03-3.3-q1",
+   "type": "quiz",
+   "q": "What did the APA board actually say about the 1987 task force report?",
+   "options": [
+    "It rejected the report and said it lacked the information to take a position",
+    "It endorsed the report and asked courts to treat brainwashing as proven",
+    "It ruled that no group had ever manipulated a member in any harmful way"
+   ],
+   "answer": 0,
+   "why": "Both lines matter. The report was rejected; the question was left open."
+  },
+  {
+   "guide": "03",
+   "stop": "3.3",
+   "name": "The brainwashing fight: Singer, the APA and the courts",
+   "link": "guides/03-cons-and-cults.html#m3-3",
+   "id": "03-3.3-q2",
+   "type": "quiz",
+   "q": "What did the Fishman court decide in 1990?",
+   "options": [
+    "Experts could testify, but only if they had been members themselves",
+    "Brainwashing testimony lacked general acceptance, so it was excluded",
+    "Scientology was guilty of controlling the defendant, so he went free"
+   ],
+   "answer": 1,
+   "why": "The Frye test asks whether a theory is accepted in its field. The court found it was not."
+  },
+  {
+   "guide": "03",
+   "stop": "3.3",
+   "name": "The brainwashing fight: Singer, the APA and the courts",
+   "link": "guides/03-cons-and-cults.html#m3-3",
+   "id": "03-3.3-q3",
+   "type": "quiz",
+   "q": "Which claim did California's Supreme Court allow to go forward in Molko (1988)?",
+   "options": [
+    "Kidnapping, because the church had physically held the two recruits",
+    "Brainwashing, because a secret technique had erased their free will",
+    "Fraud, because recruiters allegedly hid which group was inviting them"
+   ],
+   "answer": 2,
+   "why": "Deception about the group's identity was treated as ordinary fraud, not protected religion."
+  },
+  {
+   "guide": "03",
+   "stop": "3.3",
+   "name": "The brainwashing fight: Singer, the APA and the courts",
+   "link": "guides/03-cons-and-cults.html#m3-3",
+   "id": "03-3.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The brainwashing fight: Singer, the APA and the courts\" in two or three lines, as you would to a client.",
+   "answer": "Nobody proved a mind-control technique. Plenty of people proved they were lied to about what they were joining.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "3.4",
+   "name": "The cult panic: deprogrammers and what they got wrong",
+   "link": "guides/03-cons-and-cults.html#m3-4",
+   "id": "03-3.4-q1",
+   "type": "quiz",
+   "q": "What made deprogramming self-defeating as a rescue method?",
+   "options": [
+    "It was too gentle, so members simply ignored the arguments offered",
+    "It relied on courts, which always sided with the groups being opposed",
+    "It used seizure, isolation and pressure, the very methods it condemned"
+   ],
+   "answer": 2,
+   "why": "Abduction and confinement mirrored the control it claimed to fight, and courts treated it as crime."
+  },
+  {
+   "guide": "03",
+   "stop": "3.4",
+   "name": "The cult panic: deprogrammers and what they got wrong",
+   "link": "guides/03-cons-and-cults.html#m3-4",
+   "id": "03-3.4-q2",
+   "type": "quiz",
+   "q": "What did the McMartin preschool case finally show?",
+   "options": [
+    "A satanic network was proven in court and its leaders were imprisoned",
+    "Years of trials built on leading interviews ended with no convictions",
+    "Children never report abuse, so the case was dropped before any trial"
+   ],
+   "answer": 1,
+   "why": "About $15 million, trials from 1987 to 1990, and no convictions. The interviewing method was central to the collapse."
+  },
+  {
+   "guide": "03",
+   "stop": "3.4",
+   "name": "The cult panic: deprogrammers and what they got wrong",
+   "link": "guides/03-cons-and-cults.html#m3-4",
+   "id": "03-3.4-q3",
+   "type": "quiz",
+   "q": "What is the double lesson of the cult panic?",
+   "options": [
+    "Real harms existed, and the panic still hurt innocent people",
+    "The harms were invented, so every warning about cults was false",
+    "The panic was justified, so its methods should not be criticised"
+   ],
+   "answer": 0,
+   "why": "Both halves matter: a panic distorts a real problem, and a real problem can live inside a panic."
+  },
+  {
+   "guide": "03",
+   "stop": "3.4",
+   "name": "The cult panic: deprogrammers and what they got wrong",
+   "link": "guides/03-cons-and-cults.html#m3-4",
+   "id": "03-3.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The cult panic: deprogrammers and what they got wrong\" in two or three lines, as you would to a client.",
+   "answer": "A panic can distort a real problem, and a real problem can still exist inside a panic. Hold both.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "3.5",
+   "name": "Violence: what predicts it (Waco, Heaven's Gate, Aum Shinrikyo)",
+   "link": "guides/03-cons-and-cults.html#m3-5",
+   "id": "03-3.5-q1",
+   "type": "quiz",
+   "q": "What does the base rate tell you about violence in new religious movements?",
+   "options": [
+    "It is very rare, so a strange belief alone is a poor warning sign",
+    "It is common, so any group with strict rules should be closely watched",
+    "It is unknowable, so scholars have stopped comparing the few cases"
+   ],
+   "answer": 0,
+   "why": "Thousands of groups have existed; only a handful turned violent. Look for combinations, not oddness."
+  },
+  {
+   "guide": "03",
+   "stop": "3.5",
+   "name": "Violence: what predicts it (Waco, Heaven's Gate, Aum Shinrikyo)",
+   "link": "guides/03-cons-and-cults.html#m3-5",
+   "id": "03-3.5-q2",
+   "type": "quiz",
+   "q": "In Wessinger's terms, why are the Branch Davidians an assaulted group?",
+   "options": [
+    "Their mission failed from inside, so they turned on themselves",
+    "They planned a war on society, so they struck the first blow",
+    "Outsiders attacked them first, and the crisis grew from that"
+   ],
+   "answer": 2,
+   "why": "The ATF raid opened the crisis. Fragile groups like Jonestown turn violent from within."
+  },
+  {
+   "guide": "03",
+   "stop": "3.5",
+   "name": "Violence: what predicts it (Waco, Heaven's Gate, Aum Shinrikyo)",
+   "link": "guides/03-cons-and-cults.html#m3-5",
+   "id": "03-3.5-q3",
+   "type": "quiz",
+   "q": "What did the 1996 Montana Freemen standoff show?",
+   "options": [
+    "Patient negotiation and an open way out can end a standoff without deaths",
+    "Armed groups always surrender as soon as the first deadline is announced",
+    "Standoffs end peacefully only when the group has no weapons at all"
+   ],
+   "answer": 0,
+   "why": "Eighty-one days, applied lessons from Waco, and no deaths. A crisis is not a destiny."
+  },
+  {
+   "guide": "03",
+   "stop": "3.5",
+   "name": "Violence: what predicts it (Waco, Heaven's Gate, Aum Shinrikyo)",
+   "link": "guides/03-cons-and-cults.html#m3-5",
+   "id": "03-3.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Violence: what predicts it (Waco, Heaven's Gate, Aum Shinrikyo)\" in two or three lines, as you would to a client.",
+   "answer": "The warning sign is not a weird belief. It is a closed system under pressure with no dignified way out.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "3.6",
+   "name": "Leaving and after: exit costs and rebuilding a self",
+   "link": "guides/03-cons-and-cults.html#m3-6",
+   "id": "03-3.6-q1",
+   "type": "quiz",
+   "q": "Why do many members stay long after their first doubts?",
+   "options": [
+    "Groups lock their doors, so walking out is physically impossible",
+    "Leaving would cost friends, home, savings and meaning all at once",
+    "Doubts never appear inside, because the group has removed them"
+   ],
+   "answer": 1,
+   "why": "Exit costs, not certainty, keep most people inside. Doubt is common; a safe place to share it is rare."
+  },
+  {
+   "guide": "03",
+   "stop": "3.6",
+   "name": "Leaving and after: exit costs and rebuilding a self",
+   "link": "guides/03-cons-and-cults.html#m3-6",
+   "id": "03-3.6-q2",
+   "type": "quiz",
+   "q": "What does floating describe?",
+   "options": [
+    "A planned trial period before a member joins for good",
+    "A state of calm detachment that leaders train recruits in",
+    "A sudden slide back into group thinking after leaving"
+   ],
+   "answer": 2,
+   "why": "Former members describe triggers, a phrase, a song, that pull the old frame back for a moment."
+  },
+  {
+   "guide": "03",
+   "stop": "3.6",
+   "name": "Leaving and after: exit costs and rebuilding a self",
+   "link": "guides/03-cons-and-cults.html#m3-6",
+   "id": "03-3.6-q3",
+   "type": "quiz",
+   "q": "What is the best first move for a family member of someone inside?",
+   "options": [
+    "Win the argument about doctrine, so that they have to see the truth",
+    "Keep in touch, ask curious questions and have practical help ready",
+    "Cut contact until they leave, so the group stops feeling worth it"
+   ],
+   "answer": 1,
+   "why": "People leave towards someone. Debate and ultimatums tend to confirm the group's story about outsiders."
+  },
+  {
+   "guide": "03",
+   "stop": "3.6",
+   "name": "Leaving and after: exit costs and rebuilding a self",
+   "link": "guides/03-cons-and-cults.html#m3-6",
+   "id": "03-3.6-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Leaving and after: exit costs and rebuilding a self\" in two or three lines, as you would to a client.",
+   "answer": "Leaving is not one event. It is rebuilding a life with more than one source of reality.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "3.7",
+   "name": "Born inside: second-generation members",
+   "link": "guides/03-cons-and-cults.html#m3-7",
+   "id": "03-3.7-q1",
+   "type": "quiz",
+   "q": "What makes leaving harder for someone born inside a group?",
+   "options": [
+    "There is no earlier self or outside life to return to",
+    "Groups usually let born-in members go without any shunning",
+    "They chose the group as adults, so leaving feels like failure"
+   ],
+   "answer": 0,
+   "why": "No baseline, no outside records, and often the loss of parents and siblings."
+  },
+  {
+   "guide": "03",
+   "stop": "3.7",
+   "name": "Born inside: second-generation members",
+   "link": "guides/03-cons-and-cults.html#m3-7",
+   "id": "03-3.7-q2",
+   "type": "quiz",
+   "q": "What is a total institution in Goffman's sense?",
+   "options": [
+    "Any group with a written doctrine and a charismatic founder",
+    "A place where all of life runs under one authority and schedule",
+    "A company large enough to employ a whole town at one time"
+   ],
+   "answer": 1,
+   "why": "Prisons, hospitals, ships, boarding schools and some groups qualify. The shape, not the belief, defines it."
+  },
+  {
+   "guide": "03",
+   "stop": "3.7",
+   "name": "Born inside: second-generation members",
+   "link": "guides/03-cons-and-cults.html#m3-7",
+   "id": "03-3.7-q3",
+   "type": "quiz",
+   "q": "What do second-generation members often do to a movement over time?",
+   "options": [
+    "Push it to change, split or soften as they grow up and compare notes",
+    "Leave it untouched, because children rarely question their parents",
+    "Make it stricter, because they defend the rules more than converts do"
+   ],
+   "answer": 0,
+   "why": "Born-in members who leave and speak out have pushed several groups to reform, split or soften."
+  },
+  {
+   "guide": "03",
+   "stop": "3.7",
+   "name": "Born inside: second-generation members",
+   "link": "guides/03-cons-and-cults.html#m3-7",
+   "id": "03-3.7-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Born inside: second-generation members\" in two or three lines, as you would to a client.",
+   "answer": "A convert returns to a self. Someone born inside has to build one, often while losing their family.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "3.8",
+   "name": "Cultish: online groups, wellness, MLMs and startups",
+   "link": "guides/03-cons-and-cults.html#m3-8",
+   "id": "03-3.8-q1",
+   "type": "quiz",
+   "q": "What did the FTC's 2024 review of 70 MLM income disclosures find?",
+   "options": [
+    "Most participants earned a full-time wage within their first year",
+    "Income figures were clear, complete and included all expenses",
+    "Most participants received $1,000 or less a year, before expenses"
+   ],
+   "answer": 2,
+   "why": "Many received nothing. The statements tended to hide the low earners and ignore costs."
+  },
+  {
+   "guide": "03",
+   "stop": "3.8",
+   "name": "Cultish: online groups, wellness, MLMs and startups",
+   "link": "guides/03-cons-and-cults.html#m3-8",
+   "id": "03-3.8-q2",
+   "type": "quiz",
+   "q": "What is the best test for whether a group is cultish in a harmful way?",
+   "options": [
+    "Whether people can disagree, leave and see the money without cost",
+    "Whether the group has a logo, a slogan and a charismatic founder",
+    "Whether members are very enthusiastic and talk about it constantly"
+   ],
+   "answer": 0,
+   "why": "Intensity and branding are everywhere. Control over exit, money and dissent is the line."
+  },
+  {
+   "guide": "03",
+   "stop": "3.8",
+   "name": "Cultish: online groups, wellness, MLMs and startups",
+   "link": "guides/03-cons-and-cults.html#m3-8",
+   "id": "03-3.8-q3",
+   "type": "quiz",
+   "q": "What does conspirituality describe?",
+   "options": [
+    "A scholarly method for studying secret religious groups",
+    "A blend of conspiracy theory and New Age spirituality",
+    "A rule that bans spiritual leaders from running for office"
+   ],
+   "answer": 1,
+   "why": "Ward and Voas named it in 2011. QAnon travelled through these spaces."
+  },
+  {
+   "guide": "03",
+   "stop": "3.8",
+   "name": "Cultish: online groups, wellness, MLMs and startups",
+   "link": "guides/03-cons-and-cults.html#m3-8",
+   "id": "03-3.8-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Cultish: online groups, wellness, MLMs and startups\" in two or three lines, as you would to a client.",
+   "answer": "Intensity is not the test. Ask whether people can disagree, leave and follow the money without paying for it.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "3.9",
+   "name": "On screen: The Master, Midsommar, The Wicker Man, Martha Marcy May Marlene",
+   "link": "guides/03-cons-and-cults.html#m3-9",
+   "id": "03-3.9-q1",
+   "type": "quiz",
+   "q": "Which mechanism is the engine of Martha Marcy May Marlene?",
+   "options": [
+    "The siege: the police surround the farm and the group fights back",
+    "The recruitment: most of the film shows her first week inside",
+    "The after: the group keeps living in her once she has escaped"
+   ],
+   "answer": 2,
+   "why": "She escapes at the start. The film is about floating, memory and the gifts that made the abuse possible."
+  },
+  {
+   "guide": "03",
+   "stop": "3.9",
+   "name": "On screen: The Master, Midsommar, The Wicker Man, Martha Marcy May Marlene",
+   "link": "guides/03-cons-and-cults.html#m3-9",
+   "id": "03-3.9-q2",
+   "type": "quiz",
+   "q": "What does Midsommar's shared-wailing scene show in Durkheim's terms?",
+   "options": [
+    "Proof that the commune is simply evil and gives her nothing real",
+    "Collective emotion giving Dani the belonging nobody else offered",
+    "A hidden technique that erases Dani's memory of her own family"
+   ],
+   "answer": 1,
+   "why": "The group feels her grief with her. The gift is real, which is why the horror works."
+  },
+  {
+   "guide": "03",
+   "stop": "3.9",
+   "name": "On screen: The Master, Midsommar, The Wicker Man, Martha Marcy May Marlene",
+   "link": "guides/03-cons-and-cults.html#m3-9",
+   "id": "03-3.9-q3",
+   "type": "quiz",
+   "q": "What is the writer's rule distilled from this stop?",
+   "options": [
+    "Every scene gives her something she needs or raises the cost of leaving",
+    "Every scene explains the doctrine so the audience can judge its logic",
+    "Every scene shows the leader hypnotising someone in a new and scary way"
+   ],
+   "answer": 0,
+   "why": "Gift and price drive the story. Scenes that do neither can go."
+  },
+  {
+   "guide": "03",
+   "stop": "3.9",
+   "name": "On screen: The Master, Midsommar, The Wicker Man, Martha Marcy May Marlene",
+   "link": "guides/03-cons-and-cults.html#m3-9",
+   "id": "03-3.9-r1",
+   "type": "recall",
+   "q": "Drill \"Read a cult film like a researcher\": what are the steps, and the usual mistake?",
+   "answer": "1) Name the need: what is missing in the character's life in the first ten minutes? 2) Find the gift: what does the group give that nobody else does? 3) Mark the first small yes, and the first moment saying no would cost something. 4) Spot one of Lifton's eight (stop 1.3) on screen: milieu control, loaded language, confession, and so on. 5) Find the boundary: who is outside, and what is said about them? 6) Decide which myth the film believes: robot, free shopper, or bounded choice (stop 3.3). Usual mistake: Judging the characters as stupid. If you would not have said yes in her place, the film failed, or you have not looked closely enough at the need.",
+   "label": "Drill"
+  },
+  {
+   "guide": "03",
+   "stop": "3.9",
+   "name": "On screen: The Master, Midsommar, The Wicker Man, Martha Marcy May Marlene",
+   "link": "guides/03-cons-and-cults.html#m3-9",
+   "id": "03-3.9-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"On screen: The Master, Midsommar, The Wicker Man, Martha Marcy May Marlene\" in two or three lines, as you would to a client.",
+   "answer": "Make the belonging beautiful enough that the audience feels the loss, then show the price of keeping it.",
+   "label": "Say it in the room"
+  }
+ ]
+}
