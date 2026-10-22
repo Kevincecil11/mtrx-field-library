@@ -10,6 +10,7 @@ dashes converted: 0 em, 0 en
 sources: 33 unique
 wrote build/out/03-candidate.html (224547 bytes)
 
+renamed 1 inherited No. 06 storage keys (mtrx-room-*) to mtrx-cons-*
 $ tools/quiz_audit.py --fix build/out/03-candidate.html (exit 0)
 BEFORE 03-candidate.html: 21 checks | right-answer position 3 options: A=21 B=0 C=0 | right answer is the longest option in 6 of 21 (29%) | median length ratio 1.02
 AFTER  03-candidate.html: 21 checks | right-answer position 3 options: A=8 B=6 C=7 | right answer is the longest option in 6 of 21 (29%) | median length ratio 1.02 | changed 17 checks; skipped {'points at positions': 1}
@@ -24,7 +25,7 @@ $ tools/check_guide.py build/out/03-candidate.html (exit 0)
 build/out/03-candidate.html: 9 stops, 0 errors, 0 warnings
 
 $ build/03/index_card.py guides/03-cons-and-cults.html index.html (exit 0)
-index: No. 03 has 9 built stops in 8 parts; No. 07 card present
+index: No. 03 has 9 built stops in 8 parts; No. 07 card up to date
 
 $ build/03/qa.py (exit 0)
 desktop: {'stops': 9, 'checks': 21, 'rendered': 21, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False}

@@ -709,7 +709,7 @@ refreshProgress(); onScroll();
 })();
 </script><script>(function(){
 var box=document.getElementById('calib'); if(!box) return;
-var K='mtrx-room-log-v1', L=[]; try{L=JSON.parse(localStorage.getItem(K))||[]}catch(e){}
+var K='mtrx-cons-log-v1', L=[]; try{L=JSON.parse(localStorage.getItem(K))||[]}catch(e){}
 function sv(){try{localStorage.setItem(K,JSON.stringify(L))}catch(e){}}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function bs(r){return Math.pow(r.p/100-r.o,2)}
