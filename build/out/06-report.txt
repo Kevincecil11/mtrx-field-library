@@ -1,4 +1,4 @@
-build 2026-10-22 15:34 UTC
+build 2026-10-22 16:10 UTC
 status: candidate passed lint and replaced the guide
 $ build/06/build.py guides/06-read-the-room.html build/out/06-candidate.html (exit 0)
 css replaced
@@ -9,8 +9,43 @@ s5 head retitled
 tabs rebuilt
 cover updated
 sources replaced: 29 cards
-Part I unchanged (sha256 ddb6aee7250e)
+Part I unchanged (sha256 b121690af0ea)
 wrote build/out/06-candidate.html (953754 bytes)
+
+$ tools/quiz_audit.py --fix build/out/06-candidate.html (exit 0)
+BEFORE 06-candidate.html: 68 checks | right-answer position 3 options: A=17 B=35 C=16 | right answer is the longest option in 47 of 68 (69%) | median length ratio 1.60
+AFTER  06-candidate.html: 68 checks | right-answer position 3 options: A=22 B=24 C=22 | right answer is the longest option in 47 of 68 (69%) | median length ratio 1.60 | changed 17 checks; skipped {'numeric scale': 1}
+
+Markup after the first check in 06-candidate.html: '</div><button class="done" data-mod="0.1">Mark stop 0.1 done</button></article><article class="mod" id="m0-2" data-mod="0.2"><div class="mod-meta">Stop 0.2 · Start <span class="t">5 min</span></div><h2 class="mod-title">Your baseline: ten questions first</h2><p class="mod-why">Ten quick questions before any teaching. Guess even when you&#x27;re unsure: wrong guesses now make the right answers stic'
+Script near the first check reference: 'ill:var(--paper)}\n.s-ta{fill:var(--accent-ink)}\n[data-steps].is-on{fill:var(--mars-soft)}\n.march{stroke-dasharray:3 9;animation:march 22s linear infinite}\n@keyframes march{to{stroke-dashoffset:-480}}\n.check{background:var(--paper);border-radius:var(--radius);padding:22px;margin:28px 0;box-shadow:inset 0 0 0 2px var(--accent-soft);max-width:860px}\n.check-k{font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}\n.check-q{font:800 19px/1.4 '
+
+Worst length bias (right answer at least 1.6x the average distractor), for a content repair:
+  3.8x  No. 06 stop 1.6: Asking a prospect for advice tends to make you look...
+  3.6x  No. 06 stop 0.2: "Communication is 7% words, 38% tone and 55% body language." That rule
+  3.5x  No. 06 stop 2.3: Which closing question surfaced the most unmet concerns in a clinic tr
+  3.5x  No. 06 stop 1.1: Why did Bond's read of Le Chiffre's tell cost him?
+  3.4x  No. 06 stop 2.2: Why is a name harder to remember than a job (the Baker/baker paradox)?
+  3.4x  No. 06 stop 2.6: Clinton's 1992 answer worked mainly because he...
+  3.2x  No. 06 stop 1.7: The famous claim that power makes people worse at perspective taking..
+  3.2x  No. 06 stop 2.5: Why does Melvin's "better man" line land?
+  3.2x  No. 06 stop 1.9: What's the honest twin of a cold read?
+  3.0x  No. 06 stop 2.5: People who wrote genuine compliments predicted the recipient's reactio
+  2.9x  No. 06 stop 2.7: You meet 12 people at an event. When should you write the cards?
+  2.7x  No. 06 stop 1.11: Speakers told about the illusion of transparency before a speech...
+  2.6x  No. 06 stop 1.12: When can you trust a gut call, per Kahneman and Klein 2009?
+  2.5x  No. 06 stop 1.4: For catching deception, training on which channel works better?
+  2.5x  No. 06 stop 2.5: Kennedy's "...when Thomas Jefferson dined alone" line is an example of
+  2.4x  No. 06 stop 0.2: A clinic owner sounds nervous on your call. Most likely meaning?
+  2.4x  No. 06 stop 1.4: The '7% words, 38% tone, 55% body' rule is...
+  2.4x  No. 06 stop 1.6: A clinic owner says 'my last agency took my money and vanished'. Which
+  2.4x  No. 06 stop 1.2: A safari operator sounds cold for the first 30 seconds of a call. Best
+  2.4x  No. 06 stop 1.3: Why did the three fingers give Hicox away?
+  2.3x  No. 06 stop 2.1: The "70 to 80% eye contact" rule...
+  2.1x  No. 06 stop 2.6: After a networking event, forgetting is usually...
+  2.1x  No. 06 stop 1.10: Why do sarcastic emails misfire more than senders expect?
+  2.1x  No. 06 stop 1.5: Babyfaced adults tend to be seen as...
+  2.0x  No. 06 stop 2.1: What made Kennedy's Paris opener work?
+
 
 $ tools/check_guide.py build/out/06-candidate.html (exit 0)
 build/out/06-candidate.html: 21 stops, 0 errors, 0 warnings
@@ -19,10 +54,10 @@ $ tools/check_guide.py guides/06-read-the-room.html (exit 0)
 guides/06-read-the-room.html: 21 stops, 0 errors, 0 warnings
 
 $ build/06/index_card.py guides/06-read-the-room.html index.html (exit 0)
-index card 06 updated: Part I built · Part II: 1 of 5 files, 7 stops · daily 20 min; 7 parts
+index card 06 already current
 
 $ build/skeleton.py guides/06-read-the-room.html build/out/06-skeleton.txt (exit 0)
-skeleton: guides/06-read-the-room.html -> build/out/06-skeleton.txt (60192 chars)
+skeleton: guides/06-read-the-room.html -> build/out/06-skeleton.txt (60191 chars)
 
 $ build/probe.py guides/06-read-the-room.html build/out/06-probe.txt (exit 0)
 probe: guides/06-read-the-room.html -> build/out/06-probe.txt (41701 chars)
