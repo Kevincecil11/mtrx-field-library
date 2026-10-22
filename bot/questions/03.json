@@ -28,7 +28,13 @@
   "3.6",
   "3.7",
   "3.8",
-  "3.9"
+  "3.9",
+  "4.1",
+  "4.2",
+  "4.3",
+  "4.4",
+  "4.5",
+  "4.6"
  ],
  "cards": [
   {
@@ -1441,6 +1447,371 @@
    "type": "recall",
    "q": "Page closed: explain \"On screen: The Master, Midsommar, The Wicker Man, Martha Marcy May Marlene\" in two or three lines, as you would to a client.",
    "answer": "Make the belonging beautiful enough that the audience feels the loss, then show the price of keeping it.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "4.1",
+   "name": "Anatomy of a con: Maurer's big con, step by step",
+   "link": "guides/03-cons-and-cults.html#m4-1",
+   "id": "03-4.1-q1",
+   "type": "quiz",
+   "q": "In Maurer's big con, which role makes the first friendly approach?",
+   "options": [
+    "The fixer, who bribes officials after the touch",
+    "The inside man, who controls the opportunity",
+    "The roper, who wins trust and steers the mark onward"
+   ],
+   "answer": 2,
+   "why": "The roper approaches and vouches. The inside man plays the expert. Trust is passed between roles."
+  },
+  {
+   "guide": "03",
+   "stop": "4.1",
+   "name": "Anatomy of a con: Maurer's big con, step by step",
+   "link": "guides/03-cons-and-cults.html#m4-1",
+   "id": "03-4.1-q2",
+   "type": "quiz",
+   "q": "What makes a big con \"big\" rather than short?",
+   "options": [
+    "A crew, a staged world, props and time",
+    "A victim with more education than usual",
+    "A louder promise of bigger riches"
+   ],
+   "answer": 0,
+   "why": "A short con is one quick interaction. A big con is a production with roles and a set."
+  },
+  {
+   "guide": "03",
+   "stop": "4.1",
+   "name": "Anatomy of a con: Maurer's big con, step by step",
+   "link": "guides/03-cons-and-cults.html#m4-1",
+   "id": "03-4.1-q3",
+   "type": "quiz",
+   "q": "Following Mercier, what is the best defence against a con?",
+   "options": [
+    "Assuming that intelligent people rarely need checks",
+    "Treating every stranger you meet as dishonest",
+    "Independent checking and a pause, even when you feel clever"
+   ],
+   "answer": 2,
+   "why": "People are vigilant by default. Cons make checking feel costly, so build checks that run anyway."
+  },
+  {
+   "guide": "03",
+   "stop": "4.1",
+   "name": "Anatomy of a con: Maurer's big con, step by step",
+   "link": "guides/03-cons-and-cults.html#m4-1",
+   "id": "03-4.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Anatomy of a con: Maurer's big con, step by step\" in two or three lines, as you would to a client.",
+   "answer": "The mark is not stupid. The room has been designed so that checking feels like betrayal.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "4.2",
+   "name": "The man who sold the Eiffel Tower: Victor Lustig",
+   "link": "guides/03-cons-and-cults.html#m4-2",
+   "id": "03-4.2-q1",
+   "type": "quiz",
+   "q": "Why did the Eiffel Tower story feel believable to the scrap dealers?",
+   "options": [
+    "The French government had announced a real public auction",
+    "The tower's costly upkeep and future were already publicly debated",
+    "Gustave Eiffel personally wrote to the dealers in 1925"
+   ],
+   "answer": 1,
+   "why": "Borrowed truth. The lie grew out of a real argument, so it felt like inside news."
+  },
+  {
+   "guide": "03",
+   "stop": "4.2",
+   "name": "The man who sold the Eiffel Tower: Victor Lustig",
+   "link": "guides/03-cons-and-cults.html#m4-2",
+   "id": "03-4.2-q2",
+   "type": "quiz",
+   "q": "What did the \"bribe\" do for the con?",
+   "options": [
+    "Made the official feel real, and made reporting it shameful",
+    "Covered Lustig's hotel bill at the Hotel de Crillon",
+    "Proved to the police that the sale had been legal"
+   ],
+   "answer": 0,
+   "why": "It worked as the convincer and the fix at once: real-seeming corruption, then a silent victim."
+  },
+  {
+   "guide": "03",
+   "stop": "4.2",
+   "name": "The man who sold the Eiffel Tower: Victor Lustig",
+   "link": "guides/03-cons-and-cults.html#m4-2",
+   "id": "03-4.2-q3",
+   "type": "quiz",
+   "q": "How accurate is the headline that Lustig \"sold it twice\"?",
+   "options": [
+    "False: Lustig never went to Paris at all",
+    "Fully accurate: two buyers paid in full for the tower",
+    "Partly: one sale succeeded and a later attempt failed"
+   ],
+   "answer": 2,
+   "why": "The tower's own history records one completed sale and a failed second attempt."
+  },
+  {
+   "guide": "03",
+   "stop": "4.2",
+   "name": "The man who sold the Eiffel Tower: Victor Lustig",
+   "link": "guides/03-cons-and-cults.html#m4-2",
+   "id": "03-4.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The man who sold the Eiffel Tower: Victor Lustig\" in two or three lines, as you would to a client.",
+   "answer": "The bribe is not extra plot. It is the mark's exit from embarrassment, and the con man's insurance.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "4.3",
+   "name": "Why smart people fall for cons, and why we are less gullible than films think",
+   "link": "guides/03-cons-and-cults.html#m4-3",
+   "id": "03-4.3-q1",
+   "type": "quiz",
+   "q": "In the FINRA interviews, which intelligence belief raised the risk of losing money?",
+   "options": [
+    "That you are probably smarter than the person calling you",
+    "That not knowing an answer is shameful and lowers your status",
+    "That asking questions is how intelligent people learn"
+   ],
+   "answer": 1,
+   "why": "The need to look smart stops people asking questions. Believing that questions are learning protected them."
+  },
+  {
+   "guide": "03",
+   "stop": "4.3",
+   "name": "Why smart people fall for cons, and why we are less gullible than films think",
+   "link": "guides/03-cons-and-cults.html#m4-3",
+   "id": "03-4.3-q2",
+   "type": "quiz",
+   "q": "What did the AARP survey find about people who lost money to scams?",
+   "options": [
+    "They had far less formal education than non-victims",
+    "They had about twice as many stressful life events as non-victims",
+    "They were almost always under 30 and new to money"
+   ],
+   "answer": 1,
+   "why": "Strain narrows attention. Victims reported 4.0 stressful events versus 1.9 for non-victims."
+  },
+  {
+   "guide": "03",
+   "stop": "4.3",
+   "name": "Why smart people fall for cons, and why we are less gullible than films think",
+   "link": "guides/03-cons-and-cults.html#m4-3",
+   "id": "03-4.3-q3",
+   "type": "quiz",
+   "q": "Why can expertise make someone a better target?",
+   "options": [
+    "Confidence in one area spreads to areas you have not checked",
+    "Con artists are not allowed to approach professionals",
+    "Experts are legally barred from asking for second opinions"
+   ],
+   "answer": 0,
+   "why": "Knowing the code is not knowing the company. The private exception switches off your own checks."
+  },
+  {
+   "guide": "03",
+   "stop": "4.3",
+   "name": "Why smart people fall for cons, and why we are less gullible than films think",
+   "link": "guides/03-cons-and-cults.html#m4-3",
+   "id": "03-4.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Why smart people fall for cons, and why we are less gullible than films think\" in two or three lines, as you would to a client.",
+   "answer": "Intelligence does not cancel emotion. It gives emotion a better vocabulary.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "4.4",
+   "name": "The Sting: making the audience the mark",
+   "link": "guides/03-cons-and-cults.html#m4-4",
+   "id": "03-4.4-q1",
+   "type": "quiz",
+   "q": "How did David Maurer's lawsuit over The Sting end?",
+   "options": [
+    "A jury found the film guilty of plagiarism",
+    "The court dismissed it and ordered Maurer to pay costs",
+    "It was settled out of court in 1976"
+   ],
+   "answer": 2,
+   "why": "Maurer sued in 1974 and the case settled in 1976. A settlement is not a finding of plagiarism."
+  },
+  {
+   "guide": "03",
+   "stop": "4.4",
+   "name": "The Sting: making the audience the mark",
+   "link": "guides/03-cons-and-cults.html#m4-4",
+   "id": "03-4.4-q2",
+   "type": "quiz",
+   "q": "What do The Sting's chapter cards do to the audience?",
+   "options": [
+    "Make viewers feel like insiders, so they stop looking for a hidden plan",
+    "Reveal the final twist early so viewers can enjoy the craft",
+    "Replace the need for any visual clues in the story"
+   ],
+   "answer": 0,
+   "why": "A map that is true but incomplete works like a roper: it earns trust and lowers your guard."
+  },
+  {
+   "guide": "03",
+   "stop": "4.4",
+   "name": "The Sting: making the audience the mark",
+   "link": "guides/03-cons-and-cults.html#m4-4",
+   "id": "03-4.4-q3",
+   "type": "quiz",
+   "q": "What separates a fair twist from a cheat?",
+   "options": [
+    "A new piece of evidence is introduced after the reveal",
+    "The audience is never shown any of the key facts",
+    "The facts were shown earlier; only their meaning was hidden"
+   ],
+   "answer": 2,
+   "why": "Seed the fact, let the audience misread it, then reclassify. A late new fact is a cheat."
+  },
+  {
+   "guide": "03",
+   "stop": "4.4",
+   "name": "The Sting: making the audience the mark",
+   "link": "guides/03-cons-and-cults.html#m4-4",
+   "id": "03-4.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The Sting: making the audience the mark\" in two or three lines, as you would to a client.",
+   "answer": "A twist is fair when the audience was given the truth but not the confidence to read it.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "4.5",
+   "name": "Slippin' Jimmy to Saul Goodman",
+   "link": "guides/03-cons-and-cults.html#m4-5",
+   "id": "03-4.5-q1",
+   "type": "quiz",
+   "q": "Why does Chuck secretly block Jimmy from the Sandpiper case?",
+   "options": [
+    "He thinks the overbilling case has no legal merit",
+    "He believes Slippin' Jimmy can never change",
+    "He wants Kim Wexler to lead the case instead"
+   ],
+   "answer": 1,
+   "why": "\"Slippin' Jimmy with a law degree is like a chimp with a machine gun.\" Chuck uses deceit to stop a man he calls deceitful."
+  },
+  {
+   "guide": "03",
+   "stop": "4.5",
+   "name": "Slippin' Jimmy to Saul Goodman",
+   "link": "guides/03-cons-and-cults.html#m4-5",
+   "id": "03-4.5-q2",
+   "type": "quiz",
+   "q": "Which best describes Jimmy's want versus his need?",
+   "options": [
+    "Want: respect as a lawyer. Need: to stop performing to win every room",
+    "Want: to quit law. Need: to earn far more money",
+    "Want: to be left alone. Need: to become famous"
+   ],
+   "answer": 0,
+   "why": "Every clever shortcut gets him the want for a day and moves him further from the need."
+  },
+  {
+   "guide": "03",
+   "stop": "4.5",
+   "name": "Slippin' Jimmy to Saul Goodman",
+   "link": "guides/03-cons-and-cults.html#m4-5",
+   "id": "03-4.5-q3",
+   "type": "quiz",
+   "q": "What happens in the finale, Saul Gone?",
+   "options": [
+    "He wins the case and returns to practise law in Albuquerque",
+    "He escapes to Omaha and is never caught",
+    "He rejects a deal of about seven years, confesses, and gets 86"
+   ],
+   "answer": 2,
+   "why": "The last performance is the truth. \"The name's McGill.\" It costs him everything a con usually wins."
+  },
+  {
+   "guide": "03",
+   "stop": "4.5",
+   "name": "Slippin' Jimmy to Saul Goodman",
+   "link": "guides/03-cons-and-cults.html#m4-5",
+   "id": "03-4.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Slippin' Jimmy to Saul Goodman\" in two or three lines, as you would to a client.",
+   "answer": "The con becomes a tragedy when it works for the wrong reason.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "4.6",
+   "name": "Twists that play fair: Nine Queens, House of Games, The Grifters",
+   "link": "guides/03-cons-and-cults.html#m4-6",
+   "id": "03-4.6-q1",
+   "type": "quiz",
+   "q": "In the fair-twist test, what does a cheat twist depend on?",
+   "options": [
+    "A reveal that changes a relationship between characters",
+    "A fact never shown, or the film lying to the viewer directly",
+    "A frame that the audience badly wants to believe"
+   ],
+   "answer": 1,
+   "why": "Fair twists show the facts and hide the connection. Cheats hide the facts or lie outright."
+  },
+  {
+   "guide": "03",
+   "stop": "4.6",
+   "name": "Twists that play fair: Nine Queens, House of Games, The Grifters",
+   "link": "guides/03-cons-and-cults.html#m4-6",
+   "id": "03-4.6-q2",
+   "type": "quiz",
+   "q": "What frame does House of Games use to disarm its audience?",
+   "options": [
+    "Two partners working together against a rich collector",
+    "An expert studying con men from what seems a safe distance",
+    "A mother and son trying to reconcile after years apart"
+   ],
+   "answer": 1,
+   "why": "The tutorial is the con. Each true lesson about cons is also a convincer aimed at her."
+  },
+  {
+   "guide": "03",
+   "stop": "4.6",
+   "name": "Twists that play fair: Nine Queens, House of Games, The Grifters",
+   "link": "guides/03-cons-and-cults.html#m4-6",
+   "id": "03-4.6-q3",
+   "type": "quiz",
+   "q": "Why is a twist that changes a relationship stronger than a plot trick?",
+   "options": [
+    "It turns the surprise into an emotional cost the audience feels",
+    "It removes the need to seed any facts beforehand",
+    "It guarantees that nobody can guess the ending"
+   ],
+   "answer": 0,
+   "why": "Surprise fades on rewatch. A changed relationship deepens on rewatch."
+  },
+  {
+   "guide": "03",
+   "stop": "4.6",
+   "name": "Twists that play fair: Nine Queens, House of Games, The Grifters",
+   "link": "guides/03-cons-and-cults.html#m4-6",
+   "id": "03-4.6-r1",
+   "type": "recall",
+   "q": "Drill \"Boss fight: the fair-twist audit\": what are the steps, and the usual mistake?",
+   "answer": "1) Pick any twist film or episode you know well (not one of the three above). 2) Write its frame in one sentence: what the audience believes it is watching. 3) List every fact the twist depends on and where each was shown. Mark any that were never shown. 4) Name the relationship the twist changes. If none, note it. 5) Score it out of 5 on the checklist and write one fix that would make it fairer. Usual mistake: Confusing surprise with quality. A twist you could never have guessed, even on a rewatch, usually means a fact was withheld, not that the film was clever.",
+   "label": "Drill"
+  },
+  {
+   "guide": "03",
+   "stop": "4.6",
+   "name": "Twists that play fair: Nine Queens, House of Games, The Grifters",
+   "link": "guides/03-cons-and-cults.html#m4-6",
+   "id": "03-4.6-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Twists that play fair: Nine Queens, House of Games, The Grifters\" in two or three lines, as you would to a client.",
+   "answer": "The best con films are better on the rewatch, because the second time you get to be the crew.",
    "label": "Say it in the room"
   }
  ]
