@@ -1,0 +1,22 @@
+build 2026-10-23 07:14 UTC
+status: candidate FAILED lint, guide unchanged
+$ build/07/build.py build/out/07-candidate.html (exit 0)
+progress key replaced 1 times in core scripts
+SKIPPED start: FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/mtrx-field-library/mtrx-field-library/build/07/start.py'
+built stops: 
+images: 0 fetched now of 0 tried; cache absent
+dashes converted: 0 em, 0 en
+sources: 0 unique
+wrote build/out/07-candidate.html (99283 bytes)
+
+$ tools/quiz_audit.py --fix build/out/07-candidate.html (exit 0)
+BEFORE 07-candidate.html: no multiple-choice checks
+AFTER  unchanged | changed 0 checks; skipped none
+
+Worst length bias (right answer at least 1.6x the average distractor), for a content repair:
+
+
+$ tools/check_guide.py build/out/07-candidate.html (exit 1)
+build/out/07-candidate.html: 0 stops, 1 errors, 0 warnings
+  ERROR no <button class="done" data-mod> found (progress and the review bot need them)
+
