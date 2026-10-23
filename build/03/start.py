@@ -4,7 +4,7 @@ from svg import box, t, arrow, svg
 SUB = ("Why intelligent people join cults, why the group cuts them off from family, why it works, and how a con is built "
        "beat by beat. Every stop starts from a real question, distils the best books on it, and ends in a writer's room.")
 
-CUBE = [('#m1-1', 'Why people join cults', 'kB-dJaCXAxA', '1.1'), ('#m1-2', 'What are cults', 'psXook7FyVQ', '1.2'),
+CUBE = [('#m1-1', 'What are cults', 'psXook7FyVQ', '1.1'), ('#m1-2', 'Why people join cults', 'kB-dJaCXAxA', '1.2'),
         ('#m1-3', 'The secret language of cults', 'c7wCbbmLtiI', '1.3'), ('#m1-4', 'How to spot a cult', 'fa7uN2vo6rc', '1.4'),
         ('#m1-5', 'Social influence', 'UGxGDdQnC1Y', '1.5'), ('#m1-6', 'Social groups', '_wFZ5Dbj8DA', '1.6'),
         ('#m1-7', 'Cults, explained', '6NWIfiV1_XQ', '1.7'), ('#s3', 'The Master', '1WTM8eO1Oec', '3.9'),
@@ -18,7 +18,7 @@ def spec(n, d):
 MAP = svg(1100, 470, 'The field map: cults, cons and power share one machinery',
           box(20, 20, 330, 150, 's-box-a') + t(185, 62, 'CULTS', 's-t-d') + t(185, 96, 'groups that capture a life', 's-t-sm') + t(185, 124, 'Files 1, 2, 3', 's-t') +
           box(385, 20, 330, 150, 's-box-a') + t(550, 62, 'CONS', 's-t-d') + t(550, 96, 'stories that capture a decision', 's-t-sm') + t(550, 124, 'Files 4, 5, 6', 's-t') +
-          box(750, 20, 330, 150, 's-box-a') + t(915, 62, 'POWER', 's-t-d') + t(915, 96, 'levers that move people', 's-t-sm') + t(915, 124, 'File 7', 's-t') +
+          box(750, 20, 330, 150, 's-box-a') + t(915, 62, 'POWER', 's-t-d') + t(915, 96, 'levers that move people', 's-t-sm') + t(915, 124, 'Files 7, 8', 's-t') +
           arrow(185, 172, 420, 268) + arrow(550, 172, 550, 266) + arrow(915, 172, 680, 268) +
           box(150, 272, 800, 170, 's-box-j') + t(550, 312, 'THE SHARED MACHINERY', 's-t') +
           t(550, 348, 'trust that travels through friends \u00b7 small yeses that grow', 's-t-sm') +
@@ -27,10 +27,10 @@ MAP = svg(1100, 470, 'The field map: cults, cons and power share one machinery',
 
 QB = [
     ('File 1 \u00b7 The members', [
-        (1, 'Why do really intelligent people fall for cults?', '1.1'), (1, 'What techniques do cults use?', '1.3'),
+        (1, 'Why do really intelligent people fall for cults?', '1.2'), (1, 'What techniques do cults use?', '1.3'),
         (1, 'Why do cults separate people from friends and family?', '1.4'), (1, 'Why do cults work?', '1.5'),
         (1, 'What does belonging in a group do to us?', '1.6'), (1, 'Where does identity come into it?', '1.6'),
-        (0, 'What is a cult, really, and why do scholars fight over the word?', '1.2'), (0, 'Can a person choose and be pressured at the same time?', '1.2'),
+        (0, 'What is a cult, really, and why do scholars fight over the word?', '1.1'), (0, 'Can a person choose and be pressured at the same time?', '1.2'),
         (0, 'How do love bombing and loaded language work together?', '1.3'), (0, 'Why does "just send her the facts" usually fail?', '1.4'),
         (0, 'Why do failed prophecies sometimes deepen belief?', '1.5'), (0, 'Can the best years of your life also be abuse?', '1.6'),
         (0, 'What did Jonestown reveal, and what does it not prove?', '1.7')]),
@@ -57,6 +57,10 @@ QB = [
         (0, 'How do pig butchering, task scams and fake clients work?', '6.6'), (0, 'Which persuasion levers survive replication?', '7.1'),
         (0, 'How should I read the 48 Laws of Power?', '7.2'), (0, 'What is coercive control?', '7.3'),
         (0, 'How do frauds get caught?', '7.4'), (0, 'Could I be recruited, and how do I persuade honestly?', '7.5')]),
+    ('File 8 \u00b7 The interrogation room', [
+        (1, 'What was the KUBARK manual, and what is its Alice in Wonderland technique?', '8.1'), (0, 'Is brainwashing real, and where did the word come from?', '8.2'),
+        (0, 'What was MKUltra, and did it find a way to control minds?', '8.3'), (0, 'Does torture or pressure get the truth?', '8.4'),
+        (1, 'Did L. Ron Hubbard teach the CIA anything?', '8.5'), (1, 'How did Charles Manson control the Family, and was the CIA behind it?', '8.6')]),
 ]
 
 
@@ -71,7 +75,8 @@ def qbank():
 ROAD = [('1', 'Inside the cult', 'Week 1 \u00b7 7 stops', 'Built: read it now', True), ('2', 'The leader', 'Week 2 \u00b7 7 stops', 'Motive, personality, charisma', False),
         ('3', 'The world around', 'Week 3 \u00b7 9 stops', 'Sociology, violence, leaving, screen', False), ('4', 'The big con', 'Week 4 \u00b7 6 stops', 'Lustig, The Sting, Saul', False),
         ('5', 'Masks and crews', 'Week 5 \u00b7 6 stops', "Ripley, Lupin, Ocean's, real heists", False), ('6', 'Money fraud', 'Week 6 \u00b7 6 stops', 'Madoff, Theranos, FTX, scams', False),
-        ('7', 'Power and the reveal', 'Week 7 \u00b7 6 stops', 'Cialdini, investigators, capstone', False)]
+        ('7', 'Power and the reveal', 'Week 7 \u00b7 6 stops', 'Cialdini, investigators, capstone', False),
+        ('8', 'The interrogation room', 'Week 8 \u00b7 6 stops', 'KUBARK, MKUltra, Hubbard, Manson', False)]
 
 
 def road():
@@ -110,4 +115,4 @@ STOPS = [
 ]
 
 SOURCES = [('Barker, New religious movements (LSE)', 'https://researchonline.lse.ac.uk/id/eprint/11887/1/__libfile_REPOSITORY_Content_Barker%2C%20E_New%20religious%20movements_Barker_New%20religious%20movements_2013.pdf', '0.2')]
-COLOPHON = '<p class="prepared" style="margin-top:28px">v0.1 \u00b7 22 October 2026 \u00b7 Start, the question bank and File 1. Files 2 to 7 follow one week at a time.</p>'
+COLOPHON = '<p class="prepared" style="margin-top:28px">v1.0 \u00b7 23 October 2026 \u00b7 Complete: the Start, Files 1 to 7 and the bonus File 8, 53 stops in all.</p>'
