@@ -1,0 +1,81 @@
+from svg import box, t, arrow, line, svg
+
+STEPS = [('INSIDE', 'half his life', 'in institutions'), ('LESSONS', 'Carnegie, guitar,', 'Scientology'),
+         ('RECRUITS', 'young women', 'seeking a family'), ('DISTANCE', 'a ranch, then', 'the desert'),
+         ('CONTROL', 'LSD, lectures,', 'no money, rules'), ('THE STORY', '“Helter Skelter”,', 'a coming war')]
+FIG = svg(1180, 400, 'How Charles Manson built control over the Family in six steps, and the CIA claim checked against the evidence',
+          t(590, 32, 'HOW A DRIFTER BUILT A FAMILY THAT KILLED FOR HIM', 's-t') +
+          ''.join(box(20 + i * 193, 56, 170, 116, 's-box-a' if i == 5 else 's-card', 12) + t(105 + i * 193, 92, a, 's-t-b') +
+                  t(105 + i * 193, 122, b, 's-t-sm') + t(105 + i * 193, 146, c, 's-t-sm') for i, (a, b, c) in enumerate(STEPS)) +
+          ''.join(arrow(192 + i * 193, 114, 211 + i * 193, 114) for i in range(5)) +
+          box(20, 204, 1140, 140, 's-box-j', 12) + t(590, 238, 'THE CIA CLAIM, GRADED', 's-t-b') +
+          t(590, 268, 'Documented: MKUltra was real, and the official Helter Skelter motive is contested.', 's-t-sm') +
+          t(590, 294, 'Missing: any record that Manson was a CIA subject. Even the review the CIA published', 's-t-sm') +
+          t(590, 320, 'says there is no evidence Manson and the CIA-linked psychiatrist ever met.', 's-t-sm') +
+          t(590, 380, 'No magic. Lonely people, a closed world and a story were enough.', 's-t-sm'))
+
+STOP = dict(
+    id='8.6', day=53, title='Case file: Charles Manson and the Family',
+    q='A man who had spent half his life in institutions walked out of prison in 1967. Two years later his followers killed nine people at his direction. How did he build that control, and was the CIA really behind it?',
+    why='This is the last case file and the darkest, so it is handled the way this course handles all dark material: mechanisms, warning signs and defences, never spectacle. Manson matters because he used almost every tool in this course, isolation, love, drugs, small rules and an apocalyptic story, on young people who arrived looking for a family. And he matters because of a newer story, the claim that he was a CIA mind-control project. Checking that claim is the final test of everything in File 8.',
+    case=dict(k='The case', name='Charles Manson (1934 to 2017)', role='Leader of the Manson Family',
+              facts=[('Before', 'About half his life in institutions by March 1967'),
+                     ('The group', 'Almost entirely young women'),
+                     ('The crimes', 'Nine murders in 1969, by followers, at his direction'),
+                     ('The sentence', 'Death, voided in 1972; died in prison in 2017')],
+              stamp=('anti', 'Anti-model: every lever, one man')),
+    cold=dict(q='Before his release in 1967, Manson spent years in prison. Which three things did he pick up there that he later used on his followers?',
+              a='Guitar, Dale Carnegie and Scientology. The gangster Alvin “Creepy” Karpis taught him to play guitar. He took courses based on Dale Carnegie’s How to Win Friends and Influence People, which, his biographer Jeff Guinn says, seemed to formally codify the ways he had manipulated people since childhood. And at McNeil Island he studied Scientology, interested, in Guinn’s account, less in its beliefs than in its methods of captivating followers. None of it was secret. All of it was ordinary self-improvement, aimed at the wrong goal.'),
+    video=dict(id='YwoA7NvaacI', title='CHAOS: The Manson Murders, official trailer', who='Netflix',
+               watch=['Which claims the trailer presents as questions rather than findings',
+                      'How it uses real CIA history to make the theory feel plausible',
+                      'What evidence you would need before believing it']),
+    story=['Charles Manson was born in Cincinnati in 1934 to a 16-year-old mother. His childhood ran through relatives’ homes, a Catholic boys’ home he ran away from, reform schools and prison. By 17 he had a string of convictions, and by his release from Terminal Island in March 1967, at 32, he had spent about half his life in institutions. He reportedly asked to stay inside, because prison was home. There he learned the guitar from Alvin Karpis, took courses based on Dale Carnegie and studied Scientology. He came out with a performer’s skills, a salesman’s tools and no idea how to live outside a closed world. So he built one.',
+           'He went to San Francisco’s Haight-Ashbury in the Summer of Love, where thousands of young people had arrived looking for meaning. His first recruit was Mary Brunner, and the followers who came after were almost entirely young women. He presented himself as a guru, mixed scraps of many belief systems and, by several accounts, let followers believe he was Christ. In 1968 the group lived for a time in the house of the Beach Boys drummer Dennis Wilson, then moved to Spahn Ranch, an old film set outside Los Angeles, and later to Barker Ranch in Death Valley. Every move put more distance between the Family and anyone who might tell them no.',
+           'Inside, the control was this course’s toolkit, almost item by item. Long nights of lectures, often after he told followers to take LSD. Rules on small things, such as no eyeglasses and no money, which Biderman would call trivial demands. Control over who slept with whom. Total dependence on the group for food, shelter and meaning. And a story that explained everything: Helter Skelter, a coming race war named after a Beatles song, after which the Family would emerge from hiding in the desert to rule. Dianne Lake, who met him at 14, later described those nights of lectures. The women were not robots. They were people losing every outside anchor, the process of stops 1.4 and 7.3.',
+           'In the summer of 1969 the Family killed nine people. On 25 July Bobby Beausoleil killed Gary Hinman, an acquaintance. On the night of 8 August, four members sent by Manson killed Sharon Tate, who was eight months pregnant, Jay Sebring, Wojciech Frykowski, Abigail Folger and Steven Parent. The next night they killed Leno and Rosemary LaBianca; Manson went with them and left before the attacks. Later that month the Family killed Donald Shea. Manson and three women were convicted in January 1971 and sentenced to death; the sentences fell when California’s Supreme Court struck down the death penalty in 1972. He was denied parole 12 times and died in prison on 19 November 2017. Leslie Van Houten was paroled in 2023; in 2025 Governor Gavin Newsom reversed a parole grant for Patricia Krenwinkel.',
+           'Now the CIA claim. In Chaos (2019), the journalist Tom O’Neill, after about twenty years of research, argued that the prosecutor Vincent Bugliosi’s Helter Skelter motive did not fully fit the evidence, and pointed to Louis Jolyon West, a psychiatrist who consulted for the CIA and studied hippies in Haight-Ashbury in 1967. Errol Morris’s Netflix film Chaos: The Manson Murders (2025) explores the theory. What is documented: MKUltra was real (stop 8.3), and the Helter Skelter motive is an argued interpretation that critics contest. What is missing: any record showing Manson was a CIA subject. A review published by the CIA, an interested party, says O’Neill “cannot definitively tie Manson to MKULTRA or CHAOS” and that there is “no evidence the two ever met”, meaning Manson and West. Grade it as this course grades everything: a real programme, a real doubt about motive, and no proof of the link.'],
+    fig=(FIG, 'Six ordinary steps built the Family. The CIA theory rests on real history but lacks the one record it needs.'),
+    specs=[('Charismatic authority', 'Power that followers grant to a person they see as extraordinary, as in stop 2.3. It lasts only as long as they keep granting it.'),
+           ('Apocalyptic narrative', 'A story that the world is about to end or transform, with the group chosen to survive. It makes every sacrifice feel small.'),
+           ('Conspiracy theory', 'An explanation that blames a secret plot. Some plots are real, like MKUltra; the test is evidence for the specific link.')],
+    tags=[('part', '“Helter Skelter was the whole motive.”', 'It was the prosecution’s argued theory. Critics, O’Neill included, contest it; the convictions stand.', ('Los Angeles Times review of Chaos (2019)', 'https://www.latimes.com/books/la-ca-jc-review-chaos-charles-manson-dan-piepenbring-20190711-story.html')),
+          ('myth', '“Manson was a CIA mind-control experiment.”', 'Unproven. No record ties him to MKUltra; a review the CIA published finds no evidence he and West ever met.', ('CIA Studies in Intelligence: review of Chaos', 'https://www.cia.gov/resources/csi/static/Review-Chaos-CharlesManson-25-Sep.pdf')),
+          ('hold', '“Manson used ordinary control tools, not magic.”', 'Isolation, LSD, lectures, rules on money and glasses, and an apocalyptic story are all documented.', ('Smithsonian: what to know about the Manson murders', 'https://www.smithsonianmag.com/history/manson-family-murders-what-need-to-know-180972655/'))],
+    distil=[('BBC: the life and crimes of Charles Manson', 'https://www.bbc.com/news/world-us-canada-36091052', 'The biography in brief'),
+            ('California corrections: Charles Manson dies, 2017', 'https://www.cdcr.ca.gov/news/2017/11/19/inmate-charles-manson-dies-of-natural-causes/', 'The official record of the convictions'),
+            ('Smithsonian: the Manson murders, what to know', 'https://www.smithsonianmag.com/history/manson-family-murders-what-need-to-know-180972655/', 'Control at Spahn Ranch')],
+    writer=dict(notes=['Do not make the leader the star. Mary Harron’s Charlie Says (2018), written by Guinevere Turner, keeps the camera on the women in prison, slowly unlearning him; Quentin Tarantino’s Once Upon a Time in Hollywood (2019) rewrites history to deny the Family its night. Both refuse to give Manson the story he wanted.',
+                       'Write the follower’s logic, not the leader’s magic. Every step a young woman takes into the Family should make sense from inside her loneliness. The horror is that the audience follows her reasoning almost to the end.'],
+                drill='Write a one-page fictional scene in which a lonely newcomer is welcomed into a commune on her first night. Show three small kindnesses and one small rule. End on the moment she gives up something from her old life without noticing. Fiction only.'),
+    drill=dict(name='Boss fight: the interrogation-room audit', mins='45 minutes',
+               steps=['Pick one film or series from File 8: The Master, Charlie Says, Wormwood, The Report or The Lives of Others.',
+                      'Watch one key scene and list every pressure you see, using KUBARK’s theory, Biderman’s eight and Lifton’s criteria from stop 1.3.',
+                      'Sort them: which pressures are physical, which are social and which control information?',
+                      'Find the anchor: the person, fact or memory that would let the character resist. Does the film give them one?',
+                      'Pick one conspiracy claim from this file and give it a truth tag: what is documented, what is argued, what is missing.',
+                      'Write a one-page fictional scene in which a character resists by holding on to an anchor outside the room.'],
+               mistake='Treating the controller as a hypnotist. In every case in this file, control came from ordinary pressures, combined and kept up. Write the pressures, not the magic.'),
+    biz='Charisma is not a credential. Business has its own small cults of personality: the guru coach who isolates you from other advice, the mastermind group that punishes doubt, the partner whose story explains every failure as someone else’s fault. The checks from this course work there too: who profits, can I leave cheaply, and what do people who left say? Make MTRX™ the opposite, a studio clients can check, question and leave, and still recommend.',
+    tryit='Write the three questions you would ask before joining any group, course or business programme that promises to change your life. Keep them in your notes.',
+    room='Manson had no magic. He had lonely people, a closed world and a story. That was enough, which is why it matters.',
+    deeper=[('Jeff Guinn on the life of Charles Manson (Strand Book Store)', 'https://www.youtube.com/watch?v=m5YMY9UoueY', 'The biographer’s view'),
+            ('CIA Studies in Intelligence: review of Chaos', 'https://www.cia.gov/resources/csi/static/Review-Chaos-CharlesManson-25-Sep.pdf', 'The agency’s side, read critically'),
+            ('Los Angeles Times review of Chaos (2019)', 'https://www.latimes.com/books/la-ca-jc-review-chaos-charles-manson-dan-piepenbring-20190711-story.html', 'The case for doubt')],
+    nextq='That completes No. 03: cults, cons, money, power and the interrogation room. Next in the Field Series is No. 07, on design. Why do some things look right before you can say why?',
+    checks=[dict(q='What did Manson study in prison that he later used on his followers?',
+                 o=['Dale Carnegie courses and Scientology',
+                    'Hypnosis taught to him by the CIA',
+                    'Interrogation from army field manuals'], a=0,
+                 w='Ordinary self-improvement and a new religion’s methods, aimed at control. No secret training required.'),
+            dict(q='Which rule at Spahn Ranch matches Biderman’s “trivial demands”?',
+                 o=['No wearing eyeglasses and no carrying money',
+                    'Recording every conversation on hidden tapes',
+                    'Paying members a weekly wage to stay on'], a=0,
+                 w='Small, arbitrary rules train obedience long before anything big is asked.'),
+            dict(q='How should you grade the claim that Manson was a CIA mind-control project?',
+                 o=['Unproven: MKUltra was real, but nothing links Manson to it',
+                    'Proven: the CIA admitted it at the 1977 Senate hearing',
+                    'Disproved: the CIA has shown MKUltra never existed'], a=0,
+                 w='Separate the documented programme from the missing link. That is the skill of this whole file.')],
+)
