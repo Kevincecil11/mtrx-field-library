@@ -1,16 +1,16 @@
-build 2026-10-23 07:18 UTC
+build 2026-10-23 07:19 UTC
 status: candidate passed lint and replaced the guide
 $ build/07/build.py build/out/07-candidate.html (exit 0)
 progress key replaced 1 times in core scripts
-built stops: 1.1, 1.2
-images: 0 fetched now of 0 tried; cache present
+built stops: 1.1, 1.2, 1.3
+images: 1 fetched now of 1 tried; cache present
 dashes converted: 0 em, 0 en
-sources: 14 unique
-wrote build/out/07-candidate.html (379327 bytes)
+sources: 21 unique
+wrote build/out/07-candidate.html (630386 bytes)
 
 $ tools/quiz_audit.py --fix build/out/07-candidate.html (exit 0)
-BEFORE 07-candidate.html: 6 checks | right-answer position 3 options: A=6 B=0 C=0 | right answer is the longest option in 1 of 6 (17%) | median length ratio 0.97
-AFTER  07-candidate.html: 6 checks | right-answer position 3 options: A=2 B=2 C=2 | right answer is the longest option in 1 of 6 (17%) | median length ratio 0.97 | changed 4 checks; skipped none
+BEFORE 07-candidate.html: 9 checks | right-answer position 3 options: A=9 B=0 C=0 | right answer is the longest option in 1 of 9 (11%) | median length ratio 0.97
+AFTER  07-candidate.html: 9 checks | right-answer position 3 options: A=3 B=3 C=3 | right answer is the longest option in 1 of 9 (11%) | median length ratio 0.97 | changed 6 checks; skipped {'points at positions': 1}
 
 Markup after the first check in 07-candidate.html: '</div><div class="check"><script type="application/json">{"q": "Which line is a usable problem frame for a safari website?", "o": ["Make the homepage feel more premium than every competitor in the region", "Use bigger wildlife photos and a darker, more elegant palette", "How might a first-time guest compare lodges and keep the wonder?"], "a": 2, "w": "A frame names a person, a task and a feeling. '
 Script near the first check reference: 'ill:var(--paper)}\n.s-ta{fill:var(--accent-ink)}\n[data-steps].is-on{fill:var(--mars-soft)}\n.march{stroke-dasharray:3 9;animation:march 22s linear infinite}\n@keyframes march{to{stroke-dashoffset:-480}}\n.check{background:var(--paper);border-radius:var(--radius);padding:22px;margin:28px 0;box-shadow:inset 0 0 0 2px var(--accent-soft);max-width:860px}\n.check-k{font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}\n.check-q{font:800 19px/1.4 '
@@ -19,17 +19,17 @@ Worst length bias (right answer at least 1.6x the average distractor), for a con
 
 
 $ tools/check_guide.py build/out/07-candidate.html (exit 0)
-build/out/07-candidate.html: 4 stops, 0 errors, 0 warnings
+build/out/07-candidate.html: 5 stops, 0 errors, 0 warnings
 
 $ build/07/index_card.py guides/07-design.html index.html (exit 0)
-index: No. 07 has 4 built stops of 78 in 10 parts
+index: No. 07 has 5 built stops of 78 in 10 parts
 
 $ build/07/qa.py (exit 0)
-desktop: {'stops': 4, 'checks': 6, 'rendered': 6, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
+desktop: {'stops': 5, 'checks': 9, 'rendered': 9, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
 desktop after marking 1.1 done, localStorage: ['mtrx-design-v1={"done":{"1.1":true}}']
 desktop: clicked a quiz option, check html: <script type="application/json">{"q": "What did the 1972 subway map get wrong, according to the riders?", "o": ["It did not help them relate the subway to the streets above", "Its colours were too dull to tell the routes apart on the platform", "It was drawn too small to read the station names anywh
 desktop errors (blocked network loads not counted, 12 of them): none
-mobile: {'stops': 4, 'checks': 6, 'rendered': 6, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
+mobile: {'stops': 5, 'checks': 9, 'rendered': 9, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
 mobile after marking 1.1 done, localStorage: ['mtrx-design-v1={"done":{"1.1":true}}']
 mobile: clicked a quiz option, check html: <script type="application/json">{"q": "What did the 1972 subway map get wrong, according to the riders?", "o": ["It did not help them relate the subway to the streets above", "Its colours were too dull to tell the routes apart on the platform", "It was drawn too small to read the station names anywh
 mobile errors (blocked network loads not counted, 12 of them): none
