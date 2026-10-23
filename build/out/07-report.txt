@@ -3,7 +3,7 @@ status: candidate passed lint and replaced the guide
 $ build/07/build.py build/out/07-candidate.html (exit 0)
 progress key replaced 1 times in core scripts
 built stops: 1.1, 1.2
-images: 1 fetched now of 1 tried; cache present
+images: 0 fetched now of 0 tried; cache present
 dashes converted: 0 em, 0 en
 sources: 14 unique
 wrote build/out/07-candidate.html (379327 bytes)
