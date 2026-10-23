@@ -1,0 +1,76 @@
+from svg import t, arrow, svg
+
+_inner = '<path class="s-box-j" d="M40,210 L300,80 L560,210 L300,340 Z"/><path class="s-box-a" d="M620,210 L880,80 L1140,210 L880,340 Z"/>'
+_inner += t(300, 52, 'THE RIGHT PROBLEM', 's-t') + t(880, 52, 'THE RIGHT SOLUTION', 's-t')
+_inner += t(185, 205, 'DISCOVER', 's-t-b') + t(185, 232, 'go wide: look, ask', 's-t-sm')
+_inner += t(415, 205, 'DEFINE', 's-t-b') + t(415, 232, 'choose the problem', 's-t-sm')
+_inner += t(765, 205, 'DEVELOP', 's-t-b') + t(765, 232, 'many routes', 's-t-sm')
+_inner += t(995, 205, 'DELIVER', 's-t-b') + t(995, 232, 'test, ship, learn', 's-t-sm')
+_inner += t(590, 190, 'BRIEF', 's-t-sm')
+_inner += arrow(995, 372, 185, 372, True, True) + t(590, 404, 'Arrows run backwards too: what you learn in delivery sends you back to discovery', 's-t-sm')
+FIG = svg(1180, 420, 'The Double Diamond: discover, define, develop, deliver, with a loop back', _inner)
+
+STOP = dict(
+    id='1.2', day=2, title='How do designers get from fog to a decision?',
+    q='Every project starts as fog: a hundred possible directions and a client who wants to see something on Friday. How do professionals get from that to one design they can defend?',
+    why="The amateur's process is: have an idea, polish it, defend it. The professional's process is wider at the start and stricter at the end. They look before they decide, generate more options than feel comfortable, and kill most of them on evidence. That loop, not talent, is why their work survives contact with clients and audiences. And the founding document of India's best design school is a perfect example of it, written about the city you live in.",
+    case=dict(k='Case file', name='The India Report, April 1958', role='Charles and Ray Eames, at the invitation of the Government of India, sponsored by the Ford Foundation',
+              facts=[('The ask', 'Recommend design training to aid small industries and resist the decline in the quality of consumer goods'),
+                     ('The method', 'Three months touring India: centres of design, handicrafts and manufacture, and many conversations'),
+                     ('The example', 'The lota, analysed factor by factor before any form is drawn'),
+                     ('The result', 'The National Institute of Design, Ahmedabad, established in 1961')],
+              stamp=('hold', 'Holds: research before form')),
+    cold=dict(q='Asked to recommend how India should train designers, the Eameses picked one everyday object as their example of good design. Guess the object, and what they said you must do before designing it.',
+              a='The lota, the simple brass or copper water vessel. They called it perhaps the greatest and most beautiful of all the objects they saw in India. Then they asked how one would go about designing a lota, and answered: first shut out all preconceived ideas, then consider factor after factor. The amount of liquid to carry, the hands that hold it, whether it travels on the head, hip or in a basket, its balance full and empty, how it pours, fills and cleans. Research before form.'),
+    video=dict(id='_raleGrTdUg', title='Natasha Jen: Design Thinking is Bullsh*t', who='99U',
+               watch=['What exactly Jen objects to: the diagram, the sticky notes or the thinking',
+                      'What she says is missing from the popular five-step version',
+                      'Whether her complaint applies to the Double Diamond below']),
+    story=["In 2004 Britain's Design Council began sharing a picture of how design teams actually work: two diamonds side by side. The first diamond is about the problem. You go wide (Discover: watch people, interview, collect), then narrow (Define: cluster what you found and write the brief). The second diamond is about the solution. You go wide again (Develop: many routes, not one), then narrow (Deliver: prototype, test, reject, ship). The Council is careful to call it a map, not a recipe, and its 2019 framework adds principles such as putting people first and the blunt instruction to iterate, iterate, iterate.",
+           "The diamond shape is the point. Going wide feels unproductive, which is why beginners skip it. But the width is where you find what nobody has told you: that guests book safaris on their phones at night, that the lodge manager's real worry is cancellations, that the guide knows a story about a leopard that no competitor tells. Then the narrowing is ruthless. A good Define phase ends with one written problem, and a good Develop phase ends with most ideas dead, each killed by a reason you can say out loud.",
+           "The Eameses did exactly this in India, decades before anyone drew diamonds. The Government of India asked them for a programme of design training. They spent three months travelling, looking at centres of design, crafts and manufacture, and talking to people in industry, architecture and education. Only then did they write. Their report, dated April 1958, argued for designers who solve problems rooted in real experience, and the lota passage is its demonstration: a list of factors, from the hands that hold it to the fluid dynamics of pouring while walking. The National Institute of Design opened in Ahmedabad in 1961.",
+           "There is a fair attack on all this, and you should hear it. In a 2017 talk the Pentagram designer Natasha Jen called design thinking bullsh*t. Her target was the version sold in workshops: a neat five-step diagram, walls of sticky notes, and the promise that a short course produces design judgement. She later clarified that the problem is the marketing, not thinking like a designer. Take her point seriously: a process diagram never replaces craft, domain knowledge or responsibility. Never run an empathy workshop with no decision attached, and never call a brainstorm research.",
+           "Research also changes what you can see. John Snow's map of the 1854 cholera deaths around Broad Street in London is a design that was a research instrument. By marking each death as a bar beside its house, Snow made a cluster visible around one public water pump, and the map helped turn the question from \"what is in the air?\" to \"which water connects these cases?\" Look at the plate: the design is almost nothing, just a street plan and black marks. The insight is in what was chosen to be shown."],
+    plates=[dict(key='snow', after=4, cap="John Snow's map. The black bars are deaths, stacked by address. You do not need a legend to see where the cluster sits: around the Broad Street pump. Tap Squint test and the cluster is still there, which is a sign the design is doing its job.")],
+    fig=(FIG, "The Design Council's Double Diamond. The first diamond finds the right problem, the second the right solution. The dashed arrow is the part people forget."),
+    specs=[('Divergence', 'The going-wide half of a diamond: generating observations or options without judging them yet.'),
+           ('Convergence', 'The narrowing half: clustering, choosing and killing options, each for a reason you can state.'),
+           ('Design research', 'Observation, interviews, audits and evidence logs. Not a moodboard of attractive references.'),
+           ('Iteration', 'Making, testing and revising in loops. Each version exists to teach you something about the next.')],
+    philo=dict(q='"Of all the objects we have seen and admired during our visit to India, the Lota, that simple vessel of everyday use, stands out as perhaps the greatest, the most beautiful."',
+               who='Charles and Ray Eames, The India Report (1958)', src=('NID scan of the report', 'https://www.nid.edu/Userfiles/Eames_India_Report_NID.pdf'),
+               means='Nobody signed the lota. Generations of users refined it against real constraints until it fit the hand, the hip and the well. The Eameses held it up as the standard a trained designer should reach on purpose, through research, in a fraction of the time.',
+               argue='Is a design that evolved with no designer better or worse evidence of good design than one a studio drew in a month?'),
+    tags=[('part', '"The Double Diamond is a four-step recipe."', 'The Design Council calls it a map of exploring and narrowing, and says work loops back.', ('Design Council: history of the Double Diamond', 'https://www.designcouncil.org.uk/resources/the-double-diamond/history-of-the-double-diamond/')),
+          ('part', '"Design thinking is nonsense."', 'Jen attacks its marketing and linear diagram, not the act of thinking like a designer.', ('Design Observer: Natasha Jen', 'https://designobserver.com/s3e9-natasha-jen/')),
+          ('hold', '"NID grew out of a research report."', 'The April 1958 India Report recommended the programme; NID was established in 1961.', ('NID: history', 'https://www.nid.edu/about/history'))],
+    distil=[('Design Council: Framework for Innovation', 'https://www.designcouncil.org.uk/resources/framework-for-innovation/', 'The Double Diamond and its principles'),
+            ('The India Report, Design Observer reproduction', 'https://designobserver.com/india-report-april-1958/', 'The lota passage in full'),
+            ('Stanford d.school: Bootcamp Bootleg', 'https://dschool.stanford.edu/resources/design-thinking-bootleg', 'Methods and mindsets, not guarantees'),
+            ('NLM: revealing data in historical collections', 'https://circulatingnow.nlm.nih.gov/2023/07/13/revealing-data-visualizations-in-historical-collections/', "Snow's map as a research instrument")],
+    writer=dict(notes=["Film has its own Discover phase and the best directors protect it: location scouting, period research, objects, behaviour, sound. The look of a film is found, not invented. If your references are all other films, your film will look like a copy of a copy.",
+                       "Develop wide before you commit. Try three visual grammars for the same scene, for example tight frames, wide empty frames and unsteady handheld, and shoot or sketch each one. Pixar's Braintrust, as Ed Catmull describes it, gives candid notes after screenings but has no power to order the director: notes widen, the director narrows."],
+                drill='Take one scene and sketch it three ways: compressed, expansive and unstable. Write one line on what each grammar makes the audience feel, then pick one and say what killed the other two.'),
+    biz="Put a real Discover phase into every MTRX\u2122 proposal, even a small one: a 30-minute call with the lodge manager, one with a past guest, a look at three competitors and a note of what the guide would say. Then show the client three routes labelled by behaviour, not mood: orientation first, immersion first, proof first. You sell the thinking, and the revision rounds get shorter.",
+    tryit='Set a five-minute timer and draw 20 rough thumbnails for one hero section: five different stories, four layouts each. Circle three, and next to each write the evidence or constraint that earned the circle.',
+    room='Go wide before you decide, then kill ideas for reasons you can say out loud.',
+    deeper=[('Fast Company: inside the Pixar Braintrust', 'https://www.fastcompany.com/3027135/inside-the-pixar-braintrust', 'Candid notes without the power to order'),
+            ('Stanford eCorner: Ed Catmull, Inside the Braintrust', 'https://www.youtube.com/watch?v=I1Mr3oKR7oM', 'The director still decides'),
+            ('NID scan of The India Report (1958)', 'https://www.nid.edu/Userfiles/Eames_India_Report_NID.pdf', 'The whole report, short and still sharp')],
+    nextq="Research tells you what people need. But what do their eyes actually do when they look at your design, and what do they miss completely? Stop 1.3.",
+    checks=[dict(q='What does the first diamond of the Double Diamond produce?',
+                 o=['A clearly defined problem, found by going wide first',
+                    'A finished prototype, ready for the client to approve',
+                    'A moodboard of attractive references in the client\'s style'], a=0,
+                 w='Discover and Define find the right problem. Develop and Deliver find the right solution.'),
+            dict(q="What did the Eameses say you must do first, before designing a lota?",
+                 o=['Shut out preconceived ideas and consider factor after factor',
+                    'Study the most beautiful antique lotas and copy their proportions',
+                    'Ask the government which modern material the factories preferred'], a=0,
+                 w='The report lists the factors: liquid, hands, transport, balance, pouring, filling and cleaning.'),
+            dict(q="What was Natasha Jen's main complaint about design thinking?",
+                 o=['Its marketing sells a tidy diagram as if it gave you design judgement',
+                    'Designers should never talk to the people who will use their work',
+                    'Research slows projects down and should be left to market analysts'], a=0,
+                 w='She objects to the workshop version, not to thinking like a designer. Craft and responsibility still matter.')],
+)
