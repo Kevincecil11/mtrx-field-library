@@ -1,0 +1,23 @@
+.plate{margin:22px 0;background:var(--paper);border-radius:var(--radius,18px);padding:12px;box-shadow:inset 0 0 0 1.5px var(--rule)}
+.plate .plate-img img,.plate-vals img{display:block;width:100%;height:auto;border-radius:10px;transition:filter .3s}
+.plate.squint .plate-img img{filter:blur(5px) grayscale(1)}
+.plate-vals{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.plate-vals figure{margin:0}.plate-vals figcaption{font:700 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--graphite);margin-top:6px}
+.plate>figcaption{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;margin:10px 4px 2px}
+.plate-cap{flex:1 1 100%;font-size:16px;line-height:1.5;color:var(--ink)}
+.credit{font:500 12px/1.5 var(--mono);color:var(--graphite)}
+.plate .sq{margin-left:auto;border:0;border-radius:999px;background:var(--ink);color:var(--paper);font:700 13px var(--mono);padding:6px 12px;cursor:pointer}
+.plate-out{display:block;text-decoration:none;color:var(--ink);background:var(--canvas);border-radius:12px;padding:18px}
+.plate-out b{display:block;font-size:17px}.plate-out span{font:700 13px var(--mono);color:var(--accent-ink,var(--mars))}
+.philo{background:var(--canvas);border-radius:var(--radius,18px);padding:18px 22px;margin:24px 0;border-left:6px solid var(--moss,#697132)}
+.philo-k{font:700 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--moss,#697132);margin-bottom:6px}
+.philo blockquote{margin:0 0 6px;font:800 21px/1.4 var(--sans);color:var(--ink)}
+.philo-idea{font:800 19px/1.45 var(--sans);margin:0 0 6px}
+.philo-who{font:600 14px var(--mono);color:var(--graphite);margin:0 0 10px}
+.philo-q{background:var(--paper);border-radius:12px;padding:10px 14px}
+.stamp.st-unv{background:#DADCE3;color:#2F3E46}.stamp.st-thumb{background:#F4E3B2;color:#5A4A12}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:16px 0}
+.fields div{background:var(--paper);border-radius:var(--radius,18px);padding:14px 16px;box-shadow:inset 0 0 0 1.5px var(--rule)}
+.fields b{display:block;font:800 17px/1.3 var(--sans)}.fields span{display:block;font-size:15px;color:var(--ink-2,#333);margin-top:4px}
+.legend{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}.legend li{list-style:none;display:flex;gap:8px;align-items:center;font-size:15px}
+@media (max-width:640px){.plate-vals{grid-template-columns:1fr}}
