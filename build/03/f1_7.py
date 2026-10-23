@@ -1,6 +1,6 @@
 from svg import box, t, line, circle, svg
 
-_N = [(90, '1950s', 'integrated church', 'in Indianapolis', 'who joins, 1.1'),
+_N = [(90, '1950s', 'integrated church', 'in Indianapolis', 'who joins, 1.2'),
       (290, '1960s to 70s', 'California: care,', 'causes, politics', 'belonging, 1.6'),
       (490, 'over the years', 'confessions, faked', 'healings, loyalty', 'toolkit, 1.3'),
       (690, '1977', 'about 1,000 move', 'to Guyana', 'isolation, 1.4'),
@@ -27,7 +27,7 @@ STOP = dict(
                watch=["Which of this week's six mechanisms you can name as they appear",
                       'Where the episode leans on the brainwashing story, and where it does not',
                       'One fact you would check against a primary source']),
-    story=["Stop 1.1, who joins. Peoples Temple did not recruit fools. It recruited idealists. In 1950s Indianapolis, Jim Jones ran a racially integrated church when that was rare and brave, and he was admired in civil rights circles. In California the Temple ran social services and turned out volunteers for political causes, and Jones became a prominent Bay Area figure. People joined a church that seemed to live the ideals other churches only preached, and many came in through family and friends.",
+    story=["Stop 1.2, who joins. Peoples Temple did not recruit fools. It recruited idealists. In 1950s Indianapolis, Jim Jones ran a racially integrated church when that was rare and brave, and he was admired in civil rights circles. In California the Temple ran social services and turned out volunteers for political causes, and Jones became a prominent Bay Area figure. People joined a church that seemed to live the ideals other churches only preached, and many came in through family and friends.",
            "Stop 1.3, the toolkit. Over the years the Temple added public confession and punishment sessions, loyalty tests, and a vocabulary that split the world into the Temple and its enemies. Jones staged faith healings, later described as fraudulent, as proof of special powers: mystical manipulation in Lifton's exact sense.",
            "Stop 1.4, isolation. The move to Guyana was isolation made physical: almost a thousand people in a jungle settlement, far from family, with communication controlled and the outside world described as a coming catastrophe. Relatives in the United States who campaigned to get members out were cast as traitors and enemies.",
            "Stop 1.5, commitment. Members had signed over property and savings, cut ties, and pledged loyalty in public. The FBI's history of the case describes rehearsals for mass suicide, drills Jones called White Nights, long before the end. Each rehearsal raised the cost of saying no and made the unthinkable familiar.",
