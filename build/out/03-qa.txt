@@ -1,8 +1,8 @@
-desktop: {'stops': 39, 'checks': 111, 'rendered': 111, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
+desktop: {'stops': 41, 'checks': 117, 'rendered': 117, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
 desktop after marking 1.1 done, localStorage: ['mtrx-cons-v1={"done":{"1.1":true}}']
 desktop: clicked a quiz option, check html: <script type="application/json">{"q": "What did Barker's tracking of Unification Church workshop guests mostly show?", "o": ["Most guests walked away, so the workshops were far weaker than the brainwashing story said", "Guests joined at the same rate as any church, so the group was no different at a
 desktop errors (blocked network loads not counted, 12 of them): none
-mobile: {'stops': 39, 'checks': 111, 'rendered': 111, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
+mobile: {'stops': 41, 'checks': 117, 'rendered': 117, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
 mobile after marking 1.1 done, localStorage: ['mtrx-cons-v1={"done":{"1.1":true}}']
 mobile: clicked a quiz option, check html: <script type="application/json">{"q": "What did Barker's tracking of Unification Church workshop guests mostly show?", "o": ["Most guests walked away, so the workshops were far weaker than the brainwashing story said", "Guests joined at the same rate as any church, so the group was no different at a
 mobile errors (blocked network loads not counted, 12 of them): none
