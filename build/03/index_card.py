@@ -18,8 +18,8 @@ for sm in re.finditer(r'<section class="part" id="s\d+"[^>]*data-title="([^"]*)"
 total = sum(len(re.findall(r'<li><a href="#', x)) for x in re.findall(r'<ol class="stops">(.*?)</ol>', g, re.S))
 e03 = next(x for x in G if x['n'] == '03')
 e03.update(t='Cons and cults', sub='Why cults work, how cons are built, and the writer\'s room behind both. Question-led, evidence-graded.',
-           time='%d stops built of %d planned \u00b7 7 files \u00b7 20 min a day' % (built, total + 2), file='03-cons-and-cults.html',
-           key='mtrx-cons-v1', acc='red', st='partial', day=False, parts=parts)
+           time='%d stops built of %d planned \u00b7 8 files \u00b7 20 min a day' % (built, total + 2), file='03-cons-and-cults.html',
+           key='mtrx-cons-v1', acc='red', st='ready' if built >= total + 2 else 'partial', day=False, parts=parts)
 D07 = dict(t='Design', sub='Type first: how to choose and pair fonts. Then colour (Sanzo Wada\'s combinations), composition, minimal versus bold, brand identity, and the philosophies of Apple, Jobs and Ive, painters like Caravaggio and Picasso, directors like Kubrick and Spielberg, and great architects.',
            time='In development \u00b7 to be discussed', file='', key=None, acc='moss', st='dev', day=False, parts=[])
 e07 = next((x for x in G if x['n'] == '07'), None)
