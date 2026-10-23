@@ -2330,9 +2330,9 @@
    "type": "quiz",
    "q": "What did Carreyrou report about Theranos’s own device by the end of 2014?",
    "options": [
-    "It had been banned outright by regulators",
+    "It ran every test it claimed, only slower than a commercial lab",
     "It handled only a small fraction of the tests sold to consumers",
-    "It ran every test but was too slow"
+    "It had been banned by federal regulators before reaching a store"
    ],
    "answer": 1,
    "why": "Most tests ran on machines bought from other makers. The story was far ahead of the science."
@@ -2363,8 +2363,8 @@
    "q": "Why did a board of famous statesmen reassure investors?",
    "options": [
     "Their names felt like proof, though none of them tested the science",
-    "They had personally run the blood tests",
-    "They guaranteed the investors’ money"
+    "They had personally run and checked the blood tests in the lab",
+    "They had signed personal guarantees covering the investors’ money"
    ],
    "answer": 0,
    "why": "Borrowed authority is a convincer. It feels like evidence without being evidence."
