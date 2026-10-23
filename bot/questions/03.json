@@ -2448,9 +2448,9 @@
    "type": "quiz",
    "q": "What are the three corners of the fraud triangle?",
    "options": [
-    "Motive, weapon and alibi",
+    "Ambition, secrecy and a run of good luck",
     "Pressure, opportunity and rationalisation",
-    "Greed, secrecy and luck"
+    "Motive, weapon and a convincing alibi"
    ],
    "answer": 1,
    "why": "Adapted from Cressey’s 1953 study of embezzlers. The fraud diamond adds a fourth: capability."
@@ -2523,8 +2523,8 @@
    "type": "quiz",
    "q": "A new client overpays and asks you to refund the difference. What should you do?",
    "options": [
-    "Pay their supplier directly from the extra",
-    "Refund quickly to keep the client happy",
+    "Refund the difference quickly so the new client stays happy",
+    "Forward the extra straight to their supplier, as they asked",
     "Wait for the money to fully clear and verify the client independently"
    ],
    "answer": 2,
@@ -2727,9 +2727,9 @@
    "type": "quiz",
    "q": "Which Indian law covers verbal, emotional and economic abuse at home?",
    "options": [
-    "The Information Technology Act 2000",
+    "The Maintenance and Welfare of Parents and Senior Citizens Act 2007",
     "The Protection of Women from Domestic Violence Act 2005",
-    "The Consumer Protection Act 2019"
+    "The Indecent Representation of Women (Prohibition) Act 1986"
    ],
    "answer": 1,
    "why": "Its section 3 definition includes all three, and it allows protection and residence orders."
