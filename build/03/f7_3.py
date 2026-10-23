@@ -64,7 +64,7 @@ STOP = dict(
                  w='Section 76 came into force on 29 December 2015, with up to five years in prison.'),
             dict(q='Which Indian law covers verbal, emotional and economic abuse at home?',
                  o=['The Protection of Women from Domestic Violence Act 2005',
-                    'The Information Technology Act 2000',
-                    'The Consumer Protection Act 2019'], a=0,
+                    'The Indecent Representation of Women (Prohibition) Act 1986',
+                    'The Maintenance and Welfare of Parents and Senior Citizens Act 2007'], a=0,
                  w='Its section 3 definition includes all three, and it allows protection and residence orders.')],
 )
