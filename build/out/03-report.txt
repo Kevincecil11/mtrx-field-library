@@ -1,19 +1,19 @@
-build 2026-10-22 20:25 UTC
+build 2026-10-23 04:13 UTC
 status: candidate passed lint and replaced the guide
 $ build/03/build.py build/out/03-candidate.html (exit 0)
 progress key replaced 1 times in core scripts
 tail outside scripts: '</div>\n\n</body></html>\n'
 core script 4022 bytes, 06-specific words: []
 core script 2798 bytes, 06-specific words: ['mtrx-room-log-v1']
-built stops: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6
+built stops: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 6.1, 6.2
 dashes converted: 0 em, 0 en
-sources: 143 unique
-wrote build/out/03-candidate.html (666021 bytes)
+sources: 152 unique
+wrote build/out/03-candidate.html (697635 bytes)
 
 renamed 1 inherited No. 06 storage keys (mtrx-room-*) to mtrx-cons-*
 $ tools/quiz_audit.py --fix build/out/03-candidate.html (exit 0)
-BEFORE 03-candidate.html: 105 checks | right-answer position 3 options: A=105 B=0 C=0 | right answer is the longest option in 47 of 105 (45%) | median length ratio 1.03
-AFTER  03-candidate.html: 105 checks | right-answer position 3 options: A=39 B=33 C=33 | right answer is the longest option in 47 of 105 (45%) | median length ratio 1.03 | changed 83 checks; skipped {'points at positions': 5, 'numeric scale': 1}
+BEFORE 03-candidate.html: 111 checks | right-answer position 3 options: A=111 B=0 C=0 | right answer is the longest option in 51 of 111 (46%) | median length ratio 1.03
+AFTER  03-candidate.html: 111 checks | right-answer position 3 options: A=41 B=35 C=35 | right answer is the longest option in 51 of 111 (46%) | median length ratio 1.03 | changed 87 checks; skipped {'points at positions': 5, 'numeric scale': 1}
 
 Markup after the first check in 03-candidate.html: '</div><div class="check"><script type="application/json">{"q": "In the Lofland and Stark model, what usually opens the door into a group?", "o": ["A hidden personality flaw that makes the recruit easy to deceive", "A bond with a member, often before the doctrine makes any sense", "A strong argument for the doctrine, long before any friendship forms"], "a": 1, "w": "Recruitment travels through rela'
 Script near the first check reference: 'ill:var(--paper)}\n.s-ta{fill:var(--accent-ink)}\n[data-steps].is-on{fill:var(--mars-soft)}\n.march{stroke-dasharray:3 9;animation:march 22s linear infinite}\n@keyframes march{to{stroke-dashoffset:-480}}\n.check{background:var(--paper);border-radius:var(--radius);padding:22px;margin:28px 0;box-shadow:inset 0 0 0 2px var(--accent-soft);max-width:860px}\n.check-k{font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}\n.check-q{font:800 19px/1.4 '
@@ -22,17 +22,17 @@ Worst length bias (right answer at least 1.6x the average distractor), for a con
 
 
 $ tools/check_guide.py build/out/03-candidate.html (exit 0)
-build/out/03-candidate.html: 37 stops, 0 errors, 0 warnings
+build/out/03-candidate.html: 39 stops, 0 errors, 0 warnings
 
 $ build/03/index_card.py guides/03-cons-and-cults.html index.html (exit 0)
-index: No. 03 has 37 built stops in 8 parts; No. 07 card up to date
+index: No. 03 has 39 built stops in 8 parts; No. 07 card up to date
 
 $ build/03/qa.py (exit 0)
-desktop: {'stops': 37, 'checks': 105, 'rendered': 105, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
+desktop: {'stops': 39, 'checks': 111, 'rendered': 111, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
 desktop after marking 1.1 done, localStorage: ['mtrx-cons-v1={"done":{"1.1":true}}']
 desktop: clicked a quiz option, check html: <script type="application/json">{"q": "What did Barker's tracking of Unification Church workshop guests mostly show?", "o": ["Most guests walked away, so the workshops were far weaker than the brainwashing story said", "Guests joined at the same rate as any church, so the group was no different at a
 desktop errors (blocked network loads not counted, 12 of them): none
-mobile: {'stops': 37, 'checks': 105, 'rendered': 105, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
+mobile: {'stops': 39, 'checks': 111, 'rendered': 111, 'thumbs': 8, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 03 · Cons and cults · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
 mobile after marking 1.1 done, localStorage: ['mtrx-cons-v1={"done":{"1.1":true}}']
 mobile: clicked a quiz option, check html: <script type="application/json">{"q": "What did Barker's tracking of Unification Church workshop guests mostly show?", "o": ["Most guests walked away, so the workshops were far weaker than the brainwashing story said", "Guests joined at the same rate as any church, so the group was no different at a
 mobile errors (blocked network loads not counted, 12 of them): none
