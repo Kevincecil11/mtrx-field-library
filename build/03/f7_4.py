@@ -1,0 +1,71 @@
+from svg import box, t, arrow, line, svg
+
+STEPS = [('1', 'ODD NUMBER', 'returns too smooth'), ('2', 'TEST IT', 'enough options trades?'), ('3', 'CHECK OUTSIDE', 'staff, banks, patients'),
+         ('4', 'WRITE IT DOWN', 'memo, documents, notes'), ('5', 'TAKE THE HEAT', 'lawyers, complaints')]
+CASES = ['MARKOPOLOS: smooth returns, too few options trades, a memo to the SEC (2005)',
+         'CARREYROU: a tip from a doctor, former staff, lab documents, patients (2015)',
+         'McCRUM: Wirecard documents and bank checks, five years of pushback (2015 to 2020)']
+FIG = svg(1180, 440, 'The investigator’s five-step method, with how Markopolos, Carreyrou and McCrum each used it',
+          t(590, 32, 'HOW CHECKERS CATCH A FRAUD', 's-t') +
+          ''.join(box(20 + i * 232, 56, 210, 150, 's-box-a' if i == 2 else 's-card', 12) + t(125 + i * 232, 102, n, 's-t-d') +
+                  t(125 + i * 232, 146, a, 's-t-b') + t(125 + i * 232, 178, b, 's-t-sm') for i, (n, a, b) in enumerate(STEPS)) +
+          ''.join(arrow(232 + i * 232, 131, 250 + i * 232, 131) for i in range(4)) +
+          ''.join(box(20, 236 + i * 52, 1140, 42, 's-box-j', 8) + t(590, 263 + i * 52, c, 's-t-sm') for i, c in enumerate(CASES)) +
+          t(590, 420, 'No sixth sense required. A number that does not fit, checked against something the subject does not control.', 's-t-sm'))
+
+STOP = dict(
+    id='7.4', day=45, title='The investigators: Markopolos, Carreyrou and the short sellers',
+    q='The SEC received six substantive complaints about Madoff and never ran a competent investigation. So who actually catches frauds, and how?',
+    why='Every con in this course was eventually broken by someone who checked. This stop meets them: the analyst, the reporters, the short sellers and the ordinary employee with a tip. They are not geniuses with a sixth sense. They have a method, and the method can be learned. For a writer they are the detectives of the money story. For a business owner, their method is how you test any deal that looks too good.',
+    case=dict(k='The cases', name='Markopolos, Carreyrou, McCrum and the short sellers', role='The people who did the checking',
+              facts=[('Markopolos', 'Memo to the SEC, November 2005; told Congress, 4 February 2009'),
+                     ('The SEC watchdog', '“Six substantive complaints”, never properly investigated'),
+                     ('Carreyrou', 'First Theranos story in the WSJ, 15 October 2015'),
+                     ('Tips', 'ACFE 2024: 43% of frauds were uncovered by tips')],
+              stamp=('hold', 'Holds: checking beats genius')),
+    cold=dict(q='What is the most common way frauds inside organisations are discovered?',
+              a='Tips. The Association of Certified Fraud Examiners’ 2024 report, covering 1,921 cases, found that 43 percent were uncovered by a tip, more than by internal audit or management review. The typical fraud ran for 12 months before it was caught, with a median loss of $145,000. The hero of most fraud stories is not a genius detective. It is a person who noticed something and told someone.'),
+    video=dict(id='3wUJesUik5A', title='60 Minutes Archive: The man who figured out Madoff’s Ponzi scheme', who='60 Minutes',
+               watch=['How quickly Markopolos saw that the numbers could not be real',
+                      'What he did when nobody listened',
+                      'What his method has in common with Carreyrou’s']),
+    story=['Harry Markopolos was a Boston analyst whose firm wanted him to match Madoff’s returns. He could not, and then he worked out why: the strategy Madoff described could not produce such smooth gains, and the options markets he claimed to trade in were too small for the volume implied. In November 2005 he sent the SEC a memo titled “The World’s Largest Hedge Fund is a Fraud”. Nothing happened. After Madoff confessed, the SEC’s own inspector general, David Kotz, reported that the agency had received six substantive complaints and “never conducted a competent and thorough examination or investigation”. Markopolos told his story to Congress on 4 February 2009.',
+           'John Carreyrou of the Wall Street Journal began with a tip about Theranos from a doctor in 2015 and built the story from former employees, lab documents and patients, while the company’s lawyers pressed his sources. His first story ran on 15 October 2015, and his book Bad Blood followed in 2018. Dan McCrum at the Financial Times did the same with Wirecard for five years, through legal threats and a criminal complaint from Germany’s regulator, until the missing €1.9 billion proved him right.',
+           'Short sellers profit when a share price falls, which gives them a reason to hunt for lies, and a reason to exaggerate. Jim Chanos began shorting Enron in November 2000 after reading its accounts. Muddy Waters accused Sino-Forest in June 2011, and the company lost more than $2.5 billion in market value. Hindenburg Research’s September 2020 report on the truck maker Nikola came before the conviction of its founder, Trevor Milton, in 2022. In January 2023 Hindenburg accused India’s Adani Group of stock manipulation and accounting fraud. Adani called it baseless, and the group lost about $86 billion in market value within days.',
+           'Short sellers are not neutral judges, and the Adani case shows why you check them too. In January 2024 India’s Supreme Court declined to move the investigation to a special team, and in September 2025 the market regulator SEBI dismissed specific Hindenburg allegations in two orders. Hindenburg itself disbanded in January 2025. Trevor Milton, convicted after the Nikola report, was pardoned in March 2025. The lesson is not trust the accuser. It is check the evidence, whoever brings it.',
+           'Put the investigators side by side and the method is the same, as the diagram shows. Start with a number that does not fit. Ask what would have to be true for the claim to work. Check it against something the subject does not control: market data, bank records, former staff, patients, regulators. Write everything down, and expect to be attacked. For a writer, this is the detective story of the money world, and its best scenes look boring on paper: a spreadsheet, a phone call, a document that refuses to match. Spotlight (2015) and All the President’s Men (1976) made exactly that cinematic.'],
+    fig=(FIG, 'The investigator’s method in five steps, and how three real investigators used it.'),
+    specs=[('Short seller', 'An investor who profits when a share price falls, by selling borrowed shares and buying them back cheaper.'),
+           ('Tip', 'A report from an insider or outsider. Tips uncover more workplace frauds than any other method.'),
+           ('Inspector general', 'An internal watchdog that investigates a government agency, like the SEC’s.')],
+    tags=[('myth', '“Regulators and auditors catch most frauds.”', 'Tips uncovered 43% of cases in the ACFE’s 2024 study, more than any other method.', ('ACFE: Occupational Fraud 2024', 'https://www.acfe.com/en-us/-/media/files/acfe/pdfs/rttn/2024/2024-report-to-the-nations.pdf')),
+          ('hold', '“The SEC was warned about Madoff and failed to act.”', 'Its inspector general found six substantive complaints and no competent investigation.', ('Kotz testimony, 10 September 2009', 'https://www.sec.gov/news/testimony/2009/ts091009hdk.htm')),
+          ('part', '“Short sellers are neutral truth-tellers.”', 'They profit from falls. Nikola’s founder was convicted; SEBI dismissed specific Adani allegations.', ('Reuters: SEBI on Hindenburg’s Adani claims', 'https://www.reuters.com/legal/government/india-markets-regulator-dismisses-hindenburgs-manipulation-allegations-against-2025-09-18/'))],
+    distil=[('Markopolos memo to the SEC, November 2005', 'https://static.reuters.com/resources/media/editorial/20090127/Markopolos_Memo_SEC.pdf', 'The document itself'),
+            ('SEC inspector general Kotz on the Madoff failures', 'https://www.sec.gov/news/testimony/2009/ts091009hdk.htm', 'Six complaints, no real investigation'),
+            ('ACFE: Occupational Fraud 2024, a report to the nations', 'https://www.acfe.com/en-us/-/media/files/acfe/pdfs/rttn/2024/2024-report-to-the-nations.pdf', 'How frauds are really found')],
+    writer=dict(notes=['The investigator’s want is certainty; their need is a method that survives being wrong. Give them one mistake, so the method has to save them.',
+                       'Make the first breakthrough boring: a spreadsheet, a voicemail, a document that will not match. If the audience understands why it matters, a boring object becomes the most suspenseful thing on screen.'],
+                drill='Write a one-page fictional scene where a junior analyst shows her boss a number that does not fit a celebrated client’s results. The boss wants it to go away. End with her choosing who to tell.'),
+    biz='Use the investigator’s method on every deal that looks too good: an investor, a partnership, a client offering double your rate. Find the number that does not fit, ask what must be true, and check it somewhere they do not control: the company registry, past clients, reviews, a video call. And make it easy for your callers and clients to tell you when something looks wrong. Tips find frauds.',
+    tryit='Pick one claim you read this week, about a company, a product or a person. Run the five steps in five lines. Where did your check end up?',
+    room='Frauds unravel when reality stops repeating the story. Be the person who checks.',
+    deeper=[('Reuters: Adani vs Hindenburg, what you need to know', 'https://www.reuters.com/markets/adani-vs-hindenburg-what-you-need-know-2023-01-31/', 'The January 2023 rout'),
+            ('Hindenburg Research: the closing note, January 2025', 'https://hindenburgresearch.com/gratitude/', 'Why its founder shut it down')],
+    nextq='You now know every lever and every check. Can you persuade honestly in your own pitches, without a single trick from this course? Stop 7.5.',
+    checks=[dict(q='What did the SEC’s inspector general find about the Madoff warnings?',
+                 o=['Six substantive complaints, and no competent investigation',
+                    'That nobody had ever warned the SEC about him',
+                    'That the SEC had caught Madoff but kept it secret'], a=0,
+                 w='Kotz found the agency never conducted a competent and thorough examination or investigation.'),
+            dict(q='According to the ACFE’s 2024 study, how are most workplace frauds uncovered?',
+                 o=['By tips from employees, customers and others',
+                    'By the company’s external auditors',
+                    'By police investigations and raids'], a=0,
+                 w='43% came from tips, more than any other method. Make it easy for people to tell you.'),
+            dict(q='What does the Adani case teach about short sellers?',
+                 o=['Check their evidence too, because they profit from falls',
+                    'Short sellers are always proved right in the end',
+                    'Short-seller reports are illegal in India'], a=0,
+                 w='SEBI dismissed specific Hindenburg allegations in 2025. Check the evidence, whoever brings it.')],
+)
