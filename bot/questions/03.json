@@ -40,7 +40,11 @@
   "5.3",
   "5.4",
   "5.5",
-  "5.6"
+  "5.6",
+  "6.1",
+  "6.2",
+  "6.3",
+  "6.4"
  ],
  "cards": [
   {
@@ -2183,6 +2187,242 @@
    "type": "recall",
    "q": "Page closed: explain \"Social engineering: the con inside the heist\" in two or three lines, as you would to a client.",
    "answer": "The attacker needs one person to skip one check. Defence is a habit, not a gadget.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "6.1",
+   "name": "Ponzi and affinity fraud: from Charles Ponzi to Madoff",
+   "link": "guides/03-cons-and-cults.html#m6-1",
+   "id": "03-6.1-q1",
+   "type": "quiz",
+   "q": "What keeps a Ponzi scheme alive?",
+   "options": [
+    "Profits from a real but secret trading strategy",
+    "New investors’ money paying earlier investors",
+    "Government insurance on the deposits"
+   ],
+   "answer": 1,
+   "why": "There is no business inside the loop. The fuel is the next investor, and it dies when withdrawals beat deposits."
+  },
+  {
+   "guide": "03",
+   "stop": "6.1",
+   "name": "Ponzi and affinity fraud: from Charles Ponzi to Madoff",
+   "link": "guides/03-cons-and-cults.html#m6-1",
+   "id": "03-6.1-q2",
+   "type": "quiz",
+   "q": "What makes affinity fraud so effective?",
+   "options": [
+    "It always uses complex financial products",
+    "It only targets people with no investing experience",
+    "It borrows the trust members of a group already have in each other"
+   ],
+   "answer": 2,
+   "why": "The trust is real but pointed at the wrong thing. People trust the introducer and skip the checks."
+  },
+  {
+   "guide": "03",
+   "stop": "6.1",
+   "name": "Ponzi and affinity fraud: from Charles Ponzi to Madoff",
+   "link": "guides/03-cons-and-cults.html#m6-1",
+   "id": "03-6.1-q3",
+   "type": "quiz",
+   "q": "What did Madoff tell two senior employees before the SEC charged him?",
+   "options": [
+    "That it was “basically, a giant Ponzi scheme”",
+    "That a rogue trader had lost the money",
+    "That hackers had emptied the accounts"
+   ],
+   "answer": 0,
+   "why": "The SEC’s December 2008 release quotes him. He also said it was “all just one big lie”."
+  },
+  {
+   "guide": "03",
+   "stop": "6.1",
+   "name": "Ponzi and affinity fraud: from Charles Ponzi to Madoff",
+   "link": "guides/03-cons-and-cults.html#m6-1",
+   "id": "03-6.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Ponzi and affinity fraud: from Charles Ponzi to Madoff\" in two or three lines, as you would to a client.",
+   "answer": "The first payment proves only that money moved, not why it moved.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "6.2",
+   "name": "Ponzi, pyramid or MLM: telling them apart",
+   "link": "guides/03-cons-and-cults.html#m6-2",
+   "id": "03-6.2-q1",
+   "type": "quiz",
+   "q": "What is the FTC’s key test for whether an MLM pays people legitimately?",
+   "options": [
+    "Whether rewards come from real retail sales, not recruiting",
+    "Whether the company sells a real product",
+    "Whether the founder is personally wealthy"
+   ],
+   "answer": 0,
+   "why": "A product can be a cover. What matters is who the real customer is and where the money comes from."
+  },
+  {
+   "guide": "03",
+   "stop": "6.2",
+   "name": "Ponzi, pyramid or MLM: telling them apart",
+   "link": "guides/03-cons-and-cults.html#m6-2",
+   "id": "03-6.2-q2",
+   "type": "quiz",
+   "q": "If each member must recruit six people, roughly how many levels until a pyramid needs more people than exist?",
+   "options": [
+    "A hundred levels",
+    "Thirteen levels",
+    "Thirty levels"
+   ],
+   "answer": 1,
+   "why": "Six to the thirteenth power is about 13 billion, more than everyone alive. The base always loses."
+  },
+  {
+   "guide": "03",
+   "stop": "6.2",
+   "name": "Ponzi, pyramid or MLM: telling them apart",
+   "link": "guides/03-cons-and-cults.html#m6-2",
+   "id": "03-6.2-q3",
+   "type": "quiz",
+   "q": "What did the AARP Foundation’s 2018 survey find about MLM participants?",
+   "options": [
+    "About half earned over $10,000 a year",
+    "Most made a steady part-time income",
+    "Nearly half lost money and about a quarter broke even"
+   ],
+   "answer": 2,
+   "why": "Only about a quarter made a profit, and more than half of those made under $5,000."
+  },
+  {
+   "guide": "03",
+   "stop": "6.2",
+   "name": "Ponzi, pyramid or MLM: telling them apart",
+   "link": "guides/03-cons-and-cults.html#m6-2",
+   "id": "03-6.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Ponzi, pyramid or MLM: telling them apart\" in two or three lines, as you would to a client.",
+   "answer": "Follow the money to the real customer. If the customer is the next recruit, it is a pyramid.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "6.3",
+   "name": "Theranos: the story that outran the science",
+   "link": "guides/03-cons-and-cults.html#m6-3",
+   "id": "03-6.3-q1",
+   "type": "quiz",
+   "q": "What did Carreyrou report about Theranos’s own device by the end of 2014?",
+   "options": [
+    "It had been banned outright by regulators",
+    "It handled only a small fraction of the tests sold to consumers",
+    "It ran every test but was too slow"
+   ],
+   "answer": 1,
+   "why": "Most tests ran on machines bought from other makers. The story was far ahead of the science."
+  },
+  {
+   "guide": "03",
+   "stop": "6.3",
+   "name": "Theranos: the story that outran the science",
+   "link": "guides/03-cons-and-cults.html#m6-3",
+   "id": "03-6.3-q2",
+   "type": "quiz",
+   "q": "On which counts was Elizabeth Holmes convicted in January 2022?",
+   "options": [
+    "Four counts of defrauding investors",
+    "All counts, including those about patients",
+    "Only counts about patients"
+   ],
+   "answer": 0,
+   "why": "She was acquitted on the patient counts. Balwani was convicted on all twelve counts he faced."
+  },
+  {
+   "guide": "03",
+   "stop": "6.3",
+   "name": "Theranos: the story that outran the science",
+   "link": "guides/03-cons-and-cults.html#m6-3",
+   "id": "03-6.3-q3",
+   "type": "quiz",
+   "q": "Why did a board of famous statesmen reassure investors?",
+   "options": [
+    "Their names felt like proof, though none of them tested the science",
+    "They had personally run the blood tests",
+    "They guaranteed the investors’ money"
+   ],
+   "answer": 0,
+   "why": "Borrowed authority is a convincer. It feels like evidence without being evidence."
+  },
+  {
+   "guide": "03",
+   "stop": "6.3",
+   "name": "Theranos: the story that outran the science",
+   "link": "guides/03-cons-and-cults.html#m6-3",
+   "id": "03-6.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Theranos: the story that outran the science\" in two or three lines, as you would to a client.",
+   "answer": "A demo that worked once is not a product. Show the evidence, not the vision.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "6.4",
+   "name": "FTX and Wirecard: when nobody checks",
+   "link": "guides/03-cons-and-cults.html#m6-4",
+   "id": "03-6.4-q1",
+   "type": "quiz",
+   "q": "What did FTX’s new chief executive say he had never seen in his career?",
+   "options": [
+    "A founder who cooperated so fully",
+    "A crypto exchange with so many customers",
+    "Such a complete failure of corporate controls"
+   ],
+   "answer": 2,
+   "why": "Ray, who had handled Enron, also found no trustworthy financial information and payments approved by emoji."
+  },
+  {
+   "guide": "03",
+   "stop": "6.4",
+   "name": "FTX and Wirecard: when nobody checks",
+   "link": "guides/03-cons-and-cults.html#m6-4",
+   "id": "03-6.4-q2",
+   "type": "quiz",
+   "q": "How did Germany’s regulator respond to critical reports about Wirecard in 2019?",
+   "options": [
+    "It banned short selling and filed a complaint against FT reporters",
+    "It suspended the chief executive pending an inquiry",
+    "It ordered an immediate audit of the Asian accounts"
+   ],
+   "answer": 0,
+   "why": "BaFin protected the company and pursued the journalists. The journalists were right."
+  },
+  {
+   "guide": "03",
+   "stop": "6.4",
+   "name": "FTX and Wirecard: when nobody checks",
+   "link": "guides/03-cons-and-cults.html#m6-4",
+   "id": "03-6.4-q3",
+   "type": "quiz",
+   "q": "What is the main lesson FTX and Wirecard share?",
+   "options": [
+    "Each check assumed another check was working",
+    "Crypto is always riskier than payments",
+    "Short sellers cause company collapses"
+   ],
+   "answer": 0,
+   "why": "Auditors, boards, regulators and investors each relied on the others. The outsiders who checked were attacked."
+  },
+  {
+   "guide": "03",
+   "stop": "6.4",
+   "name": "FTX and Wirecard: when nobody checks",
+   "link": "guides/03-cons-and-cults.html#m6-4",
+   "id": "03-6.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"FTX and Wirecard: when nobody checks\" in two or three lines, as you would to a client.",
+   "answer": "Every check thought another check was working. Be the one who actually looks.",
    "label": "Say it in the room"
   }
  ]
