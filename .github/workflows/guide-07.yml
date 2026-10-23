@@ -1,0 +1,42 @@
+name: Guide 07 build
+# Builds No. 07 Design from small sources in build/07/. See build/07/run.py.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'build/07/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: guide-build
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install build tools
+        run: |
+          pip install beautifulsoup4==4.12.3 playwright==1.48.0 pillow
+          python -m playwright install --with-deps chromium || echo "no browser, QA will be skipped"
+      - name: Build No. 07
+        run: python build/07/run.py
+      - name: Commit
+        run: |
+          git config user.name "mtrx-build"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add guides build/out index.html
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "guide 07 build: $(sed -n 2p build/out/07-report.txt | head -c 100) [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            sleep 7
+          done
+          exit 1
