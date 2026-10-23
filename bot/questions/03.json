@@ -44,7 +44,21 @@
   "6.1",
   "6.2",
   "6.3",
-  "6.4"
+  "6.4",
+  "6.5",
+  "6.6",
+  "7.1",
+  "7.2",
+  "7.3",
+  "7.4",
+  "7.5",
+  "7.6",
+  "8.1",
+  "8.2",
+  "8.3",
+  "8.4",
+  "8.5",
+  "8.6"
  ],
  "cards": [
   {
@@ -72,68 +86,9 @@
   {
    "guide": "03",
    "stop": "1.1",
-   "name": "Who joins, and why it is not stupidity",
+   "name": "What a cult is, and why the word is a fight",
    "link": "guides/03-cons-and-cults.html#m1-1",
    "id": "03-1.1-q1",
-   "type": "quiz",
-   "q": "What did Barker's tracking of Unification Church workshop guests mostly show?",
-   "options": [
-    "Most guests walked away, so the workshops were far weaker than the brainwashing story said",
-    "Guests joined at the same rate as any church, so the group was no different at all",
-    "Most guests joined, because the workshops overrode their judgment with a hidden technique"
-   ],
-   "answer": 0,
-   "why": "About 9 in 10 never joined, and most joiners left within two years. That does not make the group harmless; it makes the zombie story wrong."
-  },
-  {
-   "guide": "03",
-   "stop": "1.1",
-   "name": "Who joins, and why it is not stupidity",
-   "link": "guides/03-cons-and-cults.html#m1-1",
-   "id": "03-1.1-q2",
-   "type": "quiz",
-   "q": "In the Lofland and Stark model, what usually opens the door into a group?",
-   "options": [
-    "A hidden personality flaw that makes the recruit easy to deceive",
-    "A bond with a member, often before the doctrine makes any sense",
-    "A strong argument for the doctrine, long before any friendship forms"
-   ],
-   "answer": 1,
-   "why": "Recruitment travels through relationships. Greil and Rudy found bonds and intense time together were the two conditions present in every case."
-  },
-  {
-   "guide": "03",
-   "stop": "1.1",
-   "name": "Who joins, and why it is not stupidity",
-   "link": "guides/03-cons-and-cults.html#m1-1",
-   "id": "03-1.1-q3",
-   "type": "quiz",
-   "q": "Why does high intelligence give weak protection against joining?",
-   "options": [
-    "Intelligent people are rarely approached, so they never practise saying no",
-    "It protects well, which is why groups mostly recruit people with little schooling",
-    "A sharp mind can build strong reasons for a choice that loneliness already made"
-   ],
-   "answer": 2,
-   "why": "Intelligence serves whatever need is driving it. Timing, transitions and relationships predict joining better than IQ."
-  },
-  {
-   "guide": "03",
-   "stop": "1.1",
-   "name": "Who joins, and why it is not stupidity",
-   "link": "guides/03-cons-and-cults.html#m1-1",
-   "id": "03-1.1-r1",
-   "type": "recall",
-   "q": "Page closed: explain \"Who joins, and why it is not stupidity\" in two or three lines, as you would to a client.",
-   "answer": "Nobody joins a cult on purpose. People join friends, then a cause, and only later learn what the group was.",
-   "label": "Say it in the room"
-  },
-  {
-   "guide": "03",
-   "stop": "1.2",
-   "name": "What a cult is, and why the word is a fight",
-   "link": "guides/03-cons-and-cults.html#m1-2",
-   "id": "03-1.2-q1",
    "type": "quiz",
    "q": "Which question best separates a demanding group from a coercive one?",
    "options": [
@@ -146,10 +101,10 @@
   },
   {
    "guide": "03",
-   "stop": "1.2",
+   "stop": "1.1",
    "name": "What a cult is, and why the word is a fight",
-   "link": "guides/03-cons-and-cults.html#m1-2",
-   "id": "03-1.2-q2",
+   "link": "guides/03-cons-and-cults.html#m1-1",
+   "id": "03-1.1-q2",
    "type": "quiz",
    "q": "Why did researchers move to the term 'new religious movement'?",
    "options": [
@@ -162,10 +117,10 @@
   },
   {
    "guide": "03",
-   "stop": "1.2",
+   "stop": "1.1",
    "name": "What a cult is, and why the word is a fight",
-   "link": "guides/03-cons-and-cults.html#m1-2",
-   "id": "03-1.2-q3",
+   "link": "guides/03-cons-and-cults.html#m1-1",
+   "id": "03-1.1-q3",
    "type": "quiz",
    "q": "In this course, what does 'high-demand group' point at?",
    "options": [
@@ -178,13 +133,72 @@
   },
   {
    "guide": "03",
-   "stop": "1.2",
+   "stop": "1.1",
    "name": "What a cult is, and why the word is a fight",
-   "link": "guides/03-cons-and-cults.html#m1-2",
-   "id": "03-1.2-r1",
+   "link": "guides/03-cons-and-cults.html#m1-1",
+   "id": "03-1.1-r1",
    "type": "recall",
    "q": "Page closed: explain \"What a cult is, and why the word is a fight\" in two or three lines, as you would to a client.",
    "answer": "Don't diagnose a group by its beliefs. Map who can punish whom, and what it costs to leave.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "1.2",
+   "name": "Who joins, and why it is not stupidity",
+   "link": "guides/03-cons-and-cults.html#m1-2",
+   "id": "03-1.2-q1",
+   "type": "quiz",
+   "q": "What did Barker's tracking of Unification Church workshop guests mostly show?",
+   "options": [
+    "Most guests walked away, so the workshops were far weaker than the brainwashing story said",
+    "Guests joined at the same rate as any church, so the group was no different at all",
+    "Most guests joined, because the workshops overrode their judgment with a hidden technique"
+   ],
+   "answer": 0,
+   "why": "About 9 in 10 never joined, and most joiners left within two years. That does not make the group harmless; it makes the zombie story wrong."
+  },
+  {
+   "guide": "03",
+   "stop": "1.2",
+   "name": "Who joins, and why it is not stupidity",
+   "link": "guides/03-cons-and-cults.html#m1-2",
+   "id": "03-1.2-q2",
+   "type": "quiz",
+   "q": "In the Lofland and Stark model, what usually opens the door into a group?",
+   "options": [
+    "A hidden personality flaw that makes the recruit easy to deceive",
+    "A bond with a member, often before the doctrine makes any sense",
+    "A strong argument for the doctrine, long before any friendship forms"
+   ],
+   "answer": 1,
+   "why": "Recruitment travels through relationships. Greil and Rudy found bonds and intense time together were the two conditions present in every case."
+  },
+  {
+   "guide": "03",
+   "stop": "1.2",
+   "name": "Who joins, and why it is not stupidity",
+   "link": "guides/03-cons-and-cults.html#m1-2",
+   "id": "03-1.2-q3",
+   "type": "quiz",
+   "q": "Why does high intelligence give weak protection against joining?",
+   "options": [
+    "Intelligent people are rarely approached, so they never practise saying no",
+    "It protects well, which is why groups mostly recruit people with little schooling",
+    "A sharp mind can build strong reasons for a choice that loneliness already made"
+   ],
+   "answer": 2,
+   "why": "Intelligence serves whatever need is driving it. Timing, transitions and relationships predict joining better than IQ."
+  },
+  {
+   "guide": "03",
+   "stop": "1.2",
+   "name": "Who joins, and why it is not stupidity",
+   "link": "guides/03-cons-and-cults.html#m1-2",
+   "id": "03-1.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Who joins, and why it is not stupidity\" in two or three lines, as you would to a client.",
+   "answer": "Nobody joins a cult on purpose. People join friends, then a cause, and only later learn what the group was.",
    "label": "Say it in the room"
   },
   {
@@ -2423,6 +2437,865 @@
    "type": "recall",
    "q": "Page closed: explain \"FTX and Wirecard: when nobody checks\" in two or three lines, as you would to a client.",
    "answer": "Every check thought another check was working. Be the one who actually looks.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "6.5",
+   "name": "The fraud triangle, and why good people cook the books",
+   "link": "guides/03-cons-and-cults.html#m6-5",
+   "id": "03-6.5-q1",
+   "type": "quiz",
+   "q": "What are the three corners of the fraud triangle?",
+   "options": [
+    "Motive, weapon and alibi",
+    "Pressure, opportunity and rationalisation",
+    "Greed, secrecy and luck"
+   ],
+   "answer": 1,
+   "why": "Adapted from Cressey’s 1953 study of embezzlers. The fraud diamond adds a fourth: capability."
+  },
+  {
+   "guide": "03",
+   "stop": "6.5",
+   "name": "The fraud triangle, and why good people cook the books",
+   "link": "guides/03-cons-and-cults.html#m6-5",
+   "id": "03-6.5-q2",
+   "type": "quiz",
+   "q": "How did Raju describe the start of the Satyam fraud?",
+   "options": [
+    "A plan to steal from investors from day one",
+    "A single bad deal hidden by a junior employee",
+    "A marginal gap between real and reported profit that kept growing"
+   ],
+   "answer": 2,
+   "why": "His letter says the gap grew as the company grew, and that he feared a takeover would expose it."
+  },
+  {
+   "guide": "03",
+   "stop": "6.5",
+   "name": "The fraud triangle, and why good people cook the books",
+   "link": "guides/03-cons-and-cults.html#m6-5",
+   "id": "03-6.5-q3",
+   "type": "quiz",
+   "q": "Which corner of the triangle can a business most directly control?",
+   "options": [
+    "Pressure, by removing all targets",
+    "Opportunity, through checks like two-person approval",
+    "Rationalisation, by hiring only honest people"
+   ],
+   "answer": 1,
+   "why": "You cannot see inside a person. You can close the open door and make problems safe to share."
+  },
+  {
+   "guide": "03",
+   "stop": "6.5",
+   "name": "The fraud triangle, and why good people cook the books",
+   "link": "guides/03-cons-and-cults.html#m6-5",
+   "id": "03-6.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The fraud triangle, and why good people cook the books\" in two or three lines, as you would to a client.",
+   "answer": "Fraud rarely starts with greed. It starts with a gap someone is ashamed to share.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "6.6",
+   "name": "Scams that target you: pig butchering, task scams and fake clients",
+   "link": "guides/03-cons-and-cults.html#m6-6",
+   "id": "03-6.6-q1",
+   "type": "quiz",
+   "q": "What does INTERPOL now call the scam criminals nicknamed pig butchering?",
+   "options": [
+    "Romance baiting",
+    "Crypto catfishing",
+    "Love trading"
+   ],
+   "answer": 0,
+   "why": "INTERPOL says the old term shames victims and discourages them from reporting."
+  },
+  {
+   "guide": "03",
+   "stop": "6.6",
+   "name": "Scams that target you: pig butchering, task scams and fake clients",
+   "link": "guides/03-cons-and-cults.html#m6-6",
+   "id": "03-6.6-q2",
+   "type": "quiz",
+   "q": "A new client overpays and asks you to refund the difference. What should you do?",
+   "options": [
+    "Pay their supplier directly from the extra",
+    "Refund quickly to keep the client happy",
+    "Wait for the money to fully clear and verify the client independently"
+   ],
+   "answer": 2,
+   "why": "The original payment can bounce or be reversed. Your refund cannot. Real clients will wait."
+  },
+  {
+   "guide": "03",
+   "stop": "6.6",
+   "name": "Scams that target you: pig butchering, task scams and fake clients",
+   "link": "guides/03-cons-and-cults.html#m6-6",
+   "id": "03-6.6-q3",
+   "type": "quiz",
+   "q": "What single rule defeats every task scam?",
+   "options": [
+    "Withdraw your earnings every day",
+    "Never pay money to get paid",
+    "Only accept tasks from well-known apps"
+   ],
+   "answer": 1,
+   "why": "The FTC’s rule. Early payouts are bait; the deposit to unlock earnings is the scam."
+  },
+  {
+   "guide": "03",
+   "stop": "6.6",
+   "name": "Scams that target you: pig butchering, task scams and fake clients",
+   "link": "guides/03-cons-and-cults.html#m6-6",
+   "id": "03-6.6-r1",
+   "type": "recall",
+   "q": "Drill \"Boss fight: the money audit\": what are the steps, and the usual mistake?",
+   "answer": "1) Pick one case from File 6: Ponzi or Madoff, Herbalife, Theranos, FTX, Wirecard, Satyam, or one of the four modern scams. 2) Map its engine in three lines: where the money came from, what the story was, and what stopped people checking. 3) Name the person who checked, or who could have, and the one question they asked or should have asked. 4) Now audit MTRX™: list every way money enters and leaves (clients, callers’ commission, hosting, ads, tools). 5) For each, write your rule: verify new clients, never refund before funds clear, confirm bank changes by call-back, keep client money separate. Usual mistake: Treating these rules as rudeness. Real clients and partners will not mind a call-back or a cleared payment. Only a scam needs you to hurry.",
+   "label": "Drill"
+  },
+  {
+   "guide": "03",
+   "stop": "6.6",
+   "name": "Scams that target you: pig butchering, task scams and fake clients",
+   "link": "guides/03-cons-and-cults.html#m6-6",
+   "id": "03-6.6-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Scams that target you: pig butchering, task scams and fake clients\" in two or three lines, as you would to a client.",
+   "answer": "Only a scam needs you to hurry. Verify on a channel you choose, and never pay to get paid.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "7.1",
+   "name": "Cialdini’s levers: which survived replication",
+   "link": "guides/03-cons-and-cults.html#m7-1",
+   "id": "03-7.1-q1",
+   "type": "quiz",
+   "q": "What did Beaman and colleagues find when they reviewed foot-in-the-door studies in 1983?",
+   "options": [
+    "It only worked when people were paid to take part",
+    "It was the most powerful influence technique ever measured",
+    "The effect was real but weak, and nearly half the studies found none"
+   ],
+   "answer": 2,
+   "why": "Across 120 experimental groups the effect was small and unreliable. Real, but no magic key."
+  },
+  {
+   "guide": "03",
+   "stop": "7.1",
+   "name": "Cialdini’s levers: which survived replication",
+   "link": "guides/03-cons-and-cults.html#m7-1",
+   "id": "03-7.1-q2",
+   "type": "quiz",
+   "q": "Which kind of scarcity cue raised buying in a 2023 review?",
+   "options": [
+    "Signs of high demand, such as selling fast",
+    "Limited-quantity labels on every single product",
+    "Countdown timers and offers that expire tonight"
+   ],
+   "answer": 0,
+   "why": "Demand cues worked; urgency cues did not on average. Fake countdowns are weak and can be illegal."
+  },
+  {
+   "guide": "03",
+   "stop": "7.1",
+   "name": "Cialdini’s levers: which survived replication",
+   "link": "guides/03-cons-and-cults.html#m7-1",
+   "id": "03-7.1-q3",
+   "type": "quiz",
+   "q": "Why do con artists stack several levers at once?",
+   "options": [
+    "Stacking makes the con easier to explain to the police later",
+    "Each effect is small, so they add them up and remove the time to think",
+    "A single lever is illegal unless it is combined with others"
+   ],
+   "answer": 1,
+   "why": "Single levers are nudges. Stacked, with time pressure, they become a trap."
+  },
+  {
+   "guide": "03",
+   "stop": "7.1",
+   "name": "Cialdini’s levers: which survived replication",
+   "link": "guides/03-cons-and-cults.html#m7-1",
+   "id": "03-7.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Cialdini’s levers: which survived replication\" in two or three lines, as you would to a client.",
+   "answer": "The levers are real but small. Cons work by stacking them and stealing your time to think.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "7.2",
+   "name": "The 48 Laws as story, not science",
+   "link": "guides/03-cons-and-cults.html#m7-2",
+   "id": "03-7.2-q1",
+   "type": "quiz",
+   "q": "What kind of evidence does Greene use to support each law?",
+   "options": [
+    "Stories from history chosen to illustrate it",
+    "Surveys of hundreds of business leaders",
+    "Controlled experiments with large samples of volunteers"
+   ],
+   "answer": 0,
+   "why": "Vivid anecdotes, not tests. History can be found to fit almost any rule."
+  },
+  {
+   "guide": "03",
+   "stop": "7.2",
+   "name": "The 48 Laws as story, not science",
+   "link": "guides/03-cons-and-cults.html#m7-2",
+   "id": "03-7.2-q2",
+   "type": "quiz",
+   "q": "What did a 2012 meta-analysis find about Machiavellian employees?",
+   "options": [
+    "No measurable difference from other employees",
+    "Much faster promotion and noticeably higher pay",
+    "Slightly worse job performance and more bad behaviour at work"
+   ],
+   "answer": 2,
+   "why": "245 samples, nearly 44,000 people. Manipulation can win moments but rarely pays in the long run."
+  },
+  {
+   "guide": "03",
+   "stop": "7.2",
+   "name": "The 48 Laws as story, not science",
+   "link": "guides/03-cons-and-cults.html#m7-2",
+   "id": "03-7.2-q3",
+   "type": "quiz",
+   "q": "How does this course suggest a writer should use the 48 Laws?",
+   "options": [
+    "As a list of tactics the hero should copy",
+    "As a scientific guide to human nature",
+    "As a character’s core belief, tested by the plot"
+   ],
+   "answer": 2,
+   "why": "A law that wins the midpoint should cost the character something by the end."
+  },
+  {
+   "guide": "03",
+   "stop": "7.2",
+   "name": "The 48 Laws as story, not science",
+   "link": "guides/03-cons-and-cults.html#m7-2",
+   "id": "03-7.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The 48 Laws as story, not science\" in two or three lines, as you would to a client.",
+   "answer": "Read the laws as character, not as conduct. A tactic that wins a scene can lose the story.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "7.3",
+   "name": "Coercive control: when influence becomes captivity",
+   "link": "guides/03-cons-and-cults.html#m7-3",
+   "id": "03-7.3-q1",
+   "type": "quiz",
+   "q": "What was Evan Stark’s key point about coercive control?",
+   "options": [
+    "The harm is the pattern of lost freedom, not one incident",
+    "It only counts as abuse if there is physical violence",
+    "It only happens inside religious cults"
+   ],
+   "answer": 0,
+   "why": "Isolation, monitoring and rules add up. A list of separate incidents can hide the cage."
+  },
+  {
+   "guide": "03",
+   "stop": "7.3",
+   "name": "Coercive control: when influence becomes captivity",
+   "link": "guides/03-cons-and-cults.html#m7-3",
+   "id": "03-7.3-q2",
+   "type": "quiz",
+   "q": "When did coercive control become a crime in England and Wales?",
+   "options": [
+    "In the 1980s, under the old common law",
+    "In late 2015, under the Serious Crime Act",
+    "Only in 2025, after a brand-new bill"
+   ],
+   "answer": 1,
+   "why": "Section 76 came into force on 29 December 2015, with up to five years in prison."
+  },
+  {
+   "guide": "03",
+   "stop": "7.3",
+   "name": "Coercive control: when influence becomes captivity",
+   "link": "guides/03-cons-and-cults.html#m7-3",
+   "id": "03-7.3-q3",
+   "type": "quiz",
+   "q": "Which Indian law covers verbal, emotional and economic abuse at home?",
+   "options": [
+    "The Information Technology Act 2000",
+    "The Protection of Women from Domestic Violence Act 2005",
+    "The Consumer Protection Act 2019"
+   ],
+   "answer": 1,
+   "why": "Its section 3 definition includes all three, and it allows protection and residence orders."
+  },
+  {
+   "guide": "03",
+   "stop": "7.3",
+   "name": "Coercive control: when influence becomes captivity",
+   "link": "guides/03-cons-and-cults.html#m7-3",
+   "id": "03-7.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Coercive control: when influence becomes captivity\" in two or three lines, as you would to a client.",
+   "answer": "Abuse can be a pattern with no bruise. Watch the walls, not just the blows.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "7.4",
+   "name": "The investigators: Markopolos, Carreyrou and the short sellers",
+   "link": "guides/03-cons-and-cults.html#m7-4",
+   "id": "03-7.4-q1",
+   "type": "quiz",
+   "q": "What did the SEC’s inspector general find about the Madoff warnings?",
+   "options": [
+    "That the SEC had caught Madoff but kept it secret",
+    "That nobody had ever warned the SEC about him",
+    "Six substantive complaints, and no competent investigation"
+   ],
+   "answer": 2,
+   "why": "Kotz found the agency never conducted a competent and thorough examination or investigation."
+  },
+  {
+   "guide": "03",
+   "stop": "7.4",
+   "name": "The investigators: Markopolos, Carreyrou and the short sellers",
+   "link": "guides/03-cons-and-cults.html#m7-4",
+   "id": "03-7.4-q2",
+   "type": "quiz",
+   "q": "According to the ACFE’s 2024 study, how are most workplace frauds uncovered?",
+   "options": [
+    "By tips from employees, customers and others",
+    "By the company’s external auditors",
+    "By police investigations and raids"
+   ],
+   "answer": 0,
+   "why": "43% came from tips, more than any other method. Make it easy for people to tell you."
+  },
+  {
+   "guide": "03",
+   "stop": "7.4",
+   "name": "The investigators: Markopolos, Carreyrou and the short sellers",
+   "link": "guides/03-cons-and-cults.html#m7-4",
+   "id": "03-7.4-q3",
+   "type": "quiz",
+   "q": "What does the Adani case teach about short sellers?",
+   "options": [
+    "Check their evidence too, because they profit from falls",
+    "Short sellers are always proved right in the end",
+    "Short-seller reports are illegal in India"
+   ],
+   "answer": 0,
+   "why": "SEBI dismissed specific Hindenburg allegations in 2025. Check the evidence, whoever brings it."
+  },
+  {
+   "guide": "03",
+   "stop": "7.4",
+   "name": "The investigators: Markopolos, Carreyrou and the short sellers",
+   "link": "guides/03-cons-and-cults.html#m7-4",
+   "id": "03-7.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"The investigators: Markopolos, Carreyrou and the short sellers\" in two or three lines, as you would to a client.",
+   "answer": "Frauds unravel when reality stops repeating the story. Be the person who checks.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "7.5",
+   "name": "Red-team your own pitch: honest influence for MTRX™",
+   "link": "guides/03-cons-and-cults.html#m7-5",
+   "id": "03-7.5-q1",
+   "type": "quiz",
+   "q": "Which of these is one of the 13 dark patterns listed in India’s 2023 guidelines?",
+   "options": [
+    "Free delivery",
+    "Verified reviews",
+    "Drip pricing"
+   ],
+   "answer": 2,
+   "why": "Drip pricing reveals fees step by step at checkout. False urgency and confirm shaming are listed too."
+  },
+  {
+   "guide": "03",
+   "stop": "7.5",
+   "name": "Red-team your own pitch: honest influence for MTRX™",
+   "link": "guides/03-cons-and-cults.html#m7-5",
+   "id": "03-7.5-q2",
+   "type": "quiz",
+   "q": "What test separates honest persuasion from a con in this course?",
+   "options": [
+    "Whether the seller personally believes in the product",
+    "Whether the buyer can check the claim and leave without shame",
+    "Whether the pitch uses any of Cialdini’s levers at all"
+   ],
+   "answer": 1,
+   "why": "Reversibility. Cons make checking costly and leaving shameful; honest pitches do the opposite."
+  },
+  {
+   "guide": "03",
+   "stop": "7.5",
+   "name": "Red-team your own pitch: honest influence for MTRX™",
+   "link": "guides/03-cons-and-cults.html#m7-5",
+   "id": "03-7.5-q3",
+   "type": "quiz",
+   "q": "What is the honest version of scarcity for an agency?",
+   "options": [
+    "A countdown timer on the pricing page",
+    "A genuinely limited number of projects each month",
+    "A discount that expires at midnight"
+   ],
+   "answer": 1,
+   "why": "Scarcity is only honest when the limit is real. Fake deadlines also barely work."
+  },
+  {
+   "guide": "03",
+   "stop": "7.5",
+   "name": "Red-team your own pitch: honest influence for MTRX™",
+   "link": "guides/03-cons-and-cults.html#m7-5",
+   "id": "03-7.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Red-team your own pitch: honest influence for MTRX™\" in two or three lines, as you would to a client.",
+   "answer": "Persuasion is honest when the buyer can inspect the bridge before crossing it.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "7.6",
+   "name": "Capstone: write a con film treatment",
+   "link": "guides/03-cons-and-cults.html#m7-6",
+   "id": "03-7.6-q1",
+   "type": "quiz",
+   "q": "In what person and tense is a film treatment usually written?",
+   "options": [
+    "Third person, present tense",
+    "First person, past tense",
+    "Second person, future tense"
+   ],
+   "answer": 0,
+   "why": "Standard guidance: a succinct, third-person, present-tense summary of the story."
+  },
+  {
+   "guide": "03",
+   "stop": "7.6",
+   "name": "Capstone: write a con film treatment",
+   "link": "guides/03-cons-and-cults.html#m7-6",
+   "id": "03-7.6-q2",
+   "type": "quiz",
+   "q": "What should a logline contain?",
+   "options": [
+    "The full cast list with every actor’s age",
+    "Every twist, in the order it happens",
+    "The protagonist, the con or goal, and the stakes"
+   ],
+   "answer": 2,
+   "why": "One sentence. If you cannot write it, you do not know your story yet."
+  },
+  {
+   "guide": "03",
+   "stop": "7.6",
+   "name": "Capstone: write a con film treatment",
+   "link": "guides/03-cons-and-cults.html#m7-6",
+   "id": "03-7.6-q3",
+   "type": "quiz",
+   "q": "What makes a twist play fair?",
+   "options": [
+    "Nobody in the audience could possibly guess it",
+    "Every clue it needs is shown before the reveal",
+    "A new character explains it all at the end"
+   ],
+   "answer": 1,
+   "why": "A fair twist feels inevitable on a second viewing. That is the test from stop 4.6."
+  },
+  {
+   "guide": "03",
+   "stop": "7.6",
+   "name": "Capstone: write a con film treatment",
+   "link": "guides/03-cons-and-cults.html#m7-6",
+   "id": "03-7.6-r1",
+   "type": "recall",
+   "q": "Drill \"Capstone: your con film treatment\": what are the steps, and the usual mistake?",
+   "answer": "1) Write a logline: protagonist, con, stakes. One sentence. 2) Cast four roles: the mark, the roper, the insider and the one who checks. Give each a want and a need. 3) Choose the money engine (File 6) or the group (Files 1 to 3) at the heart of the con. 4) Outline the beats with Maurer’s steps from stop 4.1, then write them as present-tense prose, three to five pages. 5) Plant every clue the twist needs before it, and list where each one appears. 6) Give it to one reader. Ask when they guessed the twist and whether it felt fair. Revise once. Usual mistake: Writing a heist of gadgets instead of a con of people. The best treatments are about why the mark wants to believe, and what the reveal costs each character.",
+   "label": "Drill"
+  },
+  {
+   "guide": "03",
+   "stop": "7.6",
+   "name": "Capstone: write a con film treatment",
+   "link": "guides/03-cons-and-cults.html#m7-6",
+   "id": "03-7.6-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Capstone: write a con film treatment\" in two or three lines, as you would to a client.",
+   "answer": "A good con film fools the audience fairly: every clue on screen, every cost felt.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "8.1",
+   "name": "KUBARK: inside the CIA’s 1963 manual",
+   "link": "guides/03-cons-and-cults.html#m8-1",
+   "id": "03-8.1-q1",
+   "type": "quiz",
+   "q": "What does the word KUBARK actually mean?",
+   "options": [
+    "The surname of the officer who wrote it",
+    "A Russian word for a type of interrogation",
+    "A CIA codename for the agency itself"
+   ],
+   "answer": 2,
+   "why": "It is a cryptonym. The manual is named after its owner, not after a technique."
+  },
+  {
+   "guide": "03",
+   "stop": "8.1",
+   "name": "KUBARK: inside the CIA’s 1963 manual",
+   "link": "guides/03-cons-and-cults.html#m8-1",
+   "id": "03-8.1-q2",
+   "type": "quiz",
+   "q": "What is the aim of the manual’s “Alice in Wonderland” technique?",
+   "options": [
+    "To confuse a prisoner until the questioner seems the only fixed point",
+    "To relax a prisoner by reading him stories from children’s books",
+    "To hypnotise a prisoner so he forgets what he was asked"
+   ],
+   "answer": 0,
+   "why": "The manual calls it a confusion technique, designed to replace the familiar with the weird."
+  },
+  {
+   "guide": "03",
+   "stop": "8.1",
+   "name": "KUBARK: inside the CIA’s 1963 manual",
+   "link": "guides/03-cons-and-cults.html#m8-1",
+   "id": "03-8.1-q3",
+   "type": "quiz",
+   "q": "What did KUBARK itself warn about intense pain?",
+   "options": [
+    "It is the fastest route to accurate information",
+    "It has no effect on trained intelligence officers",
+    "It is quite likely to produce false confessions"
+   ],
+   "answer": 2,
+   "why": "The manual’s own words. False confessions then waste time while investigators prove them untrue."
+  },
+  {
+   "guide": "03",
+   "stop": "8.1",
+   "name": "KUBARK: inside the CIA’s 1963 manual",
+   "link": "guides/03-cons-and-cults.html#m8-1",
+   "id": "03-8.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"KUBARK: inside the CIA’s 1963 manual\" in two or three lines, as you would to a client.",
+   "answer": "Coercion works by owning the world around a person. The defence is an anchor outside the room.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "8.2",
+   "name": "Brainwashing and Biderman’s chart of coercion",
+   "link": "guides/03-cons-and-cults.html#m8-2",
+   "id": "03-8.2-q1",
+   "type": "quiz",
+   "q": "What did Edgar Schein find when he studied American prisoners returning from Korea?",
+   "options": [
+    "Thousands of soldiers had become committed communists",
+    "Collaboration under pressure, but virtually no real conversion",
+    "The prisoners had been hypnotised with secret drugs"
+   ],
+   "answer": 1,
+   "why": "Saying is not believing. The feared mass conversion did not happen."
+  },
+  {
+   "guide": "03",
+   "stop": "8.2",
+   "name": "Brainwashing and Biderman’s chart of coercion",
+   "link": "guides/03-cons-and-cults.html#m8-2",
+   "id": "03-8.2-q2",
+   "type": "quiz",
+   "q": "Which of these is one of the eight methods in Biderman’s chart?",
+   "options": [
+    "Occasional indulgences",
+    "Hypnotic trigger words",
+    "Electric shock machines"
+   ],
+   "answer": 0,
+   "why": "Small kindnesses after hardship give the prisoner something to lose. None of the eight needs a machine."
+  },
+  {
+   "guide": "03",
+   "stop": "8.2",
+   "name": "Brainwashing and Biderman’s chart of coercion",
+   "link": "guides/03-cons-and-cults.html#m8-2",
+   "id": "03-8.2-q3",
+   "type": "quiz",
+   "q": "Why do some domestic abuse and cult recovery educators use Biderman’s chart?",
+   "options": [
+    "The same pressures work on partners and recruits as on prisoners",
+    "It was originally written to describe religious groups",
+    "It proves every abuser follows the same written manual"
+   ],
+   "answer": 0,
+   "why": "Isolation, exhaustion, indulgences and trivial demands work in any closed world. It is a map, not proof."
+  },
+  {
+   "guide": "03",
+   "stop": "8.2",
+   "name": "Brainwashing and Biderman’s chart of coercion",
+   "link": "guides/03-cons-and-cults.html#m8-2",
+   "id": "03-8.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Brainwashing and Biderman’s chart of coercion\" in two or three lines, as you would to a client.",
+   "answer": "Brainwashing is a myth of magic. Coercion is a set of ordinary pressures, combined.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "8.3",
+   "name": "MKUltra and the hunt for mind control",
+   "link": "guides/03-cons-and-cults.html#m8-3",
+   "id": "03-8.3-q1",
+   "type": "quiz",
+   "q": "Why do we know as much as we do about MKUltra?",
+   "options": [
+    "Sidney Gottlieb wrote a full public confession before he died",
+    "The CIA published every file as soon as the programme ended",
+    "Misfiled financial records survived the order to destroy the files"
+   ],
+   "answer": 2,
+   "why": "Helms ordered the files destroyed in 1973. A 1977 search found records filed in the wrong place."
+  },
+  {
+   "guide": "03",
+   "stop": "8.3",
+   "name": "MKUltra and the hunt for mind control",
+   "link": "guides/03-cons-and-cults.html#m8-3",
+   "id": "03-8.3-q2",
+   "type": "quiz",
+   "q": "What happened to Frank Olson in 1953?",
+   "options": [
+    "He ran the MKUltra programme for the CIA until he retired",
+    "CIA staff secretly gave him LSD, and about a week later he died",
+    "He exposed MKUltra to newspapers and then fled to Canada"
+   ],
+   "answer": 1,
+   "why": "President Ford later called the drugging an apparent proximate cause of his death. Congress paid his family."
+  },
+  {
+   "guide": "03",
+   "stop": "8.3",
+   "name": "MKUltra and the hunt for mind control",
+   "link": "guides/03-cons-and-cults.html#m8-3",
+   "id": "03-8.3-q3",
+   "type": "quiz",
+   "q": "What did MKUltra’s search for mind control produce?",
+   "options": [
+    "The hypnotic triggers shown in The Manchurian Candidate",
+    "No reliable method, but real victims and lawsuits",
+    "A working technique that the CIA still keeps secret"
+   ],
+   "answer": 1,
+   "why": "Real abuse, no switch. That gap is where the conspiracy theories grow."
+  },
+  {
+   "guide": "03",
+   "stop": "8.3",
+   "name": "MKUltra and the hunt for mind control",
+   "link": "guides/03-cons-and-cults.html#m8-3",
+   "id": "03-8.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"MKUltra and the hunt for mind control\" in two or three lines, as you would to a client.",
+   "answer": "The CIA searched for a mind-control switch and found none. The harm was real anyway.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "8.4",
+   "name": "Does coercion work? From KUBARK to the torture report",
+   "link": "guides/03-cons-and-cults.html#m8-4",
+   "id": "03-8.4-q1",
+   "type": "quiz",
+   "q": "What was the Senate Intelligence Committee’s first finding about the CIA’s techniques?",
+   "options": [
+    "They were not an effective means of acquiring intelligence",
+    "They were effective but too expensive to continue",
+    "They worked, but only on the most senior detainees"
+   ],
+   "answer": 0,
+   "why": "Several detainees fabricated information under pressure. The CIA disputed the report; the law changed anyway."
+  },
+  {
+   "guide": "03",
+   "stop": "8.4",
+   "name": "Does coercion work? From KUBARK to the torture report",
+   "link": "guides/03-cons-and-cults.html#m8-4",
+   "id": "03-8.4-q2",
+   "type": "quiz",
+   "q": "Which of these is a known risk factor for false confessions?",
+   "options": [
+    "Recording the whole interrogation on video",
+    "Letting the suspect speak to a lawyer first",
+    "Lying to the suspect about the evidence"
+   ],
+   "answer": 2,
+   "why": "Kassin’s 2010 review lists false evidence, youth and long sessions, and calls for recording every interrogation."
+  },
+  {
+   "guide": "03",
+   "stop": "8.4",
+   "name": "Does coercion work? From KUBARK to the torture report",
+   "link": "guides/03-cons-and-cults.html#m8-4",
+   "id": "03-8.4-q3",
+   "type": "quiz",
+   "q": "What does the PEACE model aim to get from a suspect?",
+   "options": [
+    "A confession as quickly as possible",
+    "A signed statement before a lawyer arrives",
+    "A full account that can be checked"
+   ],
+   "answer": 2,
+   "why": "Adopted in 1992 after confessions in famous cases collapsed. Information first, confession optional."
+  },
+  {
+   "guide": "03",
+   "stop": "8.4",
+   "name": "Does coercion work? From KUBARK to the torture report",
+   "link": "guides/03-cons-and-cults.html#m8-4",
+   "id": "03-8.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Does coercion work? From KUBARK to the torture report\" in two or three lines, as you would to a client.",
+   "answer": "Pressure produces words, not truth. Rapport produces accounts you can check.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "8.5",
+   "name": "Case file: L. Ron Hubbard and Scientology",
+   "link": "guides/03-cons-and-cults.html#m8-5",
+   "id": "03-8.5-q1",
+   "type": "quiz",
+   "q": "What was Operation Snow White?",
+   "options": [
+    "A CIA mission to infiltrate the Church of Scientology in the 1970s",
+    "A church operation that planted spies in US government agencies",
+    "A Scientology course for training new auditors in confession"
+   ],
+   "answer": 1,
+   "why": "It ended in FBI raids in 1977 and convictions, including Hubbard’s wife. The spying ran toward the government."
+  },
+  {
+   "guide": "03",
+   "stop": "8.5",
+   "name": "Case file: L. Ron Hubbard and Scientology",
+   "link": "guides/03-cons-and-cults.html#m8-5",
+   "id": "03-8.5-q2",
+   "type": "quiz",
+   "q": "What is true about Scientology and the CIA’s psychic research?",
+   "options": [
+    "Two key researchers were Scientologists at the time",
+    "The CIA used auditing to question its own agents",
+    "Hubbard personally ran the CIA’s psychic programme"
+   ],
+   "answer": 0,
+   "why": "Puthoff and Swann were Scientologists. The programme ended in 1995 after an evaluation found no intelligence value."
+  },
+  {
+   "guide": "03",
+   "stop": "8.5",
+   "name": "Case file: L. Ron Hubbard and Scientology",
+   "link": "guides/03-cons-and-cults.html#m8-5",
+   "id": "03-8.5-q3",
+   "type": "quiz",
+   "q": "What did Hubbard’s 1967 “Fair Game” letter say about declared enemies?",
+   "options": [
+    "They should be forgiven and invited back in",
+    "They could be tricked, sued, lied to or destroyed",
+    "They must be reported to the police at once"
+   ],
+   "answer": 1,
+   "why": "A 1968 letter cancelled the label. In 1989 a court still found a fair game campaign against a former member."
+  },
+  {
+   "guide": "03",
+   "stop": "8.5",
+   "name": "Case file: L. Ron Hubbard and Scientology",
+   "link": "guides/03-cons-and-cults.html#m8-5",
+   "id": "03-8.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Case file: L. Ron Hubbard and Scientology\" in two or three lines, as you would to a client.",
+   "answer": "Watch how a group treats confession and exit. That tells you what it is.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "03",
+   "stop": "8.6",
+   "name": "Case file: Charles Manson and the Family",
+   "link": "guides/03-cons-and-cults.html#m8-6",
+   "id": "03-8.6-q1",
+   "type": "quiz",
+   "q": "What did Manson study in prison that he later used on his followers?",
+   "options": [
+    "Hypnosis taught to him by the CIA",
+    "Interrogation from army field manuals",
+    "Dale Carnegie courses and Scientology"
+   ],
+   "answer": 2,
+   "why": "Ordinary self-improvement and a new religion’s methods, aimed at control. No secret training required."
+  },
+  {
+   "guide": "03",
+   "stop": "8.6",
+   "name": "Case file: Charles Manson and the Family",
+   "link": "guides/03-cons-and-cults.html#m8-6",
+   "id": "03-8.6-q2",
+   "type": "quiz",
+   "q": "Which rule at Spahn Ranch matches Biderman’s “trivial demands”?",
+   "options": [
+    "No wearing eyeglasses and no carrying money",
+    "Recording every conversation on hidden tapes",
+    "Paying members a weekly wage to stay on"
+   ],
+   "answer": 0,
+   "why": "Small, arbitrary rules train obedience long before anything big is asked."
+  },
+  {
+   "guide": "03",
+   "stop": "8.6",
+   "name": "Case file: Charles Manson and the Family",
+   "link": "guides/03-cons-and-cults.html#m8-6",
+   "id": "03-8.6-q3",
+   "type": "quiz",
+   "q": "How should you grade the claim that Manson was a CIA mind-control project?",
+   "options": [
+    "Disproved: the CIA has shown MKUltra never existed",
+    "Proven: the CIA admitted it at the 1977 Senate hearing",
+    "Unproven: MKUltra was real, but nothing links Manson to it"
+   ],
+   "answer": 2,
+   "why": "Separate the documented programme from the missing link. That is the skill of this whole file."
+  },
+  {
+   "guide": "03",
+   "stop": "8.6",
+   "name": "Case file: Charles Manson and the Family",
+   "link": "guides/03-cons-and-cults.html#m8-6",
+   "id": "03-8.6-r1",
+   "type": "recall",
+   "q": "Drill \"Boss fight: the interrogation-room audit\": what are the steps, and the usual mistake?",
+   "answer": "1) Pick one film or series from File 8: The Master, Charlie Says, Wormwood, The Report or The Lives of Others. 2) Watch one key scene and list every pressure you see, using KUBARK’s theory, Biderman’s eight and Lifton’s criteria from stop 1.3. 3) Sort them: which pressures are physical, which are social and which control information? 4) Find the anchor: the person, fact or memory that would let the character resist. Does the film give them one? 5) Pick one conspiracy claim from this file and give it a truth tag: what is documented, what is argued, what is missing. 6) Write a one-page fictional scene in which a character resists by holding on to an anchor outside the room. Usual mistake: Treating the controller as a hypnotist. In every case in this file, control came from ordinary pressures, combined and kept up. Write the pressures, not the magic.",
+   "label": "Drill"
+  },
+  {
+   "guide": "03",
+   "stop": "8.6",
+   "name": "Case file: Charles Manson and the Family",
+   "link": "guides/03-cons-and-cults.html#m8-6",
+   "id": "03-8.6-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Case file: Charles Manson and the Family\" in two or three lines, as you would to a client.",
+   "answer": "Manson had no magic. He had lonely people, a closed world and a story. That was enough, which is why it matters.",
    "label": "Say it in the room"
   }
  ]
