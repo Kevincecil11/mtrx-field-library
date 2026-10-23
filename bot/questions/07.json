@@ -7,7 +7,10 @@
   "0.1",
   "0.2",
   "1.1",
-  "1.2"
+  "1.2",
+  "1.3",
+  "1.4",
+  "1.5"
  ],
  "cards": [
   {
@@ -148,6 +151,183 @@
    "type": "recall",
    "q": "Page closed: explain \"How do designers get from fog to a decision?\" in two or three lines, as you would to a client.",
    "answer": "Go wide before you decide, then kill ideas for reasons you can say out loud.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "07",
+   "stop": "1.3",
+   "name": "What does the eye grab first, and what does it miss?",
+   "link": "guides/07-design.html#m1-3",
+   "id": "07-1.3-q1",
+   "type": "quiz",
+   "q": "Why is an orange circle among orange squares and grey circles slow to find?",
+   "options": [
+    "Circles are always noticed more slowly than squares",
+    "It shares one feature with each kind of neighbour",
+    "Orange is harder for the eye to see than grey is"
+   ],
+   "answer": 1,
+   "why": "A conjunction of features needs focused search. A single unique feature pops out."
+  },
+  {
+   "guide": "07",
+   "stop": "1.3",
+   "name": "What does the eye grab first, and what does it miss?",
+   "link": "guides/07-design.html#m1-3",
+   "id": "07-1.3-q2",
+   "type": "quiz",
+   "q": "What did Yarbus show with the Repin painting?",
+   "options": [
+    "The scan path through a picture changes with the viewer's task",
+    "All viewers follow the same fixed path through any picture they see",
+    "People look mostly at the brightest part of any painting"
+   ],
+   "answer": 0,
+   "why": "The scan paths changed with each question. The original was one observer; replications found a smaller effect."
+  },
+  {
+   "guide": "07",
+   "stop": "1.3",
+   "name": "What does the eye grab first, and what does it miss?",
+   "link": "guides/07-design.html#m1-3",
+   "id": "07-1.3-q3",
+   "type": "quiz",
+   "q": "What does the NN/g 2017 update say about the F-pattern?",
+   "options": [
+    "It is a fixed law of reading that every web page should be built around",
+    "It was disproved, so text layout has no effect on scanning",
+    "It is common on dense text, and good layout can prevent it"
+   ],
+   "answer": 2,
+   "why": "The F is a warning about walls of text, not an instruction to put everything top left."
+  },
+  {
+   "guide": "07",
+   "stop": "1.3",
+   "name": "What does the eye grab first, and what does it miss?",
+   "link": "guides/07-design.html#m1-3",
+   "id": "07-1.3-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"What does the eye grab first, and what does it miss?\" in two or three lines, as you would to a client.",
+   "answer": "Attention is a spotlight steered by the task. Design for what people are trying to do, not for how you hope they will look.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "07",
+   "stop": "1.4",
+   "name": "What are point, line, plane, shape and form doing?",
+   "link": "guides/07-design.html#m1-4",
+   "id": "07-1.4-q1",
+   "type": "quiz",
+   "q": "What were Kandinsky's three basic elements in his 1926 Bauhaus book?",
+   "options": [
+    "Point, line and the basic plane",
+    "Hue, value and the colour wheel",
+    "Colour, texture and the pattern grid"
+   ],
+   "answer": 0,
+   "why": "Point and Line to Plane has chapters on the point, the line and the basic plane."
+  },
+  {
+   "guide": "07",
+   "stop": "1.4",
+   "name": "What are point, line, plane, shape and form doing?",
+   "link": "guides/07-design.html#m1-4",
+   "id": "07-1.4-q2",
+   "type": "quiz",
+   "q": "What did the 2021 study of bouba and kiki in 25 languages find?",
+   "options": [
+    "The effect appears only for speakers who grew up reading the Roman alphabet",
+    "Strong evidence that the match holds across languages and scripts",
+    "People pair the words with shapes at random once tested fairly"
+   ],
+   "answer": 1,
+   "why": "Roman-script readers were only marginally more likely to show it. The effect did not depend on the shape of letters."
+  },
+  {
+   "guide": "07",
+   "stop": "1.4",
+   "name": "What are point, line, plane, shape and form doing?",
+   "link": "guides/07-design.html#m1-4",
+   "id": "07-1.4-q3",
+   "type": "quiz",
+   "q": "How should a designer treat shape language, such as triangles meaning danger?",
+   "options": [
+    "As a strong rule of thumb, to test on real viewers",
+    "As a proven law of perception that works the same everywhere",
+    "As a myth with no connection to how people perceive shapes"
+   ],
+   "answer": 0,
+   "why": "It rides on real shape and sound correspondences, but context and culture still change the reading."
+  },
+  {
+   "guide": "07",
+   "stop": "1.4",
+   "name": "What are point, line, plane, shape and form doing?",
+   "link": "guides/07-design.html#m1-4",
+   "id": "07-1.4-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"What are point, line, plane, shape and form doing?\" in two or three lines, as you would to a client.",
+   "answer": "Feeling starts below the content: in the marks, their direction and their weight.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "07",
+   "stop": "1.5",
+   "name": "Why do designers squint?",
+   "link": "guides/07-design.html#m1-5",
+   "id": "07-1.5-q1",
+   "type": "quiz",
+   "q": "Why does a squint test help a designer?",
+   "options": [
+    "It shows exactly where a typical visitor will look first and last",
+    "It proves that a design meets the web accessibility standard",
+    "It blurs detail and colour, leaving the masses of light and dark"
+   ],
+   "answer": 2,
+   "why": "It is a rule of thumb for value and hierarchy, not a measure of real gaze or accessibility."
+  },
+  {
+   "guide": "07",
+   "stop": "1.5",
+   "name": "Why do designers squint?",
+   "link": "guides/07-design.html#m1-5",
+   "id": "07-1.5-q2",
+   "type": "quiz",
+   "q": "MTRX orange on white scores about 3.16 to 1. Where can you use it?",
+   "options": [
+    "Nowhere on a website, because it fails every test",
+    "Anywhere, because orange is a strong and vivid hue",
+    "Large headings and buttons, but not body text"
+   ],
+   "answer": 2,
+   "why": "Body text needs 4.5 to 1. Large text and interface parts need 3 to 1."
+  },
+  {
+   "guide": "07",
+   "stop": "1.5",
+   "name": "Why do designers squint?",
+   "link": "guides/07-design.html#m1-5",
+   "id": "07-1.5-q3",
+   "type": "quiz",
+   "q": "What did Dow mean by notan?",
+   "options": [
+    "The order in which colours should be applied",
+    "The pattern of dark and light masses in a design",
+    "A Japanese ideal of perfect simplicity, emptiness and calm"
+   ],
+   "answer": 1,
+   "why": "Notan is the arrangement of dark and light, studied in two or three values before colour."
+  },
+  {
+   "guide": "07",
+   "stop": "1.5",
+   "name": "Why do designers squint?",
+   "link": "guides/07-design.html#m1-5",
+   "id": "07-1.5-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Why do designers squint?\" in two or three lines, as you would to a client.",
+   "answer": "Value first. If it works in grey, colour can only make it better.",
    "label": "Say it in the room"
   }
  ]
