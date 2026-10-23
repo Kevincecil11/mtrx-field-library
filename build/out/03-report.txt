@@ -1,11 +1,11 @@
-build 2026-10-23 05:24 UTC
+build 2026-10-23 05:25 UTC
 status: candidate FAILED lint, guide unchanged
 $ build/03/build.py build/out/03-candidate.html (exit 0)
 progress key replaced 1 times in core scripts
 tail outside scripts: '</div>\n\n</body></html>\n'
 core script 4022 bytes, 06-specific words: []
 core script 2798 bytes, 06-specific words: ['mtrx-room-log-v1']
-built stops: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 8.1, 8.2
+built stops: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 7.1, 7.2, 7.3, 7.4, 7.5, 7.6, 8.1, 8.2, 8.3, 8.4
 dashes converted: 0 em, 0 en
 sources: 195 unique
 wrote build/out/03-candidate.html (857658 bytes)
