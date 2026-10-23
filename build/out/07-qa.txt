@@ -1,0 +1,12 @@
+desktop: {'stops': 2, 'checks': 0, 'rendered': 0, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
+desktop: could not click done 1.1 (Page.click: Timeout 3000ms exceeded.
+Call log:
+waiting for locator("button.done[data-mod=\"1.1\"]")
+)
+desktop errors (blocked network loads not counted, 12 of them): none
+mobile: {'stops': 2, 'checks': 0, 'rendered': 0, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
+mobile: could not click done 1.1 (Page.click: Timeout 3000ms exceeded.
+Call log:
+waiting for locator("button.done[data-mod=\"1.1\"]")
+)
+mobile errors (blocked network loads not counted, 12 of them): none
