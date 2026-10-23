@@ -22,8 +22,8 @@ STAMP = {'hold': 'Holds up', 'part': 'Partly', 'myth': 'Myth', 'anti': 'Anti-mod
 
 PLAN = [
     dict(n=1, part=5, short='I.1', tab='Inside', title='Inside the cult',
-         kicker='File 1 \u00b7 Week 1 \u00b7 the members', promise='Who joins, what the group does to them, and why it works. Seven stops, one a day.',
-         stops=[('1.1', 'Who joins, and why it is not stupidity'), ('1.2', 'What a cult is, and why the word is a fight'),
+         kicker='File 1 \u00b7 Week 1 \u00b7 the members', promise='What a cult is, who joins, what the group does to them, and why it works. Seven stops, one a day.',
+         stops=[('1.1', 'What a cult is, and why the word is a fight'), ('1.2', 'Who joins, and why it is not stupidity'),
                 ('1.3', "The toolkit: Lifton's eight"), ('1.4', 'Cutting the cord: why cults isolate you'),
                 ('1.5', 'Why cults work: strictness, sacrifice and dissonance'), ('1.6', 'Belonging and identity: the happiest time of my life'),
                 ('1.7', 'Case file: Jonestown, read with everything')]),
@@ -60,6 +60,11 @@ PLAN = [
          stops=[('7.1', "Cialdini's levers: which survived replication"), ('7.2', 'The 48 Laws as story, not science'),
                 ('7.3', 'Coercive control: when influence becomes captivity'), ('7.4', 'The investigators: Markopolos, Carreyrou and the short sellers'),
                 ('7.5', 'Red-team your own pitch: honest influence for MTRX\u2122'), ('7.6', 'Capstone: write a con film treatment')]),
+    dict(n=8, part=2, short='IV', tab='Bonus', title='The interrogation room',
+         kicker='File 8 \u00b7 Week 8 \u00b7 the interrogators', promise='A bonus deep dive: the CIA\'s KUBARK manual, Biderman\'s chart, MKUltra and the torture report, then two case files, L. Ron Hubbard and Charles Manson.',
+         stops=[('8.1', "KUBARK: inside the CIA's 1963 manual"), ('8.2', "Brainwashing and Biderman's chart of coercion"),
+                ('8.3', 'MKUltra and the hunt for mind control'), ('8.4', 'Does coercion work? From KUBARK to the torture report'),
+                ('8.5', 'Case file: L. Ron Hubbard and Scientology'), ('8.6', 'Case file: Charles Manson and the Family')]),
 ]
 LOG = []
 
@@ -214,7 +219,7 @@ def main(dst):
     cover = ('<header class="wrap cover" id="top" data-sec="0"><div><div class="kicker">MTRX\u2122 Field Series \u00b7 No. 03 \u00b7 October 2026</div>'
              '<h1 class="cover-title">Cons and <span class="o">cults</span></h1><p class="cover-sub">%s</p>'
              '<ul class="verbs"><li>Ask</li><li>Explain</li><li>Write</li></ul>'
-             '<p class="prepared">Prepared for <b>Kevin Cecil</b>, founder, MTRX\u2122 Digital, and future director<br>%d stops built of %d planned \u00b7 7 files \u00b7 20 minutes a day \u00b7 a writer\'s room in every stop<br>Sources checked 22 October 2026</p>'
+             '<p class="prepared">Prepared for <b>Kevin Cecil</b>, founder, MTRX\u2122 Digital, and future director<br>%d stops built of %d planned \u00b7 8 files \u00b7 20 minutes a day \u00b7 a writer\'s room in every stop<br>Sources checked 23 October 2026</p>'
              '<a class="btn btn-a" href="#m0-1">Start here <span aria-hidden="true">\u2193</span></a></div>'
              '<div class="cover-plate"><nav class="cube6" aria-label="Nine videos in this guide">%s</nav><p class="cube-cap">Nine of the videos inside. Tap one to jump to its stop.</p></div></header>') % (
         start.SUB if start else '', nbuilt + (len(start.STOPS) if start else 0), total + (len(start.STOPS) if start else 0), cube)
