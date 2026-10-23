@@ -22,7 +22,7 @@ STOP = dict(
                      ('End', 'Asahara and 12 other members were executed in July 2018')],
               stamp=('field', 'Field test: outward violence')),
     cold=dict(q="Aum Shinrikyo recruited chemists, doctors and engineers from some of Japan's best universities. Predict: did all that education make the group safer, or more dangerous?",
-              a="More dangerous, twice over. First, it gave the group capability: trained people could build a chemical weapons lab that a group of drifters never could. Second, it confirms stop 1.1: education did not protect those members from the group. They used their training in its service. Violence is not a sign of stupid followers. It is a sign of a closed system with the means to act."),
+              a="More dangerous, twice over. First, it gave the group capability: trained people could build a chemical weapons lab that a group of drifters never could. Second, it confirms stop 1.2: education did not protect those members from the group. They used their training in its service. Violence is not a sign of stupid followers. It is a sign of a closed system with the means to act."),
     video=dict(id='73gLkuXywAw', title='Lessons learned: the Tokyo sarin gas attack', who='Council on Foreign Relations',
                watch=['How a religious group acquired chemical weapons capability',
                       'Which warning signs authorities had before March 1995',
