@@ -1,0 +1,154 @@
+{
+ "guide": "07",
+ "title": "MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil",
+ "file": "07-design.html",
+ "day": false,
+ "stops": [
+  "0.1",
+  "0.2",
+  "1.1",
+  "1.2"
+ ],
+ "cards": [
+  {
+   "guide": "07",
+   "stop": "0.1",
+   "name": "Why do a safari website and a Kubrick frame need the same eye?",
+   "link": "guides/07-design.html#m0-1",
+   "id": "07-0.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"Why do a safari website and a Kubrick frame need the same eye?\" in two or three lines, as you would to a client.",
+   "answer": "Train the eye first. Every craft after it gets cheaper to learn.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "07",
+   "stop": "0.2",
+   "name": "What is design, if it is not decoration?",
+   "link": "guides/07-design.html#m0-2",
+   "id": "07-0.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"What is design, if it is not decoration?\" in two or three lines, as you would to a client.",
+   "answer": "Design is a plan with a purpose. Decoration is what you get when the purpose goes missing.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "07",
+   "stop": "1.1",
+   "name": "What problem are we actually designing?",
+   "link": "guides/07-design.html#m1-1",
+   "id": "07-1.1-q1",
+   "type": "quiz",
+   "q": "What did the 1972 subway map get wrong, according to the riders?",
+   "options": [
+    "It did not help them relate the subway to the streets above",
+    "Its colours were too dull to tell the routes apart on the platform",
+    "It was drawn too small to read the station names anywhere"
+   ],
+   "answer": 0,
+   "why": "The diagram made routes legible but drew geography loosely, so riders could not place themselves above ground."
+  },
+  {
+   "guide": "07",
+   "stop": "1.1",
+   "name": "What problem are we actually designing?",
+   "link": "guides/07-design.html#m1-1",
+   "id": "07-1.1-q2",
+   "type": "quiz",
+   "q": "Which line is a usable problem frame for a safari website?",
+   "options": [
+    "Make the homepage feel more premium than every competitor in the region",
+    "Use bigger wildlife photos and a darker, more elegant palette",
+    "How might a first-time guest compare lodges and keep the wonder?"
+   ],
+   "answer": 2,
+   "why": "A frame names a person, a task and a feeling. The others are requests for a look."
+  },
+  {
+   "guide": "07",
+   "stop": "1.1",
+   "name": "What problem are we actually designing?",
+   "link": "guides/07-design.html#m1-1",
+   "id": "07-1.1-q3",
+   "type": "quiz",
+   "q": "How did Eames describe design constraints?",
+   "options": [
+    "As obstacles a talented designer should negotiate away early",
+    "As limits that often imply an ethic, to work within with enthusiasm",
+    "As details for the engineers, kept well away from the creative idea itself"
+   ],
+   "answer": 1,
+   "why": "Eames: there are always design constraints, and these often imply an ethic."
+  },
+  {
+   "guide": "07",
+   "stop": "1.1",
+   "name": "What problem are we actually designing?",
+   "link": "guides/07-design.html#m1-1",
+   "id": "07-1.1-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"What problem are we actually designing?\" in two or three lines, as you would to a client.",
+   "answer": "Beautiful work on the wrong problem is still the wrong work.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "07",
+   "stop": "1.2",
+   "name": "How do designers get from fog to a decision?",
+   "link": "guides/07-design.html#m1-2",
+   "id": "07-1.2-q1",
+   "type": "quiz",
+   "q": "What does the first diamond of the Double Diamond produce?",
+   "options": [
+    "A moodboard of attractive references in the client's style",
+    "A clearly defined problem, found by going wide first",
+    "A finished prototype, ready for the client to approve"
+   ],
+   "answer": 1,
+   "why": "Discover and Define find the right problem. Develop and Deliver find the right solution."
+  },
+  {
+   "guide": "07",
+   "stop": "1.2",
+   "name": "How do designers get from fog to a decision?",
+   "link": "guides/07-design.html#m1-2",
+   "id": "07-1.2-q2",
+   "type": "quiz",
+   "q": "What did the Eameses say you must do first, before designing a lota?",
+   "options": [
+    "Shut out preconceived ideas and consider factor after factor",
+    "Study the most beautiful antique lotas and copy their proportions",
+    "Ask the government which modern material the factories preferred"
+   ],
+   "answer": 0,
+   "why": "The report lists the factors: liquid, hands, transport, balance, pouring, filling and cleaning."
+  },
+  {
+   "guide": "07",
+   "stop": "1.2",
+   "name": "How do designers get from fog to a decision?",
+   "link": "guides/07-design.html#m1-2",
+   "id": "07-1.2-q3",
+   "type": "quiz",
+   "q": "What was Natasha Jen's main complaint about design thinking?",
+   "options": [
+    "Designers should never talk to the people who will use their work",
+    "Research slows projects down and should be left to market analysts",
+    "Its marketing sells a tidy diagram as if it gave you design judgement"
+   ],
+   "answer": 2,
+   "why": "She objects to the workshop version, not to thinking like a designer. Craft and responsibility still matter."
+  },
+  {
+   "guide": "07",
+   "stop": "1.2",
+   "name": "How do designers get from fog to a decision?",
+   "link": "guides/07-design.html#m1-2",
+   "id": "07-1.2-r1",
+   "type": "recall",
+   "q": "Page closed: explain \"How do designers get from fog to a decision?\" in two or three lines, as you would to a client.",
+   "answer": "Go wide before you decide, then kill ideas for reasons you can say out loud.",
+   "label": "Say it in the room"
+  }
+ ]
+}
