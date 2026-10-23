@@ -1,12 +1,8 @@
-desktop: {'stops': 2, 'checks': 0, 'rendered': 0, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
-desktop: could not click done 1.1 (Page.click: Timeout 3000ms exceeded.
-Call log:
-waiting for locator("button.done[data-mod=\"1.1\"]")
-)
+desktop: {'stops': 4, 'checks': 6, 'rendered': 6, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
+desktop after marking 1.1 done, localStorage: ['mtrx-design-v1={"done":{"1.1":true}}']
+desktop: clicked a quiz option, check html: <script type="application/json">{"q": "What did the 1972 subway map get wrong, according to the riders?", "o": ["It did not help them relate the subway to the streets above", "Its colours were too dull to tell the routes apart on the platform", "It was drawn too small to read the station names anywh
 desktop errors (blocked network loads not counted, 12 of them): none
-mobile: {'stops': 2, 'checks': 0, 'rendered': 0, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
-mobile: could not click done 1.1 (Page.click: Timeout 3000ms exceeded.
-Call log:
-waiting for locator("button.done[data-mod=\"1.1\"]")
-)
+mobile: {'stops': 4, 'checks': 6, 'rendered': 6, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
+mobile after marking 1.1 done, localStorage: ['mtrx-design-v1={"done":{"1.1":true}}']
+mobile: clicked a quiz option, check html: <script type="application/json">{"q": "What did the 1972 subway map get wrong, according to the riders?", "o": ["It did not help them relate the subway to the streets above", "Its colours were too dull to tell the routes apart on the platform", "It was drawn too small to read the station names anywh
 mobile errors (blocked network loads not counted, 12 of them): none
