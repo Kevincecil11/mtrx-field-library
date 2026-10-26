@@ -686,14 +686,13 @@
   }
  },
  "hour": 8,
- "last_push": "2026-10-25",
+ "last_push": "2026-10-26",
  "listener": {
-  "checked_at": "2026-10-26T07:57:33+05:30",
-  "mode": "handoff",
-  "run_id": "40258355436"
+  "checked_at": "2026-10-26T08:00:10+05:30",
+  "mode": "long-poll",
+  "run_id": "40259197283"
  },
  "log": [
-  "2026-10-09 08:00 pushed 15 cards",
   "2026-10-10 06:42 listener retry: getUpdates failed: Bad Gateway",
   "2026-10-10 06:43 listener retry: The read operation timed out",
   "2026-10-10 06:44 listener retry: The read operation timed out",
@@ -732,9 +731,10 @@
   "2026-10-25 08:00 pushed 15 cards",
   "2026-10-26 06:41 listener retry: getUpdates failed: Bad Gateway",
   "2026-10-26 06:41 listener retry: getUpdates failed: Bad Gateway",
-  "2026-10-26 06:42 listener retry: The read operation timed out"
+  "2026-10-26 06:42 listener retry: The read operation timed out",
+  "2026-10-26 08:00 quiet after 3 unanswered reviews, one nudge sent"
  ],
- "nudged": false,
+ "nudged": true,
  "offset": 806113021,
  "paused": false,
  "polls": {
@@ -1419,8 +1419,9 @@
    "sent": "2026-10-25"
   }
  },
- "silent": 2,
+ "silent": 3,
  "today": {
+  "counted": true,
   "date": "2026-10-25",
   "got": 0,
   "miss": 0,
