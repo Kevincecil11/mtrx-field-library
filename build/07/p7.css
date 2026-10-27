@@ -21,3 +21,14 @@
 .fields b{display:block;font:800 17px/1.3 var(--sans)}.fields span{display:block;font-size:15px;color:var(--ink-2,#333);margin-top:4px}
 .legend{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}.legend li{list-style:none;display:flex;gap:8px;align-items:center;font-size:15px}
 @media (max-width:640px){.plate-vals{grid-template-columns:1fr}}
+/* lite stops, Parts 2 to 9 (27 Oct 2026) */
+.mod.lite .story{margin:18px 0 8px}
+.look{list-style:none;padding:0;margin:14px 0 24px;display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.look li{background:var(--paper);padding:14px 16px;border-left:3px solid var(--mars);font-size:16px;line-height:1.55;overflow-wrap:anywhere}
+.look li b{display:block;font:800 16px/1.35 var(--sans);margin-bottom:4px}
+.look li a{font:700 13px var(--mono);white-space:nowrap}
+.lite-plate .plate-out{display:none}
+.lite-plate.plate-offline .plate-img{display:none}
+.lite-plate.plate-offline .plate-out{display:block}
+.lite-plate .plate-img img{display:block;width:100%;height:auto;min-height:140px;background:var(--canvas)}
+.steal ul{margin:8px 0 0;padding-left:20px}.steal li{margin:4px 0}

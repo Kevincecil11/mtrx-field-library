@@ -1,8 +1,8 @@
-desktop: {'stops': 7, 'checks': 15, 'rendered': 15, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
-desktop after marking 1.1 done, localStorage: ['mtrx-design-v1={"done":{"1.1":true}}']
+desktop: {'stops': 78, 'checks': 15, 'rendered': 15, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 1280}
+desktop after marking 1.1 done, localStorage: ['mtrx-design-style-dials-v1=[20,76,15,35,70,35,35,35]', 'mtrx-design-v1={"done":{"1.1":true}}']
 desktop: clicked a quiz option, check html: <script type="application/json">{"q": "What did the 1972 subway map get wrong, according to the riders?", "o": ["It did not help them relate the subway to the streets above", "Its colours were too dull to tell the routes apart on the platform", "It was drawn too small to read the station names anywh
-desktop errors (blocked network loads not counted, 12 of them): none
-mobile: {'stops': 7, 'checks': 15, 'rendered': 15, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
-mobile after marking 1.1 done, localStorage: ['mtrx-design-v1={"done":{"1.1":true}}']
+desktop errors (blocked network loads not counted, 5 of them): none
+mobile: {'stops': 78, 'checks': 15, 'rendered': 15, 'thumbs': 10, 'search': True, 'bar': True, 'title': 'MTRX™ Field Series No. 07 · Design and taste · Kevin Cecil', 'overflowX': False, 'scrollWidth': 390}
+mobile after marking 1.1 done, localStorage: ['mtrx-design-style-dials-v1=[20,76,15,35,70,35,35,35]', 'mtrx-design-v1={"done":{"1.1":true}}']
 mobile: clicked a quiz option, check html: <script type="application/json">{"q": "What did the 1972 subway map get wrong, according to the riders?", "o": ["It did not help them relate the subway to the streets above", "Its colours were too dull to tell the routes apart on the platform", "It was drawn too small to read the station names anywh
-mobile errors (blocked network loads not counted, 12 of them): none
+mobile errors (blocked network loads not counted, 5 of them): none

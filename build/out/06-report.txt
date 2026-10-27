@@ -1,20 +1,21 @@
-build 2026-10-22 17:15 UTC
+build 2026-10-27 16:27 UTC
 status: candidate passed lint and replaced the guide
 $ build/06/build.py guides/06-read-the-room.html build/out/06-candidate.html (exit 0)
 css replaced
 file 1 replaced: 7 stops
-s2 head retitled
-s3 head retitled
-s5 head retitled
+file 2 inserted: 6 stops
+file 3 took over s2: 9 stops
+file 4 took over s3: 8 stops
+file 5 took over s5: 4 stops
 tabs rebuilt
 cover updated
-sources replaced: 29 cards
+sources replaced: 174 cards
 Part I unchanged (sha256 b121690af0ea)
-wrote build/out/06-candidate.html (953754 bytes)
+wrote build/out/06-candidate.html (1411521 bytes)
 
 $ tools/quiz_audit.py --fix build/out/06-candidate.html (exit 0)
-BEFORE 06-candidate.html: 68 checks | right-answer position 3 options: A=17 B=35 C=16 | right answer is the longest option in 47 of 68 (69%) | median length ratio 1.60
-AFTER  06-candidate.html: 68 checks | right-answer position 3 options: A=22 B=24 C=22 | right answer is the longest option in 47 of 68 (69%) | median length ratio 1.60 | changed 17 checks; skipped {'numeric scale': 1}
+BEFORE 06-candidate.html: 149 checks | right-answer position 3 options: A=41 B=68 C=40 | right answer is the longest option in 55 of 149 (37%) | median length ratio 1.08
+AFTER  06-candidate.html: 149 checks | right-answer position 3 options: A=51 B=48 C=50 | right answer is the longest option in 55 of 149 (37%) | median length ratio 1.08 | changed 83 checks; skipped {'numeric scale': 2, 'points at positions': 4}
 
 Markup after the first check in 06-candidate.html: '</div><button class="done" data-mod="0.1">Mark stop 0.1 done</button></article><article class="mod" id="m0-2" data-mod="0.2"><div class="mod-meta">Stop 0.2 · Start <span class="t">5 min</span></div><h2 class="mod-title">Your baseline: ten questions first</h2><p class="mod-why">Ten quick questions before any teaching. Guess even when you&#x27;re unsure: wrong guesses now make the right answers stic'
 Script near the first check reference: 'ill:var(--paper)}\n.s-ta{fill:var(--accent-ink)}\n[data-steps].is-on{fill:var(--mars-soft)}\n.march{stroke-dasharray:3 9;animation:march 22s linear infinite}\n@keyframes march{to{stroke-dashoffset:-480}}\n.check{background:var(--paper);border-radius:var(--radius);padding:22px;margin:28px 0;box-shadow:inset 0 0 0 2px var(--accent-soft);max-width:860px}\n.check-k{font:700 14px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink);margin-bottom:8px}\n.check-q{font:800 19px/1.4 '
@@ -41,24 +42,24 @@ Worst length bias (right answer at least 1.6x the average distractor), for a con
   2.4x  No. 06 stop 1.2: A safari operator sounds cold for the first 30 seconds of a call. Best
   2.4x  No. 06 stop 1.3: Why did the three fingers give Hicox away?
   2.3x  No. 06 stop 2.1: The "70 to 80% eye contact" rule...
+  2.2x  No. 06 stop 2.25: What makes the Godfather favour an anti-model?
   2.1x  No. 06 stop 2.6: After a networking event, forgetting is usually...
   2.1x  No. 06 stop 1.10: Why do sarcastic emails misfire more than senders expect?
   2.1x  No. 06 stop 1.5: Babyfaced adults tend to be seen as...
-  2.0x  No. 06 stop 2.1: What made Kennedy's Paris opener work?
 
 
 $ tools/check_guide.py build/out/06-candidate.html (exit 0)
-build/out/06-candidate.html: 21 stops, 0 errors, 0 warnings
+build/out/06-candidate.html: 48 stops, 0 errors, 0 warnings
 
 $ tools/check_guide.py guides/06-read-the-room.html (exit 0)
-guides/06-read-the-room.html: 21 stops, 0 errors, 0 warnings
+guides/06-read-the-room.html: 48 stops, 0 errors, 0 warnings
 
 $ build/06/index_card.py guides/06-read-the-room.html index.html (exit 0)
-index card 06 already current
+index card 06 updated: Complete · Part I + Part II, 48 stops · daily 20 min; 7 parts
 
 $ build/skeleton.py guides/06-read-the-room.html build/out/06-skeleton.txt (exit 0)
-skeleton: guides/06-read-the-room.html -> build/out/06-skeleton.txt (60191 chars)
+skeleton: guides/06-read-the-room.html -> build/out/06-skeleton.txt (71916 chars)
 
 $ build/probe.py guides/06-read-the-room.html build/out/06-probe.txt (exit 0)
-probe: guides/06-read-the-room.html -> build/out/06-probe.txt (41701 chars)
+probe: guides/06-read-the-room.html -> build/out/06-probe.txt (45692 chars)
 

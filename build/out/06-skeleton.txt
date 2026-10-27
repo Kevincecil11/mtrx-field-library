@@ -1,11 +1,11 @@
-SKELETON of guides/06-read-the-room.html (953754 bytes, 1022 lines)
+SKELETON of guides/06-read-the-room.html (1411521 bytes, 1022 lines)
 
-== A. stops (button.done data-mod, document order): 21
-0.1 0.2 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 1.10 1.11 1.12 2.1 2.2 2.3 2.4 2.5 2.6 2.7
-articles with data-mod: 21 | ids: 0.1=m0-1 0.2=m0-2 1.1=m1-1 1.2=m1-2 1.3=m1-3 1.4=m1-4 1.5=m1-5 1.6=m1-6 1.7=m1-7 1.8=m1-8 1.9=m1-9 1.10=m1-10 1.11=m1-11 1.12=m1-12 2.1=m2-1 2.2=m2-2 2.3=m2-3 2.4=m2-4 2.5=m2-5 2.6=m2-6 2.7=m2-7
-data-part values: ['0', '1', '2', '3', '4', '5']
-elements with data-t: <button class="thumb" type="button" data-t="0" aria-label="Start"> | <button class="thumb" type="button" data-t="1" aria-label="Read the room"> | <button class="thumb" type="button" data-t="4" aria-label="The Spotlight Files"> | <button class="thumb" type="button" data-t="2" aria-label="George Newman"> | <button class="thumb" type="button" data-t="3" aria-label="Network"> | <button class="thumb" type="button" data-t="5" aria-label="The line">
-counts: details=27, .check=68, .drill=7, .room=21, figure=24, img=89, svg=20, a.yt/watch-like=75
+== A. stops (button.done data-mod, document order): 48
+0.1 0.2 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 1.10 1.11 1.12 2.1 2.2 2.3 2.4 2.5 2.6 2.7 2.8 2.9 2.10 2.11 2.12 2.13 2.14 2.15 2.16 2.17 2.18 2.19 2.20 2.21 2.22 2.23 2.24 2.25 2.26 2.27 2.28 2.29 2.30 2.31 2.32 2.33 2.34
+articles with data-mod: 48 | ids: 0.1=m0-1 0.2=m0-2 1.1=m1-1 1.2=m1-2 1.3=m1-3 1.4=m1-4 1.5=m1-5 1.6=m1-6 1.7=m1-7 1.8=m1-8 1.9=m1-9 1.10=m1-10 1.11=m1-11 1.12=m1-12 2.1=m2-1 2.2=m2-2 2.3=m2-3 2.4=m2-4 2.5=m2-5 2.6=m2-6 2.7=m2-7 2.8=m2-8 2.9=m2-9 2.10=m2-10 2.11=m2-11 2.12=m2-12 2.13=m2-13 2.14=m2-14 2.15=m2-15 2.16=m2-16 2.17=m2-17 2.18=m2-18 2.19=m2-19 2.20=m2-20 2.21=m2-21 2.22=m2-22 2.23=m2-23 2.24=m2-24 2.25=m2-25 2.26=m2-26 2.27=m2-27 2.28=m2-28 2.29=m2-29 2.30=m2-30 2.31=m2-31 2.32=m2-32 2.33=m2-33 2.34=m2-34
+data-part values: ['0', '1', '2', '3', '4', '5', '6']
+elements with data-t: <button class="thumb" type="button" data-t="0" aria-label="Start"> | <button class="thumb" type="button" data-t="1" aria-label="Part I: Read the room"> | <button class="thumb" type="button" data-t="4" aria-label="File 1: The Spotlight"> | <button class="thumb" type="button" data-t="6" aria-label="File 2: The Read"> | <button class="thumb" type="button" data-t="2" aria-label="File 3: George Newman"> | <button class="thumb" type="button" data-t="3" aria-label="File 4: Work the network"> | <button class="thumb" type="button" data-t="5" aria-label="File 5: The line">
+counts: details=85, .check=149, .drill=34, .room=48, figure=51, img=156, svg=47, a.yt/watch-like=188
 
 == B. head
   <meta charset="utf-8">
@@ -90,10 +90,91 @@ counts: details=27, .check=68, .drill=7, .room=21, figure=24, img=89, svg=20, a.
   #70 body script type=application/json chars=256 L760 first='{"q": "\\"Guilty, I make the websites. But Rhea\'s the reason I\'m here, ...'
   #71 body script type=application/json chars=240 L760 first='{"q": "\\"How was your weekend?\\" ... \\"Mine was amazing, I went to...\\...'
   #72 body script type=application/json chars=234 L760 first='{"q": "You meet 12 people at an event. When should you write the cards...'
-  #73 body script  chars=4022 L760 first='(function(){ "use strict"; var $ = function(s,r){return (r||document)....'
-  #74 body script  chars=2798 L832 first="(function(){ var box=document.getElementById('calib'); if(!box) return..."
-  #75 body script id=mtrx-kit-js chars=20288 L868 first='(function(){ "use strict"; if(window.__mtrxKit)return;window.__mtrxKit...'
-  #76 body script src=../assets/mtrx-review.js defer= chars=0 L1020 first=''
+  #73 body script type=application/json chars=335 L760 first='{"q": "Which question moves most directly from a stated outcome to a d...'
+  #74 body script type=application/json chars=265 L760 first='{"q": "Which is the SDT trio?", "o": ["Belonging, fairness and novelty...'
+  #75 body script type=application/json chars=345 L760 first='{"q": "What is wrong with the familiar Maslow pyramid?", "o": ["Needs ...'
+  #76 body script type=application/json chars=279 L760 first='{"q": "Which is a playable actor direction?", "o": ["Make your father ...'
+  #77 body script type=application/json chars=323 L760 first='{"q": "Why did Kazan treat Brando and Dean differently?", "o": ["Dean ...'
+  #78 body script type=application/json chars=348 L760 first='{"q": "What does Lumet put under the director\'s responsibility?", "o":...'
+  #79 body script type=application/json chars=354 L760 first='{"q": "What is the hidden-profile trap?", "o": ["Groups repeat shared ...'
+  #80 body script type=application/json chars=433 L760 first='{"q": "Which statement best separates champion from economic buyer?", ...'
+  #81 body script type=application/json chars=356 L760 first='{"q": "What is the best first-five-minute signal of decision power?", ...'
+  #82 body script type=application/json chars=336 L760 first='{"q": "What did Mehrabian and Ferris actually study?", "o": ["Single w...'
+  #83 body script type=application/json chars=283 L760 first='{"q": "A client says \\"interesting\\" after a four-second pause. Best f...'
+  #84 body script type=application/json chars=326 L760 first='{"q": "In Pinker, Nowak and Lee, why can indirectness help?", "o": ["I...'
+  #85 body script type=application/json chars=313 L760 first='{"q": "What is the safest use of a culture framework?", "o": ["A repla...'
+  #86 body script type=application/json chars=306 L760 first='{"q": "Why is Hofstede risky when applied to one client?", "o": ["It m...'
+  #87 body script type=application/json chars=323 L760 first='{"q": "A Kenyan partner is warm but has not signed. Best read?", "o": ...'
+  #88 body script type=application/json chars=328 L760 first='{"q": "What is the first question in a boss-fight meeting read?", "o":...'
+  #89 body script type=application/json chars=311 L760 first='{"q": "Billy Beane and the scouts mainly disagree about...", "o": ["Wh...'
+  #90 body script type=application/json chars=265 L760 first='{"q": "Why set rewatch=True on this stop?", "o": ["Warm-up", "To repla...'
+  #91 body script type=application/json chars=236 L760 first='{"q": "What is the best preparation for a flexible call?", "o": ["One ...'
+  #92 body script type=application/json chars=241 L760 first='{"q": "What did coherent narratives improve in Cohn-Sheehy et al. 2021...'
+  #93 body script type=application/json chars=273 L760 first='{"q": "What did accuracy-focused retelling improve?", "o": ["Immediate...'
+  #94 body script type=application/json chars=252 L760 first='{"q": "What is the safest default for a complex decision?", "o": ["Mod...'
+  #95 body script type=application/json chars=260 L760 first='{"q": "What did the 2025 synthesis find about faster speech?", "o": ["...'
+  #96 body script type=application/json chars=201 L760 first='{"q": "Where should a useful pause go?", "o": ["After every sentence",...'
+  #97 body script type=application/json chars=252 L760 first='{"q": "What did the lower-pitch experiments actually show?", "o": ["Lo...'
+  #98 body script type=application/json chars=244 L760 first='{"q": "What is the safest way to sound settled?", "o": ["Breath, comfo...'
+  #99 body script type=application/json chars=307 L760 first='{"q": "What is the careful verdict on the Thatcher story?", "o": ["It ...'
+  #100 body script type=application/json chars=378 L760 first='{"q": "What did Ranehill et al. 2015 find after a larger replication?"...'
+  #101 body script type=application/json chars=288 L760 first='{"q": "In Johnstone\'s status work, status is best treated as...", "o":...'
+  #102 body script type=application/json chars=343 L760 first='{"q": "What is the practical replacement for power posing?", "o": ["Sp...'
+  #103 body script type=application/json chars=362 L760 first='{"q": "What is the most defensible claim about physiological sighs?", ...'
+  #104 body script type=application/json chars=293 L760 first='{"q": "Jamieson\'s arousal reappraisal asks people to...", "o": ["Treat...'
+  #105 body script type=application/json chars=276 L760 first='{"q": "What does an audience usually need first in a crisis?", "o": ["...'
+  #106 body script type=application/json chars=290 L760 first='{"q": "When appropriate humour lands, what does it often signal?", "o"...'
+  #107 body script type=application/json chars=259 L760 first='{"q": "What is the safer business target for a joke?", "o": ["Your own...'
+  #108 body script type=application/json chars=286 L760 first='{"q": "What is Danny Ocean\'s ethical move worth copying?", "o": ["Hide...'
+  #109 body script type=application/json chars=348 L760 first='{"q": "What is the most useful long-take sequence for a pitch?", "o": ...'
+  #110 body script type=application/json chars=364 L760 first='{"q": "What did Green and Brock study as transportation?", "o": ["Spea...'
+  #111 body script type=application/json chars=392 L760 first='{"q": "What is the ethical limit of borrowing a coercive monologue?", ...'
+  #112 body script type=application/json chars=382 L760 first='{"q": "What does Snyder mean by self-monitoring?", "o": ["Never changi...'
+  #113 body script type=application/json chars=377 L760 first='{"q": "What did the emotional-labor meta-analysis associate with surfa...'
+  #114 body script type=application/json chars=359 L760 first='{"q": "What is the off switch for?", "o": ["Returning to chosen, unper...'
+  #115 body script type=application/json chars=362 L760 first='{"q": "What should you carry into a room of strangers?", "o": ["One li...'
+  #116 body script type=application/json chars=388 L760 first='{"q": "What is the ethical response when a stranger does not reciproca...'
+  #117 body script type=application/json chars=400 L760 first='{"q": "When should George Newman switch off?", "o": ["Only after every...'
+  #118 body script type=application/json chars=279 L760 first='{"q": "What made Ruddy legible to Paramount?", "o": ["A long list of u...'
+  #119 body script type=application/json chars=330 L760 first='{"q": "What is the careful version of the weak-tie finding?", "o": ["W...'
+  #120 body script type=application/json chars=268 L760 first='{"q": "Which is the strongest positioning line for Kevin?", "o": ["I b...'
+  #121 body script type=application/json chars=229 L760 first='{"q": "What belongs first in Kevin\'s one-minute pitch?", "o": ["His en...'
+  #122 body script type=application/json chars=267 L760 first='{"q": "What did Huang and Pearce mean by investor gut feel?", "o": ["E...'
+  #123 body script type=application/json chars=241 L760 first='{"q": "After the small next step, what should Kevin do?", "o": ["Keep ...'
+  #124 body script type=application/json chars=252 L760 first='{"q": "What makes the Godfather favour an anti-model?", "o": ["It cont...'
+  #125 body script type=application/json chars=293 L760 first='{"q": "What is the careful status of the Ben Franklin effect?", "o": [...'
+  #126 body script type=application/json chars=249 L760 first='{"q": "What should guide a professional gift?", "o": ["What the recipi...'
+  #127 body script type=application/json chars=286 L760 first='{"q": "What did the dormant-ties study compare?", "o": ["Old contacts ...'
+  #128 body script type=application/json chars=228 L760 first='{"q": "What should open a reconnection message?", "o": ["A hidden refe...'
+  #129 body script type=application/json chars=276 L760 first='{"q": "What is the ethical boundary in the Ocean\'s Eleven lesson?", "o...'
+  #130 body script type=application/json chars=300 L760 first='{"q": "What did the HBR audit find among companies that replied within...'
+  #131 body script type=application/json chars=277 L760 first='{"q": "What belongs in Kevin\'s people CRM?", "o": ["Context, promise, ...'
+  #132 body script type=application/json chars=284 L760 first='{"q": "Joe Girard\'s 250 figure is best treated as...", "o": ["A peer-r...'
+  #133 body script type=application/json chars=278 L760 first='{"q": "What did the instrumented mixer reveal?", "o": ["Friends made a...'
+  #134 body script type=application/json chars=289 L760 first='{"q": "What is the best entry to a group?", "o": ["Stand silently and ...'
+  #135 body script type=application/json chars=276 L760 first='{"q": "In Cheng et al., prestige differed from dominance because prest...'
+  #136 body script type=application/json chars=260 L760 first='{"q": "What does a historical anecdote prove?", "o": ["A story in a pa...'
+  #137 body script type=application/json chars=250 L760 first='{"q": "Which status route was liked more in Cheng et al.?", "o": ["Dom...'
+  #138 body script type=application/json chars=308 L760 first='{"q": "What did the influence-tactics meta-analysis find about pressur...'
+  #139 body script type=application/json chars=246 L760 first='{"q": "What is the boss-fight score?", "o": ["Messages sent", "How man...'
+  #140 body script type=application/json chars=285 L760 first='{"q": "Why does the cadence evidence need a caveat?", "o": ["It is bas...'
+  #141 body script type=application/json chars=260 L760 first='{"q": "On Friday, what should Kevin do with repeated silence?", "o": [...'
+  #142 body script type=application/json chars=336 L760 first='{"q": "What is the disclosure test looking for?", "o": ["Whether the l...'
+  #143 body script type=application/json chars=308 L760 first='{"q": "Sunstein\'s centre of gravity is that manipulation...", "o": ["U...'
+  #144 body script type=application/json chars=265 L760 first='{"q": "Cialdini\'s ethical influence requires...", "o": ["Truthful, rel...'
+  #145 body script type=application/json chars=329 L760 first='{"q": "What is the safest reading of Belfort\'s straight-line pitch?", ...'
+  #146 body script type=application/json chars=310 L760 first='{"q": "What restitution amount appears in the court record?", "o": ["1...'
+  #147 body script type=application/json chars=265 L760 first='{"q": "What is the best defence to urgency?", "o": ["Ask for a bigger ...'
+  #148 body script type=application/json chars=331 L760 first='{"q": "What does the historical record most securely show about Seal?"...'
+  #149 body script type=application/json chars=334 L760 first='{"q": "What is the safest lesson for Kevin?", "o": ["Serve every power...'
+  #150 body script type=application/json chars=361 L760 first='{"q": "The CIA evidence around Seal is best described as...", "o": ["A...'
+  #151 body script type=application/json chars=277 L760 first='{"q": "What is the safest use of a persona?", "o": ["Use it with a nam...'
+  #152 body script type=application/json chars=335 L760 first='{"q": "What did Tice\'s research suggest?", "o": ["Public behaviour can...'
+  #153 body script type=application/json chars=301 L760 first='{"q": "What is the final calibration of the guide?", "o": ["Read peopl...'
+  #154 body script  chars=4022 L760 first='(function(){ "use strict"; var $ = function(s,r){return (r||document)....'
+  #155 body script  chars=2798 L832 first="(function(){ var box=document.getElementById('calib'); if(!box) return..."
+  #156 body script id=mtrx-kit-js chars=20288 L868 first='(function(){ "use strict"; if(window.__mtrxKit)return;window.__mtrxKit...'
+  #157 body script src=../assets/mtrx-review.js defer= chars=0 L1020 first=''
 
 == C. CSS: 49769 chars, 287 classes
 anatomy b bar bd beam bg big-line bj bk blank bm btn btn-a btn-ghost bx c calc check check-k check-q chip chips cl-form cl-row cl-sum cnt colophon count cover cover-plate cover-sub cover-title css cube cube-cap cube6 decoder decoder-out deeper done dos-body dos-facts dos-k dos-name dos-role dos-tab dossier draw drill drill-e drill-h drill-m drill-x dur ex f field fig file files fit fitlist flip flips full g g-h g-m g-s g-x gaze gloss gloss-tools grade grid2 grow hl ic in is-active is-answered is-done is-due is-flipped is-in is-now is-on is-open is-picked is-right is-wrong js kicker lbl lede lens-act lens-in lens-out lg life-meta lm ln lq lr march marks math mod mod-meta mod-title mod-why move move-k move-line move-steps mtrx muted mv n nextq nk-body nk-danger nk-dock nk-empty nk-fab nk-fbox nk-find nk-flash nk-fmeta nk-foot nk-fres nk-head nk-hl nk-hls nk-k nk-mini nk-panel nk-pop nk-saved nk-tip nk-x nojs-only nowrap o oklist opt opts out outs p2-intro p2fig panel part-head part-promise part-title pct ph plate plate-img plate-name plate-no plate-sub play predict predict-k prepared pv-plate r read-card reads reveal rewatch room rule s s-box s-box-a s-box-j s-card s-dash s-line s-line-m s-on s-t s-t-b s-t-d s-t-s s-t-sm s-ta scene scene-b scene-k scene-line scene-n scene-rc scene-w scene-wh sci score scroll scrollbar sentence short sim sim-bar sim-end sim-fb sim-foot sim-q sim-scene site sp spec spec-def spec-name specs src st-anti st-card st-col st-d st-field st-h st-hold st-i st-myth st-part st-pick st-sum st-warn stamp stat stats step-text stops story t tb tbl tbl-wrap td theme-k three thumb thumbs tile tiles tm tok toks tr tryit tryit-k ts ttags tw url-a url-ret verbs verdict vid vid-b vid-h vid-m vid-q vid-t vid-th vid-w vids vids-h w warn watch why wide widget widget-k wk-a wk-bar wk-help wk-in wk-list wrap writer writer-k xlist y
@@ -123,35 +204,42 @@ media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (ma
       <span class="short"> L612
         "00"
     <i> L612
-  <button class="thumb" type="button" data-t="1" aria-label="Read the room"> L612
+  <button class="thumb" type="button" data-t="1" aria-label="Part I: Read the room"> L612
     <span class="lbl"> L612
       <span class="full"> L612
-        "Read the room"
+        "Part I"
       <span class="short"> L612
         "I"
     <i> L612
-  <button class="thumb" type="button" data-t="4" aria-label="The Spotlight Files"> L612
+  <button class="thumb" type="button" data-t="4" aria-label="File 1: The Spotlight"> L612
     <span class="lbl"> L612
       <span class="full"> L612
         "Spotlight"
       <span class="short"> L612
         "II.1"
     <i> L612
-  <button class="thumb" type="button" data-t="2" aria-label="George Newman"> L612
+  <button class="thumb" type="button" data-t="6" aria-label="File 2: The Read"> L612
     <span class="lbl"> L612
       <span class="full"> L612
-        "George Newman"
+        "The Read"
+      <span class="short"> L612
+        "II.2"
+    <i> L612
+  <button class="thumb" type="button" data-t="2" aria-label="File 3: George Newman"> L612
+    <span class="lbl"> L612
+      <span class="full"> L612
+        "Newman"
       <span class="short"> L612
         "II.3"
     <i> L612
-  <button class="thumb" type="button" data-t="3" aria-label="Network"> L612
+  <button class="thumb" type="button" data-t="3" aria-label="File 4: Work the network"> L612
     <span class="lbl"> L612
       <span class="full"> L612
         "Network"
       <span class="short"> L612
         "II.4"
     <i> L612
-  <button class="thumb" type="button" data-t="5" aria-label="The line"> L612
+  <button class="thumb" type="button" data-t="5" aria-label="File 5: The line"> L612
     <span class="lbl"> L612
       <span class="full"> L612
         "The line"
@@ -182,9 +270,9 @@ media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (ma
           "Kevin Cecil"
         ", founder, MTRX™ Digital, and George Newman"
         <br> L616
-        "Part I: 12 stops · Part II: 7 stops so far · 20 minutes a day · 31 scenes · 37 m..."
+        "Part I: 12 stops · Part II: 5 files, 34 stops · 20 minutes a day · 68 scenes plu..."
         <br> L616
-        "Sources checked 9 and 14 October 2026"
+        "Sources checked 9 and 14 October 2026, Part II Files 2 to 5 on 27 October 2026"
       <a class="btn btn-a" href="#m0-1"> L617
         "Start here"
         <span aria-hidden="true"> L617
@@ -330,18 +418,6 @@ media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (ma
         <h3> L760
           "How a case file works"
         <ol class="anatomy"> L760
-          <li> L760
-            "Cold open: predict first"
-          <li> L760
-            "The subject"
-          <li> L760
-            "The story"
-          <li> L760
-            "The move"
-          <li> L760
-            "The scenes"
-          <li> L760
-            "Why it works"
           [cut: budget]
         [cut: budget]
       [cut: budget]
@@ -456,29 +532,29 @@ media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (ma
           <b> L760
             "The Spotlight"
           <em> L760
-            "Attention, names, questions, compliments, callbacks. Here now."
-        <a class="file" href="#s4" style="--fc:var(--graphite)"> L760
+            "Attention, names, questions, compliments, callbacks."
+        <a class="file" href="#m2-8" style="--fc:var(--graphite)"> L760
           <span> L760
             "File 2 · 2.8 to 2.13"
           <b> L760
             "The Read"
           <em> L760
-            "What people hunger for, how directors read actors, reading a group. Next drop."
-        <a class="file" href="#s2" style="--fc:var(--gun)"> L760
+            "Hungers, the director's read, groups, subtext, culture."
+        <a class="file" href="#m2-14" style="--fc:var(--gun)"> L760
           <span> L760
             "File 3 · 2.14 to 2.22"
           <b> L760
             "George Newman"
           <em> L760
-            "Voice, walk, stance, calm, the long take. Plates and scenes ready to watch."
-        <a class="file" href="#s3" style="--fc:var(--moss)"> L760
+            "Prep, voice, body, calm, warmth, monologues, the off switch."
+        <a class="file" href="#m2-23" style="--fc:var(--moss)"> L760
           <span> L760
             "File 4 · 2.23 to 2.30"
           <b> L760
             "Pitch and network"
           <em> L760
-            "Known for one thing, the one-minute pitch, favours, dormant ties."
-        <a class="file" href="#s5" style="--fc:var(--red)"> L760
+            "Known for one thing, the pitch, favours, dormant ties, follow-up."
+        <a class="file" href="#m2-31" style="--fc:var(--red)"> L760
           <span> L760
             "File 5 · 2.31 to 2.34"
           <b> L760
@@ -798,17 +874,18 @@ media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (ma
             <b> L760
               "Link it."
             "Give it meaning: a friend with the same name, an image, their business."
-          [cut: budget]
+          <li> L760
+            [cut: budget]
       [cut: budget]
     [cut: budget]
 [cut: budget]
 [end of siblings inside <div class="site">]
 
--- raw boundary after the last Part I article (offset 198409):
+-- raw boundary after the last Part I article (offset 198657):
 </article></div></section><!-- mtrx:p2f1 --><section class="part" id="s4" data-part="4" data-sec="4"><div class="part-head"><div class="wrap"><div class="kicker">Part II · The Spotlight Files · File 1 of 5 · 7 stops</div><h2 class="part-title">The Spotlight</h2><p class="part-promise">Charm is attention people can feel. Seven moves, each taught through one person who owned it, checked against the evidence, and tried on a real person the same day.</p><ol class="stops"><li><a href="#m2-1"><span>2.1</span>The Spotlight<em>20 min</em></a></li><li><a href="#m2-2"><span>2.2</span>The Name<em>20 min</em></a></li><li><a href="#m2-3"><span>2.3</span>The Second Question<em>20 min</em></a></li><li><a href="#m2-4"><span>2.4</span>The Support Response<em>20 min</em></a></li><li><a href="#m2-5"><span>2.5</span>The Compliment<em>20 min</em></a></li><li><a href="#m2-6"><span>2.6</span>The Callback<em>20 min</em></a></li><li><a href="#m2-7"><span>2.7</span>Boss fight: Spotlight night<em>20 min</em></a></li></ol></div></div><div class="wrap"><div class="p2-intro" id="p2-intro"><p class="lede">Part I taught you to read people. The Spotlight Files teach you to be the person they remember. Each stop is a case file: one subject, one named move, the scene that shows it, the science that checks it, and a truth tag on every famous claim (holds up, partly, or myth).</p><h3>How a case file works</h3><ol class="anatomy"><li>Cold open: predict first</li><li>The subject</li><li>The story</li><li>The move<
 
 == G. JS excerpts (keywords)
--- script #70 (4022 chars) 
+-- script #151 (4022 chars) 
    var KEY='mtrx-room-v1', store={
    store=JSON.parse(localStorage.getItem(KEY))||store;
    if(!store.done)store.done={
@@ -821,11 +898,11 @@ media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (ma
    store.done[b.dataset.mod]=!store.done[b.dataset.mod];
    /* ---------- thumbs + scrollbar ---------- */ var bar=$('.scrollbar');
    if(target)target.scrollIntoView({
--- script #71 (2798 chars) 
+-- script #152 (2798 chars) 
    var K='mtrx-room-log-v1', L=[];
    L=JSON.parse(localStorage.getItem(K))||[]}
    localStorage.setItem(K,JSON.stringify(L))}
--- script #72 (20288 chars) id=mtrx-kit-js
+-- script #153 (20288 chars) id=mtrx-kit-js
    var v=localStorage.getItem(k);
    localStorage.setItem(k,JSON.stringify(v))}
    var SKIP='.nk-panel,.nk-dock,.nk-pop,button,input,textarea,select,svg,script,[aria-live],.sim,.gloss,#lib,.thumbs,.check .opts';
@@ -842,16 +919,15 @@ media queries: @media (max-width:1000px) | @media (max-width:700px) | @media (ma
 
 == H. raw head of body (first 3000 chars after <body>), stripped
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">[svg 368 chars]</svg><div class="scrollbar" aria-hidden="true"></div><nav class="thumbs" aria-label="Sections"><button class="thumb" type="button" data-t="0" aria-label="Start"><span class="lbl"><span class="full">Start</span><span class="short">00</span></span><i></i></button><button class="thumb" type="button" data-t="1" aria-label="Read the room"><span class="lbl"><span class="full">Read the room</span><span class="short">I</span></span><i></i></button><button class="thumb" type="button" data-t="4" aria-label="The Spotlight Files"><span class="lbl"><span class="full">Spotlight</span><span class="short">II.1</span></span><i></i></button><button class="thumb" type="button" data-t="2" aria-label="George Newman"><span class="lbl"><span class="full">George Newman</span><span class="short">II.3</span></span><i></i></button><button class="thumb" type="button" data-t="3" aria-label="Network"><span class="lbl"><span class="full">Network</span><span class="short">II.4</span></span><i></i></button><button class="thumb" type="button" data-t="5" aria-label="The line"><span class="lbl"><span class="full">The line</span><span class="short">II.5</span></span><i></i></button></nav><div class="site"><header class="wrap cover" id="top" data-sec="0"><div><div class="kicker">MTRX™ Field Series · No. 06 · October 2026</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">[svg 368 chars]</svg><div class="scrollbar" aria-hidden="true"></div><nav class="thumbs" aria-label="Sections"><button class="thumb" type="button" data-t="0" aria-label="Start"><span class="lbl"><span class="full">Start</span><span class="short">00</span></span><i></i></button><button class="thumb" type="button" data-t="1" aria-label="Part I: Read the room"><span class="lbl"><span class="full">Part I</span><span class="short">I</span></span><i></i></button><button class="thumb" type="button" data-t="4" aria-label="File 1: The Spotlight"><span class="lbl"><span class="full">Spotlight</span><span class="short">II.1</span></span><i></i></button><button class="thumb" type="button" data-t="6" aria-label="File 2: The Read"><span class="lbl"><span class="full">The Read</span><span class="short">II.2</span></span><i></i></button><button class="thumb" type="button" data-t="2" aria-label="File 3: George Newman"><span class="lbl"><span class="full">Newman</span><span class="short">II.3</span></span><i></i></button><button class="thumb" type="button" data-t="3" aria-label="File 4: Work the network"><span class="lbl"><span class="full">Network</span><span class="short">II.4</span></span><i></i></button><button class="thumb" type="button" data-t="5" aria-label="File 5: The line"><span class="lbl"><span class="full">The line</span><span class="short">II.5</span></span><i></i></button></nav><div class="site"><header class="wrap cover" id="top" data-sec="0"><div><div class="kicker">MTRX™ Field Series · No. 06 · October 2026</div>
 <h1 class="cover-title">Read the <span class="o">room</span></h1>
 <p class="cover-sub">Social intelligence through cinema. Heroes, villains and side characters show you how people are read, the science checks every scene, and you try it on a real call the same day.</p>
 <ul class="verbs"><li>Notice</li><li>Ask</li><li>Update</li></ul>
-<p class="prepared">Prepared for <b>Kevin Cecil</b>, founder, MTRX™ Digital, and George Newman<br>Part I: 12 stops · Part II: 7 stops so far · 20 minutes a day · 31 scenes · 37 more in the scene library<br>Sources checked 9 and 14 October 2026</p>
+<p class="prepared">Prepared for <b>Kevin Cecil</b>, founder, MTRX™ Digital, and George Newman<br>Part I: 12 stops · Part II: 5 files, 34 stops · 20 minutes a day · 68 scenes plus the scene library<br>Sources checked 9 and 14 October 2026, Part II Files 2 to 5 on 27 October 2026</p>
 <a class="btn btn-a" href="#m0-1">Start here <span aria-hidden="true">↓</span></a></div>
 <div class="cover-plate"><nav class="cube6" aria-label="Nine scenes in Part I"><a href="#m1-1"><span class="ph">Casino Royale</span><img src="https://i.ytimg.com/vi/3jQbXuvGR5o/mqdefault.jpg" alt="Still from Casino Royale" loading="lazy" onerror="this.remove()"><b>1.1</b></a><a href="#m1-2"><span class="ph">Sherlock</span><img src="https://i.ytimg.com/vi/VaT7IYQgyqo/mqdefault.jpg" alt="Still from Sherlock" loading="lazy" onerror="this.remove()"><b>1.2</b></a><a href="#m1-3"><span class="ph">Inglourious Basterds</span><img src="https://i.ytimg.com/vi/kPoCFAP6RuM/mqdefault.jpg" alt="Still from Inglourious Basterds" loading="lazy" onerror="this.remove()"><b>1.3</b></a><a href="#m1-4"><span class="ph">Heat</span><img src="https://i.ytimg.com/vi/3lKSth8oPaE/mqdefault.jpg" alt="Still from Heat" loading="lazy" onerror="this.remove()"><b>1.4</b></a><a href="#m1-5"><span class="ph">The Godfather</span><img src="https://i.ytimg.com/vi/eZHsmb4ezEk/mqdefault.jpg" alt="Still from The Godfather" loading="lazy" onerror="this.remove()"><b>1.5</b></a><a href="#m1-6"><span class="ph">The Social Network</span><img src="https://i.ytimg.com/vi/VKnNUYknsuQ/mqdefault.jpg" alt="Still from The Social Network" loading="lazy" onerror="this.remove()"><b>1.6</b></a><a href="#m1-7"><span class="ph">Margin Call</span><img src="https://i.ytimg.com/vi/mpEEKlDs_M0/mqdefault.jpg" alt="Still from Margin Call" loading="lazy" onerror="this.remove()"><b>1.7</b></a><a href="#m1-8"><span class="ph">Columbo</span><img src="https://i.ytimg.com/vi/QxBnaMGP2aY/mqdefault.jpg" alt="Still from Columbo" loading="lazy" onerror="this.remove()"><b>1.8</b></a><a href="#m1-9"><span class="ph">The Silence of the Lambs</span><img src="https://i.ytimg.com/vi/99Ptctl5_qQ/mqdefault.jpg" alt="Still from The Silence of the Lambs" loading="lazy" onerror="this.remove()"><b>1.9</b></a></nav><p class="cube-cap">Nine scenes from Part I. Tap one to jump to its stop.</p></div></header><section class="part" id="s0" data-part="0" data-sec="0"><div class="wrap"><article class="mod" id="m0-1" data-mod="0.1"><div class="mod-meta">Stop 0.1 · Start <span class="t">6 min</span></div><h2 class="mod-title">Why this guide exists</h2><p class="mod-why">You told me the facts felt empty. Fair. So this guide runs on scenes: heroes, villains and side characters who read a room better or worse than anyone. Every stop breaks down what the character actually reads, then the science checks it, then you try it on a real call.</p>
 <div class="mtrx"><p><b>Your why, in your words.</b> Convince people now, and make the next person remember you. You already have the guts: you walked into your strict department head's cabin, pitched cold, and walked out with her contacts. The gap was preparation and words that wandered. Your persona has a name, <b>George Newman</b>: a charmer who smiles a lot, gets things done and never fails to deliver. This guide is his training camp. The real Kevin stays with the people close to you.</p></div>
 <h3>Four rules</h3>
 <div class="specs">
 <div class="spec"><div class="spec-name">1 · Scenes teach, science checks</div><p class="spec-def">Every stop opens with 2 or 3 scenes. Every scene has a reality check, because films make reading people look far easier than it is.</p></div>
-<div class="spec"><div class="spec-name">2 · A read is a hypothesis</div><p class="spec-def">You never "know" what someone thinks. You notice, guess, ask and update. That loop is the whole of Part I.</p></div>
-<div class="spec"><div class="spec-name">3 · The mask has an off swit
+<div class="spec"><div class="s

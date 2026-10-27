@@ -18,7 +18,7 @@ start = len(parts[0][1]) if parts and parts[0][0] == 'Start here' else 0
 total = sum(len(re.findall(r'<li><a href="#', x)) for x in re.findall(r'<ol class="stops">(.*?)</ol>', g, re.S)) + start
 e = dict(n='07', t='Design and taste',
          sub='How designers see, decide and make: the brief, attention, value, principles, type, colour, composition, the makers, brand, aesthetics and story. Question-led, evidence-graded, with a director\'s eye in every stop.',
-         time='%d stops built of %d planned \u00b7 10 parts \u00b7 20 min a day' % (built, total), file='07-design.html',
+         time=('Complete \u00b7 %d stops \u00b7 Part 1 in depth, Parts 2 to 9 to browse' % built) if built >= total else ('%d stops built of %d planned \u00b7 10 parts \u00b7 20 min a day' % (built, total)), file='07-design.html',
          key='mtrx-design-v1', acc='moss', st='ready' if built >= total else 'partial', day=False, parts=parts)
 i = next((k for k, x in enumerate(G) if x['n'] == '07'), None)
 if i is None:

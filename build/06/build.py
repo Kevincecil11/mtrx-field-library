@@ -12,31 +12,27 @@ import hashlib, html, json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import p2_file1 as F1  # noqa: E402
+import p2_file2 as F2  # noqa: E402
+import p2_file3 as F3  # noqa: E402
+import p2_file4 as F4  # noqa: E402
+import p2_file5 as F5  # noqa: E402
 from p2_svgs import SVG  # noqa: E402
 
-FILES = [F1]
+FILES = [F1, F2, F3, F4, F5]
+for _F in FILES[1:]:
+    SVG.update(getattr(_F, 'SVG', {}))
+# File 1's intro predates the other files: give it the same, current file list.
+F1.INTRO['files'] = [dict(f, now=(f['n'] == 1)) for f in F2.INTRO['files']]
+# Files 3 to 5 take over the old watch-ahead sections and keep their plates and scene library.
+OLD_SECTION = {3: 's2', 4: 's3', 5: 's5'}
 GRADE = {'s': ('g-s', 'Strong'), 'm': ('g-m', 'Moderate'), 'h': ('g-h', 'Weak'), 'x': ('g-x', 'Failed')}
 STAMP = {'hold': 'Holds up', 'part': 'Partly', 'myth': 'Myth', 'anti': 'Anti-model', 'field': 'Field test'}
 PART_I_SCENES = 24
-LATER = {
-    's2': ('Part II · File 3 · watch ahead', 'Become George Newman',
-           "Charm, voice and presence, built from the delivery of cinema's best. Start watching now: every scene below has the technique, what to steal and a 2-minute drill.",
-           [('2.14', 'The prep kit: one line, three stories, three questions, one ask'), ('2.15', 'Voice: pace and the pause'),
-            ('2.16', 'Voice: pitch and landing the line'), ('2.17', 'The body: walk, stance, stillness'), ('2.18', 'Calm under pressure'),
-            ('2.19', 'Warmth and humour'), ('2.20', 'The long take: monologues'), ('2.21', 'George Newman and the off switch'),
-            ('2.22', 'Boss fight: a room of strangers')]),
-    's3': ('Part II · File 4 · watch ahead', 'Work the network',
-           'Ruddy got the Godfather job because he was known for one thing: making films cheap and fast. This file builds your one thing, the pitch that sells it, and the favour economy around it, without the mafia.',
-           [('2.23', 'Known for one thing: the website guy'), ('2.24', 'The one-minute pitch'), ('2.25', 'Favours and gifts, done right'),
-            ('2.26', 'Waking dormant ties'), ('2.27', 'The follow-up system'), ('2.28', 'Working a room'),
-            ('2.29', 'The 48 Laws worth knowing, decoded'), ('2.30', 'Boss fight: the follow-up week')]),
-    's5': ('Part II · File 5 · watch ahead', 'The line',
-           "Influence survives disclosure; manipulation doesn't. Study how these characters charm, and exactly where it turns rotten.",
-           [('2.31', 'Influence vs manipulation: the disclosure test'), ('2.32', 'Belfort, decoded'),
-            ('2.33', 'Barry Seal: useful to everyone, loyal to no one'), ('2.34', 'When the mask eats the man')]),
-}
-TABS = [('0', 'Start', 'Start', '00'), ('1', 'Read the room', 'Read the room', 'I'), ('4', 'The Spotlight Files', 'Spotlight', 'II.1'),
-        ('2', 'George Newman', 'George Newman', 'II.3'), ('3', 'Network', 'Network', 'II.4'), ('5', 'The line', 'The line', 'II.5')]
+LATER = {}
+TABS = [('0', 'Start', 'Start', '00'), ('1', 'Part I: Read the room', 'Part I', 'I'), ('4', 'File 1: The Spotlight', 'Spotlight', 'II.1'),
+        ('6', 'File 2: The Read', 'The Read', 'II.2'), ('2', 'File 3: George Newman', 'Newman', 'II.3'), ('3', 'File 4: Work the network', 'Network', 'II.4'),
+        ('5', 'File 5: The line', 'The line', 'II.5')]
+LIB_MARK = '<!-- p2lib -->'
 
 
 def mid(n):
@@ -126,6 +122,15 @@ def file_section(F):
         f['sec'], f['part'], f['sec'], f['kicker'], f['title'], f['promise'], lis, intro, ''.join(stop(F, s) for s in F.STOPS))
 
 
+_file_section = file_section
+
+
+def file_section(F):
+    out = _file_section(F)
+    n = F.FILE['n']
+    return out if n == 1 else out.replace('id="p2-intro"', 'id="p2-intro-%d"' % n, 1)
+
+
 def later_head(sid):
     k, t, p, items = LATER[sid]
     lis = ''.join('<li><a href="#%s"><span>%s</span>%s<em>soon</em></a></li>' % (sid, n, x) for n, x in items)
@@ -164,6 +169,45 @@ def after_last_card(s):
     return s.find('</a>', k) + 4 if f >= 0 and k >= 0 else -1
 
 
+def after_marker(name):
+    def at(s):
+        e = '<!-- /mtrx:%s -->' % name
+        return s.index(e) + len(e) if e in s else -1
+    return at
+
+
+def old_library(s, n, sid):
+    """The plates and scene library of the old watch-ahead section, kept under the new file."""
+    b, e = '<!-- mtrx:p2f%d -->' % n, '<!-- /mtrx:p2f%d -->' % n
+    if b in s:
+        blk = s[s.index(b):s.index(e)]
+        if LIB_MARK not in blk:
+            return ''
+        lib = blk[blk.index(LIB_MARK) + len(LIB_MARK):blk.rindex('</section>')]
+        head = '<div class="wrap"><h3 class="lib-h">'
+        if lib.startswith(head):
+            lib = lib[lib.index('</div>') + len('</div>'):]
+        return lib
+    i = s.find('<section class="part" id="%s"' % sid)
+    j = s.find('</section>', i)
+    seg = s[i:j]
+    k = seg.find('<div class="part-head">')
+    end = seg.find('</ol></div></div>', k) + len('</ol></div></div>')
+    return seg[end:]
+
+
+def replace_old(s, n, sid, block):
+    b, e = '<!-- mtrx:p2f%d -->' % n, '<!-- /mtrx:p2f%d -->' % n
+    if b in s:
+        i, j = s.index(b), s.index(e) + len(e)
+        return s[:i] + b + block + e + s[j:], 'replaced'
+    i = s.find('<section class="part" id="%s"' % sid)
+    if i < 0:
+        raise SystemExit('old section %s not found' % sid)
+    j = s.find('</section>', i) + len('</section>')
+    return s[:i] + b + block + e + s[j:], 'took over ' + sid
+
+
 def main(src, dst):
     s = open(src, encoding='utf-8').read()
     p1 = hashlib.sha256(part1(s).encode()).hexdigest()
@@ -172,8 +216,19 @@ def main(src, dst):
     s, how = put(s, 'p2css', '<style id="mtrx-p2-css">%s</style>' % css, lambda x: x.find('</head>'))
     log.append('css ' + how)
     for F in FILES:
-        s, how = put(s, 'p2f%d' % F.FILE['n'], file_section(F), after_part1)
-        log.append('file %d %s: %d stops' % (F.FILE['n'], how, len(F.STOPS)))
+        n = F.FILE['n']
+        if n == 1:
+            s, how = put(s, 'p2f1', file_section(F), after_part1)
+        elif n == 2:
+            s, how = put(s, 'p2f2', file_section(F), after_marker('p2f1'))
+        else:
+            lib = old_library(s, n, OLD_SECTION[n])
+            sec = file_section(F)
+            if lib.strip():
+                sec = sec[:sec.rindex('</section>')] + LIB_MARK + ('<div class="wrap"><h3 class="lib-h">Scene library: more to watch</h3>'
+                      '<p class="muted">The plates and scenes from the watch-ahead, kept for rewatching.</p></div>') + lib + '</section>'
+            s, how = replace_old(s, n, OLD_SECTION[n], sec)
+        log.append('file %d %s: %d stops' % (n, how, len(F.STOPS)))
     for sid in LATER:
         s, n = re.subn(r'(<section class="part" id="%s"[^>]*>)<div class="part-head">.*?</ol></div></div>' % sid,
                        lambda m: m.group(1) + later_head(sid), s, count=1, flags=re.S)
@@ -185,8 +240,8 @@ def main(src, dst):
     log.append('tabs ' + ('rebuilt' if n else 'NOT FOUND'))
     scenes = PART_I_SCENES + sum(len(st['scenes']) for F in FILES for st in F.STOPS)
     stops = sum(len(F.STOPS) for F in FILES)
-    line = ('Part I: 12 stops · Part II: %d stops so far · 20 minutes a day · %d scenes · 37 more in the scene library'
-            '<br>Sources checked 9 and 14 October 2026') % (stops, scenes)
+    line = ('Part I: 12 stops · Part II: 5 files, %d stops · 20 minutes a day · %d scenes plus the scene library'
+            '<br>Sources checked 9 and 14 October 2026, Part II Files 2 to 5 on 27 October 2026') % (stops, scenes)
     s, n = re.subn(r'(<p class="prepared">.*?<br>)(.*?)(</p>)', lambda m: m.group(1) + line + m.group(3), s, count=1, flags=re.S)
     log.append('cover ' + ('updated' if n else 'NOT FOUND'))
     cards = ''.join('<a class="read-card" href="%s" target="_blank" rel="noopener"><b>%s</b><span>Stop %s</span></a>' % (

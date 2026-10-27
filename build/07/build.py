@@ -266,6 +266,9 @@ def stop(F, st):
     o.append('<h3>The deep answer</h3><div class="story">%s</div>' % paras)
     if st.get('fig'):
         svg, cap = st['fig']
+        # The shell already defines the global arrowheads #ah and #ahm: drop local copies.
+        svg = re.sub(r'<marker\b[^>]*\bid="ahm?"[^>]*>.*?</marker>', '', svg, flags=re.S)
+        svg = re.sub(r'<defs>\s*</defs>', '', svg)
         o.append('<figure class="fig"><div class="scroll">%s</div><figcaption>%s</figcaption></figure>' % (svg, cap))
     if st.get('specs'):
         o.append('<h3>The words insiders use</h3><div class="specs">%s</div>' % ''.join(
@@ -301,9 +304,66 @@ def stop(F, st):
     return ''.join(o)
 
 
+
+# ---------- lite stops (Kevin, 27 Oct 2026: Parts 2 to 9 are for inspiration and occasional visits, no quizzes) ----------
+def commons_url(file, width=960):
+    name = file[5:] if file.startswith('File:') else file
+    return 'https://commons.wikimedia.org/wiki/Special:FilePath/%s?width=%d' % (urllib.parse.quote(name.replace(' ', '_')), width)
+
+
+def lite_plate(p):
+    spec = IMAGES.get(p['key'])
+    if not spec:
+        LOG.append('IMAGE %s: not in images.py' % p['key'])
+        return ''
+    page = 'https://commons.wikimedia.org/wiki/' + urllib.parse.quote(spec['file'].replace(' ', '_'))
+    credit = '%s \u00b7 %s \u00b7 %s' % (spec['credit'], spec.get('lic', 'see file page'), a(page, 'Wikimedia Commons'))
+    img = ('<img src="%s" alt="%s" loading="lazy" decoding="async" referrerpolicy="no-referrer" '
+           'onerror="this.closest(\'.plate\').classList.add(\'plate-offline\')">') % (html.escape(commons_url(spec['file']), quote=True), html.escape(spec['alt'], quote=True))
+    return ('<figure class="plate lite-plate"><div class="plate-img">%s</div><a class="plate-out" href="%s" target="_blank" rel="noopener">'
+            '<b>%s</b><span>Open the image on Wikimedia Commons</span></a><figcaption><span class="plate-cap">%s</span><span class="credit">%s</span></figcaption></figure>') % (
+        img, page, spec['credit'], p['cap'], credit)
+
+
+def lite_stop(F, st):
+    n = st['id']
+    o = ['<article class="mod lite" id="%s" data-mod="%s">' % (mid(n), n),
+         '<div class="mod-meta">Part %d \u00b7 Stop %s \u00b7 Inspiration <span class="t">about 10 min</span></div>' % (F['n'], n),
+         '<h2 class="mod-title">%s</h2>' % st['title'],
+         '<p class="qline"><span>The question</span>%s</p>' % st['q'],
+         '<p class="mod-why">%s</p>' % st['why']]
+    plates = [lite_plate(p) for p in st.get('plates', [])]
+    paras = st['story']
+    first = plates[:1]
+    rest = plates[1:]
+    o.append('<div class="story">%s%s%s</div>' % (''.join('<p>%s</p>' % x for x in paras[:1]), ''.join(first),
+                                                 ''.join('<p>%s</p>' % x for x in paras[1:]) + ''.join(rest)))
+    if st.get('fig'):
+        svg, cap = st['fig']
+        # The shell already defines the global arrowheads #ah and #ahm: drop local copies.
+        svg = re.sub(r'<marker\b[^>]*\bid="ahm?"[^>]*>.*?</marker>', '', svg, flags=re.S)
+        svg = re.sub(r'<defs>\s*</defs>', '', svg)
+        o.append('<figure class="fig"><div class="scroll">%s</div><figcaption>%s</figcaption></figure>' % (svg, cap))
+    if st.get('look'):
+        o.append('<h3>Look closer</h3><ul class="look">%s</ul>' % ''.join(
+            '<li><b>%s</b> %s%s</li>' % (nm, what, (' ' + a(u, 'Look it up')) if u else '') for nm, what, u in st['look']))
+    if st.get('steal'):
+        o.append('<div class="tryit steal"><div class="tryit-k">What you could steal</div><ul>%s</ul></div>' % ''.join('<li>%s</li>' % x for x in st['steal']))
+    if st.get('director'):
+        o.append('<div class="writer wr"><div class="writer-k">Director\'s eye</div><p>%s</p></div>' % st['director'])
+    if st.get('studio'):
+        o.append('<div class="mtrx biz"><p><b>Studio lens \u00b7 MTRX\u2122.</b> %s</p></div>' % st['studio'])
+    if st.get('room'):
+        o.append('<p class="room">%s</p>' % st['room'])
+    if st.get('sources'):
+        o.append('<details class="deeper"><summary>Sources and further looking</summary><ul>%s</ul></details>' % ''.join(
+            '<li>%s</li>' % a(u, lab) for lab, u in st['sources']))
+    o.append('<button class="done" data-mod="%s">Mark stop %s seen</button></article>' % (n, n))
+    return ''.join(o)
+
 def part_head(F, built):
     lis = ''.join('<li><a href="#%s"><span>%s</span>%s<em>%s</em></a></li>' % (
-        mid(i) if i in built else 's%d' % F['n'], i, x, '20 min' if i in built else 'soon') for i, x in F['stops'])
+        mid(i) if i in built else 's%d' % F['n'], i, x, ('look' if built[i].get('lite') else '20 min') if i in built else 'soon') for i, x in F['stops'])
     return ('<div class="part-head"><div class="wrap"><div class="kicker">%s</div><h2 class="part-title">%s</h2>'
             '<p class="part-promise">%s</p><ol class="stops">%s</ol></div></div>') % (F['kicker'], F['title'], F['promise'], lis)
 
@@ -339,6 +399,11 @@ def main(dst):
         mod = load(p)
         if mod and hasattr(mod, 'STOP'):
             built[mod.STOP['id']] = mod.STOP
+        if mod and hasattr(mod, 'STOPS'):
+            for _st in mod.STOPS:
+                built[_st['id']] = dict(_st, lite=True)
+        if mod and hasattr(mod, 'IMAGES'):
+            IMAGES.update(mod.IMAGES)
     LOG.append('built stops: %s' % ', '.join(sorted(built, key=lambda s: [int(z) for z in s.split('.')])))
     sources = []
     tabs = [('0', 'Start', 'Start', '0')] + [(str(F['n']), F['title'], F['tab'], F['short']) for F in PLAN]
@@ -366,7 +431,7 @@ def main(dst):
         sources += getattr(start, 'SOURCES', [])
     for F in PLAN:
         mine = [built[i] for i, _ in F['stops'] if i in built]
-        body = ''.join(stop(F, st) for st in mine)
+        body = ''.join((lite_stop(F, st) if st.get('lite') else stop(F, st)) for st in mine)
         if not mine:
             body = '<div class="later"><p>This part is planned and audited. Its stops arrive one part at a time; the question bank in Stop 0.2 shows what each one answers.</p></div>'
         secs.append('<section class="part" id="s%d" data-part="%d" data-sec="%d" data-title="Part %d \u00b7 %s">%s<div class="wrap">%s</div></section>' % (
@@ -374,6 +439,7 @@ def main(dst):
         for st in mine:
             sources += [(lab, u, st['id']) for lab, u, _ in st.get('distil', [])]
             sources += [(src[0], src[1], st['id']) for _, _, _, src in st.get('tags', [])]
+            sources += [(lab, u, st['id']) for lab, u in st.get('sources', [])]
     LOG.append('images: %d fetched now of %d tried; cache %s' % (NET['ok'], NET['tried'], 'present' if os.path.isdir(CACHE) else 'absent'))
     seen, cards = set(), []
     for lab, u, sid in sources:
@@ -385,6 +451,8 @@ def main(dst):
               '<div class="vids" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr))">%s</div>%s</div></footer>') % (
         ''.join(cards), start.COLOPHON if start and hasattr(start, 'COLOPHON') else '')
     out = head + '</head>' + prefix + nav + '<div class="site">' + cover + ''.join(secs) + footer + tail
+    from editorial import apply as editorial_edition
+    out = editorial_edition(out, ROOT)
     body_txt = re.sub(r'<(script|style)\b.*?</\1>', ' ', out, flags=re.S)
     em, en = body_txt.count('\u2014'), body_txt.count('\u2013')
     if em or en:
