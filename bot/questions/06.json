@@ -24,7 +24,34 @@
   "2.4",
   "2.5",
   "2.6",
-  "2.7"
+  "2.7",
+  "2.8",
+  "2.9",
+  "2.10",
+  "2.11",
+  "2.12",
+  "2.13",
+  "2.14",
+  "2.15",
+  "2.16",
+  "2.17",
+  "2.18",
+  "2.19",
+  "2.20",
+  "2.21",
+  "2.22",
+  "2.23",
+  "2.24",
+  "2.25",
+  "2.26",
+  "2.27",
+  "2.28",
+  "2.29",
+  "2.30",
+  "2.31",
+  "2.32",
+  "2.33",
+  "2.34"
  ],
  "cards": [
   {
@@ -1421,6 +1448,1896 @@
    "type": "recall",
    "q": "Page closed: explain \"Boss fight: Spotlight night\" in two or three lines, as you would to a client.",
    "answer": "\"I walk in planning to learn three names and one story, not to be impressive. Somehow that is exactly what makes people remember me.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.8",
+   "name": "The hungers, rebuilt: what does this person actually want?",
+   "link": "guides/06-read-the-room.html#m2-8",
+   "id": "06-2.8-q1",
+   "type": "quiz",
+   "q": "Which question moves most directly from a stated outcome to a deeper motive?",
+   "options": [
+    "What would the result let you do?",
+    "What exact pages do you want for launch?",
+    "What colour and shape should the buttons be?"
+   ],
+   "answer": 0,
+   "why": "Consequences expose what the stated object is for. Treat the answer as a hypothesis and check it."
+  },
+  {
+   "guide": "06",
+   "stop": "2.8",
+   "name": "The hungers, rebuilt: what does this person actually want?",
+   "link": "guides/06-read-the-room.html#m2-8",
+   "id": "06-2.8-q2",
+   "type": "quiz",
+   "q": "Which is the SDT trio?",
+   "options": [
+    "Belonging, fairness and novelty seeking",
+    "Status, money and financial safety",
+    "Autonomy, competence and relatedness"
+   ],
+   "answer": 2,
+   "why": "Ryan and Deci identify autonomy, competence and relatedness as basic psychological needs."
+  },
+  {
+   "guide": "06",
+   "stop": "2.8",
+   "name": "The hungers, rebuilt: what does this person actually want?",
+   "link": "guides/06-read-the-room.html#m2-8",
+   "id": "06-2.8-q3",
+   "type": "quiz",
+   "q": "What is wrong with the familiar Maslow pyramid?",
+   "options": [
+    "Needs do not affect work or business decisions",
+    "People only want physical comfort before anything else",
+    "Maslow never drew it and the fixed staircase lacks strong support in management teaching"
+   ],
+   "answer": 1,
+   "why": "The pyramid was a later graphic. Use a dynamic needs map instead."
+  },
+  {
+   "guide": "06",
+   "stop": "2.8",
+   "name": "The hungers, rebuilt: what does this person actually want?",
+   "link": "guides/06-read-the-room.html#m2-8",
+   "id": "06-2.8-r1",
+   "type": "recall",
+   "q": "Drill \"The hunger ladder\": what are the steps, and the usual mistake?",
+   "answer": "1) Write one stated want from a real call. 2) Write three possible needs underneath it, without choosing one yet. 3) Write one question and one tradeoff that could disconfirm each hypothesis. Usual mistake: Treating a motive label as a diagnosis. It is a question generator, not a verdict.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.8",
+   "name": "The hungers, rebuilt: what does this person actually want?",
+   "link": "guides/06-read-the-room.html#m2-8",
+   "id": "06-2.8-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The hungers, rebuilt: what does this person actually want?\" in two or three lines, as you would to a client.",
+   "answer": "I do not ask what people want as if there is one answer. I ask what the result would change, then I test the read with a real choice.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.9",
+   "name": "The director's read: how Kazan and Lumet read actors",
+   "link": "guides/06-read-the-room.html#m2-9",
+   "id": "06-2.9-q1",
+   "type": "quiz",
+   "q": "Which is a playable actor direction?",
+   "options": [
+    "Make your father accept this gift",
+    "Be much more visibly heartbroken in this take",
+    "Give the audience a bigger cry right now"
+   ],
+   "answer": 0,
+   "why": "An action has an object and an obstacle. Emotion can arrive through the attempt."
+  },
+  {
+   "guide": "06",
+   "stop": "2.9",
+   "name": "The director's read: how Kazan and Lumet read actors",
+   "link": "guides/06-read-the-room.html#m2-9",
+   "id": "06-2.9-q2",
+   "type": "quiz",
+   "q": "Why did Kazan treat Brando and Dean differently?",
+   "options": [
+    "Dean was never allowed to improvise on set",
+    "Every actor must use a different camera setup and visual style for each scene",
+    "He adapted to their needs, technique and condition"
+   ],
+   "answer": 2,
+   "why": "The point is adaptive direction, not a single Method formula."
+  },
+  {
+   "guide": "06",
+   "stop": "2.9",
+   "name": "The director's read: how Kazan and Lumet read actors",
+   "link": "guides/06-read-the-room.html#m2-9",
+   "id": "06-2.9-q3",
+   "type": "quiz",
+   "q": "What does Lumet put under the director's responsibility?",
+   "options": [
+    "Guarantee every take is perfect for the audience and critics",
+    "Keep actors from asking difficult questions",
+    "Make actors secure enough to risk self-revelation"
+   ],
+   "answer": 2,
+   "why": "Lumet links good work with security and less fear, while accepting the pain of self-revelation."
+  },
+  {
+   "guide": "06",
+   "stop": "2.9",
+   "name": "The director's read: how Kazan and Lumet read actors",
+   "link": "guides/06-read-the-room.html#m2-9",
+   "id": "06-2.9-r1",
+   "type": "recall",
+   "q": "Drill \"The playable verb\": what are the steps, and the usual mistake?",
+   "answer": "1) Take one emotional line from a script or film. 2) Write three actions aimed at another person: win, hide, corner, comfort or recruit. 3) Run the line three ways and note which action creates behaviour without forcing a result. Usual mistake: Giving five notes at once. One action, one run, one observation.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.9",
+   "name": "The director's read: how Kazan and Lumet read actors",
+   "link": "guides/06-read-the-room.html#m2-9",
+   "id": "06-2.9-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The director's read: how Kazan and Lumet read actors\" in two or three lines, as you would to a client.",
+   "answer": "I do not direct tears or confidence. I give a person something urgent to do to another person, then make the room safe enough for the attempt.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.10",
+   "name": "Reading a group: who really decides?",
+   "link": "guides/06-read-the-room.html#m2-10",
+   "id": "06-2.10-q1",
+   "type": "quiz",
+   "q": "What is the hidden-profile trap?",
+   "options": [
+    "Groups repeat shared facts and support initial preferences",
+    "Groups discuss unique facts before shared facts, then compare them carefully",
+    "Groups always obey the quietest member in the room"
+   ],
+   "answer": 0,
+   "why": "Stasser and Titus found that common knowledge and initial preference can dominate discussion."
+  },
+  {
+   "guide": "06",
+   "stop": "2.10",
+   "name": "Reading a group: who really decides?",
+   "link": "guides/06-read-the-room.html#m2-10",
+   "id": "06-2.10-q2",
+   "type": "quiz",
+   "q": "Which statement best separates champion from economic buyer?",
+   "options": [
+    "The economic buyer is only the daily user of the product and never funds it",
+    "The champion advocates internally; the economic buyer owns budget or business risk and final approval",
+    "The champion always has the highest title in the company and the biggest team"
+   ],
+   "answer": 1,
+   "why": "Roles can overlap, but advocacy and financial authority are different jobs."
+  },
+  {
+   "guide": "06",
+   "stop": "2.10",
+   "name": "Reading a group: who really decides?",
+   "link": "guides/06-read-the-room.html#m2-10",
+   "id": "06-2.10-q3",
+   "type": "quiz",
+   "q": "What is the best first-five-minute signal of decision power?",
+   "options": [
+    "Who has the newest laptop and the most impressive setup",
+    "Who speaks longest and interrupts the most people",
+    "Who others check before committing"
+   ],
+   "answer": 2,
+   "why": "Eyes and commitment behaviour are stronger clues than talk time or props. Verify with the approval-path question."
+  },
+  {
+   "guide": "06",
+   "stop": "2.10",
+   "name": "Reading a group: who really decides?",
+   "link": "guides/06-read-the-room.html#m2-10",
+   "id": "06-2.10-r1",
+   "type": "recall",
+   "q": "Drill \"The five-minute room map\": what are the steps, and the usual mistake?",
+   "answer": "1) From memory, draw the people in your last meeting and mark who looked at whom. 2) Give each person one power base: title, expertise, information, relationship, reward, coercion or budget. 3) Write one question that reveals the approval path without asking, \"Who is the real boss?\" Usual mistake: Confusing quiet with weak and loud with powerful. Power is what someone can change when resisted.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.10",
+   "name": "Reading a group: who really decides?",
+   "link": "guides/06-read-the-room.html#m2-10",
+   "id": "06-2.10-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Reading a group: who really decides?\" in two or three lines, as you would to a client.",
+   "answer": "The decider is not always the loudest or highest. I watch who gets looked at, who can veto, who carries the risk and who can make the room wait.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.11",
+   "name": "Subtext: reading what isn't said",
+   "link": "guides/06-read-the-room.html#m2-11",
+   "id": "06-2.11-q1",
+   "type": "quiz",
+   "q": "What did Mehrabian and Ferris actually study?",
+   "options": [
+    "Single words and liking cues",
+    "Business calls and lie detection across ordinary deals",
+    "All communication across cultures and every channel"
+   ],
+   "answer": 0,
+   "why": "The result concerns narrow attitude and liking judgments when channels conflict, not a general communication law."
+  },
+  {
+   "guide": "06",
+   "stop": "2.11",
+   "name": "Subtext: reading what isn't said",
+   "link": "guides/06-read-the-room.html#m2-11",
+   "id": "06-2.11-q2",
+   "type": "quiz",
+   "q": "A client says \"interesting\" after a four-second pause. Best first move?",
+   "options": [
+    "Assume rejection and stop",
+    "Ask what to change",
+    "Close the proposal immediately"
+   ],
+   "answer": 1,
+   "why": "Keep the inference reversible. Ask a question that distinguishes praise, concern and budget."
+  },
+  {
+   "guide": "06",
+   "stop": "2.11",
+   "name": "Subtext: reading what isn't said",
+   "link": "guides/06-read-the-room.html#m2-11",
+   "id": "06-2.11-q3",
+   "type": "quiz",
+   "q": "In Pinker, Nowak and Lee, why can indirectness help?",
+   "options": [
+    "It preserves deniability",
+    "It removes every conflict from the exchange",
+    "It guarantees agreement from the listener"
+   ],
+   "answer": 0,
+   "why": "Indirectness can let a cooperative listener accept the intent while leaving an adversarial listener less direct evidence."
+  },
+  {
+   "guide": "06",
+   "stop": "2.11",
+   "name": "Subtext: reading what isn't said",
+   "link": "guides/06-read-the-room.html#m2-11",
+   "id": "06-2.11-r1",
+   "type": "recall",
+   "q": "Drill \"Subtext ledger\": what are the steps, and the usual mistake?",
+   "answer": "1) Write one sentence you heard today exactly as said. 2) Mark the pause, repair, omission and power relation around it. 3) Write one neutral question that lets the speaker correct your read. Usual mistake: Treating your first inference as the truth. A read is a question with evidence attached.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.11",
+   "name": "Subtext: reading what isn't said",
+   "link": "guides/06-read-the-room.html#m2-11",
+   "id": "06-2.11-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Subtext: reading what isn't said\" in two or three lines, as you would to a client.",
+   "answer": "\"I do not translate a pause into a verdict. I write down what happened, then ask the question that lets the other person correct me.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.12",
+   "name": "Reading across cultures",
+   "link": "guides/06-read-the-room.html#m2-12",
+   "id": "06-2.12-q1",
+   "type": "quiz",
+   "q": "What is the safest use of a culture framework?",
+   "options": [
+    "A replacement for asking direct questions",
+    "A testable starting hypothesis",
+    "A fixed personality diagnosis for this client"
+   ],
+   "answer": 1,
+   "why": "Meyer's scales and Hall's context are maps. Individual, role and organisation can overturn the first read."
+  },
+  {
+   "guide": "06",
+   "stop": "2.12",
+   "name": "Reading across cultures",
+   "link": "guides/06-read-the-room.html#m2-12",
+   "id": "06-2.12-q2",
+   "type": "quiz",
+   "q": "Why is Hofstede risky when applied to one client?",
+   "options": [
+    "It measures only language and nothing else",
+    "Countries never differ in communication",
+    "Averages are not diagnoses"
+   ],
+   "answer": 2,
+   "why": "The ecological fallacy warns against projecting country-level relationships onto people or organisations."
+  },
+  {
+   "guide": "06",
+   "stop": "2.12",
+   "name": "Reading across cultures",
+   "link": "guides/06-read-the-room.html#m2-12",
+   "id": "06-2.12-q3",
+   "type": "quiz",
+   "q": "A Kenyan partner is warm but has not signed. Best read?",
+   "options": [
+    "Check relationship and decision path",
+    "The deal is certainly dead already",
+    "Warmth proves the price is accepted without another step"
+   ],
+   "answer": 0,
+   "why": "Relationship can be a condition for business, not proof that the commercial decision is complete."
+  },
+  {
+   "guide": "06",
+   "stop": "2.12",
+   "name": "Reading across cultures",
+   "link": "guides/06-read-the-room.html#m2-12",
+   "id": "06-2.12-r1",
+   "type": "recall",
+   "q": "Drill \"Four-lens reset\": what are the steps, and the usual mistake?",
+   "answer": "1) Name the likely culture cue without treating it as fact. 2) Add the individual, organisation and role as corrections. 3) Ask one question about feedback, trust or decisions and record the answer. Usual mistake: Using a country label to excuse poor listening. Cultural knowledge should make you more curious, not more certain.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.12",
+   "name": "Reading across cultures",
+   "link": "guides/06-read-the-room.html#m2-12",
+   "id": "06-2.12-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Reading across cultures\" in two or three lines, as you would to a client.",
+   "answer": "\"A culture map tells me what to ask about. It does not tell me who the person is. I test the map, then I listen.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.13",
+   "name": "Boss fight: read a real meeting",
+   "link": "guides/06-read-the-room.html#m2-13",
+   "id": "06-2.13-q1",
+   "type": "quiz",
+   "q": "What is the first question in a boss-fight meeting read?",
+   "options": [
+    "Who has the nicest title and longest tenure?",
+    "What is the decision?",
+    "Who is most charismatic and persuasive in the room?"
+   ],
+   "answer": 1,
+   "why": "Frame the decision before interpreting motives. Otherwise you map a meeting without knowing what it can change."
+  },
+  {
+   "guide": "06",
+   "stop": "2.13",
+   "name": "Boss fight: read a real meeting",
+   "link": "guides/06-read-the-room.html#m2-13",
+   "id": "06-2.13-q2",
+   "type": "quiz",
+   "q": "Billy Beane and the scouts mainly disagree about...",
+   "options": [
+    "Whether baseball exists as a professional sport",
+    "Who should speak first in this meeting",
+    "Player value"
+   ],
+   "answer": 2,
+   "why": "The conflict is over the evaluation frame: reputation and appearance versus the measurable problem Oakland must solve."
+  },
+  {
+   "guide": "06",
+   "stop": "2.13",
+   "name": "Boss fight: read a real meeting",
+   "link": "guides/06-read-the-room.html#m2-13",
+   "id": "06-2.13-q3",
+   "type": "quiz",
+   "q": "Why set rewatch=True on this stop?",
+   "options": [
+    "Warm-up",
+    "To replace the evidence table with a film montage",
+    "To hide the meeting scene from the reader"
+   ],
+   "answer": 0,
+   "why": "The renderer adds every scene in this file as a warm-up before the final boss-fight read."
+  },
+  {
+   "guide": "06",
+   "stop": "2.13",
+   "name": "Boss fight: read a real meeting",
+   "link": "guides/06-read-the-room.html#m2-13",
+   "id": "06-2.13-r1",
+   "type": "recall",
+   "q": "Drill \"Meeting playback\": what are the steps, and the usual mistake?",
+   "answer": "1) Watch three minutes with sound and mark who changes the frame. 2) Write each speaker's likely hunger and power, with a question mark. 3) Name the next decision, owner, evidence and date. Usual mistake: Explaining everyone psychologically without checking the decision mechanics. A room read must predict what happens next.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.13",
+   "name": "Boss fight: read a real meeting",
+   "link": "guides/06-read-the-room.html#m2-13",
+   "id": "06-2.13-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Boss fight: read a real meeting\" in two or three lines, as you would to a client.",
+   "answer": "\"I do not only read the presenter. I read who needs what, who can block it, what the room is avoiding and what decision will prove me wrong.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.14",
+   "name": "The prep kit: one line, three stories, three questions, one ask",
+   "link": "guides/06-read-the-room.html#m2-14",
+   "id": "06-2.14-q1",
+   "type": "quiz",
+   "q": "What is the best preparation for a flexible call?",
+   "options": [
+    "One line plus a small bank",
+    "A complete script for every turn",
+    "No preparation at all"
+   ],
+   "answer": 0,
+   "why": "A short map protects listening; a full script competes with it."
+  },
+  {
+   "guide": "06",
+   "stop": "2.14",
+   "name": "The prep kit: one line, three stories, three questions, one ask",
+   "link": "guides/06-read-the-room.html#m2-14",
+   "id": "06-2.14-q2",
+   "type": "quiz",
+   "q": "What did coherent narratives improve in Cohn-Sheehy et al. 2021?",
+   "options": [
+    "Persuasion speed",
+    "Voice pitch judgments",
+    "Distant event recall"
+   ],
+   "answer": 2,
+   "why": "Narrative coherence helped participants recall temporally separated events."
+  },
+  {
+   "guide": "06",
+   "stop": "2.14",
+   "name": "The prep kit: one line, three stories, three questions, one ask",
+   "link": "guides/06-read-the-room.html#m2-14",
+   "id": "06-2.14-q3",
+   "type": "quiz",
+   "q": "What did accuracy-focused retelling improve?",
+   "options": [
+    "Immediate charisma in every room",
+    "Detailed, accurate later recall",
+    "A lower speaking pitch"
+   ],
+   "answer": 1,
+   "why": "Dudukovic, Marsh and Tversky found the accuracy goal produced more detailed, accurate later recall."
+  },
+  {
+   "guide": "06",
+   "stop": "2.14",
+   "name": "The prep kit: one line, three stories, three questions, one ask",
+   "link": "guides/06-read-the-room.html#m2-14",
+   "id": "06-2.14-r1",
+   "type": "recall",
+   "q": "Drill \"The four-corner prep\": what are the steps, and the usual mistake?",
+   "answer": "1) Write your one-line intro in 15 words or fewer. 2) List three true stories as problem, proof and lesson; write three open questions. 3) Circle one ask that is specific, small and easy to refuse. Usual mistake: Bringing a speech into the room. If the other person says something surprising, follow it and abandon the prepared route.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.14",
+   "name": "The prep kit: one line, three stories, three questions, one ask",
+   "link": "guides/06-read-the-room.html#m2-14",
+   "id": "06-2.14-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The prep kit: one line, three stories, three questions, one ask\" in two or three lines, as you would to a client.",
+   "answer": "I do not script the room. I bring a clear spine, three true stories and better questions, then I earn the next step.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.15",
+   "name": "Voice: pace and the pause",
+   "link": "guides/06-read-the-room.html#m2-15",
+   "id": "06-2.15-q1",
+   "type": "quiz",
+   "q": "What is the safest default for a complex decision?",
+   "options": [
+    "Moderate and varied",
+    "Very fast in every context",
+    "Very slow and deliberate"
+   ],
+   "answer": 0,
+   "why": "Rate effects are conditional. Moderate variation protects both energy and comprehension."
+  },
+  {
+   "guide": "06",
+   "stop": "2.15",
+   "name": "Voice: pace and the pause",
+   "link": "guides/06-read-the-room.html#m2-15",
+   "id": "06-2.15-q2",
+   "type": "quiz",
+   "q": "What did the 2025 synthesis find about faster speech?",
+   "options": [
+    "It has no measurable effect in any study",
+    "It always persuades more, whatever the message",
+    "It helps, then can fade"
+   ],
+   "answer": 2,
+   "why": "Across six studies, the relationship was curvilinear."
+  },
+  {
+   "guide": "06",
+   "stop": "2.15",
+   "name": "Voice: pace and the pause",
+   "link": "guides/06-read-the-room.html#m2-15",
+   "id": "06-2.15-q3",
+   "type": "quiz",
+   "q": "Where should a useful pause go?",
+   "options": [
+    "After every sentence",
+    "Before the key word",
+    "Only at the first word"
+   ],
+   "answer": 1,
+   "why": "Use breath and silence around the word that changes the meaning."
+  },
+  {
+   "guide": "06",
+   "stop": "2.15",
+   "name": "Voice: pace and the pause",
+   "link": "guides/06-read-the-room.html#m2-15",
+   "id": "06-2.15-r1",
+   "type": "recall",
+   "q": "Drill \"The three-speed take\": what are the steps, and the usual mistake?",
+   "answer": "1) Record a 20-second explanation at your natural pace. 2) Record it again, adding one breath before the key word and one full beat after it. 3) Record a third version with a quicker opening, a slower decision sentence and a normal ask. Usual mistake: Turning every pause into a dramatic stare. A useful pause is short, placed and followed by a clear word.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.15",
+   "name": "Voice: pace and the pause",
+   "link": "guides/06-read-the-room.html#m2-15",
+   "id": "06-2.15-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Voice: pace and the pause\" in two or three lines, as you would to a client.",
+   "answer": "I do not slow down to look important. I give important words enough room to arrive.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.16",
+   "name": "Voice: pitch and landing the line",
+   "link": "guides/06-read-the-room.html#m2-16",
+   "id": "06-2.16-q1",
+   "type": "quiz",
+   "q": "What did the lower-pitch experiments actually show?",
+   "options": [
+    "Lower voices create competence",
+    "Lower versions",
+    "Higher voices cannot lead"
+   ],
+   "answer": 1,
+   "why": "The evidence is about perception and choice, not an intrinsic ability created by pitch."
+  },
+  {
+   "guide": "06",
+   "stop": "2.16",
+   "name": "Voice: pitch and landing the line",
+   "link": "guides/06-read-the-room.html#m2-16",
+   "id": "06-2.16-q2",
+   "type": "quiz",
+   "q": "What is the safest way to sound settled?",
+   "options": [
+    "Breath, comfort, clear ending",
+    "Force your larynx down to sound low",
+    "Shout the final word louder"
+   ],
+   "answer": 0,
+   "why": "Do not strain. Support the voice you have and land the content word."
+  },
+  {
+   "guide": "06",
+   "stop": "2.16",
+   "name": "Voice: pitch and landing the line",
+   "link": "guides/06-read-the-room.html#m2-16",
+   "id": "06-2.16-q3",
+   "type": "quiz",
+   "q": "What is the careful verdict on the Thatcher story?",
+   "options": [
+    "It is entirely invented, with no coaching",
+    "One lower pitch explains her election",
+    "Coaching documented, cause unproved"
+   ],
+   "answer": 2,
+   "why": "BBC and the Independent support coaching and presentation changes, not a single-cause career story."
+  },
+  {
+   "guide": "06",
+   "stop": "2.16",
+   "name": "Voice: pitch and landing the line",
+   "link": "guides/06-read-the-room.html#m2-16",
+   "id": "06-2.16-r1",
+   "type": "recall",
+   "q": "Drill \"The landing ladder\": what are the steps, and the usual mistake?",
+   "answer": "1) Choose one honest closing sentence and mark its final content word. 2) Say it three times: rising, level and gently falling, without changing volume. 3) Keep the version that sounds complete and leaves a turn for the listener. Usual mistake: Dropping pitch theatrically or squeezing the throat. Authority is not a vocal costume.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.16",
+   "name": "Voice: pitch and landing the line",
+   "link": "guides/06-read-the-room.html#m2-16",
+   "id": "06-2.16-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Voice: pitch and landing the line\" in two or three lines, as you would to a client.",
+   "answer": "I do not borrow someone else's voice. I make my own clear enough that the last word can stand.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.17",
+   "name": "The body: walk, stance, stillness",
+   "link": "guides/06-read-the-room.html#m2-17",
+   "id": "06-2.17-q1",
+   "type": "quiz",
+   "q": "What did Ranehill et al. 2015 find after a larger replication?",
+   "options": [
+    "No hormone or behavioural effect, but felt power rose",
+    "Hormone and risk effects remained large",
+    "No participant reported any change in any hormone, behaviour, or feeling measure"
+   ],
+   "answer": 0,
+   "why": "The replication did not reproduce hormones or risk behaviour, while self-reported power still rose."
+  },
+  {
+   "guide": "06",
+   "stop": "2.17",
+   "name": "The body: walk, stance, stillness",
+   "link": "guides/06-read-the-room.html#m2-17",
+   "id": "06-2.17-q2",
+   "type": "quiz",
+   "q": "In Johnstone's status work, status is best treated as...",
+   "options": [
+    "A fixed trait you own",
+    "A changing behaviour in a relationship",
+    "A costume code for actors in every scene"
+   ],
+   "answer": 1,
+   "why": "Status is something people do in interaction, and it shifts with the partner and moment."
+  },
+  {
+   "guide": "06",
+   "stop": "2.17",
+   "name": "The body: walk, stance, stillness",
+   "link": "guides/06-read-the-room.html#m2-17",
+   "id": "06-2.17-q3",
+   "type": "quiz",
+   "q": "What is the practical replacement for power posing?",
+   "options": [
+    "Spread out until others yield and accept your supposed dominance",
+    "Use a pose to alter testosterone before every meeting",
+    "Prepare the first action and make your body easy to read"
+   ],
+   "answer": 2,
+   "why": "Use posture as a readiness cue, not as a biochemical or social cheat code."
+  },
+  {
+   "guide": "06",
+   "stop": "2.17",
+   "name": "The body: walk, stance, stillness",
+   "link": "guides/06-read-the-room.html#m2-17",
+   "id": "06-2.17-r1",
+   "type": "recall",
+   "q": "Drill \"Arrive, plant, decide\": what are the steps, and the usual mistake?",
+   "answer": "1) Walk 20 steps toward a fixed point at an unhurried pace. 2) Plant your feet, loosen your hands, and hold a natural stance for three breaths. 3) Say one difficult sentence after a silent two-count, then replay it with one unnecessary gesture removed. Usual mistake: Turning stillness into a frozen stare or a dominance pose. Stay responsive to the person and the room.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.17",
+   "name": "The body: walk, stance, stillness",
+   "link": "guides/06-read-the-room.html#m2-17",
+   "id": "06-2.17-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The body: walk, stance, stillness\" in two or three lines, as you would to a client.",
+   "answer": "I do not power-pose. I arrive, plant, and let the decision land.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.18",
+   "name": "Calm under pressure",
+   "link": "guides/06-read-the-room.html#m2-18",
+   "id": "06-2.18-q1",
+   "type": "quiz",
+   "q": "What is the most defensible claim about physiological sighs?",
+   "options": [
+    "They guarantee instant calm",
+    "They replace emergency treatment and professional help in a real crisis",
+    "Structured practice may reduce arousal and improve mood"
+   ],
+   "answer": 2,
+   "why": "The 2023 trial is promising, but it studied structured daily practice and does not justify a cure claim."
+  },
+  {
+   "guide": "06",
+   "stop": "2.18",
+   "name": "Calm under pressure",
+   "link": "guides/06-read-the-room.html#m2-18",
+   "id": "06-2.18-q2",
+   "type": "quiz",
+   "q": "Jamieson's arousal reappraisal asks people to...",
+   "options": [
+    "Treat arousal as useful for the task",
+    "Pretend the task is not stressful and ignore the signal",
+    "Suppress every bodily sensation"
+   ],
+   "answer": 0,
+   "why": "Participants were told to interpret stress arousal as functional and adaptive."
+  },
+  {
+   "guide": "06",
+   "stop": "2.18",
+   "name": "Calm under pressure",
+   "link": "guides/06-read-the-room.html#m2-18",
+   "id": "06-2.18-q3",
+   "type": "quiz",
+   "q": "What does an audience usually need first in a crisis?",
+   "options": [
+    "A dramatic confidence display",
+    "A fact, next action and standard",
+    "A long explanation of your feelings before any action"
+   ],
+   "answer": 1,
+   "why": "A usable sequence lets people act. Calm is process made audible."
+  },
+  {
+   "guide": "06",
+   "stop": "2.18",
+   "name": "Calm under pressure",
+   "link": "guides/06-read-the-room.html#m2-18",
+   "id": "06-2.18-r1",
+   "type": "recall",
+   "q": "Drill \"The useful arousal card\": what are the steps, and the usual mistake?",
+   "answer": "1) Take two easy physiological sighs, without forcing the breath. 2) Say silently: \"This is mobilisation, not a verdict. What does the task require?\" 3) Answer aloud in three parts: fact, next action, standard. Usual mistake: Trying to look relaxed while speaking in foggy generalities. Calm is clarity, not cosmetic stillness.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.18",
+   "name": "Calm under pressure",
+   "link": "guides/06-read-the-room.html#m2-18",
+   "id": "06-2.18-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Calm under pressure\" in two or three lines, as you would to a client.",
+   "answer": "Calm is not no adrenaline. Calm is giving the adrenaline a job.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.19",
+   "name": "Warmth and humour",
+   "link": "guides/06-read-the-room.html#m2-19",
+   "id": "06-2.19-q1",
+   "type": "quiz",
+   "q": "When appropriate humour lands, what does it often signal?",
+   "options": [
+    "That the speaker knows every person and every norm",
+    "Confidence and competence",
+    "Fear and low status"
+   ],
+   "answer": 1,
+   "why": "Bitterly, Brooks and Schweitzer link successful humour to perceived confidence and competence."
+  },
+  {
+   "guide": "06",
+   "stop": "2.19",
+   "name": "Warmth and humour",
+   "link": "guides/06-read-the-room.html#m2-19",
+   "id": "06-2.19-q2",
+   "type": "quiz",
+   "q": "What is the safer business target for a joke?",
+   "options": [
+    "Your own harmless awkwardness",
+    "A junior colleague",
+    "A client's identity"
+   ],
+   "answer": 0,
+   "why": "Self-directed, low-stakes humour lowers the cost for others. Targeted humour can expose poor judgement."
+  },
+  {
+   "guide": "06",
+   "stop": "2.19",
+   "name": "Warmth and humour",
+   "link": "guides/06-read-the-room.html#m2-19",
+   "id": "06-2.19-q3",
+   "type": "quiz",
+   "q": "What is Danny Ocean's ethical move worth copying?",
+   "options": [
+    "Hide the real plan until they commit to the whole pitch",
+    "Pressure people into a yes",
+    "Make the other person feel capable and free to choose"
+   ],
+   "answer": 2,
+   "why": "Copy invitation, agency and shared attention, not the con."
+  },
+  {
+   "guide": "06",
+   "stop": "2.19",
+   "name": "Warmth and humour",
+   "link": "guides/06-read-the-room.html#m2-19",
+   "id": "06-2.19-r1",
+   "type": "recall",
+   "q": "Drill \"The permission ladder\": what are the steps, and the usual mistake?",
+   "answer": "1) Write one neutral observation about the shared situation, not the person. 2) Try it once with a trusted friend and notice whether the laugh is easy or forced. 3) After the line, ask a genuine question and give the light back. Usual mistake: Using humour to cover anxiety, sell too fast, or test whether a stranger will tolerate disrespect.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.19",
+   "name": "Warmth and humour",
+   "link": "guides/06-read-the-room.html#m2-19",
+   "id": "06-2.19-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Warmth and humour\" in two or three lines, as you would to a client.",
+   "answer": "My joke is an invitation, not a test. If the room cannot safely join it, I do not make it.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.20",
+   "name": "The long take: monologues",
+   "link": "guides/06-read-the-room.html#m2-20",
+   "id": "06-2.20-q1",
+   "type": "quiz",
+   "q": "What is the most useful long-take sequence for a pitch?",
+   "options": [
+    "Claim, resistance, changed frame, next action",
+    "Jokes, credentials, urgency, discount, then a pressure tactic",
+    "Features, price, close, then a rushed ask and a final reminder"
+   ],
+   "answer": 0,
+   "why": "A useful pitch changes the listener's question, then lands on one honest action."
+  },
+  {
+   "guide": "06",
+   "stop": "2.20",
+   "name": "The long take: monologues",
+   "link": "guides/06-read-the-room.html#m2-20",
+   "id": "06-2.20-q2",
+   "type": "quiz",
+   "q": "What did Green and Brock study as transportation?",
+   "options": [
+    "Speaking speed during sales calls and meetings",
+    "Whether every story is remembered word for word after a week",
+    "Absorption in imagery, emotion and attention during a narrative"
+   ],
+   "answer": 2,
+   "why": "Transportation is the experience of entering a narrative world through attention, imagery and affect."
+  },
+  {
+   "guide": "06",
+   "stop": "2.20",
+   "name": "The long take: monologues",
+   "link": "guides/06-read-the-room.html#m2-20",
+   "id": "06-2.20-q3",
+   "type": "quiz",
+   "q": "What is the ethical limit of borrowing a coercive monologue?",
+   "options": [
+    "Never use a story in business, even when the evidence is clear",
+    "Copy the structure, not humiliation or false scarcity",
+    "Copy the insult if the room is quiet and the buyer seems receptive"
+   ],
+   "answer": 1,
+   "why": "Form can be studied without importing coercion. Evidence and a reversible next step keep the pitch honest."
+  },
+  {
+   "guide": "06",
+   "stop": "2.20",
+   "name": "The long take: monologues",
+   "link": "guides/06-read-the-room.html#m2-20",
+   "id": "06-2.20-r1",
+   "type": "recall",
+   "q": "Drill \"The four-beat long take\": what are the steps, and the usual mistake?",
+   "answer": "1) Write one problem, one cost and one image from a real client. 2) Speak it as frame, pressure, turn, landing, with a pause before the turn. 3) Record the same take at half speed and remove one sentence that does no work. Usual mistake: Adding drama instead of changing meaning. If the turn does not alter the listener's question, rewrite it.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.20",
+   "name": "The long take: monologues",
+   "link": "guides/06-read-the-room.html#m2-20",
+   "id": "06-2.20-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The long take: monologues\" in two or three lines, as you would to a client.",
+   "answer": "I do not make a pitch longer to sound important. I give it a turn, then I leave the room a next step.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.21",
+   "name": "George Newman and the off switch",
+   "link": "guides/06-read-the-room.html#m2-21",
+   "id": "06-2.21-q1",
+   "type": "quiz",
+   "q": "What does Snyder mean by self-monitoring?",
+   "options": [
+    "Never changing your behaviour, even when the room gives new information",
+    "Observing and regulating your displayed behaviour using social cues",
+    "Reading minds from body language and treating the guess as a fact"
+   ],
+   "answer": 1,
+   "why": "Snyder studied self-observation and self-control guided by cues about social appropriateness."
+  },
+  {
+   "guide": "06",
+   "stop": "2.21",
+   "name": "George Newman and the off switch",
+   "link": "guides/06-read-the-room.html#m2-21",
+   "id": "06-2.21-q2",
+   "type": "quiz",
+   "q": "What did the emotional-labor meta-analysis associate with surface acting?",
+   "options": [
+    "A guaranteed promotion from displaying the right emotion at work",
+    "Better sleep in every workplace after a demanding customer interaction",
+    "Impaired well-being and job attitudes"
+   ],
+   "answer": 2,
+   "why": "The result is an association across studies, not a claim that every display causes harm."
+  },
+  {
+   "guide": "06",
+   "stop": "2.21",
+   "name": "George Newman and the off switch",
+   "link": "guides/06-read-the-room.html#m2-21",
+   "id": "06-2.21-q3",
+   "type": "quiz",
+   "q": "What is the off switch for?",
+   "options": [
+    "Returning to chosen, unperformed recovery and relationships",
+    "Hiding all emotion from clients and trusted people after the meeting ends",
+    "Winning every interaction by keeping the persona switched on"
+   ],
+   "answer": 0,
+   "why": "A persona is a tool. The switch protects recovery and keeps the role from becoming an identity."
+  },
+  {
+   "guide": "06",
+   "stop": "2.21",
+   "name": "George Newman and the off switch",
+   "link": "guides/06-read-the-room.html#m2-21",
+   "id": "06-2.21-r1",
+   "type": "recall",
+   "q": "Drill \"The switch rehearsal\": what are the steps, and the usual mistake?",
+   "answer": "1) Name the room and the legitimate purpose of your persona. 2) Choose one voice, body and warmth behaviour, then breathe out and label the feeling underneath. 3) Practise an exit: remove the jacket, unclench the jaw, write one honest sentence to yourself. Usual mistake: Calling every private feeling a truth that must be shared. The off switch is for recovery and choice, not theatrical confession.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.21",
+   "name": "George Newman and the off switch",
+   "link": "guides/06-read-the-room.html#m2-21",
+   "id": "06-2.21-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"George Newman and the off switch\" in two or three lines, as you would to a client.",
+   "answer": "George Newman is my jacket, not my skin. I put him on for the room, then I come home as Kevin.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.22",
+   "name": "Boss fight: a room of strangers",
+   "link": "guides/06-read-the-room.html#m2-22",
+   "id": "06-2.22-q1",
+   "type": "quiz",
+   "q": "What should you carry into a room of strangers?",
+   "options": [
+    "One line, three stories, three questions and one ask",
+    "A full service catalogue with every technology, price and case study ready",
+    "A rule to talk until someone agrees, even when they are looking for an exit"
+   ],
+   "answer": 0,
+   "why": "The prep kit reduces wandering while leaving room to read and update."
+  },
+  {
+   "guide": "06",
+   "stop": "2.22",
+   "name": "Boss fight: a room of strangers",
+   "link": "guides/06-read-the-room.html#m2-22",
+   "id": "06-2.22-q2",
+   "type": "quiz",
+   "q": "What is the ethical response when a stranger does not reciprocate?",
+   "options": [
+    "Keep talking until they comply, even after the conversation has clearly cooled",
+    "Increase urgency and explain why they should decide before leaving",
+    "Land cleanly and give them an easy exit"
+   ],
+   "answer": 2,
+   "why": "Warmth includes consent and an exit. Lack of reciprocity is data, not a challenge to overcome."
+  },
+  {
+   "guide": "06",
+   "stop": "2.22",
+   "name": "Boss fight: a room of strangers",
+   "link": "guides/06-read-the-room.html#m2-22",
+   "id": "06-2.22-q3",
+   "type": "quiz",
+   "q": "When should George Newman switch off?",
+   "options": [
+    "Only after every person has approved the pitch and agreed to a follow-up",
+    "After the agreed interaction, during recovery and with trusted people",
+    "Never, because consistency proves confidence in every room and relationship"
+   ],
+   "answer": 1,
+   "why": "The persona is a tool. Recovery and unperformed relationships keep the tool from becoming an identity."
+  },
+  {
+   "guide": "06",
+   "stop": "2.22",
+   "name": "Boss fight: a room of strangers",
+   "link": "guides/06-read-the-room.html#m2-22",
+   "id": "06-2.22-r1",
+   "type": "recall",
+   "q": "Drill \"The stranger-room rehearsal\": what are the steps, and the usual mistake?",
+   "answer": "1) Say your one line while standing level, breathing out before the final word. 2) Role-play three replies: eager, guarded and distracted. Ask one question and give each person an exit. 3) Deliver the 30-second long take, pause, name the next step, and physically switch off. Usual mistake: Treating every pause as rejection or every smile as buying intent. Read reciprocity over time, not one cue.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.22",
+   "name": "Boss fight: a room of strangers",
+   "link": "guides/06-read-the-room.html#m2-22",
+   "id": "06-2.22-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Boss fight: a room of strangers\" in two or three lines, as you would to a client.",
+   "answer": "I enter prepared, read without pretending I know, tell one useful story, ask permission, and leave George Newman at the door.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.23",
+   "name": "Known for one thing: the website guy",
+   "link": "guides/06-read-the-room.html#m2-23",
+   "id": "06-2.23-q1",
+   "type": "quiz",
+   "q": "What made Ruddy legible to Paramount?",
+   "options": [
+    "A long list of unrelated skills",
+    "A famous family connection",
+    "A reputation for practical delivery"
+   ],
+   "answer": 2,
+   "why": "The sources support his cost, speed and delivery reputation. A portable identity made him easy to choose."
+  },
+  {
+   "guide": "06",
+   "stop": "2.23",
+   "name": "Known for one thing: the website guy",
+   "link": "guides/06-read-the-room.html#m2-23",
+   "id": "06-2.23-q2",
+   "type": "quiz",
+   "q": "What is the careful version of the weak-tie finding?",
+   "options": [
+    "Weak ties always beat strong ties",
+    "Weak ties can bridge groups, with effects varying by context",
+    "Only close friends create opportunities"
+   ],
+   "answer": 1,
+   "why": "Granovetter gives the bridge idea; Rajkumar et al. add a nonlinear, industry-dependent causal result."
+  },
+  {
+   "guide": "06",
+   "stop": "2.23",
+   "name": "Known for one thing: the website guy",
+   "link": "guides/06-read-the-room.html#m2-23",
+   "id": "06-2.23-q3",
+   "type": "quiz",
+   "q": "Which is the strongest positioning line for Kevin?",
+   "options": [
+    "I build safari websites that win bookings",
+    "I am a digital entrepreneur",
+    "I do websites, apps, AI and many other things"
+   ],
+   "answer": 0,
+   "why": "It names a client, a useful result and a repeatable pattern."
+  },
+  {
+   "guide": "06",
+   "stop": "2.23",
+   "name": "Known for one thing: the website guy",
+   "link": "guides/06-read-the-room.html#m2-23",
+   "id": "06-2.23-r1",
+   "type": "recall",
+   "q": "Drill \"The one-line test\": what are the steps, and the usual mistake?",
+   "answer": "1) Write client, costly problem and measurable result in one sentence. 2) Remove tools, credentials and adjectives until the sentence still has a clear win. 3) Say it to one friend and ask what they would tell someone else about you. Usual mistake: Choosing a niche because it sounds stylish. Choose the problem you can repeatedly solve.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.23",
+   "name": "Known for one thing: the website guy",
+   "link": "guides/06-read-the-room.html#m2-23",
+   "id": "06-2.23-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Known for one thing: the website guy\" in two or three lines, as you would to a client.",
+   "answer": "I am not a general digital agency. I am the website person for wildlife and safari brands, and I can show you the booking problem I fix.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.24",
+   "name": "The one-minute pitch",
+   "link": "guides/06-read-the-room.html#m2-24",
+   "id": "06-2.24-q1",
+   "type": "quiz",
+   "q": "What belongs first in Kevin's one-minute pitch?",
+   "options": [
+    "His entire technology stack",
+    "His childhood and degree",
+    "The client's costly problem"
+   ],
+   "answer": 2,
+   "why": "Lead with the listener's problem. Proof and promise follow."
+  },
+  {
+   "guide": "06",
+   "stop": "2.24",
+   "name": "The one-minute pitch",
+   "link": "guides/06-read-the-room.html#m2-24",
+   "id": "06-2.24-q2",
+   "type": "quiz",
+   "q": "What did Huang and Pearce mean by investor gut feel?",
+   "options": [
+    "Expertise plus analysis",
+    "A mystical sixth sense",
+    "A fixed checklist used by every investor"
+   ],
+   "answer": 0,
+   "why": "Their study describes dynamic emotion-cognition under extreme uncertainty, not magic."
+  },
+  {
+   "guide": "06",
+   "stop": "2.24",
+   "name": "The one-minute pitch",
+   "link": "guides/06-read-the-room.html#m2-24",
+   "id": "06-2.24-q3",
+   "type": "quiz",
+   "q": "After the small next step, what should Kevin do?",
+   "options": [
+    "Keep adding features until they agree",
+    "Stop and let the listener respond",
+    "Offer three unrelated services"
+   ],
+   "answer": 1,
+   "why": "The pitch ends where a real conversation starts."
+  },
+  {
+   "guide": "06",
+   "stop": "2.24",
+   "name": "The one-minute pitch",
+   "link": "guides/06-read-the-room.html#m2-24",
+   "id": "06-2.24-r1",
+   "type": "recall",
+   "q": "Drill \"Four beats, one breath\": what are the steps, and the usual mistake?",
+   "answer": "1) Write the listener's costly problem in twelve words. 2) Add one proof and one changed outcome. 3) End with a small ask and practise stopping for three seconds. Usual mistake: Answering an imagined objection before the listener has shown interest. Let their question choose the next beat.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.24",
+   "name": "The one-minute pitch",
+   "link": "guides/06-read-the-room.html#m2-24",
+   "id": "06-2.24-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The one-minute pitch\" in two or three lines, as you would to a client.",
+   "answer": "The pitch is not my speech. It is the first question I make easy for you to ask.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.25",
+   "name": "Favours and gifts, done right",
+   "link": "guides/06-read-the-room.html#m2-25",
+   "id": "06-2.25-q1",
+   "type": "quiz",
+   "q": "What makes the Godfather favour an anti-model?",
+   "options": [
+    "It contains gratitude",
+    "It is too short",
+    "The request is backed by coercive power"
+   ],
+   "answer": 2,
+   "why": "The problem is not reciprocity. It is that refusal is unsafe and the debt is enforced."
+  },
+  {
+   "guide": "06",
+   "stop": "2.25",
+   "name": "Favours and gifts, done right",
+   "link": "guides/06-read-the-room.html#m2-25",
+   "id": "06-2.25-q2",
+   "type": "quiz",
+   "q": "What is the careful status of the Ben Franklin effect?",
+   "options": [
+    "A finding with no study at all",
+    "A single classic study",
+    "A guaranteed networking trick"
+   ],
+   "answer": 1,
+   "why": "Jecker and Landy published the classic 1969 experiment. Its narrow evidence does not justify a guaranteed tactic."
+  },
+  {
+   "guide": "06",
+   "stop": "2.25",
+   "name": "Favours and gifts, done right",
+   "link": "guides/06-read-the-room.html#m2-25",
+   "id": "06-2.25-q3",
+   "type": "quiz",
+   "q": "What should guide a professional gift?",
+   "options": [
+    "What the recipient can use",
+    "How much future debt it creates",
+    "How impressive it looks to you"
+   ],
+   "answer": 0,
+   "why": "Gift research finds a recurring giver-recipient mismatch. Start with their use."
+  },
+  {
+   "guide": "06",
+   "stop": "2.25",
+   "name": "Favours and gifts, done right",
+   "link": "guides/06-read-the-room.html#m2-25",
+   "id": "06-2.25-r1",
+   "type": "recall",
+   "q": "Drill \"Open-loop reciprocity\": what are the steps, and the usual mistake?",
+   "answer": "1) Choose one useful thing you can give without resentment. 2) Write a request with cost, reason and an easy no. 3) Write the thank-you you will send even if the answer is no. Usual mistake: Giving something unwanted, then silently charging interest. Ask what would actually help.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.25",
+   "name": "Favours and gifts, done right",
+   "link": "guides/06-read-the-room.html#m2-25",
+   "id": "06-2.25-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Favours and gifts, done right\" in two or three lines, as you would to a client.",
+   "answer": "I can help with that. You do not owe me anything, and if I ask for a favour later you can say no without damaging the relationship.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.26",
+   "name": "Waking dormant ties",
+   "link": "guides/06-read-the-room.html#m2-26",
+   "id": "06-2.26-q1",
+   "type": "quiz",
+   "q": "What did the dormant-ties study compare?",
+   "options": [
+    "Old contacts compared with strangers",
+    "Advice from dormant and current ties",
+    "Sales from gifts to sales from pitches"
+   ],
+   "answer": 1,
+   "why": "Executive MBA students consulted dormant and current contacts on an important work project."
+  },
+  {
+   "guide": "06",
+   "stop": "2.26",
+   "name": "Waking dormant ties",
+   "link": "guides/06-read-the-room.html#m2-26",
+   "id": "06-2.26-q2",
+   "type": "quiz",
+   "q": "What should open a reconnection message?",
+   "options": [
+    "A hidden referral request",
+    "A long portfolio attachment",
+    "A real context and update"
+   ],
+   "answer": 2,
+   "why": "Context lowers awkwardness and gives the person a reason to reply."
+  },
+  {
+   "guide": "06",
+   "stop": "2.26",
+   "name": "Waking dormant ties",
+   "link": "guides/06-read-the-room.html#m2-26",
+   "id": "06-2.26-q3",
+   "type": "quiz",
+   "q": "What is the ethical boundary in the Ocean's Eleven lesson?",
+   "options": [
+    "Use history with a safe refusal",
+    "Use history to pressure a yes",
+    "Never contact anyone from the past"
+   ],
+   "answer": 0,
+   "why": "Shared history can support a respectful ask, but it cannot make refusal unsafe."
+  },
+  {
+   "guide": "06",
+   "stop": "2.26",
+   "name": "Waking dormant ties",
+   "link": "guides/06-read-the-room.html#m2-26",
+   "id": "06-2.26-r1",
+   "type": "recall",
+   "q": "Drill \"The warm re-entry\": what are the steps, and the usual mistake?",
+   "answer": "1) Write the shared context and one detail you genuinely remember. 2) Write your current update in two sentences, with no achievement parade. 3) Ask one bounded question and add an easy no or no-reply option. Usual mistake: Pretending the silence did not happen. Acknowledge the gap lightly and give the person a reason that is about them as well as you.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.26",
+   "name": "Waking dormant ties",
+   "link": "guides/06-read-the-room.html#m2-26",
+   "id": "06-2.26-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Waking dormant ties\" in two or three lines, as you would to a client.",
+   "answer": "We have been out of touch, so I will not pretend this is casual. I remembered your work on X, and I would value your view on one specific question. No pressure if now is not a good time.",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.27",
+   "name": "The follow-up system",
+   "link": "guides/06-read-the-room.html#m2-27",
+   "id": "06-2.27-q1",
+   "type": "quiz",
+   "q": "What did the HBR audit find among companies that replied within 30 days?",
+   "options": [
+    "A universal five-minute rule",
+    "An average response of 42 hours",
+    "No relationship to response time"
+   ],
+   "answer": 1,
+   "why": "The reported average was 42 hours. The study does not establish a universal five-minute law."
+  },
+  {
+   "guide": "06",
+   "stop": "2.27",
+   "name": "The follow-up system",
+   "link": "guides/06-read-the-room.html#m2-27",
+   "id": "06-2.27-q2",
+   "type": "quiz",
+   "q": "What belongs in Kevin's people CRM?",
+   "options": [
+    "Context, promise, date, and permission to stop",
+    "Only a lead score",
+    "A script that handles every possible objection for you"
+   ],
+   "answer": 0,
+   "why": "The system stores human context and agreed next actions, with an exit condition."
+  },
+  {
+   "guide": "06",
+   "stop": "2.27",
+   "name": "The follow-up system",
+   "link": "guides/06-read-the-room.html#m2-27",
+   "id": "06-2.27-q3",
+   "type": "quiz",
+   "q": "Joe Girard's 250 figure is best treated as...",
+   "options": [
+    "A peer-reviewed network constant",
+    "A precise conversion forecast",
+    "An anecdotal business heuristic"
+   ],
+   "answer": 2,
+   "why": "The Hall of Fame account says it came from Girard's informal polling, so use it as a story, not a law."
+  },
+  {
+   "guide": "06",
+   "stop": "2.27",
+   "name": "The follow-up system",
+   "link": "guides/06-read-the-room.html#m2-27",
+   "id": "06-2.27-r1",
+   "type": "recall",
+   "q": "Drill \"The seven-field card\": what are the steps, and the usual mistake?",
+   "answer": "1) Write one person's name, context, and current problem. 2) Write one useful thing you can deliver and a date. 3) Add the stop condition: what counts as a no or a pause? Usual mistake: Turning a person into a lead score. The card is for remembering promises and consent.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.27",
+   "name": "The follow-up system",
+   "link": "guides/06-read-the-room.html#m2-27",
+   "id": "06-2.27-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The follow-up system\" in two or three lines, as you would to a client.",
+   "answer": "\"I do not chase people. I keep promises, add something useful, and make the next step easy to decline.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.28",
+   "name": "Working a room",
+   "link": "guides/06-read-the-room.html#m2-28",
+   "id": "06-2.28-q1",
+   "type": "quiz",
+   "q": "What did the instrumented mixer reveal?",
+   "options": [
+    "Friends made about half of encounters",
+    "Nobody met anyone outside their existing network",
+    "All guests mixed evenly"
+   ],
+   "answer": 0,
+   "why": "The average guest had 14 encounters and friends accounted for a disproportionate half."
+  },
+  {
+   "guide": "06",
+   "stop": "2.28",
+   "name": "Working a room",
+   "link": "guides/06-read-the-room.html#m2-28",
+   "id": "06-2.28-q2",
+   "type": "quiz",
+   "q": "What is the best entry to a group?",
+   "options": [
+    "Stand silently and wait for someone to rescue you",
+    "Use a host, topic, or mutual contact as a bridge",
+    "Interrupt with your full pitch"
+   ],
+   "answer": 1,
+   "why": "A bridge makes the interruption legible and gives both people a reason to continue."
+  },
+  {
+   "guide": "06",
+   "stop": "2.28",
+   "name": "Working a room",
+   "link": "guides/06-read-the-room.html#m2-28",
+   "id": "06-2.28-q3",
+   "type": "quiz",
+   "q": "In Cheng et al., prestige differed from dominance because prestige targets were...",
+   "options": [
+    "More intimidating",
+    "Less visible",
+    "More likable"
+   ],
+   "answer": 2,
+   "why": "Both could increase influence, but prestige targets were viewed as likable while dominance targets were not."
+  },
+  {
+   "guide": "06",
+   "stop": "2.28",
+   "name": "Working a room",
+   "link": "guides/06-read-the-room.html#m2-28",
+   "id": "06-2.28-r1",
+   "type": "recall",
+   "q": "Drill \"The edge entry\": what are the steps, and the usual mistake?",
+   "answer": "1) Name a room you will enter and one honest bridge into it. 2) Write one question that fits the room, not your pitch. 3) Write your exit: one introduction or useful link, then leave. Usual mistake: Treating the room as a hunt for status. The aim is a better-connected room after you leave.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.28",
+   "name": "Working a room",
+   "link": "guides/06-read-the-room.html#m2-28",
+   "id": "06-2.28-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Working a room\" in two or three lines, as you would to a client.",
+   "answer": "\"I am not trying to work the whole room. I am trying to leave one small bridge stronger than I found it.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.29",
+   "name": "The 48 Laws worth knowing, decoded",
+   "link": "guides/06-read-the-room.html#m2-29",
+   "id": "06-2.29-q1",
+   "type": "quiz",
+   "q": "What does a historical anecdote prove?",
+   "options": [
+    "A story in a particular context",
+    "A universal law",
+    "A replicated experiment across many modern workplaces"
+   ],
+   "answer": 0,
+   "why": "Anecdotes can suggest mechanisms, but they do not establish universal effects."
+  },
+  {
+   "guide": "06",
+   "stop": "2.29",
+   "name": "The 48 Laws worth knowing, decoded",
+   "link": "guides/06-read-the-room.html#m2-29",
+   "id": "06-2.29-q2",
+   "type": "quiz",
+   "q": "Which status route was liked more in Cheng et al.?",
+   "options": [
+    "Dominance through intimidation",
+    "Neither route",
+    "Prestige through expertise"
+   ],
+   "answer": 2,
+   "why": "Prestige and dominance could both increase influence, but prestige targets were liked."
+  },
+  {
+   "guide": "06",
+   "stop": "2.29",
+   "name": "The 48 Laws worth knowing, decoded",
+   "link": "guides/06-read-the-room.html#m2-29",
+   "id": "06-2.29-q3",
+   "type": "quiz",
+   "q": "What did the influence-tactics meta-analysis find about pressure?",
+   "options": [
+    "It was always the best tactic in every workplace",
+    "It was never measured",
+    "It was negatively related to outcomes"
+   ],
+   "answer": 2,
+   "why": "Across the meta-analysis, pressure was negatively related to task and relationship outcomes."
+  },
+  {
+   "guide": "06",
+   "stop": "2.29",
+   "name": "The 48 Laws worth knowing, decoded",
+   "link": "guides/06-read-the-room.html#m2-29",
+   "id": "06-2.29-r1",
+   "type": "recall",
+   "q": "Drill \"The five-pass decoder\": what are the steps, and the usual mistake?",
+   "answer": "1) Choose one law or power move and state its mechanism. 2) List the red flag and the defence. 3) Write the honest version without a script for controlling anyone. Usual mistake: Admiring the move before asking who loses. Every tactic has a target and a cost.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.29",
+   "name": "The 48 Laws worth knowing, decoded",
+   "link": "guides/06-read-the-room.html#m2-29",
+   "id": "06-2.29-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"The 48 Laws worth knowing, decoded\" in two or three lines, as you would to a client.",
+   "answer": "\"Greene gives me warning labels, not lines. I want the mechanism, the red flag, and the honest replacement.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.30",
+   "name": "Boss fight: the follow-up week",
+   "link": "guides/06-read-the-room.html#m2-30",
+   "id": "06-2.30-q1",
+   "type": "quiz",
+   "q": "What is the boss-fight score?",
+   "options": [
+    "Messages sent",
+    "How many people were forced to answer you",
+    "Promises kept and next steps clarified"
+   ],
+   "answer": 2,
+   "why": "The useful unit is a clearer next step, a useful bridge, a pause, or a clean no."
+  },
+  {
+   "guide": "06",
+   "stop": "2.30",
+   "name": "Boss fight: the follow-up week",
+   "link": "guides/06-read-the-room.html#m2-30",
+   "id": "06-2.30-q2",
+   "type": "quiz",
+   "q": "Why does the cadence evidence need a caveat?",
+   "options": [
+    "It is based on vendor observational data",
+    "It proves one schedule for all relationships",
+    "It tested every industry equally"
+   ],
+   "answer": 0,
+   "why": "The report is vendor observational data and does not prove a universal schedule."
+  },
+  {
+   "guide": "06",
+   "stop": "2.30",
+   "name": "Boss fight: the follow-up week",
+   "link": "guides/06-read-the-room.html#m2-30",
+   "id": "06-2.30-q3",
+   "type": "quiz",
+   "q": "On Friday, what should Kevin do with repeated silence?",
+   "options": [
+    "Invent an objection and answer it",
+    "Review, pause, or archive",
+    "Escalate forever"
+   ],
+   "answer": 1,
+   "why": "A stop rule protects the prospect and turns silence into a decision about your process."
+  },
+  {
+   "guide": "06",
+   "stop": "2.30",
+   "name": "Boss fight: the follow-up week",
+   "link": "guides/06-read-the-room.html#m2-30",
+   "id": "06-2.30-r1",
+   "type": "recall",
+   "q": "Drill \"The five-day card\": what are the steps, and the usual mistake?",
+   "answer": "1) Choose three prospects and label the relationship type, not just the lead temperature. 2) Write Monday, Tuesday, Wednesday, Thursday, and Friday actions. 3) Add the review fields: promise kept, reply, next step, pause, or no. Usual mistake: Treating activity as progress. A full week of touches can still be a failure if the other person never had a real choice.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.30",
+   "name": "Boss fight: the follow-up week",
+   "link": "guides/06-read-the-room.html#m2-30",
+   "id": "06-2.30-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Boss fight: the follow-up week\" in two or three lines, as you would to a client.",
+   "answer": "\"My network is not a pile of names. It is a set of promises I can keep, bridges I can make, and no answers I can respect.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.31",
+   "name": "Influence vs manipulation: the disclosure test",
+   "link": "guides/06-read-the-room.html#m2-31",
+   "id": "06-2.31-q1",
+   "type": "quiz",
+   "q": "What is the disclosure test looking for?",
+   "options": [
+    "Whether the listener agrees without checking the claim",
+    "Whether the speaker sounds confident",
+    "Whether the appeal survives being made visible"
+   ],
+   "answer": 2,
+   "why": "Disclosure is a practical diagnostic. It exposes a hidden pressure or shows that the reasons can stand in daylight."
+  },
+  {
+   "guide": "06",
+   "stop": "2.31",
+   "name": "Influence vs manipulation: the disclosure test",
+   "link": "guides/06-read-the-room.html#m2-31",
+   "id": "06-2.31-q2",
+   "type": "quiz",
+   "q": "Sunstein's centre of gravity is that manipulation...",
+   "options": [
+    "Uses any emotional language, even when truthful",
+    "Disrespects reflective and deliberative choice",
+    "Always involves a lie"
+   ],
+   "answer": 1,
+   "why": "Sunstein distinguishes manipulation from coercion and deception while centring reflective choice."
+  },
+  {
+   "guide": "06",
+   "stop": "2.31",
+   "name": "Influence vs manipulation: the disclosure test",
+   "link": "guides/06-read-the-room.html#m2-31",
+   "id": "06-2.31-q3",
+   "type": "quiz",
+   "q": "Cialdini's ethical influence requires...",
+   "options": [
+    "Truthful, relationship-preserving use",
+    "A guaranteed yes",
+    "A secret advantage hidden in the framing"
+   ],
+   "answer": 0,
+   "why": "The same principles can be used ethically or dishonestly. Long-term trust is the check."
+  },
+  {
+   "guide": "06",
+   "stop": "2.31",
+   "name": "Influence vs manipulation: the disclosure test",
+   "link": "guides/06-read-the-room.html#m2-31",
+   "id": "06-2.31-r1",
+   "type": "recall",
+   "q": "Drill \"Daylight audit\": what are the steps, and the usual mistake?",
+   "answer": "1) Write the decision you want and your own upside. 2) List one material downside or alternative the listener should know. 3) Read the appeal aloud and mark the sentence that would be hardest to say openly. Usual mistake: Turning disclosure into a performance while still hiding the relevant cost.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.31",
+   "name": "Influence vs manipulation: the disclosure test",
+   "link": "guides/06-read-the-room.html#m2-31",
+   "id": "06-2.31-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Influence vs manipulation: the disclosure test\" in two or three lines, as you would to a client.",
+   "answer": "\"If I cannot explain what I am doing, what I gain and where you can say no, I am not influencing you honestly.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.32",
+   "name": "Belfort, decoded",
+   "link": "guides/06-read-the-room.html#m2-32",
+   "id": "06-2.32-q1",
+   "type": "quiz",
+   "q": "What is the safest reading of Belfort's straight-line pitch?",
+   "options": [
+    "A narrowing sequence that can suppress due diligence",
+    "A method for making any investment safe and profitable",
+    "Proof that speed creates trust"
+   ],
+   "answer": 0,
+   "why": "The mechanism can hold attention, but a buyer still needs evidence, incentives and time."
+  },
+  {
+   "guide": "06",
+   "stop": "2.32",
+   "name": "Belfort, decoded",
+   "link": "guides/06-read-the-room.html#m2-32",
+   "id": "06-2.32-q2",
+   "type": "quiz",
+   "q": "What restitution amount appears in the court record?",
+   "options": [
+    "110,362,993.87 dollars",
+    "1,537,146 dollars in the SEC settlement",
+    "100,000 dollars"
+   ],
+   "answer": 0,
+   "why": "The court record gives the restitution order as 110,362,993.87 dollars. The SEC settlement lists other amounts for different obligations."
+  },
+  {
+   "guide": "06",
+   "stop": "2.32",
+   "name": "Belfort, decoded",
+   "link": "guides/06-read-the-room.html#m2-32",
+   "id": "06-2.32-q3",
+   "type": "quiz",
+   "q": "What is the best defence to urgency?",
+   "options": [
+    "Ask for a bigger discount before you decide",
+    "Match the seller's speed",
+    "Pause and verify independently"
+   ],
+   "answer": 2,
+   "why": "Time, documents and an independent check widen the frame that a pressure pitch narrows."
+  },
+  {
+   "guide": "06",
+   "stop": "2.32",
+   "name": "Belfort, decoded",
+   "link": "guides/06-read-the-room.html#m2-32",
+   "id": "06-2.32-r1",
+   "type": "recall",
+   "q": "Drill \"The pause button\": what are the steps, and the usual mistake?",
+   "answer": "1) Take a famous high-energy pitch and remove its certainty words. 2) Write the missing evidence a buyer would need. 3) Add a sentence granting time to compare and decline. Usual mistake: Copying the rhythm of a pressure pitch while calling it ethical because the product is legitimate.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.32",
+   "name": "Belfort, decoded",
+   "link": "guides/06-read-the-room.html#m2-32",
+   "id": "06-2.32-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Belfort, decoded\" in two or three lines, as you would to a client.",
+   "answer": "\"A straight line is for a clean explanation, not a trapped buyer. I leave room for evidence, comparison and no.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.33",
+   "name": "Barry Seal: useful to everyone, loyal to no one",
+   "link": "guides/06-read-the-room.html#m2-33",
+   "id": "06-2.33-q1",
+   "type": "quiz",
+   "q": "What does the historical record most securely show about Seal?",
+   "options": [
+    "He was only a CIA pilot, not an informant",
+    "He was a DEA informant with cartel access",
+    "He was a fictional composite"
+   ],
+   "answer": 1,
+   "why": "The record supports his smuggling, DEA cooperation and 1986 murder. The film expands and simplifies the CIA story."
+  },
+  {
+   "guide": "06",
+   "stop": "2.33",
+   "name": "Barry Seal: useful to everyone, loyal to no one",
+   "link": "guides/06-read-the-room.html#m2-33",
+   "id": "06-2.33-q2",
+   "type": "quiz",
+   "q": "What is the safest lesson for Kevin?",
+   "options": [
+    "Serve every powerful person without asking questions",
+    "Set a scope, conflict rule and clear allegiance",
+    "Stay ambiguous to keep options open"
+   ],
+   "answer": 1,
+   "why": "Useful expertise becomes trustworthy when people know whom you represent and what you will not carry across boundaries."
+  },
+  {
+   "guide": "06",
+   "stop": "2.33",
+   "name": "Barry Seal: useful to everyone, loyal to no one",
+   "link": "guides/06-read-the-room.html#m2-33",
+   "id": "06-2.33-q3",
+   "type": "quiz",
+   "q": "The CIA evidence around Seal is best described as...",
+   "options": [
+    "A confirmed lifelong CIA recruitment from the start of his career",
+    "No contact of any kind",
+    "Documented around a 1984 operation, with the larger story contested"
+   ],
+   "answer": 2,
+   "why": "The declassified report documents the 1984 operation. It does not establish the film's complete CIA mythology."
+  },
+  {
+   "guide": "06",
+   "stop": "2.33",
+   "name": "Barry Seal: useful to everyone, loyal to no one",
+   "link": "guides/06-read-the-room.html#m2-33",
+   "id": "06-2.33-r1",
+   "type": "recall",
+   "q": "Drill \"Boundary before brilliance\": what are the steps, and the usual mistake?",
+   "answer": "1) Name one capability a client needs from you. 2) Name the information or access you must not carry between clients. 3) Write the sentence you will use when a request crosses that line. Usual mistake: Waiting until a crisis to decide whom you represent.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.33",
+   "name": "Barry Seal: useful to everyone, loyal to no one",
+   "link": "guides/06-read-the-room.html#m2-33",
+   "id": "06-2.33-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"Barry Seal: useful to everyone, loyal to no one\" in two or three lines, as you would to a client.",
+   "answer": "\"Being useful opens doors. Being reliable keeps them open. I tell each client which door I am standing in.\"",
+   "label": "Say it in the room"
+  },
+  {
+   "guide": "06",
+   "stop": "2.34",
+   "name": "When the mask eats the man",
+   "link": "guides/06-read-the-room.html#m2-34",
+   "id": "06-2.34-q1",
+   "type": "quiz",
+   "q": "What is the safest use of a persona?",
+   "options": [
+    "Use it with a named exit and a values check",
+    "Hide it from yourself",
+    "Treat it as your permanent identity"
+   ],
+   "answer": 0,
+   "why": "Roles can help. The danger is forgetting they are roles and letting their rewards choose for you."
+  },
+  {
+   "guide": "06",
+   "stop": "2.34",
+   "name": "When the mask eats the man",
+   "link": "guides/06-read-the-room.html#m2-34",
+   "id": "06-2.34-q2",
+   "type": "quiz",
+   "q": "What did Tice's research suggest?",
+   "options": [
+    "Public behaviour can enter self-concept",
+    "Every performance becomes a disorder or diagnosis",
+    "Private behaviour never matters"
+   ],
+   "answer": 0,
+   "why": "Tice found stronger self-concept effects for identical behaviour performed publicly. That supports a mechanism, not an inevitable tragedy."
+  },
+  {
+   "guide": "06",
+   "stop": "2.34",
+   "name": "When the mask eats the man",
+   "link": "guides/06-read-the-room.html#m2-34",
+   "id": "06-2.34-q3",
+   "type": "quiz",
+   "q": "What is the final calibration of the guide?",
+   "options": [
+    "Read people as fixed types before asking questions",
+    "Trust a first impression if it feels vivid",
+    "Read, ask, verify and keep an exit"
+   ],
+   "answer": 2,
+   "why": "The guide is a loop: observe, ask, update, act honestly and retain the ability to stop."
+  },
+  {
+   "guide": "06",
+   "stop": "2.34",
+   "name": "When the mask eats the man",
+   "link": "guides/06-read-the-room.html#m2-34",
+   "id": "06-2.34-r1",
+   "type": "recall",
+   "q": "Drill \"The off switch\": what are the steps, and the usual mistake?",
+   "answer": "1) Name the role you used today and the reward it gave you. 2) Write the behaviour you will stop when the meeting ends. 3) Ask one trusted person what you look like when the role is running too hot. Usual mistake: Calling a mask your personality because other people rewarded it.",
+   "label": "Drill"
+  },
+  {
+   "guide": "06",
+   "stop": "2.34",
+   "name": "When the mask eats the man",
+   "link": "guides/06-read-the-room.html#m2-34",
+   "id": "06-2.34-r2",
+   "type": "recall",
+   "q": "Page closed: explain \"When the mask eats the man\" in two or three lines, as you would to a client.",
+   "answer": "\"George Newman gets me through the door. Kevin decides what I do once I am inside.\"",
    "label": "Say it in the room"
   }
  ]
