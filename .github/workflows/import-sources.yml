@@ -1,0 +1,80 @@
+name: Import sources
+# One-off drops of large guide sources. Push import/request.json with
+# {"url": "<short-lived https zip URL>", "sha256": "<hex>"}. The workflow downloads the zip,
+# checks the hash, unpacks ONLY build/02/, build/06/, build/07/ and docs/STATUS.md,
+# runs the No. 02, No. 06 and No. 07 pipelines, and commits sources plus outputs.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'import/request.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: guide-build
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install build tools
+        run: |
+          pip install beautifulsoup4==4.12.3 playwright==1.48.0 pillow
+          python -m playwright install --with-deps chromium || echo "no browser, No. 07 QA will be skipped"
+      - name: Download, verify and unpack
+        run: |
+          python - <<'PY'
+          import hashlib, json, os, sys, urllib.request, zipfile, io
+          req = json.load(open('import/request.json'))
+          if not req.get('url'):
+              sys.exit('no url in import/request.json')
+          r = urllib.request.Request(req['url'], headers={'User-Agent': 'mtrx-import/1.0'})
+          data = urllib.request.urlopen(r, timeout=120).read()
+          got = hashlib.sha256(data).hexdigest()
+          if got != req['sha256']:
+              sys.exit('sha256 mismatch: got %s' % got)
+          z = zipfile.ZipFile(io.BytesIO(data))
+          ok = ('build/02/', 'build/06/', 'build/07/')
+          n = 0
+          for m in z.infolist():
+              name = m.filename
+              if m.is_dir():
+                  continue
+              if '..' in name or name.startswith('/') or not (name.startswith(ok) or name == 'docs/STATUS.md'):
+                  print('skipped', name)
+                  continue
+              os.makedirs(os.path.dirname(name), exist_ok=True)
+              open(name, 'wb').write(z.read(m))
+              n += 1
+          print('unpacked %d files, sha256 ok' % n)
+          json.dump({'status': 'imported', 'sha256': got, 'files': n}, open('import/request.json', 'w'))
+          PY
+      - name: Build No. 02
+        run: python build/02/run.py
+      - name: Build No. 06
+        run: python build/run.py
+      - name: Build No. 07
+        run: python build/07/run.py
+      - name: Summary
+        run: |
+          { for f in build/out/02-report.txt build/out/06-report.txt build/out/07-report.txt; do echo "== $f"; sed -n 1,2p "$f"; done; } | tee build/out/import-report.txt
+      - name: Commit
+        run: |
+          git config user.name "mtrx-build"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add build guides index.html docs import
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "import: No. 02, 06, 07 sources and builds [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            sleep 7
+          done
+          exit 1

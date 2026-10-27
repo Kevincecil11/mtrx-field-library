@@ -1,0 +1,41 @@
+name: Guide 02 build
+# Builds No. 02 The mind (Weeks 3 and 4) from small sources in build/02/. See build/02/run.py.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'build/02/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: guide-build
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install build tools
+        run: |
+          pip install beautifulsoup4==4.12.3 pillow
+      - name: Build No. 02
+        run: python build/02/run.py
+      - name: Commit
+        run: |
+          git config user.name "mtrx-build"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add guides build/out index.html
+          if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
+          git commit -m "guide 02 build: $(sed -n 2p build/out/02-report.txt | head -c 100) [skip ci]"
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
+            sleep 7
+          done
+          exit 1
