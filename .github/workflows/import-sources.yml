@@ -1,8 +1,8 @@
 name: Import sources
 # One-off drops of large guide sources. Push import/request.json with
 # {"url": "<short-lived https zip URL>", "sha256": "<hex>"}. The workflow downloads the zip,
-# checks the hash, unpacks ONLY build/02/, build/06/, build/07/ and docs/STATUS.md,
-# runs the No. 02, No. 06 and No. 07 pipelines, and commits sources plus outputs.
+# checks the hash, unpacks ONLY build/02/, build/04/, build/06/, build/07/, build/08/ and docs/STATUS.md,
+# runs every guide pipeline that has sources, and commits sources plus outputs.
 on:
   push:
     branches: [main]
@@ -42,7 +42,7 @@ jobs:
           if got != req['sha256']:
               sys.exit('sha256 mismatch: got %s' % got)
           z = zipfile.ZipFile(io.BytesIO(data))
-          ok = ('build/02/', 'build/06/', 'build/07/')
+          ok = ('build/02/', 'build/04/', 'build/06/', 'build/07/', 'build/08/')
           n = 0
           for m in z.infolist():
               name = m.filename
@@ -59,20 +59,25 @@ jobs:
           PY
       - name: Build No. 02
         run: python build/02/run.py
+      - name: Build No. 04
+        run: python build/04/run.py
       - name: Build No. 06
         run: python build/run.py
       - name: Build No. 07
         run: python build/07/run.py
+      - name: Build No. 08
+        run: |
+          if [ -f build/08/run.py ]; then python build/08/run.py; else echo "no No. 08 sources yet"; fi
       - name: Summary
         run: |
-          { for f in build/out/02-report.txt build/out/06-report.txt build/out/07-report.txt; do echo "== $f"; sed -n 1,2p "$f"; done; } | tee build/out/import-report.txt
+          { for f in build/out/02-report.txt build/out/04-report.txt build/out/06-report.txt build/out/07-report.txt build/out/08-report.txt; do if [ -f "$f" ]; then echo "== $f"; sed -n 1,2p "$f"; fi; done; } | tee build/out/import-report.txt
       - name: Commit
         run: |
           git config user.name "mtrx-build"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add build guides index.html docs import
           if git diff --cached --quiet; then echo "nothing to commit"; exit 0; fi
-          git commit -m "import: No. 02, 06, 07 sources and builds [skip ci]"
+          git commit -m "import: guide sources and builds [skip ci]"
           for i in 1 2 3 4 5; do
             if git pull --rebase origin main && git push origin HEAD:main; then exit 0; fi
             sleep 7
