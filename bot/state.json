@@ -686,11 +686,11 @@
   }
  },
  "hour": 8,
- "last_push": "2026-10-30",
+ "last_push": "2026-10-31",
  "listener": {
-  "checked_at": "2026-10-31T07:57:52+05:30",
-  "mode": "handoff",
-  "run_id": "41159326567"
+  "checked_at": "2026-10-31T08:00:07+05:30",
+  "mode": "long-poll",
+  "run_id": "41160125391"
  },
  "log": [
   "2026-10-13 22:43 listener retry: Remote end closed connection without response",
