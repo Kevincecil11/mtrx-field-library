@@ -175,7 +175,9 @@ def main(src, dst):
              ('Weeks 1 and 2 are fully built. Weeks 3 and 4 link straight to the episodes, so you can watch ahead while the next drops are built.',
               'All four weeks are fully built: every day has the review, predict, insider layer, diagram and recall.'),
              ('28 days \u00b7 2 fields \u00b7 this drop: Weeks 1-2 + the full map', '28 days \u00b7 2 fields \u00b7 complete: all four weeks + the full map'),
-             ("c.href='#w3';c.textContent='Weeks 1-2 done. Watch ahead: Week 3 \u2192';", "c.href='#s6';c.textContent='All 28 days done. Library and glossary \u2192';")]
+             ("c.href='#w3';c.textContent='Weeks 1-2 done. Watch ahead: Week 3 \u2192';", "c.href='#s6';c.textContent='All 28 days done. Library and glossary \u2192';"),
+             ('<title>MTRX\u2122 Field Guide to the Mind \u00b7 Psychology and Philosophy \u00b7 Weeks 1-2</title>',
+              '<title>MTRX\u2122 Field Guide to the Mind \u00b7 Psychology and Philosophy \u00b7 28 days</title>')]
     for a_, b_ in swaps:
         if a_ in s:
             s = s.replace(a_, b_)

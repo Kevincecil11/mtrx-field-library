@@ -1,4 +1,4 @@
-build 2026-10-27 16:27 UTC
+build 2026-10-31 18:52 UTC
 status: candidate passed lint and replaced the guide
 $ build/07/build.py build/out/07-candidate.html (exit 0)
 progress key replaced 1 times in core scripts
