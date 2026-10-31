@@ -1,0 +1,50 @@
+build 2026-10-31 20:07 UTC
+status: candidate passed lint and replaced the guide
+$ build/08/build.py guides/02-mind.html build/out/08-candidate.html (exit 0)
+house plates applied to 28 days
+svgfit: 4 labels fitted
+svgfit: 2 labels fitted
+svgfit: 3 labels fitted
+svgfit: 1 labels fitted
+svgfit: 5 labels fitted
+svgfit: 1 labels fitted
+svgfit: 4 labels fitted
+svgfit: 3 labels fitted
+svgfit: 4 labels fitted
+svgfit: 4 labels fitted
+svgfit: 2 labels fitted
+svgfit: 4 labels fitted
+svgfit: 3 labels fitted
+svgfit: 1 labels fitted
+svgfit: 2 labels fitted
+svgfit: 5 labels fitted
+svgfit: 4 labels fitted
+svgfit: 4 labels fitted
+svgfit: 3 labels fitted
+svgfit: 4 labels fitted
+svgfit: 4 labels fitted
+svgfit: 4 labels fitted
+svgfit: 3 labels fitted
+svgfit: 3 labels fitted
+svgfit: 1 labels fitted
+svgfit: 4 labels fitted
+svgfit: 3 labels fitted
+svgfit: 9 labels fitted
+svgfit: 2 labels fitted
+days 1 to 28 loaded; tie-ups after days [7, 14, 21, 28]
+progress key replaced 1 times in the tail
+rendered 4 weeks
+glossary: 71 terms
+dashes converted: 0 em, 0 en
+images: 28 of 28 plates inlined
+wrote build/out/08-candidate.html (1985556 bytes)
+
+$ tools/check_guide.py build/out/08-candidate.html (exit 0)
+build/out/08-candidate.html: 28 stops, 0 errors, 0 warnings
+
+$ tools/check_guide.py guides/08-screenwriting.html (exit 0)
+guides/08-screenwriting.html: 28 stops, 0 errors, 0 warnings
+
+$ build/08/index_card.py guides/08-screenwriting.html index.html (exit 0)
+index card 08 updated: Complete · 28 days · 20 min a day
+

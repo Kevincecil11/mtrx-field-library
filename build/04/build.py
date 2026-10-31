@@ -16,6 +16,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, HERE)
 import render04 as R  # noqa: E402
+import svgfit  # noqa: E402
 
 E = html.escape
 CACHE = os.path.join(ROOT, 'build', 'out', '04-img')
@@ -33,7 +34,7 @@ CSS = ('<style id="mtrx-04-css">.seg{margin:10px 0 0;font-size:16px;line-height:
        'details.deeper summary{cursor:pointer;font:700 14px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--moss)}'
        '.deeper-b p{max-width:68ch;overflow-wrap:anywhere}.qbank{padding-left:20px}.qbank li{margin:8px 0}.qbank a{font:700 13px var(--mono);margin-left:6px;white-space:nowrap}'
        '.day .notes,.day .notes li,.day .notes figcaption,.day .further a,.day .usecase,.day .qa,.deeper-b{overflow-wrap:anywhere;min-width:0}'
-       '@media (max-width:560px){.cover-title{font-size:clamp(40px,12.5vw,64px)}.cover>div{min-width:0}}.day .notes>*{min-width:0}.plate-missing{padding:18px;min-height:0}</style>')
+       '@media (max-width:560px){.cover-title{font-size:clamp(40px,12.5vw,64px)}.cover>div{min-width:0}}.day .notes>*{min-width:0}.plate-missing{padding:18px;min-height:0}.cube{grid-template-columns:repeat(3,minmax(0,1fr))}.cube .sp{min-width:0}.cube .sp b{overflow-wrap:anywhere;hyphens:auto}</style>')
 
 
 def load(name):
@@ -51,6 +52,8 @@ def _get(url):
 
 def image(key, spec):
     """data URI for a Commons file, cached; '' if unavailable."""
+    if 'local' in spec:
+        return local_image(spec['local'])
     os.makedirs(CACHE, exist_ok=True)
     out, meta = os.path.join(CACHE, key + '.webp'), os.path.join(CACHE, key + '.json')
     if not (os.path.exists(out) and os.path.exists(meta) and json.load(open(meta)).get('file') == spec['file']):
@@ -74,6 +77,23 @@ def image(key, spec):
     return 'data:image/webp;base64,' + base64.b64encode(open(out, 'rb').read()).decode('ascii')
 
 
+
+def local_image(path):
+    """data URI for a committed house-style plate (build/NN/plates/*.webp)."""
+    return 'data:image/webp;base64,' + base64.b64encode(open(path, 'rb').read()).decode('ascii') if os.path.exists(path) else ''
+
+
+def apply_plates(days, images):
+    """Swap each day's plate for the house engraving in plates.py, if one exists."""
+    P = load('plates').PLATES
+    for d in days:
+        if d['n'] in P:
+            lab, alt, cap = P[d['n']]
+            key = 'plate%02d' % d['n']
+            d.update(img=key, imgalt=alt, imgcap=cap, plabel=lab)
+            images[key] = {'local': os.path.join(HERE, 'plates', 'd%02d.webp' % d['n'])}
+    LOG.append('house plates applied to %d days' % sum(1 for d in days if d['n'] in P))
+
 def fp(cls='fieldpick'):
     return ('<div class="%s js-only" role="group" aria-label="Choose what to learn"><button type="button" data-field="both">Both fields</button>'
             '<button type="button" data-field="psy">Persuasion only</button><button type="button" data-field="phi">Sales only</button></div>') % cls
@@ -94,6 +114,12 @@ def main(src, dst):
     images = {}
     for m in mods:
         images.update(getattr(m, 'IMAGES', {}))
+    apply_plates(days, images)
+    for d in days:
+        d['fig'] = svgfit.fit(d['fig'], LOG)
+    for M in F.MAPS:
+        if M.get('svg'):
+            M['svg'] = svgfit.fit(M['svg'], LOG)
     ties = {}
     for m in mods:
         if hasattr(m, 'TIEUP'):
@@ -129,7 +155,10 @@ def main(src, dst):
         return uris[key]
     # ---------- cover ----------
     C = F.COVER
-    cube = ''.join('<a class="sp" href="#d%d"><img src="%s" alt=""><b>Day %d</b></a>' % (d['n'], img(d['img']), d['n']) for d in days[:9] if img(d['img']))
+    def thumb(d):
+        t = os.path.join(HERE, 'plates', 't%02d.webp' % d['n'])
+        return local_image(t) if os.path.exists(t) else img(d['img'])
+    cube = ''.join('<a class="sp" href="#d%d"><img src="%s" alt=""><b>%s</b></a>' % (d['n'], thumb(d), E(d.get('plabel') or 'Day %d' % d['n'])) for d in days[:9] if thumb(d))
     cover = ('<header class="wrap cover" id="top"> <div> <div class="kicker">MTRX\u2122 Field Series \u00b7 No. 04 \u00b7 October 2026</div> '
              '<h1 class="cover-title">%s</h1> <p class="cover-sub">%s</p> <ul class="verbs">%s</ul> '
              '<p class="prepared">Prepared for <b>Kevin Cecil</b><br>28 days \u00b7 2 fields \u00b7 complete: all four weeks + the full map<br>'

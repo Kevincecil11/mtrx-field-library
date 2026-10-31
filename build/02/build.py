@@ -15,6 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))
 sys.path.insert(0, HERE)
 import render02 as R  # noqa: E402
+import svgfit  # noqa: E402
 
 CACHE = os.path.join(ROOT, 'build', 'out', '02-img')
 UA = 'MTRX-Field-Library-build/1.0 (+https://github.com/Kevincecil11/mtrx-field-library)'
@@ -39,6 +40,8 @@ def _get(url):
 
 def image(key, spec):
     """data URI for a Commons file, cached; '' if unavailable."""
+    if 'local' in spec:
+        return local_image(spec['local'])
     os.makedirs(CACHE, exist_ok=True)
     out = os.path.join(CACHE, key + '.webp')
     meta = os.path.join(CACHE, key + '.json')
@@ -62,6 +65,23 @@ def image(key, spec):
             return ''
     return 'data:image/webp;base64,' + base64.b64encode(open(out, 'rb').read()).decode('ascii')
 
+
+
+def local_image(path):
+    """data URI for a committed house-style plate (build/NN/plates/*.webp)."""
+    return 'data:image/webp;base64,' + base64.b64encode(open(path, 'rb').read()).decode('ascii') if os.path.exists(path) else ''
+
+
+def apply_plates(days, images):
+    """Swap each day's plate for the house engraving in plates.py, if one exists."""
+    P = load('plates').PLATES
+    for d in days:
+        if d['n'] in P:
+            lab, alt, cap = P[d['n']]
+            key = 'plate%02d' % d['n']
+            d.update(img=key, imgalt=alt, imgcap=cap, plabel=lab)
+            images[key] = {'local': os.path.join(HERE, 'plates', 'd%02d.webp' % d['n'])}
+    LOG.append('house plates applied to %d days' % sum(1 for d in days if d['n'] in P))
 
 def old_recall(s):
     """Recall prompts (q_html, a_html) for days already in the guide, from each day's own Step 5."""
@@ -97,6 +117,9 @@ def main(src, dst):
     images = {}
     for m in mods:
         images.update(getattr(m, 'IMAGES', {}))
+    apply_plates(days, images)
+    for d in days:
+        d['fig'] = svgfit.fit(d['fig'], LOG)
     tie = {21: mods[1].TIEUP, 28: mods[3].TIEUP}
     recall, fields = old_recall(s)
     LOG.append('reused recall prompts from %d existing days' % len(recall))

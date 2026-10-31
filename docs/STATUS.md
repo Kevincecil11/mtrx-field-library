@@ -11,7 +11,7 @@ Kevin's motive is curiosity first, practical use second. Behaviour subjects (psy
 Kevin's plan (27 Oct): finish No. 02 and No. 06, leave No. 05 as it is (complete), no quiz repairs in No. 01, then finish No. 07 as a light inspiration guide with no new quizzes. Done on 27 Oct, published through the one-off import workflow (.github/workflows/import-sources.yml).
 
 Next, when Kevin asks:
-1. No. 08 Screenwriting. No. 09 not assigned.
+1. No. 09 not assigned. Next candidates: an applied-AI deep dive, a second No. 08 season (feature-length craft: sequences, TV pilot, adaptation in depth).
 2. No. 02 extension: the rest of Crash Course Psychology and Philosophy (nothing cut), as Weeks 5 onward.
 3. Repair slot: quiz giveaways (right answer often the longest). No. 06 File 1: 15 of 21. No. 01 repairs are off the list (Kevin, 27 Oct).
 4. Proposed skill updates (branch by learning purpose; craft guides vs behaviour guides) are drafted but NOT saved: Kevin has not approved them.
@@ -24,6 +24,7 @@ Kevin's side:
 
 - No. 00, 01, 03, 05: complete.
 - No. 04 Sales and persuasion: complete, 28 days (built 27 Oct 2026, like No. 02). Fields Persuasion (per) and Sales (sal), 14 days each; internal codes psy/phi reuse the No. 02 shell. Sources: build/04/front.py (cover, maps, coverage, question bank, library) and w1a.py to w4b.py (plain data, normalised from drafts/04). build/04/build.py uses guides/02-mind.html as the shell; pipeline build/04/run.py via guide-04.yml; card sync build/04/index_card.py; plates cached in build/out/04-img. Research: 264-concept inventory (207 MUST), question bank, persuasion and sales insider reports (kept in the build pack, not the repo). Durations marked ~ are approximate; Days 27 and 28 use long talks with a stopping rule.
+- No. 08 Screenwriting: complete, 28 days (built 1 Nov 2026, like No. 02 and No. 04). Fields Story (sto) and Script (scr), 14 days each; internal codes psy/phi. Each day's Write it drill builds a 5-page short (Week 1 premise and logline, Week 2 character and outline, Week 3 first draft, Week 4 rewrite and a 90-day plan). Sources: build/08/front.py (maps, coverage, question bank, library with legal screenplays) and w1a.py to w4b.py. build/08/build.py uses guides/02-mind.html as the shell; pipeline build/08/run.py via guide-08.yml; card sync build/08/index_card.py; key mtrx-screen-v1, slug mtrx-field-guide-to-screenwriting; plates cached in build/out/08-img. Research: 274-concept inventory (228 MUST), 75-question bank, story and script insider reports (kept in the build pack). Long talks carry a stopping rule.
 - No. 02 The mind: complete, 28 days. Weeks 3 and 4 are rendered from build/02/w3a.py, w3b.py, w4a.py, w4b.py by build/02/build.py (splices between <!-- mtrx:w3 --> and <!-- mtrx:w4 -->, hash-protects days 1 to 14, idempotent). Pipeline: build/02/run.py via guide-02.yml; card sync build/02/index_card.py. Plates are Commons files cached in build/out/02-img.
 - No. 03 Cons and cults: complete, 55 stops, 159 checks. build/03/ via guide-03.yml.
 - No. 06 Read the room: complete, 48 stops. Part I frozen (sha256 b121690af0ea). Part II Files 1 to 5 in build/06/p2_file1.py to p2_file5.py; Files 3 to 5 took over the old watch-ahead sections and keep their plates and scenes under "Scene library: more to watch". build/06/build.py is idempotent (fixed 27 Oct).
@@ -44,3 +45,5 @@ Gotcha (23 Oct): tools/check_guide.py fails any build whose output contains the 
 ## House rules worth repeating
 
 No em or en dashes in content. No Indian cinema in any guide (real Indian cases are fine). Verify every bold quote against a primary source. Stop ids are append only (the 1.1/1.2 content swap was a one-off at Kevin's request). Dark topics: mechanisms, warning signs and defences, never usable scripts; writing drills are fiction only.
+
+- 1 Nov 2026 design pass: No. 02 (Weeks 3 and 4), No. 04 and No. 08 now use house-style engraving plates (build/NN/plates, AI-generated with the DESIGN-SYSTEM prompt) instead of Wikimedia photos; cover tiles are named; diagram labels are fitted at build time by build/NN/svgfit.py.

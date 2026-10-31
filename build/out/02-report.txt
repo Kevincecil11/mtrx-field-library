@@ -1,14 +1,24 @@
-build 2026-10-31 18:51 UTC
+build 2026-10-31 20:07 UTC
 status: candidate passed lint and replaced the guide
 $ build/02/build.py guides/02-mind.html build/out/02-candidate.html (exit 0)
+house plates applied to 14 days
+svgfit: 2 labels fitted
+svgfit: 1 labels fitted
+svgfit: 3 labels fitted
+svgfit: 2 labels fitted
+svgfit: 2 labels fitted
+svgfit: 3 labels fitted
+svgfit: 1 labels fitted
+svgfit: 2 labels fitted
+svgfit: 2 labels fitted
+svgfit: 2 labels fitted
 reused recall prompts from 28 existing days
 week 3: 7 days into s4
 week 4: 7 days into s5
 roadmap links pointed inside: 0
 glossary: 117 terms (0 new)
-updated: <title>MTRX™ Field Guide to the Mind · Psychology 
-images: 13 of 13 plates inlined
-wrote build/out/02-candidate.html (2803040 bytes)
+images: 14 of 14 plates inlined
+wrote build/out/02-candidate.html (2486502 bytes)
 
 $ tools/check_guide.py build/out/02-candidate.html (exit 0)
 build/out/02-candidate.html: 28 stops, 0 errors, 0 warnings

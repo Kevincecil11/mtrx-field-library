@@ -1,13 +1,33 @@
-build 2026-10-31 18:51 UTC
+build 2026-10-31 20:07 UTC
 status: candidate passed lint and replaced the guide
 $ build/04/build.py guides/02-mind.html build/out/04-candidate.html (exit 0)
+house plates applied to 28 days
+svgfit: 4 labels fitted
+svgfit: 4 labels fitted
+svgfit: 1 labels fitted
+svgfit: 2 labels fitted
+svgfit: 5 labels fitted
+svgfit: 4 labels fitted
+svgfit: 3 labels fitted
+svgfit: 4 labels fitted
+svgfit: 1 labels fitted
+svgfit: 3 labels fitted
+svgfit: 3 labels fitted
+svgfit: 2 labels fitted
+svgfit: 2 labels fitted
+svgfit: 1 labels fitted
+svgfit: 4 labels fitted
+svgfit: 4 labels fitted
+svgfit: 2 labels fitted
+svgfit: 5 labels fitted
+svgfit: 1 labels fitted
 days 1 to 28 loaded; tie-ups after days [7, 14, 21, 28]
 progress key replaced 1 times in the tail
 rendered 4 weeks
 glossary: 76 terms
 dashes converted: 0 em, 0 en
 images: 28 of 28 plates inlined
-wrote build/out/04-candidate.html (3497243 bytes)
+wrote build/out/04-candidate.html (2200048 bytes)
 
 $ tools/check_guide.py build/out/04-candidate.html (exit 0)
 build/out/04-candidate.html: 28 stops, 0 errors, 0 warnings
@@ -16,5 +36,5 @@ $ tools/check_guide.py guides/04-sales.html (exit 0)
 guides/04-sales.html: 28 stops, 0 errors, 0 warnings
 
 $ build/04/index_card.py guides/04-sales.html index.html (exit 0)
-index card 04 updated: Complete · 28 days · 20 min a day
+index card 04 already current
 
