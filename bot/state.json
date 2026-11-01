@@ -688,9 +688,9 @@
  "hour": 8,
  "last_push": "2026-11-01",
  "listener": {
-  "checked_at": "2026-11-01T23:54:24+05:30",
+  "checked_at": "2026-11-02T00:04:45+05:30",
   "mode": "handoff",
-  "run_id": "41335542368"
+  "run_id": "41336459103"
  },
  "log": [
   "2026-10-13 22:43 listener retry: Remote end closed connection without response",
@@ -738,11 +738,6 @@
  "offset": 806113021,
  "paused": false,
  "polls": {
-  "6253524949080737090": {
-   "card": "01-3.10-r1",
-   "kind": "recall",
-   "sent": "2026-10-22"
-  },
   "6258125546249519758": {
    "card": "01-2.4-q1",
    "kind": "quiz",
