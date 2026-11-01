@@ -688,9 +688,9 @@
  "hour": 8,
  "last_push": "2026-11-01",
  "listener": {
-  "checked_at": "2026-11-02T00:35:53+05:30",
+  "checked_at": "2026-11-02T00:46:21+05:30",
   "mode": "handoff",
-  "run_id": "41338981762"
+  "run_id": "41339973803"
  },
  "log": [
   "2026-10-13 22:43 listener retry: Remote end closed connection without response",
