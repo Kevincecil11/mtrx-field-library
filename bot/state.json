@@ -688,8 +688,8 @@
  "hour": 8,
  "last_push": "2026-11-03",
  "listener": {
-  "checked_at": "2026-11-03T08:00:05+05:30",
-  "mode": "long-poll",
+  "checked_at": "2026-11-03T08:05:53+05:30",
+  "mode": "handoff",
   "run_id": "41566026874"
  },
  "log": [
