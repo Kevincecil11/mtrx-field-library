@@ -686,11 +686,11 @@
   }
  },
  "hour": 8,
- "last_push": "2026-11-04",
+ "last_push": "2026-11-05",
  "listener": {
-  "checked_at": "2026-11-05T07:51:39+05:30",
-  "mode": "handoff",
-  "run_id": "41953527375"
+  "checked_at": "2026-11-05T08:00:01+05:30",
+  "mode": "long-poll",
+  "run_id": "41954693385"
  },
  "log": [
   "2026-10-16 16:02 listener retry: <urlopen error [Errno 101] Network is unreachable>",
