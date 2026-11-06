@@ -686,11 +686,11 @@
   }
  },
  "hour": 8,
- "last_push": "2026-11-05",
+ "last_push": "2026-11-06",
  "listener": {
-  "checked_at": "2026-11-06T07:21:35+05:30",
-  "mode": "handoff",
-  "run_id": "42145484899"
+  "checked_at": "2026-11-06T08:14:59+05:30",
+  "mode": "long-poll",
+  "run_id": "42152231887"
  },
  "log": [
   "2026-10-17 08:00 pushed 15 cards",
