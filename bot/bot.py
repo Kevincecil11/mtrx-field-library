@@ -9,7 +9,11 @@ Secrets (GitHub Actions): TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID. Only that chat i
 State lives in bot/state.json (committed by the workflow). Banks: bot/questions/NN.json
 (built from the guides by tools/build_questions.py). Design: docs/ARCHITECTURE.md.
 """
-import base64, datetime as dt, glob, html, json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
+import base64, datetime as dt, glob, html, json, os, random, re, sys, time, urllib.error, urllib.parse, urllib.request
+try:
+    import deck                          # Telegram HTML widget decks (Bot API 10.4); optional
+except ImportError:
+    deck = None
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATE_PATH = os.path.join(ROOT, 'bot', 'state.json')
@@ -24,8 +28,11 @@ TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN', '').strip()
 CHAT = os.environ.get('TELEGRAM_CHAT_ID', '').strip()
 _owner, _repo = os.environ.get('GITHUB_REPOSITORY', 'Kevincecil11/mtrx-field-library').split('/')
 SITE = os.environ.get('SITE_URL', 'https://%s.github.io/%s' % (_owner.lower(), _repo)).rstrip('/')
+if deck:
+    deck.BOT, deck.SITE = BOT_USERNAME, SITE + '/'
 COMMANDS = [
     ('today', "Send today's review now"),
+    ('deck', "Today's review as one interactive card"),
     ('status', 'Progress and what is due'),
     ('weak', 'Your weak spots'),
     ('done', 'Mark stops done, e.g. /done 01 1.1-1.6'),
@@ -82,7 +89,7 @@ def load_state():
     except (OSError, ValueError):
         st = {}
     base = {'v': 1, 'offset': 0, 'hour': 8, 'paused': False, 'last_push': None, 'done': {}, 'cards': {},
-            'polls': {}, 'today': None, 'log': []}
+            'polls': {}, 'today': None, 'log': [], 'decks': {}}
     for k, v in base.items():
         st.setdefault(k, v)
     return st
@@ -295,6 +302,81 @@ def next_review(st):
         return None
     return s2d(future[0]), sum(1 for d in future if d == future[0])
 
+# ---------------------------------------------------------------- widget decks (Bot API 10.4)
+
+DECK_CAP = 21                            # most cards one deck message carries (start param stays under 64)
+
+def send_deck(st, banks, arg=''):
+    """Send due cards as interactive HTML widgets. Nothing due (or /deck practice): an ungraded practice deck."""
+    if deck is None:
+        return send_text('Widget decks are not installed in this build. /today sends the review as polls.')
+    t = today()
+    queue = [] if arg == 'practice' else due_cards(st, banks, include_sent=True)[:DECK_CAP]
+    practice = not queue
+    if practice:
+        pool = sorted(cid for cid in st['cards'] if cid[:2] in banks and cid in banks[cid[:2]]['by_id'])
+        if not pool:
+            pool = sorted(c['id'] for b in banks.values() for c in b['cards'])
+        queue = random.Random(d2s(t) + str(len(st.get('decks', {})))).sample(pool, min(11, len(pool)))
+    cards = [banks[cid[:2]]['by_id'][cid] for cid in queue]
+    n = sum(1 for k in st.setdefault('decks', {}) if k.startswith(t.strftime('%m%d')))
+    built = deck.build_decks(cards, t.strftime('%m%d') + 'abcdefghijklmnopqrstuvwxyz'[n % 26])
+    for i, (did, cs, html_) in enumerate(built):
+        part = (' \u00b7 part %d of %d' % (i + 1, len(built))) if len(built) > 1 else ''
+        cap = ('\U0001f9e0 <b>%s \u00b7 %s</b>%s\n%d questions. Tap through, then <b>Send results</b> at the end.%s'
+               % ('Practice deck' if practice else 'Review deck', nice(t), part, len(cs),
+                  '\nPractice only: nothing due today, so your schedule will not change.' if practice else ''))
+        try:
+            api('sendWidget', chat_id=CHAT, html=html_, caption=cap, parse_mode='HTML')
+        except Exception as e:
+            log(st, 'sendWidget failed: %s' % e)
+            return send_text('Could not send the widget deck (%s). Your review still works as polls: /today.' % esc(str(e)[:120]))
+        st['decks'][did] = {'cards': [c['id'] for c in cs], 'sent': d2s(t), 'practice': practice}
+    if not practice:
+        for cid in queue:
+            st['cards'][cid]['sent'] = d2s(t)
+    log(st, 'deck sent: %d cards in %d widget(s)%s' % (len(queue), len(built), ' (practice)' if practice else ''))
+
+def deck_result(st, banks, payload):
+    """'/start w<deck>_<grades>' from the widget's Send results button. A lucky guess counts as partly."""
+    did, res = deck.parse_result(payload)
+    d = st.get('decks', {}).get(did)
+    if not d:
+        return send_text("I can't find that deck any more (decks expire after 10 days). Send /deck for a fresh one.")
+    if d.get('done'):
+        return send_text('That deck is already logged. Send /deck for a new one.')
+    tally, misses, blind = {'got': 0, 'partly': 0, 'miss': 0}, [], 0
+    td = st.get('today') or {}
+    for cid, r in zip(d['cards'], res):
+        if not r:
+            continue
+        result, sure = r
+        card = banks.get(cid[:2], {}).get('by_id', {}).get(cid)
+        tally[result] += 1
+        if result == 'miss':
+            blind += sure == 'sure'
+            if card:
+                misses.append(card)
+        if d['practice'] or cid not in st['cards']:
+            continue
+        g = 'partly' if (result == 'got' and sure == 'guess') else result
+        grade(st, cid, g)
+        if td.get('date') == d2s(today()):
+            td[g] = td.get(g, 0) + 1
+    d['done'] = True
+    n = sum(tally.values())
+    log(st, 'deck %s logged: %d answered' % (did, n))
+    if d['practice']:
+        send_text('\U0001f9e0 <b>Practice logged</b>: %d right, %d partly, %d missed, out of %d. Not graded, so your schedule did not change.'
+                  % (tally['got'], tally['partly'], tally['miss'], n))
+        return
+    nxt = next_review(st)
+    send_text('\u2705 <b>Deck logged</b>: %d right, %d partly, %d to revisit, out of %d.%s%s'
+              % (tally['got'], tally['partly'], tally['miss'], n,
+                 ('\n\u26a0\ufe0f %d of the misses were marked <b>Sure</b>: those are blind spots, back tomorrow.' % blind) if blind else '',
+                 ('\nNext review: <b>%s</b>.' % nice(nxt[0])) if nxt else ''))
+    after_answers(st, misses)
+
 # ---------------------------------------------------------------- incoming
 
 def handle_answer(st, banks, pa, misses):
@@ -346,6 +428,8 @@ def handle_text(st, banks, text, msg_day):
     cmd = cmd.split('@')[0].lower()
     arg = arg.strip()
     if cmd == '/start':
+        if arg.startswith('w') and deck:
+            return deck_result(st, banks, arg)
         if arg.startswith('p'):
             g, stops = decode_progress(arg, banks)
             if not g:
@@ -373,6 +457,8 @@ def handle_text(st, banks, text, msg_day):
         return send_text('Removed from reviews: %s' % (', '.join(gone) if gone else 'nothing matched'))
     if cmd == '/today':
         return push(st, banks, force=True)
+    if cmd == '/deck':
+        return send_deck(st, banks, arg.lower())
     if cmd == '/status':
         return send_text(status_text(st, banks))
     if cmd == '/weak':
@@ -461,6 +547,7 @@ def run():
         push(st, banks)
         cutoff = d2s(today() - dt.timedelta(days=10))
         st['polls'] = {k: v for k, v in st['polls'].items() if v['sent'] >= cutoff}
+        st['decks'] = {k: v for k, v in st.get('decks', {}).items() if v['sent'] >= cutoff}
     finally:
         save_state(st)
     print('ok: %d updates, %d cards tracked, %d due' % (len(updates), len(st['cards']), len(due_cards(st, banks, True))))
