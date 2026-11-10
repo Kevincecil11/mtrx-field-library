@@ -688,9 +688,9 @@
  "hour": 8,
  "last_push": "2026-11-10",
  "listener": {
-  "checked_at": "2026-11-11T00:09:27+05:30",
-  "mode": "handoff",
-  "run_id": "42875657345"
+  "checked_at": "2026-11-11T00:19:17+05:30",
+  "mode": "long-poll",
+  "run_id": "42877414239"
  },
  "log": [
   "2026-10-19 08:00 pushed 15 cards",
@@ -734,11 +734,11 @@
   "2026-11-09 18:22 listener retry: getUpdates failed: Bad Gateway",
   "2026-11-09 18:22 listener retry: The read operation timed out"
  ],
- "nudged": true,
- "offset": 806113021,
+ "nudged": false,
+ "offset": 806113022,
  "paused": false,
  "polls": {},
- "silent": 3,
+ "silent": 0,
  "today": {
   "counted": true,
   "date": "2026-10-25",
