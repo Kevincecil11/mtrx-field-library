@@ -723,9 +723,9 @@
  "hour": 8,
  "last_push": "2026-11-13",
  "listener": {
-  "checked_at": "2026-11-13T23:12:56+05:30",
+  "checked_at": "2026-11-13T23:23:36+05:30",
   "mode": "handoff",
-  "run_id": "43473812770"
+  "run_id": "43475530622"
  },
  "log": [
   "2026-10-26 06:42 listener retry: The read operation timed out",
