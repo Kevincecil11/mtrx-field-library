@@ -723,12 +723,11 @@
  "hour": 8,
  "last_push": "2026-11-14",
  "listener": {
-  "checked_at": "2026-11-14T22:30:24+05:30",
+  "checked_at": "2026-11-14T22:40:46+05:30",
   "mode": "handoff",
-  "run_id": "43617265116"
+  "run_id": "43618694108"
  },
  "log": [
-  "2026-11-02 01:46 listener retry: <urlopen error [Errno -3] Temporary failure in name resolution>",
   "2026-11-03 06:45 listener retry: getUpdates failed: Bad Gateway",
   "2026-11-03 06:45 listener retry: The read operation timed out",
   "2026-11-03 06:46 listener retry: The read operation timed out",
@@ -767,7 +766,8 @@
   "2026-11-14 06:45 listener retry: The read operation timed out",
   "2026-11-14 06:46 listener retry: The read operation timed out",
   "2026-11-14 08:00 quiet after 3 unanswered reviews, one nudge sent",
-  "2026-11-14 22:26 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
+  "2026-11-14 22:26 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
+  "2026-11-14 22:37 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
  ],
  "nudged": true,
  "offset": 806113023,
