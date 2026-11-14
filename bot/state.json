@@ -723,12 +723,11 @@
  "hour": 8,
  "last_push": "2026-11-14",
  "listener": {
-  "checked_at": "2026-11-14T22:20:06+05:30",
+  "checked_at": "2026-11-14T22:30:24+05:30",
   "mode": "handoff",
-  "run_id": "43616819933"
+  "run_id": "43617265116"
  },
  "log": [
-  "2026-10-31 04:06 listener retry: <urlopen error _ssl.c:983: The handshake operation timed out>",
   "2026-11-02 01:46 listener retry: <urlopen error [Errno -3] Temporary failure in name resolution>",
   "2026-11-03 06:45 listener retry: getUpdates failed: Bad Gateway",
   "2026-11-03 06:45 listener retry: The read operation timed out",
@@ -767,7 +766,8 @@
   "2026-11-14 06:45 listener retry: The read operation timed out",
   "2026-11-14 06:45 listener retry: The read operation timed out",
   "2026-11-14 06:46 listener retry: The read operation timed out",
-  "2026-11-14 08:00 quiet after 3 unanswered reviews, one nudge sent"
+  "2026-11-14 08:00 quiet after 3 unanswered reviews, one nudge sent",
+  "2026-11-14 22:26 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
  ],
  "nudged": true,
  "offset": 806113023,
