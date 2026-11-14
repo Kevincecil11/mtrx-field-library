@@ -723,9 +723,9 @@
  "hour": 8,
  "last_push": "2026-11-14",
  "listener": {
-  "checked_at": "2026-11-14T17:38:44+05:30",
+  "checked_at": "2026-11-14T17:49:05+05:30",
   "mode": "handoff",
-  "run_id": "43592512397"
+  "run_id": "43593357881"
  },
  "log": [
   "2026-10-31 04:06 listener retry: <urlopen error _ssl.c:983: The handshake operation timed out>",
