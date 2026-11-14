@@ -721,14 +721,13 @@
   }
  },
  "hour": 8,
- "last_push": "2026-11-13",
+ "last_push": "2026-11-14",
  "listener": {
-  "checked_at": "2026-11-14T07:54:47+05:30",
-  "mode": "handoff",
-  "run_id": "43545154836"
+  "checked_at": "2026-11-14T08:00:06+05:30",
+  "mode": "long-poll",
+  "run_id": "43546157670"
  },
  "log": [
-  "2026-10-28 06:44 listener retry: The read operation timed out",
   "2026-10-31 04:06 listener retry: <urlopen error _ssl.c:983: The handshake operation timed out>",
   "2026-11-02 01:46 listener retry: <urlopen error [Errno -3] Temporary failure in name resolution>",
   "2026-11-03 06:45 listener retry: getUpdates failed: Bad Gateway",
@@ -767,9 +766,10 @@
   "2026-11-14 06:44 listener retry: getUpdates failed: Bad Gateway",
   "2026-11-14 06:45 listener retry: The read operation timed out",
   "2026-11-14 06:45 listener retry: The read operation timed out",
-  "2026-11-14 06:46 listener retry: The read operation timed out"
+  "2026-11-14 06:46 listener retry: The read operation timed out",
+  "2026-11-14 08:00 quiet after 3 unanswered reviews, one nudge sent"
  ],
- "nudged": false,
+ "nudged": true,
  "offset": 806113023,
  "paused": false,
  "polls": {
@@ -999,8 +999,9 @@
    "sent": "2026-11-13"
   }
  },
- "silent": 2,
+ "silent": 3,
  "today": {
+  "counted": true,
   "date": "2026-11-13",
   "got": 0,
   "miss": 0,
