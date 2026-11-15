@@ -723,9 +723,9 @@
  "hour": 8,
  "last_push": "2026-11-15",
  "listener": {
-  "checked_at": "2026-11-15T20:20:38+05:30",
+  "checked_at": "2026-11-15T20:31:01+05:30",
   "mode": "handoff",
-  "run_id": "43725614187"
+  "run_id": "43726560788"
  },
  "log": [
   "2026-11-11 00:43 deck sent: 21 cards in 2 widget(s)",
