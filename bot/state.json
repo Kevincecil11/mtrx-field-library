@@ -723,12 +723,11 @@
  "hour": 8,
  "last_push": "2026-11-15",
  "listener": {
-  "checked_at": "2026-11-15T21:33:29+05:30",
+  "checked_at": "2026-11-15T21:43:57+05:30",
   "mode": "handoff",
-  "run_id": "43732352140"
+  "run_id": "43733306080"
  },
  "log": [
-  "2026-11-11 00:43 deck sent: 21 cards in 2 widget(s)",
   "2026-11-11 06:41 listener retry: getUpdates failed: Bad Gateway",
   "2026-11-11 06:41 listener retry: getUpdates failed: Bad Gateway",
   "2026-11-11 06:41 listener retry: getUpdates failed: Bad Gateway",
@@ -767,7 +766,8 @@
   "2026-11-15 18:36 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-15 18:48 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-15 18:59 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
-  "2026-11-15 19:19 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
+  "2026-11-15 19:19 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
+  "2026-11-15 21:33 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
  ],
  "nudged": true,
  "offset": 806113023,
