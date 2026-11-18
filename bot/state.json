@@ -723,17 +723,11 @@
  "hour": 8,
  "last_push": "2026-11-18",
  "listener": {
-  "checked_at": "2026-11-18T23:09:42+05:30",
+  "checked_at": "2026-11-18T23:19:58+05:30",
   "mode": "handoff",
-  "run_id": "44359228747"
+  "run_id": "44361135170"
  },
  "log": [
-  "2026-11-15 18:33 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
-  "2026-11-15 18:35 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
-  "2026-11-15 18:36 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
-  "2026-11-15 18:48 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
-  "2026-11-15 18:59 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
-  "2026-11-15 19:19 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-15 21:33 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-15 22:47 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-16 00:34 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
@@ -767,7 +761,13 @@
   "2026-11-18 21:29 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-18 22:31 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-18 22:35 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
-  "2026-11-18 22:35 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
+  "2026-11-18 22:35 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
+  "2026-11-18 23:13 listener retry: Remote end closed connection without response",
+  "2026-11-18 23:13 listener retry: <urlopen error [Errno 101] Network is unreachable>",
+  "2026-11-18 23:13 listener retry: <urlopen error [Errno 101] Network is unreachable>",
+  "2026-11-18 23:13 listener retry: <urlopen error [Errno 101] Network is unreachable>",
+  "2026-11-18 23:14 listener retry: <urlopen error [Errno 101] Network is unreachable>",
+  "2026-11-18 23:14 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
  ],
  "nudged": true,
  "offset": 806113023,
