@@ -723,9 +723,9 @@
  "hour": 8,
  "last_push": "2026-11-19",
  "listener": {
-  "checked_at": "2026-11-20T01:57:04+05:30",
+  "checked_at": "2026-11-20T02:07:34+05:30",
   "mode": "handoff",
-  "run_id": "44607015507"
+  "run_id": "44608811301"
  },
  "log": [
   "2026-11-16 06:49 listener retry: getUpdates failed: Bad Gateway",
