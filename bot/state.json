@@ -721,11 +721,11 @@
   }
  },
  "hour": 8,
- "last_push": "2026-11-19",
+ "last_push": "2026-11-20",
  "listener": {
-  "checked_at": "2026-11-20T07:51:34+05:30",
-  "mode": "handoff",
-  "run_id": "44658970810"
+  "checked_at": "2026-11-20T08:00:13+05:30",
+  "mode": "long-poll",
+  "run_id": "44660215408"
  },
  "log": [
   "2026-11-16 06:49 listener retry: getUpdates failed: Bad Gateway",
