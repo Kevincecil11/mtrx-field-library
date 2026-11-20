@@ -723,9 +723,9 @@
  "hour": 8,
  "last_push": "2026-11-20",
  "listener": {
-  "checked_at": "2026-11-20T22:16:47+05:30",
+  "checked_at": "2026-11-20T22:27:14+05:30",
   "mode": "handoff",
-  "run_id": "44775064217"
+  "run_id": "44776778264"
  },
  "log": [
   "2026-11-16 12:35 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
