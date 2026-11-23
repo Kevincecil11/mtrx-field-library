@@ -689,9 +689,9 @@
  "hour": 8,
  "last_push": "2026-11-23",
  "listener": {
-  "checked_at": "2026-11-23T11:21:25+05:30",
+  "checked_at": "2026-11-23T11:31:52+05:30",
   "mode": "handoff",
-  "run_id": "45119310031"
+  "run_id": "45120379495"
  },
  "log": [
   "2026-11-18 23:13 listener retry: <urlopen error [Errno 101] Network is unreachable>",
