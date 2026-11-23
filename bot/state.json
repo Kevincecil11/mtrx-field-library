@@ -689,12 +689,11 @@
  "hour": 8,
  "last_push": "2026-11-23",
  "listener": {
-  "checked_at": "2026-11-23T23:52:00+05:30",
+  "checked_at": "2026-11-24T00:02:21+05:30",
   "mode": "handoff",
-  "run_id": "45235741607"
+  "run_id": "45237617498"
  },
  "log": [
-  "2026-11-18 23:14 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-19 00:03 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-19 17:13 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-19 19:01 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
@@ -733,88 +732,13 @@
   "2026-11-23 07:52 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-23 16:44 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-23 20:33 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
-  "2026-11-23 20:46 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
+  "2026-11-23 20:46 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
+  "2026-11-23 23:57 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
  ],
  "nudged": true,
  "offset": 806113023,
  "paused": false,
- "polls": {
-  "6320922421998126240": {
-   "card": "01-2.4-q1",
-   "kind": "quiz",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126241": {
-   "card": "01-2.14-q1",
-   "kind": "quiz",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126242": {
-   "card": "01-3.1-q1",
-   "kind": "quiz",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126243": {
-   "card": "01-1.3-q1",
-   "kind": "quiz",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126244": {
-   "card": "01-3.10-r1",
-   "kind": "recall",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126245": {
-   "card": "01-3.12-q1",
-   "kind": "quiz",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126246": {
-   "card": "01-3.12-r1",
-   "kind": "recall",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126247": {
-   "card": "01-3.2-q1",
-   "kind": "quiz",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126248": {
-   "card": "01-3.2-r1",
-   "kind": "recall",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126249": {
-   "card": "01-3.3-q1",
-   "kind": "quiz",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126250": {
-   "card": "01-3.3-r1",
-   "kind": "recall",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126251": {
-   "card": "01-3.4-q1",
-   "kind": "quiz",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126252": {
-   "card": "01-3.4-r1",
-   "kind": "recall",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126253": {
-   "card": "01-3.5-q1",
-   "kind": "quiz",
-   "sent": "2026-11-13"
-  },
-  "6320922421998126254": {
-   "card": "01-3.5-r1",
-   "kind": "recall",
-   "sent": "2026-11-13"
-  }
- },
+ "polls": {},
  "silent": 3,
  "today": {
   "counted": true,
