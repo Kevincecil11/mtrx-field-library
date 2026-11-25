@@ -689,12 +689,11 @@
  "hour": 8,
  "last_push": "2026-11-25",
  "listener": {
-  "checked_at": "2026-11-25T23:53:20+05:30",
+  "checked_at": "2026-11-26T00:03:54+05:30",
   "mode": "handoff",
-  "run_id": "45672830552"
+  "run_id": "45674650120"
  },
  "log": [
-  "2026-11-21 19:43 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-21 23:36 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-22 00:14 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-22 06:08 listener retry: getUpdates failed: Bad Gateway",
@@ -733,7 +732,8 @@
   "2026-11-25 06:42 listener retry: The read operation timed out",
   "2026-11-25 06:43 listener retry: The read operation timed out",
   "2026-11-25 15:35 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
-  "2026-11-25 16:34 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
+  "2026-11-25 16:34 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
+  "2026-11-25 23:59 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
  ],
  "nudged": true,
  "offset": 806113023,
