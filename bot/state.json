@@ -689,13 +689,11 @@
  "hour": 8,
  "last_push": "2026-11-26",
  "listener": {
-  "checked_at": "2026-11-26T20:33:27+05:30",
+  "checked_at": "2026-11-26T20:43:55+05:30",
   "mode": "handoff",
-  "run_id": "45843463891"
+  "run_id": "45845207052"
  },
  "log": [
-  "2026-11-23 07:10 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
-  "2026-11-23 07:52 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-23 16:44 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-23 20:33 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-23 20:46 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
@@ -733,7 +731,9 @@
   "2026-11-26 18:16 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-26 18:39 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
   "2026-11-26 18:40 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
-  "2026-11-26 19:39 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
+  "2026-11-26 19:39 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
+  "2026-11-26 20:36 listener retry: <urlopen error [Errno 104] Connection reset by peer>",
+  "2026-11-26 20:40 listener retry: <urlopen error [Errno 104] Connection reset by peer>"
  ],
  "nudged": true,
  "offset": 806113023,
